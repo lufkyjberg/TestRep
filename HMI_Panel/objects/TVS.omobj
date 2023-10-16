@@ -1,0 +1,718 @@
+<type access-modifier="private" name="TVS" display-name="TVS" uuid="fbd121f1-3ab7-4507-a4a1-354479aa533f" base-type="" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Width" value="1360" ver="5"/>
+	<designed target="Height" value="680" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xff646464" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="1360" ver="5"/>
+	<designed target="WindowHeight" value="680" ver="5"/>
+	<designed target="WindowCaption" value="MainForm" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="1" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="0" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<object access-modifier="private" name="(One Scheme)_1" display-name="(One Scheme)_1" uuid="5e1ef3f8-6485-4545-9960-5c54901f5023" base-type="(One Scheme)" base-type-id="4e56a8cc-9514-4f96-ba14-dd41419266fc" ver="5" description="" cardinal="1">
+		<designed target="X" value="2" ver="5"/>
+		<designed target="Y" value="4.0759453781512462" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="699.50819327731051" ver="5"/>
+		<designed target="Height" value="673.84957983193283" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_2" display-name="Rectangle_2" uuid="a1890af5-d1af-494a-a6c2-3b28e2977d3d" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="706.20281473462285" ver="5"/>
+		<designed target="Y" value="335.45986159169559" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="646.97900344719517" ver="5"/>
+		<designed target="Height" value="246.39242979242977" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffffffff" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="PenColor" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuWhite]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="0a95f802-3882-4017-898c-d81214c3fa3b" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="706" ver="5"/>
+		<designed target="Y" value="73.057352941176461" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="646.97900344719528" ver="5"/>
+		<designed target="Height" value="248.45909645909649" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffffffff" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="PenColor" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuWhite]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Rectangle_6" display-name="Rectangle_6" uuid="54b1c44e-47c3-4786-ae3b-0c7d96da97c4" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="706.20281473462285" ver="5"/>
+		<designed target="Y" value="411.45454545454544" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="646.97900344719517" ver="5"/>
+		<designed target="Height" value="33.099999999999909" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffffffff" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="PenColor" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuWhite]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Rectangle_4" display-name="Rectangle_4" uuid="3ee30250-59e1-4c92-8ddf-db3cd2b57b19" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="706.20281473462285" ver="5"/>
+		<designed target="Y" value="335.45454545454544" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="646.97900344719517" ver="5"/>
+		<designed target="Height" value="33.099999999999909" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffffffff" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="PenColor" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuWhite]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Rectangle_3" display-name="Rectangle_3" uuid="eec390b9-e7bb-4824-964c-176af17b6f67" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="706.20281473462285" ver="5"/>
+		<designed target="Y" value="251" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="646.97900344719517" ver="5"/>
+		<designed target="Height" value="33.099999999999909" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffffffff" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="PenColor" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuWhite]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="876f6d27-19c6-4654-8693-9a8d5d563013" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="706" ver="5"/>
+		<designed target="Y" value="73.099999999999994" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="646.97900344719528" ver="5"/>
+		<designed target="Height" value="33.999999999999915" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffffffff" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="PenColor" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuWhite]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_284" display-name="Text_PropertiesDialogs_284" uuid="b65302e2-b7ad-418b-85d2-6db4be9f93fe" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+		<designed target="X" value="886.13412080041928" ver="5"/>
+		<designed target="Y" value="373.69175108691104" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="86.447092892729984" ver="5"/>
+		<designed target="Height" value="31.723669467787261" ver="5"/>
+		<designed target="Text" value="Темп.2охлаж.воды на выходе масл.ТП(TS11)" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.MOTP.T_wtr_oilref2_out"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="65" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_72" display-name="Text_PropertiesDialogs_72" uuid="89ab4ac8-0a47-4ab2-a5b7-343ac9065be7" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+		<designed target="X" value="1032.4674541337527" ver="5"/>
+		<designed target="Y" value="289.48987654304892" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="271.4470928927301" ver="5"/>
+		<designed target="Height" value="26.223669467787261" ver="5"/>
+		<designed target="Text" value="Давл.воды воздух.статора (слив) (81)" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.TVS.Pw_aircoolStat_out"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_71" display-name="Text_PropertiesDialogs_71" uuid="3c30ccc3-32c5-4311-90eb-6a3c607a99b3" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+		<designed target="X" value="710.46745413375265" ver="5"/>
+		<designed target="Y" value="289.48987654304892" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="271.4470928927301" ver="5"/>
+		<designed target="Height" value="26.223669467787261" ver="5"/>
+		<designed target="Text" value="Давл.воды воздух.статора (подача) (80)" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.TVS.Pw_aircoolStat_in"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_76" display-name="Text_PropertiesDialogs_76" uuid="3a8589ca-55ab-44a4-b943-97dbb1005be3" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+		<designed target="X" value="1032.4674541337527" ver="5"/>
+		<designed target="Y" value="219.52769968409206" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="318.9470928927301" ver="5"/>
+		<designed target="Height" value="26.223669467787261" ver="5"/>
+		<designed target="Text" value="Давл.воды воздух.нижней крест.(слив) (85)" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.TVS.Pw_aircool_DN_out"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_75" display-name="Text_PropertiesDialogs_75" uuid="6c9d2d67-0f17-43df-a513-96251f9074e0" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+		<designed target="X" value="1032.4674541337527" ver="5"/>
+		<designed target="Y" value="180.43736354963812" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="270.9470928927301" ver="5"/>
+		<designed target="Height" value="26.223669467787261" ver="5"/>
+		<designed target="Text" value="Давл. воды воздух. нижней крест.(подача) (84)" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.TVS.Pw_aircool_DN_in"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_74" display-name="Text_PropertiesDialogs_74" uuid="107bd80b-70b6-4fd2-a69d-a8f9ba87b3e4" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+		<designed target="X" value="710.46745413375265" ver="5"/>
+		<designed target="Y" value="218.52769968409206" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="318.87566432130143" ver="5"/>
+		<designed target="Height" value="26.223669467787261" ver="5"/>
+		<designed target="Text" value="Давление воды верхней крестовины (слив) (83)" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.TVS.Pw_aircool_UP_out"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_51" display-name="AnalogDpValue_51" uuid="d1e2793d-af58-484b-99f6-4990c0d6cac6" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="924.85666666666657" ver="5"/>
+		<designed target="Y" value="374.86486033060851" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="86.875490196078545" ver="5"/>
+		<designed target="Height" value="30.04411764705884" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.MOTP.T_wtr_oilref2_out"/>
+		<designed target="Scale" value="1" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_45" display-name="AnalogDpValue_45" uuid="3761bd92-ab75-46de-b15f-c9741e238c3f" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="1197.1899999999998" ver="5"/>
+		<designed target="Y" value="287.57965245341313" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="86.875490196078545" ver="5"/>
+		<designed target="Height" value="30.04411764705884" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.TVS.Pw_aircoolStat_out"/>
+		<designed target="Scale" value="1" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_44" display-name="AnalogDpValue_44" uuid="4d2609ba-c5fc-45d2-be6b-6264baa5d880" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="872.18999999999983" ver="5"/>
+		<designed target="Y" value="287.57965245341313" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="86.875490196078545" ver="5"/>
+		<designed target="Height" value="30.04411764705884" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.TVS.Pw_aircoolStat_in"/>
+		<designed target="Scale" value="1" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_49" display-name="AnalogDpValue_49" uuid="a5442005-43d8-4419-98c7-abeaeed5ae25" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="1197.1899999999998" ver="5"/>
+		<designed target="Y" value="217.61747559445627" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="86.875490196078545" ver="5"/>
+		<designed target="Height" value="30.04411764705884" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.TVS.Pw_aircool_DN_out"/>
+		<designed target="Scale" value="1" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_48" display-name="AnalogDpValue_48" uuid="3f17af20-3241-4eb0-91dd-ec8f44ff0851" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="1197.1899999999998" ver="5"/>
+		<designed target="Y" value="178.52713946000233" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="86.875490196078545" ver="5"/>
+		<designed target="Height" value="30.04411764705884" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.TVS.Pw_aircool_DN_in"/>
+		<designed target="Scale" value="1" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_47" display-name="AnalogDpValue_47" uuid="b7a3860a-2030-4edf-bcaf-ab39b33495c2" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="872.18999999999983" ver="5"/>
+		<designed target="Y" value="216.61747559445627" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="86.875490196078545" ver="5"/>
+		<designed target="Height" value="30.04411764705884" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.TVS.Pw_aircool_UP_out"/>
+		<designed target="Scale" value="1" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_70" display-name="Text_PropertiesDialogs_70" uuid="104000f4-4e8e-4e00-bfeb-a31cbc34453e" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+		<designed target="X" value="1032.4674541337527" ver="5"/>
+		<designed target="Y" value="141.34702741518424" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="270.9470928927301" ver="5"/>
+		<designed target="Height" value="26.223669467787261" ver="5"/>
+		<designed target="Text" value="Расход воды из масл. нижней крестовины (77)" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.TVS.Q_wtr_oilref_DN"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_73" display-name="Text_PropertiesDialogs_73" uuid="a2214d35-4eda-4f51-a48c-dc806711fff2" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+		<designed target="X" value="710.46745413375265" ver="5"/>
+		<designed target="Y" value="179.43736354963812" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="318.87566432130143" ver="5"/>
+		<designed target="Height" value="26.223669467787261" ver="5"/>
+		<designed target="Text" value="Давл. воды возду. верхней крест. (подача) (82)" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.TVS.Pw_aircool_UP_in"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_69" display-name="Text_PropertiesDialogs_69" uuid="f9a40feb-caa2-45cc-a50c-d49eb503a73a" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+		<designed target="X" value="710.46745413375265" ver="5"/>
+		<designed target="Y" value="140.34702741518424" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="318.87566432130143" ver="5"/>
+		<designed target="Height" value="26.223669467787261" ver="5"/>
+		<designed target="Text" value="Расход воды из масл.верхней крестовины (76)" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.TVS.Q_wtr_oilref_UP"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_46" display-name="AnalogDpValue_46" uuid="f1984154-da2e-4408-adee-cb7a123062f9" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="872.18999999999983" ver="5"/>
+		<designed target="Y" value="177.52713946000233" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="86.875490196078545" ver="5"/>
+		<designed target="Height" value="30.04411764705884" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.TVS.Pw_aircool_UP_in"/>
+		<designed target="Scale" value="1" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_42" display-name="AnalogDpValue_42" uuid="a9c2a63a-6409-4caa-a13c-98d764c6a751" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="872.18999999999983" ver="5"/>
+		<designed target="Y" value="138.43680332554845" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="86.875490196078545" ver="5"/>
+		<designed target="Height" value="30.04411764705884" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.TVS.Q_wtr_oilref_UP"/>
+		<designed target="Scale" value="1" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_43" display-name="AnalogDpValue_43" uuid="979b939f-93a6-4b1f-b0f9-21ca3aae4846" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="1197.1899999999998" ver="5"/>
+		<designed target="Y" value="139.43680332554845" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="86.875490196078545" ver="5"/>
+		<designed target="Height" value="30.04411764705884" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.TVS.Q_wtr_oilref_DN"/>
+		<designed target="Scale" value="1" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_2" display-name="Text_2" uuid="76827691-5abe-4194-aa5b-f8fd2de79354" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="808.09221420642098" ver="5"/>
+		<designed target="Y" value="102.39558823529413" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="123.62614417596478" ver="5"/>
+		<designed target="Height" value="39.725000000000023" ver="5"/>
+		<designed target="Text" value="Верхняя" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_3" display-name="Text_3" uuid="55561740-a364-471f-99de-0b9444e309e1" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="1133.6279284921352" ver="5"/>
+		<designed target="Y" value="106.80205882352944" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="116.62614417596478" ver="5"/>
+		<designed target="Height" value="30.912058823529406" ver="5"/>
+		<designed target="Text" value="Нижняя" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_4" display-name="Text_4" uuid="9d6cbfc4-9e65-4380-badb-fd939a312a1a" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="974.33346546075063" ver="5"/>
+		<designed target="Y" value="251.96044117647057" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="110.31207252569402" ver="5"/>
+		<designed target="Height" value="31.179117647058717" ver="5"/>
+		<designed target="Text" value="Статор" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_283" display-name="Text_PropertiesDialogs_283" uuid="b58743a2-74d2-4ec1-9ef8-200635310f2d" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+		<designed target="X" value="714.46745413375265" ver="5"/>
+		<designed target="Y" value="374.22508442024423" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="86.113759559396613" ver="5"/>
+		<designed target="Height" value="31.323669467787283" ver="5"/>
+		<designed target="Text" value="Темп.1охлаж.воды на выходе масл.ТП(TS10)" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.MOTP.T_wtr_oilref1_out"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="65" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_50" display-name="AnalogDpValue_50" uuid="a8816df7-2ff4-4ce4-9013-6efc8b2cc09a" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="753.18999999999983" ver="5"/>
+		<designed target="Y" value="374.86486033060851" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="86.875490196078545" ver="5"/>
+		<designed target="Height" value="30.04411764705884" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.MOTP.T_wtr_oilref1_out"/>
+		<designed target="Scale" value="1" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_5" display-name="Text_5" uuid="873fd4f9-03f2-4c75-9f51-9890ba44e9ff" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="925.90266793960564" ver="5"/>
+		<designed target="Y" value="411.81263368983957" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="207.17366756798401" ver="5"/>
+		<designed target="Height" value="34.383823529411643" ver="5"/>
+		<designed target="Text" value="Уплотнение" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<do-trace access-modifier="private" target="BrushColor" ver="5">
+		<body>
+			<![CDATA[AsokuColor.asokuBackColor]]>
+		</body>
+	</do-trace>
+	<object access-modifier="private" name="DiscreteDescrValue_1" display-name="DiscreteDescrValue_1" uuid="f466c3ab-f813-43ff-a36e-16d9c61adc08" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="1031.2692307692309" ver="5"/>
+		<designed target="Y" value="478.86890229821222" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="319.76127450980403" ver="5"/>
+		<designed target="Height" value="33.482499999999959" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Protection.P_wtr_L_seal"/>
+	</object>
+	<object access-modifier="private" name="DiscreteDescrValue_2" display-name="DiscreteDescrValue_2" uuid="6320cd69-3a9f-4961-94b5-8b930be89766" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="1031.2692307692309" ver="5"/>
+		<designed target="Y" value="512.42100845421169" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="319.76127450980403" ver="5"/>
+		<designed target="Height" value="33.482499999999959" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Protection.Q_wtr_seal_L"/>
+	</object>
+	<object access-modifier="private" name="DiscreteDescrValue_3" display-name="DiscreteDescrValue_3" uuid="8382164f-03db-420b-b13a-56c8f48da646" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="1031.2692307692309" ver="5"/>
+		<designed target="Y" value="545.57190128592947" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="319.76127450980403" ver="5"/>
+		<designed target="Height" value="33.482499999999959" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Protection.Q_wtr_seal_LL"/>
+	</object>
+	<object access-modifier="private" name="DiscreteDescrValue_4" display-name="DiscreteDescrValue_4" uuid="dfca9964-7e62-4e1a-b6e8-2ca3877f00e2" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="708.46745413375265" ver="5"/>
+		<designed target="Y" value="478.86890229821222" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="318.76621219337949" ver="5"/>
+		<designed target="Height" value="33.482499999999959" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Protection.Q_wtr_sealRK_LL"/>
+	</object>
+	<object access-modifier="private" name="DiscreteDescrValue_5" display-name="DiscreteDescrValue_5" uuid="1711011c-89bc-427d-bf7c-e85b278138f5" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="1065.3504950694253" ver="5"/>
+		<designed target="Y" value="373.55619546992739" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="284.2612745098038" ver="5"/>
+		<designed target="Height" value="33.482499999999959" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Protection.Q_wtr_oilref_LL"/>
+	</object>
+	<object access-modifier="private" name="Text_6" display-name="Text_6" uuid="04f8078e-9bfc-43a8-ad8b-0613724d94b3" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="880.86663852784091" ver="5"/>
+		<designed target="Y" value="338.15062388591798" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="297.24572639151347" ver="5"/>
+		<designed target="Height" value="27.707843137254827" ver="5"/>
+		<designed target="Text" value="Маслоохладитель ТП" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_8" display-name="Text_8" uuid="5f4ef32f-2295-4576-a2ed-6e862afd5b55" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="946.67642963561525" ver="5"/>
+		<designed target="Y" value="69.687499999999943" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="165.62614417596478" ver="5"/>
+		<designed target="Height" value="39.725000000000023" ver="5"/>
+		<designed target="Text" value="Крестовина" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_8" display-name="Rectangle_8" uuid="9aa78f4a-4c9c-4b10-a837-68d16f92c966" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="957.8183630927067" ver="5"/>
+		<designed target="Y" value="179.27669418644649" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="270" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="143.34227726178182" ver="5"/>
+		<designed target="Height" value="0" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffffffff" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="PenColor" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuWhite]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Rectangle_9" display-name="Rectangle_9" uuid="a5646e6b-353a-487a-b9ed-0acce7cf4367" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="1010.9830689750597" ver="5"/>
+		<designed target="Y" value="302.77865497076021" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="270" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="37.01286549707595" ver="5"/>
+		<designed target="Height" value="0" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffffffff" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="PenColor" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuWhite]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Text_9" display-name="Text_9" uuid="18307a52-9f64-470f-91c8-961cdf5ebb77" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="847.9851191770781" ver="5"/>
+		<designed target="Y" value="451.14596702317294" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="43.840334234650641" ver="5"/>
+		<designed target="Height" value="23.883823529411586" ver="5"/>
+		<designed target="Text" value="РК" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_10" display-name="Text_10" uuid="a1ddc34c-1902-49e6-9a69-bbb412988128" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="1090.3541667961258" ver="5"/>
+		<designed target="Y" value="448.64596702317294" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="203.17366756798401" ver="5"/>
+		<designed target="Height" value="28.883823529411586" ver="5"/>
+		<designed target="Text" value="Вал турбины" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_10" display-name="Rectangle_10" uuid="1ed0c92d-213f-4f8f-b695-e9cee0562a79" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="961.29100548299596" ver="5"/>
+		<designed target="Y" value="512.79635948846499" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="270" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="136.39699248120331" ver="5"/>
+		<designed target="Height" value="0" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffffffff" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="PenColor" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuWhite]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Text_11" display-name="Text_11" uuid="292f5e41-08b2-4b1d-972e-ed30c6d23df2" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="1360" ver="5"/>
+		<designed target="Height" value="35" ver="5"/>
+		<designed target="Text" value="Техводоснабжение" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Opened">
+		<body kind="om">
+			<![CDATA[Global.formWidth = here.Width;]]>
+		</body>
+	</do-on>
+</type>
+

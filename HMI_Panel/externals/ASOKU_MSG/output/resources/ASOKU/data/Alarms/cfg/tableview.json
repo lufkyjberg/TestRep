@@ -1,0 +1,143 @@
+{
+  "Version": 2,
+  "Config": [],
+  "Columns": {
+    "time": {
+      "Title": "Время генерации",
+      "Width": 93,
+      "Hidden": false,
+      "WidthResizeMode": 0,
+      "Index": 0,
+      "Font": "Tahoma,8,-1,5,50,0,0,0,0,0,Обычный",
+      "TitleFont": "Tahoma,8,-1,5,50,0,0,0,0,0,Обычный"
+    },
+    "active_time": {
+      "Title": "Время срабатывания",
+      "Width": 122,
+      "Hidden": false,
+      "WidthResizeMode": 0,
+      "Index": 1,
+      "Font": "Tahoma,8,-1,5,50,0,0,0,0,0,Обычный",
+      "TitleFont": "Tahoma,8,-1,5,50,0,0,0,0,0,Обычный"
+    },
+    "deactive_time": {
+      "Title": "Время деактивации",
+      "Width": 97,
+      "Hidden": false,
+      "WidthResizeMode": 0,
+      "Index": 2,
+      "Font": "Tahoma,8,-1,5,50,0,0,0,0,0,Обычный",
+      "TitleFont": "Tahoma,8,-1,5,50,0,0,0,0,0,Обычный"
+    },
+    "message": {
+      "Title": "Сообщение",
+      "Width": 488,
+      "Hidden": false,
+      "WidthResizeMode": 0,
+      "Index": 3,
+      "Font": "Tahoma,8,-1,5,50,0,0,0,0,0,Обычный",
+      "TitleFont": "Tahoma,8,-1,5,50,0,0,0,0,0,Обычный"
+    },
+    "source": {
+      "Title": "Источник события",
+      "Width": 100,
+      "Hidden": true,
+      "WidthResizeMode": 0,
+      "Index": 4,
+      "Font": "Tahoma,8,-1,5,50,0,0,0,0,0,Обычный",
+      "TitleFont": "Tahoma,8,-1,5,50,0,0,0,0,0,Обычный"
+    },
+    "severity": {
+      "Title": "Важность",
+      "Width": 52,
+      "Hidden": false,
+      "WidthResizeMode": 0,
+      "Index": 5,
+      "Font": "Tahoma,8,-1,5,50,0,0,0,0,0,Обычный",
+      "TitleFont": "Tahoma,8,-1,5,50,0,0,0,0,0,Обычный"
+    },
+    "ack": {
+      "Title": "Квитировано",
+      "Width": 100,
+      "Hidden": false,
+      "WidthResizeMode": 0,
+      "Index": 6,
+      "Font": "Tahoma,8,-1,5,50,0,0,0,0,0,Обычный",
+      "TitleFont": "Tahoma,8,-1,5,50,0,0,0,0,0,Обычный"
+    },
+    "ack_time": {
+      "Title": "Время квитирования",
+      "Width": 130,
+      "Hidden": true,
+      "WidthResizeMode": 0,
+      "Index": 7,
+      "Font": "Tahoma,8,-1,5,50,0,0,0,0,0,Обычный",
+      "TitleFont": "Tahoma,8,-1,5,50,0,0,0,0,0,Обычный"
+    },
+    "actor_id": {
+      "Title": "Пользователь",
+      "Width": 100,
+      "Hidden": false,
+      "WidthResizeMode": 0,
+      "Index": 8,
+      "Font": "Tahoma,8,-1,5,50,0,0,0,0,0,Обычный",
+      "TitleFont": "Tahoma,8,-1,5,50,0,0,0,0,0,Обычный"
+    },
+    "ack_comment": {
+      "Title": "Комментарий",
+      "Width": 212,
+      "Hidden": false,
+      "WidthResizeMode": 0,
+      "Index": 9,
+      "Font": "Tahoma,8,-1,5,50,0,0,0,0,0,Обычный",
+      "TitleFont": "Tahoma,8,-1,5,50,0,0,0,0,0,Обычный"
+    },
+    "active": {
+      "Title": "Активность",
+      "Width": 92,
+      "Hidden": false,
+      "WidthResizeMode": 0,
+      "Index": 10,
+      "Font": "Tahoma,8,-1,5,50,0,0,0,0,0,Обычный",
+      "TitleFont": "Tahoma,8,-1,5,50,0,0,0,0,0,Обычный"
+    },
+    "ack_required": {
+      "Title": "Квитировать",
+      "Width": 127,
+      "Hidden": false,
+      "WidthResizeMode": 0,
+      "Index": 11,
+      "Font": "Tahoma,8,-1,5,50,0,0,0,0,0,Обычный",
+      "TitleFont": "Tahoma,8,-1,5,50,0,0,0,0,0,Обычный"
+    },
+    "quality": {
+      "Title": "Качество сигнала",
+      "Width": 100,
+      "Hidden": false,
+      "WidthResizeMode": 0,
+      "Index": 12,
+      "Font": "Tahoma,8,-1,5,50,0,0,0,0,0,Обычный",
+      "TitleFont": "Tahoma,8,-1,5,50,0,0,0,0,0,Обычный"
+    },
+    "value": {
+      "Title": "Значение сигнала",
+      "Width": 57,
+      "Hidden": false,
+      "WidthResizeMode": 0,
+      "Index": 13,
+      "Font": "Tahoma,8,-1,5,50,0,0,0,0,0,Обычный",
+      "TitleFont": "Tahoma,8,-1,5,50,0,0,0,0,0,Обычный"
+    },
+    "group": {
+      "Title": "Группа важности",
+      "Width": 175,
+      "Hidden": false,
+      "WidthResizeMode": 0,
+      "Index": 14,
+      "Font": "Tahoma,8,-1,5,50,0,0,0,0,0,Обычный",
+      "TitleFont": "Tahoma,8,-1,5,50,0,0,0,0,0,Обычный"
+    }
+  },
+  "RowHeight": 25,
+  "TitleHeight": 23
+}

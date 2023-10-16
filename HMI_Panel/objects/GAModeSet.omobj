@@ -1,0 +1,536 @@
+<type access-modifier="private" name="GAModeSet" display-name="Управление ГА" uuid="ae0ef11c-8b9b-4dde-affe-8e4eb24dbb28" base-type="" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Width" value="600" ver="5"/>
+	<designed target="Height" value="650" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xff646464" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="600" ver="5"/>
+	<designed target="WindowHeight" value="650" ver="5"/>
+	<designed target="WindowCaption" value="MainForm" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="1" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="0" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<object access-modifier="private" name="NumberGA" display-name="Numer GA(GA_01..)" uuid="e71a2d93-508c-46a9-9b77-d3d2570c5797" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Rectangle_8" display-name="Rectangle_8" uuid="4d005a1f-2bfa-41f7-9ea9-9e91722e5abd" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="314" ver="5"/>
+		<designed target="Y" value="454.36293436293431" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="266" ver="5"/>
+		<designed target="Height" value="121.9011125334257" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="TextPropertiesDialogs_1" display-name="TextPropertiesDialogs_1" uuid="fee06ed1-129d-44d2-a144-34e9bda13381" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="3.4000000000000909" ver="5"/>
+			<designed target="Y" value="-18.200000000000045" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="80.499999999999773" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+			<designed target="Text" value="Уст. АРВ" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="OU8_WF_1" display-name="OU8_WF_1" uuid="9e5daa29-1865-4c81-8622-363047eab187" base-type="OU8_WF" base-type-id="b572f311-17d2-46d4-8c40-8a62b3ed91fc" ver="5" description="" cardinal="1">
+		<designed target="X" value="31" ver="5"/>
+		<designed target="Y" value="153" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="898" ver="5"/>
+		<designed target="Height" value="700" ver="5"/>
+		<designed target="Visible" value="false" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Button_PropertiesDialogs_9" display-name="Button_PropertiesDialogs_9" uuid="7a3937b2-746b-4ea1-9de5-89c306e2ebac" base-type="ButtonPropertiesDialogs" base-type-id="eb940a52-68cb-41b0-824e-d3672b520ebf" ver="5" description="" cardinal="1">
+		<designed target="X" value="204" ver="5"/>
+		<designed target="Y" value="590" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="190" ver="5"/>
+		<designed target="Height" value="45" ver="5"/>
+		<designed target="Text" value="Закрыть" ver="5"/>
+		<designed target="BrushColor" value="0xffd4d0c8" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed" form-action="close"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_4" display-name="Rectangle_4" uuid="2ff6f141-d763-4c63-b04e-301e58384dc1" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="18" ver="5"/>
+		<designed target="Y" value="33" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="562" ver="5"/>
+		<designed target="Height" value="152.63706563706563" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="TextPropertiesDialogs_1" display-name="TextPropertiesDialogs_1" uuid="040061c7-563f-44d3-a4c9-a599531a926c" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="3.4000000000000909" ver="5"/>
+			<designed target="Y" value="-18.200000000000045" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="262.49999999999977" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+			<designed target="Text" value="Режимы" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Rectangle_5" display-name="Rectangle_5" uuid="bba7dbc0-bb17-4ac9-a3d1-0a2f24e91d64" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="18" ver="5"/>
+		<designed target="Y" value="197.12097812097812" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="562" ver="5"/>
+		<designed target="Height" value="110.63706563706563" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="TextPropertiesDialogs_1" display-name="TextPropertiesDialogs_1" uuid="a534b4e4-144f-42e6-83c4-3ad632843f52" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="3.4000000000000909" ver="5"/>
+			<designed target="Y" value="-18.200000000000045" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="381.49999999999983" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+			<designed target="Text" value="Задание активной мощности " ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Rectangle_6" display-name="Rectangle_6" uuid="da9299ee-3314-4981-89cb-584981de0912" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="18" ver="5"/>
+		<designed target="Y" value="321.24195624195625" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="562" ver="5"/>
+		<designed target="Height" value="117.63706563706558" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="TextPropertiesDialogs_1" display-name="TextPropertiesDialogs_1" uuid="3f5d329c-a6a0-4b86-987a-e03c8f9b3e14" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="3.4000000000000909" ver="5"/>
+			<designed target="Y" value="-18.200000000000045" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="398.49999999999977" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+			<designed target="Text" value="Задание активной мощности " ver="5"/>
+		</object>
+		<object access-modifier="private" name="AODpValue_1" display-name="AODpValue_1" uuid="16050072-0d5d-4076-9103-a3f3019c3a01" base-type="AODpValue" base-type-id="41ab7777-ecfb-4ad9-8dce-6258006c472b" ver="5" description="" cardinal="1">
+			<designed target="X" value="84.999999999999829" ver="5"/>
+			<designed target="Y" value="70.758043758043868" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="90" ver="5"/>
+			<designed target="Height" value="25" ver="5"/>
+			<do-trace access-modifier="private" target="InDevPath" ver="5">
+				<body>
+					<![CDATA[NumberGA + ".Setpoints.In.SC_P_task_val"]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="OutDevPath" ver="5">
+				<body>
+					<![CDATA[NumberGA + ".Setpoints.Out.SP_P_task_val"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="AnalogDpValue_1" display-name="AnalogDpValue_1" uuid="be545f80-0e07-41a3-9b29-150ab252b3e1" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+			<designed target="X" value="353.33333333333314" ver="5"/>
+			<designed target="Y" value="70.758043758043868" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="90" ver="5"/>
+			<designed target="Height" value="25" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<do-trace access-modifier="private" target="ParDevPath" ver="5">
+				<body>
+					<![CDATA[NumberGA + ".Electro.P1"]]>
+				</body>
+			</do-trace>
+		</object>
+	</object>
+	<object access-modifier="private" name="Rectangle_7" display-name="Rectangle_7" uuid="4dc81027-0764-4768-8c7f-a40e705435fb" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="18" ver="5"/>
+		<designed target="Y" value="455.09888746657435" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="266" ver="5"/>
+		<designed target="Height" value="121.90111253342565" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="TextPropertiesDialogs_1" display-name="TextPropertiesDialogs_1" uuid="772aa4c2-d1b4-4ba8-b912-91ceac03ccfb" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="3.4000000000000909" ver="5"/>
+			<designed target="Y" value="-18.200000000000045" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="264.49999999999977" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+			<designed target="Text" value="Уст. регулятора турбины" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="TextPropertiesDialogs_1" display-name="TextPropertiesDialogs_1" uuid="e96e38be-66ea-4f3f-bc27-6444e7ff8f57" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="-3.5999999999999091" ver="5"/>
+		<designed target="Y" value="-2.5333333333333599" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="603.49999999999977" ver="5"/>
+		<designed target="Height" value="35" ver="5"/>
+		<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Text" value="Управление ГА" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Button_PropertiesDialogs_8" display-name="Button_PropertiesDialogs_8" uuid="ba49bb05-a914-4deb-b487-5617dea06339" base-type="ButtonPropertiesDialogs" base-type-id="eb940a52-68cb-41b0-824e-d3672b520ebf" ver="5" description="" cardinal="1">
+		<designed target="X" value="68.999999999999829" ver="5"/>
+		<designed target="Y" value="45.666666666666686" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="176.66666666666663" ver="5"/>
+		<designed target="Height" value="36.666666666666686" ver="5"/>
+		<designed target="Text" value="ХХТ" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+			<body kind="javascript">
+				<![CDATA[if(ApParValue.Advised == true){
+   ApParStatusBytes.Value = 8
+   ApParValue.Value = 5;
+   ApParStatusBytes = 0;
+}]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="OnHoverBrushColor" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlue]]>
+			</body>
+		</do-trace>
+		<designed target="Font" value="Arial,10,-1,5,75,0,1,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="ApParValue" display-name="ApParValue" uuid="658c0c08-7fa3-442d-908d-49a690857a29" base-type="ApItemUInt4" base-type-id="322ce770-6c7b-49bc-9cd6-a367ca5b4627" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[NumberGA + ".Control.OPr_GA_mode_op.Value"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Button_PropertiesDialogs_10" display-name="Button_PropertiesDialogs_10" uuid="e72c8648-a6f1-490a-8cd5-e448df37482b" base-type="ButtonPropertiesDialogs" base-type-id="eb940a52-68cb-41b0-824e-d3672b520ebf" ver="5" description="" cardinal="1">
+		<designed target="X" value="68.999999999999829" ver="5"/>
+		<designed target="Y" value="94.666666666666686" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="176.66666666666663" ver="5"/>
+		<designed target="Height" value="36.666666666666686" ver="5"/>
+		<designed target="Text" value="В сети" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+			<body kind="om">
+				<![CDATA[if(ApParValue.Advised == true){
+   ApParValue.Value = 7;
+}]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="OnHoverBrushColor" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlue]]>
+			</body>
+		</do-trace>
+		<designed target="Font" value="Arial,10,-1,5,75,0,1,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Button_PropertiesDialogs_11" display-name="Button_PropertiesDialogs_11" uuid="e4ce6f8f-a93a-486c-a4c7-9ade8bf6cf7e" base-type="ButtonPropertiesDialogs" base-type-id="eb940a52-68cb-41b0-824e-d3672b520ebf" ver="5" description="" cardinal="1">
+		<designed target="X" value="364.99999999999983" ver="5"/>
+		<designed target="Y" value="94.666666666666686" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="176.66666666666663" ver="5"/>
+		<designed target="Height" value="36.666666666666686" ver="5"/>
+		<designed target="Text" value="АЧВР" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+			<body kind="javascript">
+				<![CDATA[ApParValue.Value = 8;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="OnHoverBrushColor" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlue]]>
+			</body>
+		</do-trace>
+		<designed target="Font" value="Arial,10,-1,5,75,0,1,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Button_PropertiesDialogs_12" display-name="Button_PropertiesDialogs_12" uuid="53b969fb-8262-43db-a5d6-472185727480" base-type="ButtonPropertiesDialogs" base-type-id="eb940a52-68cb-41b0-824e-d3672b520ebf" ver="5" description="" cardinal="1">
+		<designed target="X" value="364.99999999999983" ver="5"/>
+		<designed target="Y" value="45" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="176.66666666666663" ver="5"/>
+		<designed target="Height" value="36.666666666666686" ver="5"/>
+		<designed target="Text" value="ХХГ" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+			<body kind="javascript">
+				<![CDATA[ApParValue.Value = 6;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="OnHoverBrushColor" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlue]]>
+			</body>
+		</do-trace>
+		<designed target="Font" value="Arial,10,-1,5,75,0,1,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Button_PropertiesDialogs_13" display-name="Button_PropertiesDialogs_13" uuid="cc986b24-a30b-42ae-a088-85d033a7e7e8" base-type="ButtonPropertiesDialogs" base-type-id="eb940a52-68cb-41b0-824e-d3672b520ebf" ver="5" description="" cardinal="1">
+		<designed target="X" value="68.999999999999829" ver="5"/>
+		<designed target="Y" value="215.33333333333337" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="176.66666666666663" ver="5"/>
+		<designed target="Height" value="36.666666666666686" ver="5"/>
+		<designed target="Text" value="Ав. останов 2(ГМЗ)" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+			<body kind="javascript">
+				<![CDATA[ApParValue.Value = 18;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="OnHoverBrushColor" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlue]]>
+			</body>
+		</do-trace>
+		<designed target="Font" value="Arial,10,-1,5,75,0,1,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Button_PropertiesDialogs_14" display-name="Button_PropertiesDialogs_14" uuid="a80dd409-5bf1-4716-89e5-383674f5d573" base-type="ButtonPropertiesDialogs" base-type-id="eb940a52-68cb-41b0-824e-d3672b520ebf" ver="5" description="" cardinal="1">
+		<designed target="X" value="210.66666666666669" ver="5"/>
+		<designed target="Y" value="260" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="176.66666666666663" ver="5"/>
+		<designed target="Height" value="36.666666666666686" ver="5"/>
+		<designed target="Text" value="Ав. останов 4(Разгон 2)" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+			<body kind="javascript">
+				<![CDATA[ApParValue.Value = 20;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="OnHoverBrushColor" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlue]]>
+			</body>
+		</do-trace>
+		<designed target="Font" value="Arial,10,-1,5,75,0,1,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Button_PropertiesDialogs_16" display-name="Button_PropertiesDialogs_16" uuid="9c755c22-3055-474f-a568-92c89f7fbe90" base-type="ButtonPropertiesDialogs" base-type-id="eb940a52-68cb-41b0-824e-d3672b520ebf" ver="5" description="" cardinal="1">
+		<designed target="X" value="364.99999999999983" ver="5"/>
+		<designed target="Y" value="215.33333333333337" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="176.66666666666663" ver="5"/>
+		<designed target="Height" value="36.666666666666686" ver="5"/>
+		<designed target="Text" value="Ав. останов 3(Разгон 1)" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+			<body kind="javascript">
+				<![CDATA[ApParValue.Value = 19;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="OnHoverBrushColor" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlue]]>
+			</body>
+		</do-trace>
+		<designed target="Font" value="Arial,10,-1,5,75,0,1,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Button_PropertiesDialogs_21" display-name="Button_PropertiesDialogs_21" uuid="227b720d-a43d-4678-943c-23f10269ddd5" base-type="ButtonPropertiesDialogs" base-type-id="eb940a52-68cb-41b0-824e-d3672b520ebf" ver="5" description="" cardinal="1">
+		<designed target="X" value="62.999999999999829" ver="5"/>
+		<designed target="Y" value="474.66666666666674" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="176.66666666666663" ver="5"/>
+		<designed target="Height" value="36.666666666666686" ver="5"/>
+		<designed target="Text" value="Больше" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+			<body kind="javascript">
+				<![CDATA[]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="OnHoverBrushColor" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlue]]>
+			</body>
+		</do-trace>
+		<designed target="Font" value="Arial,10,-1,5,75,0,1,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Button_PropertiesDialogs_22" display-name="Button_PropertiesDialogs_22" uuid="52bb7c35-c438-4f75-972a-aae72bc819ea" base-type="ButtonPropertiesDialogs" base-type-id="eb940a52-68cb-41b0-824e-d3672b520ebf" ver="5" description="" cardinal="1">
+		<designed target="X" value="62.999999999999829" ver="5"/>
+		<designed target="Y" value="529.33333333333326" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="176.66666666666663" ver="5"/>
+		<designed target="Height" value="36.666666666666686" ver="5"/>
+		<designed target="Text" value="Меньше" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+			<body kind="javascript">
+				<![CDATA[]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="OnHoverBrushColor" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlue]]>
+			</body>
+		</do-trace>
+		<designed target="Font" value="Arial,10,-1,5,75,0,1,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Button_PropertiesDialogs_23" display-name="Button_PropertiesDialogs_23" uuid="a3781269-5143-4052-8f1e-4fdbcd0a3843" base-type="ButtonPropertiesDialogs" base-type-id="eb940a52-68cb-41b0-824e-d3672b520ebf" ver="5" description="" cardinal="1">
+		<designed target="X" value="360.99999999999983" ver="5"/>
+		<designed target="Y" value="528.66666666666674" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="176.66666666666663" ver="5"/>
+		<designed target="Height" value="36.666666666666686" ver="5"/>
+		<designed target="Text" value="Меньше" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+			<body kind="javascript">
+				<![CDATA[]]>
+			</body>
+		</do-on>
+		<designed target="BrushColor" value="0xffd4d0c8" ver="5"/>
+		<do-trace access-modifier="private" target="OnHoverBrushColor" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlue]]>
+			</body>
+		</do-trace>
+		<designed target="Font" value="Arial,10,-1,5,75,0,1,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Button_PropertiesDialogs_24" display-name="Button_PropertiesDialogs_24" uuid="50a18c22-8df9-4695-9555-004109007a73" base-type="ButtonPropertiesDialogs" base-type-id="eb940a52-68cb-41b0-824e-d3672b520ebf" ver="5" description="" cardinal="1">
+		<designed target="X" value="360.99999999999983" ver="5"/>
+		<designed target="Y" value="474" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="176.66666666666663" ver="5"/>
+		<designed target="Height" value="36.666666666666686" ver="5"/>
+		<designed target="Text" value="Больше" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+			<body kind="javascript">
+				<![CDATA[]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="OnHoverBrushColor" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlue]]>
+			</body>
+		</do-trace>
+		<designed target="Font" value="Arial,10,-1,5,75,0,1,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Button_PropertiesDialogs_25" display-name="Button_PropertiesDialogs_25" uuid="a8d119e8-35a3-4c21-ab3c-77579871bdb3" base-type="ButtonPropertiesDialogs" base-type-id="eb940a52-68cb-41b0-824e-d3672b520ebf" ver="5" description="" cardinal="1">
+		<designed target="X" value="210.66666666666669" ver="5"/>
+		<designed target="Y" value="140.66666666666669" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="176.66666666666663" ver="5"/>
+		<designed target="Height" value="36.666666666666686" ver="5"/>
+		<designed target="Text" value="СК" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+			<body kind="javascript">
+				<![CDATA[ApParValue.Value = 9;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="OnHoverBrushColor" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlue]]>
+			</body>
+		</do-trace>
+		<designed target="Font" value="Arial,10,-1,5,75,0,1,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Button_PropertiesDialogs_26" display-name="Button_PropertiesDialogs_26" uuid="39ca591d-0d7c-4ba3-b83e-9eba04e3f876" base-type="ButtonPropertiesDialogs" base-type-id="eb940a52-68cb-41b0-824e-d3672b520ebf" ver="5" description="" cardinal="1">
+		<designed target="X" value="80.999999999999829" ver="5"/>
+		<designed target="Y" value="341.33333333333337" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="176.66666666666663" ver="5"/>
+		<designed target="Height" value="36.666666666666686" ver="5"/>
+		<designed target="Text" value="Индивидуальное" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+			<body kind="javascript">
+				<![CDATA[ApParValue.Value = 18;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="OnHoverBrushColor" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlue]]>
+			</body>
+		</do-trace>
+		<designed target="Font" value="Arial,10,-1,5,75,0,1,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Button_PropertiesDialogs_27" display-name="Button_PropertiesDialogs_27" uuid="8f67a5aa-0b1f-456e-b87c-6a20533acfcc" base-type="ButtonPropertiesDialogs" base-type-id="eb940a52-68cb-41b0-824e-d3672b520ebf" ver="5" description="" cardinal="1">
+		<designed target="X" value="344.99999999999983" ver="5"/>
+		<designed target="Y" value="339.33333333333337" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="176.66666666666663" ver="5"/>
+		<designed target="Height" value="36.666666666666686" ver="5"/>
+		<designed target="Text" value="Автоматическое" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+			<body kind="javascript">
+				<![CDATA[ApParValue.Value = 19;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="OnHoverBrushColor" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlue]]>
+			</body>
+		</do-trace>
+		<designed target="Font" value="Arial,10,-1,5,75,0,1,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="ApParStatusBytes" display-name="ApParStatusBytes" uuid="2d105ec9-795e-49aa-8f5a-e84625c74f4a" base-type="ApItemUInt4" base-type-id="322ce770-6c7b-49bc-9cd6-a367ca5b4627" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[NumberGA + ".Control.OPr_GA_mode_op.StatusBytes"]]>
+			</body>
+		</do-trace>
+	</object>
+</type>
+

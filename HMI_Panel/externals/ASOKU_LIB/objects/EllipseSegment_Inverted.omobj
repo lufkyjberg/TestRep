@@ -1,0 +1,795 @@
+<type access-modifier="public" name="EllipseSegment_Inverted" display-name="Сегмент эллипса (инвертирован)" uuid="5efe95a6-3bcd-4f53-8ed5-9b62265d530a" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="100" ver="5"/>
+	<designed target="Height" value="100" ver="5"/>
+	<designed target="PenColor" value="0xff000000" ver="5"/>
+	<designed target="PenStyle" value="1" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xff000000" ver="5"/>
+	<designed target="BrushStyle" value="0" ver="5"/>
+	<designed target="PieAngle" value="360" ver="5"/>
+	<designed target="PieAngleStart" value="360" ver="5"/>
+	<designed target="HoleSize" value="1" ver="5"/>
+	<object access-modifier="private" name="Initializer_1" display-name="Initializer_1" uuid="221e5832-7f14-484e-ab8c-efe74334146c" base-type="Initializer" base-type-id="6db89679-9299-4993-ad1a-0d086cd1c7d2" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Initialized">
+			<body kind="om">
+				<![CDATA[Ellipse_Value.Visible = true;
+Ellipse_Value.PieAngle = here.PieAngle;
+Ellipse_HH.PieAngle = here.PieAngle;
+Ellipse_H.PieAngle = here.PieAngle;
+Ellipse_L.PieAngle = here.PieAngle;
+Ellipse_LL.PieAngle = here.PieAngle;
+]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Ellipse_Value" display-name="Ellipse_Value" uuid="5be6750c-4c0c-478a-b1ab-eb61c49f65d1" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="false" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xff00aa00" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Ap_AlarmBytes == AsokuConst.AlarmBytes.Alarm || Ap_AlarmBytes == AsokuConst.AlarmBytes.WarningAndAlarm]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Ap_AlarmBytes == AsokuConst.AlarmBytes.Warning]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuYellow]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Ap_StatusBytes == AsokuConst.StatusBytes.Invalid]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuBlack]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[AsokuColor.asokuGreen]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="X" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[!_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[0 ]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="Y" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[!_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[0]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="Width" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[!_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[here.Width ]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[here.Width]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="Height" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[!_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[here.Height ]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[here.Height ]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="HoleSize" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[!_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[(here.Width * here.HoleSize + (Ap_MaxValue.Value - Ap_Value.Value) / (Ap_MaxValue.Value - Ap_MinValue.Value) * here.Width * (1 - here.HoleSize)) / (here.Width)]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[(here.Width * here.HoleSize + (100 - Ap_Value.Value) / 100 * here.Width * (1 - here.HoleSize)) / (here.Width)]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Ellipse_HH" display-name="Ellipse_HH" uuid="7cbfdbb5-2e42-4897-aa7b-0667c4e5be67" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="false" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<designed target="PenColor" value="0xffff0000" ver="5"/>
+		<designed target="PenStyle" value="2" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xfff5f5f5" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="Width" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[!_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[here.Width * here.HoleSize + (Ap_MaxValue - ApHH_Limit) / (Ap_MaxValue.Value - Ap_MinValue.Value) * here.Width * (1 - here.HoleSize)]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[here.Width * here.HoleSize + (100 - ApHH_Limit.Value) / 100 * here.Width * (1 - here.HoleSize)]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="Height" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[!_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[here.Height * here.HoleSize + (Ap_MaxValue - ApHH_Limit) / (Ap_MaxValue.Value - Ap_MinValue.Value) * here.Height * (1 - here.HoleSize)]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[here.Height * here.HoleSize + (100 - ApHH_Limit.Value) / 100 * here.Height * (1 - here.HoleSize)]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="X" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[!_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[0 + here.Width / 2 - ((here.Width * here.HoleSize + (Ap_MaxValue - ApHH_Limit) / (Ap_MaxValue.Value - Ap_MinValue.Value) * here.Width * (1 - here.HoleSize)) / 2)]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[0 + here.Width / 2 - ((here.Width * here.HoleSize + (100 - ApHH_Limit.Value) / 100 * here.Width * (1 - here.HoleSize)) / 2)]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="Y" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[!_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[0 + here.Height / 2 - ((here.Height * here.HoleSize + (Ap_MaxValue - ApHH_Limit) / (Ap_MaxValue.Value - Ap_MinValue.Value) * here.Height * (1 - here.HoleSize)) / 2)]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[0 + here.Height / 2 - ((here.Height * here.HoleSize + (100 - ApHH_Limit.Value) / 100 * here.Height * (1 - here.HoleSize)) / 2)]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body>
+				<![CDATA[ApParHH.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Ellipse_H" display-name="Ellipse_H" uuid="ba411220-8cde-4b73-9f7d-9746f1a3e044" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="false" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<designed target="PenColor" value="0xffffff00" ver="5"/>
+		<designed target="PenStyle" value="2" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xff000000" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="Width" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[!_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[here.Width * here.HoleSize + (Ap_MaxValue.Value - ApH_Limit.Value) / (Ap_MaxValue.Value - Ap_MinValue.Value) * here.Width * (1 - here.HoleSize)]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[here.Width * here.HoleSize + (100 - ApH_Limit.Value) / 100 * here.Width * (1 - here.HoleSize)]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="Height" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[!_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[here.Height * here.HoleSize + (Ap_MaxValue.Value - ApH_Limit.Value) / (Ap_MaxValue.Value - Ap_MinValue.Value) * here.Height * (1 - here.HoleSize)]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[here.Height * here.HoleSize + (100 - ApH_Limit.Value) / 100 * here.Height * (1 - here.HoleSize)]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="X" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[!_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[0 + here.Width / 2 - ((here.Width * here.HoleSize + (Ap_MaxValue.Value - ApH_Limit.Value) / (Ap_MaxValue.Value - Ap_MinValue.Value) * here.Width * (1 - here.HoleSize)) / 2)]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[0 + here.Width / 2 - ((here.Width * here.HoleSize + (100 - ApH_Limit.Value) / 100 * here.Width * (1 - here.HoleSize)) / 2)]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="Y" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[!_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[0 + here.Height / 2 - ((here.Height * here.HoleSize + (Ap_MaxValue.Value - ApH_Limit.Value) / (Ap_MaxValue.Value - Ap_MinValue.Value) * here.Height * (1 - here.HoleSize)) / 2)]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[0 + here.Height / 2 - ((here.Height * here.HoleSize + (100 - ApH_Limit.Value) / 100 * here.Height * (1 - here.HoleSize)) / 2)]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body>
+				<![CDATA[ApParH.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ParDevPath" display-name="Путь до параметра" uuid="ff0b2817-4c0a-463e-9b60-0fbbb426160f" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="TransferDevPath" display-name="Путь до папки трансферов" uuid="ca8c8f74-0ea7-4a2c-a796-3f48872502f6" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="_percent" display-name="Значение в %" uuid="7f6d35df-090f-4432-93eb-82dec96dd305" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="DebugTool_1" display-name="DebugTool_1" uuid="388ef416-7603-426b-a21d-bc41ceae7a1b" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Ap_Value" display-name="Ap_Value" uuid="ab4d82c6-0870-4831-8de2-357e0b31029f" base-type="ApItemFloat" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + ".Value"]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnValueChanged">
+			<body kind="javascript">
+				<![CDATA[DebugTool_1.Log((Ap_Value.Value - Ap_MinValue) / (Ap_MaxValue.Value - Ap_MinValue.Value) * here.Width * (1 - here.HoleSize))
+DebugTool_1.Log(here.Width * here.HoleSize + ((Ap_Value.Value - Ap_MinValue) / (Ap_MaxValue.Value - Ap_MinValue.Value) * here.Width * (1 - here.HoleSize)))
+DebugTool_1.Log('a')
+DebugTool_1.Log('a')
+DebugTool_1.Log('a')
+DebugTool_1.Log('a')]]>
+			</body>
+		</do-on>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApHH_Limit" display-name="ApHH_Limit" uuid="766df631-6fe1-4922-9048-1abe92614aa2" base-type="ApItemFloat" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + ".SP_HH.LimitValue"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApH_Limit" display-name="ApH_Limit" uuid="0c4ebb7f-6a09-41be-859e-c53aa7907be1" base-type="ApItemFloat" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + ".SP_H.LimitValue"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApL_Limit" display-name="ApL_Limit" uuid="985e9045-6cb9-45d7-942e-3eed2778f4da" base-type="ApItemFloat" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + ".SP_L.LimitValue"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApLL_Limit" display-name="ApLL_Limit" uuid="76ee69d7-f014-4ab7-89a9-b21df131d30e" base-type="ApItemFloat" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + ".SP_LL.LimitValue"]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnValueChanged">
+			<body kind="javascript">
+				<![CDATA[DebugTool_1.Log((Ap_LL.Value - Ap_MinValue) / (Ap_MaxValue.Value - Ap_MinValue.Value) * here.Width * (1 - here.HoleSize))
+DebugTool_1.Log(here.Width * here.HoleSize + (Ap_LL.Value - Ap_MinValue) / (Ap_MaxValue.Value - Ap_MinValue.Value) * here.Width * (1 - here.HoleSize))]]>
+			</body>
+		</do-on>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="Ellipse_L" display-name="Ellipse_L" uuid="eb687c44-b9a8-49ef-804a-5b834914a3c4" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="false" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<designed target="PenColor" value="0xffffff00" ver="5"/>
+		<designed target="PenStyle" value="2" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="Width" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[!_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[here.Width * here.HoleSize + (Ap_MaxValue.Value - ApL_Limit.Value) / (Ap_MaxValue.Value - Ap_MinValue.Value) * here.Width * (1 - here.HoleSize)]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[here.Width * here.HoleSize + (100 - ApL_Limit.Value) / 100 * here.Width * (1 - here.HoleSize)]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="Height" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[!_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[here.Height * here.HoleSize + (Ap_MaxValue.Value - ApL_Limit.Value) / (Ap_MaxValue.Value - Ap_MinValue.Value) * here.Height * (1 - here.HoleSize)]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[here.Height * here.HoleSize + (100 - ApL_Limit.Value) / 100 * here.Height * (1 - here.HoleSize)]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="X" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[!_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[0 + here.Width / 2 - ((here.Width * here.HoleSize + (Ap_MaxValue.Value - ApL_Limit.Value) / (Ap_MaxValue.Value - Ap_MinValue.Value) * here.Width * (1 - here.HoleSize)) / 2)]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[0 + here.Width / 2 - ((here.Width * here.HoleSize + (100 - ApL_Limit.Value) / 100 * here.Width * (1 - here.HoleSize)) / 2)]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="Y" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[!_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[0 + here.Height / 2 - ((here.Height * here.HoleSize + (Ap_MaxValue.Value - ApL_Limit.Value) / (Ap_MaxValue.Value - Ap_MinValue.Value) * here.Height * (1 - here.HoleSize)) / 2)]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[0 + here.Height / 2 - ((here.Height * here.HoleSize + (100 - ApL_Limit.Value) / 100 * here.Height * (1 - here.HoleSize)) / 2)]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<init target="Focus" ver="5" value="false"/>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body>
+				<![CDATA[ApParL.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Ellipse_LL" display-name="Ellipse_LL" uuid="3da09fd4-e5e8-42c4-84e4-38cdc169de4e" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="false" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<designed target="PenColor" value="0xffff0000" ver="5"/>
+		<designed target="PenStyle" value="2" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xff000000" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="Width" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[!_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[here.Width * here.HoleSize + (Ap_MaxValue.Value - ApLL_Limit.Value)/ (Ap_MaxValue.Value - Ap_MinValue.Value) * here.Width * (1 - here.HoleSize)]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[here.Width * here.HoleSize + (100 - ApLL_Limit.Value) / 100 * here.Width * (1 - here.HoleSize)]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="Height" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[!_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[here.Height * here.HoleSize + (Ap_MaxValue.Value - ApLL_Limit.Value) / (Ap_MaxValue.Value - Ap_MinValue.Value) * here.Height * (1 - here.HoleSize)]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[here.Height * here.HoleSize + (100 - ApLL_Limit.Value) / 100 * here.Height * (1 - here.HoleSize)]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="X" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[!_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[0 + here.Width / 2 - ((here.Width * here.HoleSize + (Ap_MaxValue - ApLL_Limit) / (Ap_MaxValue.Value - Ap_MinValue.Value) * here.Width * (1 - here.HoleSize)) / 2)]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[0 + here.Width / 2 - ((here.Width * here.HoleSize + (100 - ApLL_Limit.Value) / 100 * here.Width * (1 - here.HoleSize)) / 2)]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="Y" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[!_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[0 + here.Height / 2 - ((here.Height * here.HoleSize + (Ap_MaxValue.Value - ApLL_Limit.Value) / (Ap_MaxValue.Value - Ap_MinValue.Value) * here.Height * (1 - here.HoleSize)) / 2)]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[_percent]]>
+				</condition>
+				<expr>
+					<![CDATA[0 + here.Height / 2 - ((here.Height * here.HoleSize + (100 - ApLL_Limit.Value) / 100 * here.Height * (1 - here.HoleSize)) / 2)]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body>
+				<![CDATA[ApParLL.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Ap_MaxValue" display-name="Ap_MaxValue" uuid="d6e29502-ddf2-479b-918b-6b988dd5a3d9" base-type="ApItemFloat" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + ".MaxValue"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="Ap_MinValue" display-name="Ap_MinValue" uuid="f84d2422-5e2f-4274-a8b8-ec362c9a7767" base-type="ApItemFloat" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + ".MinValue"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="Ap_StatusBytes" display-name="Ap_StatusBytes" uuid="d2538a18-6aaf-4761-b948-36678333ffa0" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + ".StatusBytes"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<do-trace access-modifier="private" target="PenColor" ver="5">
+		<conditional-expr>
+			<condition>
+				<![CDATA[Ap_StatusBytes == AsokuConst.StatusBytes.Changed]]>
+			</condition>
+			<expr>
+				<![CDATA[AsokuColor.asokuCyan]]>
+			</expr>
+		</conditional-expr>
+		<default-expr>
+			<expr>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</expr>
+		</default-expr>
+	</do-trace>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseRightClick">
+		<body kind="javascript">
+			<![CDATA[if(Ap_Value.Advised) OpenInfoTabView.Invoke()]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="OpenInfoTabView" display-name="OpenInfoTabView" uuid="d9669789-e796-4bb8-b74f-e51a6fe8a49a" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-new" form-by-id="false">
+			<object access-modifier="private" uuid="09c44efd-727c-4644-be91-dd880a1eb6f8" base-type="InfoTabView" base-type-id="146efb0d-a148-4c91-94ff-f69c196a5132" ver="5">
+				<init target="PanelType" ver="5" value="информация"/>
+				<init target="ParameterType" ver="5" value="AI"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="OpenTrendView" display-name="OpenTrendView" uuid="375e3ab9-cc48-4787-8356-bfee081d331c" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-new" form-by-id="false">
+			<object access-modifier="private" uuid="1a64d85d-5e2d-4f69-92b9-7abfd7824ce2" base-type="TrendView" base-type-id="635eeb20-53b6-4787-8ce7-142a64cd0e89" ver="5"/>
+		</do-on>
+	</object>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="MouseClick">
+		<body kind="javascript">
+			<![CDATA[if(Ap_Value.Advised)
+{
+  if (AsokuMain.WindowGroup_TrendView.WindowCount < 1) OpenTrendView.Invoke(); //открыть панель тренда
+  else 
+  {
+    AsokuMain.WindowGroup_TrendView.SendToAll("sendmessage", ParDevPath.Value); //передача в TrendView тега сигнала для добавления графика
+  }
+}]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="Ap_Name" display-name="Ap_Name" uuid="6cbde961-e14c-47b4-a8d4-a480289e7b99" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + ".Name"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="Ap_Comment" display-name="Ap_Comment" uuid="94dd3cbd-f7ea-432d-81d1-fc29ba753e74" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + ".Comment"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="Ap_Description" display-name="Ap_Description" uuid="50e80ff5-9fc7-4e7e-a51d-df8b37b0750f" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + ".Description"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="Ap_DisplayFormat" display-name="Ap_DisplayFormat" uuid="a3aa6b8e-dd0d-4374-b55b-197b1282d5c8" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + ".DisplayFormat"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="5" event="MouseEnter">
+		<body kind="javascript">
+			<![CDATA[here.PenWidth = here.PenWidth + 1
+here.PenColor = AsokuColor.asokuGrey]]>
+		</body>
+	</do-on>
+	<do-on access-modifier="private" name="Handler_4" display-name="Handler_4" ver="5" event="MouseLeave">
+		<body kind="javascript">
+			<![CDATA[if (here.Ap_StatusBytes.Value == AsokuConst.StatusBytes.Changed.Value) {here.PenColor = AsokuColor.asokuCyan}
+else {here.PenColor = AsokuColor.asokuBlack}
+here.PenWidth = here.PenWidth - 1]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="Ap_AlarmBytes" display-name="Ap_AlarmBytes" uuid="752ebaf2-6b2c-4303-b9ea-7b443943166f" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + ".AlarmBytes"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApParHH" display-name="ApParHH" uuid="48ffc56b-0874-4dd5-96b4-854af05502a4" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + ".SP_HH.On"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApParH" display-name="ApParH" uuid="3155b275-0317-4e02-bb6f-e85be8a1d23e" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + ".SP_H.On"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApParL" display-name="ApParL" uuid="b98c70bb-66f5-4d12-aeb1-addb5ec1d491" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + ".SP_L.On"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApParLL" display-name="ApParLL" uuid="4ae43f5a-b9d8-4da4-a2a1-d9f6d6787789" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + ".SP_LL.On"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<init target="_percent" ver="5" value="true"/>
+</type>
+

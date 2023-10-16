@@ -1,0 +1,140 @@
+<type access-modifier="public" name="Grenade" display-name="Grenade" uuid="0e079ab9-a7f6-41ef-a581-f5615874645a" base-type="Dummy" base-type-id="e4b644cf-f3a8-4d11-82a0-6acc23748e14" ver="5">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<object access-modifier="private" name="ApParValue" display-name="ApParValue" uuid="4ec22237-b3b5-4122-8929-cb308fd8b2ea" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5">
+		<init target="Path" ver="5" value="Value"/>
+		<init target="Source" ver="5" ref="ApSourcePar"/>
+	</object>
+	<object access-modifier="private" name="ApParValue2" display-name="ApParValue2" uuid="8538fa0d-ca3f-4eab-95d7-bce3af2be85d" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5">
+		<init target="Path" ver="5" value="Value"/>
+		<init target="Source" ver="5" ref="ApSourcePar2"/>
+	</object>
+	<object access-modifier="private" name="ApSourcePar" display-name="ApSourcePar" uuid="565e102f-db01-4dca-bd15-0a74ad87454f" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5">
+		<designed target="Path" value="" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="Location" value="" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath.Value]]>
+			</body>
+		</do-trace>
+		<init target="ParentSource" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApSourcePar2" display-name="ApSourcePar2" uuid="b1bafbae-78d3-44e5-98d9-627ea49e4b02" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5">
+		<designed target="Path" value="" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="Location" value="" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath2.Value]]>
+			</body>
+		</do-trace>
+		<init target="ParentSource" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ParDevPath" display-name="Буква М или А" uuid="0c005005-0a2f-4ebb-9160-2d1f7a1d8d34" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5"/>
+	<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Control.Btn_HHT"/>
+	<object access-modifier="private" name="ParDevPath2" display-name="Автоматический режим" uuid="e2801be7-cc57-4479-bae6-6c77ea67d8b8" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5"/>
+	<init target="ParDevPath2" ver="5" value="HydroUnits.GA_01.Control.Btn_HHG"/>
+	<object access-modifier="private" name="Line_1" display-name="Line_1" uuid="21ce58ed-cf59-4f3b-8961-79ff52365574" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
+		<designed target="X" value="793" ver="5"/>
+		<designed target="Y" value="-47.680303030303037" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="48.266666666666765" ver="5"/>
+		<designed target="Height" value="0.10000000000000001" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="90db472b-7ac0-4d5c-becd-84be79853ffa" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="9f4bda11-34ab-4c80-8b56-03287879e587" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="48.266666666666765" ver="5"/>
+			<designed target="Y" value="0.10000000000000001" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Ellipse_1" display-name="Ellipse_1" uuid="a1b4ca43-e8dd-46cd-81e2-02c27e9b9764" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="836.46868686868697" ver="5"/>
+		<designed target="Y" value="-62.630303030303033" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="30" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1.5" ver="5"/>
+		<designed target="BrushColor" value="0xff000000" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParValue2.Value == true]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuGreen]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[AsokuColor.asokuBlack]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<object access-modifier="private" name="Автомат или руч" display-name="Автомат или руч" uuid="190e4bf5-9aca-41f6-ae37-9bc2df322d29" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="9.5" ver="5"/>
+			<designed target="Y" value="4.625" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="12.5" ver="5"/>
+			<designed target="Height" value="16.750000000000007" ver="5"/>
+			<designed target="Text" value="А" ver="5"/>
+			<designed target="Font" value="Arial,12,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="FontColor" value="0xffffffff" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<init target="FontColor" ver="5" value="0xff000000"/>
+		</object>
+	</object>
+</type>
+

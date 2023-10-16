@@ -1,0 +1,1780 @@
+<type access-modifier="public" name="IECReverseStationInfo" display-name="IECReverseStationInfo" uuid="66e4fa10-0de5-440a-b6d7-cb5456ebdb19" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="700" ver="5"/>
+	<designed target="Height" value="570" ver="5"/>
+	<designed target="RoundingRadius" value="0" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="1" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xff646464" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<object access-modifier="private" name="Text_StationType" display-name="Text_StationType" uuid="4c48e529-c3b4-4c63-bbf0-aa9b517fcdcc" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="10" ver="5"/>
+		<designed target="Y" value="10" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="220" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<designed target="Text" value="Тип: " ver="5"/>
+		<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<body>
+				<![CDATA["Тип: " + _PLC_or_EQM]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Text_StationName" display-name="Text_StationName" uuid="f244eea5-1029-4a6a-85c4-21edd339f579" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="10" ver="5"/>
+		<designed target="Y" value="40" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="220" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<designed target="Text" value="Имя: " ver="5"/>
+		<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<body>
+				<![CDATA["Имя: " + _PLCname]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Text_MainMachine" display-name="Text_MainMachine" uuid="91dbec6b-f3fb-49eb-95c2-1a1174eb49bf" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="10" ver="5"/>
+		<designed target="Y" value="70" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="330" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<designed target="Text" value="Основной сервер" ver="5"/>
+		<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_ReserveMachine" display-name="Text_ReserveMachine" uuid="197d1065-733f-443d-8e39-1b055d90e5cd" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="360" ver="5"/>
+		<designed target="Y" value="70" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="330" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<designed target="Text" value="Резервный сервер" ver="5"/>
+		<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+	</object>
+	<object access-modifier="private" name="_PLCname" display-name="_PLCname" uuid="420c701d-dcfd-4750-960a-7760e97bb7fe" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="_PLC_or_EQM" display-name="_PLC_or_EQM" uuid="20f1cba1-a92e-43b6-9247-2881fac662a6" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Rectangle_MainMashine" display-name="Rectangle_MainMashine" uuid="8e3f64b4-bbff-4c68-9ba3-c83a1c3f143f" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="10" ver="5"/>
+		<designed target="Y" value="100" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="330" ver="5"/>
+		<designed target="Height" value="410" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="ChannelInfo" display-name="ChannelInfo" uuid="14690ed2-73c3-4594-8c5c-d63b17977a78" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="100" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="330" ver="5"/>
+			<designed target="Height" value="310" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="0xffffffff" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="2" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+			<object access-modifier="private" name="Text_TCPConnection" display-name="Text_TCPConnection" uuid="c85f0ea6-b4e2-405f-bb77-e6f48c87699e" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="10" ver="5"/>
+				<designed target="Y" value="40" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="TCP соединение" ver="5"/>
+				<designed target="Width" value="230" ver="5"/>
+				<designed target="Height" value="20" ver="5"/>
+				<designed target="Text" value="TCP соединение: " ver="5"/>
+				<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+				<designed target="FontColor" value="0xffffffff" ver="5"/>
+				<designed target="TextAlignment" value="129" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Text_ChannelNumber" display-name="Text_ChannelNumber" uuid="15762cdf-04d3-4d28-9791-242370248882" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="10" ver="5"/>
+				<designed target="Y" value="10" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="Номер канала" ver="5"/>
+				<designed target="Width" value="230" ver="5"/>
+				<designed target="Height" value="20" ver="5"/>
+				<designed target="Text" value="Номер канала" ver="5"/>
+				<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+				<designed target="FontColor" value="0xffffffff" ver="5"/>
+				<designed target="TextAlignment" value="129" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Text_IECActivated" display-name="Text_IECActivated" uuid="c5a7924e-5dbf-4486-aac6-e2717fa6b4f9" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="10" ver="5"/>
+				<designed target="Y" value="70" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="Активность канала МЭК" ver="5"/>
+				<designed target="Width" value="230" ver="5"/>
+				<designed target="Height" value="20" ver="5"/>
+				<designed target="Text" value="Активность МЭК: " ver="5"/>
+				<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+				<designed target="FontColor" value="0xffffffff" ver="5"/>
+				<designed target="TextAlignment" value="129" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Text_RecvDataFrames" display-name="Text_RecvDataFrames" uuid="fd5811ea-132c-41b2-9bf1-dd1a4fe7cb81" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="10" ver="5"/>
+				<designed target="Y" value="100" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="Получено кадров с данными" ver="5"/>
+				<designed target="Width" value="230" ver="5"/>
+				<designed target="Height" value="20" ver="5"/>
+				<designed target="Text" value="Получено: " ver="5"/>
+				<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+				<designed target="FontColor" value="0xffffffff" ver="5"/>
+				<designed target="TextAlignment" value="129" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Text_SendDataFrames" display-name="Text_SendDataFrames" uuid="4f0c59fa-1bdf-4769-ae63-c14fa296d38a" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="10" ver="5"/>
+				<designed target="Y" value="130" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="Отправлено кадров с данными" ver="5"/>
+				<designed target="Width" value="230" ver="5"/>
+				<designed target="Height" value="20" ver="5"/>
+				<designed target="Text" value="Отправлено: " ver="5"/>
+				<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+				<designed target="FontColor" value="0xffffffff" ver="5"/>
+				<designed target="TextAlignment" value="129" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Text_ConnectedCount" display-name="Text_ConnectedCount" uuid="99527db3-be3d-4a99-939b-82787020885e" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="10" ver="5"/>
+				<designed target="Y" value="160" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="Количество попыток установления соединения" ver="5"/>
+				<designed target="Width" value="230" ver="5"/>
+				<designed target="Height" value="20" ver="5"/>
+				<designed target="Text" value="Количество попыток соединения" ver="5"/>
+				<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+				<designed target="FontColor" value="0xffffffff" ver="5"/>
+				<designed target="TextAlignment" value="129" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Text_ConnectionFailedCount" display-name="Text_ConnectionFailedCount" uuid="a54e5cc7-00ae-429d-adb6-4a053e0aaf9a" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="150" ver="5"/>
+				<designed target="Y" value="220" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="80" ver="5"/>
+				<designed target="Height" value="20" ver="5"/>
+				<designed target="Text" value="неудачных:" ver="5"/>
+				<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+				<designed target="FontColor" value="0xffffffff" ver="5"/>
+				<designed target="TextAlignment" value="130" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Text_DisconnectedCount" display-name="Text_DisconnectedCount" uuid="8e69aef9-8c97-46e7-b361-fc5936035585" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="10" ver="5"/>
+				<designed target="Y" value="250" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="Количество разрывов" ver="5"/>
+				<designed target="Width" value="230" ver="5"/>
+				<designed target="Height" value="20" ver="5"/>
+				<designed target="Text" value="Разрывов: " ver="5"/>
+				<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+				<designed target="FontColor" value="0xffffffff" ver="5"/>
+				<designed target="TextAlignment" value="129" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Text_IECErrorsCount" display-name="Text_IECErrorsCount" uuid="97e33446-1d10-42e3-bc23-5152e2755c1a" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="10" ver="5"/>
+				<designed target="Y" value="280" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="Количество ошибок протокола" ver="5"/>
+				<designed target="Width" value="230" ver="5"/>
+				<designed target="Height" value="20" ver="5"/>
+				<designed target="Text" value="Ошибки протокола:" ver="5"/>
+				<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+				<designed target="FontColor" value="0xffffffff" ver="5"/>
+				<designed target="TextAlignment" value="129" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Text_ConnectionFailedCount_2" display-name="Text_ConnectionFailedCount_2" uuid="8858ecba-e34a-4308-91be-e76fd876c544" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="160" ver="5"/>
+				<designed target="Y" value="190" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="70" ver="5"/>
+				<designed target="Height" value="20" ver="5"/>
+				<designed target="Text" value="удачных:" ver="5"/>
+				<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+				<designed target="FontColor" value="0xffffffff" ver="5"/>
+				<designed target="TextAlignment" value="129" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="937e280d-6dd8-42fb-a887-110045f93824" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+				<designed target="X" value="240" ver="5"/>
+				<designed target="Y" value="10" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="80" ver="5"/>
+				<designed target="Height" value="19" ver="5"/>
+				<designed target="RoundingRadius" value="0" ver="5"/>
+				<designed target="PenColor" value="4278190080" ver="5"/>
+				<designed target="PenStyle" value="1" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="BrushColor" value="0xffffffff" ver="5"/>
+				<designed target="BrushStyle" value="1" ver="5"/>
+				<object access-modifier="private" name="Text_ChannelNumber_1" display-name="Text_ChannelNumber_1" uuid="85dc7462-8768-4c3f-993e-0c16d5370514" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+					<designed target="X" value="0" ver="5"/>
+					<designed target="Y" value="0" ver="5"/>
+					<designed target="ZValue" value="0" ver="5"/>
+					<designed target="Rotation" value="0" ver="5"/>
+					<designed target="Scale" value="1" ver="5"/>
+					<designed target="Visible" value="true" ver="5"/>
+					<designed target="Opacity" value="1" ver="5"/>
+					<designed target="Enabled" value="true" ver="5"/>
+					<designed target="Tooltip" value="" ver="5"/>
+					<designed target="Width" value="78" ver="5"/>
+					<designed target="Height" value="17" ver="5"/>
+					<designed target="Text" value="*****" ver="5"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+					<designed target="FontColor" value="0xff000000" ver="5"/>
+					<designed target="TextAlignment" value="132" ver="5"/>
+					<do-trace access-modifier="private" target="Text" ver="5">
+						<conditional-expr>
+							<condition>
+								<![CDATA[here.Rectangle_MainMashine.ApSource_StationSourceChannel.ConnectionState == 2]]>
+							</condition>
+							<expr>
+								<![CDATA[Rectangle_MainMashine._StationSourceChannel_number]]>
+							</expr>
+						</conditional-expr>
+						<default-expr>
+							<expr>
+								<![CDATA["*****"]]>
+							</expr>
+						</default-expr>
+					</do-trace>
+					<init target="Text" ver="5" value=""/>
+				</object>
+			</object>
+			<object access-modifier="private" name="Rectangle_2" display-name="Rectangle_2" uuid="4c67af38-57bc-4105-8063-7cdf833e854c" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+				<designed target="X" value="240" ver="5"/>
+				<designed target="Y" value="40" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="80" ver="5"/>
+				<designed target="Height" value="19" ver="5"/>
+				<designed target="RoundingRadius" value="0" ver="5"/>
+				<designed target="PenColor" value="4278190080" ver="5"/>
+				<designed target="PenStyle" value="1" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="BrushColor" value="0xffffffff" ver="5"/>
+				<designed target="BrushStyle" value="1" ver="5"/>
+				<object access-modifier="private" name="Text_TCPConnection_1" display-name="Text_TCPConnection_1" uuid="ccfc8313-57b1-420a-8b73-e3a047db9736" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+					<designed target="X" value="0" ver="5"/>
+					<designed target="Y" value="0" ver="5"/>
+					<designed target="ZValue" value="0" ver="5"/>
+					<designed target="Rotation" value="0" ver="5"/>
+					<designed target="Scale" value="1" ver="5"/>
+					<designed target="Visible" value="true" ver="5"/>
+					<designed target="Opacity" value="1" ver="5"/>
+					<designed target="Enabled" value="true" ver="5"/>
+					<designed target="Tooltip" value="" ver="5"/>
+					<designed target="Width" value="78" ver="5"/>
+					<designed target="Height" value="17" ver="5"/>
+					<designed target="Text" value="*****" ver="5"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+					<designed target="FontColor" value="0xff000000" ver="5"/>
+					<designed target="TextAlignment" value="132" ver="5"/>
+					<do-trace access-modifier="private" target="Text" ver="5">
+						<body>
+							<![CDATA[(here.Rectangle_MainMashine.ApSource_StationSourceChannel.ConnectionState == 2)?(Rectangle_MainMashine.Ap_TCPConnection?"есть":"нет"):("*****")]]>
+						</body>
+					</do-trace>
+				</object>
+				<do-trace access-modifier="private" target="BrushColor" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[Rectangle_MainMashine.Ap_TCPConnection && (Rectangle_MainMashine.ApSource_StationSourceChannel.ConnectionState==2)]]>
+						</condition>
+						<expr>
+							<![CDATA[0xff00ff00]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[!Rectangle_MainMashine.Ap_TCPConnection || (Rectangle_MainMashine.ApSource_StationSourceChannel.ConnectionState != 2)]]>
+						</condition>
+						<expr>
+							<![CDATA[0xffffff7f]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+			</object>
+			<object access-modifier="private" name="Rectangle_3" display-name="Rectangle_3" uuid="16b54a22-a348-4a55-9469-84c48889018c" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+				<designed target="X" value="240" ver="5"/>
+				<designed target="Y" value="70" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="80" ver="5"/>
+				<designed target="Height" value="19" ver="5"/>
+				<designed target="RoundingRadius" value="0" ver="5"/>
+				<designed target="PenColor" value="4278190080" ver="5"/>
+				<designed target="PenStyle" value="1" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="BrushColor" value="0xffffffff" ver="5"/>
+				<designed target="BrushStyle" value="1" ver="5"/>
+				<object access-modifier="private" name="Text_IECActivated_1" display-name="Text_IECActivated_1" uuid="649ad9d1-a210-4401-b381-984576d49db6" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+					<designed target="X" value="0" ver="5"/>
+					<designed target="Y" value="0" ver="5"/>
+					<designed target="ZValue" value="0" ver="5"/>
+					<designed target="Rotation" value="0" ver="5"/>
+					<designed target="Scale" value="1" ver="5"/>
+					<designed target="Visible" value="true" ver="5"/>
+					<designed target="Opacity" value="1" ver="5"/>
+					<designed target="Enabled" value="true" ver="5"/>
+					<designed target="Tooltip" value="" ver="5"/>
+					<designed target="Width" value="78" ver="5"/>
+					<designed target="Height" value="17" ver="5"/>
+					<designed target="Text" value="*****" ver="5"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+					<designed target="FontColor" value="0xff000000" ver="5"/>
+					<designed target="TextAlignment" value="132" ver="5"/>
+					<do-trace access-modifier="private" target="Text" ver="5">
+						<body>
+							<![CDATA[(here.Rectangle_MainMashine.ApSource_StationSourceChannel.ConnectionState == 2)?(Rectangle_MainMashine.Ap_IECActivated?"активный":"не активный"):("*****")]]>
+						</body>
+					</do-trace>
+				</object>
+				<do-trace access-modifier="private" target="BrushColor" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[Rectangle_MainMashine.Ap_IECActivated && (Rectangle_MainMashine.ApSource_StationSourceChannel.ConnectionState==2)]]>
+						</condition>
+						<expr>
+							<![CDATA[0xff00ff00]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[!Rectangle_MainMashine.Ap_IECActivated || (Rectangle_MainMashine.ApSource_StationSourceChannel.ConnectionState!=2)]]>
+						</condition>
+						<expr>
+							<![CDATA[0xffffff7f]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+			</object>
+			<object access-modifier="private" name="Rectangle_4" display-name="Rectangle_4" uuid="d379b9e5-55a0-4be4-92b0-041368f8c47d" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+				<designed target="X" value="240" ver="5"/>
+				<designed target="Y" value="100" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="80" ver="5"/>
+				<designed target="Height" value="19" ver="5"/>
+				<designed target="RoundingRadius" value="0" ver="5"/>
+				<designed target="PenColor" value="4278190080" ver="5"/>
+				<designed target="PenStyle" value="1" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="BrushColor" value="0xffffffff" ver="5"/>
+				<designed target="BrushStyle" value="1" ver="5"/>
+				<object access-modifier="private" name="Text_RecvDataFrames_1" display-name="Text_RecvDataFrames_1" uuid="599c8fe7-4499-4f67-a0d8-d0d507c14c11" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+					<designed target="X" value="0" ver="5"/>
+					<designed target="Y" value="0" ver="5"/>
+					<designed target="ZValue" value="0" ver="5"/>
+					<designed target="Rotation" value="0" ver="5"/>
+					<designed target="Scale" value="1" ver="5"/>
+					<designed target="Visible" value="true" ver="5"/>
+					<designed target="Opacity" value="1" ver="5"/>
+					<designed target="Enabled" value="true" ver="5"/>
+					<designed target="Tooltip" value="" ver="5"/>
+					<designed target="Width" value="78" ver="5"/>
+					<designed target="Height" value="17" ver="5"/>
+					<designed target="Text" value="*****" ver="5"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+					<designed target="FontColor" value="0xff000000" ver="5"/>
+					<designed target="TextAlignment" value="132" ver="5"/>
+					<do-trace access-modifier="private" target="Text" ver="5">
+						<body>
+							<![CDATA[(here.Rectangle_MainMashine.ApSource_StationSourceChannel.ConnectionState == 2)?Rectangle_MainMashine.Ap_RecvDataFrames.ValueAsString:"*****"]]>
+						</body>
+					</do-trace>
+				</object>
+			</object>
+			<object access-modifier="private" name="Rectangle_5" display-name="Rectangle_5" uuid="adc44d4e-c335-47dc-b5cd-72731829c2bb" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+				<designed target="X" value="240" ver="5"/>
+				<designed target="Y" value="130" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="80" ver="5"/>
+				<designed target="Height" value="19" ver="5"/>
+				<designed target="RoundingRadius" value="0" ver="5"/>
+				<designed target="PenColor" value="4278190080" ver="5"/>
+				<designed target="PenStyle" value="1" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="BrushColor" value="0xffffffff" ver="5"/>
+				<designed target="BrushStyle" value="1" ver="5"/>
+				<object access-modifier="private" name="Text_SendDataFrames_1" display-name="Text_SendDataFrames_1" uuid="c1c114bb-7bc1-4193-acdd-58ce9798b1f1" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+					<designed target="X" value="0" ver="5"/>
+					<designed target="Y" value="0" ver="5"/>
+					<designed target="ZValue" value="0" ver="5"/>
+					<designed target="Rotation" value="0" ver="5"/>
+					<designed target="Scale" value="1" ver="5"/>
+					<designed target="Visible" value="true" ver="5"/>
+					<designed target="Opacity" value="1" ver="5"/>
+					<designed target="Enabled" value="true" ver="5"/>
+					<designed target="Tooltip" value="" ver="5"/>
+					<designed target="Width" value="78" ver="5"/>
+					<designed target="Height" value="17" ver="5"/>
+					<designed target="Text" value="*****" ver="5"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+					<designed target="FontColor" value="0xff000000" ver="5"/>
+					<designed target="TextAlignment" value="132" ver="5"/>
+					<do-trace access-modifier="private" target="Text" ver="5">
+						<body>
+							<![CDATA[(here.Rectangle_MainMashine.ApSource_StationSourceChannel.ConnectionState == 2)?Rectangle_MainMashine.Ap_SendDataFrames.ValueAsString:"*****"]]>
+						</body>
+					</do-trace>
+				</object>
+			</object>
+			<object access-modifier="private" name="Rectangle_6" display-name="Rectangle_6" uuid="1bc5c5ec-ad5c-4ba7-b900-2151ca6a4a49" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+				<designed target="X" value="240" ver="5"/>
+				<designed target="Y" value="190" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="80" ver="5"/>
+				<designed target="Height" value="19" ver="5"/>
+				<designed target="RoundingRadius" value="0" ver="5"/>
+				<designed target="PenColor" value="4278190080" ver="5"/>
+				<designed target="PenStyle" value="1" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="BrushColor" value="0xffffffff" ver="5"/>
+				<designed target="BrushStyle" value="1" ver="5"/>
+				<object access-modifier="private" name="Text_ConnectedCount_1" display-name="Text_ConnectedCount_1" uuid="7cfc6c57-221b-48fb-be39-aae02b5ef023" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+					<designed target="X" value="0" ver="5"/>
+					<designed target="Y" value="0" ver="5"/>
+					<designed target="ZValue" value="0" ver="5"/>
+					<designed target="Rotation" value="0" ver="5"/>
+					<designed target="Scale" value="1" ver="5"/>
+					<designed target="Visible" value="true" ver="5"/>
+					<designed target="Opacity" value="1" ver="5"/>
+					<designed target="Enabled" value="true" ver="5"/>
+					<designed target="Tooltip" value="" ver="5"/>
+					<designed target="Width" value="78" ver="5"/>
+					<designed target="Height" value="17" ver="5"/>
+					<designed target="Text" value="*****" ver="5"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+					<designed target="FontColor" value="0xff000000" ver="5"/>
+					<designed target="TextAlignment" value="132" ver="5"/>
+					<do-trace access-modifier="private" target="Text" ver="5">
+						<body>
+							<![CDATA[(here.Rectangle_MainMashine.ApSource_StationSourceChannel.ConnectionState == 2)?Rectangle_MainMashine.Ap_ConnectedCount.ValueAsString:"*****"]]>
+						</body>
+					</do-trace>
+				</object>
+			</object>
+			<object access-modifier="private" name="Rectangle_7" display-name="Rectangle_7" uuid="b580f38b-bbff-4c65-89c4-56267374f8ba" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+				<designed target="X" value="240" ver="5"/>
+				<designed target="Y" value="220" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="80" ver="5"/>
+				<designed target="Height" value="19" ver="5"/>
+				<designed target="RoundingRadius" value="0" ver="5"/>
+				<designed target="PenColor" value="4278190080" ver="5"/>
+				<designed target="PenStyle" value="1" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="BrushColor" value="0xffffffff" ver="5"/>
+				<designed target="BrushStyle" value="1" ver="5"/>
+				<object access-modifier="private" name="Text_ConnectionFailedCount_1" display-name="Text_ConnectionFailedCount_1" uuid="d4973616-6502-460f-b8e2-45bb946ca20a" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+					<designed target="X" value="0" ver="5"/>
+					<designed target="Y" value="0" ver="5"/>
+					<designed target="ZValue" value="0" ver="5"/>
+					<designed target="Rotation" value="0" ver="5"/>
+					<designed target="Scale" value="1" ver="5"/>
+					<designed target="Visible" value="true" ver="5"/>
+					<designed target="Opacity" value="1" ver="5"/>
+					<designed target="Enabled" value="true" ver="5"/>
+					<designed target="Tooltip" value="" ver="5"/>
+					<designed target="Width" value="78" ver="5"/>
+					<designed target="Height" value="17" ver="5"/>
+					<designed target="Text" value="*****" ver="5"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+					<designed target="FontColor" value="0xff000000" ver="5"/>
+					<designed target="TextAlignment" value="132" ver="5"/>
+					<do-trace access-modifier="private" target="Text" ver="5">
+						<body>
+							<![CDATA[(here.Rectangle_MainMashine.ApSource_StationSourceChannel.ConnectionState == 2)?Rectangle_MainMashine.Ap_ConnectionFailedCount.ValueAsString:"*****"]]>
+						</body>
+					</do-trace>
+				</object>
+			</object>
+			<object access-modifier="private" name="Rectangle_8" display-name="Rectangle_8" uuid="3bdb40a9-a2a8-41a6-9f94-5fdee0bb081c" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+				<designed target="X" value="240" ver="5"/>
+				<designed target="Y" value="250" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="80" ver="5"/>
+				<designed target="Height" value="19" ver="5"/>
+				<designed target="RoundingRadius" value="0" ver="5"/>
+				<designed target="PenColor" value="4278190080" ver="5"/>
+				<designed target="PenStyle" value="1" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="BrushColor" value="0xffffffff" ver="5"/>
+				<designed target="BrushStyle" value="1" ver="5"/>
+				<object access-modifier="private" name="Text_DisconnectedCount_1" display-name="Text_DisconnectedCount_1" uuid="3ef98fec-e75c-4e0d-8634-2d2b22d29778" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+					<designed target="X" value="0" ver="5"/>
+					<designed target="Y" value="0" ver="5"/>
+					<designed target="ZValue" value="0" ver="5"/>
+					<designed target="Rotation" value="0" ver="5"/>
+					<designed target="Scale" value="1" ver="5"/>
+					<designed target="Visible" value="true" ver="5"/>
+					<designed target="Opacity" value="1" ver="5"/>
+					<designed target="Enabled" value="true" ver="5"/>
+					<designed target="Tooltip" value="" ver="5"/>
+					<designed target="Width" value="78" ver="5"/>
+					<designed target="Height" value="17" ver="5"/>
+					<designed target="Text" value="*****" ver="5"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+					<designed target="FontColor" value="0xff000000" ver="5"/>
+					<designed target="TextAlignment" value="132" ver="5"/>
+					<do-trace access-modifier="private" target="Text" ver="5">
+						<body>
+							<![CDATA[(here.Rectangle_MainMashine.ApSource_StationSourceChannel.ConnectionState == 2)?Rectangle_MainMashine.Ap_DisconnectedCount.ValueAsString:"*****"]]>
+						</body>
+					</do-trace>
+				</object>
+			</object>
+			<object access-modifier="private" name="Rectangle_9" display-name="Rectangle_9" uuid="896b8486-a073-4845-acaf-d67e0751792f" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+				<designed target="X" value="240" ver="5"/>
+				<designed target="Y" value="280" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="80" ver="5"/>
+				<designed target="Height" value="19" ver="5"/>
+				<designed target="RoundingRadius" value="0" ver="5"/>
+				<designed target="PenColor" value="4278190080" ver="5"/>
+				<designed target="PenStyle" value="1" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="BrushColor" value="0xffffffff" ver="5"/>
+				<designed target="BrushStyle" value="1" ver="5"/>
+				<object access-modifier="private" name="Text_IECErrorsCount_1" display-name="Text_IECErrorsCount_1" uuid="54bda778-b79d-4de4-950d-f663167276e2" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+					<designed target="X" value="0" ver="5"/>
+					<designed target="Y" value="0" ver="5"/>
+					<designed target="ZValue" value="0" ver="5"/>
+					<designed target="Rotation" value="0" ver="5"/>
+					<designed target="Scale" value="1" ver="5"/>
+					<designed target="Visible" value="true" ver="5"/>
+					<designed target="Opacity" value="1" ver="5"/>
+					<designed target="Enabled" value="true" ver="5"/>
+					<designed target="Tooltip" value="" ver="5"/>
+					<designed target="Width" value="78" ver="5"/>
+					<designed target="Height" value="17" ver="5"/>
+					<designed target="Text" value="*****" ver="5"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+					<designed target="FontColor" value="0xff000000" ver="5"/>
+					<designed target="TextAlignment" value="132" ver="5"/>
+					<do-trace access-modifier="private" target="Text" ver="5">
+						<body>
+							<![CDATA[(here.Rectangle_MainMashine.ApSource_StationSourceChannel.ConnectionState == 2)?Rectangle_MainMashine.Ap_IECErrorsCount.ValueAsString:"*****"]]>
+						</body>
+					</do-trace>
+				</object>
+			</object>
+		</object>
+		<object access-modifier="private" name="Channel_1" display-name="Channel_1" uuid="c9d18473-9745-44c9-9576-a48001b4a295" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="80" ver="5"/>
+			<designed target="Height" value="90" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="0xffffffff" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="2" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+			<object access-modifier="private" name="Ellipse_Channel" display-name="Ellipse_Channel" uuid="55c11abb-feb2-490d-a511-a4931d3da9b2" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+				<designed target="X" value="9.54285714285714" ver="5"/>
+				<designed target="Y" value="30" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="60" ver="5"/>
+				<designed target="Height" value="50" ver="5"/>
+				<designed target="PenColor" value="4278190080" ver="5"/>
+				<designed target="PenStyle" value="1" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="BrushColor" value="0xffbababa" ver="5"/>
+				<designed target="BrushStyle" value="1" ver="5"/>
+				<designed target="PieAngle" value="360" ver="5"/>
+				<designed target="PieAngleStart" value="360" ver="5"/>
+				<designed target="HoleSize" value="0" ver="5"/>
+				<do-trace access-modifier="private" target="BrushColor" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[Rectangle_MainMashine.Ap_IECActivated && Rectangle_MainMashine.Ap_TCPConnection && (Rectangle_MainMashine.ApSource_StationSourceChannel.ConnectionState == 2)]]>
+						</condition>
+						<expr>
+							<![CDATA[0xff00ff00]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[Rectangle_MainMashine.Ap_TCPConnection && !Rectangle_MainMashine.Ap_IECActivated && (Rectangle_MainMashine.ApSource_StationSourceChannel.ConnectionState == 2)]]>
+						</condition>
+						<expr>
+							<![CDATA[0xff009e00]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[!Rectangle_MainMashine.Ap_TCPConnection && !Rectangle_MainMashine.Ap_IECActivated || (Rectangle_MainMashine.ApSource_StationSourceChannel.ConnectionState != 2)]]>
+						</condition>
+						<expr>
+							<![CDATA[0xffbababa]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+			</object>
+			<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="c0cc6142-fdde-44e7-bea5-8aef986939c0" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="0" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="80" ver="5"/>
+				<designed target="Height" value="30" ver="5"/>
+				<designed target="Text" value="Канал №" ver="5"/>
+				<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+				<designed target="FontColor" value="0xffffffff" ver="5"/>
+				<designed target="TextAlignment" value="132" ver="5"/>
+				<do-trace access-modifier="private" target="Text" ver="5">
+					<body>
+						<![CDATA["Канал №" + Rectangle_MainMashine._StationSourceChannel_number]]>
+					</body>
+				</do-trace>
+			</object>
+		</object>
+		<object access-modifier="private" name="Ap_TCPConnection" display-name="Ap_TCPConnection" uuid="2a81b5aa-6679-4a1e-be23-81f3c0f0bdc8" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Path" ver="5" value="TCPConnected"/>
+			<init target="Source" ver="5" ref="Rectangle_MainMashine.ApSource_StationSourceChannel"/>
+		</object>
+		<object access-modifier="private" name="Ap_IECActivated" display-name="Ap_IECActivated" uuid="a994cde8-1b00-4b27-b6e0-1ba351895f59" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Path" ver="5" value="IECActivated"/>
+			<init target="Source" ver="5" ref="Rectangle_MainMashine.ApSource_StationSourceChannel"/>
+		</object>
+		<object access-modifier="private" name="Ap_RecvDataFrames" display-name="Ap_RecvDataFrames" uuid="2ba784ff-3d74-4350-8bba-a0b55338883f" base-type="ApItemUInt4" base-type-id="322ce770-6c7b-49bc-9cd6-a367ca5b4627" ver="5" description="" cardinal="1">
+			<init target="Path" ver="5" value="RecvDataFrames"/>
+			<init target="Source" ver="5" ref="Rectangle_MainMashine.ApSource_StationSourceChannel"/>
+		</object>
+		<object access-modifier="private" name="Ap_SendDataFrames" display-name="Ap_SendDataFrames" uuid="f527b0a2-7302-4b9b-9567-a1584436bebc" base-type="ApItemUInt4" base-type-id="322ce770-6c7b-49bc-9cd6-a367ca5b4627" ver="5" description="" cardinal="1">
+			<init target="Path" ver="5" value="SendDataFrames"/>
+			<init target="Source" ver="5" ref="Rectangle_MainMashine.ApSource_StationSourceChannel"/>
+		</object>
+		<object access-modifier="private" name="Ap_ConnectedCount" display-name="Ap_ConnectedCount" uuid="e9b24b4e-3bb6-466a-bf24-dec3631d5857" base-type="ApItemUInt4" base-type-id="322ce770-6c7b-49bc-9cd6-a367ca5b4627" ver="5" description="" cardinal="1">
+			<init target="Path" ver="5" value="ConnectedCount"/>
+			<init target="Source" ver="5" ref="Rectangle_MainMashine.ApSource_StationSourceChannel"/>
+		</object>
+		<object access-modifier="private" name="Ap_ConnectionFailedCount" display-name="Ap_ConnectionFailedCount" uuid="a3563af6-b1bb-40db-9601-f2e6e37ee83a" base-type="ApItemUInt4" base-type-id="322ce770-6c7b-49bc-9cd6-a367ca5b4627" ver="5" description="" cardinal="1">
+			<init target="Path" ver="5" value="ConnectionFailedCount"/>
+			<init target="Source" ver="5" ref="Rectangle_MainMashine.ApSource_StationSourceChannel"/>
+		</object>
+		<object access-modifier="private" name="Ap_DisconnectedCount" display-name="Ap_DisconnectedCount" uuid="7bcffcc0-b166-4097-8a09-e12d46d3097d" base-type="ApItemUInt4" base-type-id="322ce770-6c7b-49bc-9cd6-a367ca5b4627" ver="5" description="" cardinal="1">
+			<init target="Path" ver="5" value="DisconnectedCount"/>
+			<init target="Source" ver="5" ref="Rectangle_MainMashine.ApSource_StationSourceChannel"/>
+		</object>
+		<object access-modifier="private" name="Ap_IECErrorsCount" display-name="Ap_IECErrorsCount" uuid="190cfa83-fa80-472c-8a67-da55eb50239d" base-type="ApItemUInt4" base-type-id="322ce770-6c7b-49bc-9cd6-a367ca5b4627" ver="5" description="" cardinal="1">
+			<init target="Path" ver="5" value="IECErrorsCount"/>
+			<init target="Source" ver="5" ref="Rectangle_MainMashine.ApSource_StationSourceChannel"/>
+		</object>
+		<object access-modifier="private" name="ApSource_StationSourceChannel" display-name="ApSource_StationSourceChannel" uuid="4aecf6be-72f7-4b54-9c09-5824c9a33e16" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+			<designed target="Location" value="" ver="5"/>
+			<designed target="Port" value="4388" ver="5"/>
+			<designed target="HistoryPort" value="4950" ver="5"/>
+			<designed target="Path" value="" ver="5"/>
+			<designed target="Active" value="true" ver="5"/>
+			<designed target="ReAdvise" value="0" ver="5"/>
+			<designed target="ClientDisplayName" value="HMI" ver="5"/>
+			<designed target="ClientId" value="HMI" ver="5"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA["Service.Modules.Iec104Master" + _IEC104MasterNumber + ".Stations.Station " + _Station_number +  ".Sources.Source " + _StationSource_number +  ".Channels.Channel " + _StationSourceChannel_number]]>
+				</body>
+			</do-trace>
+			<init target="ParentSource" ver="5">
+				<object access-modifier="private" uuid="17b5dd95-4fc7-4997-be6e-1d12d2edaf16" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5">
+					<designed target="Location" value="192.168.21.211" ver="5"/>
+					<designed target="Port" value="4388" ver="5"/>
+					<designed target="HistoryPort" value="4950" ver="5"/>
+					<designed target="Path" value="" ver="5"/>
+					<designed target="Active" value="true" ver="5"/>
+					<designed target="ReAdvise" value="0" ver="5"/>
+					<designed target="ClientDisplayName" value="HMI" ver="5"/>
+					<designed target="ClientId" value="HMI" ver="5"/>
+				</object>
+			</init>
+		</object>
+		<object access-modifier="private" name="_Station_number" display-name="_Station_number" uuid="1d0c8eb2-23ea-42ee-969a-1b55d6b7404e" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="_StationSource_number" display-name="_StationSource_number" uuid="af6cbcc7-9204-41cf-8746-8c9ea5c8b0a8" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="_StationSourceChannel_number" display-name="_StationSourceChannel_number" uuid="1919cfe9-f66b-493b-ac52-842ed98ffbe3" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+		<do-trace access-modifier="private" target="_Station_number" ver="5">
+			<body>
+				<![CDATA[here._Station_number]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="_StationSource_number" ver="5">
+			<body>
+				<![CDATA[here._StationSource_number]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="_StationSourceChannel_number" ver="5">
+			<body>
+				<![CDATA[here._StationSourceChannel_number]]>
+			</body>
+		</do-trace>
+		<object access-modifier="private" name="Text_ChannelNumber" display-name="Text_ChannelNumber" uuid="b2b7f4af-d731-458e-85e8-67e743c558a2" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="110" ver="5"/>
+			<designed target="Y" value="30" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="190" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="Нет соединения с сервером" ver="5"/>
+			<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="FontColor" value="0xffffffff" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+			<do-trace access-modifier="private" target="Visible" ver="5">
+				<conditional-expr>
+					<condition>
+						<![CDATA[(Rectangle_MainMashine.ApSource_StationSourceChannel.ConnectionState != 2)]]>
+					</condition>
+					<expr>
+						<![CDATA[true]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[false]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+	</object>
+	<object access-modifier="private" name="Rectangle_ReserveMashine" display-name="Rectangle_ReserveMashine" uuid="61ae77b9-1eef-4efa-883c-b8d721975257" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="360" ver="5"/>
+		<designed target="Y" value="100" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="330" ver="5"/>
+		<designed target="Height" value="410" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="ChannelInfo" display-name="ChannelInfo" uuid="7f70af86-7a4f-4079-b7ca-18bf8b1ac4e0" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="100" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="330" ver="5"/>
+			<designed target="Height" value="310" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="0xffffffff" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="2" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+			<object access-modifier="private" name="Text_TCPConnection" display-name="Text_TCPConnection" uuid="a176d92e-5515-4b17-91cd-23c46d017053" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="10" ver="5"/>
+				<designed target="Y" value="40" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="TCP соединение" ver="5"/>
+				<designed target="Width" value="230" ver="5"/>
+				<designed target="Height" value="20" ver="5"/>
+				<designed target="Text" value="TCP соединение: " ver="5"/>
+				<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+				<designed target="FontColor" value="0xffffffff" ver="5"/>
+				<designed target="TextAlignment" value="129" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Text_ChannelNumber" display-name="Text_ChannelNumber" uuid="558505dd-376f-4e31-ba7d-8ab2bfe0e013" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="10" ver="5"/>
+				<designed target="Y" value="10" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="Номер канала" ver="5"/>
+				<designed target="Width" value="230" ver="5"/>
+				<designed target="Height" value="20" ver="5"/>
+				<designed target="Text" value="Номер канала" ver="5"/>
+				<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+				<designed target="FontColor" value="0xffffffff" ver="5"/>
+				<designed target="TextAlignment" value="129" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Text_IECActivated" display-name="Text_IECActivated" uuid="6290de62-b161-42d0-9154-7248b1bbc14c" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="10" ver="5"/>
+				<designed target="Y" value="70" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="Активность канала МЭК" ver="5"/>
+				<designed target="Width" value="230" ver="5"/>
+				<designed target="Height" value="20" ver="5"/>
+				<designed target="Text" value="Активность МЭК: " ver="5"/>
+				<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+				<designed target="FontColor" value="0xffffffff" ver="5"/>
+				<designed target="TextAlignment" value="129" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Text_RecvDataFrames" display-name="Text_RecvDataFrames" uuid="dcab5dda-abb9-46d8-b0e3-484b9ecc1595" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="10" ver="5"/>
+				<designed target="Y" value="100" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="Получено кадров с данными" ver="5"/>
+				<designed target="Width" value="230" ver="5"/>
+				<designed target="Height" value="20" ver="5"/>
+				<designed target="Text" value="Получено: " ver="5"/>
+				<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+				<designed target="FontColor" value="0xffffffff" ver="5"/>
+				<designed target="TextAlignment" value="129" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Text_SendDataFrames" display-name="Text_SendDataFrames" uuid="d036f871-57fb-4a3d-96b1-50752f67f93e" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="10" ver="5"/>
+				<designed target="Y" value="130" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="Отправлено кадров с данными" ver="5"/>
+				<designed target="Width" value="230" ver="5"/>
+				<designed target="Height" value="20" ver="5"/>
+				<designed target="Text" value="Отправлено: " ver="5"/>
+				<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+				<designed target="FontColor" value="0xffffffff" ver="5"/>
+				<designed target="TextAlignment" value="129" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Text_ConnectedCount" display-name="Text_ConnectedCount" uuid="1ddd3bf3-586d-4739-8644-171ccb6cb12e" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="10" ver="5"/>
+				<designed target="Y" value="160" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="Количество попыток установления соединения" ver="5"/>
+				<designed target="Width" value="230" ver="5"/>
+				<designed target="Height" value="20" ver="5"/>
+				<designed target="Text" value="Количество попыток соединения" ver="5"/>
+				<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+				<designed target="FontColor" value="0xffffffff" ver="5"/>
+				<designed target="TextAlignment" value="129" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Text_ConnectionFailedCount" display-name="Text_ConnectionFailedCount" uuid="c4c0b842-3b84-41a4-aaec-c782eb1ec412" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="150" ver="5"/>
+				<designed target="Y" value="220" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="80" ver="5"/>
+				<designed target="Height" value="20" ver="5"/>
+				<designed target="Text" value="неудачных:" ver="5"/>
+				<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+				<designed target="FontColor" value="0xffffffff" ver="5"/>
+				<designed target="TextAlignment" value="130" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Text_DisconnectedCount" display-name="Text_DisconnectedCount" uuid="604c8d3b-aac5-41e6-95af-1ca71dc3eff7" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="10" ver="5"/>
+				<designed target="Y" value="250" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="Количество разрывов" ver="5"/>
+				<designed target="Width" value="230" ver="5"/>
+				<designed target="Height" value="20" ver="5"/>
+				<designed target="Text" value="Разрывов: " ver="5"/>
+				<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+				<designed target="FontColor" value="0xffffffff" ver="5"/>
+				<designed target="TextAlignment" value="129" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Text_IECErrorsCount" display-name="Text_IECErrorsCount" uuid="388c5e7c-63ff-457b-86d7-8967d01f49b9" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="10" ver="5"/>
+				<designed target="Y" value="280" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="Количество ошибок протокола" ver="5"/>
+				<designed target="Width" value="230" ver="5"/>
+				<designed target="Height" value="20" ver="5"/>
+				<designed target="Text" value="Ошибки протокола:" ver="5"/>
+				<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+				<designed target="FontColor" value="0xffffffff" ver="5"/>
+				<designed target="TextAlignment" value="129" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Text_ConnectionFailedCount_2" display-name="Text_ConnectionFailedCount_2" uuid="56ea83a2-8479-4c70-a373-c1da4329f154" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="160" ver="5"/>
+				<designed target="Y" value="190" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="70" ver="5"/>
+				<designed target="Height" value="20" ver="5"/>
+				<designed target="Text" value="удачных:" ver="5"/>
+				<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+				<designed target="FontColor" value="0xffffffff" ver="5"/>
+				<designed target="TextAlignment" value="129" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="52b01089-a6f4-4f72-9237-7a741f40aa44" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+				<designed target="X" value="240" ver="5"/>
+				<designed target="Y" value="10" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="80" ver="5"/>
+				<designed target="Height" value="19" ver="5"/>
+				<designed target="RoundingRadius" value="0" ver="5"/>
+				<designed target="PenColor" value="4278190080" ver="5"/>
+				<designed target="PenStyle" value="1" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="BrushColor" value="0xffffffff" ver="5"/>
+				<designed target="BrushStyle" value="1" ver="5"/>
+				<object access-modifier="private" name="Text_ChannelNumber_1" display-name="Text_ChannelNumber_1" uuid="caaa7be1-de22-43c6-aca7-55bed8784328" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+					<designed target="X" value="0" ver="5"/>
+					<designed target="Y" value="0" ver="5"/>
+					<designed target="ZValue" value="0" ver="5"/>
+					<designed target="Rotation" value="0" ver="5"/>
+					<designed target="Scale" value="1" ver="5"/>
+					<designed target="Visible" value="true" ver="5"/>
+					<designed target="Opacity" value="1" ver="5"/>
+					<designed target="Enabled" value="true" ver="5"/>
+					<designed target="Tooltip" value="" ver="5"/>
+					<designed target="Width" value="78" ver="5"/>
+					<designed target="Height" value="17" ver="5"/>
+					<designed target="Text" value="*****" ver="5"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+					<designed target="FontColor" value="0xff000000" ver="5"/>
+					<designed target="TextAlignment" value="132" ver="5"/>
+					<do-trace access-modifier="private" target="Text" ver="5">
+						<body>
+							<![CDATA[(Rectangle_ReserveMashine.ApSource_ReverseStationSourceChannel.ConnectionState==2)?Rectangle_ReserveMashine._StationSourceChannel_number:"*****"]]>
+						</body>
+					</do-trace>
+				</object>
+			</object>
+			<object access-modifier="private" name="Rectangle_2" display-name="Rectangle_2" uuid="4d12b331-891a-4acb-997f-459b971b40df" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+				<designed target="X" value="240" ver="5"/>
+				<designed target="Y" value="40" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="80" ver="5"/>
+				<designed target="Height" value="19" ver="5"/>
+				<designed target="RoundingRadius" value="0" ver="5"/>
+				<designed target="PenColor" value="4278190080" ver="5"/>
+				<designed target="PenStyle" value="1" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="BrushColor" value="0xffffffff" ver="5"/>
+				<designed target="BrushStyle" value="1" ver="5"/>
+				<object access-modifier="private" name="Text_TCPConnection_1" display-name="Text_TCPConnection_1" uuid="25bfe261-0fb9-469a-8822-10c7e8df2df7" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+					<designed target="X" value="0" ver="5"/>
+					<designed target="Y" value="0" ver="5"/>
+					<designed target="ZValue" value="0" ver="5"/>
+					<designed target="Rotation" value="0" ver="5"/>
+					<designed target="Scale" value="1" ver="5"/>
+					<designed target="Visible" value="true" ver="5"/>
+					<designed target="Opacity" value="1" ver="5"/>
+					<designed target="Enabled" value="true" ver="5"/>
+					<designed target="Tooltip" value="" ver="5"/>
+					<designed target="Width" value="78" ver="5"/>
+					<designed target="Height" value="17" ver="5"/>
+					<designed target="Text" value="*****" ver="5"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+					<designed target="FontColor" value="0xff000000" ver="5"/>
+					<designed target="TextAlignment" value="132" ver="5"/>
+					<do-trace access-modifier="private" target="Text" ver="5">
+						<body>
+							<![CDATA[(Rectangle_ReserveMashine.ApSource_ReverseStationSourceChannel.ConnectionState==2)?(Rectangle_ReserveMashine.Ap_TCPConnection?"есть":"нет"):"*****"]]>
+						</body>
+					</do-trace>
+				</object>
+				<do-trace access-modifier="private" target="BrushColor" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[Rectangle_ReserveMashine.Ap_TCPConnection && (Rectangle_ReserveMashine.ApSource_ReverseStationSourceChannel.ConnectionState==2)]]>
+						</condition>
+						<expr>
+							<![CDATA[0xff00ff00]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[!Rectangle_ReserveMashine.Ap_TCPConnection || (Rectangle_ReserveMashine.ApSource_ReverseStationSourceChannel.ConnectionState!=2)]]>
+						</condition>
+						<expr>
+							<![CDATA[0xffffff7f]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+			</object>
+			<object access-modifier="private" name="Rectangle_3" display-name="Rectangle_3" uuid="c94867cb-630c-47e2-be29-eff9c9c03331" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+				<designed target="X" value="240" ver="5"/>
+				<designed target="Y" value="70" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="80" ver="5"/>
+				<designed target="Height" value="19" ver="5"/>
+				<designed target="RoundingRadius" value="0" ver="5"/>
+				<designed target="PenColor" value="4278190080" ver="5"/>
+				<designed target="PenStyle" value="1" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="BrushColor" value="0xffffffff" ver="5"/>
+				<designed target="BrushStyle" value="1" ver="5"/>
+				<object access-modifier="private" name="Text_IECActivated_1" display-name="Text_IECActivated_1" uuid="31a34ff4-46d3-469f-8be5-4d6765c916ce" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+					<designed target="X" value="0" ver="5"/>
+					<designed target="Y" value="0" ver="5"/>
+					<designed target="ZValue" value="0" ver="5"/>
+					<designed target="Rotation" value="0" ver="5"/>
+					<designed target="Scale" value="1" ver="5"/>
+					<designed target="Visible" value="true" ver="5"/>
+					<designed target="Opacity" value="1" ver="5"/>
+					<designed target="Enabled" value="true" ver="5"/>
+					<designed target="Tooltip" value="" ver="5"/>
+					<designed target="Width" value="78" ver="5"/>
+					<designed target="Height" value="17" ver="5"/>
+					<designed target="Text" value="*****" ver="5"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+					<designed target="FontColor" value="0xff000000" ver="5"/>
+					<designed target="TextAlignment" value="132" ver="5"/>
+					<do-trace access-modifier="private" target="Text" ver="5">
+						<body>
+							<![CDATA[(Rectangle_ReserveMashine.ApSource_ReverseStationSourceChannel.ConnectionState==2)?(Rectangle_ReserveMashine.Ap_IECActivated?"активный":"не активный"):"*****"]]>
+						</body>
+					</do-trace>
+				</object>
+				<do-trace access-modifier="private" target="BrushColor" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[Rectangle_ReserveMashine.Ap_IECActivated && (Rectangle_ReserveMashine.ApSource_ReverseStationSourceChannel.ConnectionState==2)]]>
+						</condition>
+						<expr>
+							<![CDATA[0xff00ff00]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[!Rectangle_ReserveMashine.Ap_IECActivated || (Rectangle_ReserveMashine.ApSource_ReverseStationSourceChannel.ConnectionState!=2)]]>
+						</condition>
+						<expr>
+							<![CDATA[0xffffff7f]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+			</object>
+			<object access-modifier="private" name="Rectangle_4" display-name="Rectangle_4" uuid="42e87c1f-cb04-4a77-be17-0b5b318866d7" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+				<designed target="X" value="240" ver="5"/>
+				<designed target="Y" value="100" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="80" ver="5"/>
+				<designed target="Height" value="19" ver="5"/>
+				<designed target="RoundingRadius" value="0" ver="5"/>
+				<designed target="PenColor" value="4278190080" ver="5"/>
+				<designed target="PenStyle" value="1" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="BrushColor" value="0xffffffff" ver="5"/>
+				<designed target="BrushStyle" value="1" ver="5"/>
+				<object access-modifier="private" name="Text_RecvDataFrames_1" display-name="Text_RecvDataFrames_1" uuid="ac01c16f-7ba9-469f-b8d1-25c53aa6c9f0" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+					<designed target="X" value="0" ver="5"/>
+					<designed target="Y" value="0" ver="5"/>
+					<designed target="ZValue" value="0" ver="5"/>
+					<designed target="Rotation" value="0" ver="5"/>
+					<designed target="Scale" value="1" ver="5"/>
+					<designed target="Visible" value="true" ver="5"/>
+					<designed target="Opacity" value="1" ver="5"/>
+					<designed target="Enabled" value="true" ver="5"/>
+					<designed target="Tooltip" value="" ver="5"/>
+					<designed target="Width" value="78" ver="5"/>
+					<designed target="Height" value="17" ver="5"/>
+					<designed target="Text" value="*****" ver="5"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+					<designed target="FontColor" value="0xff000000" ver="5"/>
+					<designed target="TextAlignment" value="132" ver="5"/>
+					<do-trace access-modifier="private" target="Text" ver="5">
+						<body>
+							<![CDATA[(Rectangle_ReserveMashine.ApSource_ReverseStationSourceChannel.ConnectionState==2)?Rectangle_ReserveMashine.Ap_RecvDataFrames.ValueAsString:"*****"]]>
+						</body>
+					</do-trace>
+				</object>
+			</object>
+			<object access-modifier="private" name="Rectangle_5" display-name="Rectangle_5" uuid="f6bb03e6-4fc3-4c7f-8c28-e048e15b7485" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+				<designed target="X" value="240" ver="5"/>
+				<designed target="Y" value="130" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="80" ver="5"/>
+				<designed target="Height" value="19" ver="5"/>
+				<designed target="RoundingRadius" value="0" ver="5"/>
+				<designed target="PenColor" value="4278190080" ver="5"/>
+				<designed target="PenStyle" value="1" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="BrushColor" value="0xffffffff" ver="5"/>
+				<designed target="BrushStyle" value="1" ver="5"/>
+				<object access-modifier="private" name="Text_SendDataFrames_1" display-name="Text_SendDataFrames_1" uuid="df625bff-2d5f-4872-8a72-63f25cdda4ca" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+					<designed target="X" value="0" ver="5"/>
+					<designed target="Y" value="0" ver="5"/>
+					<designed target="ZValue" value="0" ver="5"/>
+					<designed target="Rotation" value="0" ver="5"/>
+					<designed target="Scale" value="1" ver="5"/>
+					<designed target="Visible" value="true" ver="5"/>
+					<designed target="Opacity" value="1" ver="5"/>
+					<designed target="Enabled" value="true" ver="5"/>
+					<designed target="Tooltip" value="" ver="5"/>
+					<designed target="Width" value="78" ver="5"/>
+					<designed target="Height" value="17" ver="5"/>
+					<designed target="Text" value="*****" ver="5"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+					<designed target="FontColor" value="0xff000000" ver="5"/>
+					<designed target="TextAlignment" value="132" ver="5"/>
+					<do-trace access-modifier="private" target="Text" ver="5">
+						<body>
+							<![CDATA[(Rectangle_ReserveMashine.ApSource_ReverseStationSourceChannel.ConnectionState==2)?Rectangle_ReserveMashine.Ap_SendDataFrames.ValueAsString:"*****"]]>
+						</body>
+					</do-trace>
+				</object>
+			</object>
+			<object access-modifier="private" name="Rectangle_6" display-name="Rectangle_6" uuid="9e8b2cc7-207a-41e7-b30c-be7082140d1c" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+				<designed target="X" value="240" ver="5"/>
+				<designed target="Y" value="190" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="80" ver="5"/>
+				<designed target="Height" value="19" ver="5"/>
+				<designed target="RoundingRadius" value="0" ver="5"/>
+				<designed target="PenColor" value="4278190080" ver="5"/>
+				<designed target="PenStyle" value="1" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="BrushColor" value="0xffffffff" ver="5"/>
+				<designed target="BrushStyle" value="1" ver="5"/>
+				<object access-modifier="private" name="Text_ConnectedCount_1" display-name="Text_ConnectedCount_1" uuid="ef23ff27-4f9f-4208-ad47-7eae9420204e" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+					<designed target="X" value="0" ver="5"/>
+					<designed target="Y" value="0" ver="5"/>
+					<designed target="ZValue" value="0" ver="5"/>
+					<designed target="Rotation" value="0" ver="5"/>
+					<designed target="Scale" value="1" ver="5"/>
+					<designed target="Visible" value="true" ver="5"/>
+					<designed target="Opacity" value="1" ver="5"/>
+					<designed target="Enabled" value="true" ver="5"/>
+					<designed target="Tooltip" value="" ver="5"/>
+					<designed target="Width" value="78" ver="5"/>
+					<designed target="Height" value="17" ver="5"/>
+					<designed target="Text" value="*****" ver="5"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+					<designed target="FontColor" value="0xff000000" ver="5"/>
+					<designed target="TextAlignment" value="132" ver="5"/>
+					<do-trace access-modifier="private" target="Text" ver="5">
+						<body>
+							<![CDATA[(Rectangle_ReserveMashine.ApSource_ReverseStationSourceChannel.ConnectionState==2)?Rectangle_ReserveMashine.Ap_ConnectedCount.ValueAsString:"*****"]]>
+						</body>
+					</do-trace>
+				</object>
+			</object>
+			<object access-modifier="private" name="Rectangle_7" display-name="Rectangle_7" uuid="2e208bb0-6f45-48d1-8142-d12d63a2557f" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+				<designed target="X" value="240" ver="5"/>
+				<designed target="Y" value="220" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="80" ver="5"/>
+				<designed target="Height" value="19" ver="5"/>
+				<designed target="RoundingRadius" value="0" ver="5"/>
+				<designed target="PenColor" value="4278190080" ver="5"/>
+				<designed target="PenStyle" value="1" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="BrushColor" value="0xffffffff" ver="5"/>
+				<designed target="BrushStyle" value="1" ver="5"/>
+				<object access-modifier="private" name="Text_ConnectionFailedCount_1" display-name="Text_ConnectionFailedCount_1" uuid="e2f6c8a8-ba32-4fba-8d8e-ad9d149c4d8b" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+					<designed target="X" value="0" ver="5"/>
+					<designed target="Y" value="0" ver="5"/>
+					<designed target="ZValue" value="0" ver="5"/>
+					<designed target="Rotation" value="0" ver="5"/>
+					<designed target="Scale" value="1" ver="5"/>
+					<designed target="Visible" value="true" ver="5"/>
+					<designed target="Opacity" value="1" ver="5"/>
+					<designed target="Enabled" value="true" ver="5"/>
+					<designed target="Tooltip" value="" ver="5"/>
+					<designed target="Width" value="78" ver="5"/>
+					<designed target="Height" value="17" ver="5"/>
+					<designed target="Text" value="*****" ver="5"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+					<designed target="FontColor" value="0xff000000" ver="5"/>
+					<designed target="TextAlignment" value="132" ver="5"/>
+					<do-trace access-modifier="private" target="Text" ver="5">
+						<body>
+							<![CDATA[(Rectangle_ReserveMashine.ApSource_ReverseStationSourceChannel.ConnectionState==2)?Rectangle_ReserveMashine.Ap_ConnectionFailedCount.ValueAsString:"*****"]]>
+						</body>
+					</do-trace>
+				</object>
+			</object>
+			<object access-modifier="private" name="Rectangle_8" display-name="Rectangle_8" uuid="de76f038-aad6-4b90-b808-c31baeb3c791" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+				<designed target="X" value="240" ver="5"/>
+				<designed target="Y" value="250" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="80" ver="5"/>
+				<designed target="Height" value="19" ver="5"/>
+				<designed target="RoundingRadius" value="0" ver="5"/>
+				<designed target="PenColor" value="4278190080" ver="5"/>
+				<designed target="PenStyle" value="1" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="BrushColor" value="0xffffffff" ver="5"/>
+				<designed target="BrushStyle" value="1" ver="5"/>
+				<object access-modifier="private" name="Text_DisconnectedCount_1" display-name="Text_DisconnectedCount_1" uuid="743fcaa4-187d-413f-8a7c-af300de5441e" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+					<designed target="X" value="0" ver="5"/>
+					<designed target="Y" value="0" ver="5"/>
+					<designed target="ZValue" value="0" ver="5"/>
+					<designed target="Rotation" value="0" ver="5"/>
+					<designed target="Scale" value="1" ver="5"/>
+					<designed target="Visible" value="true" ver="5"/>
+					<designed target="Opacity" value="1" ver="5"/>
+					<designed target="Enabled" value="true" ver="5"/>
+					<designed target="Tooltip" value="" ver="5"/>
+					<designed target="Width" value="78" ver="5"/>
+					<designed target="Height" value="17" ver="5"/>
+					<designed target="Text" value="*****" ver="5"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+					<designed target="FontColor" value="0xff000000" ver="5"/>
+					<designed target="TextAlignment" value="132" ver="5"/>
+					<do-trace access-modifier="private" target="Text" ver="5">
+						<body>
+							<![CDATA[(Rectangle_ReserveMashine.ApSource_ReverseStationSourceChannel.ConnectionState==2)?Rectangle_ReserveMashine.Ap_DisconnectedCount.ValueAsString:"*****"]]>
+						</body>
+					</do-trace>
+				</object>
+			</object>
+			<object access-modifier="private" name="Rectangle_9" display-name="Rectangle_9" uuid="743a9fee-547b-4ca0-913f-b21d707d2065" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+				<designed target="X" value="240" ver="5"/>
+				<designed target="Y" value="280" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="80" ver="5"/>
+				<designed target="Height" value="19" ver="5"/>
+				<designed target="RoundingRadius" value="0" ver="5"/>
+				<designed target="PenColor" value="4278190080" ver="5"/>
+				<designed target="PenStyle" value="1" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="BrushColor" value="0xffffffff" ver="5"/>
+				<designed target="BrushStyle" value="1" ver="5"/>
+				<object access-modifier="private" name="Text_IECErrorsCount_1" display-name="Text_IECErrorsCount_1" uuid="65bd9cee-029a-40a0-acb0-4e188c74e371" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+					<designed target="X" value="0" ver="5"/>
+					<designed target="Y" value="0" ver="5"/>
+					<designed target="ZValue" value="0" ver="5"/>
+					<designed target="Rotation" value="0" ver="5"/>
+					<designed target="Scale" value="1" ver="5"/>
+					<designed target="Visible" value="true" ver="5"/>
+					<designed target="Opacity" value="1" ver="5"/>
+					<designed target="Enabled" value="true" ver="5"/>
+					<designed target="Tooltip" value="" ver="5"/>
+					<designed target="Width" value="78" ver="5"/>
+					<designed target="Height" value="17" ver="5"/>
+					<designed target="Text" value="*****" ver="5"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+					<designed target="FontColor" value="0xff000000" ver="5"/>
+					<designed target="TextAlignment" value="132" ver="5"/>
+					<do-trace access-modifier="private" target="Text" ver="5">
+						<body>
+							<![CDATA[(Rectangle_ReserveMashine.ApSource_ReverseStationSourceChannel.ConnectionState==2)?Rectangle_ReserveMashine.Ap_IECErrorsCount.ValueAsString:"*****"]]>
+						</body>
+					</do-trace>
+				</object>
+			</object>
+		</object>
+		<object access-modifier="private" name="Channel_1" display-name="Channel_1" uuid="48efc2db-bb1f-4a6c-a13b-123dd83a1a75" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="80" ver="5"/>
+			<designed target="Height" value="90" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="0xffffffff" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="2" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+			<object access-modifier="private" name="Ellipse_Channel" display-name="Ellipse_Channel" uuid="3289647a-fd3b-4a48-96db-58111514dfe0" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+				<designed target="X" value="9.54285714285714" ver="5"/>
+				<designed target="Y" value="30" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="60" ver="5"/>
+				<designed target="Height" value="50" ver="5"/>
+				<designed target="PenColor" value="4278190080" ver="5"/>
+				<designed target="PenStyle" value="1" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="BrushColor" value="0xffbababa" ver="5"/>
+				<designed target="BrushStyle" value="1" ver="5"/>
+				<designed target="PieAngle" value="360" ver="5"/>
+				<designed target="PieAngleStart" value="360" ver="5"/>
+				<designed target="HoleSize" value="0" ver="5"/>
+				<do-trace access-modifier="private" target="BrushColor" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[Rectangle_ReserveMashine.Ap_IECActivated && Rectangle_ReserveMashine.Ap_TCPConnection && (Rectangle_ReserveMashine.ApSource_ReverseStationSourceChannel.ConnectionState==2)]]>
+						</condition>
+						<expr>
+							<![CDATA[0xff00ff00]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[!Rectangle_ReserveMashine.Ap_IECActivated && Rectangle_ReserveMashine.Ap_TCPConnection && (Rectangle_ReserveMashine.ApSource_ReverseStationSourceChannel.ConnectionState==2)]]>
+						</condition>
+						<expr>
+							<![CDATA[0xff009e00]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[!Rectangle_ReserveMashine.Ap_IECActivated && !Rectangle_ReserveMashine.Ap_TCPConnection || (Rectangle_ReserveMashine.ApSource_ReverseStationSourceChannel.ConnectionState!=2)]]>
+						</condition>
+						<expr>
+							<![CDATA[0xffbababa]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+			</object>
+			<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="d45bfdca-a012-4451-be10-5b5584b7e442" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="0" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="80" ver="5"/>
+				<designed target="Height" value="30" ver="5"/>
+				<designed target="Text" value="Канал №" ver="5"/>
+				<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+				<designed target="FontColor" value="0xffffffff" ver="5"/>
+				<designed target="TextAlignment" value="132" ver="5"/>
+				<do-trace access-modifier="private" target="Text" ver="5">
+					<body>
+						<![CDATA["Канал №" + Rectangle_ReserveMashine._StationSourceChannel_number]]>
+					</body>
+				</do-trace>
+			</object>
+		</object>
+		<object access-modifier="private" name="Ap_TCPConnection" display-name="Ap_TCPConnection" uuid="05259617-3167-4b86-82f5-6b814a5d7244" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Path" ver="5" value="TCPConnected"/>
+			<init target="Source" ver="5" ref="Rectangle_ReserveMashine.ApSource_ReverseStationSourceChannel"/>
+		</object>
+		<object access-modifier="private" name="Ap_IECActivated" display-name="Ap_IECActivated" uuid="040c84be-228e-4aac-ab07-43e019d782de" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Path" ver="5" value="IECActivated"/>
+			<init target="Source" ver="5" ref="Rectangle_ReserveMashine.ApSource_ReverseStationSourceChannel"/>
+		</object>
+		<object access-modifier="private" name="Ap_RecvDataFrames" display-name="Ap_RecvDataFrames" uuid="3f67b482-8ba2-4a86-95e6-01726ecdefcd" base-type="ApItemUInt4" base-type-id="322ce770-6c7b-49bc-9cd6-a367ca5b4627" ver="5" description="" cardinal="1">
+			<init target="Path" ver="5" value="RecvDataFrames"/>
+			<init target="Source" ver="5" ref="Rectangle_ReserveMashine.ApSource_ReverseStationSourceChannel"/>
+		</object>
+		<object access-modifier="private" name="Ap_SendDataFrames" display-name="Ap_SendDataFrames" uuid="c1c514fd-b5f2-424f-a82d-ff04eb881993" base-type="ApItemUInt4" base-type-id="322ce770-6c7b-49bc-9cd6-a367ca5b4627" ver="5" description="" cardinal="1">
+			<init target="Path" ver="5" value="SendDataFrames"/>
+			<init target="Source" ver="5" ref="Rectangle_ReserveMashine.ApSource_ReverseStationSourceChannel"/>
+		</object>
+		<object access-modifier="private" name="Ap_ConnectedCount" display-name="Ap_ConnectedCount" uuid="edb81082-1c3b-4d45-8370-c8a0ff9cac0e" base-type="ApItemUInt4" base-type-id="322ce770-6c7b-49bc-9cd6-a367ca5b4627" ver="5" description="" cardinal="1">
+			<init target="Path" ver="5" value="ConnectedCount"/>
+			<init target="Source" ver="5" ref="Rectangle_ReserveMashine.ApSource_ReverseStationSourceChannel"/>
+		</object>
+		<object access-modifier="private" name="Ap_ConnectionFailedCount" display-name="Ap_ConnectionFailedCount" uuid="a470f2ee-112b-49a0-8e56-ef35a7905c78" base-type="ApItemUInt4" base-type-id="322ce770-6c7b-49bc-9cd6-a367ca5b4627" ver="5" description="" cardinal="1">
+			<init target="Path" ver="5" value="ConnectionFailedCount"/>
+			<init target="Source" ver="5" ref="Rectangle_ReserveMashine.ApSource_ReverseStationSourceChannel"/>
+		</object>
+		<object access-modifier="private" name="Ap_DisconnectedCount" display-name="Ap_DisconnectedCount" uuid="fef1a8ac-4c36-4953-ad78-221b1ec10ab6" base-type="ApItemUInt4" base-type-id="322ce770-6c7b-49bc-9cd6-a367ca5b4627" ver="5" description="" cardinal="1">
+			<init target="Path" ver="5" value="DisconnectedCount"/>
+			<init target="Source" ver="5" ref="Rectangle_ReserveMashine.ApSource_ReverseStationSourceChannel"/>
+		</object>
+		<object access-modifier="private" name="Ap_IECErrorsCount" display-name="Ap_IECErrorsCount" uuid="53bd97aa-196c-4234-92cb-b0efe06342f3" base-type="ApItemUInt4" base-type-id="322ce770-6c7b-49bc-9cd6-a367ca5b4627" ver="5" description="" cardinal="1">
+			<init target="Path" ver="5" value="IECErrorsCount"/>
+			<init target="Source" ver="5" ref="Rectangle_ReserveMashine.ApSource_ReverseStationSourceChannel"/>
+		</object>
+		<object access-modifier="private" name="ApSource_ReverseStationSourceChannel" display-name="ApSource_ReverseStationSourceChannel" uuid="ff3582e0-a0f3-4534-b346-03a5335514d8" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+			<designed target="Location" value="" ver="5"/>
+			<designed target="Port" value="4388" ver="5"/>
+			<designed target="HistoryPort" value="4950" ver="5"/>
+			<designed target="Path" value="" ver="5"/>
+			<designed target="Active" value="true" ver="5"/>
+			<designed target="ReAdvise" value="0" ver="5"/>
+			<designed target="ClientDisplayName" value="HMI" ver="5"/>
+			<designed target="ClientId" value="HMI" ver="5"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA["Service.Modules.Iec104Master" + _IEC104MasterNumber + ".Stations.Station " + _Station_number +  ".Sources.Source " + _StationSource_number +  ".Channels.Channel " + _StationSourceChannel_number]]>
+				</body>
+			</do-trace>
+			<init target="ParentSource" ver="5">
+				<object access-modifier="private" uuid="cd031d0c-6941-4f34-b1a9-e858f603ce7e" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5">
+					<designed target="Location" value="192.168.21.213" ver="5"/>
+					<designed target="Port" value="4388" ver="5"/>
+					<designed target="HistoryPort" value="4950" ver="5"/>
+					<designed target="Path" value="" ver="5"/>
+					<designed target="Active" value="true" ver="5"/>
+					<designed target="ReAdvise" value="0" ver="5"/>
+					<designed target="ClientDisplayName" value="HMI" ver="5"/>
+					<designed target="ClientId" value="HMI" ver="5"/>
+				</object>
+			</init>
+		</object>
+		<object access-modifier="private" name="_Station_number" display-name="_Station_number" uuid="54ad59f2-1d1f-43b1-9481-4b1946cf067c" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="_StationSource_number" display-name="_StationSource_number" uuid="507c864b-4f00-407e-8a6b-c6c93e86bae3" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="_StationSourceChannel_number" display-name="_StationSourceChannel_number" uuid="909ffa0e-f817-47f2-9eb1-9d452216371b" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+		<do-trace access-modifier="private" target="_Station_number" ver="5">
+			<body>
+				<![CDATA[here._Station_number]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="_StationSource_number" ver="5">
+			<body>
+				<![CDATA[here._StationSource_number]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="_StationSourceChannel_number" ver="5">
+			<body>
+				<![CDATA[here._StationSourceChannel_number]]>
+			</body>
+		</do-trace>
+		<object access-modifier="private" name="Text_ChannelNumber" display-name="Text_ChannelNumber" uuid="00263cc3-7378-4e82-b928-ab66ed08951e" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="110" ver="5"/>
+			<designed target="Y" value="30" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="190" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="Нет соединения с сервером" ver="5"/>
+			<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="FontColor" value="0xffffffff" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+			<do-trace access-modifier="private" target="Visible" ver="5">
+				<conditional-expr>
+					<condition>
+						<![CDATA[(Rectangle_ReserveMashine.ApSource_ReverseStationSourceChannel.ConnectionState!=2)]]>
+					</condition>
+					<expr>
+						<![CDATA[true]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[false]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+	</object>
+	<object access-modifier="private" name="Button_Close" display-name="Button_Close" uuid="bf18ed8d-2404-4242-bec4-2ffdcc69f8a9" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5" description="" cardinal="1">
+		<designed target="X" value="520" ver="5"/>
+		<designed target="Y" value="520" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="170" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+		<designed target="Checkable" value="false" ver="5"/>
+		<designed target="Checked" value="false" ver="5"/>
+		<designed target="Text" value="Закрыть" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+		<designed target="FontColor" value="0xff000000" ver="5"/>
+		<designed target="OnClickFontColor" value="0xffffffff" ver="5"/>
+		<designed target="OnHoverFontColor" value="0xffffffff" ver="5"/>
+		<designed target="DisabledFontColor" value="4278190080" ver="5"/>
+		<designed target="BrushColor" value="0xffd4d0c8" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="OnClickBrushColor" value="0xffd4d0c8" ver="5"/>
+		<designed target="OnClickBrushStyle" value="1" ver="5"/>
+		<designed target="OnHoverBrushColor" value="0xffcc6666" ver="5"/>
+		<designed target="OnHoverBrushStyle" value="1" ver="5"/>
+		<designed target="DisabledBrushColor" value="0xc8d4d0c8" ver="5"/>
+		<designed target="DisabledBrushStyle" value="1" ver="5"/>
+		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="OnClickPenColor" value="4278190080" ver="5"/>
+		<designed target="OnClickPenStyle" value="1" ver="5"/>
+		<designed target="OnClickPenWidth" value="1" ver="5"/>
+		<designed target="OnHoverPenColor" value="4278190080" ver="5"/>
+		<designed target="OnHoverPenStyle" value="1" ver="5"/>
+		<designed target="OnHoverPenWidth" value="1" ver="5"/>
+		<designed target="DisabledPenColor" value="4288716960" ver="5"/>
+		<designed target="DisabledPenStyle" value="1" ver="5"/>
+		<designed target="DisabledPenWidth" value="1" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed" form-action="close"/>
+	</object>
+	<object access-modifier="private" name="_Station_number" display-name="_Station_number" uuid="9b6f0b85-e460-400d-897f-5a64fe4daad5" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="_StationSource_number" display-name="_StationSource_number" uuid="c959cb34-e48f-4987-a5c7-d7f875e1b639" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="_StationSourceChannel_number" display-name="_StationSourceChannel_number" uuid="9cfb01a3-b8c6-4abc-927b-d83dfc3c1a59" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="_IEC104MasterNumber" display-name="_IEC104MasterNumber" uuid="5e6a6d13-86d6-4eb5-b83a-ae2fed4a2bbb" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<init target="_IEC104MasterNumber" ver="5" value=""/>
+	<designed target="Flip" value="0" ver="5"/>
+</type>
+

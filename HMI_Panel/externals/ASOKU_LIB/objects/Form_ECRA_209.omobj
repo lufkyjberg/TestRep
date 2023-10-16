@@ -1,0 +1,200 @@
+<type access-modifier="public" name="Form_ECRA_209" display-name="Form_ECRA_209" uuid="a9cc4fb6-84b8-42e0-a542-490eaf55dcc0" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="610" ver="5"/>
+	<designed target="Height" value="550" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xff70b99e" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="444" ver="5"/>
+	<designed target="WindowHeight" value="414" ver="5"/>
+	<designed target="WindowCaption" value="ECRA 209" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="1" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="2" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="2" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<object access-modifier="private" name="Discrete_Signal" display-name="Discrete_Signal" uuid="5a35bcd8-f2a7-44ef-8976-0a1e37c8015a" base-type="Rectangle_ECRA_1" base-type-id="4e1e99b4-667b-4064-b2a8-bb67ad61bec7" ver="5" description="" cardinal="36">
+		<designed target="X" value="10" ver="5"/>
+		<designed target="Y" value="35" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="140" ver="5"/>
+		<designed target="Height" value="50" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_6" display-name="Text_6" uuid="b54b3a5a-607f-40fd-b3ad-e3d97a1561d5" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="26" ver="5"/>
+		<designed target="Y" value="30" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="20" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="A" ver="5"/>
+		<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="TextAlignment" value="33" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_7" display-name="Text_7" uuid="7b1eeb7f-211a-435a-81b4-d945a943b707" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="222" ver="5"/>
+		<designed target="Y" value="30" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="20" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="B" ver="5"/>
+		<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="TextAlignment" value="33" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_8" display-name="Text_8" uuid="25f8ec4e-5478-4249-b660-470daaec7168" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="417" ver="5"/>
+		<designed target="Y" value="30" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="20" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="C" ver="5"/>
+		<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="TextAlignment" value="33" ver="5"/>
+	</object>
+	<object access-modifier="private" name="ParDevPathDisc" display-name="ParDevPathDisc" uuid="cb16a856-7d55-45c2-a77a-caffb70dcc55" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ValueChanged">
+			<body kind="javascript">
+				<![CDATA[let array = this.Value.split("|");
+
+for (let i = 0; i < array.length; i++) {
+	Discrete_Signal[i].ParDevPath = Discrete_Signal[i].LedСircle_1.ParDevPath = array[i];
+}
+
+]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Text_3" display-name="Text_3" uuid="129ea4e1-6e13-48d2-8f99-87cdd0714cd9" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="26" ver="5"/>
+		<designed target="Y" value="10" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="70" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="Питание" ver="5"/>
+		<designed target="Font" value="Arial,12,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="TextAlignment" value="33" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_4" display-name="Text_4" uuid="d07e5a29-30cf-4eba-86f6-6bea2a3e1e63" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="222" ver="5"/>
+		<designed target="Y" value="10" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="110" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="Готовность" ver="5"/>
+		<designed target="Font" value="Arial,12,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="TextAlignment" value="33" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_5" display-name="Text_5" uuid="f0d61bf7-93e5-422c-b3e5-5ae8250ee822" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="417" ver="5"/>
+		<designed target="Y" value="10" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="130" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="Неисправность" ver="5"/>
+		<designed target="Font" value="Arial,12,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="TextAlignment" value="33" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Initializer_1" display-name="Initializer_1" uuid="4ba22c7f-5a79-450f-8857-05ff3dd2041f" base-type="Initializer" base-type-id="6db89679-9299-4993-ad1a-0d086cd1c7d2" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Initialized">
+			<body kind="javascript">
+				<![CDATA[for (let i = 0; i < Discrete_Signal.Length; i++)
+{
+	if (i < 12){
+		Discrete_Signal[i].X = Discrete_Signal.X;
+		Discrete_Signal[i].Y = Discrete_Signal.Y + 40 * i;
+	}
+	else if (i > 11 && i < 24){
+		Discrete_Signal[i].X = Discrete_Signal.X + 195;
+		Discrete_Signal[i].Y = Discrete_Signal.Y + 40 * i - 480;
+	}
+	else if (i > 23){
+		Discrete_Signal[i].X = Discrete_Signal.X + 390;
+		Discrete_Signal[i].Y = Discrete_Signal.Y + 40 * i - 960;
+	}
+}]]>
+			</body>
+		</do-on>
+	</object>
+</type>
+

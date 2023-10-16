@@ -1,0 +1,264 @@
+<type access-modifier="private" name="Settings" display-name=" Панель настройки прав" uuid="e7754043-4ba6-4569-876d-d38b271c8572" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="760" ver="5"/>
+	<designed target="Height" value="220" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xff646464" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="760" ver="5"/>
+	<designed target="WindowHeight" value="220" ver="5"/>
+	<designed target="WindowCaption" value="Настройки" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="1" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="0" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<object access-modifier="private" name="CheckboxChangeSettings" display-name="CheckboxChangeSettings" uuid="dd959251-db37-4ad1-ac62-8c875e21bcf3" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5" description="" cardinal="1">
+		<designed target="X" value="30" ver="5"/>
+		<designed target="Y" value="28" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="311" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Text" value="Право на изменение уставок" ver="5"/>
+		<designed target="Font" value="Arial,12,-1,5,75,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="State" value="false" ver="5"/>
+		<do-trace access-modifier="private" target="State" ver="5">
+			<body>
+				<![CDATA[AsokuUserRights.ChangeSettings.Value]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="StateChanged">
+			<body kind="om">
+				<![CDATA[//AsokuUserRights.ChangeSettings.Value = this.State;]]>
+			</body>
+		</do-on>
+		<designed target="Flip" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="Enabled" ver="5">
+			<body>
+				<![CDATA[!AsokuUserRights.SecurityContext_UserRights.Connected]]>
+			</body>
+		</do-trace>
+	</object>
+	<designed target="Flip" value="0" ver="5"/>
+	<object access-modifier="private" name="CheckboxLocatingLabels" display-name="CheckboxLocatingLabels" uuid="984d39b0-9817-4553-8b0a-9233d6fb13be" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5" description="" cardinal="1">
+		<designed target="X" value="30" ver="5"/>
+		<designed target="Y" value="51" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="311" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Text" value="Право на вывешивание плакатов" ver="5"/>
+		<designed target="Font" value="Arial,12,-1,5,75,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="State" value="false" ver="5"/>
+		<do-trace access-modifier="private" target="State" ver="5">
+			<body>
+				<![CDATA[AsokuUserRights.LocatingLabels.Value]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="StateChanged">
+			<body kind="om">
+				<![CDATA[//AsokuUserRights.LocatingLabels.Value = this.State;]]>
+			</body>
+		</do-on>
+		<designed target="Flip" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="Enabled" ver="5">
+			<body>
+				<![CDATA[!AsokuUserRights.SecurityContext_UserRights.Connected]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="CheckboxSendingComands" display-name="CheckboxSendingComands" uuid="1c853994-f4e1-4596-b7fd-e0a9122db22f" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5" description="" cardinal="1">
+		<designed target="X" value="30" ver="5"/>
+		<designed target="Y" value="74" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="311" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Text" value="Право на отправку команд" ver="5"/>
+		<designed target="Font" value="Arial,12,-1,5,75,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="State" value="false" ver="5"/>
+		<do-trace access-modifier="private" target="State" ver="5">
+			<body>
+				<![CDATA[AsokuUserRights.SendingComands.Value]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="StateChanged">
+			<body kind="om">
+				<![CDATA[//AsokuUserRights.SendingComands.Value = this.State;]]>
+			</body>
+		</do-on>
+		<designed target="Flip" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="Enabled" ver="5">
+			<body>
+				<![CDATA[!AsokuUserRights.SecurityContext_UserRights.Connected]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="CheckboxWatchingReports" display-name="CheckboxWatchingReports" uuid="67c0b298-894b-4da8-a977-d8d369332690" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5" description="" cardinal="1">
+		<designed target="X" value="30" ver="5"/>
+		<designed target="Y" value="97" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="311" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Text" value="Право на просмотр отчётов" ver="5"/>
+		<designed target="Font" value="Arial,12,-1,5,75,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="State" value="false" ver="5"/>
+		<do-trace access-modifier="private" target="State" ver="5">
+			<body>
+				<![CDATA[AsokuUserRights.WatchingReports.Value]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="StateChanged">
+			<body kind="om">
+				<![CDATA[//AsokuUserRights.WatchingReports.Value = this.State;]]>
+			</body>
+		</do-on>
+		<designed target="Flip" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="Enabled" ver="5">
+			<body>
+				<![CDATA[!AsokuUserRights.SecurityContext_UserRights.Connected]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="CheckboxConfiguringReports" display-name="CheckboxConfiguringReports" uuid="e24cb5cc-7f2a-423c-bd68-f9f0ebbae3fb" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5" description="" cardinal="1">
+		<designed target="X" value="30" ver="5"/>
+		<designed target="Y" value="120" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="339.99999999999994" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Text" value="Право на конфигурирование отчётов" ver="5"/>
+		<designed target="Font" value="Arial,12,-1,5,75,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="State" value="false" ver="5"/>
+		<do-trace access-modifier="private" target="State" ver="5">
+			<body>
+				<![CDATA[AsokuUserRights.ConfiguringReports.Value]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="StateChanged">
+			<body kind="om">
+				<![CDATA[//AsokuUserRights.ConfiguringReports.Value = this.State;]]>
+			</body>
+		</do-on>
+		<designed target="Flip" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="Enabled" ver="5">
+			<body>
+				<![CDATA[!AsokuUserRights.SecurityContext_UserRights.Connected]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="CheckboxChangeTransferValue" display-name="CheckboxChangeTransferValue" uuid="ae5f6554-693a-49fa-8f99-4d1871576c69" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5" description="" cardinal="1">
+		<designed target="X" value="30" ver="5"/>
+		<designed target="Y" value="143" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="339.99999999999994" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Text" value="Право на изменение трансфер-блоков" ver="5"/>
+		<designed target="Font" value="Arial,12,-1,5,75,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="State" value="false" ver="5"/>
+		<do-trace access-modifier="private" target="State" ver="5">
+			<body>
+				<![CDATA[AsokuUserRights.ChangeTransferValue.Value]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="StateChanged">
+			<body kind="om">
+				<![CDATA[//AsokuUserRights.ChangeTransferValue.Value = this.State;]]>
+			</body>
+		</do-on>
+		<designed target="Flip" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="Enabled" ver="5">
+			<body>
+				<![CDATA[!AsokuUserRights.SecurityContext_UserRights.Connected]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="CheckboxWebClient" display-name="CheckboxWebClient" uuid="1bbce902-e74c-4899-aebf-580ad1f1ccd5" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5" description="" cardinal="1">
+		<designed target="X" value="626" ver="5"/>
+		<designed target="Y" value="186" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="false" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="125" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Text" value="Web - клиент" ver="5"/>
+		<designed target="Font" value="Arial,12,-1,5,75,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="State" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="StateChanged">
+			<body kind="om">
+				<![CDATA[//AsokuUserRights.ChangeTransferValue.Value = this.State;]]>
+			</body>
+		</do-on>
+		<designed target="Flip" value="0" ver="5"/>
+		<init target="State" ver="5">
+			<expr>
+				<![CDATA[!AsokuMain.IsNotWeb()]]>
+			</expr>
+		</init>
+	</object>
+</type>
+

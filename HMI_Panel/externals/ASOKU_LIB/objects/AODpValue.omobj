@@ -1,0 +1,515 @@
+<type access-modifier="public" name="AODpValue" display-name="Аналоговое значение уставок (SP)" uuid="41ab7777-ecfb-4ad9-8dce-6258006c472b" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="90" ver="5"/>
+	<designed target="Height" value="27" ver="5"/>
+	<designed target="RoundingRadius" value="0" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="1" ver="5"/>
+	<designed target="PenWidth" value="3" ver="5"/>
+	<designed target="BrushColor" value="0xffffffff" ver="5"/>
+	<designed target="BrushStyle" value="0" ver="5"/>
+	<object access-modifier="private" name="Value" display-name="Value" uuid="ed6f094c-59cf-425c-bb8c-4b91a3b72b68" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="75" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Text" value="+99.99" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,1,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xff000000" ver="5"/>
+		<designed target="TextAlignment" value="130" ver="5"/>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParValueIn.Advised == false]]>
+				</condition>
+				<expr>
+					<![CDATA["***"]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[String.ToString(ApParDisplayFormat.Value, ApParValueIn.Value)]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="FontColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[!ApParValueIn.Advised || !ApParValueOut.Advised]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuBlack]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[AsokuColor.asokuGreen]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Initializer" display-name="Initializer" uuid="55099d8c-7cd8-4943-803a-043ffefa2ef5" base-type="Initializer" base-type-id="6db89679-9299-4993-ad1a-0d086cd1c7d2" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="SizeComparisionHndlr" display-name="SizeComparisionHndlr" ver="5" event="Initialized">
+			<body kind="om">
+				<![CDATA[Value.Width = here.Width - 2;
+Value.Height = here.Height - 2;
+
+ValueInput.Width = Value.Width;
+ValueInput.Height = Value.Height;
+
+Units.Height = Value.Height;
+Units.Y = 3;
+Units.X = Value.Width + 6;
+
+SubmitButton.X = Value.Width + 4;
+SubmitButton.Y = (Value.Height - SubmitButton.Height) / 2;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="InDevPath" display-name="Путь до входного сигнала" uuid="9560f05e-f008-4363-95c0-f8f0d07c08e3" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ApParValueIn" display-name="Значение входного параметра" uuid="9ffb39f2-aa90-4762-9355-eb76868cd8c0" base-type="ApItemFloat" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[InDevPath + ".Value"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-on access-modifier="private" name="AdviseHndlr" display-name="AdviseHndlr" ver="5" event="OnAdviseStateChanged">
+			<body kind="javascript">
+				<![CDATA[if (Advised) {
+	if (ApParValueIn.Units.includes("^")) {
+		here.Units.Text = ApParValue.Units.substring(0, ApParValueIn.Units.indexOf("^")) + String.fromCodePoint(parseInt("00B" + ApParValueIn.Units.substr(ApParValue.Units.indexOf("^") + 1, 1), 16)) + ApParValue.Units.substring(ApParValueIn.Units.indexOf("^") + 2);
+	}
+	else {
+		here.Units.Text = ApParValueIn.Units;
+	}
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="OutDevPath" display-name="Путь до выходного сигнала" uuid="d1bc08dc-1ee4-4eb9-920f-1aa469ef99fa" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ApParValueOut" display-name="Значение выходного параметра" uuid="9b495074-e506-42ba-acfa-e3f23bc6839d" base-type="ApItemFloat" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[OutDevPath + ".Value"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="TransferDevPath" display-name="Путь до папки трансферов" uuid="6cb36407-180c-46e3-a087-098800521e40" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ApParName" display-name="ApParName" uuid="8465cf57-c7b3-4f96-a4de-5a1267cbfe82" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[InDevPath + ".Name"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApParComment" display-name="Комментарий параметра" uuid="fee78d0d-21bf-4747-91b1-5cf56523fa97" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[InDevPath + ".Comment"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApParDescription" display-name="Описание параметра" uuid="e061e9e7-8662-44b4-b770-87a9b17a82e3" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[InDevPath + ".Description"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApParDisplayFormat" display-name="Формат значения параметра" uuid="16277536-aea7-4981-954e-320165dc80b2" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[InDevPath + ".DisplayFormat"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="DebugTool" display-name="DebugTool" uuid="dbf9653c-5e11-4d9b-b571-f110fe5f036f" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="5" description="" cardinal="1"/>
+	<do-trace access-modifier="private" target="Tooltip" ver="5">
+		<body>
+			<![CDATA["Пояснение: " + ApParDescription.Value +"\nИсточник: "+ ApParComment.Value + "\nстатус: "+ String.ToString(ApParValueIn.Quality) + 
+"\nвремя: "+ 
+DateTime.ToString(ApParValueIn.TimeStamp)]]>
+		</body>
+	</do-trace>
+	<designed target="Flip" value="0" ver="5"/>
+	<object access-modifier="private" name="Units" display-name="Units" uuid="4b559474-57bb-453d-849d-db6f52c810a0" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="94" ver="5"/>
+		<designed target="Y" value="2" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="80" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Text" value="А" ver="5"/>
+		<designed target="Font" value="Arial,16,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xff000000" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body>
+				<![CDATA[!HideUnits]]>
+			</body>
+		</do-trace>
+		<init target="Focus" ver="5" value="false"/>
+		<do-trace access-modifier="private" target="FontColor" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuWhite]]>
+			</body>
+		</do-trace>
+		<init target="Text" ver="5" value=" "/>
+	</object>
+	<object access-modifier="private" name="ValueInput" display-name="ValueInput" uuid="80f906e7-cf2a-4a41-93b4-febb0a581770" base-type="OnlyNumInput" base-type-id="54d6f14a-6463-4326-8625-977f2b920dd5" ver="5" description="" cardinal="1">
+		<designed target="X" value="-1" ver="5"/>
+		<designed target="Y" value="-1" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Visible" value="false" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="27" ver="5"/>
+		<init target="Visible" ver="5" value="false"/>
+		<do-on access-modifier="private" name="EnterPressHndlr" display-name="EnterPressHndlr" ver="5" event="KeyPress">
+			<body kind="om">
+				<![CDATA[if (event.KeyCode == 75) {
+	ValueInput.Visible = false; //скрыть инпут
+	SubmitButton.Visible = false; //скрыть кнопку
+}
+
+if (event.KeyCode == 82 && ValueInput.Text != "" && ValueInput.Text != Value.Text) { //фокус ушел И содержимое инпута пусто (для первого открытия) и если содержимое инпута равно актуальном значению приходящего сигнала
+	Open_UD_AppSettings.Invoke();//если значения различаются - вызвать окно подтверждения
+}]]>
+			</body>
+		</do-on>
+		<designed target="Font" value="Arial,14,-1,5,50,0,0,0,0,0" ver="5"/>
+		<do-on access-modifier="private" name="EditFinishedHndlr" display-name="EditFinishedHndlr" ver="5" event="EditFinished">
+			<body kind="om">
+				<![CDATA[/*
+if (ValueInput.Text != "" && ValueInput.Text !== ApParValueIn.ValueAsString) { //фокус ушел И содержимое инпута пусто (для первого открытия) и если содержимое инпута равно актуальном значению приходящего сигнала
+	Open_UD_AppSettings.Invoke();//если значения различаются - вызвать окно подтверждения
+}
+else {
+	ValueInput.Visible = false; //скрыть инпут
+	SubmitButton.Visible = false; //скрыть кнопку
+}
+*/]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="FocusChangeHndlr" display-name="FocusChangeHndlr" ver="5" event="FocusChanged">
+			<body kind="om">
+				<![CDATA[if (!Focus && !SubmitButton.Focus) {
+	ValueInput.Visible = false;
+	SubmitButton.Visible = false;
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<do-on access-modifier="private" name="ShowValueInput" display-name="ShowValueInput" ver="5" event="MouseClick">
+		<body kind="om">
+			<![CDATA[if ( !AsokuMain.IsNotWeb() ) {
+		Open_UD_WebClient.Invoke(); //открыть окно о веб клиенте
+}
+else if( AsokuUserRights.SendingComands.Value ) { //проверка полномочий 
+
+	if (1==1) {
+		OpenTouchActionWindow.Invoke();
+	}
+	
+	else {
+		OpenInputField.Invoke();
+	}
+}
+
+else Open_UD_PermissionFault.Invoke();]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="OpenTouchActionWindow" display-name="OpenTouchActionWindow" uuid="21f80818-f0ae-4eb7-b175-01aa0b94ecde" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="OpenTouchActionWindowHndlr" display-name="OpenTouchActionWindowHndlr" ver="5" event="Invoked" form-action="open-new-independent" form-by-id="false">
+			<object access-modifier="private" uuid="6b7c94f6-2d71-4f9a-87ba-0faa4e23c2dd" base-type="ActionWindow" base-type-id="58329f60-4336-45b9-8a63-12c41b659a59" ver="5">
+				<init target="ParameterType" ver="5" value="SP"/>
+				<init target="InDevPath" ver="5" ref="here.InDevPath"/>
+				<init target="OutDevPath" ver="5" ref="here.OutDevPath"/>
+				<designed target="WindowCaption" value="Уставка параметра" ver="5"/>
+				<designed target="WindowX" value="0" ver="5"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="OpenInputField" display-name="OpenInputField" uuid="a1363d86-30bf-4205-8ff1-75bff04f5b60" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="OpenInputHndlr" display-name="OpenInputHndlr" ver="5" event="Invoked">
+			<body kind="om">
+				<![CDATA[ValueInput.Visible = true;
+ValueInput.Focus = true;
+SubmitButton.Visible = true;
+ValueInput.Text = Value.Text;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="OpenInfoTabViewOut" display-name="команда открытия InfoTabView" uuid="7c0c7386-7b9a-48d2-bfed-e391be40642c" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="InfoTabViewOutHndlr" display-name="InfoTabViewOutHndlr" ver="5" event="Invoked" form-by-id="false" form-action="open-new">
+			<object access-modifier="private" uuid="17654e42-68af-48a8-b2f5-3b320aefb2b2" base-type="InfoTabView" base-type-id="146efb0d-a148-4c91-94ff-f69c196a5132" ver="5">
+				<init target="PanelType" ver="5" value="информация"/>
+				<init target="ParDevPath" ver="5" ref="OutDevPath"/>
+				<init target="ParameterType" ver="5" value="AO"/>
+				<init target="TransferDevPath" ver="5" ref="here.TransferDevPath"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="OpenInfoTabViewIn" display-name="OpenInfoTabViewIn" uuid="ef0794ea-1dc8-4c8d-a851-08400cd687c2" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="InfoTabViewInHndlr" display-name="InfoTabViewInHndlr" ver="5" event="Invoked" form-by-id="false" form-action="open-new">
+			<object access-modifier="private" uuid="756f6c45-c27e-490d-b3d6-82400dd2443a" base-type="InfoTabView" base-type-id="146efb0d-a148-4c91-94ff-f69c196a5132" ver="5">
+				<init target="PanelType" ver="5" value="информация"/>
+				<init target="ParDevPath" ver="5" ref="InDevPath"/>
+				<init target="ParameterType" ver="5" value="AO"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Open_UD_AppSettings" display-name="Open_UD_AppSettings" uuid="1f6eaf96-b785-4db7-b1ef-07ff5de4e1d2" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="OpenUserDialog" display-name="OpenUserDialog" ver="5" event="Invoked" form-action="open-dialog" form-by-id="false">
+			<object access-modifier="private" uuid="23d7e368-244e-4dde-9c4b-b1c6f4cbdf2c" base-type="UserDialog" base-type-id="3c54f3db-a950-487c-861e-56a8d2eba70d" ver="5">
+				<init target="Message" ver="5" value="Вы действительно хотите выполнить уставку сигнала?"/>
+				<init target="Icon" ver="5" value="1"/>
+				<init target="Buttons" ver="5" value="2"/>
+				<init target="Header" ver="5" value="
+Окно подтверждения действий"/>
+				<init target="YesAction" ver="5" ref="here.YesAction_UD_AppSettings"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Open_UD_PermissionFault" display-name="Open_UD_PermissionFault" uuid="48b551e0-3fa7-4213-a418-5b7cb5241f9f" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="OpenNoPermisUD" display-name="OpenNoPermisUD" ver="5" event="Invoked" form-action="open-dialog" form-by-id="false">
+			<object access-modifier="private" uuid="a1cb7483-0717-494b-886d-1e1e5b5dcd05" base-type="UserDialog" base-type-id="3c54f3db-a950-487c-861e-56a8d2eba70d" ver="5">
+				<init target="Message" ver="5" value="Для выполнения указанного действия Вам не хватает полномочий. Для получения дополнительных сведений обратитесь к Администратору"/>
+				<init target="Icon" ver="5" value="0"/>
+				<init target="Buttons" ver="5" value="0"/>
+				<init target="Header" ver="5" value="Недостаточно полномочий"/>
+			</object>
+		</do-on>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+	</object>
+	<object access-modifier="private" name="YesAction_UD_AppSettings" display-name="действия при нажатии на Да в диалоговом окне" uuid="574a5090-40ca-4b83-a8cc-b9063a161ade" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="YesHndlr" display-name="YesHndlr" ver="5" event="Invoked">
+			<body kind="om">
+				<![CDATA[ApParValueOut.Value = String.ToFloat(ValueInput.Text, ApParValueIn.Value);
+ValueInput.Visible = false;
+SubmitButton.Visible = false;
+
+CreateUserMessage.Invoke();]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="SubmitButton" display-name="SubmitButton" uuid="33994c27-c682-4d58-a271-e3828193555c" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5" description="" cardinal="1">
+		<designed target="X" value="94" ver="5"/>
+		<designed target="Y" value="3" ver="5"/>
+		<designed target="ZValue" value="9999" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="false" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="22" ver="5"/>
+		<designed target="Height" value="20.75" ver="5"/>
+		<designed target="Checkable" value="false" ver="5"/>
+		<designed target="Checked" value="false" ver="5"/>
+		<designed target="Text" value="" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="OnClickFontColor" value="4278190080" ver="5"/>
+		<designed target="OnHoverFontColor" value="4278190080" ver="5"/>
+		<designed target="DisabledFontColor" value="4278190080" ver="5"/>
+		<designed target="BrushColor" value="4293980400" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="OnClickBrushColor" value="4288716960" ver="5"/>
+		<designed target="OnClickBrushStyle" value="1" ver="5"/>
+		<designed target="OnHoverBrushColor" value="4294967295" ver="5"/>
+		<designed target="OnHoverBrushStyle" value="1" ver="5"/>
+		<designed target="DisabledBrushColor" value="4288716960" ver="5"/>
+		<designed target="DisabledBrushStyle" value="1" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="OnClickPenColor" value="4278190080" ver="5"/>
+		<designed target="OnClickPenStyle" value="1" ver="5"/>
+		<designed target="OnClickPenWidth" value="1" ver="5"/>
+		<designed target="OnHoverPenColor" value="4278190080" ver="5"/>
+		<designed target="OnHoverPenStyle" value="1" ver="5"/>
+		<designed target="OnHoverPenWidth" value="1" ver="5"/>
+		<designed target="DisabledPenColor" value="4288716960" ver="5"/>
+		<designed target="DisabledPenStyle" value="1" ver="5"/>
+		<designed target="DisabledPenWidth" value="1" ver="5"/>
+		<object access-modifier="private" name="Img" display-name="Img" uuid="8a6e7ac4-a900-4c1c-8b73-5b16519baf27" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="22" ver="5"/>
+			<designed target="Height" value="20.75" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="0" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="ImageFile" value="ASOKU/pictures/icons/ack.png" ver="5"/>
+			<designed target="Active" value="true" ver="5"/>
+			<designed target="CurrentFrameNumber" value="0" ver="5"/>
+			<designed target="Speed" value="1" ver="5"/>
+		</object>
+		<do-on access-modifier="private" name="SubmitButtonHndlr" display-name="SubmitButtonHndlr" ver="5" event="MouseClick">
+			<body kind="om">
+				<![CDATA[if (ValueInput.Text != "" && ValueInput.Text != Value.Text) { //фокус ушел И содержимое инпута пусто (для первого открытия) и если содержимое инпута равно актуальном значению приходящего сигнала
+	Open_UD_AppSettings.Invoke(); //если значения различаются - вызвать окно подтверждения
+}
+else {
+	ValueInput.Visible = false; //скрыть инпут
+	SubmitButton.Visible = false; //скрыть кнопку
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<do-on access-modifier="private" name="Hover" display-name="Hover" ver="5" event="MouseEnter">
+		<body kind="om">
+			<![CDATA[if(ApParValueIn.Advised == true && ApParValueOut.Advised == true && !ValueInput.Visible)
+{
+	PenColor = AsokuColor.asokuBlack;
+	here.PenWidth = 5;
+}
+]]>
+		</body>
+	</do-on>
+	<do-on access-modifier="private" name="MouseOut" display-name="MouseOut" ver="5" event="MouseLeave">
+		<body kind="om">
+			<![CDATA[PenColor =  AsokuColor.asokuTransparent;
+PenWidth = 3;]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="Open_UD_WebClient" display-name="Open_UD_WebClient" uuid="3cddefc4-32e0-4ecb-9e71-a32fde6b5e70" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="WebClientPermission" display-name="WebClientPermission" ver="5" event="Invoked" form-action="open-dialog" form-by-id="false">
+			<object access-modifier="private" uuid="3c589d7a-70e2-4eb2-a434-8f39768653fd" base-type="UserDialog" base-type-id="3c54f3db-a950-487c-861e-56a8d2eba70d" ver="5">
+				<init target="Message" ver="5" value="Вы используете WEB-клиент для работы с проектом. Для использования полного функционала воспользуйтесь настольной версией приложения"/>
+				<init target="Icon" ver="5" value="0"/>
+				<init target="Buttons" ver="5" value="0"/>
+				<init target="Header" ver="5" value="Ограничение WEB-клиента"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="HideUnits" display-name="Скрывать размерность" uuid="a1b743fb-c5bd-4852-bf40-8a0623d5a063" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
+	<do-on access-modifier="private" name="InfoTabView" display-name="InfoTabView" ver="5" event="MouseRightClick">
+		<body kind="om">
+			<![CDATA[OpenInfoTabViewOut.Invoke();
+
+OpenInfoTabViewIn.Invoke();]]>
+		</body>
+	</do-on>
+	<do-trace access-modifier="private" target="PenColor" ver="5">
+		<body>
+			<![CDATA[AsokuColor.asokuTransparent]]>
+		</body>
+	</do-trace>
+	<object access-modifier="private" name="CreateUserMessage" display-name="CreateUserMessage" uuid="1b646494-72f9-40d3-be27-b249c1eb1f9a" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="CreateMessageHndlr" display-name="CreateMessageHndlr" ver="5" event="Invoked">
+			<body kind="om">
+				<![CDATA[ApUserName = AsokuUserRights.SecurityContext_UserRights.Group(0) + " " + AsokuUserRights.SecurityContext_UserRights.CurrentUser;
+ApSignalName = ApParName.Value + " со значением " + ValueInput.Text + ApParValueOut.Units;
+ApParameterType = 2;
+ApMake = true;
+ApMake = false;
+ApParameterType = 0; // обнулить для обратной совместимости логики, которая не использовала это поле]]>
+			</body>
+		</do-on>
+		<object access-modifier="private" name="ApMake" display-name="ApMake" uuid="eeee3b34-60fc-41dd-8b41-1ecaa05b2617" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Path" ver="5" value="_System.Messages.UserChangeSignalMessage.Make"/>
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		</object>
+		<object access-modifier="private" name="ApParameterType" display-name="ApParameterType" uuid="7f5e9903-2a41-4da8-bce3-64d08f8a864e" base-type="ApItemUInt1" base-type-id="ed85e2d2-e5ed-42df-91a6-9455307a85c9" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<init target="Path" ver="5" value="_System.Messages.UserChangeSignalMessage.ParameterType"/>
+		</object>
+		<object access-modifier="private" name="ApUserName" display-name="ApUserName" uuid="88ba5de6-228d-4522-9545-bf5ebf3e63f3" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<init target="Path" ver="5" value="_System.Messages.UserChangeSignalMessage.UserName"/>
+		</object>
+		<object access-modifier="private" name="ApSignalName" display-name="ApSignalName" uuid="028d5d5d-a69d-4d4e-a0a6-0a8d4cfad00e" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<init target="Path" ver="5" value="_System.Messages.UserChangeSignalMessage.SignalName"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="RerenderTimer" display-name="RerenderTimer" uuid="f3a88dec-3a9c-4f1b-97f0-4c941054ffee" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="5" description="" cardinal="1">
+		<designed target="Period" value="50" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<do-on access-modifier="private" name="RerenderHndlr" display-name="RerenderHndlr" ver="5" event="OnTimer">
+			<body kind="om">
+				<![CDATA[if (ApParValueIn.Advised && ApParValueOut.Advised && Value.Text == "***") {
+	// here.PenColor
+	
+	here.PenColor = AsokuColor.asokuTransparent;
+	
+	// Value.Text
+	
+	if (ApParValueIn.Advised) Value.Text = String.ToString(ApParDisplayFormat.Value, ApParValueIn.Value);
+	
+	// Value.FontColor
+	
+	if (!ApParValueIn.Advised || !ApParValueOut.Advised) Value.FontColor = AsokuColor.asokuBlack;
+	else Value.FontColor = AsokuColor.asokuGreen;
+	
+	// Units.Visible
+	
+	Units.Visible = !HideUnits;
+	
+	// Units.FontColor
+	
+	Units.FontColor = AsokuColor.asokuWhite;
+	
+	//this.Active = false;
+}]]>
+			</body>
+		</do-on>
+	</object>
+</type>
+

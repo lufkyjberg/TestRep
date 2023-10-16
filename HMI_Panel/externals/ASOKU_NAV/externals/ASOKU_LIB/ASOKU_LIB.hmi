@@ -1,0 +1,84 @@
+<unit uuid="213260bc-e289-4357-86fd-c3169155e15d" name="ASOKU_LIB" display-name="ASOKU_LIB" description="" ver="5" main-form-id="75ceb5b9-b170-4f92-b6b3-ce5b0e6770d1">
+	<object file="Button_PropertiesDialogs.omobj" filter="Оформление/Кнопки"/>
+	<object file="Text_PropertiesDialogs.omobj" filter="Оформление/Текст"/>
+	<object file="UserDialog.omobj" filter=""/>
+	<object file="AnalogDpBarHorisontal.omobj" filter="Объекты/Аналоговый сигнал/Бар"/>
+	<object file="AnalogDpBarVerticalWind.omobj" filter="Объекты/Аналоговый сигнал/Бар"/>
+	<object file="AnalogDpSimpleValue.omobj" filter="Объекты/Аналоговый сигнал"/>
+	<object file="AnalogDpValue.omobj" filter="Объекты/Аналоговый сигнал"/>
+	<object file="AODpValue.omobj" filter="Объекты/Аналоговый сигнал"/>
+	<object file="ButtonTab.omobj" filter="Оформление/Кнопки"/>
+	<object file="ButtonUserDialogs.omobj" filter="Оформление/Кнопки"/>
+	<object file="ButtonWithDelay.omobj" filter="Оформление/Кнопки"/>
+	<object file="CheckboxPropertiesDialogs.omobj" filter="Оформление/Переключатели"/>
+	<object file="Disconnector.omobj" filter="Объекты"/>
+	<object file="DiscreteDpGAWorkStatus.omobj" filter="Объекты/Дискретный сигнал"/>
+	<object file="DiscreteDpGAWorkStatusSmall.omobj" filter="Объекты/Дискретный сигнал"/>
+	<object file="DiscreteDpValue.omobj" filter="Объекты/Дискретный сигнал"/>
+	<object file="DiscreteDpValueLong.omobj" filter="Объекты/Дискретный сигнал"/>
+	<object file="DiscreteDpValueSmall.omobj" filter="Объекты/Дискретный сигнал"/>
+	<object file="DiscreteWith2Value.omobj" filter="Объекты/Дискретный сигнал"/>
+	<object file="DODpValue.omobj" filter="Объекты/Дискретный сигнал"/>
+	<object file="3PKC.omobj" filter="Объекты/Простые объекты/Схема подключения"/>
+	<object file="Break.omobj" filter="Объекты/Простые объекты"/>
+	<object file="ButtonPropertiesDialogs.omobj" filter="Оформление/Кнопки"/>
+	<object file="Coil.omobj" filter="Объекты/Простые объекты/Схема подключения"/>
+	<object file="CurrentTransformer.omobj" filter="Объекты/Простые объекты/Схема подключения"/>
+	<object file="Generator.omobj" filter="Объекты/Простые объекты/Схема подключения"/>
+	<object file="Grounding.omobj" filter="Объекты/Простые объекты/Схема подключения"/>
+	<object file="GroundSwitch.omobj" filter="Объекты"/>
+	<object file="IDKWIT.omobj" filter="Объекты/Простые объекты/Схема подключения"/>
+	<object file="IEC_ReverseStationInfoForm.omobj" filter="Диагностика"/>
+	<object file="IecCheckWithReserve.omobj" filter="Диагностика"/>
+	<object file="IECReverseStationInfo.omobj" filter="Диагностика"/>
+	<object file="InfoPanel.omobj" filter="Вид"/>
+	<object file="InfoTabSPR(X).omobj" filter="Информационные окна"/>
+	<object file="InfoTabView.omobj" filter="Информационные окна"/>
+	<object file="InfoViewAnalog.omobj" filter="Информационные окна"/>
+	<object file="InfoViewDiscrete.omobj" filter="Информационные окна"/>
+	<object file="InfoViewMessages.omobj" filter="Информационные окна"/>
+	<object file="InfoViewSettingAnalog.omobj" filter="Информационные окна"/>
+	<object file="InfoViewSettingDiscrete.omobj" filter="Информационные окна"/>
+	<object file="LedQuadrate.omobj" filter="Объекты"/>
+	<object file="LedСircle.omobj" filter="Объекты"/>
+	<object file="Limiter.omobj" filter="Объекты/Простые объекты/Схема подключения"/>
+	<object file="LongitudinalCompensationDevice.omobj" filter="Объекты/Простые объекты/Схема подключения"/>
+	<object file="M.omobj" filter="Объекты/Простые объекты/Схема подключения"/>
+	<object file="M_1.omobj" filter="Объекты/Простые объекты/Схема подключения"/>
+	<object file="ModuleFailure.omobj" filter="Объекты/Простые объекты"/>
+	<object file="PdpCircle.omobj" filter="Объекты/Фигуры"/>
+	<object file="PdpElement.omobj" filter="Объекты/Фигуры"/>
+	<object file="PdshCircleLower.omobj" filter="Объекты/Фигуры"/>
+	<object file="PdshCircleUpper.omobj" filter="Объекты/Фигуры"/>
+	<object file="PdshElement.omobj" filter="Объекты/Фигуры"/>
+	<object file="Pump.omobj" filter="Объекты/Простые объекты/Схема подключения"/>
+	<object file="RHCVButton.omobj" filter="Оформление/Кнопки"/>
+	<object file="ServerRedundancy.omobj" filter="Диагностика"/>
+	<object file="Settings.omobj" filter="Вид"/>
+	<object file="SettingsTabView.omobj" filter="Вид"/>
+	<object file="ShnDisconnector.omobj" filter="Объекты"/>
+	<object file="SliceCircle.omobj" filter="Объекты/Фигуры"/>
+	<object file="SnapShot.omobj" filter=""/>
+	<object file="STCircle.omobj" filter="Объекты/Фигуры"/>
+	<object file="Switch.omobj" filter="Объекты"/>
+	<object file="SwitchTruck.omobj" filter="Объекты/Простые объекты/Схема подключения"/>
+	<object file="TextParse.omobj" filter="Оформление/Текст"/>
+	<object file="TextParseDescrete.omobj" filter="Оформление/Текст"/>
+	<object file="TextPropertiesDialogs.omobj" filter="Оформление/Текст"/>
+	<object file="TextUserDialogs.omobj" filter="Оформление/Текст"/>
+	<object file="TransformerPart1.omobj" filter="Объекты/Простые объекты/Схема подключения"/>
+	<object file="TransformerPart2.omobj" filter="Объекты/Простые объекты/Схема подключения"/>
+	<object file="Trends.omobj" filter="Вид"/>
+	<object file="TrendView.omobj" filter="Вид"/>
+	<object file="WiringDiagramObject.omobj" filter="Объекты/Фигуры"/>
+	<object file="Сompensator.omobj" filter="Объекты/Простые объекты/Схема подключения"/>
+	<object file="MainForm.omobj" filter=""/>
+	<object file="AsokuMain.omobj" filter=""/>
+	<object file="AsokuColor.omobj" filter=""/>
+	<object file="AsokuConst.omobj" filter=""/>
+	<object file="AsokuUserRights.omobj" filter=""/>
+	<unit-link name="ASOKU_MSG" type="b0491687-7585-47f3-b51f-4e24fd62aef1" type-hint="" assembly-path="ASOKU_MSG" ver="5"/>
+	<unit-link name="CommonLib" type="b0491687-7585-47f3-b51f-4e24fd62aef1" type-hint="" assembly-path="CommonLib" ver="5"/>
+	<unit-link name="ASOKU_TRD" type="b0491687-7585-47f3-b51f-4e24fd62aef1" type-hint="" assembly-path="ASOKU_TRD" ver="5"/>
+</unit>
+

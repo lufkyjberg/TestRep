@@ -1,0 +1,139 @@
+<type access-modifier="private" name="AV" display-name="AV" uuid="62615a72-d705-4b13-ae90-712efe586c49" base-type="" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Width" value="630" ver="5"/>
+	<designed target="Height" value="640" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xff646464" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="580" ver="5"/>
+	<designed target="WindowHeight" value="640" ver="5"/>
+	<designed target="WindowCaption" value="MainForm" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="1" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="0" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<object access-modifier="private" name="Text_PropertiesDialogs_120" display-name="Text_PropertiesDialogs_120" uuid="09fd2e01-e353-4f34-82ed-fa66b714127d" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="5" ver="5"/>
+		<designed target="Y" value="170" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="620" ver="5"/>
+		<designed target="Height" value="45" ver="5"/>
+		<designed target="Text" value="Готовность канала AV1" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Electro.SV.AV1_ready_SV"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["HydroUnits.GA_01.Electro.SV." + FormParDevPath + "_ready_SV"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_122" display-name="Text_PropertiesDialogs_122" uuid="300debab-7cce-47e7-9eae-a7eda45eda95" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="5" ver="5"/>
+		<designed target="Y" value="80" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="620" ver="5"/>
+		<designed target="Height" value="45" ver="5"/>
+		<designed target="Text" value="Предупреждение AV1" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Electro.SV.AV1_warn_SV"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["HydroUnits.GA_01.Electro.SV." + FormParDevPath + "_warn_SV"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_124" display-name="Text_PropertiesDialogs_124" uuid="6f684df2-f6ea-45b9-acd0-67ccd453c220" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="5" ver="5"/>
+		<designed target="Y" value="215" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="620" ver="5"/>
+		<designed target="Height" value="45" ver="5"/>
+		<designed target="Text" value="Работа AV1" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Electro.SV.AV1_work_SV"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["HydroUnits.GA_01.Electro.SV." + FormParDevPath + "_work_SV"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_126" display-name="Text_PropertiesDialogs_126" uuid="0c864381-3448-43d7-ad2d-08ef7a963707" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="5" ver="5"/>
+		<designed target="Y" value="125" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="620" ver="5"/>
+		<designed target="Height" value="45" ver="5"/>
+		<designed target="Text" value="Авария канала AV1" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Electro.SV.AV1_alarm_SV"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["HydroUnits.GA_01.Electro.SV." + FormParDevPath + "_alarm_SV"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="FormParDevPath" display-name="FormParDevPath" uuid="0ef0ba45-da71-4d6b-8d1e-38b31a1d30cc" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="TextPropertiesDialogs_1" display-name="TextPropertiesDialogs_1" uuid="062fbb87-9702-4844-a8fc-20cb9811a223" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="630" ver="5"/>
+		<designed target="Height" value="60" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[FormParDevPath.Value == "AV1"]]>
+				</condition>
+				<expr>
+					<![CDATA["Канал AV1"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[FormParDevPath.Value == "AV2"]]>
+				</condition>
+				<expr>
+					<![CDATA["Канал AV2"]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA["AV"]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<designed target="TextAlignment" value="132" ver="5"/>
+	</object>
+</type>
+

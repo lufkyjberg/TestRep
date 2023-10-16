@@ -1,0 +1,197 @@
+<type access-modifier="private" name="SettingsTabView" display-name=" Панель вкладок прав" uuid="34bb30ec-c0e7-4adb-acd1-98f5d997fda3" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="760" ver="5"/>
+	<designed target="Height" value="246" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xfff0f0f0" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="491" ver="5"/>
+	<designed target="WindowHeight" value="346" ver="5"/>
+	<designed target="WindowCaption" value="" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="2" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="0" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Opened">
+		<body kind="om">
+			<![CDATA[//Определение положения окна
+posWindowNum = 0;
+while(posWindowNum<= AsokuMain.InfoTabViewPosNumber.Length && AsokuMain.InfoTabViewPosNumber[posWindowNum] == true )
+{
+  posWindowNum += 1;
+}
+AsokuMain.InfoTabViewPosNumber[posWindowNum] = true;
+
+if(posWindowNum == 0)
+{
+  this.WindowX = 10;
+  this.WindowY = 100;
+}
+if(posWindowNum == 1)
+{
+  this.WindowX = 500;
+  this.WindowY = 100;
+}
+if(posWindowNum == 2)
+{
+  this.WindowX = 990;
+  this.WindowY = 100;
+}
+if(posWindowNum == 3)
+{
+  this.WindowX = 10;
+  this.WindowY = 480;
+}
+if(posWindowNum == 4)
+{
+  this.WindowX = 500;
+  this.WindowY = 480;
+}
+if(posWindowNum == 5)
+{
+  this.WindowX = 990;
+  this.WindowY = 480;
+}
+
+OpenedTab = "Button_Tab_Settings"; //Открытая вкладка
+Open_Settings.Invoke();
+
+]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="Frame_TabInfo" display-name="Frame_TabInfo" uuid="ec53ca05-9949-4904-afc6-c59006e2ebfd" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="26" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="760" ver="5"/>
+		<designed target="Height" value="220" ver="5"/>
+		<designed target="PenColor" value="0xffd9d9d9" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="OverrideScaling" value="false" ver="5"/>
+		<designed target="ShowScrollBars" value="true" ver="5"/>
+		<designed target="MoveByMouse" value="false" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Open_Settings" display-name="команда открытия InfoView" uuid="85cc276c-ac10-4aad-9c63-aa2221fd422f" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" frame-link="here.Frame_TabInfo" form-action="open-in-frame" form-by-id="false">
+			<object access-modifier="private" uuid="09ac824d-4f8d-4ce0-ac2b-96f8e156232b" base-type="Settings" base-type-id="e7754043-4ba6-4569-876d-d38b271c8572" ver="5">
+				<designed target="WindowBorderStyle" value="2" ver="5"/>
+				<designed target="WindowWidth" value="760" ver="5"/>
+				<designed target="WindowHeight" value="220" ver="5"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Open_Snapshot" display-name="команда открытия InfoViewSetting" uuid="23f58ce2-09d3-4448-ba3a-fa88cae0d1b6" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="Invoked" frame-link="Frame_TabInfo" form-action="open-in-frame" form-by-id="false">
+			<object access-modifier="private" uuid="5f7be52b-6155-465c-86a9-338065829081" base-type="SnapShot" base-type-id="acd02878-49f7-4738-af77-ea8048bf8626" ver="5">
+				<designed target="WindowBorderStyle" value="2" ver="5"/>
+				<designed target="WindowSizeMode" value="0" ver="5"/>
+				<designed target="Height" value="220" ver="5"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="DebugTool" display-name="DebugTool" uuid="5edefdcf-a62d-4573-b3c3-08116f031a83" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Button_Tab_Settings" display-name="Button_Tab_Settings" uuid="efbae509-3f58-456e-a2e4-f320eaa07611" base-type="Button_Tab" base-type-id="78b9186d-9daf-46f8-b860-aaa65ddb9447" ver="5" description="" cardinal="1">
+		<designed target="X" value="1" ver="5"/>
+		<designed target="Y" value="2" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="140" ver="5"/>
+		<designed target="Height" value="23" ver="5"/>
+		<designed target="Text" value="Уставки" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+			<body kind="om">
+				<![CDATA[Open_Settings.Invoke();
+OpenedTab.Value = "Button_Tab_Settings"; 
+]]>
+			</body>
+		</do-on>
+		<init target="Checked" ver="5" value="true"/>
+		<do-trace access-modifier="private" target="Checked" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[OpenedTab.Value == "Button_Tab_Settings"]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Button_Tab_Snapshot" display-name="Button_Tab_Snapshot" uuid="69beb495-a4d6-46e3-8488-c5b976c37c9e" base-type="Button_Tab" base-type-id="78b9186d-9daf-46f8-b860-aaa65ddb9447" ver="5" description="" cardinal="1">
+		<designed target="X" value="143" ver="5"/>
+		<designed target="Y" value="2" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="140" ver="5"/>
+		<designed target="Height" value="23" ver="5"/>
+		<designed target="Text" value="Сохранить snapshot" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+			<body kind="om">
+				<![CDATA[Open_Snapshot.Invoke();
+OpenedTab.Value = "Button_Tab_Snapshot";
+]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Checked" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[OpenedTab.Value == "Button_Tab_Snapshot"]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="OpenedTab" display-name="Имя открытой вкладки" uuid="433dbbc5-0f61-4cd8-95f6-92dceb18947d" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="posWindowNum" display-name="Номер позиции панели" uuid="25f284c8-765f-4f43-9d8d-2fde53b58f4a" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="5" description="" cardinal="1"/>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="Closed">
+		<body kind="om">
+			<![CDATA[AsokuMain.InfoTabViewPosNumber[posWindowNum] = false;]]>
+		</body>
+	</do-on>
+	<designed target="Flip" value="0" ver="5"/>
+</type>
+

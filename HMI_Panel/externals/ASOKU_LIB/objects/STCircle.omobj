@@ -1,0 +1,778 @@
+<type access-modifier="public" name="STCircle" display-name="Круг ОВ" uuid="3141ba52-c19d-4112-9037-3966ad141ddf" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="370" ver="5"/>
+	<designed target="Height" value="370" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="1" ver="5"/>
+	<designed target="PenWidth" value="0" ver="5"/>
+	<designed target="BrushColor" value="0xff7f7f7f" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="PieAngle" value="360" ver="5"/>
+	<designed target="PieAngleStart" value="360" ver="5"/>
+	<designed target="HoleSize" value="0" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<object access-modifier="private" name="TextField_XB1" display-name="TextField_XB1" uuid="c4fdc20d-9bca-41e4-b770-4d87edbed0b3" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="17.369074714449823" ver="5"/>
+		<designed target="Y" value="335.81588834958688" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="91.672344210499261" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Text" value="ХВ1" ver="5"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xff5555ff" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextField_XB2" display-name="TextField_XB2" uuid="4185c053-e51b-45a5-a86e-4ea5c343ac95" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="-91.333333333333314" ver="5"/>
+		<designed target="Y" value="141.07147813094662" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="91.67234421049929" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Text" value="ХВ2" ver="5"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xff5555ff" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextField_XB3" display-name="TextField_XB3" uuid="5e0b4699-610d-4c0c-9265-40d62d947c77" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="17.369074714449823" ver="5"/>
+		<designed target="Y" value="-54.756151173235367" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="91.67234421049929" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Text" value="ХВ3" ver="5"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xff5555ff" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextField_XB4" display-name="TextField_XB4" uuid="4095cfd6-d0d1-472b-bb9b-0b98c0c3a0f2" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="245.46593094586405" ver="5"/>
+		<designed target="Y" value="-57.851996684659753" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="91.672344210499304" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Text" value="ХВ4" ver="5"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xff5555ff" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextField_XB5" display-name="TextField_XB5" uuid="ccd4ebaa-22f5-439f-aaac-eb4be0ddd5b6" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="360.83359863855929" ver="5"/>
+		<designed target="Y" value="141.07147813094662" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="91.67234421049929" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Text" value="ХВ5" ver="5"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xff5555ff" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextField_XB6" display-name="TextField_XB6" uuid="0664b164-dcbd-436b-ac88-1958a9b8cf2b" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="245.46593094586405" ver="5"/>
+		<designed target="Y" value="335.81588834958688" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="91.672344210499261" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Text" value="ХВ6" ver="5"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xff5555ff" ver="5"/>
+	</object>
+	<object access-modifier="private" name="HV_1" display-name="HV_1" uuid="455587b6-baa0-41e8-adf0-d325c0ddcb5f" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="150" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="370" ver="5"/>
+		<designed target="Height" value="370" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xff666666" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="60" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<object access-modifier="private" name="ParDevPath" display-name="ParDevPath" uuid="a5b11cf6-b30a-4656-8687-65443fc6ae21" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="Alarm_HH" display-name="Alarm_HH" uuid="5930f7af-72bf-43bf-ae9e-8e289665da02" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<init target="Value" ver="5" value="false"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[ParDevPath + ".SP_Result.Alarm_HH"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Alarm_H" display-name="Alarm_H" uuid="6385fd8d-9818-4f8b-b7b4-68dbed6effec" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[ParDevPath + ".SP_Result.Alarm_H"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Alarm_LL" display-name="Alarm_LL" uuid="04c36835-36ed-4b76-9762-36638bc4d8fa" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[ParDevPath + ".SP_Result.Alarm_LL"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Alarm_L" display-name="Alarm_L" uuid="b3ca5a13-4721-42f9-877e-d940a3ad5844" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[ParDevPath + ".SP_Result.Alarm_L"]]>
+				</body>
+			</do-trace>
+		</object>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.Air.T_air_cool1"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Alarm_HH.Value || Alarm_LL.Value]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Alarm_H.Value || Alarm_L.Value]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuYellow]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[AsokuColor.asokuGrey]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="HV_2" display-name="HV_2" uuid="e21ce1c9-ae48-4adf-b96a-1fa1a4683345" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="210" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="370" ver="5"/>
+		<designed target="Height" value="370" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xff666666" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="60" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<object access-modifier="private" name="ParDevPath" display-name="ParDevPath" uuid="1b89c568-de8e-4bac-a21c-29ab8bdca8e8" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.Air.T_air_cool2"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Alarm_HH.Value || Alarm_LL.Value]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Alarm_H.Value || Alarm_L.Value]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuYellow]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[AsokuColor.asokuGrey]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<object access-modifier="private" name="Alarm_HH" display-name="Alarm_HH" uuid="9ab28a1f-f717-49ff-91ed-d95fc6d44b79" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<init target="Value" ver="5" value="false"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[ParDevPath + ".SP_Result.Alarm_HH"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Alarm_H" display-name="Alarm_H" uuid="075c04a5-1dd4-4438-b525-baae209cac26" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[ParDevPath + ".SP_Result.Alarm_H"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Alarm_LL" display-name="Alarm_LL" uuid="ea8cbd18-5216-4083-aabd-6d9e49ead371" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[ParDevPath + ".SP_Result.Alarm_LL"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Alarm_L" display-name="Alarm_L" uuid="ed91ece4-95d6-4557-9cd5-e6ceb4fc6756" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[ParDevPath + ".SP_Result.Alarm_L"]]>
+				</body>
+			</do-trace>
+		</object>
+	</object>
+	<object access-modifier="private" name="HV_3" display-name="HV_3" uuid="bd9c02ed-5002-413e-a84c-d491b2656f8d" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="270" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="370" ver="5"/>
+		<designed target="Height" value="370" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xff666666" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="60" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<object access-modifier="private" name="ParDevPath" display-name="ParDevPath" uuid="9ea7785d-799a-4d01-bfb9-8197816d039a" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.Air.T_air_cool3"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Alarm_HH.Value || Alarm_LL.Value]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Alarm_H.Value || Alarm_L.Value]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuYellow]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[AsokuColor.asokuGrey]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<object access-modifier="private" name="Alarm_HH" display-name="Alarm_HH" uuid="7e4b1a19-3108-455b-bec0-e0442048261e" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<init target="Value" ver="5" value="false"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[ParDevPath + ".SP_Result.Alarm_HH"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Alarm_H" display-name="Alarm_H" uuid="9d58886d-966c-49f2-905a-014796f98f0a" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[ParDevPath + ".SP_Result.Alarm_H"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Alarm_LL" display-name="Alarm_LL" uuid="5e89ec12-be5b-4c7d-8886-503681bde3f0" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[ParDevPath + ".SP_Result.Alarm_LL"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Alarm_L" display-name="Alarm_L" uuid="d33c543d-a8f0-4cca-92ec-97ae9905bedb" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[ParDevPath + ".SP_Result.Alarm_L"]]>
+				</body>
+			</do-trace>
+		</object>
+	</object>
+	<object access-modifier="private" name="HV_4" display-name="HV_4" uuid="88bdd233-8d9d-4a42-afe3-74149b6f0e9d" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="330" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="370" ver="5"/>
+		<designed target="Height" value="370" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xff666666" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="60" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<object access-modifier="private" name="ParDevPath" display-name="ParDevPath" uuid="b827fdb7-a0db-42a7-a1ea-88653ae17025" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.Air.T_air_cool4"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Alarm_HH.Value || Alarm_LL.Value]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Alarm_H.Value || Alarm_L.Value]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuYellow]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[AsokuColor.asokuGrey]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<object access-modifier="private" name="Alarm_HH" display-name="Alarm_HH" uuid="b032ec77-1f5a-42f5-9e44-5005be6d645c" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<init target="Value" ver="5" value="false"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[ParDevPath + ".SP_Result.Alarm_HH"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Alarm_H" display-name="Alarm_H" uuid="7d20f224-d71a-4b8f-9fa4-6aafa25a156a" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[ParDevPath + ".SP_Result.Alarm_H"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Alarm_LL" display-name="Alarm_LL" uuid="93d3e886-1822-4944-8add-30a12d9741ea" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[ParDevPath + ".SP_Result.Alarm_LL"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Alarm_L" display-name="Alarm_L" uuid="60f67ad8-0045-4c12-aee1-1764b5d2b794" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[ParDevPath + ".SP_Result.Alarm_L"]]>
+				</body>
+			</do-trace>
+		</object>
+	</object>
+	<object access-modifier="private" name="HV_5" display-name="HV_5" uuid="cfc84211-61b2-4128-aebd-8b4e82327692" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="30" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="370" ver="5"/>
+		<designed target="Height" value="370" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xff666666" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="60" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<object access-modifier="private" name="ParDevPath" display-name="ParDevPath" uuid="c6134248-1d8a-4f41-be90-ee0a974041cc" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.Air.T_air_cool5"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Alarm_HH.Value || Alarm_LL.Value]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Alarm_H.Value || Alarm_L.Value]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuYellow]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[AsokuColor.asokuGrey]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<object access-modifier="private" name="Alarm_HH" display-name="Alarm_HH" uuid="e0101881-06dc-4aa7-bc11-b51dff2eeec7" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<init target="Value" ver="5" value="false"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[ParDevPath + ".SP_Result.Alarm_HH"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Alarm_H" display-name="Alarm_H" uuid="58e8bdf9-814c-4be7-813a-59cde93877c3" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[ParDevPath + ".SP_Result.Alarm_H"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Alarm_LL" display-name="Alarm_LL" uuid="2e7011b3-1f6f-4e40-b401-a70d0919ada3" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[ParDevPath + ".SP_Result.Alarm_LL"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Alarm_L" display-name="Alarm_L" uuid="3c301932-d1ae-437e-b123-fb8a943bfcd1" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[ParDevPath + ".SP_Result.Alarm_L"]]>
+				</body>
+			</do-trace>
+		</object>
+	</object>
+	<object access-modifier="private" name="HV_6" display-name="HV_6" uuid="1abc6a99-e692-40dc-9907-a536846cd11c" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="90" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="370" ver="5"/>
+		<designed target="Height" value="370" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xff666666" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="60" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<object access-modifier="private" name="ParDevPath" display-name="ParDevPath" uuid="36ddc134-5c83-45e7-bcf4-935b9aab5c6c" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.Air.T_air_cool6"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Alarm_HH.Value || Alarm_LL.Value]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Alarm_H.Value || Alarm_L.Value]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuYellow]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[AsokuColor.asokuGrey]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<object access-modifier="private" name="Alarm_HH" display-name="Alarm_HH" uuid="19c99ceb-a374-48cf-8c42-b4ec4e52fd02" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<init target="Value" ver="5" value="false"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[ParDevPath + ".SP_Result.Alarm_HH"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Alarm_H" display-name="Alarm_H" uuid="3a07f614-b578-4be1-9406-decefa078971" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[ParDevPath + ".SP_Result.Alarm_H"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Alarm_LL" display-name="Alarm_LL" uuid="f74eda3c-bb9c-4e5a-ab20-65f1c11a50f8" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[ParDevPath + ".SP_Result.Alarm_LL"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Alarm_L" display-name="Alarm_L" uuid="0bb903eb-7c9a-46f0-8612-07b0584d336c" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[ParDevPath + ".SP_Result.Alarm_L"]]>
+				</body>
+			</do-trace>
+		</object>
+	</object>
+	<object access-modifier="private" name="GV_1" display-name="GV_1" uuid="6697a237-7599-4568-ab91-24e2e323a252" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="20" ver="5"/>
+		<designed target="Y" value="20" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="-90" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="330" ver="5"/>
+		<designed target="Height" value="330" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xff666666" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="180" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<object access-modifier="private" name="ParDevPath" display-name="ParDevPath" uuid="a5648c84-47d3-4708-a350-87c3610d7e65" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.Air.T_air_hot1"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Alarm_HH.Value || Alarm_LL.Value]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Alarm_H.Value || Alarm_L.Value]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuYellow]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[AsokuColor.asokuGrey]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<object access-modifier="private" name="Alarm_HH" display-name="Alarm_HH" uuid="cb84c744-c5f1-446e-8323-f727e2ec36fa" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<init target="Value" ver="5" value="false"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[ParDevPath + ".SP_Result.Alarm_HH"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Alarm_H" display-name="Alarm_H" uuid="c70d1ac5-c748-4b2b-882f-66120e11fbac" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[ParDevPath + ".SP_Result.Alarm_H"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Alarm_LL" display-name="Alarm_LL" uuid="72f00422-7733-44e4-9514-ae004ba26091" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[ParDevPath + ".SP_Result.Alarm_LL"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Alarm_L" display-name="Alarm_L" uuid="62369cbb-14eb-4ac9-a62c-672dcc486e95" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[ParDevPath + ".SP_Result.Alarm_L"]]>
+				</body>
+			</do-trace>
+		</object>
+	</object>
+	<object access-modifier="private" name="GV_2" display-name="GV_2" uuid="54b6669f-26e6-4e63-8231-c83a5e7a778c" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="20" ver="5"/>
+		<designed target="Y" value="20" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="90" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="330" ver="5"/>
+		<designed target="Height" value="330" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xff666666" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="180" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<object access-modifier="private" name="ParDevPath" display-name="ParDevPath" uuid="dd840f21-d7e8-486d-bd13-faf9b453c3b7" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.Air.T_air_hot2"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Alarm_HH.Value || Alarm_LL.Value]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Alarm_H.Value || Alarm_L.Value]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuYellow]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[AsokuColor.asokuGrey]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<object access-modifier="private" name="Alarm_HH" display-name="Alarm_HH" uuid="a730a297-bd34-4bf4-81cd-978877aad343" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<init target="Value" ver="5" value="false"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[ParDevPath + ".SP_Result.Alarm_HH"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Alarm_H" display-name="Alarm_H" uuid="fd0d202e-3a40-4fe9-a531-9b0f8d57ecca" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[ParDevPath + ".SP_Result.Alarm_H"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Alarm_LL" display-name="Alarm_LL" uuid="91a3a4b3-94a8-4cd4-a3aa-36d4f6a8fac6" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[ParDevPath + ".SP_Result.Alarm_LL"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Alarm_L" display-name="Alarm_L" uuid="ba12a39b-f7ee-4e4e-96c6-87038fbc9582" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[ParDevPath + ".SP_Result.Alarm_L"]]>
+				</body>
+			</do-trace>
+		</object>
+	</object>
+	<object access-modifier="private" name="Ellipse_1" display-name="Ellipse_1" uuid="0f0b942b-63f1-4470-bbfa-e5d6b340fa3e" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="40" ver="5"/>
+		<designed target="Y" value="40" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="290" ver="5"/>
+		<designed target="Height" value="290" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xff767676" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGrey]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="TextField_XB2_1" display-name="TextField_XB2_1" uuid="545ecc38-1189-40bf-bdb2-c22ee6029964" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="42.666666666666686" ver="5"/>
+		<designed target="Y" value="141.07147813094662" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="91.67234421049929" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Text" value="ГВ1" ver="5"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xffff9b9d" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextField_XB2_2" display-name="TextField_XB2_2" uuid="f4915789-8594-4082-9d2a-eeaac42319a9" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="228.66666666666669" ver="5"/>
+		<designed target="Y" value="141.07147813094662" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="91.67234421049929" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Text" value="ГВ2" ver="5"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xffff9b9d" ver="5"/>
+	</object>
+</type>
+

@@ -1,0 +1,133 @@
+<type access-modifier="public" name="TRF_Base_Data" display-name="TRF_Base_Data" uuid="e527c6b6-2448-4c97-a434-f9b2ab7e0b5a" base-type="" base-type-id="00000000-0000-0000-0000-000000000000" ver="5" description="">
+	<object access-modifier="private" name="parDevPath" display-name="Путь параметра" uuid="08f203a6-dbaa-4a4b-a1d7-7dc300b06e45" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Ap_Source_Transfer" display-name="Ap_Source_Transfer" uuid="5ddc847b-db08-4b05-bbed-68357e05e877" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+		<designed target="Location" value="" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="Path" value="" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[transferDevPath.Value]]>
+			</body>
+		</do-trace>
+		<init target="ParentSource" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="transferDevPath" display-name="полный путь до узла трансфера" uuid="7cdf01a9-d656-47a2-9aaa-8411d869c109" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Ap_TRF_ID_In" display-name="Ap_TRF_ID_In" uuid="fc35da81-1c32-4f70-95e3-38411b2bf6fc" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+		<init target="Path" ver="5" value="Out.ID.Value"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ID_Out" display-name="Ap_TRF_ID_Out" uuid="a77a0138-b282-4937-90ae-db835136a051" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+		<init target="Path" ver="5" value="In.ID.Value"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnValueChanged">
+			<body kind="om">
+				<![CDATA[_Action_setLQFreeTRF.Invoke();]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_RW_In" display-name="Ap_TRF_RW_In" uuid="cc681b4f-e1c0-47d5-8e11-df040e3d7dd8" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+		<init target="Path" ver="5" value="Out.RW.Value"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_RW_Out" display-name="Ap_TRF_RW_Out" uuid="3d3e8906-764a-44ae-a0aa-e1b68a94608c" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+		<init target="Path" ver="5" value="In.RW.Value"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_NumRack_In" display-name="Ap_TRF_NumRack_In" uuid="d15bb427-64ef-440a-87b0-6e8232cf6a67" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+		<init target="Path" ver="5" value="Out.NumRack.Value"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_NumRack_Out" display-name="Ap_TRF_NumRack_Out" uuid="7af5abad-786b-4c60-b1ba-f6c6c36d92a3" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+		<init target="Path" ver="5" value="In.NumRack.Value"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_NumModul_In" display-name="Ap_TRF_NumModul_In" uuid="44c1c164-97c8-4f64-b21b-59eb2185c8ed" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+		<init target="Path" ver="5" value="Out.NumModule.Value"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_NumModul_Out" display-name="Ap_TRF_NumModul_Out" uuid="30fb7b4c-bc19-48ce-b27b-c8ef1e228bec" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+		<init target="Path" ver="5" value="In.NumModule.Value"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_NumChan_In" display-name="Ap_TRF_NumChan_In" uuid="4e8adaed-d36d-4236-8c33-768c34aa68a7" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+		<init target="Path" ver="5" value="Out.NumChannel.Value"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_NumChan_Out" display-name="Ap_TRF_NumChan_Out" uuid="0f033d3f-5b7f-42db-a6ae-9dd4faebc1e5" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+		<init target="Path" ver="5" value="In.NumChannel.Value"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_StaticOff_In" display-name="Ap_TRF_StaticOff_In" uuid="b52b236a-098a-4ab0-822b-97a56117895d" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+		<init target="Path" ver="5" value="Out.StaticOff.Value"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_StaticOff_Out" display-name="Ap_TRF_StaticOff_Out" uuid="57b6acb5-4b3c-4735-b7ae-0b17fd569cd4" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+		<init target="Path" ver="5" value="In.StaticOff.Value"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_DisableCheckOOS_In" display-name="Ap_TRF_DisableCheckOOS_In" uuid="9f700def-5512-4a92-b7f2-7017931c49e0" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+		<init target="Path" ver="5" value="Out.DisableCheckOOS.Value"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_DisableCheckOOS_Out" display-name="Ap_TRF_DisableCheckOOS_Out" uuid="7bf2c1f4-d6ac-4ae9-8084-5f2bbb0df5be" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+		<init target="Path" ver="5" value="In.DisableCheckOOS.Value"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_SimulationMode_In" display-name="Ap_TRF_SimulationMode_In" uuid="f1b116d0-9878-40ba-859f-d9b0c24c90ac" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.SimulationMode.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_SimulationMode_Out" display-name="Ap_TRF_SimulationMode_Out" uuid="85bc9e7d-4f61-45b9-bf25-2528fb699528" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.SimulationMode.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_DelayStateOOSOn_In" display-name="Ap_TRF_DelayStateOOSOn_In" uuid="297f727d-db91-4315-a67b-e81da2d91272" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+		<init target="Path" ver="5" value="Out.DelayStateOOSOn.Value"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_DelayStateOOSOn_Out" display-name="Ap_TRF_DelayStateOOSOn_Out" uuid="33eba03b-a835-4148-aff5-bb990b690e52" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+		<init target="Path" ver="5" value="In.DelayStateOOSOn.Value"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_DelayStateOOSOff_In" display-name="Ap_TRF_DelayStateOOSOff_In" uuid="b0a74b9b-eeae-44e1-b680-0c28f33ca131" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+		<init target="Path" ver="5" value="Out.DelayStateOOSOff.Value"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_DelayStateOOSOff_Out" display-name="Ap_TRF_DelayStateOOSOff_Out" uuid="e1f22aa2-39b6-4e92-bfcd-d3fd99e90d2b" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+		<init target="Path" ver="5" value="In.DelayStateOOSOff.Value"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_NoMes_In" display-name="Ap_TRF_NoMes_In" uuid="d9a9ff73-0b3a-4312-9a02-eeed21db14b8" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.NoMes.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_NoMes_Out" display-name="Ap_TRF_NoMes_Out" uuid="e05a3d28-9214-4002-a73f-dc7e7e9d7842" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.NoMes.Value"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ClientID_In" display-name="Ap_TRF_ClientID_In" uuid="a5feb9ac-7a3a-46b6-a44c-905667d5eacb" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.ClientID.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ClientID_Out" display-name="Ap_TRF_ClientID_Out" uuid="a4ef2beb-f66e-4c14-80de-44e7a91f4d26" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.ClientID.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="DebugTool_1" display-name="DebugTool_1" uuid="1fdaf76c-d85f-4c9d-846f-8d2ecccf4b48" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Ap_TRF_TimeOutCounter_In" display-name="Ap_TRF_TimeOutCounter_In" uuid="87689d1c-1d2b-49e6-9066-f85c5d915c67" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+		<init target="Path" ver="5" value="TimeOutCounter_Out"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_TimeOutCounter_Out" display-name="Ap_TRF_TimeOutCounter_Out" uuid="8dc37e1e-73bf-4c0e-a250-cf6741764ce3" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+		<init target="Path" ver="5" value="TimeOutCounter_In"/>
+	</object>
+	<object access-modifier="private" name="_isListenMode" display-name="_isListenMode" uuid="e06eeeef-f419-42ef-8337-b40212c69a9c" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="_isReadOnlyMode" display-name="_isReadOnlyMode" uuid="2e19fb8c-1b9f-4495-ba87-2a35fe149485" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="_Action_setLQFreeTRF" display-name="_Action_setLQFreeTRF" uuid="38ebcb9c-ba65-47c2-9538-a2134508ea6c" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" base-const="true" base-ref="true" ver="5" description=""/>
+</type>
+

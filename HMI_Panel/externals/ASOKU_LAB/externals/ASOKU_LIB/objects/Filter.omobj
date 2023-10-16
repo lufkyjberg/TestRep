@@ -1,0 +1,1155 @@
+<type access-modifier="public" name="Filter" display-name="Filter" uuid="f7a39298-15a5-4330-8f16-d9e8da07b81f" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="40" ver="5"/>
+	<designed target="Height" value="40" ver="5"/>
+	<designed target="RoundingRadius" value="0" ver="5"/>
+	<designed target="PenColor" value="0xff0055ff" ver="5"/>
+	<designed target="PenStyle" value="1" ver="5"/>
+	<designed target="PenWidth" value="5" ver="5"/>
+	<designed target="BrushColor" value="0xff000000" ver="5"/>
+	<designed target="BrushStyle" value="0" ver="5"/>
+	<object access-modifier="private" name="ParDevPath" display-name="Путь до сигнала" uuid="ea503d0b-a445-4f97-906c-337d49de4144" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5"/>
+	<object access-modifier="private" name="WaterOrOilOrAirOrTech" display-name="WaterOrOilOrAirOrTech" uuid="71f54033-2167-408a-b998-8037ddd7936d" base-type="uint4" base-type-id="a42274b8-724b-4f03-bcf9-dd8498c29f8e" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ApParValueWork" display-name="ApParValueWork" uuid="1436a245-3542-4ee4-8494-6ea295307bf8" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5">
+		<init target="Path" ver="5" value="Value"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + "_work.Value"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<do-on access-modifier="private" name="Handler_5" display-name="Handler_5" ver="5" event="MouseEnter">
+		<body kind="javascript">
+			<![CDATA[Rectangle_2.PenStyle = 1;
+if (ParDevPath == "") {Rectangle_2.PenStyle = 0};]]>
+		</body>
+	</do-on>
+	<do-on access-modifier="private" name="Handler_6" display-name="Handler_6" ver="5" event="MouseLeave">
+		<body kind="javascript">
+			<![CDATA[Rectangle_2.PenStyle = 0;]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="ApParValueFlushing" display-name="ApParValueFlushing" uuid="a2aad3c3-91e3-4513-bd80-b967f2608da2" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5">
+		<init target="Path" ver="5" value="Value"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + "_flushing.Value"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApParValueClogged" display-name="ApParValueClogged" uuid="07eab4b5-fff0-4b90-9431-18edab2c242b" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5">
+		<init target="Path" ver="5" value="Value"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + "_clogged.Value"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<do-trace access-modifier="private" target="PenColor" ver="5">
+		<conditional-expr>
+			<condition>
+				<![CDATA[WaterOrOilOrAirOrTech == AsokuColor.asokuWater]]>
+			</condition>
+			<expr>
+				<![CDATA[0xff0000ff]]>
+			</expr>
+		</conditional-expr>
+		<conditional-expr>
+			<condition>
+				<![CDATA[WaterOrOilOrAirOrTech == AsokuColor.asokuAir]]>
+			</condition>
+			<expr>
+				<![CDATA[0xff0055ff]]>
+			</expr>
+		</conditional-expr>
+		<conditional-expr>
+			<condition>
+				<![CDATA[WaterOrOilOrAirOrTech == AsokuColor.asokuOil]]>
+			</condition>
+			<expr>
+				<![CDATA[0xffbaba00]]>
+			</expr>
+		</conditional-expr>
+		<conditional-expr>
+			<condition>
+				<![CDATA[WaterOrOilOrAirOrTech == AsokuColor.asokuTech]]>
+			</condition>
+			<expr>
+				<![CDATA[0xff00cf00]]>
+			</expr>
+		</conditional-expr>
+		<default-expr>
+			<expr>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</expr>
+		</default-expr>
+	</do-trace>
+	<object access-modifier="private" name="Rectangle_2" display-name="Rectangle_2" uuid="83d881e5-34d0-4db5-994d-348856de972f" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="-24.261465206733924" ver="5"/>
+		<designed target="Y" value="-13.707697848495499" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="45" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="88.630622721160137" ver="5"/>
+		<designed target="Height" value="67.523088004683288" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="3" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="PenColor" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="cb55891d-697d-47ad-99ff-69778eee7934" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="-3.6458892449920715" ver="5"/>
+		<designed target="Y" value="20.074999999999989" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="315" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="47.141778489984134" ver="5"/>
+		<designed target="Height" value="0" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xff8f8f8f" ver="5"/>
+		<designed target="PenStyle" value="2" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="LB_Simulation" display-name="LB_Simulation" uuid="349295c8-3b9a-498b-87cf-ab8917c596db" base-type="LightBlock" base-type-id="a6c91c60-c011-4aae-9fe3-b3fcf5106d1e" ver="5" description="" cardinal="1">
+		<designed target="X" value="-57.260122851893037" ver="5"/>
+		<designed target="Y" value="-46.312551257623198" ver="5"/>
+		<designed target="Rotation" value="45" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<designed target="Scale" value="0.050000000000000003" ver="5"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[AckSimulation.Value == 900]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuLightGrey]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[((Simulatte.Value == 900) && (Simulatte.Value != AckSimulation.Value))]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuCyan]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[AsokuColor.asokuLightGrey]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA[ParDevPath]]>
+			</body>
+		</do-trace>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="Blinker_1" display-name="Blinker_1" uuid="7ee7ad0c-c27a-4881-b4da-79b9a701bf46" base-type="Blinker" base-type-id="de67e797-c7fd-4703-9e0a-c04ac4022006" ver="5" description="" cardinal="1">
+			<designed target="Period" value="1000" ver="5"/>
+			<designed target="Active" value="false" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<do-trace access-modifier="private" target="Active" ver="5">
+				<conditional-expr>
+					<condition>
+						<![CDATA[AckSimulation.Value == 900]]>
+					</condition>
+					<expr>
+						<![CDATA[true]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[false]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<init target="BrushColor" ver="5" ref="AsokuColor.asokuCyan"/>
+		</object>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[parent.ParDevPath != ""]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="LB_Fault" display-name="LB_Fault" uuid="e5666879-d56c-4085-93c1-4690555f9689" base-type="LightBlock" base-type-id="a6c91c60-c011-4aae-9fe3-b3fcf5106d1e" ver="5" description="" cardinal="1">
+		<designed target="X" value="-60.795656757825775" ver="5"/>
+		<designed target="Y" value="-42.777017351690461" ver="5"/>
+		<designed target="Rotation" value="45" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<designed target="Scale" value="0.050000000000000003" ver="5"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[AckFault.Value == 800]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffd6d6d6]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[((Fault.Value == 800) && (Fault.Value != AckFault.Value))]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuGrey]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[AsokuColor.asokuLightGrey]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA[ParDevPath]]>
+			</body>
+		</do-trace>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="Blinker_1" display-name="Blinker_1" uuid="63787b6f-11d6-4b84-91fc-4c00c4763c2d" base-type="Blinker" base-type-id="de67e797-c7fd-4703-9e0a-c04ac4022006" ver="5" description="" cardinal="1">
+			<designed target="Period" value="1000" ver="5"/>
+			<designed target="Active" value="false" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<do-trace access-modifier="private" target="Active" ver="5">
+				<conditional-expr>
+					<condition>
+						<![CDATA[AckWarning.Value == 800]]>
+					</condition>
+					<expr>
+						<![CDATA[true]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[false]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<init target="BrushColor" ver="5" ref="AsokuColor.asokuGrey"/>
+		</object>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[parent.ParDevPath != ""]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="LB_Warning" display-name="LB_Warning" uuid="47802b8f-564b-40dd-bf52-28f66e51789e" base-type="LightBlock" base-type-id="a6c91c60-c011-4aae-9fe3-b3fcf5106d1e" ver="5" description="" cardinal="1">
+		<designed target="X" value="-64.33119066375852" ver="5"/>
+		<designed target="Y" value="-39.241483445757723" ver="5"/>
+		<designed target="Rotation" value="45" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<designed target="Scale" value="0.050000000000000003" ver="5"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[AckWarning.Value == 400]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuLightGrey]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[((Warning.Value == 400) && (Warning.Value != AckWarning.Value))]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuYellow]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[AsokuColor.asokuLightGrey]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA[ParDevPath]]>
+			</body>
+		</do-trace>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="Blinker_1" display-name="Blinker_1" uuid="e89f730c-6ed0-47b1-a33d-521cf040130e" base-type="Blinker" base-type-id="de67e797-c7fd-4703-9e0a-c04ac4022006" ver="5" description="" cardinal="1">
+			<designed target="Period" value="1000" ver="5"/>
+			<designed target="Active" value="false" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<do-trace access-modifier="private" target="Active" ver="5">
+				<conditional-expr>
+					<condition>
+						<![CDATA[AckWarning.Value == 400]]>
+					</condition>
+					<expr>
+						<![CDATA[true]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[false]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<init target="BrushColor" ver="5" ref="AsokuColor.asokuYellow"/>
+		</object>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[parent.ParDevPath != ""]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="LB_Alarm" display-name="LB_Alarm" uuid="03f7b7e4-7833-4427-8302-c5d6a8162c04" base-type="LightBlock" base-type-id="a6c91c60-c011-4aae-9fe3-b3fcf5106d1e" ver="5" description="" cardinal="1">
+		<designed target="X" value="-67.866724569691257" ver="5"/>
+		<designed target="Y" value="-35.705949539824985" ver="5"/>
+		<designed target="Rotation" value="45" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<designed target="Scale" value="0.050000000000000003" ver="5"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[AckAlarm.Value == 600]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuLightGrey]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[((Alarm.Value == 600) && (Alarm.Value != AckAlarm.Value))]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[AsokuColor.asokuLightGrey]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA[ParDevPath]]>
+			</body>
+		</do-trace>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="Blinker_1" display-name="Blinker_1" uuid="760f19fe-c74a-4b22-b38c-8f0c9b2d2950" base-type="Blinker" base-type-id="de67e797-c7fd-4703-9e0a-c04ac4022006" ver="5" description="" cardinal="1">
+			<designed target="Period" value="1000" ver="5"/>
+			<designed target="Active" value="false" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<do-trace access-modifier="private" target="Active" ver="5">
+				<conditional-expr>
+					<condition>
+						<![CDATA[AckAlarm.Value == 600]]>
+					</condition>
+					<expr>
+						<![CDATA[true]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[false]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<init target="BrushColor" ver="5">
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</init>
+		</object>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[parent.ParDevPath != ""]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Work" display-name="Work" uuid="4f717a69-c12a-42cb-9804-32599d92619a" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="2.6060606060605949" ver="5"/>
+		<designed target="Y" value="2.6303030303030255" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="35" ver="5"/>
+		<designed target="Height" value="35" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="Work2" display-name="Work2" uuid="bf08d18b-2774-475a-bdcb-4f0057d7f18a" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
+			<designed target="X" value="-0.15221445221442309" ver="5"/>
+			<designed target="Y" value="35.023543123543107" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="90" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="35.199999999999974" ver="5"/>
+			<designed target="Height" value="35.200000000000003" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="0" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="BrushColor" value="0xff006fa6" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+			<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="c5582c4f-673d-44de-8b87-295efbad5bdf" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="0" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="3b479b26-95c6-40c2-9dbb-bb51c984ec32" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="-35.200000000000003" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="4009dd5b-b2a0-4a39-b0d1-dcef3da8c323" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+				<designed target="X" value="35.199999999999974" ver="5"/>
+				<designed target="Y" value="0" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="bfba1e3f-a59c-4083-bee0-a5765adb2b45" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="0" ver="5"/>
+			</object>
+			<do-trace access-modifier="private" target="BrushColor" ver="5">
+				<conditional-expr>
+					<condition>
+						<![CDATA[WaterOrOilOrAirOrTech == AsokuColor.asokuWater]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff0055ff]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[WaterOrOilOrAirOrTech == AsokuColor.asokuAir]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff3c8aff]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[WaterOrOilOrAirOrTech == AsokuColor.asokuOil]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffffff00]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[WaterOrOilOrAirOrTech == AsokuColor.asokuTech]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff00ff00]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[AsokuColor.asokuTransparent]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Work1" display-name="Work1" uuid="f3f64370-cf8e-47b0-b64f-d51223291282" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
+			<designed target="X" value="-0.15221445221445151" ver="5"/>
+			<designed target="Y" value="35.023543123543107" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="270" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="35.199999999999974" ver="5"/>
+			<designed target="Height" value="35.200000000000003" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="0" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="BrushColor" value="0xff4164ff" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+			<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="49e0892c-d71a-4518-a52b-bf9f405269a3" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="0" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="7b7cb56c-a5cd-4e4c-80eb-8159d131b1ac" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="-35.200000000000003" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="aace44e6-94af-48a0-96fb-d3685125cff8" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+				<designed target="X" value="35.199999999999974" ver="5"/>
+				<designed target="Y" value="0" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="bccb6575-822c-42cf-aa25-f658f8280017" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="0" ver="5"/>
+			</object>
+			<do-trace access-modifier="private" target="BrushColor" ver="5">
+				<conditional-expr>
+					<condition>
+						<![CDATA[WaterOrOilOrAirOrTech == AsokuColor.asokuWater]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff0000ff]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[WaterOrOilOrAirOrTech == AsokuColor.asokuAir]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff0055ff]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[WaterOrOilOrAirOrTech == AsokuColor.asokuOil]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffbaba00]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[WaterOrOilOrAirOrTech == AsokuColor.asokuTech]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff00cf00]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[AsokuColor.asokuTransparent]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParValueWork.Value == true]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Flushing" display-name="Flushing" uuid="2f6397d8-196c-4c15-b847-192c076d860c" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
+		<designed target="X" value="2.4538461538461576" ver="5"/>
+		<designed target="Y" value="37.653846153846146" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="35.199999999999974" ver="5"/>
+		<designed target="Height" value="35.200000000000003" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffffff00" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="02585059-1d68-4a41-8215-3801f88c109d" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="ea31b922-2b49-4c4a-9841-3c0f44913d46" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="-35.200000000000003" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="87ef2fd2-f031-48b3-a30a-099e75f99e44" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="35.199999999999974" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="70c181a4-24e5-4e67-8d0b-ad913e51a3fa" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+		</object>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParValueFlushing.Value == true]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuYellow]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[AsokuColor.asokuTransparent]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="a7213dfd-1a1b-4b8a-8a15-c42bdbcde138" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="1.7286515973632319" ver="5"/>
+			<designed target="Y" value="-19.166666666666668" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="45" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="22.242696805273539" ver="5"/>
+			<designed target="Height" value="12.699999999999998" ver="5"/>
+			<designed target="Text" value="↔" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<do-trace access-modifier="private" target="FontColor" ver="5">
+				<conditional-expr>
+					<condition>
+						<![CDATA[ApParValueFlushing.Value == true]]>
+					</condition>
+					<expr>
+						<![CDATA[AsokuColor.asokuBlack]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[AsokuColor.asokuTransparent]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParValueFlushing.Value == true]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Clogged" display-name="Clogged" uuid="1a0a580a-e80a-472f-944a-8a0d6a2be4df" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
+		<designed target="X" value="2.4538461538461576" ver="5"/>
+		<designed target="Y" value="37.653846153846146" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="35.199999999999974" ver="5"/>
+		<designed target="Height" value="35.200000000000003" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffffff00" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="c45bcaff-66f5-4eb8-84c7-1de85cb84262" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="8f880f3b-bb43-42cb-8c51-3176082263f2" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="-35.200000000000003" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="c5efb0c8-e719-4bc5-92d8-e48d0316e15f" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="35.199999999999974" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="7cb37e60-9c35-40a9-b484-21cf756f5a3d" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Line_1" display-name="Line_1" uuid="e0cf72c9-3d89-4194-a674-e38e12f209a7" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
+			<designed target="X" value="1.9665176111271592" ver="5"/>
+			<designed target="Y" value="-3.3874369850611279" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="225" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="12.597581361673107" ver="5"/>
+			<designed target="Height" value="9.6966991411009005" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="BrushColor" value="0xff000000" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+			<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="1d87b3db-9f6c-4388-9527-98816f8bb947" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="0" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="0bf929a3-47de-47a6-a894-311961a96f41" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+				<designed target="X" value="6.2987906808365537" ver="5"/>
+				<designed target="Y" value="-9.6966991411009005" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="b958d67a-e8f8-4388-8cb7-117052235178" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+				<designed target="X" value="12.597581361673107" ver="5"/>
+				<designed target="Y" value="0" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="d5131e04-1097-4304-80f0-263c37aef7f7" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="0" ver="5"/>
+			</object>
+			<do-trace access-modifier="private" target="Visible" ver="5">
+				<conditional-expr>
+					<condition>
+						<![CDATA[ApParValueClogged == true]]>
+					</condition>
+					<expr>
+						<![CDATA[true]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[false]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Line_2" display-name="Line_2" uuid="d90d6649-6ad7-4d52-b1d9-3493b4203906" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
+			<designed target="X" value="3.479001137259516" ver="5"/>
+			<designed target="Y" value="-4.4898894185855989" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="225" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="10.078065089338477" ver="5"/>
+			<designed target="Height" value="7.7573593128807286" ver="5"/>
+			<designed target="PenColor" value="0xffffffff" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="0.5" ver="5"/>
+			<designed target="BrushColor" value="0xfff5d417" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+			<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="7e5dc78b-19d9-479f-b32c-418cfe731151" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="0" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="858fb61d-4e5d-48b7-88d2-669ef08906b3" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+				<designed target="X" value="5.0390325446692383" ver="5"/>
+				<designed target="Y" value="-7.7573593128807286" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="98138270-1a99-4624-a62b-0866b30c3d0a" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+				<designed target="X" value="10.078065089338477" ver="5"/>
+				<designed target="Y" value="0" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="54808f08-7ec0-4546-9030-d64280e4edf2" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="0" ver="5"/>
+			</object>
+			<do-trace access-modifier="private" target="Visible" ver="5">
+				<conditional-expr>
+					<condition>
+						<![CDATA[ApParValueClogged == true]]>
+					</condition>
+					<expr>
+						<![CDATA[true]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[false]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParValueClogged.Value == true]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuYellow]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[AsokuColor.asokuTransparent]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParValueClogged.Value == true]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ApParAlarmBytesClogget" display-name="ApParAlarmBytesClogget" uuid="e51e4777-cec9-42ea-9002-8528f964c06d" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + "_clogged.AlarmBytes"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApParAlarmBytesFlushing" display-name="ApParAlarmBytesFlushing" uuid="6ec78309-c0bd-4384-a618-aaaa03b6ae75" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + "_flushing.AlarmBytes"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApParAlarmBytesWork" display-name="ApParAlarmBytesWork" uuid="b549fe74-a021-4641-9240-06163a52f686" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + "_work.AlarmBytes"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="Alarm" display-name="Alarm" uuid="16a38626-8927-42d7-b101-d73a5babba66" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[String.SubString(ParDevPath.Value, 0, String.LastIndexOf(ParDevPath.Value, "."))+".Aggregation_Alarm.MaxImportantEventsInBranch"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="AckAlarm" display-name="AckAlarm" uuid="3927a0cb-8e09-4d3f-9b45-83bf455c7dc1" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[String.SubString(ParDevPath.Value, 0, String.LastIndexOf(ParDevPath.Value, "."))+".Aggregation_Alarm.MaxImportantNonAckEventsInBranch"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Warning" display-name="Warning" uuid="16fa0b3c-53ba-44a4-a317-63ee1fc37fa7" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[String.SubString(ParDevPath.Value, 0, String.LastIndexOf(ParDevPath.Value, "."))+".Aggregation_Warn.MaxImportantEventsInBranch"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="AckWarning" display-name="AckWarning" uuid="2490105d-0f41-47e7-b0c4-8b577145c379" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[String.SubString(ParDevPath.Value, 0, String.LastIndexOf(ParDevPath.Value, "."))+".Aggregation_Warn.MaxImportantNonAckEventsInBranch"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Fault" display-name="Fault" uuid="df2f5d1d-246b-496d-a6f6-4c6be6603505" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[String.SubString(ParDevPath.Value, 0, String.LastIndexOf(ParDevPath.Value, "."))+".Aggregation_Fault.MaxImportantEventsInBranch"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="AckFault" display-name="AckFault" uuid="069a7f6f-200b-4732-ae43-bd5dbf110a38" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[String.SubString(ParDevPath.Value, 0, String.LastIndexOf(ParDevPath.Value, "."))+".Aggregation_Fault.MaxImportantNonAckEventsInBranch"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Simulatte" display-name="Simulatte" uuid="7870183d-1368-40df-9c52-54585e42f6b2" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[String.SubString(ParDevPath.Value, 0, String.LastIndexOf(ParDevPath.Value, "."))+".Aggregation_Simulation.MaxImportantEventsInBranch"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="AckSimulation" display-name="AckSimulation" uuid="0ac7923a-939a-4d01-a1cb-d96099ab3bb0" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[String.SubString(ParDevPath.Value, 0, String.LastIndexOf(ParDevPath.Value, "."))+".Aggregation_Simulation.MaxImportantNonAckEventsInBranch"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ApParStatusBytesWork" display-name="ApParStatusBytesWork" uuid="7129dd46-3b84-4eca-9d80-f151ca0ef2a2" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + "_work.StatusBytes"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApParStatusBytesClogget" display-name="ApParStatusBytesClogget" uuid="b74568d2-1ce8-4128-b980-bb67c8efb99e" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + "_clogget.StatusBytes"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApParStatusBytesFlushing" display-name="ApParStatusBytesFlushing" uuid="ea116162-52d4-4da0-bf9e-c2fcb0bf5d3b" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + "_flushing.StatusBytes"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="Name" display-name="Name" uuid="7cb9867c-2bde-4b77-80ea-b7b5f09f0ba7" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Fault_Signal" display-name="Fault_Signal" uuid="020356ca-a1e7-4a68-ae70-0b4abf5c5da8" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
+		<designed target="X" value="2.453846153846158" ver="5"/>
+		<designed target="Y" value="37.653846153846146" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="false" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="35.199999999999974" ver="5"/>
+		<designed target="Height" value="35.200000000000003" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffffff00" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="c4173399-cc06-4f1c-919c-9ea845794838" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="89bcc66c-9168-45aa-a10e-84dc72568602" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="-35.200000000000003" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="96b89c4e-aef9-4954-a36d-e489a62f0686" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="35.199999999999974" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="c8ac4598-5d24-4afa-8245-a544d9fbfd76" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Line_3" display-name="Line_3" uuid="433f7038-262b-46f0-8f1c-7248d01fe1e7" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
+			<designed target="X" value="-1.0027710965550405" ver="5"/>
+			<designed target="Y" value="-1.1219169555170918" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="225" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="19.487427388991161" ver="5"/>
+			<designed target="Height" value="15.000000000000011" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+			<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="3e3b50d2-eb10-4aa8-8bdd-4faba289e4db" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="0" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="7c318e41-2021-4f7d-90d5-81157f676574" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+				<designed target="X" value="9.7437136944955807" ver="5"/>
+				<designed target="Y" value="-15.000000000000011" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="fb136bce-3f0c-4eb7-bd0f-4b01ad09739a" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+				<designed target="X" value="19.487427388991161" ver="5"/>
+				<designed target="Y" value="0" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="536e9678-9e56-416e-b01a-d28cde6be45e" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="0" ver="5"/>
+			</object>
+			<do-trace access-modifier="private" target="PenColor" ver="5">
+				<conditional-expr>
+					<condition>
+						<![CDATA[ApParValueClogged == true]]>
+					</condition>
+					<expr>
+						<![CDATA[AsokuColor.asokuBlack]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[AsokuColor.asokuTransparent]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="780e2763-9aae-4591-8858-36d7cb950a4a" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="8.0881733916342125" ver="5"/>
+			<designed target="Y" value="-14.539792558563578" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="225" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="2.4824243042640113" ver="5"/>
+			<designed target="Height" value="10.312637097744293" ver="5"/>
+			<designed target="Text" value="!" ver="5"/>
+			<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<do-trace access-modifier="private" target="FontColor" ver="5">
+				<conditional-expr>
+					<condition>
+						<![CDATA[ApParValueClogged == true]]>
+					</condition>
+					<expr>
+						<![CDATA[AsokuColor.asokuBlack]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[AsokuColor.asokuTransparent]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+	</object>
+	<object access-modifier="private" name="Open_FilterParametrs" display-name="Open_FilterParametrs" uuid="a2aaa339-fe64-4380-b464-3266b289645f" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_4" display-name="Handler_4" ver="5" event="Invoked" form-action="open-new-independent" form-by-id="false">
+			<object access-modifier="private" uuid="1cb10035-4f30-4d2a-939b-da706b2a65a9" base-type="FilterParametrs" base-type-id="e38442e7-5c6b-44b7-9907-efc4ece79997" ver="5">
+				<init target="Par" ver="5" ref="ParDevPath"/>
+				<init target="Name" ver="5" ref="here.Name"/>
+				<do-trace access-modifier="private" target="WindowCaption" ver="5">
+					<body kind="om">
+						<![CDATA["Окно контроля и управления. " + "Насосом" + " " + Name]]>
+					</body>
+				</do-trace>
+				<init target="color" ver="5" ref="WaterOrOilOrAirOrTech"/>
+			</object>
+		</do-on>
+	</object>
+	<do-on access-modifier="private" name="Handler_7" display-name="Handler_7" ver="5" event="MouseClick">
+		<body kind="javascript">
+			<![CDATA[if (ParDevPath.Value != "") Open_FilterParametrs.Invoke();]]>
+		</body>
+	</do-on>
+	<do-trace access-modifier="private" target="Tooltip" ver="5">
+		<body>
+			<![CDATA["Наименование: " + Name.Value +"\nИсточник: "+ ApParComment.Value]]>
+		</body>
+	</do-trace>
+	<object access-modifier="private" name="ApParComment" display-name="ApParComment" uuid="b130b811-7680-424f-95fc-70002ca47c99" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+</type>
+

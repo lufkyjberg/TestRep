@@ -1,0 +1,45 @@
+<type access-modifier="private" name="OnlyNumInput" display-name="OnlyNumInput" uuid="54d6f14a-6463-4326-8625-977f2b920dd5" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="133" ver="5"/>
+	<designed target="Height" value="30" ver="5"/>
+	<designed target="Text" value="" ver="5"/>
+	<designed target="Font" value="Arial,16,-1,5,50,0,0,0,0,0" ver="5"/>
+	<designed target="FontColor" value="4278190080" ver="5"/>
+	<designed target="TextAlignment" value="132" ver="5"/>
+	<designed target="HideInput" value="false" ver="5"/>
+	<designed target="PlaceholderText" value="" ver="5"/>
+	<designed target="ReadOnly" value="false" ver="5"/>
+	<do-on access-modifier="private" name="DeleteNotNumsFromInput" display-name="DeleteNotNumsFromInput" ver="5" event="TextChanged">
+		<body kind="javascript">
+			<![CDATA[const charsArray = this.Text.split("");
+
+for (let i = 0; i < charsArray.length; i++) {
+	if (charsArray[i] !== "." && isNaN(charsArray[i])) {
+		charsArray.splice(i, 1);
+		i--;
+	}
+}
+
+const newString = charsArray.join("");
+
+this.Text = newString;]]>
+		</body>
+	</do-on>
+	<do-on access-modifier="private" name="NanHandler" display-name="NanHandler" ver="5" event="TextChanged">
+		<body kind="javascript">
+			<![CDATA[while (isNaN(this.Text) && this.Text.length != 1) {
+	this.Text = this.Text.slice(0,-1);
+}]]>
+		</body>
+	</do-on>
+</type>
+

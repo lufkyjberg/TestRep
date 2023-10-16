@@ -1,0 +1,61 @@
+<type access-modifier="private" name="ColorPalette" display-name="ColorPalette" uuid="6aadbfde-782a-4d60-ae52-bfb1df84949f" base-type="" base-type-id="00000000-0000-0000-0000-000000000000" ver="5" description="">
+	<object access-modifier="private" name="Colors" display-name="Colors" uuid="dc51261e-ce37-4caa-a213-3b60ff6f1727" base-type="uint4" base-type-id="a42274b8-724b-4f03-bcf9-dd8498c29f8e" ver="5" description="" cardinal="20"/>
+	<do access-modifier="private" name="Initialize" display-name="Initialize" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="javascript">
+			<![CDATA[if (Colors[0] == 0)
+{
+	//log("Initialize color palette");
+	var colors = [	0xFF0000FF, 0xFF00FF00, 0xFFFF0000, 0xFFFF1EB4, 0xFFFFD200,
+						0xFF0087FF, 0xFF0F873C, 0xFF874B00, 0xFF3C005A, 0xFF0087A5,
+						0xFFFF8796, 0xFF00FFF0, 0xFFD2FF96, 0xFFB45AFF, 0xFFF0A5FF,
+						0xFF78002D, 0xFFFF8700, 0xFF878769, 0xFF00FF96, 0xFFFFC378];
+	
+	for (var i = 0; i < Colors.Length; i++)
+		Colors[i] = colors[i];
+}]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="GetColors" display-name="GetColors" ver="5" type="string" type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d">
+		<body kind="javascript">
+			<![CDATA[Initialize();
+
+var colors = [];
+for (var i= 0; i < Colors.Length; i++)
+	colors.push("0x" + Colors[i].toString(16));
+
+return JSON.stringify(colors);]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="Update" display-name="Update" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="javascript">
+			<![CDATA[var colors = JSON.parse(jsonColors);
+for (var i= 0; i < colors.length; i++)
+	Colors[i] = parseInt(colors[i], 16);]]>
+		</body>
+		<param access-modifier="private" name="jsonColors" display-name="" uuid="bbb2b9a1-574a-434b-b44c-71e540f2ee4a" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5"/>
+	</do>
+	<do access-modifier="private" name="GetNext" display-name="GetNext" ver="5" type="uint4" type-id="a42274b8-724b-4f03-bcf9-dd8498c29f8e">
+		<body kind="javascript">
+			<![CDATA[Initialize();
+
+var usedColors = JSON.parse(jsonUsedColors);
+
+var i = 0;
+while (i < Colors.Length)
+{
+	var pretender = Colors[i];
+
+	// если цвет не занят, то возвращаем его как результат
+	if (!usedColors.includes(pretender))
+		return pretender;
+
+	i += 1;
+}
+
+// так как количество графиков равно количеству цветов в палитре, то этого результата быть не должно
+return 0;]]>
+		</body>
+		<param access-modifier="private" name="jsonUsedColors" display-name="" uuid="641e66a9-f756-4292-ab56-a2537ca24ecf" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5"/>
+	</do>
+</type>
+

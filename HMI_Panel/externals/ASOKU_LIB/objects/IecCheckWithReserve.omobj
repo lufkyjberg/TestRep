@@ -1,0 +1,392 @@
+<type access-modifier="public" name="IecCheckWithReserve" display-name="IecCheckWithReserve" uuid="d628305e-2429-4e14-9d03-f4e19edb8e3a" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="55" ver="5"/>
+	<designed target="Height" value="60" ver="5"/>
+	<designed target="RoundingRadius" value="0" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="1" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xff646464" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<object access-modifier="private" name="Ellipse_2" display-name="Ellipse_2" uuid="33da27e7-45c7-4326-93e8-765ba9f14fd6" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="10" ver="5"/>
+		<designed target="Y" value="18" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="40" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffbababa" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Ap_ReserveHasActiveSource && (here.ApSource_ReserveStationSourceChannel.ConnectionState == 2)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[!Ap_ReserveHasActiveSource || (here.ApSource_ReserveStationSourceChannel.ConnectionState != 2)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffbababa]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Ellipse_1" display-name="Ellipse_1" uuid="09a04118-85ad-4821-9946-6a9ce22a2f58" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="5" ver="5"/>
+		<designed target="Y" value="15" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="40" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffbababa" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<object access-modifier="private" name="Text_PLC_IEV" display-name="Text_PLC_IEV" uuid="534df81e-5883-4074-bcd8-f262a4e900a2" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="5" ver="5"/>
+			<designed target="Y" value="5" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="30" ver="5"/>
+			<designed target="Height" value="30" ver="5"/>
+			<designed target="Text" value="ИЭВ" ver="5"/>
+			<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<do-trace access-modifier="private" target="Text" ver="5">
+				<body>
+					<![CDATA[_PLC_or_EQM]]>
+				</body>
+			</do-trace>
+		</object>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Ap_HasActiveSource && (here.ApSource_StationSourceChannel.ConnectionState == 2)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[!Ap_HasActiveSource || (here.ApSource_StationSourceChannel.ConnectionState !=2)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffbababa]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="f44d977c-13c0-4f31-ad80-5626cfe9a184" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="55" ver="5"/>
+		<designed target="Height" value="15" ver="5"/>
+		<designed target="Text" value="Название" ver="5"/>
+		<designed target="Font" value="Arial,8,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<body>
+				<![CDATA[_PLCname]]>
+			</body>
+		</do-trace>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="_PLCname" display-name="_PLCname" uuid="94b3b92c-e007-4b76-837e-f00046fcc873" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="_PLC_or_EQM" display-name="_PLC_or_EQM" uuid="04fc4fc4-00d8-4d26-8638-a5ef0ba64d15" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Ap_HasActiveSource" display-name="Ap_HasActiveSource" uuid="9f2a82a7-7a6b-44bd-9e50-7cf93ed14446" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="HasActiveSource"/>
+		<init target="Source" ver="5" ref="here.ApSource_Station"/>
+	</object>
+	<object access-modifier="private" name="Ap_TCPConnected" display-name="Ap_TCPConnected" uuid="57895719-fb51-4575-80c4-f5b37a783093" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="TCPConnected"/>
+		<init target="Source" ver="5" ref="here.ApSource_StationSourceChannel"/>
+	</object>
+	<object access-modifier="private" name="Ap_IECActivated" display-name="Ap_IECActivated" uuid="8776017b-8b2d-49ea-8d8f-f73dbe763450" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="IECActivated"/>
+		<init target="Source" ver="5" ref="here.ApSource_StationSourceChannel"/>
+	</object>
+	<object access-modifier="private" name="Ap_RecvDataFrames" display-name="Ap_RecvDataFrames" uuid="8d2755fd-118e-46b8-bf47-c153fb9f2a16" base-type="ApItemUInt4" base-type-id="322ce770-6c7b-49bc-9cd6-a367ca5b4627" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="RecvDataFrames"/>
+		<init target="Source" ver="5" ref="here.ApSource_StationSourceChannel"/>
+	</object>
+	<object access-modifier="private" name="Ap_SendDataFrames" display-name="Ap_SendDataFrames" uuid="3f9b8c86-91a4-429e-9b21-db8cb2cf0e40" base-type="ApItemUInt4" base-type-id="322ce770-6c7b-49bc-9cd6-a367ca5b4627" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="SendDataFrames"/>
+		<init target="Source" ver="5" ref="here.ApSource_StationSourceChannel"/>
+	</object>
+	<object access-modifier="private" name="Ap_ConnectedCount" display-name="Ap_ConnectedCount" uuid="5dbda4fb-bf26-47f7-b9f0-c609c54c728f" base-type="ApItemUInt4" base-type-id="322ce770-6c7b-49bc-9cd6-a367ca5b4627" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="ConnectedCount"/>
+		<init target="Source" ver="5" ref="here.ApSource_StationSourceChannel"/>
+	</object>
+	<object access-modifier="private" name="Ap_ConnectionFailedCount" display-name="Ap_ConnectionFailedCount" uuid="af77f7c0-b5a0-49f3-9c05-836ea31de2b0" base-type="ApItemUInt4" base-type-id="322ce770-6c7b-49bc-9cd6-a367ca5b4627" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="ConnectionFailedCount"/>
+		<init target="Source" ver="5" ref="here.ApSource_StationSourceChannel"/>
+	</object>
+	<object access-modifier="private" name="Ap_DisconnectedCount" display-name="Ap_DisconnectedCount" uuid="a3206c88-ce77-4750-aef0-e58ff5432939" base-type="ApItemUInt4" base-type-id="322ce770-6c7b-49bc-9cd6-a367ca5b4627" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="DisconnectedCount"/>
+		<init target="Source" ver="5" ref="here.ApSource_StationSourceChannel"/>
+	</object>
+	<object access-modifier="private" name="Ap_IECErrorsCount" display-name="Ap_IECErrorsCount" uuid="fadf55ec-fcae-46e4-822b-b9283f92ad63" base-type="ApItemUInt4" base-type-id="322ce770-6c7b-49bc-9cd6-a367ca5b4627" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="IECErrorsCount"/>
+		<init target="Source" ver="5" ref="here.ApSource_StationSourceChannel"/>
+	</object>
+	<object access-modifier="private" name="_Station_number" display-name="_Station_number" uuid="1d4999ad-c8a0-46c1-b2f0-43e59c264e80" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="_StationSource_number" display-name="_StationSource_number" uuid="d98169f8-7263-4aa0-a954-6cb74cfcab43" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="_StationSourceChannel_number" display-name="_StationSourceChannel_number" uuid="5eed8bb6-3cd4-4890-bb64-964fd0dda6cb" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Open_ReverseStationInfoForm" display-name="Open_ReverseStationInfoForm" uuid="3b7753bf-3775-485c-b13a-beecd9e1ed3b" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-by-id="false" form-action="open-new">
+			<object access-modifier="private" uuid="ca3e8728-259f-4291-9bd7-35e3dc7b0da4" base-type="IEC_ReverseStationInfoForm" base-type-id="2ae36793-f002-4906-8053-a800c819c86f" ver="5">
+				<init target="_Station_number" ver="5" ref="here._Station_number"/>
+				<init target="_StationSource_number" ver="5" ref="here._StationSource_number"/>
+				<init target="_StationSourceChannel_number" ver="5" ref="here._StationSourceChannel_number"/>
+				<init target="_PLCname" ver="5" ref="here._PLCname"/>
+				<init target="_PLC_or_EQM" ver="5" ref="here._PLC_or_EQM"/>
+				<init target="_IEC104MasterNumber" ver="5" ref="here._Iec104MasterNumber"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="ApSource_StationSourceChannel" display-name="ApSource_StationSourceChannel" uuid="67d57f6b-ad4e-417b-b5ee-43c3fbbcada5" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+		<designed target="Location" value="" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="Path" value="" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA["Service.Modules.Iec104Master"+_Iec104MasterNumber +".Stations.Station " + _Station_number + ".Sources.Source " + _StationSource_number +  ".Channels.Channel " + _StationSourceChannel_number]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnConnectionStateChanged">
+			<body kind="om">
+				<![CDATA[if(here.ApSource_StationSourceChannel.ConnectionState == 2){
+here.ApSource_StationSourceChannel.Active = true;
+}else{
+here.ApSource_StationSourceChannel.Active = false;
+}]]>
+			</body>
+		</do-on>
+		<init target="ParentSource" ver="5">
+			<object access-modifier="private" uuid="3efdaaeb-a63d-4561-8392-65cbf518afad" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5">
+				<designed target="Location" value="192.168.21.211" ver="5"/>
+				<designed target="Port" value="4388" ver="5"/>
+				<designed target="HistoryPort" value="4950" ver="5"/>
+				<designed target="Path" value="" ver="5"/>
+				<designed target="Active" value="true" ver="5"/>
+				<designed target="ReAdvise" value="0" ver="5"/>
+				<designed target="ClientDisplayName" value="HMI" ver="5"/>
+				<designed target="ClientId" value="HMI" ver="5"/>
+			</object>
+		</init>
+	</object>
+	<object access-modifier="private" name="ApSource_ReserveStationSourceChannel" display-name="ApSource_ReserveStationSourceChannel" uuid="8c421db0-16db-41b5-b7c0-980a6ba1cfa4" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+		<designed target="Location" value="" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="Path" value="" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA["Service.Modules.Iec104Master"+_Iec104MasterNumber +".Stations.Station " + _Station_number + ".Sources.Source " + _StationSource_number +  ".Channels.Channel " + _StationSourceChannel_number]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnConnectionStateChanged">
+			<body kind="om">
+				<![CDATA[if(here.ApSource_ReserveStationSourceChannel.ConnectionState == 2){
+here.ApSource_ReserveStationSourceChannel.Active = true;
+}else{
+here.ApSource_ReserveStationSourceChannel.Active = false;
+}]]>
+			</body>
+		</do-on>
+		<init target="ParentSource" ver="5">
+			<object access-modifier="private" uuid="cfd11541-d77a-4209-a302-4fdf96810fb0" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5">
+				<designed target="Location" value="192.168.21.213" ver="5"/>
+				<designed target="Port" value="4388" ver="5"/>
+				<designed target="HistoryPort" value="4950" ver="5"/>
+				<designed target="Path" value="" ver="5"/>
+				<designed target="Active" value="true" ver="5"/>
+				<designed target="ReAdvise" value="0" ver="5"/>
+				<designed target="ClientDisplayName" value="HMI" ver="5"/>
+				<designed target="ClientId" value="HMI" ver="5"/>
+			</object>
+		</init>
+	</object>
+	<object access-modifier="private" name="Ap_ReserveHasActiveSource" display-name="Ap_ReserveHasActiveSource" uuid="6208eda0-0747-4db9-ab26-5c4cc5a6572c" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="HasActiveSource"/>
+		<init target="Source" ver="5" ref="here.ApSource_StationReserve"/>
+	</object>
+	<do-trace access-modifier="private" target="Tooltip" ver="5">
+		<body>
+			<![CDATA[(Ap_HasActiveSource || Ap_ReserveHasActiveSource)?
+("Канал №" + _StationSourceChannel_number + "\r" + "Основной сервер: " + "\r" + 
+
+((here.ApSource_StationSourceChannel.ConnectionState != 2)?("Нет соединения с сервером"):
+("TCP соединение: " + (Ap_TCPConnected?"есть":"нет") + "\r" +"Канал МЭК: " + (Ap_IECActivated?"активен":"не активен") + "\r" + "Получено кадров с данными: " + Ap_RecvDataFrames.ValueAsString + "\r" + "Отправлено кадров с данными: " + Ap_SendDataFrames.ValueAsString + "\r" +"Удачных попыток соединения: " + Ap_ConnectedCount.ValueAsString + "\r" + "Неудачных попыток соединения: " + Ap_ConnectionFailedCount.ValueAsString + "\r" + "Разрывов соединения: " + Ap_DisconnectedCount.ValueAsString + "\r" +"Ошибок протокола: " + Ap_IECErrorsCount.ValueAsString))
+
+ + "\r"+ "\r"+ "Резервный сервер: " + "\r" + 
+ ((here.ApSource_ReserveStationSourceChannel.ConnectionState != 2)?("Нет соединения с сервером"):
+ ("TCP соединение: " + (Ap_TCPConnected_Reserve?"есть":"нет") + "\r" +"Канал МЭК: " + (Ap_IECActivated_Reserve?"активен":"не активен") + "\r" + "Получено кадров с данными: " + Ap_RecvDataFrames_Reserve.ValueAsString + "\r" + "Отправлено кадров с данными: " + Ap_SendDataFrames_Reserve.ValueAsString + "\r" +"Удачных попыток соединения: " + Ap_ConnectedCount_Reserve.ValueAsString + "\r" + "Неудачных попыток соединения: " + Ap_ConnectionFailedCount_Reserve.ValueAsString + "\r" + "Разрывов соединения: " + Ap_DisconnectedCount_Reserve.ValueAsString + "\r" +"Ошибок протокола: " + Ap_IECErrorsCount_Reserve.ValueAsString))
+
+):"Нет активных каналов"]]>
+		</body>
+	</do-trace>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseRightClick">
+		<body kind="om">
+			<![CDATA[Open_ReverseStationInfoForm.Invoke();]]>
+		</body>
+	</do-on>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="MouseEnter">
+		<body kind="om">
+			<![CDATA[PenWidth = 3;]]>
+		</body>
+	</do-on>
+	<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="5" event="MouseLeave">
+		<body kind="om">
+			<![CDATA[PenWidth = 1;]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="Ap_TCPConnected_Reserve" display-name="Ap_TCPConnected_Reserve" uuid="9694c032-0d78-44a5-9c59-6f136ac03ca9" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="TCPConnected"/>
+		<init target="Source" ver="5" ref="here.ApSource_ReserveStationSourceChannel"/>
+	</object>
+	<object access-modifier="private" name="Ap_IECActivated_Reserve" display-name="Ap_IECActivated_Reserve" uuid="35cdb4c7-5b4f-4bd3-9ffb-67859d1079b4" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="IECActivated"/>
+		<init target="Source" ver="5" ref="here.ApSource_ReserveStationSourceChannel"/>
+	</object>
+	<object access-modifier="private" name="Ap_RecvDataFrames_Reserve" display-name="Ap_RecvDataFrames_Reserve" uuid="93d449d1-48ce-423f-a3ed-795ff8c332d0" base-type="ApItemUInt4" base-type-id="322ce770-6c7b-49bc-9cd6-a367ca5b4627" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="RecvDataFrames"/>
+		<init target="Source" ver="5" ref="here.ApSource_ReserveStationSourceChannel"/>
+	</object>
+	<object access-modifier="private" name="Ap_SendDataFrames_Reserve" display-name="Ap_SendDataFrames_Reserve" uuid="44f122a5-db03-41fa-8d45-c16f6c385e2f" base-type="ApItemUInt4" base-type-id="322ce770-6c7b-49bc-9cd6-a367ca5b4627" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="SendDataFrames"/>
+		<init target="Source" ver="5" ref="here.ApSource_ReserveStationSourceChannel"/>
+	</object>
+	<object access-modifier="private" name="Ap_ConnectedCount_Reserve" display-name="Ap_ConnectedCount_Reserve" uuid="9fb4e4cb-414e-46fc-88a7-4ba5550e25e1" base-type="ApItemUInt4" base-type-id="322ce770-6c7b-49bc-9cd6-a367ca5b4627" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="ConnectedCount"/>
+		<init target="Source" ver="5" ref="here.ApSource_ReserveStationSourceChannel"/>
+	</object>
+	<object access-modifier="private" name="Ap_ConnectionFailedCount_Reserve" display-name="Ap_ConnectionFailedCount_Reserve" uuid="d152d807-7de0-40cb-99c0-5c9617f7fe33" base-type="ApItemUInt4" base-type-id="322ce770-6c7b-49bc-9cd6-a367ca5b4627" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="ConnectionFailedCount"/>
+		<init target="Source" ver="5" ref="here.ApSource_ReserveStationSourceChannel"/>
+	</object>
+	<object access-modifier="private" name="Ap_DisconnectedCount_Reserve" display-name="Ap_DisconnectedCount_Reserve" uuid="aeb80140-6c1c-4f82-b067-475c2705c690" base-type="ApItemUInt4" base-type-id="322ce770-6c7b-49bc-9cd6-a367ca5b4627" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="DisconnectedCount"/>
+		<init target="Source" ver="5" ref="here.ApSource_ReserveStationSourceChannel"/>
+	</object>
+	<object access-modifier="private" name="Ap_IECErrorsCount_Reserve" display-name="Ap_IECErrorsCount_Reserve" uuid="25c14a66-a527-4e3b-8442-c176717510dd" base-type="ApItemUInt4" base-type-id="322ce770-6c7b-49bc-9cd6-a367ca5b4627" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="IECErrorsCount"/>
+		<init target="Source" ver="5" ref="here.ApSource_ReserveStationSourceChannel"/>
+	</object>
+	<object access-modifier="private" name="_Iec104MasterNumber" display-name="_Iec104MasterNumber" uuid="aac26da1-b768-488d-b898-3c64f595cde3" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ApSource_Station" display-name="ApSource_Station" uuid="31e0db1a-7aec-4399-960d-9cfd213ba793" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+		<designed target="Location" value="" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="Path" value="" ver="5"/>
+		<designed target="Active" value="false" ver="5"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA["Service.Modules.Iec104Master" + _Iec104MasterNumber + ".Stations.Station " + _Station_number]]>
+			</body>
+		</do-trace>
+		<init target="ParentSource" ver="5">
+			<object access-modifier="private" uuid="83b8a2be-2337-406b-925b-13445a46b8cd" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5">
+				<designed target="Location" value="192.168.21.211" ver="5"/>
+				<designed target="Port" value="4388" ver="5"/>
+				<designed target="HistoryPort" value="4950" ver="5"/>
+				<designed target="Path" value="" ver="5"/>
+				<designed target="Active" value="true" ver="5"/>
+				<designed target="ReAdvise" value="0" ver="5"/>
+				<designed target="ClientDisplayName" value="HMI" ver="5"/>
+				<designed target="ClientId" value="HMI" ver="5"/>
+			</object>
+		</init>
+	</object>
+	<object access-modifier="private" name="ApSource_StationReserve" display-name="ApSource_StationReserve" uuid="d7d8cf2b-a53d-4c03-8069-d53dc5940087" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+		<designed target="Location" value="" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="Path" value="" ver="5"/>
+		<designed target="Active" value="false" ver="5"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA["Service.Modules.Iec104Master"+ _Iec104MasterNumber +".Stations.Station " + _Station_number]]>
+			</body>
+		</do-trace>
+		<init target="ParentSource" ver="5">
+			<object access-modifier="private" uuid="aca3447c-6bdc-419f-b6ee-5e5a5bfdd62f" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5">
+				<designed target="Location" value="192.168.21.213" ver="5"/>
+				<designed target="Port" value="4388" ver="5"/>
+				<designed target="HistoryPort" value="4950" ver="5"/>
+				<designed target="Path" value="" ver="5"/>
+				<designed target="Active" value="true" ver="5"/>
+				<designed target="ReAdvise" value="0" ver="5"/>
+				<designed target="ClientDisplayName" value="HMI" ver="5"/>
+				<designed target="ClientId" value="HMI" ver="5"/>
+			</object>
+		</init>
+	</object>
+	<designed target="Flip" value="0" ver="5"/>
+</type>
+

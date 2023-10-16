@@ -1,0 +1,29 @@
+<object access-modifier="private" name="Global" display-name="Global" uuid="e5397fc2-37c2-4ebf-9eef-1458d78f19f7" base-type="" base-type-id="00000000-0000-0000-0000-000000000000" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="InfoGenPopPosNumber" display-name="InfoGenPopPosNumber" uuid="87ce64a4-4805-4c2f-bd1f-1b760211e488" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="5" description="" cardinal="3"/>
+	<object access-modifier="private" name="ApReserveSource" display-name="ApReserveSource" uuid="c98482c4-7ce1-4e6f-b54d-35e57527df12" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+		<designed target="Location" value="" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="Path" value="" ver="5"/>
+		<designed target="Active" value="false" ver="5"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+	</object>
+	<object access-modifier="private" name="formWidth" display-name="formWidth" uuid="19236871-fa11-47cb-8d63-7ce0c8d099ac" base-type="notifying_double" base-type-id="3f905fb7-7738-4619-b402-5a91f136d4bd" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ActionMenu" display-name="ActionMenu" uuid="d7e2b6e7-d808-4cb5-97bc-99948df5ab56" base-type="notifying_int8" base-type-id="c594ba4b-148e-403d-a019-22af8f44ab42" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Section" display-name="Section" uuid="21b20894-0ef3-4e50-8668-6ed5b32f5ca3" base-type="notifying_int8" base-type-id="c594ba4b-148e-403d-a019-22af8f44ab42" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Section_1" display-name="Section_1" uuid="03865af5-1d69-4185-b53f-1630acee9a55" base-type="notifying_int8" base-type-id="c594ba4b-148e-403d-a019-22af8f44ab42" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Section_2" display-name="Section_2" uuid="0f1f370b-0339-4a68-afb4-150c2bab9f51" base-type="notifying_int8" base-type-id="c594ba4b-148e-403d-a019-22af8f44ab42" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Section_3" display-name="Section_3" uuid="406354ea-e972-438d-9dc5-ccd4e9301d19" base-type="notifying_int8" base-type-id="c594ba4b-148e-403d-a019-22af8f44ab42" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ProtectionFrame" display-name="ProtectionFrame" uuid="07a4a501-8788-4b25-a395-e389bde8f1e0" base-type="notifying_uint1" base-type-id="fed14c54-414c-56bd-549a-8d761c4d6200" ver="5" description="" cardinal="1"/>
+	<init target="ProtectionFrame" ver="5" value="0"/>
+	<object access-modifier="private" name="OpenedLoginPanel" display-name="OpenedLoginPanel" uuid="48b32b5e-7cf5-404d-ae6c-3a7dfc6e0005" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
+	<do-trace access-modifier="private" target="OpenedLoginPanel" ver="5">
+		<body>
+			<![CDATA[unit.ASOKU_LIB.Global.OpenedLogin]]>
+		</body>
+	</do-trace>
+	<object access-modifier="private" name="ForElectoProtection" display-name="ForElectoProtection" uuid="85db7a97-f8c3-424d-842e-0722f6d79c74" base-type="notifying_uint1" base-type-id="fed14c54-414c-56bd-549a-8d761c4d6200" ver="5" description="" cardinal="1"/>
+</object>
+

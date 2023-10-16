@@ -1,0 +1,686 @@
+<type access-modifier="public" name="LoginPanel" display-name="LoginPanel" uuid="5184b715-5718-4c5d-9113-d45e68c63125" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="800" ver="5"/>
+	<designed target="Height" value="600" ver="5"/>
+	<designed target="PenColor" value="0xff000000" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xffffffff" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="1920" ver="5"/>
+	<designed target="WindowHeight" value="1080" ver="5"/>
+	<designed target="WindowCaption" value="Форма авторизации" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="true" ver="5"/>
+	<designed target="WindowSizeMode" value="2" ver="5"/>
+	<designed target="WindowBorderStyle" value="1" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="1" ver="5"/>
+	<designed target="WindowCloseMode" value="1" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<object access-modifier="private" name="Header" display-name="Header" uuid="5158d910-f985-49e9-9b0f-8f3713cd44bd" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="800" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xfff2effa" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<object access-modifier="private" name="Keyboard" display-name="Keyboard" uuid="ecbe7304-eecf-4aea-9ff1-7199b886d99d" base-type="Keyboard" base-type-id="9430301f-2693-4c5c-9013-867d8d8f73f4" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="LanguageControls" display-name="LanguageControls" uuid="65ec79bb-45f0-4651-88b7-d5cb4569b5d1" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="582" ver="5"/>
+			<designed target="Y" value="4" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="205.71428571428578" ver="5"/>
+			<designed target="Height" value="32" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="0" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="BrushColor" value="0xffffffff" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+			<object access-modifier="private" name="LanguageName" display-name="LanguageName" uuid="1cd9c8c0-a78f-4d21-85aa-21c22977dd1e" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="0" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Flip" value="0" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="149" ver="5"/>
+				<designed target="Height" value="32" ver="5"/>
+				<designed target="Text" value="Актуальный язык" ver="5"/>
+				<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" ver="5"/>
+				<designed target="FontColor" value="4278190080" ver="5"/>
+				<designed target="TextAlignment" value="132" ver="5"/>
+				<do-trace access-modifier="private" target="Text" ver="5">
+					<body>
+						<![CDATA[Keyboard.LocalizedLanguageName(Keyboard.Locale)]]>
+					</body>
+				</do-trace>
+			</object>
+			<object access-modifier="private" name="ButtonLanguagePrev" display-name="ButtonLanguagePrev" uuid="327b3de3-cc9e-41d6-8690-0faaf3f14a6f" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5" description="" cardinal="1">
+				<designed target="X" value="153" ver="5"/>
+				<designed target="Y" value="5" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Flip" value="0" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="22" ver="5"/>
+				<designed target="Height" value="22" ver="5"/>
+				<designed target="Checkable" value="false" ver="5"/>
+				<designed target="Checked" value="false" ver="5"/>
+				<designed target="Text" value="" ver="5"/>
+				<designed target="TextAlignment" value="132" ver="5"/>
+				<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="5"/>
+				<designed target="FontColor" value="4278190080" ver="5"/>
+				<designed target="OnClickFontColor" value="4278190080" ver="5"/>
+				<designed target="OnHoverFontColor" value="4278190080" ver="5"/>
+				<designed target="DisabledFontColor" value="4278190080" ver="5"/>
+				<designed target="BrushColor" value="0xfff0f0f0" ver="5"/>
+				<designed target="BrushStyle" value="0" ver="5"/>
+				<designed target="OnClickBrushColor" value="0xffa0a0a0" ver="5"/>
+				<designed target="OnClickBrushStyle" value="0" ver="5"/>
+				<designed target="OnHoverBrushColor" value="4294967295" ver="5"/>
+				<designed target="OnHoverBrushStyle" value="0" ver="5"/>
+				<designed target="DisabledBrushColor" value="4288716960" ver="5"/>
+				<designed target="DisabledBrushStyle" value="1" ver="5"/>
+				<designed target="PenColor" value="0xff000000" ver="5"/>
+				<designed target="PenStyle" value="0" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="OnClickPenColor" value="4278190080" ver="5"/>
+				<designed target="OnClickPenStyle" value="0" ver="5"/>
+				<designed target="OnClickPenWidth" value="1" ver="5"/>
+				<designed target="OnHoverPenColor" value="4278190080" ver="5"/>
+				<designed target="OnHoverPenStyle" value="0" ver="5"/>
+				<designed target="OnHoverPenWidth" value="1" ver="5"/>
+				<designed target="DisabledPenColor" value="4288716960" ver="5"/>
+				<designed target="DisabledPenStyle" value="1" ver="5"/>
+				<designed target="DisabledPenWidth" value="1" ver="5"/>
+				<object access-modifier="private" name="ButtonLanguagePrevImage" display-name="ButtonLanguagePrevImage" uuid="3d36783e-e099-44c8-94f5-5d951f62f41f" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+					<designed target="X" value="0" ver="5"/>
+					<designed target="Y" value="0" ver="5"/>
+					<designed target="ZValue" value="0" ver="5"/>
+					<designed target="Rotation" value="0" ver="5"/>
+					<designed target="Scale" value="1" ver="5"/>
+					<designed target="Flip" value="0" ver="5"/>
+					<designed target="Visible" value="true" ver="5"/>
+					<designed target="Opacity" value="1" ver="5"/>
+					<designed target="Enabled" value="true" ver="5"/>
+					<designed target="Tooltip" value="" ver="5"/>
+					<designed target="Width" value="22" ver="5"/>
+					<designed target="Height" value="22" ver="5"/>
+					<designed target="PenColor" value="4278190080" ver="5"/>
+					<designed target="PenStyle" value="0" ver="5"/>
+					<designed target="PenWidth" value="1" ver="5"/>
+					<designed target="ImageFile" value="ASOKU/pictures/icons/back.png" ver="5"/>
+					<designed target="Active" value="true" ver="5"/>
+					<designed target="CurrentFrameNumber" value="0" ver="5"/>
+					<designed target="Speed" value="1" ver="5"/>
+				</object>
+				<do-on access-modifier="private" name="Previous Language" display-name="Previous Language" ver="5" event="ButtonPressed">
+					<body kind="om">
+						<![CDATA[Keyboard.PrevLocale();]]>
+					</body>
+				</do-on>
+				<do-on access-modifier="private" name="ScaleUp" display-name="ScaleUp" ver="5" event="MouseEnter">
+					<body kind="om">
+						<![CDATA[this.Scale = 1.2;]]>
+					</body>
+				</do-on>
+				<do-on access-modifier="private" name="ScaleBack" display-name="ScaleBack" ver="5" event="MouseLeave">
+					<body kind="om">
+						<![CDATA[this.Scale = 1;]]>
+					</body>
+				</do-on>
+			</object>
+			<object access-modifier="private" name="ButtonLanguageNext" display-name="ButtonLanguageNext" uuid="9eb5200a-ac9d-4b27-98d0-1f68a85334a1" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5" description="" cardinal="1">
+				<designed target="X" value="178" ver="5"/>
+				<designed target="Y" value="5" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Flip" value="0" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="22" ver="5"/>
+				<designed target="Height" value="22" ver="5"/>
+				<designed target="Checkable" value="false" ver="5"/>
+				<designed target="Checked" value="false" ver="5"/>
+				<designed target="Text" value="" ver="5"/>
+				<designed target="TextAlignment" value="132" ver="5"/>
+				<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="5"/>
+				<designed target="FontColor" value="4278190080" ver="5"/>
+				<designed target="OnClickFontColor" value="4278190080" ver="5"/>
+				<designed target="OnHoverFontColor" value="4278190080" ver="5"/>
+				<designed target="DisabledFontColor" value="4278190080" ver="5"/>
+				<designed target="BrushColor" value="0xfff0f0f0" ver="5"/>
+				<designed target="BrushStyle" value="0" ver="5"/>
+				<designed target="OnClickBrushColor" value="0xffa0a0a0" ver="5"/>
+				<designed target="OnClickBrushStyle" value="0" ver="5"/>
+				<designed target="OnHoverBrushColor" value="4294967295" ver="5"/>
+				<designed target="OnHoverBrushStyle" value="0" ver="5"/>
+				<designed target="DisabledBrushColor" value="4288716960" ver="5"/>
+				<designed target="DisabledBrushStyle" value="1" ver="5"/>
+				<designed target="PenColor" value="0xff000000" ver="5"/>
+				<designed target="PenStyle" value="0" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="OnClickPenColor" value="4278190080" ver="5"/>
+				<designed target="OnClickPenStyle" value="0" ver="5"/>
+				<designed target="OnClickPenWidth" value="1" ver="5"/>
+				<designed target="OnHoverPenColor" value="4278190080" ver="5"/>
+				<designed target="OnHoverPenStyle" value="0" ver="5"/>
+				<designed target="OnHoverPenWidth" value="1" ver="5"/>
+				<designed target="DisabledPenColor" value="4288716960" ver="5"/>
+				<designed target="DisabledPenStyle" value="1" ver="5"/>
+				<designed target="DisabledPenWidth" value="1" ver="5"/>
+				<object access-modifier="private" name="ButtonLanguagePrevImage" display-name="ButtonLanguagePrevImage" uuid="eb7a2dc5-e59c-4973-aa9d-ce5d53b9162f" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+					<designed target="X" value="0" ver="5"/>
+					<designed target="Y" value="0" ver="5"/>
+					<designed target="ZValue" value="0" ver="5"/>
+					<designed target="Rotation" value="0" ver="5"/>
+					<designed target="Scale" value="1" ver="5"/>
+					<designed target="Flip" value="0" ver="5"/>
+					<designed target="Visible" value="true" ver="5"/>
+					<designed target="Opacity" value="1" ver="5"/>
+					<designed target="Enabled" value="true" ver="5"/>
+					<designed target="Tooltip" value="" ver="5"/>
+					<designed target="Width" value="22" ver="5"/>
+					<designed target="Height" value="22" ver="5"/>
+					<designed target="PenColor" value="4278190080" ver="5"/>
+					<designed target="PenStyle" value="0" ver="5"/>
+					<designed target="PenWidth" value="1" ver="5"/>
+					<designed target="ImageFile" value="ASOKU/pictures/icons/forward.png" ver="5"/>
+					<designed target="Active" value="true" ver="5"/>
+					<designed target="CurrentFrameNumber" value="0" ver="5"/>
+					<designed target="Speed" value="1" ver="5"/>
+				</object>
+				<do-on access-modifier="private" name="Next Language" display-name="Next Language" ver="5" event="ButtonPressed">
+					<body kind="om">
+						<![CDATA[Keyboard.NextLocale();]]>
+					</body>
+				</do-on>
+				<do-on access-modifier="private" name="ScaleUp" display-name="ScaleUp" ver="5" event="MouseEnter">
+					<body kind="om">
+						<![CDATA[this.Scale = 1.2;]]>
+					</body>
+				</do-on>
+				<do-on access-modifier="private" name="ScaleBack" display-name="ScaleBack" ver="5" event="MouseLeave">
+					<body kind="om">
+						<![CDATA[this.Scale = 1;]]>
+					</body>
+				</do-on>
+			</object>
+		</object>
+	</object>
+	<object access-modifier="private" name="Logo" display-name="Logo" uuid="05298fbd-739c-4ffa-832e-319ed431a564" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="37" ver="5"/>
+		<designed target="Y" value="57" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="280" ver="5"/>
+		<designed target="Height" value="478" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffefeff5" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<object access-modifier="private" name="LogoBG" display-name="LogoBG" uuid="63fdf932-3ece-4349-bf0e-19ebd368dea3" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+			<designed target="X" value="30" ver="5"/>
+			<designed target="Y" value="239.75" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="220" ver="5"/>
+			<designed target="Height" value="108.5" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="0" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="ImageFile" value="ASOKU/pictures/sms-logo.png" ver="5"/>
+			<designed target="Active" value="true" ver="5"/>
+			<designed target="CurrentFrameNumber" value="0" ver="5"/>
+			<designed target="Speed" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LogoName" display-name="LogoName" uuid="14db5409-f5d2-48c3-aff3-ebdfb2b9bcfe" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="20" ver="5"/>
+			<designed target="Y" value="149" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="240" ver="5"/>
+			<designed target="Height" value="82" ver="5"/>
+			<designed target="Text" value="АВТОМАТИЗИРОВАННАЯ СИСТЕМА ОПЕРАТИВНОГО КОНТРОЛЯ И УПРАВЛЕНИЯ (АСОКУ)" ver="5"/>
+			<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LogoComp" display-name="LogoComp" uuid="924a3a98-7f65-4d44-b5e3-59c169a40aff" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+			<designed target="X" value="50" ver="5"/>
+			<designed target="Y" value="3" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="180" ver="5"/>
+			<designed target="Height" value="160" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="0" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="ImageFile" value="ASOKU/pictures/comp.png" ver="5"/>
+			<designed target="Active" value="true" ver="5"/>
+			<designed target="CurrentFrameNumber" value="0" ver="5"/>
+			<designed target="Speed" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LogoQR" display-name="LogoQR" uuid="e7aa5e7b-97d4-4195-94f2-c8728ba27409" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+			<designed target="X" value="171" ver="5"/>
+			<designed target="Y" value="368" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="100" ver="5"/>
+			<designed target="Height" value="100" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="0" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="ImageFile" value="ASOKU/pictures/qr-code.png" ver="5"/>
+			<designed target="Active" value="true" ver="5"/>
+			<designed target="CurrentFrameNumber" value="0" ver="5"/>
+			<designed target="Speed" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LogoLink" display-name="LogoLink" uuid="ab8c27d4-5a51-44cb-81b2-451fd7840dec" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="32" ver="5"/>
+			<designed target="Y" value="398" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="116" ver="5"/>
+			<designed target="Height" value="37" ver="5"/>
+			<designed target="Text" value="АСОКУ.РФ" ver="5"/>
+			<designed target="Font" value="Arial,12,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Buttons" display-name="Buttons" uuid="91d0f26a-bf7e-4564-86b0-5e27e28ddded" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="550" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="800" ver="5"/>
+		<designed target="Height" value="50" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xfff2effa" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<object access-modifier="private" name="Button_Logout" display-name="Button_Logout" uuid="07900464-d155-49d2-9248-71bc37814391" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5" description="" cardinal="1">
+			<designed target="X" value="574" ver="5"/>
+			<designed target="Y" value="10" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="90" ver="5"/>
+			<designed target="Height" value="30" ver="5"/>
+			<designed target="Checkable" value="false" ver="5"/>
+			<designed target="Checked" value="false" ver="5"/>
+			<designed target="Text" value="Выйти" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<designed target="Font" value="Arial,8,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="0xffffffff" ver="5"/>
+			<designed target="OnClickFontColor" value="4278190080" ver="5"/>
+			<designed target="OnHoverFontColor" value="0xff000000" ver="5"/>
+			<designed target="DisabledFontColor" value="4278190080" ver="5"/>
+			<designed target="BrushColor" value="0xff9292a5" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+			<designed target="OnClickBrushColor" value="4288716960" ver="5"/>
+			<designed target="OnClickBrushStyle" value="1" ver="5"/>
+			<designed target="OnHoverBrushColor" value="4294967295" ver="5"/>
+			<designed target="OnHoverBrushStyle" value="1" ver="5"/>
+			<designed target="DisabledBrushColor" value="4288716960" ver="5"/>
+			<designed target="DisabledBrushStyle" value="1" ver="5"/>
+			<designed target="PenColor" value="0xffffffff" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="OnClickPenColor" value="4278190080" ver="5"/>
+			<designed target="OnClickPenStyle" value="1" ver="5"/>
+			<designed target="OnClickPenWidth" value="1" ver="5"/>
+			<designed target="OnHoverPenColor" value="4278190080" ver="5"/>
+			<designed target="OnHoverPenStyle" value="1" ver="5"/>
+			<designed target="OnHoverPenWidth" value="1" ver="5"/>
+			<designed target="DisabledPenColor" value="4288716960" ver="5"/>
+			<designed target="DisabledPenStyle" value="1" ver="5"/>
+			<designed target="DisabledPenWidth" value="1" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick">
+				<body kind="om">
+					<![CDATA[AsokuUserRights.SecurityContext_UserRights.Logout();
+]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="Button_Login" display-name="Button_Login" uuid="464f8c11-c141-4268-b098-5ed9f9090212" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5" description="" cardinal="1">
+			<designed target="X" value="689" ver="5"/>
+			<designed target="Y" value="10" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="90" ver="5"/>
+			<designed target="Height" value="30" ver="5"/>
+			<designed target="Checkable" value="false" ver="5"/>
+			<designed target="Checked" value="false" ver="5"/>
+			<designed target="Text" value="Вход в систему" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<designed target="Font" value="Arial,8,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="0xffffffff" ver="5"/>
+			<designed target="OnClickFontColor" value="4278190080" ver="5"/>
+			<designed target="OnHoverFontColor" value="0xff000000" ver="5"/>
+			<designed target="DisabledFontColor" value="4278190080" ver="5"/>
+			<designed target="BrushColor" value="0xff9292a5" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+			<designed target="OnClickBrushColor" value="4288716960" ver="5"/>
+			<designed target="OnClickBrushStyle" value="1" ver="5"/>
+			<designed target="OnHoverBrushColor" value="4294967295" ver="5"/>
+			<designed target="OnHoverBrushStyle" value="1" ver="5"/>
+			<designed target="DisabledBrushColor" value="4288716960" ver="5"/>
+			<designed target="DisabledBrushStyle" value="1" ver="5"/>
+			<designed target="PenColor" value="0xffffffff" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="OnClickPenColor" value="4278190080" ver="5"/>
+			<designed target="OnClickPenStyle" value="1" ver="5"/>
+			<designed target="OnClickPenWidth" value="1" ver="5"/>
+			<designed target="OnHoverPenColor" value="4278190080" ver="5"/>
+			<designed target="OnHoverPenStyle" value="1" ver="5"/>
+			<designed target="OnHoverPenWidth" value="1" ver="5"/>
+			<designed target="DisabledPenColor" value="4288716960" ver="5"/>
+			<designed target="DisabledPenStyle" value="1" ver="5"/>
+			<designed target="DisabledPenWidth" value="1" ver="5"/>
+			<do-on access-modifier="private" name="Login" display-name="Login" ver="5" event="ButtonPressed">
+				<body kind="om">
+					<![CDATA[AsokuUserRights.SecurityContext_UserRights.AsyncLogin(Form.FormLoginSelect.FormLoginInput, Form.FormPasswordInput);
+
+Form.FormError.Text = "";
+ClosingTimer.Active = true;
+]]>
+				</body>
+			</do-on>
+		</object>
+	</object>
+	<object access-modifier="private" name="Form" display-name="Form" uuid="882a8904-296a-48c9-a232-56f7db6acd1b" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="337.5" ver="5"/>
+		<designed target="Y" value="58" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="431" ver="5"/>
+		<designed target="Height" value="474" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="FormTitle" display-name="FormTitle" uuid="afdaae97-bc03-4e05-a84c-7c3d6a9c0fc4" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="74" ver="5"/>
+			<designed target="Y" value="112" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="295" ver="5"/>
+			<designed target="Height" value="36" ver="5"/>
+			<designed target="Text" value="Авторизация в системе" ver="5"/>
+			<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+		</object>
+		<object access-modifier="private" name="FormLockImage" display-name="FormLockImage" uuid="4a9580dc-4ca7-4592-a943-8d16fc5aff4d" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+			<designed target="X" value="44" ver="5"/>
+			<designed target="Y" value="114.74545454545452" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="25" ver="5"/>
+			<designed target="Height" value="25" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="0" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="ImageFile" value="ASOKU/pictures/icons/lockClose.png" ver="5"/>
+			<designed target="Active" value="true" ver="5"/>
+			<designed target="CurrentFrameNumber" value="0" ver="5"/>
+			<designed target="Speed" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="FormLoginSelect" display-name="FormLoginSelect" uuid="eb9c2f93-a6d0-43cb-9f82-3734fde99bde" base-type="ComboBox" base-type-id="3495bcd2-01f2-4709-b7f4-e9cf6f3a00bc" ver="5" description="" cardinal="1">
+			<designed target="X" value="45" ver="5"/>
+			<designed target="Y" value="165.00000000000003" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="325" ver="5"/>
+			<designed target="Height" value="38" ver="5"/>
+			<designed target="Editable" value="false" ver="5"/>
+			<designed target="Text" value="" ver="5"/>
+			<designed target="SelectedIndex" value="-1" ver="5"/>
+			<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="MaxVisibleItems" value="10" ver="5"/>
+			<object access-modifier="private" name="FormLoginInput" display-name="FormLoginInput" uuid="b5b0e3e7-4078-4a06-a5df-69d23816b2b0" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5" description="" cardinal="1">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="0" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Flip" value="0" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="308" ver="5"/>
+				<designed target="Height" value="38" ver="5"/>
+				<designed target="Text" value="" ver="5"/>
+				<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" ver="5"/>
+				<designed target="FontColor" value="4278190080" ver="5"/>
+				<designed target="TextAlignment" value="129" ver="5"/>
+				<designed target="HideInput" value="false" ver="5"/>
+				<designed target="PlaceholderText" value="Логин" ver="5"/>
+				<designed target="ReadOnly" value="false" ver="5"/>
+			</object>
+			<do-on access-modifier="private" name="Select Change" display-name="Select Change" ver="5" event="SelectedChanged">
+				<body kind="om">
+					<![CDATA[FormLoginInput.Text = FormLoginSelect.GetItem(FormLoginSelect.SelectedIndex);]]>
+				</body>
+			</do-on>
+			<designed target="InsertPolicy" value="3" ver="5"/>
+		</object>
+		<object access-modifier="private" name="FormPasswordInput" display-name="FormPasswordInput" uuid="122f8b50-11db-451b-ae9b-63ab6982643f" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5" description="" cardinal="1">
+			<designed target="X" value="45" ver="5"/>
+			<designed target="Y" value="214" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="325" ver="5"/>
+			<designed target="Height" value="38" ver="5"/>
+			<designed target="Text" value="" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+			<designed target="HideInput" value="true" ver="5"/>
+			<designed target="PlaceholderText" value="Пароль" ver="5"/>
+			<designed target="ReadOnly" value="false" ver="5"/>
+		</object>
+		<object access-modifier="private" name="FormError" display-name="FormError" uuid="99122393-eaad-4bbd-ae32-1b5b5a018121" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="45.600000000000023" ver="5"/>
+			<designed target="Y" value="291.71428571428572" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="324.10000000000002" ver="5"/>
+			<designed target="Height" value="59.200000000000045" ver="5"/>
+			<designed target="Text" value="Текст ошибки" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="5"/>
+			<designed target="FontColor" value="0xffff0000" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<init target="Text" ver="5" value=""/>
+		</object>
+	</object>
+	<do-on access-modifier="private" name="Initialize Login Select" display-name="Initialize Login Select" ver="5" event="Opened">
+		<body kind="om">
+			<![CDATA[Form.FormLoginSelect.AddItem("tehnolog");
+Form.FormLoginSelect.AddItem("operator");
+
+Global.OpenedLogin = true;]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="ClosingTimer" display-name="ClosingTimer" uuid="82f187c9-17d8-4896-a5e0-1eb490592fcd" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="5" description="" cardinal="1">
+		<designed target="Period" value="1000" ver="5"/>
+		<designed target="Active" value="false" ver="5"/>
+		<do-on access-modifier="private" name="CloseLoginPanel" display-name="CloseLoginPanel" ver="5" event="OnTimer">
+			<body kind="om">
+				<![CDATA[if (AsokuUserRights.SecurityContext_UserRights.LoginRejectReason == "") {
+	here.Close();
+}else {
+	Form.FormError.Text = AsokuUserRights.SecurityContext_UserRights.LoginRejectReason;
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="KeyPress">
+		<body kind="javascript">
+			<![CDATA[if(event.KeyCode == 82){
+	if(Form.FormLoginSelect.FormLoginInput.Text != "" && Form.FormPasswordInput.Focus == false){
+		Form.FormPasswordInput.Focus = true;	
+	}
+	if(Form.FormLoginSelect.FormLoginInput.Text != "" && Form.FormPasswordInput.Focus == true){
+		Buttons.Button_Login.Click()
+	}
+}
+]]>
+		</body>
+	</do-on>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="CloseRequested">
+		<body kind="om">
+			<![CDATA[Global.OpenedLogin = false;
+here.Close();]]>
+		</body>
+	</do-on>
+</type>
+

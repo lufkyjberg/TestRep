@@ -1,0 +1,657 @@
+<type access-modifier="private" name="ENIP_1" display-name="ENIP_1" uuid="07589b37-c56b-48be-94be-215150ba5aa6" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xff646464" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="630" ver="5"/>
+	<designed target="WindowHeight" value="640" ver="5"/>
+	<designed target="WindowCaption" value="MainForm" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="1" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="0" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<object access-modifier="private" name="Rectangle_9" display-name="Rectangle_9" uuid="4978e112-27ac-494f-bae9-8676d9179966" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="3" ver="5"/>
+		<designed target="Y" value="50.999999999999893" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="619.66666666666674" ver="5"/>
+		<designed target="Height" value="278.4567901234567" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_8" display-name="Rectangle_8" uuid="dc03b146-0552-4114-8a42-f83f73fc9088" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="3" ver="5"/>
+		<designed target="Y" value="4.9999999999998952" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="619.66666666666674" ver="5"/>
+		<designed target="Height" value="395.45679012345664" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="55dbfb56-0bd3-4f83-b2c5-d759f5ce959e" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="-8" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="630" ver="5"/>
+		<designed target="Height" value="60" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Text" value="ENIP 1" ver="5"/>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[FormParDevPath == "ENIP1"]]>
+				</condition>
+				<expr>
+					<![CDATA["ИЭВ1"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[FormParDevPath == "ENIP2"]]>
+				</condition>
+				<expr>
+					<![CDATA["ИЭВ2"]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<object access-modifier="private" name="Text_PropertiesDialogs_3" display-name="Text_PropertiesDialogs_3" uuid="093577ab-1d1a-413c-8bd1-111b1d0e7387" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="378.33333333333331" ver="5"/>
+			<designed target="Y" value="99.533333333333331" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="27" ver="5"/>
+			<designed target="Height" value="20.933333333333323" ver="5"/>
+			<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="Text" value="C" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_2" display-name="Text_PropertiesDialogs_2" uuid="191246e9-7dc3-4c5a-a6d8-8cf1f6369d98" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="232.66666666666671" ver="5"/>
+			<designed target="Y" value="100" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="17" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="Text" value="B" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_4" display-name="Text_PropertiesDialogs_4" uuid="0776e181-78f1-4cd0-998b-d452425913c6" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="488" ver="5"/>
+			<designed target="Y" value="98.5" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="87" ver="5"/>
+			<designed target="Height" value="23" ver="5"/>
+			<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="Text" value="Среднее" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="011b845b-3094-4eea-a321-0b2687dcbc9a" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="90" ver="5"/>
+			<designed target="Y" value="100" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="17" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="Text" value="A" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_5" display-name="Text_PropertiesDialogs_5" uuid="3ae4b380-4c2b-4044-abf2-540cb83adcd1" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="14" ver="5"/>
+			<designed target="Y" value="129.71699999999538" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="17" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="Text" value="P" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_6" display-name="Text_PropertiesDialogs_6" uuid="6ae5227e-e5af-4f27-a42f-76b105f505cc" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="14" ver="5"/>
+			<designed target="Y" value="163.71699999999538" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="17" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="Text" value="Q" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_7" display-name="Text_PropertiesDialogs_7" uuid="2dc41da3-a225-4ed1-a7d9-f446b634e214" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="14" ver="5"/>
+			<designed target="Y" value="197.71699999999538" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="17" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="Text" value="S" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_8" display-name="Text_PropertiesDialogs_8" uuid="7d9779b6-c9e0-47a0-8ac0-fc70e84dbe07" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="14" ver="5"/>
+			<designed target="Y" value="265.71699999999538" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="17" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="Text" value="I" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_9" display-name="Text_PropertiesDialogs_9" uuid="567bd2f3-a9cd-4db3-8c1f-49afa36af42c" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="14" ver="5"/>
+			<designed target="Y" value="358.71699999999538" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="17" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="Text" value="U" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_10" display-name="Text_PropertiesDialogs_10" uuid="789890bd-3fa3-41aa-8b64-ecf4e3b13c81" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="15" ver="5"/>
+			<designed target="Y" value="231.71699999999538" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="46" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="Text" value="cos" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_11" display-name="Text_PropertiesDialogs_11" uuid="b9e86d7e-21b3-4a8a-9d0f-e79f533a6986" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="14" ver="5"/>
+			<designed target="Y" value="299.71699999999538" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="17" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="Text" value="U" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_12" display-name="Text_PropertiesDialogs_12" uuid="7460c14b-12be-48b2-bad4-782289bf22da" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="381.33333333333331" ver="5"/>
+			<designed target="Y" value="334.5333333333333" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="27" ver="5"/>
+			<designed target="Height" value="20.933333333333323" ver="5"/>
+			<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="Text" value="CA" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_13" display-name="Text_PropertiesDialogs_13" uuid="c0a6c14a-73ef-4cd5-9ac5-1b7b65a78915" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="235.66666666666671" ver="5"/>
+			<designed target="Y" value="335" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="34" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="Text" value="BC" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_14" display-name="Text_PropertiesDialogs_14" uuid="54e3d522-c260-4b82-b759-d2e636bc8096" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="488" ver="5"/>
+			<designed target="Y" value="333.5" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="87" ver="5"/>
+			<designed target="Height" value="23" ver="5"/>
+			<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="Text" value="Среднее" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_15" display-name="Text_PropertiesDialogs_15" uuid="4d9b91ad-dbba-4e34-bee9-9c037f4ddef6" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="93" ver="5"/>
+			<designed target="Y" value="335" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="36.999999999999986" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="Text" value="AB" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_16" display-name="Text_PropertiesDialogs_16" uuid="0a4c014e-579d-4b00-bbaf-a98b6cf8e67c" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="288.33333333333337" ver="5"/>
+			<designed target="Y" value="68.383666666662066" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="17" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="Text" value="F" ver="5"/>
+		</object>
+	</object>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<object access-modifier="private" name="AnalogDpValue_1" display-name="AnalogDpValue_1" uuid="e992f63c-c699-4b2f-90b7-41e883a06ce0" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="29.89644196253721" ver="5"/>
+		<designed target="Y" value="230.21699999999538" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<init target="ParDevPath" ver="5" value=""/>
+		<designed target="Scale" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["HydroUnits.GA_01.Electro." + FormParDevPath + ".OPr_cos_f_a_" + FormParDevPath]]>
+			</body>
+		</do-trace>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_2" display-name="AnalogDpValue_2" uuid="f4bddf26-61e3-4f1d-b44b-cb7dff4f44b2" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="173.3964419625388" ver="5"/>
+		<designed target="Y" value="230.21699999999538" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<init target="ParDevPath" ver="5" value=""/>
+		<designed target="Scale" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["HydroUnits.GA_01.Electro." + FormParDevPath + ".OPr_cos_f_b_" + FormParDevPath]]>
+			</body>
+		</do-trace>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_3" display-name="AnalogDpValue_3" uuid="faf22f85-3b60-40f6-9239-21d96bdd5796" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="317.39644196253835" ver="5"/>
+		<designed target="Y" value="230.21699999999538" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<init target="ParDevPath" ver="5" value=""/>
+		<designed target="Scale" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["HydroUnits.GA_01.Electro." + FormParDevPath + ".OPr_cos_f_c_" + FormParDevPath]]>
+			</body>
+		</do-trace>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_4" display-name="AnalogDpValue_4" uuid="6a696785-cd54-4378-84e8-c63f48fd3ed0" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="465.22977529587052" ver="5"/>
+		<designed target="Y" value="230.21699999999538" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<init target="ParDevPath" ver="5" value=""/>
+		<designed target="Scale" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["HydroUnits.GA_01.Electro." + FormParDevPath + ".OPr_cos_f_" + FormParDevPath]]>
+			</body>
+		</do-trace>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_5" display-name="AnalogDpValue_5" uuid="563ac5de-d216-4474-8b9b-d9d4c62097a3" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="311.89644196253721" ver="5"/>
+		<designed target="Y" value="67.883666666662066" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<init target="ParDevPath" ver="5" value=""/>
+		<designed target="Scale" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["HydroUnits.GA_01.Electro." + FormParDevPath + ".OPr_F_Hz_" + FormParDevPath]]>
+			</body>
+		</do-trace>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_6" display-name="AnalogDpValue_6" uuid="46585c35-9895-431f-92e3-811c588a928b" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="29.89644196253721" ver="5"/>
+		<designed target="Y" value="298.21699999999538" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<init target="ParDevPath" ver="5" value=""/>
+		<designed target="Scale" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["HydroUnits.GA_01.Electro." + FormParDevPath + ".OPr_U_kV_a_" + FormParDevPath]]>
+			</body>
+		</do-trace>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_7" display-name="AnalogDpValue_7" uuid="37ac00ed-e741-495d-9d1d-939f408637ea" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="173.3964419625388" ver="5"/>
+		<designed target="Y" value="298.21699999999538" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<init target="ParDevPath" ver="5" value=""/>
+		<designed target="Scale" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["HydroUnits.GA_01.Electro." + FormParDevPath + ".OPr_U_kV_b_" + FormParDevPath]]>
+			</body>
+		</do-trace>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_8" display-name="AnalogDpValue_8" uuid="0bcd9751-831e-4988-8422-388f50104eee" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="317.39644196253835" ver="5"/>
+		<designed target="Y" value="298.21699999999538" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<init target="ParDevPath" ver="5" value=""/>
+		<designed target="Scale" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["HydroUnits.GA_01.Electro." + FormParDevPath + ".OPr_U_kV_c_" + FormParDevPath]]>
+			</body>
+		</do-trace>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_9" display-name="AnalogDpValue_9" uuid="c8f99b8f-fe87-4e7a-9c77-8a040b0fe099" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="465.22977529587052" ver="5"/>
+		<designed target="Y" value="298.21699999999538" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<init target="ParDevPath" ver="5" value=""/>
+		<designed target="Scale" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["HydroUnits.GA_01.Electro." + FormParDevPath + ".OPr_U_kV_" + FormParDevPath]]>
+			</body>
+		</do-trace>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_10" display-name="AnalogDpValue_10" uuid="566e0ef2-daaf-44ae-b975-7ad2342852b9" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="29.89644196253721" ver="5"/>
+		<designed target="Y" value="357.21699999999538" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<init target="ParDevPath" ver="5" value=""/>
+		<designed target="Scale" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["HydroUnits.GA_01.Electro." + FormParDevPath + ".OPr_U_kV_ab_" + FormParDevPath]]>
+			</body>
+		</do-trace>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_11" display-name="AnalogDpValue_11" uuid="15e6f811-c9c4-4254-83e7-0b2616e9f77a" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="173.3964419625388" ver="5"/>
+		<designed target="Y" value="357.21699999999538" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<init target="ParDevPath" ver="5" value=""/>
+		<designed target="Scale" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["HydroUnits.GA_01.Electro." + FormParDevPath + ".OPr_U_kV_bc_" + FormParDevPath]]>
+			</body>
+		</do-trace>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_12" display-name="AnalogDpValue_12" uuid="c8cf2383-e4c5-49b8-95e5-53016b0b0ae3" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="317.39644196253835" ver="5"/>
+		<designed target="Y" value="357.21699999999538" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<init target="ParDevPath" ver="5" value=""/>
+		<designed target="Scale" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["HydroUnits.GA_01.Electro." + FormParDevPath + ".OPr_U_kV_ca_" + FormParDevPath]]>
+			</body>
+		</do-trace>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_13" display-name="AnalogDpValue_13" uuid="6f2cc6a7-23da-4f8a-aa5c-5ca9bc0ac28e" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="465.22977529587052" ver="5"/>
+		<designed target="Y" value="357.21699999999538" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<init target="ParDevPath" ver="5" value=""/>
+		<designed target="Scale" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["HydroUnits.GA_01.Electro." + FormParDevPath + ".OPr_U_kV_l_" + FormParDevPath]]>
+			</body>
+		</do-trace>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_14" display-name="AnalogDpValue_14" uuid="c622eaa1-16f1-4cbd-b3ce-4fb6b960d29c" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="29.89644196253721" ver="5"/>
+		<designed target="Y" value="264.21699999999538" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<init target="ParDevPath" ver="5" value=""/>
+		<designed target="Scale" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["HydroUnits.GA_01.Electro." + FormParDevPath + ".OPr_I_kA_a_" + FormParDevPath]]>
+			</body>
+		</do-trace>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_16" display-name="AnalogDpValue_16" uuid="60793875-248f-440b-a11a-390c1fe07b49" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="317.39644196253835" ver="5"/>
+		<designed target="Y" value="264.21699999999538" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<init target="ParDevPath" ver="5" value=""/>
+		<designed target="Scale" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["HydroUnits.GA_01.Electro." + FormParDevPath + ".OPr_I_kA_c_" + FormParDevPath]]>
+			</body>
+		</do-trace>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_17" display-name="AnalogDpValue_17" uuid="b570cc53-7889-42be-a956-f7efc9b14b99" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="465.22977529587052" ver="5"/>
+		<designed target="Y" value="264.21699999999538" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<init target="ParDevPath" ver="5" value=""/>
+		<designed target="Scale" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["HydroUnits.GA_01.Electro." + FormParDevPath + ".OPr_I_kA_" + FormParDevPath]]>
+			</body>
+		</do-trace>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_18" display-name="AnalogDpValue_18" uuid="fb50353c-53d0-414d-aad6-005c6eea4cc4" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="29.89644196253721" ver="5"/>
+		<designed target="Y" value="128.21699999999538" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<init target="ParDevPath" ver="5" value=""/>
+		<designed target="Scale" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["HydroUnits.GA_01.Electro." + FormParDevPath + ".OPr_P_MW_a_" + FormParDevPath]]>
+			</body>
+		</do-trace>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_19" display-name="AnalogDpValue_19" uuid="9445b991-bc0c-4ccd-8de7-b5a79a75d540" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="173.3964419625388" ver="5"/>
+		<designed target="Y" value="128.21699999999538" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<init target="ParDevPath" ver="5" value=""/>
+		<designed target="Scale" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["HydroUnits.GA_01.Electro." + FormParDevPath + ".OPr_P_MW_b_" + FormParDevPath]]>
+			</body>
+		</do-trace>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_20" display-name="AnalogDpValue_20" uuid="9e5f175d-10cb-4950-9bfa-6ba005370524" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="317.39644196253835" ver="5"/>
+		<designed target="Y" value="128.21699999999538" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<init target="ParDevPath" ver="5" value=""/>
+		<designed target="Scale" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["HydroUnits.GA_01.Electro." + FormParDevPath + ".OPr_P_MW_c_" + FormParDevPath]]>
+			</body>
+		</do-trace>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_15" display-name="AnalogDpValue_15" uuid="241e2870-49ef-4485-83aa-e31c2f20b350" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="173.3964419625388" ver="5"/>
+		<designed target="Y" value="264.21699999999538" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<init target="ParDevPath" ver="5" value=""/>
+		<designed target="Scale" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["HydroUnits.GA_01.Electro." + FormParDevPath + ".OPr_I_kA_b_" + FormParDevPath]]>
+			</body>
+		</do-trace>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_21" display-name="AnalogDpValue_21" uuid="849af957-505d-4c15-aea9-e5b83259898d" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="465.22977529587052" ver="5"/>
+		<designed target="Y" value="128.21699999999538" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<init target="ParDevPath" ver="5" value=""/>
+		<designed target="Scale" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["HydroUnits.GA_01.Electro." + FormParDevPath + ".OPr_P_MW_" + FormParDevPath]]>
+			</body>
+		</do-trace>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_22" display-name="AnalogDpValue_22" uuid="26eb6247-cf52-4100-a9d8-6d1449202536" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="29.89644196253721" ver="5"/>
+		<designed target="Y" value="162.21699999999538" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<init target="ParDevPath" ver="5" value=""/>
+		<designed target="Scale" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["HydroUnits.GA_01.Electro." + FormParDevPath + ".OPr_Q_Mvar_a_" + FormParDevPath]]>
+			</body>
+		</do-trace>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_23" display-name="AnalogDpValue_23" uuid="fd97431c-5333-47aa-b164-910b5b090fc9" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="173.3964419625388" ver="5"/>
+		<designed target="Y" value="162.21699999999538" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<init target="ParDevPath" ver="5" value=""/>
+		<designed target="Scale" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["HydroUnits.GA_01.Electro." + FormParDevPath + ".OPr_Q_Mvar_b_" + FormParDevPath]]>
+			</body>
+		</do-trace>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_24" display-name="AnalogDpValue_24" uuid="1ea1d684-d038-4c4c-8ba8-ad5bdb60248b" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="317.39644196253835" ver="5"/>
+		<designed target="Y" value="162.21699999999538" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<init target="ParDevPath" ver="5" value=""/>
+		<designed target="Scale" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["HydroUnits.GA_01.Electro." + FormParDevPath + ".OPr_Q_Mvar_c_" + FormParDevPath]]>
+			</body>
+		</do-trace>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_25" display-name="AnalogDpValue_25" uuid="37776c65-d5d2-461e-965e-55d629101685" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="465.22977529587052" ver="5"/>
+		<designed target="Y" value="162.21699999999538" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<init target="ParDevPath" ver="5" value=""/>
+		<designed target="Scale" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["HydroUnits.GA_01.Electro." + FormParDevPath + ".OPr_Q_Mvar_" + FormParDevPath]]>
+			</body>
+		</do-trace>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_26" display-name="AnalogDpValue_26" uuid="7ecc0270-6c49-47a2-abad-13cdaa4fa1a7" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="29.89644196253721" ver="5"/>
+		<designed target="Y" value="196.21699999999538" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<init target="ParDevPath" ver="5" value=""/>
+		<designed target="Scale" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["HydroUnits.GA_01.Electro." + FormParDevPath + ".OPr_S_MVA_a_" + FormParDevPath]]>
+			</body>
+		</do-trace>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_27" display-name="AnalogDpValue_27" uuid="de894dc2-5a40-4dd8-86b3-cae070c3b432" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="173.3964419625388" ver="5"/>
+		<designed target="Y" value="196.21699999999538" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<init target="ParDevPath" ver="5" value=""/>
+		<designed target="Scale" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["HydroUnits.GA_01.Electro." + FormParDevPath + ".OPr_S_MVA_b_" + FormParDevPath]]>
+			</body>
+		</do-trace>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_28" display-name="AnalogDpValue_28" uuid="936be739-9153-4d6c-b0f8-b667aa8cec96" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="317.39644196253835" ver="5"/>
+		<designed target="Y" value="196.21699999999538" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<init target="ParDevPath" ver="5" value=""/>
+		<designed target="Scale" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["HydroUnits.GA_01.Electro." + FormParDevPath + ".OPr_S_MVA_c_" + FormParDevPath]]>
+			</body>
+		</do-trace>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_29" display-name="AnalogDpValue_29" uuid="11f1c74f-0480-4e57-97b4-0dc926777c17" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="465.22977529587052" ver="5"/>
+		<designed target="Y" value="196.21699999999538" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<init target="ParDevPath" ver="5" value=""/>
+		<designed target="Scale" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["HydroUnits.GA_01.Electro." + FormParDevPath + ".OPr_S_MVA_" + FormParDevPath]]>
+			</body>
+		</do-trace>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+	</object>
+	<object access-modifier="private" name="FormParDevPath" display-name="FormParDevPath" uuid="da0085df-a2d8-47ec-8c0b-7ed2430c52c8" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<designed target="Width" value="630" ver="5"/>
+	<designed target="Height" value="640" ver="5"/>
+</type>
+

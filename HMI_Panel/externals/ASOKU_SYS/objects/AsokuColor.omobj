@@ -1,0 +1,113 @@
+<object access-modifier="public" name="AsokuColor" display-name="AsokuColor" uuid="efc9296b-dbfe-4bcd-b6ed-88a3bb1f4a49" base-type="" base-type-id="00000000-0000-0000-0000-000000000000" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="asokuBtnCommandOn" display-name="asokuBtnCommandOn" uuid="1f13f1ed-150b-44ea-907e-43105dade735" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<init target="asokuBtnCommandOn" ver="5" value="0xffcc6666"/>
+	<object access-modifier="private" name="asokuBtnCommandOff" display-name="asokuBtnCommandOff" uuid="a1e66f2f-223a-435f-a421-38be2a7ad5a3" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asokuBackColor" display-name="asokuBackColor" uuid="5669843a-0b09-41e9-8be6-2438e0bd41f3" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asokuBlack" display-name="asokuBlack" uuid="9cf21223-4468-468e-9a5c-06a444a75583" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asokuBlue" display-name="asokuBlue" uuid="0830a7ee-ac4a-4d5f-b059-7815ffab6226" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asokuBrown" display-name="asokuBrown" uuid="0fe0a972-51f2-4769-945a-cbd7d8962177" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asokuCyan" display-name="asokuCyan" uuid="d33e871a-1b0c-47f4-b78c-1f0df114a524" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asokuDarkBlue" display-name="asokuDarkBlue" uuid="c0266ed0-1703-4932-8f0b-b12b3cfceecc" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asokuDarkColor" display-name="asokuDarkColor" uuid="c8b95c24-cd59-4438-8b29-f9b48057ba61" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asokuDarkGrey" display-name="asokuDarkGrey" uuid="82aad728-5d4b-4b76-a1d0-51b358b3d721" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asokuDarkRed" display-name="asokuDarkRed" uuid="ab1e5f93-2e92-4fed-b1bc-31510b02a890" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asokuFontColor" display-name="asokuFontColor" uuid="1f453a17-2429-4824-8b82-3fe9ea98c797" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asokuGreen" display-name="asokuGreen" uuid="729ef626-f4ef-4375-b01c-37144ed37fa3" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asokuGreyPurple" display-name="asokuGreyPurple" uuid="9be20fa7-ac11-4dc5-83ac-05bde5092ad7" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asokuLedGreen" display-name="asokuLedGreen" uuid="ef241160-b969-453a-bad4-722ce6cf6322" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asokuLedRed" display-name="asokuLedRed" uuid="70c3fe63-a7d7-4872-ab23-89f08b0a84e6" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asokuLightBlue" display-name="asokuLightBlue" uuid="ddbb1f58-3b53-4a47-b3ca-23d243a89caf" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asokuLightGrey" display-name="asokuLightGrey" uuid="3619955d-ac78-449f-ba4e-3862fbda67d4" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asokuLilac" display-name="asokuLilac" uuid="a7256620-1355-4754-ab08-39db452e7dc6" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asokuOrange" display-name="asokuOrange" uuid="780467f9-924c-4a53-9cf4-51c9daffa6bc" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asokuPear" display-name="asokuPear" uuid="6f4eb965-a612-4c83-b556-a80f4c98b80a" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asokuPurple" display-name="asokuPurple" uuid="aca52c52-7b2d-4667-8472-4002ce305cc8" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asokuRed" display-name="asokuRed" uuid="d62fd838-9d31-42cb-8334-f2f4d2fcdc71" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asokuSky" display-name="asokuSky" uuid="911ca367-70ed-4d6b-9cad-f1456c45094a" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asokuSTD_hover" display-name="asokuSTD_hover" uuid="885c18d6-a5a8-47f5-9dca-604027e7a305" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asokuWaterBondiBeach" display-name="asokuWaterBondiBeach" uuid="e37495f3-29fc-40cf-9201-cb573da3d309" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asokuWhite" display-name="asokuWhite" uuid="6385ec13-b65a-4867-a1c2-7d25beab999a" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asokuYellow" display-name="asokuYellow" uuid="ad1e5a3b-6e44-4b5a-bdad-6cc9d8c128f9" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asokuButton" display-name="asokuButton" uuid="29834fa9-764d-4066-8353-abb24074999f" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asokuGrey" display-name="asokuGrey" uuid="1dd4a92f-d193-48ae-9a3b-43dd0906e2dd" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asoku1150kV" display-name="asoku1150kV" uuid="246b42be-4116-400e-81f3-eb88c1c2085b" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asoku800kV" display-name="asoku800kV" uuid="1fbcb46c-0884-46c5-b537-689e55d1b625" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asoku500kV" display-name="asoku500kV" uuid="9338a6d2-b129-497a-9461-ed1f4ae01e03" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asoku400kV" display-name="asoku400kV" uuid="18481318-9a10-4092-895e-190d883afe53" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asoku330kV" display-name="asoku330kV" uuid="65345cd0-f585-470f-acf8-9d221a02c081" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asoku220kV" display-name="asoku220kV" uuid="c3d16a65-952c-40b7-a12e-93bd0c8cef89" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asoku150kV" display-name="asoku150kV" uuid="0fa32368-2c6c-490f-b074-b2eba8017d1c" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asoku110kV" display-name="asoku110kV" uuid="8c9a63df-21e1-420e-a69c-ee44559b27fd" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asoku60kV" display-name="asoku60kV" uuid="4dfa1704-d933-48b4-827d-d0295fa731c5" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asoku35kV" display-name="asoku35kV" uuid="8fe201c7-b8f1-48cd-8282-052f1964a8f9" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asoku20kV" display-name="asoku20kV" uuid="bf2366f0-1dd9-4bb4-96e5-deade51554f5" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asoku10kV" display-name="asoku10kV" uuid="31918681-f0cb-4f25-907d-35fbf16446b4" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asoku6kV" display-name="asoku6kV" uuid="ba856c10-540b-4ca2-8497-dcbbe219a5e7" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asoku3kV" display-name="asoku3kV" uuid="2e66e7ee-3bda-4a27-a61b-715a89ee4172" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asokuG27kV" display-name="asokuG27kV" uuid="35be82ae-5cf9-4558-be7f-0e1ffed26ffa" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asokuG21kV" display-name="asokuG21kV" uuid="22843ad4-6f51-47e0-a179-d4b7a03a4c07" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asokuG15.75kV" display-name="asokuG15.75kV" uuid="be877e7e-bd19-4c49-9bf0-3e1c6fe8ef0c" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asokuG10.5kV" display-name="asokuG10.5kV" uuid="807a0c25-8a07-41fd-aa8f-efacb81d3ab4" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asokuG6.3kV" display-name="asokuG6.3kV" uuid="2967be20-bf44-4884-9ded-a62b37e3e304" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asokuG3.15kV" display-name="asokuG3.15kV" uuid="d28fcb57-5e83-409d-aff8-e2b115620fe9" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<init target="asokuBtnCommandOff" ver="5" value="0xff66cc66"/>
+	<init target="asokuBackColor" ver="5" value="0xff646464"/>
+	<init target="asokuBlack" ver="5" value="0xff000000"/>
+	<init target="asokuBlue" ver="5" value="0xff3d89ff"/>
+	<init target="asokuBrown" ver="5" value="0xff6c6931"/>
+	<init target="asokuCyan" ver="5" value="0xff00ffff"/>
+	<init target="asokuDarkBlue" ver="5" value="0xff2668b3"/>
+	<init target="asokuDarkColor" ver="5" value="0xff505050"/>
+	<init target="asokuDarkGrey" ver="5" value="0xff333333"/>
+	<init target="asokuDarkRed" ver="5" value="0xff990000"/>
+	<init target="asokuFontColor" ver="5" value="0xffe1a900"/>
+	<init target="asokuGreen" ver="5" value="0xff00ff00"/>
+	<init target="asokuGreyPurple" ver="5" value="0xff7e3168"/>
+	<init target="asokuLedGreen" ver="5" value="0xff008b00"/>
+	<init target="asokuLedRed" ver="5" value="0xffff1e05"/>
+	<init target="asokuLightBlue" ver="5" value="0xff34abff"/>
+	<init target="asokuLightGrey" ver="5" value="0xffa6a6a6"/>
+	<init target="asokuLilac" ver="5" value="0xff6f15ff"/>
+	<init target="asokuOrange" ver="5" value="0xfffe8351"/>
+	<init target="asokuPear" ver="5" value="0xffc8c800"/>
+	<init target="asokuPurple" ver="5" value="0xff640064"/>
+	<init target="asokuRed" ver="5" value="0xffff0000"/>
+	<init target="asokuSky" ver="5" value="0xff7fc7ff"/>
+	<init target="asokuSTD_hover" ver="5" value="0xffe2e2e2"/>
+	<init target="asokuWaterBondiBeach" ver="5" value="0xff00b4c8"/>
+	<init target="asokuWhite" ver="5" value="0xffffffff"/>
+	<init target="asokuYellow" ver="5" value="0xffffff00"/>
+	<init target="asokuButton" ver="5" value="0xffd4d0c8"/>
+	<init target="asokuGrey" ver="5" value="0xff999999"/>
+	<init target="asoku1150kV" ver="5" value="0xffcd8aff"/>
+	<init target="asoku800kV" ver="5" value="0xff0000a8"/>
+	<init target="asoku500kV" ver="5" value="0xffd50000"/>
+	<init target="asoku400kV" ver="5" value="0xffff641e"/>
+	<init target="asoku330kV" ver="5" value="0xff00aa00"/>
+	<init target="asoku220kV" ver="5" value="0xffb5b500"/>
+	<init target="asoku150kV" ver="5" value="0xffaa9600"/>
+	<init target="asoku110kV" ver="5" value="0xff0099ff"/>
+	<init target="asoku60kV" ver="5" value="0xffff33cc"/>
+	<init target="asoku35kV" ver="5" value="0xff663300"/>
+	<init target="asoku20kV" ver="5" value="0xffa020f0"/>
+	<init target="asoku10kV" ver="5" value="0xff6600cc"/>
+	<init target="asoku6kV" ver="5" value="0xff007800"/>
+	<init target="asoku3kV" ver="5" value="0xff7f7f7f"/>
+	<init target="asokuG27kV" ver="5" value="0xff663300"/>
+	<init target="asokuG21kV" ver="5" value="0xffff641e"/>
+	<init target="asokuG15.75kV" ver="5" value="0xffff33cc"/>
+	<init target="asokuG10.5kV" ver="5" value="0xff6600cc"/>
+	<init target="asokuG6.3kV" ver="5" value="0xff006600"/>
+	<init target="asokuG3.15kV" ver="5" value="0xff7f7f7f"/>
+	<object access-modifier="private" name="asokuTransparent" display-name="asokuTransparent" uuid="cd81b1b2-d239-4692-9555-ad5442615b45" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<init target="asokuTransparent" ver="5" value="0x00000000"/>
+	<object access-modifier="private" name="asokuOil" display-name="asokuOil" uuid="0778e192-b388-4527-97f6-33051b6bca8c" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<init target="asokuOil" ver="5" value="0xffdcc828"/>
+	<object access-modifier="private" name="asokuAir" display-name="asokuAir" uuid="a5cf0d0a-649f-45fd-a679-f4f187fab286" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="asokuWater" display-name="asokuWater" uuid="33faa2f3-1572-408a-86b3-1c270a5d0bd2" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<init target="asokuWater" ver="5" value="0xff0000fe"/>
+	<object access-modifier="private" name="asokuTech" display-name="asokuTech" uuid="4d8bafd5-5ca4-4e3f-8ec9-a24e084d0562" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<init target="asokuTech" ver="5" value="0xff009600"/>
+	<init target="asokuAir" ver="5" value="0xff0082fa"/>
+</object>
+

@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "Filters": [
+    {
+      "name": "Electro",
+      "used": true,
+      "time": "",
+      "active_time": "",
+      "deactive_time": "",
+      "severity": "",
+      "group": "",
+      "message": "",
+      "source": "HydroUnits.GA_01.Electro",
+      "ack": "Все",
+      "ack_time": "",
+      "actor_id": "",
+      "ack_comment": ""
+    },
+    {
+      "name": "Thermal",
+      "used": true,
+      "time": "",
+      "active_time": "",
+      "deactive_time": "",
+      "severity": "",
+      "group": "",
+      "message": "",
+      "source": "HydroUnits.GA_01.Thermal",
+      "ack": "Все",
+      "ack_time": "",
+      "actor_id": "",
+      "ack_comment": ""
+    }
+  ],
+  "Mode": 0
+}

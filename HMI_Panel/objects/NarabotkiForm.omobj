@@ -1,0 +1,1960 @@
+<type access-modifier="private" name="NarabotkiForm" display-name="NarabotkiForm" uuid="f8a2c7ea-ad2d-4700-ab72-6e4cb30e8c44" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Width" value="650" ver="5"/>
+	<designed target="Height" value="500" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xff646464" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="680" ver="5"/>
+	<designed target="WindowHeight" value="390" ver="5"/>
+	<designed target="WindowCaption" value="Наработки" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="1" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="0" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<object access-modifier="private" name="Frame_1" display-name="Frame_1" uuid="086d3dbf-1874-4bd5-9232-a6902fdd9ddd" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="42.89999999999992" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="650" ver="5"/>
+		<designed target="Height" value="458.00000000000006" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="0" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="OverrideScaling" value="false" ver="5"/>
+		<designed target="ShowScrollBars" value="true" ver="5"/>
+		<designed target="MoveByMouse" value="false" ver="5"/>
+		<object access-modifier="private" name="Rectangle_Header" display-name="Rectangle_Header" uuid="c3913a00-56d3-41e1-9d66-eee09cf3750f" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="6" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="649.10951528747046" ver="5"/>
+			<designed target="Height" value="31.600000000000357" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="0xfffefefe" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="2" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+			<object access-modifier="private" name="Text_8" display-name="Text_8" uuid="7398560c-4ad4-43a4-bac5-3a588cce96a6" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="379.57279575339624" ver="5"/>
+				<designed target="Y" value="2.3960317460317473" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Flip" value="0" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="142.52107515987439" ver="5"/>
+				<designed target="Height" value="31.999999999999986" ver="5"/>
+				<designed target="Text" value="Значения" ver="5"/>
+				<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+				<designed target="FontColor" value="0xffffffff" ver="5"/>
+				<designed target="TextAlignment" value="132" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Text_7" display-name="Text_7" uuid="db143e64-4ad3-4207-828b-baa3688cc1bc" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="2.6560779318910193" ver="5"/>
+				<designed target="Y" value="2.3960317460317473" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Flip" value="0" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="358.98774182654108" ver="5"/>
+				<designed target="Height" value="30" ver="5"/>
+				<designed target="Text" value="Наработки" ver="5"/>
+				<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+				<designed target="FontColor" value="0xffffffff" ver="5"/>
+				<designed target="TextAlignment" value="132" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Text_9" display-name="Text_9" uuid="e69ffdaf-08ca-44cd-962f-fe58787ed6ff" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="522.28189089539262" ver="5"/>
+				<designed target="Y" value="2.3960317460317473" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Flip" value="0" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="125.98774182654131" ver="5"/>
+				<designed target="Height" value="34.266666666666666" ver="5"/>
+				<designed target="Text" value="Уставки" ver="5"/>
+				<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+				<designed target="FontColor" value="0xffffffff" ver="5"/>
+				<designed target="TextAlignment" value="132" ver="5"/>
+			</object>
+		</object>
+		<object access-modifier="private" name="Rectangle_TimeZOR" display-name="Rectangle_TimeZOR" uuid="72765bc0-169f-4ad9-b69f-8bdb88f64beb" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="390" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="649.10951528747046" ver="5"/>
+			<designed target="Height" value="39.433333333333081" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="0xfffefefe" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="2" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+			<object access-modifier="private" name="Type" display-name="Type" uuid="56f62f63-04d4-471e-bec9-65a43d4c9bf8" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+			<object access-modifier="private" name="Text_13" display-name="Text_13" uuid="1b998ccb-a88e-4aca-90d7-249e3ce0c5c4" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+				<designed target="X" value="3.0984126984126661" ver="5"/>
+				<designed target="Y" value="7" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="349.76973896016455" ver="5"/>
+				<designed target="Height" value="22.30000000000004" ver="5"/>
+				<designed target="Text" value="Время работы ЗОР" ver="5"/>
+				<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+				<do-trace access-modifier="private" target="ParDevPath" ver="5">
+					<body>
+						<![CDATA[PathToValues + "." + Type + TimePostfix]]>
+					</body>
+				</do-trace>
+				<init target="notifyingLenghtOfString" ver="5" value="999"/>
+			</object>
+			<init target="Type" ver="5" value="Nar_ZOR"/>
+			<object access-modifier="private" name="AnalogDpValue_10" display-name="AnalogDpValue_10" uuid="afd56196-03a8-4a7b-b794-13084a207fb5" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+				<designed target="X" value="394.43333333333351" ver="5"/>
+				<designed target="Y" value="4.1535104393099402" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="90" ver="5"/>
+				<designed target="Height" value="30" ver="5"/>
+				<do-trace access-modifier="private" target="ParDevPath" ver="5">
+					<body>
+						<![CDATA[PathToValues + "." + Type + TimePostfix]]>
+					</body>
+				</do-trace>
+				<init target="HideUnits" ver="5" value="false"/>
+				<designed target="ZValue" value="0" ver="5"/>
+			</object>
+			<object access-modifier="private" name="AODpValue_10" display-name="AODpValue_10" uuid="5348e1b3-ac5e-4231-9775-e56315658beb" base-type="AODpValue" base-type-id="41ab7777-ecfb-4ad9-8dce-6258006c472b" ver="5" description="" cardinal="1">
+				<designed target="X" value="518.94242847532996" ver="5"/>
+				<designed target="Y" value="4.1535104393099402" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="90" ver="5"/>
+				<designed target="Height" value="25" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="BrushColor" value="4278190080" ver="5"/>
+				<do-trace access-modifier="private" target="InDevPath" ver="5">
+					<body>
+						<![CDATA[PathToSetpoints + ".In.SC_" + Type + TimePostfix]]>
+					</body>
+				</do-trace>
+				<do-trace access-modifier="private" target="OutDevPath" ver="5">
+					<body>
+						<![CDATA[PathToSetpoints + ".Out.SP_" + Type + TimePostfix]]>
+					</body>
+				</do-trace>
+				<init target="HideUnits" ver="5" value="false"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<init target="MessageDevPath" ver="5" value="_System.Messages.UserChangeSignalMessage"/>
+			</object>
+		</object>
+		<object access-modifier="private" name="Rectangle_EntrZOR" display-name="Rectangle_EntrZOR" uuid="0d9da75a-dfe9-4495-9f5a-e7d93510decb" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="351" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="649.10951528747046" ver="5"/>
+			<designed target="Height" value="39.433333333333081" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="0xfffefefe" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="2" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+			<object access-modifier="private" name="Text_12" display-name="Text_12" uuid="038646a1-73f3-44cb-a223-3bca3ec51e63" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+				<designed target="X" value="3.0984126984126661" ver="5"/>
+				<designed target="Y" value="9" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="349.76973896016455" ver="5"/>
+				<designed target="Height" value="22.30000000000004" ver="5"/>
+				<designed target="Text" value="Количество входов ЗОР" ver="5"/>
+				<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+				<do-trace access-modifier="private" target="ParDevPath" ver="5">
+					<body>
+						<![CDATA[PathToValues + ".Nar" + Type + TimePostfix + "_cnt"]]>
+					</body>
+				</do-trace>
+				<init target="notifyingLenghtOfString" ver="5" value="999"/>
+			</object>
+			<object access-modifier="private" name="AnalogDpValue_9" display-name="AnalogDpValue_9" uuid="7927c7e4-d7af-4c31-bba1-75701ab6a0b6" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+				<designed target="X" value="394.43333333333351" ver="5"/>
+				<designed target="Y" value="4.1535104393099402" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="90" ver="5"/>
+				<designed target="Height" value="30" ver="5"/>
+				<do-trace access-modifier="private" target="ParDevPath" ver="5">
+					<body>
+						<![CDATA[PathToValues + ".Nar" + Type + TimePostfix + "_cnt"]]>
+					</body>
+				</do-trace>
+				<init target="HideUnits" ver="5" value="false"/>
+				<designed target="ZValue" value="0" ver="5"/>
+			</object>
+			<object access-modifier="private" name="AODpValue_9" display-name="AODpValue_9" uuid="813bdd24-a006-4c5b-8ce1-e60c9bf505b8" base-type="AODpValue" base-type-id="41ab7777-ecfb-4ad9-8dce-6258006c472b" ver="5" description="" cardinal="1">
+				<designed target="X" value="518.94242847532996" ver="5"/>
+				<designed target="Y" value="4.1535104393099402" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="90" ver="5"/>
+				<designed target="Height" value="25" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="BrushColor" value="4278190080" ver="5"/>
+				<do-trace access-modifier="private" target="InDevPath" ver="5">
+					<body>
+						<![CDATA[PathToSetpoints + ".In.SC" + Type + TimePostfix + "_cnt"]]>
+					</body>
+				</do-trace>
+				<do-trace access-modifier="private" target="OutDevPath" ver="5">
+					<body>
+						<![CDATA[PathToSetpoints + ".Out.SP_ZOR" + TimePostfix + "_cnt"]]>
+					</body>
+				</do-trace>
+				<init target="HideUnits" ver="5" value="false"/>
+				<designed target="ZValue" value="0" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Type" display-name="Type" uuid="0d9365f7-c7c1-403c-a3a0-6f1d5378e392" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+			<init target="Type" ver="5" value="_ZOR"/>
+			<object access-modifier="private" name="ButtonWithDelay_9" display-name="ButtonWithDelay_9" uuid="635159f8-11dc-452d-b1ea-1973bc11e7f4" base-type="DODpValue" base-type-id="f1b1a670-0855-4353-a623-a7e49a2a16a6" ver="5" description="" cardinal="1">
+				<designed target="X" value="311.06666666666666" ver="5"/>
+				<designed target="Y" value="5.1500000000000341" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="75.666666666666629" ver="5"/>
+				<designed target="Height" value="30" ver="5"/>
+				<designed target="Text" value="Сброс" ver="5"/>
+				<init target="StringText" ver="5" value="Сброс"/>
+				<do-trace access-modifier="private" target="ParDevPath" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_y" || TimePostfix == "_af_d"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.Out.CMD_ZOR_res_all"]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_r"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.Out.CMD_ZOR_res_rep"]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+				<do-trace access-modifier="private" target="Visible" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == ""]]>
+						</condition>
+						<expr>
+							<![CDATA[false]]>
+						</expr>
+					</conditional-expr>
+					<default-expr>
+						<expr>
+							<![CDATA[true]]>
+						</expr>
+					</default-expr>
+				</do-trace>
+				<designed target="Enabled" value="true" ver="5"/>
+				<do-trace access-modifier="private" target="InDevPath" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_y" || TimePostfix == "_af_d"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.In.CMC_ZOR_res_all"]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_r"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.In.CMC_ZOR_res_rep"]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+				<do-trace access-modifier="private" target="OutDevPath" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_y" || TimePostfix == "_af_d"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.Out.CMD_ZOR_res_all"]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_r"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.Out.CMD_ZOR_res_rep"]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+				<init target="ButtonTextOff" ver="5" value="Сброс"/>
+				<init target="ButtonTextOn" ver="5" value="Сброс"/>
+				<do-trace access-modifier="private" target="ButtonColorOn" ver="5">
+					<body kind="om">
+						<![CDATA[AsokuColor.asokuLightGrey]]>
+					</body>
+				</do-trace>
+				<do-trace access-modifier="private" target="ButtonColorOff" ver="5">
+					<body kind="om">
+						<![CDATA[AsokuColor.asokuLightGrey]]>
+					</body>
+				</do-trace>
+			</object>
+		</object>
+		<object access-modifier="private" name="Rectangle_TimeZZR" display-name="Rectangle_TimeZZR" uuid="f5cede48-c246-4d43-8fd7-594c80d92ff6" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="312" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="649.10951528747046" ver="5"/>
+			<designed target="Height" value="39.433333333333081" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="0xfffefefe" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="2" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+			<object access-modifier="private" name="Text_11" display-name="Text_11" uuid="40d12356-87fb-4175-b833-f6b1a0c8625f" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+				<designed target="X" value="3.0984126984126661" ver="5"/>
+				<designed target="Y" value="7" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="349.76973896016455" ver="5"/>
+				<designed target="Height" value="22.30000000000004" ver="5"/>
+				<designed target="Text" value="Время работы ЗЗР" ver="5"/>
+				<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+				<do-trace access-modifier="private" target="ParDevPath" ver="5">
+					<body>
+						<![CDATA[PathToValues + "." + Type + TimePostfix]]>
+					</body>
+				</do-trace>
+				<init target="notifyingLenghtOfString" ver="5" value="999"/>
+			</object>
+			<object access-modifier="private" name="AnalogDpValue_8" display-name="AnalogDpValue_8" uuid="f1027732-6143-4e62-ba06-6cc41bcac0cd" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+				<designed target="X" value="394.43333333333351" ver="5"/>
+				<designed target="Y" value="4.1535104393099402" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="90" ver="5"/>
+				<designed target="Height" value="30" ver="5"/>
+				<do-trace access-modifier="private" target="ParDevPath" ver="5">
+					<body>
+						<![CDATA[PathToValues + "." + Type + TimePostfix]]>
+					</body>
+				</do-trace>
+				<init target="HideUnits" ver="5" value="false"/>
+				<designed target="ZValue" value="0" ver="5"/>
+			</object>
+			<object access-modifier="private" name="AODpValue_8" display-name="AODpValue_8" uuid="caeb901c-d1bc-4d47-b0d1-2f570a161499" base-type="AODpValue" base-type-id="41ab7777-ecfb-4ad9-8dce-6258006c472b" ver="5" description="" cardinal="1">
+				<designed target="X" value="518.94242847532996" ver="5"/>
+				<designed target="Y" value="4.1535104393099402" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="90" ver="5"/>
+				<designed target="Height" value="25" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="BrushColor" value="4278190080" ver="5"/>
+				<do-trace access-modifier="private" target="InDevPath" ver="5">
+					<body>
+						<![CDATA[PathToSetpoints + ".In.SC_" + Type + TimePostfix]]>
+					</body>
+				</do-trace>
+				<do-trace access-modifier="private" target="OutDevPath" ver="5">
+					<body>
+						<![CDATA[PathToSetpoints + ".Out.SP_" + Type + TimePostfix]]>
+					</body>
+				</do-trace>
+				<init target="HideUnits" ver="5" value="false"/>
+				<designed target="ZValue" value="0" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Type" display-name="Type" uuid="48f2c9ec-0cef-4080-8a0d-0d01b08e9ec4" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+			<init target="Type" ver="5" value="Nar_ZZR"/>
+		</object>
+		<object access-modifier="private" name="Rectangle_EntrZZR" display-name="Rectangle_EntrZZR" uuid="40f94bf3-9a90-4124-9aa4-41c559591551" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="273" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="649.10951528747046" ver="5"/>
+			<designed target="Height" value="39.433333333333081" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="0xfffefefe" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="2" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+			<object access-modifier="private" name="Text_10" display-name="Text_10" uuid="e121c81e-7ac9-4ca5-a111-b60e0845aab5" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+				<designed target="X" value="3.0984126984126661" ver="5"/>
+				<designed target="Y" value="9" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="349.76973896016455" ver="5"/>
+				<designed target="Height" value="22.30000000000004" ver="5"/>
+				<designed target="Text" value="Количество входов ЗЗР" ver="5"/>
+				<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+				<do-trace access-modifier="private" target="ParDevPath" ver="5">
+					<body>
+						<![CDATA[PathToValues + ".Nar" + Type + TimePostfix + "_cnt"]]>
+					</body>
+				</do-trace>
+				<init target="notifyingLenghtOfString" ver="5" value="999"/>
+			</object>
+			<object access-modifier="private" name="AnalogDpValue_7" display-name="AnalogDpValue_7" uuid="0d926758-f63f-4237-a268-bcc638dfece1" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+				<designed target="X" value="394.43333333333351" ver="5"/>
+				<designed target="Y" value="4.1535104393099402" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="90" ver="5"/>
+				<designed target="Height" value="30" ver="5"/>
+				<do-trace access-modifier="private" target="ParDevPath" ver="5">
+					<body>
+						<![CDATA[PathToValues + ".Nar" + Type + TimePostfix + "_cnt"]]>
+					</body>
+				</do-trace>
+				<init target="HideUnits" ver="5" value="false"/>
+				<designed target="ZValue" value="0" ver="5"/>
+			</object>
+			<object access-modifier="private" name="AODpValue_7" display-name="AODpValue_7" uuid="af3771f6-8dea-4474-b513-82ce85ff3684" base-type="AODpValue" base-type-id="41ab7777-ecfb-4ad9-8dce-6258006c472b" ver="5" description="" cardinal="1">
+				<designed target="X" value="518.94242847532996" ver="5"/>
+				<designed target="Y" value="4.1535104393099402" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="90" ver="5"/>
+				<designed target="Height" value="25" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="BrushColor" value="4278190080" ver="5"/>
+				<do-trace access-modifier="private" target="InDevPath" ver="5">
+					<body>
+						<![CDATA[PathToSetpoints + ".In.SC" + Type + TimePostfix + "_cnt"]]>
+					</body>
+				</do-trace>
+				<do-trace access-modifier="private" target="OutDevPath" ver="5">
+					<body>
+						<![CDATA[PathToSetpoints + ".Out.SP" + Type + TimePostfix + "_cnt"]]>
+					</body>
+				</do-trace>
+				<init target="HideUnits" ver="5" value="false"/>
+				<designed target="ZValue" value="0" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Type" display-name="Type" uuid="9875462c-0df5-4323-b3ba-06465ad99eea" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+			<init target="Type" ver="5" value="_ZZR"/>
+			<object access-modifier="private" name="ButtonWithDelay_10" display-name="ButtonWithDelay_10" uuid="ebf002a3-1001-4ba8-a903-64ab131fb0da" base-type="DODpValue" base-type-id="f1b1a670-0855-4353-a623-a7e49a2a16a6" ver="5" description="" cardinal="1">
+				<designed target="X" value="311.06666666666666" ver="5"/>
+				<designed target="Y" value="5.1500000000000341" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="75.666666666666629" ver="5"/>
+				<designed target="Height" value="30" ver="5"/>
+				<designed target="Text" value="Сброс" ver="5"/>
+				<init target="StringText" ver="5" value="Сброс"/>
+				<do-trace access-modifier="private" target="ParDevPath" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_y" || TimePostfix == "_af_d"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.Out.CMD_ZZR_res_all"]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_r"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.Out.CMD_ZZR_res_rep"]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+				<do-trace access-modifier="private" target="Visible" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == ""]]>
+						</condition>
+						<expr>
+							<![CDATA[false]]>
+						</expr>
+					</conditional-expr>
+					<default-expr>
+						<expr>
+							<![CDATA[true]]>
+						</expr>
+					</default-expr>
+				</do-trace>
+				<designed target="Enabled" value="true" ver="5"/>
+				<do-trace access-modifier="private" target="InDevPath" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_y" || TimePostfix == "_af_d"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.In.CMC_ZZR_res_all"]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_r"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.In.CMC_ZZR_res_rep"]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+				<do-trace access-modifier="private" target="OutDevPath" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_y" || TimePostfix == "_af_d"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.Out.CMD_ZZR_res_all"]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_r"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.Out.CMD_ZZR_res_rep"]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+				<init target="ButtonTextOff" ver="5" value="Сброс"/>
+				<init target="ButtonTextOn" ver="5" value="Сброс"/>
+				<do-trace access-modifier="private" target="ButtonColorOn" ver="5">
+					<body kind="om">
+						<![CDATA[AsokuColor.asokuLightGrey]]>
+					</body>
+				</do-trace>
+				<do-trace access-modifier="private" target="ButtonColorOff" ver="5">
+					<body kind="om">
+						<![CDATA[AsokuColor.asokuLightGrey]]>
+					</body>
+				</do-trace>
+			</object>
+		</object>
+		<object access-modifier="private" name="Rectangle_Start" display-name="Rectangle_Start" uuid="e0a40a20-f145-4f2e-82dc-0e94e2684865" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="195" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="649.10951528747046" ver="5"/>
+			<designed target="Height" value="39.433333333333081" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="0xfffefefe" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="2" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+			<object access-modifier="private" name="Text_5" display-name="Text_5" uuid="b68f06f2-83ee-47f5-95fe-1d518ebf1bec" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+				<designed target="X" value="3.0984126984126661" ver="5"/>
+				<designed target="Y" value="8" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="349.76973896016455" ver="5"/>
+				<designed target="Height" value="22.30000000000004" ver="5"/>
+				<designed target="Text" value="Количество Пусков с нач.тек.суток" ver="5"/>
+				<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+				<do-trace access-modifier="private" target="ParDevPath" ver="5">
+					<body>
+						<![CDATA[PathToValues + ".Nar" + Type + TimePostfix + "_cnt"]]>
+					</body>
+				</do-trace>
+				<init target="notifyingLenghtOfString" ver="5" value="999"/>
+			</object>
+			<object access-modifier="private" name="AnalogDpValue_5" display-name="AnalogDpValue_5" uuid="84ddceae-962f-4509-9381-521c50afbe1c" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+				<designed target="X" value="394.43333333333351" ver="5"/>
+				<designed target="Y" value="4.1535104393099402" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="90" ver="5"/>
+				<designed target="Height" value="30" ver="5"/>
+				<do-trace access-modifier="private" target="ParDevPath" ver="5">
+					<body>
+						<![CDATA[PathToValues + ".Nar" + Type + TimePostfix + "_cnt"]]>
+					</body>
+				</do-trace>
+				<init target="HideUnits" ver="5" value="false"/>
+				<designed target="ZValue" value="0" ver="5"/>
+			</object>
+			<object access-modifier="private" name="AODpValue_5" display-name="AODpValue_5" uuid="5468b52c-76dd-4094-9f04-a9bb533fbbda" base-type="AODpValue" base-type-id="41ab7777-ecfb-4ad9-8dce-6258006c472b" ver="5" description="" cardinal="1">
+				<designed target="X" value="518.94242847532996" ver="5"/>
+				<designed target="Y" value="4.1535104393099402" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="90" ver="5"/>
+				<designed target="Height" value="25" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="BrushColor" value="4278190080" ver="5"/>
+				<do-trace access-modifier="private" target="InDevPath" ver="5">
+					<body>
+						<![CDATA[PathToSetpoints + ".In.SC" + Type + TimePostfix + "_cnt"]]>
+					</body>
+				</do-trace>
+				<do-trace access-modifier="private" target="OutDevPath" ver="5">
+					<body>
+						<![CDATA[PathToSetpoints + ".Out.SP" + Type + TimePostfix + "_cnt"]]>
+					</body>
+				</do-trace>
+				<init target="HideUnits" ver="5" value="false"/>
+				<designed target="ZValue" value="0" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Type" display-name="Type" uuid="ac6c71c4-b38b-434b-91e0-9539835d1d8e" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+			<init target="Type" ver="5" value="_START"/>
+			<object access-modifier="private" name="ButtonWithDelay_11" display-name="ButtonWithDelay_11" uuid="f811880b-a45c-400c-a72c-d0f84ac7c9bf" base-type="DODpValue" base-type-id="f1b1a670-0855-4353-a623-a7e49a2a16a6" ver="5" description="" cardinal="1">
+				<designed target="X" value="311.06666666666666" ver="5"/>
+				<designed target="Y" value="4.1500000000000057" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="75.666666666666629" ver="5"/>
+				<designed target="Height" value="30" ver="5"/>
+				<designed target="Text" value="Сброс" ver="5"/>
+				<init target="StringText" ver="5" value="Сброс"/>
+				<do-trace access-modifier="private" target="ParDevPath" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_y" || TimePostfix == "_af_d"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.Out.CMD_START_res_all"]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_r"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.Out.CMD_START_res_rep"]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+				<do-trace access-modifier="private" target="Visible" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == ""]]>
+						</condition>
+						<expr>
+							<![CDATA[false]]>
+						</expr>
+					</conditional-expr>
+					<default-expr>
+						<expr>
+							<![CDATA[true]]>
+						</expr>
+					</default-expr>
+				</do-trace>
+				<designed target="Enabled" value="true" ver="5"/>
+				<do-trace access-modifier="private" target="InDevPath" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_y" || TimePostfix == "_af_d"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.In.CMC_START_res_all"]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_r"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.In.CMC_START_res_rep"]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+				<do-trace access-modifier="private" target="OutDevPath" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_y" || TimePostfix == "_af_d"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.Out.CMD_START_res_all"]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_r"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.Out.CMD_START_res_rep"]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+				<init target="ButtonTextOff" ver="5" value="Сброс"/>
+				<init target="ButtonTextOn" ver="5" value="Сброс"/>
+				<do-trace access-modifier="private" target="ButtonColorOn" ver="5">
+					<body kind="om">
+						<![CDATA[AsokuColor.asokuLightGrey]]>
+					</body>
+				</do-trace>
+				<do-trace access-modifier="private" target="ButtonColorOff" ver="5">
+					<body kind="om">
+						<![CDATA[AsokuColor.asokuLightGrey]]>
+					</body>
+				</do-trace>
+			</object>
+		</object>
+		<object access-modifier="private" name="Rectangle_XXT" display-name="Rectangle_XXT" uuid="764912eb-4425-419e-8d24-20ca6b2f81bf" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="117.10000000000008" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="649.10951528747046" ver="5"/>
+			<designed target="Height" value="39.433333333333081" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="0xfffefefe" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="2" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+			<object access-modifier="private" name="Text_3" display-name="Text_3" uuid="decd4aa4-2827-457d-967d-5467e1de9293" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+				<designed target="X" value="3.0984126984126661" ver="5"/>
+				<designed target="Y" value="8" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="349.76973896016455" ver="5"/>
+				<designed target="Height" value="22.30000000000004" ver="5"/>
+				<designed target="Text" value='Наработка "ХХТ" с нач.тек.суток' ver="5"/>
+				<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+				<do-trace access-modifier="private" target="ParDevPath" ver="5">
+					<body>
+						<![CDATA[PathToValues + "." + Type + TimePostfix]]>
+					</body>
+				</do-trace>
+				<init target="notifyingLenghtOfString" ver="5" value="999"/>
+			</object>
+			<object access-modifier="private" name="AnalogDpValue_3" display-name="AnalogDpValue_3" uuid="5c0284a1-f056-4966-95ed-607412fd96e3" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+				<designed target="X" value="394.43333333333351" ver="5"/>
+				<designed target="Y" value="4.1535104393099402" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="90" ver="5"/>
+				<designed target="Height" value="30" ver="5"/>
+				<do-trace access-modifier="private" target="ParDevPath" ver="5">
+					<body>
+						<![CDATA[PathToValues + "." + Type + TimePostfix]]>
+					</body>
+				</do-trace>
+				<init target="HideUnits" ver="5" value="false"/>
+				<designed target="ZValue" value="0" ver="5"/>
+			</object>
+			<object access-modifier="private" name="AODpValue_3" display-name="AODpValue_3" uuid="5ef875f0-4888-4c02-b6fd-c165c57c9b8e" base-type="AODpValue" base-type-id="41ab7777-ecfb-4ad9-8dce-6258006c472b" ver="5" description="" cardinal="1">
+				<designed target="X" value="518.94242847532996" ver="5"/>
+				<designed target="Y" value="4.1535104393099402" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="90" ver="5"/>
+				<designed target="Height" value="25" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="BrushColor" value="4278190080" ver="5"/>
+				<do-trace access-modifier="private" target="InDevPath" ver="5">
+					<body>
+						<![CDATA[PathToSetpoints + ".In.SC_" + Type + TimePostfix]]>
+					</body>
+				</do-trace>
+				<do-trace access-modifier="private" target="OutDevPath" ver="5">
+					<body>
+						<![CDATA[PathToSetpoints + ".Out.SP_" + Type + TimePostfix]]>
+					</body>
+				</do-trace>
+				<init target="HideUnits" ver="5" value="false"/>
+				<designed target="ZValue" value="0" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Type" display-name="Type" uuid="0da92a19-f16e-47e4-bc7b-78cee492264c" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+			<init target="Type" ver="5" value="Nar_HHT"/>
+			<object access-modifier="private" name="ButtonWithDelay_14" display-name="ButtonWithDelay_14" uuid="f158119a-ec2f-4824-aa19-d2705ce0f732" base-type="DODpValue" base-type-id="f1b1a670-0855-4353-a623-a7e49a2a16a6" ver="5" description="" cardinal="1">
+				<designed target="X" value="311.06666666666666" ver="5"/>
+				<designed target="Y" value="4.1500000000000341" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="75.666666666666629" ver="5"/>
+				<designed target="Height" value="30" ver="5"/>
+				<designed target="Text" value="Сброс" ver="5"/>
+				<init target="StringText" ver="5" value="Сброс"/>
+				<do-trace access-modifier="private" target="ParDevPath" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_y" || TimePostfix == "_af_d"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.Out.CMD_HHT_res_all"]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_r"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.Out.CMD_HHT_res_rep"]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+				<do-trace access-modifier="private" target="Visible" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == ""]]>
+						</condition>
+						<expr>
+							<![CDATA[false]]>
+						</expr>
+					</conditional-expr>
+					<default-expr>
+						<expr>
+							<![CDATA[true]]>
+						</expr>
+					</default-expr>
+				</do-trace>
+				<designed target="Enabled" value="true" ver="5"/>
+				<do-trace access-modifier="private" target="InDevPath" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_y" || TimePostfix == "_af_d"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.In.CMC_HHT_res_all"]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_r"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.In.CMC_HHT_res_rep"]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+				<do-trace access-modifier="private" target="OutDevPath" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_y" || TimePostfix == "_af_d"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.Out.CMD_HHT_res_all"]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_r"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.Out.CMD_HHT_res_rep"]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+				<init target="ButtonTextOff" ver="5" value="Сброс"/>
+				<init target="ButtonTextOn" ver="5" value="Сброс"/>
+				<do-trace access-modifier="private" target="ButtonColorOn" ver="5">
+					<body kind="om">
+						<![CDATA[AsokuColor.asokuLightGrey]]>
+					</body>
+				</do-trace>
+				<do-trace access-modifier="private" target="ButtonColorOff" ver="5">
+					<body kind="om">
+						<![CDATA[AsokuColor.asokuLightGrey]]>
+					</body>
+				</do-trace>
+			</object>
+		</object>
+		<object access-modifier="private" name="Rectangle_XXG" display-name="Rectangle_XXG" uuid="65bddaae-b084-40e7-8eb9-17ff51cb5586" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="156" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="649.10951528747046" ver="5"/>
+			<designed target="Height" value="39.433333333333081" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="0xfffefefe" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="2" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+			<object access-modifier="private" name="Text_4" display-name="Text_4" uuid="7fd6780d-d791-4702-b6fb-11700c067a98" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+				<designed target="X" value="3.0984126984126661" ver="5"/>
+				<designed target="Y" value="9" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="349.76973896016455" ver="5"/>
+				<designed target="Height" value="22.30000000000004" ver="5"/>
+				<designed target="Text" value='Наработка "ХХГ" с нач.тек.суток' ver="5"/>
+				<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+				<do-trace access-modifier="private" target="ParDevPath" ver="5">
+					<body>
+						<![CDATA[PathToValues + "." + Type + TimePostfix]]>
+					</body>
+				</do-trace>
+				<init target="notifyingLenghtOfString" ver="5" value="999"/>
+			</object>
+			<object access-modifier="private" name="AnalogDpValue_4" display-name="AnalogDpValue_4" uuid="0ad9efa9-d806-4f54-ac15-36061a613504" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+				<designed target="X" value="394.43333333333351" ver="5"/>
+				<designed target="Y" value="4.1535104393099402" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="90" ver="5"/>
+				<designed target="Height" value="30" ver="5"/>
+				<do-trace access-modifier="private" target="ParDevPath" ver="5">
+					<body>
+						<![CDATA[PathToValues + "." + Type + TimePostfix]]>
+					</body>
+				</do-trace>
+				<init target="HideUnits" ver="5" value="false"/>
+				<designed target="ZValue" value="0" ver="5"/>
+			</object>
+			<object access-modifier="private" name="AODpValue_4" display-name="AODpValue_4" uuid="a727c32b-86ad-41c2-b41e-13de482d5011" base-type="AODpValue" base-type-id="41ab7777-ecfb-4ad9-8dce-6258006c472b" ver="5" description="" cardinal="1">
+				<designed target="X" value="518.94242847532996" ver="5"/>
+				<designed target="Y" value="4.1535104393099402" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="90" ver="5"/>
+				<designed target="Height" value="25" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="BrushColor" value="4278190080" ver="5"/>
+				<do-trace access-modifier="private" target="InDevPath" ver="5">
+					<body>
+						<![CDATA[PathToSetpoints + ".In.SC_" + Type + TimePostfix]]>
+					</body>
+				</do-trace>
+				<do-trace access-modifier="private" target="OutDevPath" ver="5">
+					<body>
+						<![CDATA[PathToSetpoints + ".In.SP_" + Type + TimePostfix]]>
+					</body>
+				</do-trace>
+				<init target="HideUnits" ver="5" value="false"/>
+				<designed target="ZValue" value="0" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Type" display-name="Type" uuid="fdb433c6-659b-4db4-82b4-12af94aa9aee" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+			<init target="Type" ver="5" value="Nar_HHG"/>
+			<object access-modifier="private" name="ButtonWithDelay_13" display-name="ButtonWithDelay_13" uuid="77d33673-5e10-4a0f-92c3-ffd01407788b" base-type="DODpValue" base-type-id="f1b1a670-0855-4353-a623-a7e49a2a16a6" ver="5" description="" cardinal="1">
+				<designed target="X" value="311.06666666666666" ver="5"/>
+				<designed target="Y" value="5.1500000000000341" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="75.666666666666629" ver="5"/>
+				<designed target="Height" value="30" ver="5"/>
+				<designed target="Text" value="Сброс" ver="5"/>
+				<init target="StringText" ver="5" value="Сброс"/>
+				<do-trace access-modifier="private" target="ParDevPath" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_y" || TimePostfix == "_af_d"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.Out.CMD_HHG_res_all"]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_r"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.Out.CMD_HHG_res_rep"]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+				<do-trace access-modifier="private" target="Visible" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == ""]]>
+						</condition>
+						<expr>
+							<![CDATA[false]]>
+						</expr>
+					</conditional-expr>
+					<default-expr>
+						<expr>
+							<![CDATA[true]]>
+						</expr>
+					</default-expr>
+				</do-trace>
+				<designed target="Enabled" value="true" ver="5"/>
+				<do-trace access-modifier="private" target="InDevPath" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_y" || TimePostfix == "_af_d"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.In.CMC_HHG_res_all"]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_r"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.In.CMC_HHG_res_rep"]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+				<do-trace access-modifier="private" target="OutDevPath" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_y" || TimePostfix == "_af_d"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.Out.CMD_HHG_res_all"]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_r"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.Out.CMD_HHG_res_rep"]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+				<init target="ButtonTextOff" ver="5" value="Сброс"/>
+				<init target="ButtonTextOn" ver="5" value="Сброс"/>
+				<do-trace access-modifier="private" target="ButtonColorOn" ver="5">
+					<body kind="om">
+						<![CDATA[AsokuColor.asokuLightGrey]]>
+					</body>
+				</do-trace>
+				<do-trace access-modifier="private" target="ButtonColorOff" ver="5">
+					<body kind="om">
+						<![CDATA[AsokuColor.asokuLightGrey]]>
+					</body>
+				</do-trace>
+			</object>
+		</object>
+		<object access-modifier="private" name="Rectangle_CK" display-name="Rectangle_CK" uuid="4dff9543-9156-4add-b82e-0b8324e746fe" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="78" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="649.10951528747046" ver="5"/>
+			<designed target="Height" value="39.433333333333081" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="0xfffefefe" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="2" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+			<object access-modifier="private" name="Text_2" display-name="Text_2" uuid="257b2e4b-6a96-402e-9d04-753b523e0f92" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+				<designed target="X" value="3.0984126984126661" ver="5"/>
+				<designed target="Y" value="8" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="349.76973896016455" ver="5"/>
+				<designed target="Height" value="22.30000000000004" ver="5"/>
+				<designed target="Text" value='Наработка "СК" с нач.тек.суток' ver="5"/>
+				<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+				<do-trace access-modifier="private" target="ParDevPath" ver="5">
+					<body>
+						<![CDATA[PathToValues + "." + Type + TimePostfix]]>
+					</body>
+				</do-trace>
+				<init target="notifyingLenghtOfString" ver="5" value="999"/>
+			</object>
+			<object access-modifier="private" name="AnalogDpValue_2" display-name="AnalogDpValue_2" uuid="57b2a9d0-deac-4ddc-86a3-575b3b519a43" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+				<designed target="X" value="394.43333333333351" ver="5"/>
+				<designed target="Y" value="4.1535104393099402" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="90" ver="5"/>
+				<designed target="Height" value="30" ver="5"/>
+				<do-trace access-modifier="private" target="ParDevPath" ver="5">
+					<body>
+						<![CDATA[PathToValues + "." + Type + TimePostfix]]>
+					</body>
+				</do-trace>
+				<init target="HideUnits" ver="5" value="false"/>
+				<designed target="ZValue" value="0" ver="5"/>
+			</object>
+			<object access-modifier="private" name="AODpValue_1" display-name="AODpValue_1" uuid="5b90c8c5-ed20-4e40-a762-e5390f4559a4" base-type="AODpValue" base-type-id="41ab7777-ecfb-4ad9-8dce-6258006c472b" ver="5" description="" cardinal="1">
+				<designed target="X" value="518.94242847532996" ver="5"/>
+				<designed target="Y" value="4.1535104393099402" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="90" ver="5"/>
+				<designed target="Height" value="25" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="BrushColor" value="4278190080" ver="5"/>
+				<do-trace access-modifier="private" target="InDevPath" ver="5">
+					<body>
+						<![CDATA[PathToSetpoints + ".In.SC_" + Type + TimePostfix]]>
+					</body>
+				</do-trace>
+				<do-trace access-modifier="private" target="OutDevPath" ver="5">
+					<body>
+						<![CDATA[PathToSetpoints + ".Out.SP_" + Type + TimePostfix]]>
+					</body>
+				</do-trace>
+				<init target="HideUnits" ver="5" value="false"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<init target="MessageDevPath" ver="5" value="_System.Messages.UserChangeSignalMessage"/>
+			</object>
+			<object access-modifier="private" name="Type" display-name="Type" uuid="d2a91220-1abb-40bb-b975-23eb8629f6d0" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+			<init target="Type" ver="5" value="Nar_SK"/>
+			<object access-modifier="private" name="ButtonWithDelay_15" display-name="ButtonWithDelay_15" uuid="2a284afe-98aa-42c5-a3cc-7e1a1ead65fb" base-type="DODpValue" base-type-id="f1b1a670-0855-4353-a623-a7e49a2a16a6" ver="5" description="" cardinal="1">
+				<designed target="X" value="311.06666666666666" ver="5"/>
+				<designed target="Y" value="4.1500000000000199" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="75.666666666666629" ver="5"/>
+				<designed target="Height" value="30" ver="5"/>
+				<designed target="Text" value="Сброс" ver="5"/>
+				<init target="StringText" ver="5" value="Сброс"/>
+				<do-trace access-modifier="private" target="ParDevPath" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_y" || TimePostfix == "_af_d"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.Out.CMD_SK_res_all"]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_r"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.Out.CMD_SK_res_rep"]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+				<do-trace access-modifier="private" target="Visible" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == ""]]>
+						</condition>
+						<expr>
+							<![CDATA[false]]>
+						</expr>
+					</conditional-expr>
+					<default-expr>
+						<expr>
+							<![CDATA[true]]>
+						</expr>
+					</default-expr>
+				</do-trace>
+				<designed target="Enabled" value="true" ver="5"/>
+				<do-trace access-modifier="private" target="InDevPath" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_y" || TimePostfix == "_af_d"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.In.CMC_SK_res_all"]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_r"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.In.CMC_SK_res_rep"]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+				<do-trace access-modifier="private" target="OutDevPath" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_y" || TimePostfix == "_af_d"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.Out.CMD_SK_res_all"]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_r"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.Out.CMD_SK_res_rep"]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+				<init target="ButtonTextOff" ver="5" value="Сброс"/>
+				<init target="ButtonTextOn" ver="5" value="Сброс"/>
+				<do-trace access-modifier="private" target="ButtonColorOn" ver="5">
+					<body kind="om">
+						<![CDATA[AsokuColor.asokuLightGrey]]>
+					</body>
+				</do-trace>
+				<do-trace access-modifier="private" target="ButtonColorOff" ver="5">
+					<body kind="om">
+						<![CDATA[AsokuColor.asokuLightGrey]]>
+					</body>
+				</do-trace>
+			</object>
+		</object>
+		<object access-modifier="private" name="Rectangle_Gen" display-name="Rectangle_Gen" uuid="2e37c044-404c-430a-91d1-f84f0ba12cb6" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="38.5" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="649.10951528747046" ver="5"/>
+			<designed target="Height" value="39.433333333333081" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="0xfffefefe" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="2" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+			<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="30bd26c1-8949-40f3-9614-482ad08cc597" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+				<designed target="X" value="3.0984126984126661" ver="5"/>
+				<designed target="Y" value="9" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="321.76973896016455" ver="5"/>
+				<designed target="Height" value="22.30000000000004" ver="5"/>
+				<designed target="Text" value='Наработка "Ген" с нач.тек.суток
+' ver="5"/>
+				<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+				<do-trace access-modifier="private" target="ParDevPath" ver="5">
+					<body>
+						<![CDATA[PathToValues + "." + Type + TimePostfix]]>
+					</body>
+				</do-trace>
+				<init target="notifyingLenghtOfString" ver="5" value="999"/>
+			</object>
+			<object access-modifier="private" name="AnalogDpValue_1" display-name="AnalogDpValue_1" uuid="ab834f48-8126-47d3-b1e9-9cc5d64d97c2" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+				<designed target="X" value="394.43333333333351" ver="5"/>
+				<designed target="Y" value="4.1535104393099402" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="90" ver="5"/>
+				<designed target="Height" value="30" ver="5"/>
+				<do-trace access-modifier="private" target="ParDevPath" ver="5">
+					<body>
+						<![CDATA[PathToValues + "." + Type + TimePostfix]]>
+					</body>
+				</do-trace>
+				<init target="HideUnits" ver="5" value="false"/>
+			</object>
+			<object access-modifier="private" name="AODpValue_2" display-name="AODpValue_2" uuid="a7a01546-a175-47ce-97d4-13cf999b94a1" base-type="AODpValue" base-type-id="41ab7777-ecfb-4ad9-8dce-6258006c472b" ver="5" description="" cardinal="1">
+				<designed target="X" value="518.94242847532996" ver="5"/>
+				<designed target="Y" value="4.1535104393099402" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="90" ver="5"/>
+				<designed target="Height" value="25" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="BrushColor" value="4278190080" ver="5"/>
+				<do-trace access-modifier="private" target="InDevPath" ver="5">
+					<body>
+						<![CDATA[PathToSetpoints + ".In.SC_" + Type + TimePostfix]]>
+					</body>
+				</do-trace>
+				<do-trace access-modifier="private" target="OutDevPath" ver="5">
+					<body>
+						<![CDATA[PathToSetpoints + ".Out.SP_" + Type + TimePostfix]]>
+					</body>
+				</do-trace>
+				<init target="HideUnits" ver="5" value="false"/>
+				<designed target="ZValue" value="0" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Type" display-name="Type" uuid="62a213c0-aed4-4ef6-80c7-a52733b8788d" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+			<init target="Type" ver="5" value="Nar_GEN"/>
+			<object access-modifier="private" name="ButtonWithDelay_16" display-name="ButtonWithDelay_16" uuid="04ddd239-b77b-412a-a8b1-87fbe9b954da" base-type="DODpValue" base-type-id="f1b1a670-0855-4353-a623-a7e49a2a16a6" ver="5" description="" cardinal="1">
+				<designed target="X" value="311.06666666666661" ver="5"/>
+				<designed target="Y" value="5.1500000000000199" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="75.666666666666629" ver="5"/>
+				<designed target="Height" value="30" ver="5"/>
+				<designed target="Text" value="Сброс" ver="5"/>
+				<init target="StringText" ver="5" value="Сброс"/>
+				<do-trace access-modifier="private" target="ParDevPath" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_y" || TimePostfix == "_af_d"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.Out.CMD_GEN_res_all"]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_r"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.Out.CMD_GEN_res_rep"]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+				<do-trace access-modifier="private" target="Visible" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == ""]]>
+						</condition>
+						<expr>
+							<![CDATA[false]]>
+						</expr>
+					</conditional-expr>
+					<default-expr>
+						<expr>
+							<![CDATA[true]]>
+						</expr>
+					</default-expr>
+				</do-trace>
+				<designed target="Enabled" value="true" ver="5"/>
+				<do-trace access-modifier="private" target="OutDevPath" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_y" || TimePostfix == "_af_d"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.Out.CMD_GEN_res_all"]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_r"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.Out.CMD_GEN_res_rep"]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+				<do-trace access-modifier="private" target="InDevPath" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_y" || TimePostfix == "_af_d"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.In.CMC_GEN_res_all"]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_r"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.In.CMC_GEN_res_rep"]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+				<init target="ButtonTextOff" ver="5" value="Сброс"/>
+				<init target="ButtonTextOn" ver="5" value="Сброс"/>
+				<do-trace access-modifier="private" target="ButtonColorOn" ver="5">
+					<body kind="om">
+						<![CDATA[AsokuColor.asokuLightGrey]]>
+					</body>
+				</do-trace>
+				<do-trace access-modifier="private" target="ButtonColorOff" ver="5">
+					<body kind="om">
+						<![CDATA[AsokuColor.asokuLightGrey]]>
+					</body>
+				</do-trace>
+			</object>
+		</object>
+		<object access-modifier="private" name="Rectangle_Stop" display-name="Rectangle_Stop" uuid="3ea10041-5b55-4b17-8cb6-9edacb8cb596" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="234" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="649.10951528747046" ver="5"/>
+			<designed target="Height" value="39.433333333333081" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="0xfffefefe" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="2" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+			<object access-modifier="private" name="Text_6" display-name="Text_6" uuid="2f8593be-c6ad-4355-9025-afd07e7fc396" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+				<designed target="X" value="3.0984126984126661" ver="5"/>
+				<designed target="Y" value="5" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="370" ver="5"/>
+				<designed target="Height" value="30" ver="5"/>
+				<designed target="Text" value="Количество Остановок с нач.тек.суток" ver="5"/>
+				<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+				<do-trace access-modifier="private" target="ParDevPath" ver="5">
+					<body>
+						<![CDATA[PathToValues + ".Nar" + Type + TimePostfix + "_cnt"]]>
+					</body>
+				</do-trace>
+				<init target="notifyingLenghtOfString" ver="5" value="999"/>
+			</object>
+			<object access-modifier="private" name="AnalogDpValue_6" display-name="AnalogDpValue_6" uuid="32be32c7-d2f0-431e-a570-b1b24adc0d8a" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+				<designed target="X" value="394.43333333333351" ver="5"/>
+				<designed target="Y" value="4.1535104393099402" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="90" ver="5"/>
+				<designed target="Height" value="30" ver="5"/>
+				<do-trace access-modifier="private" target="ParDevPath" ver="5">
+					<body>
+						<![CDATA[PathToValues + ".Nar" + Type + TimePostfix + "_cnt"]]>
+					</body>
+				</do-trace>
+				<init target="HideUnits" ver="5" value="false"/>
+				<designed target="ZValue" value="0" ver="5"/>
+			</object>
+			<object access-modifier="private" name="AODpValue_6" display-name="AODpValue_6" uuid="0486eae4-763a-4059-995b-f2f0edcf4797" base-type="AODpValue" base-type-id="41ab7777-ecfb-4ad9-8dce-6258006c472b" ver="5" description="" cardinal="1">
+				<designed target="X" value="518.94242847532996" ver="5"/>
+				<designed target="Y" value="4.1535104393099402" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="90" ver="5"/>
+				<designed target="Height" value="25" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="BrushColor" value="4278190080" ver="5"/>
+				<do-trace access-modifier="private" target="InDevPath" ver="5">
+					<body>
+						<![CDATA[PathToSetpoints + ".In.SC" + Type + TimePostfix + "_cnt"]]>
+					</body>
+				</do-trace>
+				<do-trace access-modifier="private" target="OutDevPath" ver="5">
+					<body>
+						<![CDATA[PathToSetpoints + ".Out.SP" + Type + TimePostfix + "_cnt"]]>
+					</body>
+				</do-trace>
+				<init target="HideUnits" ver="5" value="false"/>
+				<designed target="ZValue" value="0" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Type" display-name="Type" uuid="bbf0c0e2-9a2d-4ee7-9c04-cd068f1daf91" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+			<init target="Type" ver="5" value="_STOP"/>
+			<object access-modifier="private" name="ButtonWithDelay_12" display-name="ButtonWithDelay_12" uuid="38d77cc2-cd1f-468b-812b-b38cfa910751" base-type="DODpValue" base-type-id="f1b1a670-0855-4353-a623-a7e49a2a16a6" ver="5" description="" cardinal="1">
+				<designed target="X" value="311.06666666666666" ver="5"/>
+				<designed target="Y" value="5" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="75.666666666666629" ver="5"/>
+				<designed target="Height" value="30" ver="5"/>
+				<designed target="Text" value="Сброс" ver="5"/>
+				<init target="StringText" ver="5" value="Сброс"/>
+				<do-trace access-modifier="private" target="ParDevPath" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_y" || TimePostfix == "_af_d"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.Out.CMD_STOP_res_all"]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_r"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.Out.CMD_STOP_res_rep"]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+				<do-trace access-modifier="private" target="Visible" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == ""]]>
+						</condition>
+						<expr>
+							<![CDATA[false]]>
+						</expr>
+					</conditional-expr>
+					<default-expr>
+						<expr>
+							<![CDATA[true]]>
+						</expr>
+					</default-expr>
+				</do-trace>
+				<designed target="Enabled" value="true" ver="5"/>
+				<do-trace access-modifier="private" target="InDevPath" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_y" || TimePostfix == "_af_d"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.In.CMC_STOP_res_all"]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_r"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.In.CMC_STOP_res_rep"]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+				<do-trace access-modifier="private" target="OutDevPath" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_y" || TimePostfix == "_af_d"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.Out.CMD_STOP_res_all"]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[TimePostfix == "_af_r"]]>
+						</condition>
+						<expr>
+							<![CDATA["HydroUnits.GA_01.Commands.Out.CMD_STOP_res_rep"]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+				<init target="ButtonTextOff" ver="5" value="Сброс"/>
+				<init target="ButtonTextOn" ver="5" value="Сброс"/>
+				<do-trace access-modifier="private" target="ButtonColorOn" ver="5">
+					<body kind="om">
+						<![CDATA[AsokuColor.asokuLightGrey]]>
+					</body>
+				</do-trace>
+				<do-trace access-modifier="private" target="ButtonColorOff" ver="5">
+					<body kind="om">
+						<![CDATA[AsokuColor.asokuLightGrey]]>
+					</body>
+				</do-trace>
+			</object>
+		</object>
+		<object access-modifier="private" name="ApGenDescr" display-name="ApGenDescr" uuid="a52efd48-1f5b-4f83-b9df-7221627d823a" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[PathToValues + ".Nar_GEN" + TimePostfix + ".Name"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="ApSKDescr" display-name="ApSKDescr" uuid="2890b228-5ecd-46c5-92c2-1b208c56f690" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[PathToValues + ".Nar_SK" + TimePostfix + ".Name"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="ApHHTDescr" display-name="ApHHTDescr" uuid="18d62086-8aa3-4e2d-ad88-716dd34d48e4" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[PathToValues + ".Nar_HHT" + TimePostfix + ".Name"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="ApHHGDescr" display-name="ApHHGDescr" uuid="562c06be-6e4e-4a19-a0a9-e3f08f3a180e" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[PathToValues + ".Nar_HHG" + TimePostfix + ".Name"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="ApSTARTDescr" display-name="ApSTARTDescr" uuid="6beb762b-a30a-48ae-91f0-085b857ff278" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[PathToValues + ".Nar_START" + TimePostfix + "_cnt.Name"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="ApSTOPDescr" display-name="ApSTOPDescr" uuid="00ada1b9-32fb-4b2e-835b-cd127e5f799f" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[PathToValues + ".Nar_STOP" + TimePostfix + "_cnt.Name"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="TimePostfix" display-name="Постфикс, отвечающий за врем. промежуток" uuid="c5d4d90f-59fd-4fe2-838e-1d7617baca5c" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description=""/>
+		<object access-modifier="private" name="PathToValues" display-name="PathToValues" uuid="ec306379-d3dd-4bc4-a36c-2922a7d8881d" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="PathToSetpoints" display-name="PathToSetpoints" uuid="71c27022-b303-41f6-9b2a-7f65509852ae" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description=""/>
+		<object access-modifier="private" name="ApGENValue" display-name="ApGENValue" uuid="fe9418de-e930-4d1b-b2d5-8db628991eb1" base-type="ApItemFloat" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[PathToValues + ".Nar_GEN" + TimePostfix + ".Value"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="ApSKValue" display-name="ApSKValue" uuid="17a20a85-14bd-4ccb-92a9-aced03bf6e3a" base-type="ApItemFloat" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[PathToValues + ".Nar_SK" + TimePostfix + ".Value"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="ApHHTValue" display-name="ApHHTValue" uuid="e7a0111a-bc32-4c8d-994b-c5fdde59aa07" base-type="ApItemFloat" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[PathToValues + ".Nar_HHT" + TimePostfix + ".Value"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="ApHHGValue" display-name="ApHHGValue" uuid="9e02aa75-5550-4d84-a3e1-609dcecd2698" base-type="ApItemFloat" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[PathToValues + ".Nar_HHG" + TimePostfix + ".Value"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="ApSTARTValue" display-name="ApSTARTValue" uuid="976302fc-9187-4201-8818-aff9cac360b7" base-type="ApItemFloat" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[PathToValues + ".Nar_START" + TimePostfix + "_cnt.Value"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="ApSTOPValue" display-name="ApSTOPValue" uuid="4b6be6ac-3f53-4d72-8927-25e1b101e18b" base-type="ApItemFloat" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[PathToValues + ".Nar_STOP" + TimePostfix + "_cnt.Value"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Line_1" display-name="Line_1" uuid="97a291dd-666f-4720-9b60-d179d58b692f" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
+			<designed target="X" value="390" ver="5"/>
+			<designed target="Y" value="7.1000000000000796" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="0" ver="5"/>
+			<designed target="Height" value="421" ver="5"/>
+			<designed target="PenColor" value="0xffffffff" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="2" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+			<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="ac448937-480c-418b-bce5-498b63fc4281" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="0" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="cf208eb9-c8e9-4fca-8002-971c309c0064" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="421" ver="5"/>
+			</object>
+		</object>
+		<object access-modifier="private" name="Line_2" display-name="Line_2" uuid="6ca414d8-1703-4699-9d53-6c357bae8399" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
+			<designed target="X" value="520" ver="5"/>
+			<designed target="Y" value="7.1000000000000796" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="0" ver="5"/>
+			<designed target="Height" value="421" ver="5"/>
+			<designed target="PenColor" value="0xffffffff" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="2" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+			<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="64aa152b-bed9-4fa4-84ff-6d96ade5384e" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="0" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="236acc3c-44c4-49e0-bfc8-3adb69b9508f" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="421" ver="5"/>
+			</object>
+		</object>
+		<object access-modifier="private" name="Line_3" display-name="Line_3" uuid="d75ce8f2-a809-438c-b9e6-0bd5a60eafd9" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
+			<designed target="X" value="0.5" ver="5"/>
+			<designed target="Y" value="7" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="0" ver="5"/>
+			<designed target="Height" value="420.10000000000008" ver="5"/>
+			<designed target="PenColor" value="0xffffffff" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="2" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+			<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="286136e2-155c-4450-b055-63c43290803a" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="0" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="bd56f07b-2d2e-4eae-9adc-c95edc6b5557" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="420.10000000000008" ver="5"/>
+			</object>
+		</object>
+	</object>
+	<object access-modifier="private" name="NameOfopenedTab" display-name="NameOfopenedTab" uuid="913de874-6767-489e-9aac-8a2601aa3812" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<do-on access-modifier="private" name="Присвоение первого открытого таба" display-name="Присвоение первого открытого таба" ver="5" event="Opened">
+		<body kind="javascript">
+			<![CDATA[NameOfopenedTab = "День"]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="ButtonBegin" display-name="ButtonBegin" uuid="30f562fd-016a-473c-8705-ce7dc5ca7659" base-type="ButtonPropertiesDialogs" base-type-id="eb940a52-68cb-41b0-824e-d3672b520ebf" ver="5" description="" cardinal="1">
+		<designed target="X" value="490" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="160" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+		<designed target="Text" value="Эксплуатация" ver="5"/>
+		<designed target="Font" value="Arial,12,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="OnHoverBrushColor" value="0xffd4d0c8" ver="5"/>
+		<designed target="OnHoverFontColor" value="0xff000000" ver="5"/>
+		<object access-modifier="private" name="PathToValues" display-name="Путь до папки со значениями" uuid="788d1302-c25c-4dca-aebf-b7cb525c82f7" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="PathToSetpoints" display-name="Путь до папки с уставками" uuid="6c6d3211-dbe2-40e0-ae6b-d87d78c966f7" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="PostfixOfTime" display-name="Постфикс, определяющий врем. интервал" uuid="c17e55f3-9ac9-4000-9e73-deb34bf16bb1" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+		<init target="PathToValues" ver="5" value="HydroUnits.GA_01.WorkingHours.Begin"/>
+		<init target="PathToSetpoints" ver="5" value="HydroUnits.GA_01.Setpoints"/>
+		<init target="PostfixOfTime" ver="5" value=""/>
+		<do-on access-modifier="private" name="Handler_4" display-name="Handler_4" ver="5" event="ButtonPressed">
+			<body kind="javascript">
+				<![CDATA[NameOfopenedTab = this.Text]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[NameOfopenedTab == me.Text]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuBlue]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xffd4d0c8]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_5" display-name="Handler_5" ver="5" event="ButtonPressed">
+			<body kind="javascript">
+				<![CDATA[Frame_1.TimePostfix = PostfixOfTime;
+Frame_1.PathToValues = PathToValues;
+Frame_1.PathToSetpoints = PathToSetpoints;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="ButtonYear" display-name="ButtonYear" uuid="62e73525-1bac-4926-98fe-880b9ea4fb14" base-type="ButtonPropertiesDialogs" base-type-id="eb940a52-68cb-41b0-824e-d3672b520ebf" ver="5" description="" cardinal="1">
+		<designed target="X" value="163" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="160" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+		<designed target="Text" value="Год" ver="5"/>
+		<designed target="Font" value="Arial,12,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="OnHoverBrushColor" value="0xffd4d0c8" ver="5"/>
+		<designed target="OnHoverFontColor" value="0xff000000" ver="5"/>
+		<object access-modifier="private" name="PathToValues" display-name="Путь до папки со значениями" uuid="fc3950a4-fd89-4005-85b1-2819415735ac" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="PathToSetpoints" display-name="Путь до папки с уставками" uuid="317504ae-94a5-4d4a-9173-121998df890c" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="PostfixOfTime" display-name="Постфикс, определяющий врем. интервал" uuid="e61398ae-85e6-40be-a9a6-65218c09fefb" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+		<init target="PathToSetpoints" ver="5" value="HydroUnits.GA_01.Setpoints"/>
+		<init target="PathToValues" ver="5" value="HydroUnits.GA_01.WorkingHours.Year"/>
+		<init target="PostfixOfTime" ver="5" value="_af_y"/>
+		<do-on access-modifier="private" name="Handler_5" display-name="Handler_5" ver="5" event="ButtonPressed">
+			<body kind="javascript">
+				<![CDATA[NameOfopenedTab = this.Text]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[NameOfopenedTab == me.Text]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuBlue]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xffd4d0c8]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_6" display-name="Handler_6" ver="5" event="ButtonPressed">
+			<body kind="javascript">
+				<![CDATA[Frame_1.TimePostfix = PostfixOfTime;
+Frame_1.PathToValues = PathToValues;
+Frame_1.PathToSetpoints = PathToSetpoints;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="ButtonRepair" display-name="ButtonRepair" uuid="d31b61a9-c1ae-4546-a4e8-6f978b18fe61" base-type="ButtonPropertiesDialogs" base-type-id="eb940a52-68cb-41b0-824e-d3672b520ebf" ver="5" description="" cardinal="1">
+		<designed target="X" value="327" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="160" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+		<designed target="Text" value="Ремонт" ver="5"/>
+		<designed target="Font" value="Arial,12,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="OnHoverBrushColor" value="0xffd4d0c8" ver="5"/>
+		<designed target="OnHoverFontColor" value="0xff000000" ver="5"/>
+		<object access-modifier="private" name="PathToValues" display-name="Путь до папки со значениями" uuid="93f4f4f5-1ba2-4ce1-96f8-3782c55cbb1e" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="PathToSetpoints" display-name="Путь до папки с уставками" uuid="2928aca0-be0c-4559-8b5a-657e3a2aec35" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="PostfixOfTime" display-name="Постфикс, определяющий врем. интервал" uuid="a705059d-a029-489b-acfd-6b0151825452" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+		<init target="PathToSetpoints" ver="5" value="HydroUnits.GA_01.Setpoints"/>
+		<init target="PathToValues" ver="5" value="HydroUnits.GA_01.WorkingHours.Repair"/>
+		<init target="PostfixOfTime" ver="5" value="_af_r"/>
+		<do-on access-modifier="private" name="Handler_5" display-name="Handler_5" ver="5" event="ButtonPressed">
+			<body kind="javascript">
+				<![CDATA[NameOfopenedTab = this.Text]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[NameOfopenedTab == me.Text]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuBlue]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xffd4d0c8]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_6" display-name="Handler_6" ver="5" event="ButtonPressed">
+			<body kind="javascript">
+				<![CDATA[Frame_1.TimePostfix = PostfixOfTime;
+Frame_1.PathToValues = PathToValues;
+Frame_1.PathToSetpoints = PathToSetpoints;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="ButtonDay" display-name="ButtonDay" uuid="dabd7ca8-2737-4ed1-ada9-2ac5dadadc6c" base-type="ButtonPropertiesDialogs" base-type-id="eb940a52-68cb-41b0-824e-d3672b520ebf" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="160" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+		<designed target="Text" value="День" ver="5"/>
+		<designed target="Font" value="Arial,12,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="OnHoverBrushColor" value="0xffd4d0c8" ver="5"/>
+		<designed target="OnHoverFontColor" value="0xff000000" ver="5"/>
+		<object access-modifier="private" name="PathToValues" display-name="Путь до папки со значениями" uuid="c84ad47a-d935-4716-8839-9b1a2a742dd8" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="PathToSetpoints" display-name="Путь до папки с уставками" uuid="9963a9a2-a30d-4f82-abec-2afc977aa39a" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="PostfixOfTime" display-name="Постфикс, определяющий врем. интервал" uuid="cd3119e2-8e08-4683-90cc-b4d59de0cc39" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+		<init target="PathToSetpoints" ver="5" value="HydroUnits.GA_01.Setpoints"/>
+		<init target="PathToValues" ver="5" value="HydroUnits.GA_01.WorkingHours.Day"/>
+		<init target="PostfixOfTime" ver="5" value="_af_d"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[NameOfopenedTab == me.Text]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuBlue]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xffd4d0c8]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_6" display-name="Handler_6" ver="5" event="ButtonPressed">
+			<body kind="javascript">
+				<![CDATA[NameOfopenedTab = this.Text]]>
+			</body>
+		</do-on>
+		<designed target="Checked" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_7" display-name="Handler_7" ver="5" event="ButtonPressed">
+			<body kind="javascript">
+				<![CDATA[Frame_1.TimePostfix = PostfixOfTime;
+Frame_1.PathToValues = PathToValues;
+Frame_1.PathToSetpoints = PathToSetpoints;]]>
+			</body>
+		</do-on>
+	</object>
+	<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="5" event="Opened">
+		<body kind="javascript">
+			<![CDATA[ButtonDay.Click();]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="DebugTool_1" display-name="DebugTool_1" uuid="aa4bef9b-ba5b-429a-98d7-31a3eff92a7b" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="5" description="" cardinal="1"/>
+	<do-on access-modifier="private" name="Handler_6" display-name="Handler_6" ver="5" event="Opened">
+		<body kind="javascript">
+			<![CDATA[Frame_1.TimePostfix = ButtonDay.PostfixOfTime;
+Frame_1.PathToValues = ButtonDay.PathToValues;
+Frame_1.PathToSetpoints = ButtonDay.PathToSetpoints;]]>
+		</body>
+	</do-on>
+</type>
+

@@ -1,0 +1,320 @@
+<type access-modifier="public" name="Alarms" display-name="Alarms" uuid="e525a2eb-d7d8-44bd-989a-1117878d7c40" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="1366" ver="5"/>
+	<designed target="Height" value="697" ver="5"/>
+	<designed target="PenColor" value="0xff000000" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xfff0f0f0" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="1100" ver="5"/>
+	<designed target="WindowHeight" value="400" ver="5"/>
+	<designed target="WindowCaption" value="MainForm" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="false" ver="5"/>
+	<designed target="ShowWindowMaximize" value="false" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="2" ver="5"/>
+	<designed target="WindowBorderStyle" value="0" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="1" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<object access-modifier="private" name="Button_1" display-name="Button_1" uuid="fd328e7c-bc46-4fd8-92d1-afb252479e18" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5">
+		<designed target="X" value="10" ver="5"/>
+		<designed target="Y" value="10" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="false" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="70" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Text" value="LogOn" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Font" value="Tahoma,8.25,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="OnClickFontColor" value="4278190080" ver="5"/>
+		<designed target="OnHoverFontColor" value="4278190080" ver="5"/>
+		<designed target="BrushColor" value="4293980400" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="OnClickBrushColor" value="4288716960" ver="5"/>
+		<designed target="OnClickBrushStyle" value="1" ver="5"/>
+		<designed target="OnHoverBrushColor" value="4294967295" ver="5"/>
+		<designed target="OnHoverBrushStyle" value="1" ver="5"/>
+		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="OnClickPenColor" value="0xff000000" ver="5"/>
+		<designed target="OnClickPenStyle" value="1" ver="5"/>
+		<designed target="OnClickPenWidth" value="1" ver="5"/>
+		<designed target="OnHoverPenColor" value="4278190080" ver="5"/>
+		<designed target="OnHoverPenStyle" value="1" ver="5"/>
+		<designed target="OnHoverPenWidth" value="1" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick">
+			<body kind="om">
+				<![CDATA[if (Alarms_1.LogOn("user_1"))
+	Button_1.OnHoverBrushColor = 0xff70ff70;
+else Button_1.OnHoverBrushColor = 0xffff0000;]]>
+			</body>
+		</do-on>
+		<designed target="Checkable" value="false" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="DisabledFontColor" value="4278190080" ver="5"/>
+		<designed target="DisabledBrushColor" value="4288716960" ver="5"/>
+		<designed target="DisabledBrushStyle" value="1" ver="5"/>
+		<designed target="DisabledPenColor" value="4288716960" ver="5"/>
+		<designed target="DisabledPenStyle" value="1" ver="5"/>
+		<designed target="DisabledPenWidth" value="1" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Checked" value="false" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Button_2" display-name="Button_2" uuid="bd4fdc46-2952-4d3b-8a2c-dc4cdef8fb9b" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5">
+		<designed target="X" value="87" ver="5"/>
+		<designed target="Y" value="11" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="false" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="70" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Text" value="LogOff" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Font" value="Tahoma,8.25,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="OnClickFontColor" value="4278190080" ver="5"/>
+		<designed target="OnHoverFontColor" value="4278190080" ver="5"/>
+		<designed target="BrushColor" value="4293980400" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="OnClickBrushColor" value="4288716960" ver="5"/>
+		<designed target="OnClickBrushStyle" value="1" ver="5"/>
+		<designed target="OnHoverBrushColor" value="4294967295" ver="5"/>
+		<designed target="OnHoverBrushStyle" value="1" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="OnClickPenColor" value="4278190080" ver="5"/>
+		<designed target="OnClickPenStyle" value="1" ver="5"/>
+		<designed target="OnClickPenWidth" value="1" ver="5"/>
+		<designed target="OnHoverPenColor" value="4278190080" ver="5"/>
+		<designed target="OnHoverPenStyle" value="1" ver="5"/>
+		<designed target="OnHoverPenWidth" value="1" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick">
+			<body kind="om">
+				<![CDATA[if (Alarms_1.LogOff())
+	Button_2.OnHoverBrushColor = 0xff70ff70;
+else	Button_2.OnHoverBrushColor = 0xffff0000;]]>
+			</body>
+		</do-on>
+		<designed target="Checkable" value="false" ver="5"/>
+		<designed target="DisabledFontColor" value="4278190080" ver="5"/>
+		<designed target="DisabledBrushColor" value="4288716960" ver="5"/>
+		<designed target="DisabledBrushStyle" value="1" ver="5"/>
+		<designed target="DisabledPenColor" value="4288716960" ver="5"/>
+		<designed target="DisabledPenStyle" value="1" ver="5"/>
+		<designed target="DisabledPenWidth" value="1" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Checked" value="false" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="ApSource_1" display-name="ApSource_1" uuid="5b7ad154-8161-4bd4-bf8f-528dea150bb9" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5">
+		<designed target="Active" value="true" ver="5"/>
+		<init target="Timeout" ver="5" value="1000"/>
+		<init target="ConnectionEstablishTimeout" ver="5" value="1000"/>
+		<init target="MaxBufferPoolSize" ver="5" value="100000"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="Path" value="" ver="5"/>
+		<designed target="Location" value="localhost" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+	</object>
+	<object access-modifier="private" name="ApItemInt1_1" display-name="ApItemInt1_1" uuid="32be67ef-0ed9-4e27-877a-e0167a5022a5" base-type="ApItemInt1" base-type-id="cd64e904-29a0-4c27-82f3-5e4a0b2c09ee" ver="5">
+		<init target="Source" ver="5" ref="ApSource_1"/>
+		<init target="Path" ver="5" value="Msg.genMsg"/>
+	</object>
+	<object access-modifier="private" name="DebugTool_1" display-name="DebugTool_1" uuid="a8fc49ce-ebce-48ae-93ee-e210b3f9846d" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="5"/>
+	<object access-modifier="private" name="uint4_1" display-name="uint4_1" uuid="a79f86df-cb2b-45ce-8d9c-a199c7e7175b" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5"/>
+	<object access-modifier="private" name="Alarms_1" display-name="Alarms_1" uuid="0812935a-5f43-4992-a963-fae7311376b5" base-type="Alarms_1" base-type-id="e8a9dba0-e07f-4bfe-95f9-b75887e3f21b" ver="5">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="1366" ver="5"/>
+		<designed target="Height" value="697" ver="5"/>
+		<init target="AcknowledgmentDoubleClick" ver="5" value="true"/>
+		<init target="RequestAcknowledgmentComment" ver="5" value="false"/>
+		<init target="AcknowledgmentAvailable" ver="5" value="true"/>
+		<init target="ClearingCurrentEventsAvailable" ver="5" value="true"/>
+		<init target="EditingSettingsAvailable" ver="5" value="true"/>
+		<init target="ExportDataAvailability" ver="5" value="true"/>
+		<init target="FilterAvailable" ver="5" value="true"/>
+		<init target="SoundPlaybackManagmentAvailable" ver="5" value="true"/>
+		<init target="SnapshotAvailable" ver="5" value="true"/>
+		<init target="CurrentEventsAvailable" ver="5" value="true"/>
+		<init target="EventHistoryAvailable" ver="5" value="true"/>
+		<init target="RequestEventsStart" ver="5" value="true"/>
+		<init target="AllowActionInSourceColumn" ver="5" value="true"/>
+		<init target="FollowLatestEvent" ver="5" value="false"/>
+		<init target="Mute" ver="5" value="false"/>
+		<init target="EventTableSortAvailability" ver="5" value="true"/>
+		<init target="FileSystemAccess" ver="5" value="false"/>
+		<init target="PrintingAvailable" ver="5" value="true"/>
+		<init target="init_ApSource" ver="5" ref="here.ApSource_1"/>
+		<init target="AllowAckSequence" ver="5" value="false"/>
+		<init target="DisplayToolbar" ver="5" value="true"/>
+		<init target="DisplayStatePanel" ver="5" value="true"/>
+		<init target="ActiveMode" ver="5" value="0"/>
+		<init target="ActiveConditionsList" ver="5" value="false"/>
+		<init target="DisplayToolbarAtStartup" ver="5" value="true"/>
+		<init target="DisplayStatePanelAtStartup" ver="5" value="true"/>
+		<init target="AllowAddComment" ver="5" value="true"/>
+		<init target="WriteComputerNameToComment" ver="5" value="false"/>
+		<init target="HideColumnTitle" ver="5" value="false"/>
+		<init target="AlwaysOnTopForm" ver="5" value="true"/>
+		<init target="LookLatestEvent" ver="5" value="true"/>
+		<init target="MaxVisibleOrdinaryEvents" ver="5" value="1000"/>
+		<init target="LineTransfer" ver="5" value="false"/>
+		<init target="HideAckedEvents" ver="5" value="false"/>
+		<init target="ClearSoundQueryTag " ver="5" value="Parent.Object.bool"/>
+		<init target="NotAckOtherEvents" ver="5" value="false"/>
+		<init target="SubscriptionAdvancedFilter" ver="5" value=""/>
+		<init target="EnableSortingOnGridHeader" ver="5" value="false"/>
+		<init target="ShowMilliseconds" ver="5" value="true"/>
+		<init target="IsFullAccessAllowed" ver="5" value="true"/>
+		<init target="DefaultHistoricalInterval" ver="5" value="24"/>
+		<init target="HorizontalScrollBarPolicy" ver="5" value="0"/>
+		<init target="VerticalScrollBarPolicy" ver="5" value="0"/>
+		<init target="OnPrint" ver="5" ref="actLogAudit"/>
+		<init target="OnPlayingSounds" ver="5" ref="startSounds"/>
+		<init target="OnFinishedPlayingSounds" ver="5" ref="stopSounds"/>
+		<init target="UseSecurity" ver="5" value="false"/>
+		<object access-modifier="private" name="Theme_1" display-name="Theme_1" uuid="0f6416b2-345c-4d3a-aede-9a6228bff703" base-type="Theme" base-type-id="05d4d7df-0f8e-4ec1-ac85-b5460e30af81" ver="5">
+			<init target="BackgroundColor" ver="5" value="0xfff0f0f0"/>
+			<init target="ForegroundColor" ver="5" value="0xff000000"/>
+			<init target="BorderColor" ver="5" value="0xff5f5f5f"/>
+			<init target="EditorBrushColor" ver="5" value="0xffffffff"/>
+			<init target="EditorFontColor" ver="5" value="0xff000000"/>
+		</object>
+		<init target="pTheme" ver="5" ref="Theme_1"/>
+		<init target="OnExport" ver="5" ref="actLogAuditExport"/>
+		<init target="OnSoundPlayed" ver="5" ref="soundPlayed"/>
+		<init target="OnSave" ver="5" ref="actLogAuditSave"/>
+		<init target="ConfigurationFolder" ver="5" value="/home/sisadmin/Automiq/EZM/resources/ASOKU/data/Alarms/cfg"/>
+	</object>
+	<do-trace access-modifier="private" target="uint4_1" ver="5">
+		<body>
+			<![CDATA[Alarms_1.objectId]]>
+		</body>
+	</do-trace>
+	<object access-modifier="private" name="MonitorList_1" display-name="MonitorList_1" uuid="8d457cb6-db8d-4fcb-9b58-6c81985fd517" base-type="MonitorList" base-type-id="c74bfc5a-253e-4144-8b20-917cf4cf333b" ver="5"/>
+	<init target="uint4_1" ver="5" value="3"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<do access-modifier="private" name="SetSubscriptionFilter" display-name="SetSubscriptionFilter" ver="5" type="" type-id="">
+		<body kind="javascript">
+			<![CDATA[var Filter1 = "{\"AND\":[{\">\":{\"severity\":400}},{\"<\":{\"severity\":800}}]}";
+
+Alarms_1.SubscriptionAdvancedFilter = Filter1;]]>
+		</body>
+	</do>
+	<object access-modifier="private" name="SecurityContext_1" display-name="SecurityContext_1" uuid="bc91c9d6-51f9-4313-96e6-7e266f1469b3" base-type="SecurityContext" base-type-id="d9cb0fff-b70a-4e2d-833d-3f73cf74e0dd" ver="5"/>
+	<object access-modifier="private" name="Network_1" display-name="Network_1" uuid="850c7180-211c-4e74-902e-d93f00479944" base-type="Network" base-type-id="aa841b9c-0610-4150-8495-3bfad7484a73" ver="5"/>
+	<object access-modifier="private" name="actLogAudit" display-name="actLogAudit" uuid="595ed8d1-b42b-4ddc-9272-f05cbaec5a7d" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked">
+			<body kind="om">
+				<![CDATA[// Функция формирование сообщение аудита
+if (!Alarms_1.UseSecurity) return;
+SecurityContext_1.LogAudit("[<SPO Name>] " + SecurityContext_1.CurrentUserDisplayName + " на " + Network_1.ComputerName + " выполнил печать событий", 1);
+]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="startSounds" display-name="startSounds" uuid="ac702c14-ed7e-4327-9d90-ef0070ef6104" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked">
+			<body kind="om">
+				<![CDATA[DebugTool_1.Log("Началось проигрывание звуков");]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="stopSounds" display-name="stopSounds" uuid="cb8ac504-90ec-4797-8e94-c8de64e6519d" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked">
+			<body kind="om">
+				<![CDATA[DebugTool_1.Log("Проигрывание звуков закончилось");]]>
+			</body>
+		</do-on>
+	</object>
+	<do-trace access-modifier="private" target="BrushColor" ver="5">
+		<body>
+			<![CDATA[Alarms_1.Theme_1.BackgroundColor]]>
+		</body>
+	</do-trace>
+	<object access-modifier="private" name="soundPlayed" display-name="soundPlayed" uuid="d9fe5d96-33bc-414f-9ffb-9ff3476b392b" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked">
+			<body kind="om">
+				<![CDATA[//DebugTool_1.Log("Завершилось проигрывание звука " + Alarms_1.GetEventParam(0));]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="actLogAuditExport" display-name="actLogAuditExport" uuid="7c0d9505-a7c2-4a1b-a2b6-0cdee65fc1df" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked">
+			<body kind="om">
+				<![CDATA[// Функция формирование сообщение аудита
+if (!Alarms_1.UseSecurity) return;
+SecurityContext_1.LogAudit("[<SPO Name>] " + SecurityContext_1.CurrentUserDisplayName + " на " + Network_1.ComputerName + " выполнил экспорт событий в файл " + Alarms_1.GetEventParam(1), 1);
+]]>
+			</body>
+		</do-on>
+	</object>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="WindowSizeChanged">
+		<body kind="om">
+			<![CDATA[Width = WindowWidth;
+Height = WindowHeight;
+
+Alarms_1.SetSize(Alarms_1.X, Alarms_1.Y, Alarms_1.Width, Height - Alarms_1.Y - 5);]]>
+		</body>
+	</do-on>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<object access-modifier="private" name="actLogAuditSave" display-name="actLogAuditSave" uuid="7f525dd9-242f-4d63-94ec-0048e027b22a" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked">
+			<body kind="om">
+				<![CDATA[// Функция формирование сообщение аудита
+if (!Alarms_1.UseSecurity) return;
+SecurityContext_1.LogAudit("[<SPO Name>] " + SecurityContext_1.CurrentUserDisplayName + " на " + Network_1.ComputerName + " выполнил сохранение событий в файл " + Alarms_1.GetEventParam(2), 1);
+]]>
+			</body>
+		</do-on>
+	</object>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="Opened">
+		<body kind="om">
+			<![CDATA[Alarms_1.LogOn("Оператор");]]>
+		</body>
+	</do-on>
+	<designed target="Flip" value="0" ver="5"/>
+</type>
+

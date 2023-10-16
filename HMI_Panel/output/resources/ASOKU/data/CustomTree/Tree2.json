@@ -1,0 +1,40 @@
+{
+ "UserTree": [
+  {
+   "Signal": {
+    "UserTree": "Генераторы/ГА01/HydroUnits.GA01.F_1G.Value [Гц]",
+    "OpcTag": "HydroUnits.GA01.F_1G.Value",
+    "EUnit": "Гц",
+    "Description": "Генератор 1Г. Частота [Гц]",
+    "DataType":"float"
+   }
+  },
+  {
+   "Signal": {
+    "UserTree": "Генераторы/ГА01/HydroUnits.GA01.Ia_1G.Value [A]",
+    "OpcTag": "HydroUnits.GA01.Ia_1G.Value",
+    "EUnit": "A",
+    "Description": "Генератор 1Г. Ток фазы А [A]",
+    "DataType":"float"
+   }
+  },
+  {
+   "Signal": {
+    "UserTree": "Генераторы/ГА01/HydroUnits.GA01.Ib_1G.Value [A]",
+    "OpcTag": "HydroUnits.GA01.Ib_1G.Value",
+    "EUnit": "A",
+    "Description": "Генератор 1Г. Ток фазы B [A]",
+    "DataType":"float"
+   }
+  },
+  {
+   "Signal": {
+    "UserTree": "Генераторы/ГА01/HydroUnits.GA01.Ic_1G.Value [А]",
+    "OpcTag": "HydroUnits.GA01.Ic_1G.Value",
+    "EUnit": "А",
+    "Description": "Генератор 1Г. Ток фазы С [А]",
+    "DataType":"float"
+   }
+  }
+ ]
+}

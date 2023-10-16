@@ -1,0 +1,145 @@
+<type access-modifier="public" name="SliceCircle" display-name="Круг среза" uuid="9db19cd7-2f3e-4951-9396-f8a99dade5bc" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="450" ver="5"/>
+	<designed target="Height" value="450" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="1" ver="5"/>
+	<designed target="PenWidth" value="0" ver="5"/>
+	<designed target="BrushColor" value="0xff7f7f7f" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="PieAngle" value="360" ver="5"/>
+	<designed target="PieAngleStart" value="360" ver="5"/>
+	<designed target="HoleSize" value="0" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<object access-modifier="private" name="InnerCircle" display-name="InnerCircle" uuid="5b603382-428d-4378-9e19-dedf45d3061e" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="61.5" ver="5"/>
+		<designed target="Y" value="61.5" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="325" ver="5"/>
+		<designed target="Height" value="325" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Break_0" display-name="Break_0" uuid="63b704da-361e-42be-bd7d-86f84bec60ac" base-type="Break" base-type-id="5889d071-ee40-454f-a65f-19a45278708d" ver="5" description="" cardinal="1">
+		<designed target="X" value="298.85497835497813" ver="5"/>
+		<designed target="Y" value="68.924242424242479" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Break18" display-name="Break18" uuid="1e9ed26e-32db-444e-80c9-3c4f42accc16" base-type="Break" base-type-id="5889d071-ee40-454f-a65f-19a45278708d" ver="5" description="" cardinal="1">
+		<designed target="X" value="357.11111111111109" ver="5"/>
+		<designed target="Y" value="74.888888888888886" ver="5"/>
+		<designed target="Rotation" value="18" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Break36" display-name="Break36" uuid="0f7218db-49f1-408f-9d86-c70cfe72ca90" base-type="Break" base-type-id="5889d071-ee40-454f-a65f-19a45278708d" ver="5" description="" cardinal="1">
+		<designed target="X" value="413.60606060606074" ver="5"/>
+		<designed target="Y" value="99.606060606060538" ver="5"/>
+		<designed target="Rotation" value="36" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Break54" display-name="Break54" uuid="db83077e-ed63-4fc3-b55a-574394c1bba6" base-type="Break" base-type-id="5889d071-ee40-454f-a65f-19a45278708d" ver="5" description="" cardinal="1">
+		<designed target="X" value="458.49242424242402" ver="5"/>
+		<designed target="Y" value="140.4015151515151" ver="5"/>
+		<designed target="Rotation" value="54" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Break72" display-name="Break72" uuid="47b30279-c0ff-4d5a-ab9a-42b4f40b7333" base-type="Break" base-type-id="5889d071-ee40-454f-a65f-19a45278708d" ver="5" description="" cardinal="1">
+		<designed target="X" value="490.33333333333354" ver="5"/>
+		<designed target="Y" value="197.83333333333334" ver="5"/>
+		<designed target="Rotation" value="72" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Break90" display-name="Break90" uuid="95fc8237-a986-463d-a67b-656ab393d4ab" base-type="Break" base-type-id="5889d071-ee40-454f-a65f-19a45278708d" ver="5" description="" cardinal="1">
+		<designed target="X" value="500.4619047619048" ver="5"/>
+		<designed target="Y" value="254.92857142857144" ver="5"/>
+		<designed target="Rotation" value="90" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Break108" display-name="Break108" uuid="aad06f5c-792f-4d39-8381-8041b779c9f4" base-type="Break" base-type-id="5889d071-ee40-454f-a65f-19a45278708d" ver="5" description="" cardinal="1">
+		<designed target="X" value="492.93333333333322" ver="5"/>
+		<designed target="Y" value="313.13333333333316" ver="5"/>
+		<designed target="Rotation" value="108" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Break126" display-name="Break126" uuid="52c810ea-5679-4cd1-8718-de91ed4e0cc6" base-type="Break" base-type-id="5889d071-ee40-454f-a65f-19a45278708d" ver="5" description="" cardinal="1">
+		<designed target="X" value="466.6666666666668" ver="5"/>
+		<designed target="Y" value="368.3333333333332" ver="5"/>
+		<designed target="Rotation" value="126" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Break144" display-name="Break144" uuid="3f8a6fc7-0ab1-43bb-986a-d055c3bf814d" base-type="Break" base-type-id="5889d071-ee40-454f-a65f-19a45278708d" ver="5" description="" cardinal="1">
+		<designed target="X" value="424.66666666666663" ver="5"/>
+		<designed target="Y" value="412.33333333333331" ver="5"/>
+		<designed target="Rotation" value="144" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Break162" display-name="Break162" uuid="e62bdf99-ec89-49ad-ada9-24e255a33773" base-type="Break" base-type-id="5889d071-ee40-454f-a65f-19a45278708d" ver="5" description="" cardinal="1">
+		<designed target="X" value="373.57575757575751" ver="5"/>
+		<designed target="Y" value="439.72727272727269" ver="5"/>
+		<designed target="Rotation" value="162" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Break180" display-name="Break180" uuid="760f53d9-2563-4fdb-9c08-6b20d67c76a6" base-type="Break" base-type-id="5889d071-ee40-454f-a65f-19a45278708d" ver="5" description="" cardinal="1">
+		<designed target="X" value="316.2727272727272" ver="5"/>
+		<designed target="Y" value="450.4545454545455" ver="5"/>
+		<designed target="Rotation" value="180" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Break198" display-name="Break198" uuid="a21ae284-4a2a-4128-a1a6-9e293476be45" base-type="Break" base-type-id="5889d071-ee40-454f-a65f-19a45278708d" ver="5" description="" cardinal="1">
+		<designed target="X" value="257.78787878787864" ver="5"/>
+		<designed target="Y" value="443.36363636363637" ver="5"/>
+		<designed target="Rotation" value="198" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Break216" display-name="Break216" uuid="d2586b8e-71da-4775-9b19-bf06c901ead9" base-type="Break" base-type-id="5889d071-ee40-454f-a65f-19a45278708d" ver="5" description="" cardinal="1">
+		<designed target="X" value="204.50606060606049" ver="5"/>
+		<designed target="Y" value="418.84848484848465" ver="5"/>
+		<designed target="Rotation" value="216" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Break234" display-name="Break234" uuid="4061b0bc-a811-4f18-9422-3951f3b75136" base-type="Break" base-type-id="5889d071-ee40-454f-a65f-19a45278708d" ver="5" description="" cardinal="1">
+		<designed target="X" value="161.5" ver="5"/>
+		<designed target="Y" value="379.66666666666663" ver="5"/>
+		<designed target="Rotation" value="234" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Break252" display-name="Break252" uuid="ffbeb810-3125-485a-8c30-e39233855c99" base-type="Break" base-type-id="5889d071-ee40-454f-a65f-19a45278708d" ver="5" description="" cardinal="1">
+		<designed target="X" value="132.08333333333326" ver="5"/>
+		<designed target="Y" value="329.19999999999982" ver="5"/>
+		<designed target="Rotation" value="252" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Break270" display-name="Break270" uuid="ba7f977e-da2b-499a-b515-e7ad6a8d53fd" base-type="Break" base-type-id="5889d071-ee40-454f-a65f-19a45278708d" ver="5" description="" cardinal="1">
+		<designed target="X" value="119.46666666666675" ver="5"/>
+		<designed target="Y" value="273.23333333333323" ver="5"/>
+		<designed target="Rotation" value="270" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Break288" display-name="Break288" uuid="2a469d4d-db76-4366-9d78-7871cdd4165d" base-type="Break" base-type-id="5889d071-ee40-454f-a65f-19a45278708d" ver="5" description="" cardinal="1">
+		<designed target="X" value="124.50000000000001" ver="5"/>
+		<designed target="Y" value="214.66666666666669" ver="5"/>
+		<designed target="Rotation" value="288" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Break306" display-name="Break306" uuid="b3302d69-9a7f-4ad8-b853-c47ebba65e6f" base-type="Break" base-type-id="5889d071-ee40-454f-a65f-19a45278708d" ver="5" description="" cardinal="1">
+		<designed target="X" value="147.13333333333341" ver="5"/>
+		<designed target="Y" value="159.93333333333331" ver="5"/>
+		<designed target="Rotation" value="306" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Break324" display-name="Break324" uuid="6a8d3f1f-1db9-4535-b2d7-4202d40206ef" base-type="Break" base-type-id="5889d071-ee40-454f-a65f-19a45278708d" ver="5" description="" cardinal="1">
+		<designed target="X" value="187.21422587522341" ver="5"/>
+		<designed target="Y" value="113.71428571428575" ver="5"/>
+		<designed target="Rotation" value="324" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Break342" display-name="Break342" uuid="e9ee61fd-a1cd-4575-b966-5e92d99e84df" base-type="Break" base-type-id="5889d071-ee40-454f-a65f-19a45278708d" ver="5" description="" cardinal="1">
+		<designed target="X" value="238.06666666666635" ver="5"/>
+		<designed target="Y" value="83.133333333333397" ver="5"/>
+		<designed target="Rotation" value="342" ver="5"/>
+	</object>
+</type>
+

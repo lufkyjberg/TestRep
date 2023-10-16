@@ -1,0 +1,455 @@
+<type access-modifier="public" name="NasosParametrs" display-name="NasosParametrs" uuid="cc07800f-00bf-4d64-b903-9767051b7f9f" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="515" ver="5"/>
+	<designed target="Height" value="300" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xff505050" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="515" ver="5"/>
+	<designed target="WindowHeight" value="300" ver="5"/>
+	<designed target="WindowCaption" value="Окно контроля и управления Фильтром" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="2" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="1" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<object access-modifier="private" name="Left" display-name="Left" uuid="2f9f48d2-c4b8-4162-9ea9-c2c9fb85ae37" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="0.68333333333336277" ver="5"/>
+		<designed target="Y" value="0.76666666666667993" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="260" ver="5"/>
+		<designed target="Height" value="298" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="a0c625e8-8796-4e2b-9f5f-5f7325860991" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="33.599999999999994" ver="5"/>
+			<designed target="Y" value="7.0142857142857267" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="193.99999999999997" ver="5"/>
+			<designed target="Height" value="29.999999999999986" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="2" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="e7c65cb0-7858-4bac-93c2-e05016ca5a45" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="41.885714285714286" ver="5"/>
+			<designed target="Y" value="9.8190476190476161" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="177.42857142857139" ver="5"/>
+			<designed target="Height" value="24.390476190476178" ver="5"/>
+			<designed target="Text" value="Название насоса" ver="5"/>
+			<designed target="Font" value="Arial,14,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="0xffffffff" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<do-trace access-modifier="private" target="FontColor" ver="5">
+				<body>
+					<![CDATA[AsokuColor.asokuGreen]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="Text" ver="5">
+				<body>
+					<![CDATA[Name]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Text_2" display-name="Text_2" uuid="2111bd09-2c68-4cde-a4c6-d58556880b8e" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="89.099999999999994" ver="5"/>
+			<designed target="Y" value="144.5" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="79.666666666666629" ver="5"/>
+			<designed target="Height" value="23.499999999999972" ver="5"/>
+			<designed target="Text" value="Включен" ver="5"/>
+			<designed target="Font" value="Arial,14,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="0xffffffff" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+			<do-trace access-modifier="private" target="FontColor" ver="5">
+				<conditional-expr>
+					<condition>
+						<![CDATA[here.Right.LightBlock_1.ApParValue == true]]>
+					</condition>
+					<expr>
+						<![CDATA[AsokuColor.asokuGreen]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[AsokuColor.asokuTransparent]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Text_3" display-name="Text_3" uuid="769c409a-bc25-4e47-ac0e-854f9d073aa0" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="81.933333333333323" ver="5"/>
+			<designed target="Y" value="173.99999999999994" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="93.999999999999972" ver="5"/>
+			<designed target="Height" value="23.499999999999972" ver="5"/>
+			<designed target="Text" value="Выключен" ver="5"/>
+			<designed target="Font" value="Arial,14,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="0xffffffff" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+			<do-trace access-modifier="private" target="FontColor" ver="5">
+				<conditional-expr>
+					<condition>
+						<![CDATA[here.Right.LightBlock_2.ApParValue == true]]>
+					</condition>
+					<expr>
+						<![CDATA[AsokuColor.asokuGreen]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[AsokuColor.asokuTransparent]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Text_4" display-name="Text_4" uuid="d97e37b9-9f6a-47d4-9b7c-799579a7cc28" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="61.183333333333323" ver="5"/>
+			<designed target="Y" value="203.49999999999994" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="135.49999999999997" ver="5"/>
+			<designed target="Height" value="23.499999999999972" ver="5"/>
+			<designed target="Text" value="Неисправность" ver="5"/>
+			<designed target="Font" value="Arial,14,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="0xffffffff" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+			<do-trace access-modifier="private" target="FontColor" ver="5">
+				<conditional-expr>
+					<condition>
+						<![CDATA[here.Right.LightBlock_3.ApParValue == true]]>
+					</condition>
+					<expr>
+						<![CDATA[AsokuColor.asokuRed]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[AsokuColor.asokuTransparent]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Nasos_1" display-name="Nasos_1" uuid="b37f265f-c1ec-4601-a51d-f01b218f0bf6" base-type="Nasos" base-type-id="6ab0dbf1-0305-4110-afe5-51a8b7144a64" ver="5" description="" cardinal="1">
+			<designed target="X" value="48.933333333333309" ver="5"/>
+			<designed target="Y" value="53.666666666666657" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="160" ver="5"/>
+			<designed target="Height" value="72" ver="5"/>
+			<do-trace access-modifier="private" target="WaterOrOilOrAirOrTech" ver="5">
+				<body>
+					<![CDATA[color]]>
+				</body>
+			</do-trace>
+			<designed target="Enabled" value="false" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Right" display-name="Right" uuid="d84cf704-7a5d-492e-96fd-a67d23d39fb7" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="260.98333333333329" ver="5"/>
+		<designed target="Y" value="0.76666666666667993" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="252.77272727272731" ver="5"/>
+		<designed target="Height" value="298" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="7aeb0e75-3cc2-4b04-b161-c39e75ec0da5" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="9.4666666666666401" ver="5"/>
+			<designed target="Y" value="6.86666666666666" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="233" ver="5"/>
+			<designed target="Height" value="150" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="2" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Rectangle_2" display-name="Rectangle_2" uuid="77df14c5-3be1-4ba4-a242-afdbda7a6041" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="9.4666666666666401" ver="5"/>
+			<designed target="Y" value="7.0142857142857267" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="233" ver="5"/>
+			<designed target="Height" value="29.999999999999986" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="2" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_5" display-name="Text_5" uuid="154d32e7-df3a-40ce-905c-cacf000426d4" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="35.802380952380929" ver="5"/>
+			<designed target="Y" value="9.9857142857142804" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="177.42857142857139" ver="5"/>
+			<designed target="Height" value="24.05714285714285" ver="5"/>
+			<designed target="Text" value="Состояние:" ver="5"/>
+			<designed target="Font" value="Arial,14,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="0xffffffff" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_5" display-name="Text_5" uuid="0e858129-5bd5-496e-8e24-72829ea7d11d" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="44.266666666666595" ver="5"/>
+			<designed target="Y" value="51.716666666666683" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="82.999999999999972" ver="5"/>
+			<designed target="Height" value="23.499999999999972" ver="5"/>
+			<designed target="Text" value="Включен" ver="5"/>
+			<designed target="Font" value="Arial,14,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="0xffffffff" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_6" display-name="Text_6" uuid="ba9cd39a-721a-43f8-9036-f1f95315773f" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="44.266666666666595" ver="5"/>
+			<designed target="Y" value="88.716666666666683" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="93.999999999999972" ver="5"/>
+			<designed target="Height" value="23.499999999999972" ver="5"/>
+			<designed target="Text" value="Выключен" ver="5"/>
+			<designed target="Font" value="Arial,14,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="0xffffffff" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_7" display-name="Text_7" uuid="0cf05fbd-44f3-457d-8893-9ecc31bc0902" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="44.266666666666595" ver="5"/>
+			<designed target="Y" value="125.71666666666671" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="136" ver="5"/>
+			<designed target="Height" value="23.499999999999957" ver="5"/>
+			<designed target="Text" value="Неисправность" ver="5"/>
+			<designed target="Font" value="Arial,14,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="0xffffffff" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LightBlock_1" display-name="LightBlock_1" uuid="b537d75c-2754-40f2-8679-ade8a7a6fe58" base-type="LedQuadrate" base-type-id="718d99b1-33de-46cc-93a8-cfe171a5b5c8" ver="5" description="" cardinal="1">
+			<designed target="X" value="11.366666666666646" ver="5"/>
+			<designed target="Y" value="45.466666666666669" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="30" ver="5"/>
+			<designed target="Height" value="30" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<do-trace access-modifier="private" target="BrushColor" ver="5">
+				<conditional-expr>
+					<condition>
+						<![CDATA[ApParValue.Value == true && (ApParValue.Advised == true)]]>
+					</condition>
+					<expr>
+						<![CDATA[AsokuColor.asokuGreen]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xffd6d6d6]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="MouseRightClick" form-action="open-new" form-by-id="false">
+				<object access-modifier="private" uuid="d813e2a4-9130-41ee-bcb9-818ac6611676" base-type="InfoTabView" base-type-id="146efb0d-a148-4c91-94ff-f69c196a5132" ver="5">
+					<init target="PanelType" ver="5" value="Дискретный сигнал "/>
+					<init target="ParDevPath" ver="5" ref="Right.LightBlock_1.ParDevPath"/>
+				</object>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="LightBlock_2" display-name="LightBlock_2" uuid="7e4a4530-d3fb-47a3-a126-0fb3738b4883" base-type="LedQuadrate" base-type-id="718d99b1-33de-46cc-93a8-cfe171a5b5c8" ver="5" description="" cardinal="1">
+			<designed target="X" value="11.366666666666646" ver="5"/>
+			<designed target="Y" value="82.466666666666669" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="30" ver="5"/>
+			<designed target="Height" value="30" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<do-trace access-modifier="private" target="BrushColor" ver="5">
+				<conditional-expr>
+					<condition>
+						<![CDATA[ApParValue.Value == true && (ApParValue.Advised == true)]]>
+					</condition>
+					<expr>
+						<![CDATA[AsokuColor.asokuGreen]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xffd6d6d6]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="MouseRightClick" form-action="open-new" form-by-id="false">
+				<object access-modifier="private" uuid="c72ae8f7-4cb2-4484-8793-e05826eab859" base-type="InfoTabView" base-type-id="146efb0d-a148-4c91-94ff-f69c196a5132" ver="5">
+					<init target="PanelType" ver="5" value="Дискретный сигнал "/>
+					<init target="ParDevPath" ver="5" ref="Right.LightBlock_2.ParDevPath"/>
+				</object>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="LightBlock_3" display-name="LightBlock_3" uuid="ebb40aee-16ad-4009-b44d-21cd3aaff305" base-type="LedQuadrate" base-type-id="718d99b1-33de-46cc-93a8-cfe171a5b5c8" ver="5" description="" cardinal="1">
+			<designed target="X" value="11.366666666666646" ver="5"/>
+			<designed target="Y" value="119.4666666666667" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="30" ver="5"/>
+			<designed target="Height" value="30" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<do-trace access-modifier="private" target="BrushColor" ver="5">
+				<conditional-expr>
+					<condition>
+						<![CDATA[ApParValue.Value == true && (ApParValue.Advised == true)]]>
+					</condition>
+					<expr>
+						<![CDATA[AsokuColor.asokuGreen]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xffd6d6d6]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="MouseRightClick" form-action="open-new" form-by-id="false">
+				<object access-modifier="private" uuid="cf0127ef-76e5-47b4-b16a-411657d15c79" base-type="InfoTabView" base-type-id="146efb0d-a148-4c91-94ff-f69c196a5132" ver="5">
+					<init target="PanelType" ver="5" value="Дискретный сигнал "/>
+					<init target="ParDevPath" ver="5" ref="Right.LightBlock_3.ParDevPath"/>
+				</object>
+			</do-on>
+		</object>
+	</object>
+	<object access-modifier="private" name="ApParName" display-name="ApParName" uuid="6f5a425d-2563-403c-926e-2a55cd447c03" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5">
+		<init target="Path" ver="5" value="Name"/>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="Par" display-name="Par" uuid="5198311e-0182-4597-b5c0-50e18444b472" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ValueChanged">
+			<body kind="javascript">
+				<![CDATA[here.Left.GateValve_1.ParDevPath = here.Par;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Name" display-name="Name" uuid="967eaaa7-d671-4bdc-a118-993c96b37a25" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<do-trace access-modifier="private" target="WindowCaption" ver="5">
+		<body>
+			<![CDATA["Окно контроля и управления. " + Name]]>
+		</body>
+	</do-trace>
+	<object access-modifier="private" name="color" display-name="color" uuid="8222838c-7f1d-4fac-bb94-0fbaa91b5eb8" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+</type>
+

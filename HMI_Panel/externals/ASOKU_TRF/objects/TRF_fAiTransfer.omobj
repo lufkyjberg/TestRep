@@ -1,0 +1,471 @@
+<type access-modifier="protected" name="TRF_fAiTransfer" display-name="TRF_fAiTransfer" uuid="6c4cb41e-9624-4e7b-a3b1-6c1f1932b6db" base-type="" base-type-id="00000000-0000-0000-0000-000000000000" ver="5" description="">
+	<object access-modifier="private" name="DebugTool_1" display-name="DebugTool_1" uuid="a7690089-38d6-4f1b-83f5-3af66b00063e" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="5" description="" cardinal="1"/>
+	<do access-modifier="private" name="constructor" display-name="constructor" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="om">
+			<![CDATA[
+if (transferDp != "")
+{
+   _isReadOnlyMode = false;  
+}
+ else
+{
+   _isReadOnlyMode = true; 
+}
+
+]]>
+		</body>
+		<param access-modifier="private" name="transferDp" display-name="" uuid="07be9edf-8844-4f29-b97d-fd0f2a2706c2" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5"/>
+	</do>
+	<do access-modifier="private" name="getParId" display-name="getParId" ver="5" type="string" type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d">
+		<body kind="om">
+			<![CDATA[// возвращает ID параметра без типа сигнала
+
+return String.SubString(Ap_Par_ID.Value,0, String.IndexOf(Ap_Par_ID.Value, ":") );
+]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="getClientId" display-name="getClientId" ver="5" type="float4" type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d">
+		<body kind="om">
+			<![CDATA[if(ClientID == 0)
+{
+      // ClientID = getLocalClientID();
+}
+return ClientID;
+
+]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="isTransferActive" display-name="Функция проверки: открыт ли трансфер для данного целевого сигнала" ver="5" type="bool" type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8">
+		<body kind="om">
+			<![CDATA[
+/*
+  Функция, которая возвращает признак, открыт ли трансфер для данного целевого сигнала
+*/
+
+if(Ap_Par_Transfer.Advised  == false)
+{
+  return false;
+}
+if((Ap_Par_Transfer.Value == "0") || (Ap_Par_Transfer.Value == ""))  return false;
+else return true;
+
+
+]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="getTransferDpByConnection" display-name="getTransferDpByConnection" ver="5" type="string" type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d">
+		<body kind="om">
+			<![CDATA[//Функция, возвращающая номер свободного трансфер-блока
+transferNumber  = 0;
+
+while(transferNumber < TRF_fAiTransfer_Data.Length)
+{ 
+//DebugTool_1.Log("fAI getTransferDpByConnection");
+//DebugTool_1.Log(TRF_fAiTransfer_Data[transferNumber].Ap_TRF_in_ID_In.Path);
+  if( TRF_fAiTransfer_Data[transferNumber].Ap_TRF_in_ID_In.Advised == true) 
+  { 
+    if(( TRF_fAiTransfer_Data[transferNumber].Ap_TRF_in_ID_Out.Value == String.ToFloat( getParId(),0) ) || ( TRF_fAiTransfer_Data[transferNumber].Ap_TRF_in_ID_Out.Value == 0))
+    {    
+      return transferDevPath.Value + "_" +  String.ToString(transferNumber+1);
+    }
+  }
+  transferNumber +=1;
+}
+
+return "";
+]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="readPreviousTransferState" display-name="readPreviousTransferState" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="javascript">
+			<![CDATA[// Возвращает значения параметров,  записанного ранее трансфер-блока
+//DebugTool_1.Log("readPreviousTransferState");
+if(Ap_Par_transferState.Advised == true && Ap_Par_transferState.Value != "")
+{
+  var transferStates  = JSON.parse(Ap_Par_transferState.Value); 
+  var transferState  = transferStates[0];   
+     
+  in_ID = transferState.in_ID;
+  in_RW = transferState.in_RW;
+  in_staticOff = transferState.in_staticOff;
+  in_simON = transferState.in_simON;
+  ClientID =  transferState.ClientID;
+  in_valueDirect = transferState.in_valueDirect;
+  in_rangeBeg = transferState.in_rangeBeg;
+  in_rangeEnd = transferState.in_rangeEnd;
+   
+  TransferStateTime = transferState.TransferStateTime;    
+    
+     
+    
+}
+]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="saveTransferState" display-name="saveTransferState" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="javascript">
+			<![CDATA[// Сохраняет состояние трансфер-блока в элемент ".Status.transferState" точки данных сигнала
+if(Ap_Par_transferState.Advised == false) return;
+
+var transferData = [];
+transferData.push({ //добавляем поля трансфера
+'in_ID':in_ID,
+'in_RW':in_RW,
+'in_staticOff':in_staticOff,
+'ClientID':ClientID,
+'in_simON':in_simON,
+'in_valueDirect':in_valueDirect,
+'in_rangeBeg':in_rangeBeg,
+'in_rangeEnd':in_rangeEnd,
+'TransferStateTime':getCurrentTime()});   
+
+//DebugTool_1.Log("saveTransferState");
+                                        
+Ap_Par_transferState.Value = JSON.stringify(transferData);  //сохраняем строку параметров трансферов
+
+]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="takeMessage" display-name="takeMessage" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="om">
+			<![CDATA[/*
+    Выдача сообщения об изменениях пользователя
+*/
+
+AsokuMain.CreateUserMessage("изменил настройки у сигнала " +  Ap_Par_Description.Value);
+
+
+]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="refreshDP" display-name=" Запрос на обновление данных" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="om">
+			<![CDATA[// Запрос на обновление данных 
+//DebugTool_1.Log("refreshDP");
+TRF_fAiTransfer_Data[transferNumber].Ap_TRF_in_ID_Out.Value = String.ToFloat(getParId(),0); //отправить в контроллер ID  
+TRF_fAiTransfer_Data[transferNumber].Ap_TRF_in_RW_Out.Value = 1; //отправить в контроллер команду на чтение  
+TRF_fAiTransfer_Data[transferNumber].Ap_TRF_ClientID_Out.Value = getClientId();
+]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="setDP" display-name="setDP" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="om">
+			<![CDATA[//функция записи значений трансфер блок -> контроллер
+//DebugTool_1.Log("setDP");
+// Запрос на запись данных 
+TRF_fAiTransfer_Data[transferNumber].Ap_TRF_in_RW_Out.Value = 2; 
+TRF_fAiTransfer_Data[transferNumber].Ap_TRF_in_ID_Out.Value = String.ToFloat( getParId(),0); //отправить в контроллер ID
+
+
+ ]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="readData" display-name="readData" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="om">
+			<![CDATA[// Управление чтением данных в ТД трансфер-блока из контроллера
+
+//DebugTool_1.Log("readData");
+ if(_isReadOnlyMode == true)//считываем сохраненные значения
+ {       
+   readPreviousTransferState(); //возвращает true если сохраненные параметры были считаны      
+ }   
+ else
+ {
+   refreshDP();  
+   Timer_LoadData.Active = true;                                                                                                                    
+ } 
+ 
+
+    
+    
+
+]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="loadData" display-name="loadData" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="om">
+			<![CDATA[// Заполнение параметров значениями из контроллера  
+//DebugTool_1.Log("loadData");
+
+if (TRF_fAiTransfer_Data[transferNumber].Ap_TRF_in_ID_In.Value != 0)
+{
+in_ID = TRF_fAiTransfer_Data[transferNumber].Ap_TRF_in_ID_In.Value;
+in_RW = TRF_fAiTransfer_Data[transferNumber].Ap_TRF_in_RW_In.Value;
+ClientID = TRF_fAiTransfer_Data[transferNumber].Ap_TRF_ClientID_In.Value;
+in_staticOff = TRF_fAiTransfer_Data[transferNumber].Ap_TRF_in_staticOff_In.Value;
+in_simON = TRF_fAiTransfer_Data[transferNumber].Ap_TRF_in_simON_In.Value;
+in_valueDirect = TRF_fAiTransfer_Data[transferNumber].Ap_TRF_in_valueDirect_In.Value;
+in_rangeBeg = TRF_fAiTransfer_Data[transferNumber].Ap_TRF_in_rangeBeg_In.Value;
+in_rangeEnd = TRF_fAiTransfer_Data[transferNumber].Ap_TRF_in_rangeEnd_In.Value;
+
+
+TransferStateTime = DateTime.Now();
+}
+else readPreviousTransferState();
+
+
+
+]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="writeData" display-name="writeData" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="om">
+			<![CDATA[// Запись данных в ТД трансфер-блока для отправки в контроллер
+//DebugTool_1.Log("writeData");
+
+if(_isReadOnlyMode)
+   return;
+
+ // посылка новых значений ЭТД трансфер-блока -> контроллер                                        
+ TRF_fAiTransfer_Data[transferNumber].Ap_TRF_in_staticOff_Out.Value = in_staticOff;
+ TRF_fAiTransfer_Data[transferNumber].Ap_TRF_in_simON_Out.Value = in_simON;
+ TRF_fAiTransfer_Data[transferNumber].Ap_TRF_in_valueDirect_Out.Value = in_valueDirect;
+ TRF_fAiTransfer_Data[transferNumber].Ap_TRF_in_rangeBeg_Out.Value =in_rangeBeg;
+ TRF_fAiTransfer_Data[transferNumber].Ap_TRF_in_rangeEnd_Out.Value = in_rangeEnd;
+ TRF_fAiTransfer_Data[transferNumber].Ap_TRF_ClientID_Out.Value = ClientID ;
+
+
+Timer_SetDp.Active = true;  // посылка команды записи значений трансфер-блок -> контроллер
+
+
+
+
+
+]]>
+		</body>
+	</do>
+	<object access-modifier="private" name="TRF_fAiTransfer_Data" display-name="TRF_fAiTransfer_Data" uuid="dbbba5af-c734-45dd-8c59-d58774bb8bc9" base-type="TRF_fAiTransfer_Data" base-type-id="41dd64a1-b194-4105-8699-3bbadead602f" ver="5" description="" cardinal="4">
+		<do-trace access-modifier="private" target="transferDevPath" ver="5">
+			<body>
+				<![CDATA[here.transferDevPath +  String.ToString( this.Index +1)]]>
+			</body>
+		</do-trace>
+		<init target="_Action_setLQFreeTRF" ver="5" ref="here.Action_setLQFreeTRF"/>
+	</object>
+	<object access-modifier="private" name="Ap_Source_Par" display-name="Ap_Source_Par" uuid="af118ed0-0a0f-4631-ab38-dd7e716d53a8" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+		<designed target="Location" value="" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="Path" value="" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[parDevPath.Value]]>
+			</body>
+		</do-trace>
+		<init target="ParentSource" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_Value" display-name="Значение параметра" uuid="bc3959fd-8233-437d-ba5e-d6623e8a8772" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Par"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_Name" display-name="Имя параметра " uuid="8f1f532f-8b58-4a3b-a596-edaebc562979" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Name"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Par"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_transferState" display-name="Ap_Par_transferState" uuid="c02b7c98-428f-4e37-8a6b-daf8b6edb4fe" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="transferState"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Par"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_Transfer" display-name="Ссылка на ТД трансфер-блока" uuid="c916bd9a-0c0d-4ec6-bad3-fdbe08d77adc" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="transfer"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Par"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_ID" display-name="Ap_Par_ID" uuid="93b09b48-e43d-4415-a187-09d0ac9629fd" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="ID"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Par"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_Description" display-name="Ap_Par_Description" uuid="f16bed31-eda7-4a2e-856b-46217334e36f" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Description"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Par"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_MinValue" display-name="Минимальное значение параметра" uuid="dd80d0bb-82dd-430e-b32e-830411a1c120" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+		<init target="Path" ver="5" value="MinValue"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_MaxValue" display-name="Максимальное значение параметра" uuid="2df42d59-4fd2-4b3f-8ffb-cd4ed70db30d" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+		<init target="Path" ver="5" value="MaxValue"/>
+	</object>
+	<object access-modifier="private" name="Timer_LoadData" display-name="Timer_LoadData" uuid="30b998a9-0e5f-46a6-9bfa-3974cba1ede4" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="5" description="" cardinal="1">
+		<designed target="Period" value="400" ver="5"/>
+		<designed target="Active" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnTimer">
+			<body kind="om">
+				<![CDATA[
+
+/*
+    Заполнение параметров значениями из контроллера  
+*/
+//DebugTool_1.Log("Timer_LoadData");
+
+loadData();    
+saveTransferState();
+
+Timer_LoadData.Active = false;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Timer_SetDp" display-name="Timer_SetDp" uuid="33e13355-a382-4f08-bddc-203a9edfc2fa" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="5" description="" cardinal="1">
+		<designed target="Period" value="300" ver="5"/>
+		<designed target="Active" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnTimer">
+			<body kind="om">
+				<![CDATA[/*
+    Заполнение параметров значениями из контроллера  
+*/
+//DebugTool_1.Log("Timer_SetDp");
+setDP();
+Timer_SetDp.Active = false;]]>
+			</body>
+		</do-on>
+	</object>
+	<do access-modifier="private" name="isUpdateTime" display-name="isUpdateTime" ver="5" type="bool" type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8">
+		<body kind="om">
+			<![CDATA[//функция проверки актуальности времени уставки   
+ 
+if(DateTime.Now() - transferStateTime <= AsokuConst.TimeActualSettings) return false;
+ else return true;
+    ]]>
+		</body>
+		<param access-modifier="private" name="transferStateTime" display-name="" uuid="c3b4cdaf-107c-4bab-83b0-4c9ab33f9f07" base-type="uint8" base-type-id="c8ff7701-da6e-4d53-888a-81fa680ff561" ver="5"/>
+	</do>
+	<do access-modifier="private" name="getCurrentTime" display-name="getCurrentTime" ver="5" type="uint8" type-id="c8ff7701-da6e-4d53-888a-81fa680ff561">
+		<body kind="om">
+			<![CDATA[// функция получения текущего времени
+return DateTime.Now();]]>
+		</body>
+	</do>
+	<object access-modifier="private" name="Action_setLQFreeTRF" display-name="Action_setLQFreeTRF" uuid="96974ac7-8dc9-47f3-b67d-85c039d47b33" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked">
+			<body kind="om">
+				<![CDATA[//Функция отображения свободных трансферов
+if( TRF_fAiTransfer_Data[0].Ap_TRF_in_ID_Out.Value == 0 || TRF_fAiTransfer_Data[0].Ap_TRF_in_ID_Out.ValueAsString == "" ) LQ_TRF1.Color.Value =AsokuColor.asokuGreen;
+else LQ_TRF1.Color.Value =AsokuColor.asokuRed;
+
+if( TRF_fAiTransfer_Data[1].Ap_TRF_in_ID_Out.Value == 0 || TRF_fAiTransfer_Data[1].Ap_TRF_in_ID_Out.ValueAsString == "" ) LQ_TRF2.Color.Value =AsokuColor.asokuGreen;
+else LQ_TRF2.Color.Value =AsokuColor.asokuRed;
+
+if( TRF_fAiTransfer_Data[2].Ap_TRF_in_ID_Out.Value == 0 || TRF_fAiTransfer_Data[2].Ap_TRF_in_ID_Out.ValueAsString == "" ) LQ_TRF3.Color.Value =AsokuColor.asokuGreen;
+else LQ_TRF3.Color.Value =AsokuColor.asokuRed;
+
+if( TRF_fAiTransfer_Data[3].Ap_TRF_in_ID_Out.Value == 0 || TRF_fAiTransfer_Data[3].Ap_TRF_in_ID_Out.ValueAsString == "" ) LQ_TRF4.Color.Value =AsokuColor.asokuGreen;
+else LQ_TRF4.Color.Value =AsokuColor.asokuRed;
+]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="LQ_TRF1" display-name="LQ_TRF1" uuid="8cea258d-8cf7-42bd-a425-6241581197af" base-type="LedQuadrateSimple" base-type-id="458a7e08-8b32-4c0e-92e1-513d25127bb2" base-const="true" base-ref="true" ver="5" description=""/>
+	<object access-modifier="private" name="LQ_TRF2" display-name="LQ_TRF2" uuid="c5d5aa3e-f9ca-4d9e-8f28-4bf483a3caa6" base-type="LedQuadrateSimple" base-type-id="458a7e08-8b32-4c0e-92e1-513d25127bb2" base-const="true" base-ref="true" ver="5" description=""/>
+	<object access-modifier="private" name="LQ_TRF3" display-name="LQ_TRF3" uuid="991235c2-617d-4f54-89a9-cd75089c7d3a" base-type="LedQuadrateSimple" base-type-id="458a7e08-8b32-4c0e-92e1-513d25127bb2" base-const="true" base-ref="true" ver="5" description=""/>
+	<object access-modifier="private" name="LQ_TRF4" display-name="LQ_TRF4" uuid="0241304d-4897-4189-bc0b-5115320def9b" base-type="LedQuadrateSimple" base-type-id="458a7e08-8b32-4c0e-92e1-513d25127bb2" base-const="true" base-ref="true" ver="5" description=""/>
+	<do access-modifier="private" name="setTransferClear" display-name="setTransferClear" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="om">
+			<![CDATA[//  Освобождение трансфер-блока при закрытии формы настройки трансфера
+//DebugTool_1.Log("setTransferClear \n");
+
+if(transferNumber < TRF_fAiTransfer_Data.Length)
+{      
+  TRF_fAiTransfer_Data[transferNumber].Ap_TRF_in_RW_Out.Value = 0;
+  TRF_fAiTransfer_Data[transferNumber].Ap_TRF_in_RW_In.Value = 0;
+  TRF_fAiTransfer_Data[transferNumber].Ap_TRF_in_ID_Out.Value = 0;
+  TRF_fAiTransfer_Data[transferNumber].Ap_TRF_in_ID_In.Value = 0;
+  TRF_fAiTransfer_Data[transferNumber].Ap_TRF_ClientID_Out.Value = 0;
+  TRF_fAiTransfer_Data[transferNumber].Ap_TRF_ClientID_In.Value = 0; 
+}
+
+
+  
+
+
+
+
+
+]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="setTransferClearAll" display-name="setTransferClearAll" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="om">
+			<![CDATA[//  Освобождение всех трансфер-блоков
+
+for (i: int4 = 0; i < TRF_fAiTransfer_Data.Length; i += 1)
+{
+  if(transferNumber < TRF_fAiTransfer_Data.Length)
+  {      
+ 	 TRF_fAiTransfer_Data[i].Ap_TRF_in_RW_Out.Value = 0;
+ 	 TRF_fAiTransfer_Data[i].Ap_TRF_in_RW_In.Value = 0;
+  	 TRF_fAiTransfer_Data[i].Ap_TRF_in_ID_Out.Value = 0;
+  	 TRF_fAiTransfer_Data[i].Ap_TRF_in_ID_In.Value = 0;
+  	 TRF_fAiTransfer_Data[i].Ap_TRF_ClientID_Out.Value = 0;
+    TRF_fAiTransfer_Data[i].Ap_TRF_ClientID_In.Value = 0; 
+  }
+}
+
+
+  
+
+
+
+
+
+]]>
+		</body>
+	</do>
+	<object access-modifier="private" name="parDevPath" display-name="Путь параметра" uuid="c9030204-2aac-4adf-b1b6-bfd883bcb57e" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Ap_Source_Transfer" display-name="Ap_Source_Transfer" uuid="e864daa9-d326-4a51-94c9-c1c64cc2a2c5" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+		<designed target="Location" value="" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="Path" value="" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="ReAdvise" value="1" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[transferDevPath.Value]]>
+			</body>
+		</do-trace>
+		<init target="ParentSource" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="transferDevPath" display-name="полный путь до узла трансфера" uuid="6d9d1428-68c7-490c-a561-c32458a0b318" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="_transferDevPath" display-name="_transferDevPath" uuid="ff014810-049f-4700-b074-467cff75b9f2" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="in_ID" display-name="in_ID" uuid="18ec5e62-ff0b-4eba-9fd7-dfb9f029b525" base-type="float" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="in_RW" display-name="in_RW" uuid="5f01a8ff-3a5e-4f58-b166-d3e882283d6b" base-type="float" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="in_staticOff" display-name="in_staticOff" uuid="b730f9c7-85ea-4d17-8828-dfe992c51a4e" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="in_simON" display-name="in_simON" uuid="d71abf80-cfe6-42da-adba-d7795763c676" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="in_valueDirect" display-name="in_valueDirect" uuid="5169fee6-00b6-424d-9b48-2785be29ee02" base-type="float" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="in_rangeBeg" display-name="in_rangeBeg" uuid="e399cd16-c1aa-483b-9cf8-fd059f89fd59" base-type="float" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="in_rangeEnd" display-name="in_rangeEnd" uuid="319ef5c4-2643-401a-8119-3dd21581a6ec" base-type="float" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="TransferStateTime" display-name="TransferStateTime" uuid="990f7cb1-7507-4d5e-8dbf-d7677ce6df0d" base-type="uint8" base-type-id="c8ff7701-da6e-4d53-888a-81fa680ff561" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="_isReadOnlyMode" display-name="_isReadOnlyMode" uuid="7aa8d2dc-f95d-4e8a-8e85-d2cbb35a6c56" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="transferNumber" display-name="transferNumber" uuid="59ede536-2090-48e2-a9b4-2e0dea0ac388" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ClientID" display-name="ClientID" uuid="81e2f52b-2046-4042-9db6-c894c63f88df" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<do access-modifier="private" name="loadDataSignal" display-name="loadDataSignal" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="om">
+			<![CDATA[//Функция записи из сигнала в трансфер
+in_rangeBeg = Ap_Par_MinValue.Value;
+in_rangeEnd = Ap_Par_MaxValue.Value;
+]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="writeDataSignal" display-name="writeDataSignal" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="om">
+			<![CDATA[//Функция записи значений из трансфера в сигнал
+
+Ap_Par_MinValue.Value = in_rangeBeg;
+Ap_Par_MaxValue.Value = in_rangeEnd;
+
+
+
+
+]]>
+		</body>
+	</do>
+</type>
+

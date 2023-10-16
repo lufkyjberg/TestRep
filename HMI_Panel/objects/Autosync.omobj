@@ -1,0 +1,108 @@
+<type access-modifier="private" name="Autosync" display-name="Autosync" uuid="504e9808-e4ec-4c40-b6bc-336a6b7ec5fd" base-type="" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Width" value="630" ver="5"/>
+	<designed target="Height" value="640" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xff646464" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="580" ver="5"/>
+	<designed target="WindowHeight" value="640" ver="5"/>
+	<designed target="WindowCaption" value="MainForm" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="1" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="0" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<object access-modifier="private" name="Text_PropertiesDialogs_106" display-name="Text_PropertiesDialogs_106" uuid="40952479-e08b-432a-8f1a-68825c1b9163" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="5" ver="5"/>
+		<designed target="Y" value="80" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="620" ver="5"/>
+		<designed target="Height" value="45" ver="5"/>
+		<designed target="Text" value="Готовность автосинхронизатора" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Electro.Syncauto_ready"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_107" display-name="Text_PropertiesDialogs_107" uuid="075dbe69-f434-48b5-86ca-34c0e37615aa" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="5" ver="5"/>
+		<designed target="Y" value="215" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="620" ver="5"/>
+		<designed target="Height" value="45" ver="5"/>
+		<designed target="Text" value="Неисправность автосинхронизатора " ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Electro.Syncauto_err"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_108" display-name="Text_PropertiesDialogs_108" uuid="2d4b332c-8d0c-4e19-a06d-d4abd08de17d" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="5" ver="5"/>
+		<designed target="Y" value="260" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="620" ver="5"/>
+		<designed target="Height" value="45" ver="5"/>
+		<designed target="Text" value="Понижение частоты сети (работа реле АЧВР)" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Electro.F_net_less"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_109" display-name="Text_PropertiesDialogs_109" uuid="3e964f9a-de00-450e-a29b-86d7d3a2e1a3" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="5" ver="5"/>
+		<designed target="Y" value="170" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="620" ver="5"/>
+		<designed target="Height" value="45" ver="5"/>
+		<designed target="Text" value="Наличие напряжения генератора" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Electro.U_gen_on"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_110" display-name="Text_PropertiesDialogs_110" uuid="2c28a140-0158-44ff-b33a-0eb7e2eaa0fa" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="5" ver="5"/>
+		<designed target="Y" value="125" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="620" ver="5"/>
+		<designed target="Height" value="45" ver="5"/>
+		<designed target="Text" value="Запрет синхронизации" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Electro.Sync_ban"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="706020ac-f6d1-4e7f-90a5-f4f9c5801375" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="630" ver="5"/>
+		<designed target="Height" value="60" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Text" value="Автосинхронизатор" ver="5"/>
+	</object>
+</type>
+

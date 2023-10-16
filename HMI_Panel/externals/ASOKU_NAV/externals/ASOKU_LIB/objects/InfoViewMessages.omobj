@@ -1,0 +1,105 @@
+<type access-modifier="private" name="InfoViewMessages" display-name="InfoViewMessages" uuid="2768341d-28ac-4654-8f4f-d392551ca1b7" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="1055" ver="5"/>
+	<designed target="Height" value="650" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="4293980400" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="1055" ver="5"/>
+	<designed target="WindowHeight" value="650" ver="5"/>
+	<designed target="WindowCaption" value="MainForm" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="false" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="2" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="0" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<object access-modifier="private" name="Alarms" display-name="Alarms" uuid="b8b25f22-be2b-4605-9428-a34803ef4e9d" base-type="Alarms" base-type-id="e8a9dba0-e07f-4bfe-95f9-b75887e3f21b" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="1055" ver="5"/>
+		<designed target="Height" value="645" ver="5"/>
+		<init target="init_ApSource" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ParDevPath" display-name="Путь параметра" uuid="abec8546-20be-40de-aea6-255da705d070" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Ap_Source_Par" display-name="Источник параметра" uuid="29a91f9d-9b5a-428c-bcdc-5ea33cfb31a8" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+		<designed target="Location" value="" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="Path" value="" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath.Value]]>
+			</body>
+		</do-trace>
+		<init target="ParentSource" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_Name" display-name="Имя параметра" uuid="3856cc41-6b1e-411a-9519-a9e0e86a0587" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+		<init target="Path" ver="5" value="Name"/>
+	</object>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Opened">
+		<body kind="om">
+			<![CDATA[this.WindowCaption = "Сообщения: " + Ap_Par_Name.ValueAsString;
+
+sourceFilter: string = String.Replace(Ap_Par_Name.Tag, Ap_Par_Name.Path, "");
+Alarms.SetAdvancedFilter("source", sourceFilter);   //установка фильтра сообщений
+
+
+]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="DebugTool" display-name="DebugTool" uuid="825a48ed-610b-4d26-ad04-ae56ca822de8" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Window_InfoViewMessages" display-name="Window_InfoViewMessages" uuid="dc980fee-0aab-4161-9c6c-0960bf0bc3ed" base-type="Window" base-type-id="04615219-28bb-4a9a-bba4-50ac66972eb0" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MessageReceived">
+			<body kind="om">
+				<![CDATA[if (messageType == "sendmessage")
+{
+  
+  
+  pos:int4 = String.IndexOf(Alarms.StatePanel.ViewFilterStr,"*");//считывание старого фильтра 
+  oldSourceFilter: string = String.SubString(Alarms.StatePanel.ViewFilterStr, pos+1); 
+  oldSourceFilter = String.Replace(oldSourceFilter , "*\"}" , "");
+    
+  Ap_Source_Par.Path = messageData;     //перезаписываем новый путь в источник
+  here.WindowCaption = here.WindowCaption + ", " + Ap_Par_Name.ValueAsString;
+  
+  sourceFilter: string = String.Replace(Ap_Par_Name.Tag, Ap_Par_Name.Path, "");
+  sourceFilter = "*" + oldSourceFilter + "* ИЛИ " + "*" + sourceFilter +"*";
+  
+  Alarms.SetAdvancedFilter("source", sourceFilter);   //установка фильтра сообщений
+
+}
+
+]]>
+			</body>
+		</do-on>
+		<init target="Group" ver="5" ref="AsokuMain.WindowGroup_InfoViewMessages"/>
+	</object>
+	<designed target="Flip" value="0" ver="5"/>
+</type>
+

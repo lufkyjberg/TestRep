@@ -1,0 +1,117 @@
+<unit uuid="213260bc-e289-4357-86fd-c3169155e15d" name="ASOKU_LIB" display-name="ASOKU_LIB" description="" ver="5" main-form-id="55a37d5b-1fcf-4839-8ad1-259ea5b30366">
+	<object file="UserDialog.omobj" filter="Системные"/>
+	<object file="AnalogDpBarHorisontal.omobj" filter="Сигналы/Аналоговый сигнал"/>
+	<object file="AnalogDpSimpleValue.omobj" filter="Сигналы/Аналоговый сигнал"/>
+	<object file="AnalogDpValue.omobj" filter="Сигналы/Аналоговый сигнал"/>
+	<object file="AODpValue.omobj" filter="Сигналы/Аналоговый сигнал"/>
+	<object file="ButtonInfoTab.omobj" filter="Оформление/Кнопки"/>
+	<object file="ButtonUserDialogs.omobj" filter="Оформление/Кнопки"/>
+	<object file="CheckboxPropertiesDialogs.omobj" filter="Оформление/Переключатели"/>
+	<object file="Disconnector.omobj" filter="Объекты/Объекты - сигналы"/>
+	<object file="DiscreteDpValue.omobj" filter="Сигналы/Дискретный сигнал"/>
+	<object file="DiscreteWith2Value.omobj" filter="Сигналы/Дискретный сигнал"/>
+	<object file="3PKC.omobj" filter="Объекты/Простые объекты/Электросхема"/>
+	<object file="Break.omobj" filter="Объекты/Простые объекты/Гидромеханика"/>
+	<object file="ButtonPropertiesDialogs.omobj" filter="Оформление/Кнопки"/>
+	<object file="Coil.omobj" filter="Объекты/Простые объекты/Электросхема"/>
+	<object file="CurrentTransformer.omobj" filter="Объекты/Простые объекты/Электросхема"/>
+	<object file="Generator.omobj" filter="Объекты/Простые объекты/Электросхема"/>
+	<object file="Grounding.omobj" filter="Объекты/Простые объекты/Электросхема"/>
+	<object file="GroundSwitch.omobj" filter="Объекты/Объекты - сигналы"/>
+	<object file="IDKWIT.omobj" filter="Объекты/Простые объекты/Электросхема"/>
+	<object file="IEC_ReverseStationInfoForm.omobj" filter="Диагностика"/>
+	<object file="IecCheckWithReserve.omobj" filter="Диагностика"/>
+	<object file="IECReverseStationInfo.omobj" filter="Диагностика"/>
+	<object file="InfoTabView.omobj" filter="Информационные окна"/>
+	<object file="InfoViewAnalog.omobj" filter="Информационные окна"/>
+	<object file="InfoViewDiscrete.omobj" filter="Информационные окна"/>
+	<object file="InfoViewMessages.omobj" filter="Информационные окна"/>
+	<object file="InfoViewSettingAnalog.omobj" filter="Информационные окна"/>
+	<object file="InfoViewSettingDiscrete.omobj" filter="Информационные окна"/>
+	<object file="LedQuadrate.omobj" filter="Объекты/Объекты - сигналы"/>
+	<object file="LedСircle.omobj" filter="Объекты/Объекты - сигналы"/>
+	<object file="Limiter.omobj" filter="Объекты/Простые объекты/Электросхема"/>
+	<object file="LongitudinalCompensationDevice.omobj" filter="Объекты/Простые объекты/Электросхема"/>
+	<object file="M.omobj" filter="Объекты/Простые объекты/Электросхема"/>
+	<object file="M_1.omobj" filter="Объекты/Простые объекты/Электросхема"/>
+	<object file="ModuleFailure.omobj" filter="Объекты/Объекты - сигналы"/>
+	<object file="PdpCircle.omobj" filter="Объекты/Объекты - сигналы"/>
+	<object file="PdpElement.omobj" filter="Объекты/Объекты - сигналы"/>
+	<object file="PdshCircleLower.omobj" filter="Объекты/Объекты - сигналы"/>
+	<object file="PdshCircleUpper.omobj" filter="Объекты/Объекты - сигналы"/>
+	<object file="Pump.omobj" filter="Объекты/Простые объекты/Электросхема"/>
+	<object file="ServerRedundancy.omobj" filter="Диагностика"/>
+	<object file="Settings.omobj" filter="Системные/Настройки"/>
+	<object file="SettingsTabView.omobj" filter="Системные/Настройки"/>
+	<object file="SliceCircle.omobj" filter="Объекты/Объекты - сигналы"/>
+	<object file="STCircle.omobj" filter="Объекты/Объекты - сигналы"/>
+	<object file="Switch.omobj" filter="Объекты/Объекты - сигналы"/>
+	<object file="SwitchTruck.omobj" filter="Объекты/Простые объекты/Электросхема"/>
+	<object file="TextParseSuperSub.omobj" filter="Оформление/Текст"/>
+	<object file="TextSignalDescription.omobj" filter="Оформление/Текст"/>
+	<object file="TextPropertiesDialogs.omobj" filter="Оформление/Текст"/>
+	<object file="TextUserDialogs.omobj" filter="Оформление/Текст"/>
+	<object file="TransformerPart1.omobj" filter="Объекты/Простые объекты/Электросхема"/>
+	<object file="TransformerPart2.omobj" filter="Объекты/Простые объекты/Электросхема"/>
+	<object file="Сompensator.omobj" filter="Объекты/Простые объекты/Электросхема"/>
+	<object file="GE.omobj" filter="Объекты/Простые объекты/Электросхема"/>
+	<object file="TransformerPart3.omobj" filter="Объекты/Простые объекты/Электросхема"/>
+	<object file="VacuumSwitch.omobj" filter="Объекты/Объекты - сигналы"/>
+	<object file="Debug.omobj" filter=""/>
+	<object file="PdshElement.omobj" filter="Объекты/Объекты - сигналы"/>
+	<object file="GAMode.omobj" filter="Сигналы/Специальные"/>
+	<object file="GateValve.omobj" filter="Объекты/Объекты - сигналы"/>
+	<object file="DiscreteDpMultiValue.omobj" filter="Сигналы/Дискретный сигнал"/>
+	<object file="OnOffButton.omobj" filter="Оформление/Переключатели"/>
+	<unit-link name="ASOKU_MSG" type="b0491687-7585-47f3-b51f-4e24fd62aef1" type-hint="" assembly-path="ASOKU_MSG" ver="5"/>
+	<unit-link name="ASOKU_SYS" type="b0491687-7585-47f3-b51f-4e24fd62aef1" type-hint="" assembly-path="ASOKU_SYS" ver="5"/>
+	<unit-link name="CommonLib" type="b0491687-7585-47f3-b51f-4e24fd62aef1" type-hint="" assembly-path="CommonLib" ver="5"/>
+	<unit-link name="ASOKU_TRD" type="b0491687-7585-47f3-b51f-4e24fd62aef1" type-hint="" assembly-path="ASOKU_TRD" ver="5"/>
+	<unit-link name="ASOKU_TRF" type="b0491687-7585-47f3-b51f-4e24fd62aef1" type-hint="" assembly-path="ASOKU_TRF" ver="5"/>
+	<object file="GateValveParameters.omobj" filter="Технологические/Устройства/Задвижка"/>
+	<object file="LightBlock.omobj" filter="На удаление из проекта"/>
+	<object file="i.omobj" filter="Объекты/Простые объекты/Электросхема"/>
+	<object file="AB.omobj" filter="Объекты/Простые объекты/Электросхема"/>
+	<object file="BS.omobj" filter="Объекты/Простые объекты/Электросхема"/>
+	<object file="RB.omobj" filter="Объекты/Простые объекты/Электросхема"/>
+	<object file="ZPU.omobj" filter="Объекты/Простые объекты/Электросхема"/>
+	<object file="ZVU.omobj" filter="Объекты/Простые объекты/Электросхема"/>
+	<object file="DiscreteDescrValue.omobj" filter="Сигналы/Дискретный сигнал"/>
+	<object file="OnlyNumInput.omobj" filter="Оформление/Поля ввода"/>
+	<object file="CircleSegment.omobj" filter="Объекты/Объекты - сигналы"/>
+	<object file="Filter.omobj" filter="Объекты/Объекты - сигналы"/>
+	<object file="FilterParametrs.omobj" filter="Технологические/Устройства/Фильтр"/>
+	<object file="NasosParametrs.omobj" filter="Технологические/Устройства/Насос"/>
+	<object file="Nasos.omobj" filter="Объекты/Объекты - сигналы"/>
+	<object file="InfoViewSelectMode.omobj" filter="Информационные окна"/>
+	<object file="HistogramWithLimits.omobj" filter="Сигналы/Аналоговый сигнал"/>
+	<object file="Histogram.omobj" filter="Сигналы/Аналоговый сигнал"/>
+	<object file="CloseButton.omobj" filter="Оформление/Кнопки"/>
+	<object file="LoginPanel.omobj" filter="Системные"/>
+	<object file="Switch_1.omobj" filter="Объекты/Объекты - сигналы"/>
+	<object file="SegmentedEllipse.omobj" filter="Объекты/Объекты - сигналы"/>
+	<object file="EllipseSegment.omobj" filter="Объекты/Объекты - сигналы"/>
+	<object file="EllipseSegment_Inverted.omobj" filter="Объекты/Объекты - сигналы"/>
+	<object file="Form_ECRA247.omobj" filter="Технологические/Устройства/ЭКРА"/>
+	<object file="Form_ECRA_2704.omobj" filter="Технологические/Устройства/ЭКРА"/>
+	<object file="Form_ECRA_217.omobj" filter="Технологические/Устройства/ЭКРА"/>
+	<object file="Form_ECRA_213.omobj" filter="Технологические/Устройства/ЭКРА"/>
+	<object file="Form_ECRA_209.omobj" filter="Технологические/Устройства/ЭКРА"/>
+	<object file="Parameters_RU.omobj" filter="Технологические/Устройства"/>
+	<object file="CRU_Truck.omobj" filter="Объекты/Объекты - сигналы"/>
+	<object file="DODpValue_2.omobj" filter="Сигналы/Дискретный сигнал"/>
+	<object file="ExtendedHistogramWithLimits.omobj" filter="Сигналы/Аналоговый сигнал"/>
+	<object file="ActionWindow.omobj" filter="Системные"/>
+	<object file="EnumValue.omobj" filter="Сигналы/Дискретный сигнал"/>
+	<object file="EnumZone.omobj" filter="Сигналы/Дискретный сигнал"/>
+	<object file="DiscreteMarkArrow.omobj" filter="Сигналы/Дискретный сигнал"/>
+	<object file="SnapShot.omobj" filter="Системные/Настройки"/>
+	<object file="InfoViewTrends.omobj" filter="Информационные окна"/>
+	<object file="InfoViewEnumValues.omobj" filter="Информационные окна"/>
+	<object file="InfoViewEnum.omobj" filter="Информационные окна"/>
+	<object file="SignalTemplateAnalog_EKRA.omobj" filter="Сигналы/Специальные"/>
+	<object file="SignalTemplateDiscrete_EKRA.omobj" filter="Сигналы/Специальные"/>
+	<object file="InfoViewSettingEnum.omobj" filter="Информационные окна"/>
+	<object file="Global.omobj" filter=""/>
+</unit>
+

@@ -1,0 +1,507 @@
+<type access-modifier="public" name="DODpValue" display-name="Дискретное значение изменяемое" uuid="e879ca82-3c43-4b30-8ceb-03afa5380648" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="180" ver="5"/>
+	<designed target="Height" value="35" ver="5"/>
+	<designed target="RoundingRadius" value="0" ver="5"/>
+	<designed target="PenColor" value="0xffffffff" ver="5"/>
+	<designed target="PenStyle" value="1" ver="5"/>
+	<designed target="PenWidth" value="3" ver="5"/>
+	<designed target="BrushColor" value="0x00000000" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<object access-modifier="private" name="TextField" display-name="TextField" uuid="752b38e2-5f90-4a62-8bf1-7b8e3aa94fdc" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="-0.25" ver="5"/>
+		<designed target="Y" value="0.75" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="84.5" ver="5"/>
+		<designed target="Height" value="34.25" ver="5"/>
+		<designed target="Text" value="*****" ver="5"/>
+		<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xff000000" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[ViewOnly]]>
+				</condition>
+				<expr>
+					<![CDATA[""]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParStatusBytes.Value == AsokuConst.StatusBytes.Invalid.Value]]>
+				</condition>
+				<expr>
+					<![CDATA["*****"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParOut.Advised == false]]>
+				</condition>
+				<expr>
+					<![CDATA["invalid"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParOut == true]]>
+				</condition>
+				<expr>
+					<![CDATA[TextOn]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParOut == false]]>
+				</condition>
+				<expr>
+					<![CDATA[TextOff]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[HideText == true]]>
+				</condition>
+				<expr>
+					<![CDATA[""]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA["deafult"]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="FontColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParStatusBytes.Value == AsokuConst.StatusBytes.Invalid]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuBlack]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParOut.Advised == false]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParAlarmBytes.Value == AsokuConst.AlarmBytes.Alarm.Value ||ApParAlarmBytes.Value == AsokuConst.AlarmBytes.WarningAndAlarm.Value ||ApParAlarmBytes.Value == AsokuConst.AlarmBytes.Warning.Value]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuBlack]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParOut == true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff1dc500]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParOut == false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<designed target="Flip" value="0" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick">
+			<body kind="javascript">
+				<![CDATA[if(ApParName.Advised == true && ViewOnly == false)
+{
+  if (AsokuMain.WindowGroup_InfoViewMessages.WindowCount < 1) Open_AlarmView.Invoke();
+  else 
+  {
+    AsokuMain.WindowGroup_InfoViewMessages.SendToAll("sendmessage", ParDevPath.Value);
+  }
+}
+]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="ParDevPath" display-name="Путь до контейнера" uuid="8abd6d0d-b4d0-4a63-9495-9bd1c94e8709" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ObjDevPath" display-name="Имя сигнала" uuid="36443b04-0dd6-4563-a603-df7ea267b48b" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="TextColorOn" display-name="Цвет шрифта состояния On" uuid="6d007c34-3e9d-4bf7-a095-aab551884799" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="TextColorOff" display-name="Цвет шрифта состояния Off" uuid="e6457e83-bd9b-4a0a-9ed0-895d5fd4e996" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ApParName" display-name="Имя параметра" uuid="03d85e8f-a3d1-448e-af36-99f97f9d68ac" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + ".In."+ ObjDevPath + ".Name"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApParComment" display-name="Комментарий параметра" uuid="9552bfa0-3443-4ab6-844f-922a1f5924f4" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + ".In."+ ObjDevPath + ".Comment"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApParDescription" display-name="Описание параметра" uuid="00876594-330c-40e2-938c-2457c66e5909" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + ".In."+ ObjDevPath + ".Description"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApParDisplayOn" display-name="Формат отображения параметра включенного состояния" uuid="328ddc4b-e370-473d-b33d-2cf73ddc71a6" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + ".In."+ ObjDevPath + ".DisplayOn"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApParDisplayOff" display-name="Формат отображения параметра выключенного состояния" uuid="d2cac593-33ca-4c8a-ad48-c5a29e6bc210" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + ".In."+ ObjDevPath + ".DisplayOff"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<init target="Path" ver="5" value=""/>
+	</object>
+	<object access-modifier="private" name="ApParStatusBytes" display-name="Статус параметра" uuid="f622798e-2e36-4370-b206-2b677accbce6" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + ".In."+ ObjDevPath + ".StatusBytes"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApParAlarmBytes" display-name="Аларм параметра" uuid="df92d283-af25-4a8e-95eb-d92322083730" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + ".In."+ ObjDevPath + ".AlarmBytes"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApParIn" display-name="Значение входного параметра" uuid="5f39ea54-1d0c-4871-8f37-878a678d923a" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + ".In."+ ObjDevPath + ".Value"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApParOut" display-name="Значене выходного параметра" uuid="7f2029c0-14f5-4818-9900-883f412b6815" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + ".Out."+ ObjDevPath + ".Value"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="DebugTool" display-name="DebugTool" uuid="89c517bf-71ee-4dd0-b1c0-08fa43e840c4" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="5" description="" cardinal="1"/>
+	<do-trace access-modifier="private" target="PenColor" ver="5">
+		<conditional-expr>
+			<condition>
+				<![CDATA[ApParStatusBytes.Value == AsokuConst.StatusBytes.Changed]]>
+			</condition>
+			<expr>
+				<![CDATA[AsokuColor.asokuCyan]]>
+			</expr>
+		</conditional-expr>
+		<default-expr>
+			<expr>
+				<![CDATA[AsokuColor.asokuTransparent]]>
+			</expr>
+		</default-expr>
+	</do-trace>
+	<do-trace access-modifier="private" target="Tooltip" ver="5">
+		<body>
+			<![CDATA["Путь: " + ParDevPath + "." + ApParIn.Tag + "\nПояснение: " + ApParDescription.Value + " " + TextField.Text +"\nИсточник: "+ ApParComment.Value + "\nстатус: " + String.ToString(ApParOut.Quality) + "\nнеисправность: "+ String.ToString(ApParStatusBytes) + "\nпределы: "+ String.ToString(ApParAlarmBytes)]]>
+		</body>
+	</do-trace>
+	<do-trace access-modifier="private" target="BrushColor" ver="5">
+		<conditional-expr>
+			<condition>
+				<![CDATA[ApParAlarmBytes.Value == AsokuConst.AlarmBytes.Alarm.Value ||ApParAlarmBytes.Value == AsokuConst.AlarmBytes.WarningAndAlarm.Value]]>
+			</condition>
+			<expr>
+				<![CDATA[AsokuColor.asokuRed]]>
+			</expr>
+		</conditional-expr>
+		<conditional-expr>
+			<condition>
+				<![CDATA[ApParAlarmBytes.Value == AsokuConst.AlarmBytes.Warning.Value
+]]>
+			</condition>
+			<expr>
+				<![CDATA[AsokuColor.asokuYellow]]>
+			</expr>
+		</conditional-expr>
+		<conditional-expr>
+			<condition>
+				<![CDATA[HideText == true]]>
+			</condition>
+			<expr>
+				<![CDATA[AsokuColor.asokuTransparent]]>
+			</expr>
+		</conditional-expr>
+		<default-expr>
+			<expr>
+				<![CDATA[AsokuColor.asokuTransparent]]>
+			</expr>
+		</default-expr>
+	</do-trace>
+	<designed target="Flip" value="0" ver="5"/>
+	<object access-modifier="private" name="BtnSendCmd" display-name="BtnSendCmd" uuid="46ca7371-ba58-47c6-8073-9367c2ffc20c" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5" description="" cardinal="1">
+		<designed target="X" value="96" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="85" ver="5"/>
+		<designed target="Height" value="35" ver="5"/>
+		<designed target="Checkable" value="false" ver="5"/>
+		<designed target="Checked" value="false" ver="5"/>
+		<designed target="Text" value="*****" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="OnClickFontColor" value="4278190080" ver="5"/>
+		<designed target="OnHoverFontColor" value="4278190080" ver="5"/>
+		<designed target="DisabledFontColor" value="4278190080" ver="5"/>
+		<designed target="BrushColor" value="0xfff0f0f0" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="OnClickBrushColor" value="4288716960" ver="5"/>
+		<designed target="OnClickBrushStyle" value="1" ver="5"/>
+		<designed target="OnHoverBrushColor" value="4294967295" ver="5"/>
+		<designed target="OnHoverBrushStyle" value="1" ver="5"/>
+		<designed target="DisabledBrushColor" value="4288716960" ver="5"/>
+		<designed target="DisabledBrushStyle" value="1" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="3" ver="5"/>
+		<designed target="OnClickPenColor" value="4278190080" ver="5"/>
+		<designed target="OnClickPenStyle" value="1" ver="5"/>
+		<designed target="OnClickPenWidth" value="1" ver="5"/>
+		<designed target="OnHoverPenColor" value="4278190080" ver="5"/>
+		<designed target="OnHoverPenStyle" value="1" ver="5"/>
+		<designed target="OnHoverPenWidth" value="1" ver="5"/>
+		<designed target="DisabledPenColor" value="4288716960" ver="5"/>
+		<designed target="DisabledPenStyle" value="1" ver="5"/>
+		<designed target="DisabledPenWidth" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParStatusBytes.Value == AsokuConst.StatusBytes.Invalid]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuBlack]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParOut.Advised == false]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParAlarmBytes.Value == AsokuConst.AlarmBytes.Alarm.Value ||ApParAlarmBytes.Value == AsokuConst.AlarmBytes.WarningAndAlarm.Value ||ApParAlarmBytes.Value == AsokuConst.AlarmBytes.Warning.Value]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuBlack]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParOut == true]]>
+				</condition>
+				<expr>
+					<![CDATA[ButtonColorTextOn]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParOut == false]]>
+				</condition>
+				<expr>
+					<![CDATA[ButtonColorTextOff]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParOut.Value == true]]>
+				</condition>
+				<expr>
+					<![CDATA[ButtonTextOff]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParOut.Value == false]]>
+				</condition>
+				<expr>
+					<![CDATA[ButtonTextOn]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick">
+			<body kind="om">
+				<![CDATA[if (ViewOnly == false) {
+   ApParOut = !ApParOut;
+}]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="OnHoverFontColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParStatusBytes.Value == AsokuConst.StatusBytes.Invalid]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuBlack]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParOut.Advised == false]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParAlarmBytes.Value == AsokuConst.AlarmBytes.Alarm.Value ||ApParAlarmBytes.Value == AsokuConst.AlarmBytes.WarningAndAlarm.Value ||ApParAlarmBytes.Value == AsokuConst.AlarmBytes.Warning.Value]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuBlack]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParOut == true]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuBlack]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParOut == false]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuBlack]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="OnHoverBrushColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParStatusBytes.Value == AsokuConst.StatusBytes.Invalid]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuBlack]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParOut.Advised == false]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParAlarmBytes.Value == AsokuConst.AlarmBytes.Alarm.Value ||ApParAlarmBytes.Value == AsokuConst.AlarmBytes.WarningAndAlarm.Value ||ApParAlarmBytes.Value == AsokuConst.AlarmBytes.Warning.Value]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuBlack]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParOut == true]]>
+				</condition>
+				<expr>
+					<![CDATA[ButtonColorTextOn]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParOut == false]]>
+				</condition>
+				<expr>
+					<![CDATA[ButtonColorTextOff]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="Tooltip" ver="5">
+			<body>
+				<![CDATA["Путь: " + ParDevPath + "." + ApParIn.Tag + "\nПояснение: " + ApParDescription.Value + " " + TextField.Text +"\nИсточник: "+ ApParComment.Value + "\nстатус: " + String.ToString(ApParOut.Quality) + "\nнеисправность: "+ String.ToString(ApParStatusBytes) + "\nпределы: "+ String.ToString(ApParAlarmBytes)]]>
+			</body>
+		</do-trace>
+	</object>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseRightClick" form-action="open-new" form-by-id="false">
+		<object access-modifier="private" uuid="8551d69c-d777-4f10-9ee8-cdef70d8cbd1" base-type="InfoTabSPR(X)" base-type-id="d610ad46-9efa-43ca-ba2c-92ee19ce944d" ver="5">
+			<init target="ParDevPath" ver="5" ref="here.ParDevPath"/>
+			<init target="PanelType" ver="5" value="информация"/>
+			<init target="ParameterType" ver="5" value="DI"/>
+		</object>
+	</do-on>
+	<object access-modifier="private" name="Open_AlarmView" display-name="Open_AlarmView" uuid="3d2a27de-18fc-477e-aa9e-0c0416c5429b" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-by-id="false" form-action="open-new-independent">
+			<object access-modifier="private" uuid="60c260c1-8e0b-4ce8-8389-529577915f8f" base-type="InfoViewMessages" base-type-id="2768341d-28ac-4654-8f4f-d392551ca1b7" ver="5">
+				<init target="ParDevPath" ver="5">
+					<expr>
+						<![CDATA[here.ParDevPath + ".In" + here.ObjDevPath]]>
+					</expr>
+				</init>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="HideText" display-name="Скрыть текст" uuid="7a9c2e42-aed3-4f71-86ad-c71fac79cba2" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="TextOn" display-name="Текст включенный" uuid="09ff7d2e-afae-4dd0-9144-d65bbc91afaa" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="TextOff" display-name="Текст отключенный" uuid="365c533e-1e87-403b-afcf-3a4b4301980a" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ButtonTextOff" display-name="Текст кнопки на отключение" uuid="8551c5f0-e40b-4734-8c0d-2fb2b46f930f" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ButtonTextOn" display-name="Текст кнопки на включение" uuid="9691187d-8d00-4fa5-ab75-e4c85f1e0766" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ButtonColorTextOn" display-name="Цвет текста включенной кнопки" uuid="d800f2f9-8ae5-4397-83e9-84f85ad18c5c" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ButtonColorTextOff" display-name="Цвет текста отключенной кнопки" uuid="9165f923-9f8b-49a5-837f-1c97c8d6f33c" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ViewOnly" display-name="Как лампочка" uuid="118de737-845c-485d-9788-6b81ca01948a" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="TransferDevPath" display-name="Путь до папки трансферов" uuid="3fa3618c-b08b-469e-bfad-59325d1ad3f5" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+</type>
+

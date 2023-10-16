@@ -1,0 +1,1319 @@
+<type access-modifier="public" name="ServerRedundancy" display-name="ServerRedundancy" uuid="e325538a-6456-460b-9299-78edcea2bb9a" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="640" ver="5"/>
+	<designed target="Height" value="130" ver="5"/>
+	<designed target="RoundingRadius" value="0" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="1" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xff646464" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<object access-modifier="private" name="RectangleMain" display-name="RectangleMain" uuid="ee380dff-f2e2-4df9-b5e7-b9d03bd848a1" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5">
+		<designed target="X" value="20" ver="5"/>
+		<designed target="Y" value="40" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="50" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xff00aaff" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<object access-modifier="private" name="Text_Description" display-name="Text_Description" uuid="f7ea89aa-6529-427b-8fe5-f889b38186d8" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="10" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="120" ver="5"/>
+			<designed target="Height" value="30" ver="5"/>
+			<designed target="Text" value="Активный" ver="5"/>
+			<designed target="Font" value="Arial,12,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<do-trace access-modifier="private" target="Text" ver="5">
+				<conditional-expr>
+					<condition>
+						<![CDATA[!(here.ApSource_RedundancyPLC.ConnectionState==2)]]>
+					</condition>
+					<expr>
+						<![CDATA["Пассивный"]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[(Ap_ServicePLCDescription == "Инициализация")?"...":Ap_ServicePLCDescription]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<designed target="Flip" value="0" ver="5"/>
+		</object>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Ap_PriorityMain && (here.ApSource_RedundancyPLC.ConnectionState==2)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xff00aaff]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<init target="BrushColor" ver="5" value="0xff000000"/>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PLCName" display-name="Text_PLCName" uuid="ecbac875-69e9-4243-a276-2cf81e55052c" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="160" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="Основная машина" ver="5"/>
+		<designed target="Font" value="Arial,12,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<body>
+				<![CDATA[_MainMachine]]>
+			</body>
+		</do-trace>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Ap_ServicePLCDescription" display-name="Ap_ServicePLCDescription" uuid="693cd350-d0e5-444b-94fb-98671acd0d02" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5">
+		<init target="Path" ver="5" value="State.Description"/>
+		<init target="Source" ver="5" ref="here.ApSource_RedundancyPLC"/>
+	</object>
+	<object access-modifier="private" name="Button_ActivePLC" display-name="Button_ActivePLC" uuid="acc13197-66fb-4e84-a419-3d62562467a1" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5">
+		<designed target="X" value="170" ver="5"/>
+		<designed target="Y" value="20" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="140" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<designed target="Checkable" value="false" ver="5"/>
+		<designed target="Checked" value="false" ver="5"/>
+		<designed target="Text" value="Сделать активным" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="OnClickFontColor" value="4278190080" ver="5"/>
+		<designed target="OnHoverFontColor" value="4278190080" ver="5"/>
+		<designed target="DisabledFontColor" value="4278190080" ver="5"/>
+		<designed target="BrushColor" value="4293980400" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="OnClickBrushColor" value="4288716960" ver="5"/>
+		<designed target="OnClickBrushStyle" value="1" ver="5"/>
+		<designed target="OnHoverBrushColor" value="4294967295" ver="5"/>
+		<designed target="OnHoverBrushStyle" value="1" ver="5"/>
+		<designed target="DisabledBrushColor" value="4288716960" ver="5"/>
+		<designed target="DisabledBrushStyle" value="1" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="OnClickPenColor" value="4278190080" ver="5"/>
+		<designed target="OnClickPenStyle" value="1" ver="5"/>
+		<designed target="OnClickPenWidth" value="1" ver="5"/>
+		<designed target="OnHoverPenColor" value="4278190080" ver="5"/>
+		<designed target="OnHoverPenStyle" value="1" ver="5"/>
+		<designed target="OnHoverPenWidth" value="1" ver="5"/>
+		<designed target="DisabledPenColor" value="4288716960" ver="5"/>
+		<designed target="DisabledPenStyle" value="1" ver="5"/>
+		<designed target="DisabledPenWidth" value="1" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+			<body kind="javascript">
+				<![CDATA[if (Ap_PriorityMain){
+Button_PLC_Proritet.Click();
+}
+else{
+Button_Clone_Prioritet.Click();
+}
+Ap_ActivatePLC = true;
+Ap_ActivatePLC = false;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Ap_ServicePLCDescription == "Активный"]]>
+				</condition>
+				<expr>
+					<![CDATA["Сделать пассивным"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Ap_ServicePLCDescription == "Пассивный"]]>
+				</condition>
+				<expr>
+					<![CDATA["Сделать активным"]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA["Сделать активным"]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[!(here.ApSource_RedundancyPLC.ConnectionState==2) || !(here.ApSource_RedundancyReserve.ConnectionState==2)]]>
+				</condition>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Ap_PLCName" display-name="Ap_PLCName" uuid="03bc52cc-c31a-47d7-9e0c-a15366dc845b" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5">
+		<init target="Path" ver="5" value="ServerArray"/>
+		<init target="Source" ver="5" ref="here.ApSource_RedundancyPLC"/>
+	</object>
+	<object access-modifier="private" name="RectangleReserve" display-name="RectangleReserve" uuid="d5873c2d-82ab-4fb4-a1a2-91a64bb2ec14" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5">
+		<designed target="X" value="500" ver="5"/>
+		<designed target="Y" value="40" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="50" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xff00aaff" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<object access-modifier="private" name="Text_Description" display-name="Text_Description" uuid="9717ebc4-8dd1-4b1d-9f41-5bd632869a3f" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="10" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="120" ver="5"/>
+			<designed target="Height" value="30" ver="5"/>
+			<designed target="Text" value="Активный" ver="5"/>
+			<designed target="Font" value="Arial,12,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<do-trace access-modifier="private" target="Text" ver="5">
+				<conditional-expr>
+					<condition>
+						<![CDATA[!(here.ApSource_RedundancyReserve.ConnectionState==2)]]>
+					</condition>
+					<expr>
+						<![CDATA["Пассивный"]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[(Ap_ServiceCloneDescription == "Инициализация")?"...":Ap_ServiceCloneDescription]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<designed target="Flip" value="0" ver="5"/>
+		</object>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Ap_PriorityClone && (here.ApSource_RedundancyReserve.ConnectionState==2)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xff00aaff]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_CloneName" display-name="Text_CloneName" uuid="2f55186c-6aa5-431d-a677-fdc23e023054" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5">
+		<designed target="X" value="480" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="160" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="Резервная машина" ver="5"/>
+		<designed target="Font" value="Arial,12,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<body>
+				<![CDATA[_ReserveMachine]]>
+			</body>
+		</do-trace>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Button_ActiveClone" display-name="Button_ActiveClone" uuid="abba66af-b8d6-4242-b2ae-21067c097cf1" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5">
+		<designed target="X" value="330" ver="5"/>
+		<designed target="Y" value="20" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="140" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<designed target="Checkable" value="false" ver="5"/>
+		<designed target="Checked" value="false" ver="5"/>
+		<designed target="Text" value="Сделать активным" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="OnClickFontColor" value="4278190080" ver="5"/>
+		<designed target="OnHoverFontColor" value="4278190080" ver="5"/>
+		<designed target="DisabledFontColor" value="4278190080" ver="5"/>
+		<designed target="BrushColor" value="4293980400" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="OnClickBrushColor" value="4288716960" ver="5"/>
+		<designed target="OnClickBrushStyle" value="1" ver="5"/>
+		<designed target="OnHoverBrushColor" value="4294967295" ver="5"/>
+		<designed target="OnHoverBrushStyle" value="1" ver="5"/>
+		<designed target="DisabledBrushColor" value="4288716960" ver="5"/>
+		<designed target="DisabledBrushStyle" value="1" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="OnClickPenColor" value="4278190080" ver="5"/>
+		<designed target="OnClickPenStyle" value="1" ver="5"/>
+		<designed target="OnClickPenWidth" value="1" ver="5"/>
+		<designed target="OnHoverPenColor" value="4278190080" ver="5"/>
+		<designed target="OnHoverPenStyle" value="1" ver="5"/>
+		<designed target="OnHoverPenWidth" value="1" ver="5"/>
+		<designed target="DisabledPenColor" value="4288716960" ver="5"/>
+		<designed target="DisabledPenStyle" value="1" ver="5"/>
+		<designed target="DisabledPenWidth" value="1" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+			<body kind="om">
+				<![CDATA[if (Ap_PriorityClone){
+Button_Clone_Prioritet.Click();
+}
+else{
+Button_PLC_Proritet.Click();
+}
+Ap_ActivateClone = true;
+Ap_ActivateClone = false;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Ap_ServiceCloneDescription == "Активный"]]>
+				</condition>
+				<expr>
+					<![CDATA["Сделать пассивным"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Ap_ServiceCloneDescription == "Пассивный"]]>
+				</condition>
+				<expr>
+					<![CDATA["Сделать активным"]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA["Сделать активным"]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[!(here.ApSource_RedundancyPLC.ConnectionState==2) || !(here.ApSource_RedundancyReserve.ConnectionState==2)]]>
+				</condition>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Ap_ServiceCloneDescription" display-name="Ap_ServiceCloneDescription" uuid="162c4969-3738-4ffc-a708-54006b85de0b" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5">
+		<init target="Path" ver="5" value="State.Description"/>
+		<init target="Source" ver="5" ref="here.ApSource_RedundancyReserve"/>
+	</object>
+	<object access-modifier="private" name="Ap_ActivateClone" display-name="Ap_ActivateClone" uuid="2cadfe98-d490-458e-9e64-c291b37e7367" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5">
+		<init target="Path" ver="5" value="Switch"/>
+		<init target="Source" ver="5" ref="here.ApSource_RedundancyReserve"/>
+	</object>
+	<object access-modifier="private" name="Ap_ActivatePLC" display-name="Ap_ActivatePLC" uuid="89df46a5-32b1-4a6f-8c20-0138b7cb5b65" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5">
+		<init target="Path" ver="5" value="Switch"/>
+		<init target="Source" ver="5" ref="here.ApSource_RedundancyPLC"/>
+	</object>
+	<object access-modifier="private" name="Line_Clone" display-name="Line_Clone" uuid="b3a2f0f5-b68b-443b-a996-46ff3586c8b7" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5">
+		<designed target="X" value="386" ver="5"/>
+		<designed target="Y" value="60" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="5" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="31" ver="5"/>
+		<designed target="Height" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="fbdd0b04-9009-4053-9d9a-de54ec9fc366" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="05b45e98-adbd-43d8-b844-3cfa86a44f25" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="31" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="7f5ec64e-e70c-4f7b-ab23-9e48fc88ac1b" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="31" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Line_1" display-name="Line_1" uuid="fae92502-573b-4855-ad50-30f159ae905f" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5">
+			<designed target="X" value="150" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="0" ver="5"/>
+			<designed target="Height" value="0" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+		</object>
+		<do-trace access-modifier="private" target="PenColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Ap_Channel1_connectionFromReserve && (here.ApSource_RedundancyReserve.ConnectionState==2)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00aa00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[!Ap_Channel1_connectionFromReserve || !(here.ApSource_RedundancyReserve.ConnectionState==2)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xffffffff]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Line_PLC" display-name="Line_PLC" uuid="3d83c617-42dd-4419-9bec-60aeea2fae33" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5">
+		<designed target="X" value="224" ver="5"/>
+		<designed target="Y" value="60" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="5" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="30.5" ver="5"/>
+		<designed target="Height" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xff000000" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="6d7ff26a-8520-4b91-b641-b793c6fb63e9" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="451cca7e-6364-465e-b347-e9b042a01441" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="30.5" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="95555e3e-19a5-4c88-bbcb-d98954984950" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="30.5" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Line_1" display-name="Line_1" uuid="2b51a2cb-83d2-4851-ae3a-aec93366489d" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5">
+			<designed target="X" value="150" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="0" ver="5"/>
+			<designed target="Height" value="0" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+		</object>
+		<do-trace access-modifier="private" target="PenColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Ap_Channel1_connectionFromMain && (here.ApSource_RedundancyPLC.ConnectionState==2)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00aa00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[!Ap_Channel1_connectionFromMain || !(here.ApSource_RedundancyPLC.ConnectionState==2)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xffffffff]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Button_PLC_Proritet" display-name="Button_PLC_Proritet" uuid="8156ac30-13f1-4071-816f-735bcaf6d843" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5">
+		<designed target="X" value="170" ver="5"/>
+		<designed target="Y" value="70" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="140" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<designed target="Checkable" value="false" ver="5"/>
+		<designed target="Checked" value="false" ver="5"/>
+		<designed target="Text" value="Установить приоритет" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="OnClickFontColor" value="4278190080" ver="5"/>
+		<designed target="OnHoverFontColor" value="4278190080" ver="5"/>
+		<designed target="DisabledFontColor" value="4278190080" ver="5"/>
+		<designed target="BrushColor" value="0xfff0f0f0" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="OnClickBrushColor" value="4288716960" ver="5"/>
+		<designed target="OnClickBrushStyle" value="1" ver="5"/>
+		<designed target="OnHoverBrushColor" value="4294967295" ver="5"/>
+		<designed target="OnHoverBrushStyle" value="1" ver="5"/>
+		<designed target="DisabledBrushColor" value="4288716960" ver="5"/>
+		<designed target="DisabledBrushStyle" value="1" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="OnClickPenColor" value="4278190080" ver="5"/>
+		<designed target="OnClickPenStyle" value="1" ver="5"/>
+		<designed target="OnClickPenWidth" value="1" ver="5"/>
+		<designed target="OnHoverPenColor" value="4278190080" ver="5"/>
+		<designed target="OnHoverPenStyle" value="1" ver="5"/>
+		<designed target="OnHoverPenWidth" value="1" ver="5"/>
+		<designed target="DisabledPenColor" value="4288716960" ver="5"/>
+		<designed target="DisabledPenStyle" value="1" ver="5"/>
+		<designed target="DisabledPenWidth" value="1" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+			<body kind="om">
+				<![CDATA[a: bool = Ap_PriorityMain;
+if (Ap_SetPriorityClone == false){
+Ap_SetPriorityMain = !a;
+Ap_SetPriorityClone = true;
+}
+else{
+Ap_SetPriorityClone = false;
+if (a == Ap_PriorityMain){
+Ap_SetPriorityMain = !a;
+}
+}
+]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Tooltip" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Ap_PriorityMain]]>
+				</condition>
+				<expr>
+					<![CDATA["Установлен приоритет сервера"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[!Ap_PriorityMain]]>
+				</condition>
+				<expr>
+					<![CDATA["Нет приоритета сервера"]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Ap_PriorityMain]]>
+				</condition>
+				<expr>
+					<![CDATA["Снять приоритет"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[!Ap_PriorityMain]]>
+				</condition>
+				<expr>
+					<![CDATA["Установить приоритет"]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Ap_PriorityMain]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00aa00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[!Ap_PriorityMain]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff5555ff]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xffb3b3b3]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[!(here.ApSource_RedundancyPLC.ConnectionState==2) || !(here.ApSource_RedundancyReserve.ConnectionState==2)]]>
+				</condition>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Button_Clone_Prioritet" display-name="Button_Clone_Prioritet" uuid="a8908380-e5e2-4288-9584-93b9ade7dc1c" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5">
+		<designed target="X" value="330" ver="5"/>
+		<designed target="Y" value="70" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="140" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<designed target="Checkable" value="false" ver="5"/>
+		<designed target="Checked" value="false" ver="5"/>
+		<designed target="Text" value="Установить приоритет" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="OnClickFontColor" value="4278190080" ver="5"/>
+		<designed target="OnHoverFontColor" value="4278190080" ver="5"/>
+		<designed target="DisabledFontColor" value="4278190080" ver="5"/>
+		<designed target="BrushColor" value="4293980400" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="OnClickBrushColor" value="4288716960" ver="5"/>
+		<designed target="OnClickBrushStyle" value="1" ver="5"/>
+		<designed target="OnHoverBrushColor" value="4294967295" ver="5"/>
+		<designed target="OnHoverBrushStyle" value="1" ver="5"/>
+		<designed target="DisabledBrushColor" value="4288716960" ver="5"/>
+		<designed target="DisabledBrushStyle" value="1" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="OnClickPenColor" value="4278190080" ver="5"/>
+		<designed target="OnClickPenStyle" value="1" ver="5"/>
+		<designed target="OnClickPenWidth" value="1" ver="5"/>
+		<designed target="OnHoverPenColor" value="4278190080" ver="5"/>
+		<designed target="OnHoverPenStyle" value="1" ver="5"/>
+		<designed target="OnHoverPenWidth" value="1" ver="5"/>
+		<designed target="DisabledPenColor" value="4288716960" ver="5"/>
+		<designed target="DisabledPenStyle" value="1" ver="5"/>
+		<designed target="DisabledPenWidth" value="1" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+			<body kind="om">
+				<![CDATA[a: bool = Ap_PriorityClone;
+if (Ap_SetPriorityMain == false){
+Ap_SetPriorityClone = !a;
+Ap_SetPriorityMain = true;
+}
+else{
+Ap_SetPriorityMain = false;
+if (a == Ap_PriorityClone){
+Ap_SetPriorityClone = !a;
+}
+}]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Tooltip" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Ap_PriorityClone]]>
+				</condition>
+				<expr>
+					<![CDATA["Установлен приоритет сервера"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[!Ap_PriorityClone]]>
+				</condition>
+				<expr>
+					<![CDATA["Нет приоритета сервера"]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Ap_PriorityClone]]>
+				</condition>
+				<expr>
+					<![CDATA["Снять приоритет"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[!Ap_PriorityClone]]>
+				</condition>
+				<expr>
+					<![CDATA["Установить приоритет"]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Ap_PriorityClone]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00aa00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[!Ap_PriorityClone]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff5555ff]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xff959595]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[!(here.ApSource_RedundancyPLC.ConnectionState==2) || !(here.ApSource_RedundancyReserve.ConnectionState==2)]]>
+				</condition>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Ap_SetPriorityMain" display-name="Ap_SetPriorityMain" uuid="a0c66f6d-511c-4f8d-a244-c76c604be035" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Priority.Set"/>
+		<init target="Source" ver="5" ref="here.ApSource_RedundancyPLC"/>
+	</object>
+	<object access-modifier="private" name="Ap_SetPriorityClone" display-name="Ap_SetPriorityClone" uuid="f9561b9b-d5dd-456b-a605-9d88bb4af2d8" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Priority.Set"/>
+		<init target="Source" ver="5" ref="here.ApSource_RedundancyReserve"/>
+	</object>
+	<object access-modifier="private" name="Line_Priority" display-name="Line_Priority" uuid="2be8728e-505e-4ab5-959e-96a700684321" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
+		<designed target="X" value="10" ver="5"/>
+		<designed target="Y" value="30" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="140" ver="5"/>
+		<designed target="Height" value="70" ver="5"/>
+		<designed target="PenColor" value="0xff00aa00" ver="5"/>
+		<designed target="PenStyle" value="2" ver="5"/>
+		<designed target="PenWidth" value="5" ver="5"/>
+		<designed target="BrushColor" value="0xff00aa00" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="510c87c0-b333-422f-8973-e87a15bd0cdb" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="f901fc5c-87a7-4f5f-abf7-5fa228f20748" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="140" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="45367078-09ae-4f4d-b081-faf7e48445ca" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="140" ver="5"/>
+			<designed target="Y" value="70" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="f65a6130-7235-46ba-95c8-e6f0cb69f222" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="70" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_5" display-name="Point_5" uuid="ce5d2ece-7741-44b0-b4c7-3ffbbb23a46e" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+		</object>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Ap_PriorityMain && (here.ApSource_RedundancyPLC.ConnectionState==2)]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Line_Priority_Reserve" display-name="Line_Priority_Reserve" uuid="963c9990-c20a-4175-9803-077cfb47de55" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
+		<designed target="X" value="490" ver="5"/>
+		<designed target="Y" value="30" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="140" ver="5"/>
+		<designed target="Height" value="70" ver="5"/>
+		<designed target="PenColor" value="0xff00aa00" ver="5"/>
+		<designed target="PenStyle" value="2" ver="5"/>
+		<designed target="PenWidth" value="5" ver="5"/>
+		<designed target="BrushColor" value="0xff00aa00" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="8aeb9bf1-2ccb-4754-b0c9-9afa0b32b28e" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="b1d00106-7ac7-4f86-90a7-0a5d5faf2d44" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="140" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="c90f9e1b-1828-461f-aa37-52937de1e767" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="140" ver="5"/>
+			<designed target="Y" value="70" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="87548322-0a8d-47f9-8bf7-7bd35ce50abd" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="70" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_5" display-name="Point_5" uuid="9ff44f92-9bd9-49cf-bb53-662a9e5f169f" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+		</object>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Ap_PriorityClone && (here.ApSource_RedundancyReserve.ConnectionState==2)]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="_MainMachine" display-name="_MainMachine" uuid="3ddac6d5-1607-4fbe-a5be-50f89505ccbc" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="_ReserveMachine" display-name="_ReserveMachine" uuid="b96143fd-f93e-4eda-b51c-3c5d5513c1fb" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Ap_PriorityMain" display-name="Ap_PriorityMain" uuid="84000b97-ec35-47af-938a-041f7c901824" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Priority"/>
+		<init target="Source" ver="5" ref="here.ApSource_RedundancyPLC"/>
+	</object>
+	<object access-modifier="private" name="Ap_PriorityClone" display-name="Ap_PriorityClone" uuid="08834beb-7171-45eb-8ab0-4262692cf977" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Priority"/>
+		<init target="Source" ver="5" ref="here.ApSource_RedundancyReserve"/>
+	</object>
+	<object access-modifier="private" name="Ap_Channel1_connectionFromMain" display-name="Ap_Channel1_connectionFromMain" uuid="873c844c-5583-43c6-8be4-0f3351e58f7a" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Channel1.ConnectionEstablished"/>
+		<init target="Source" ver="5" ref="here.ApSource_RedundancyPLC"/>
+	</object>
+	<object access-modifier="private" name="Ap_Channel1_connectionFromReserve" display-name="Ap_Channel1_connectionFromReserve" uuid="0b912955-4a38-4429-9230-5a4dd2e94aff" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Channel1.ConnectionEstablished"/>
+		<init target="Source" ver="5" ref="here.ApSource_RedundancyReserve"/>
+	</object>
+	<object access-modifier="private" name="Text_FailureStatusMain" display-name="Text_FailureStatusMain" uuid="e2159a69-2acd-44c7-ae10-a130d9c2e94b" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="110" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="290" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="Состояние: " ver="5"/>
+		<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="33" ver="5"/>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Ap_FailureStatusMain == "0" && (here.ApSource_RedundancyPLC.ConnectionState==2)]]>
+				</condition>
+				<expr>
+					<![CDATA["Состояние: нормальное"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Ap_FailureStatusMain == "1" && (here.ApSource_RedundancyPLC.ConnectionState==2)]]>
+				</condition>
+				<expr>
+					<![CDATA["Состояние: предупредительное"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Ap_FailureStatusMain == "2" || !(here.ApSource_RedundancyPLC.ConnectionState==2)]]>
+				</condition>
+				<expr>
+					<![CDATA["Состояние: аварийное"]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Ap_FailureStatusMain" display-name="Ap_FailureStatusMain" uuid="63ad4be2-82d5-4ed1-9edd-d40bece1a17f" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="FailureStatus"/>
+		<init target="Source" ver="5" ref="here.ApSource_RedundancyPLC"/>
+	</object>
+	<object access-modifier="private" name="Ap_ReasonFailureStatusMain" display-name="Ap_ReasonFailureStatusMain" uuid="2a68fbbc-a9d8-41bb-8490-3e3662bb6332" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="FailureStatus.Description"/>
+		<init target="Source" ver="5" ref="here.ApSource_RedundancyPLC"/>
+	</object>
+	<object access-modifier="private" name="Text_FailureStatusReserve" display-name="Text_FailureStatusReserve" uuid="25f07f66-727a-4e22-b46b-49563cdd8e70" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="350" ver="5"/>
+		<designed target="Y" value="110" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="290" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="Состояние: " ver="5"/>
+		<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="34" ver="5"/>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Ap_FailureStatusClone == "0" && (here.ApSource_RedundancyReserve.ConnectionState==2)]]>
+				</condition>
+				<expr>
+					<![CDATA["Состояние: нормальное"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Ap_FailureStatusClone == "1" && (here.ApSource_RedundancyReserve.ConnectionState==2)]]>
+				</condition>
+				<expr>
+					<![CDATA["Состояние: предупредительное"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Ap_FailureStatusClone == "2" || !(here.ApSource_RedundancyReserve.ConnectionState==2)]]>
+				</condition>
+				<expr>
+					<![CDATA["Состояние: аварийное"]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Ap_FailureStatusClone" display-name="Ap_FailureStatusClone" uuid="5d2d0819-77ae-4f13-b2c7-c996ae2a4fb4" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="FailureStatus"/>
+		<init target="Source" ver="5" ref="here.ApSource_RedundancyReserve"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_InfoMain" display-name="Rectangle_InfoMain" uuid="835a1eb0-ab51-45c3-9087-897ed8c845b9" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="160" ver="5"/>
+		<designed target="Height" value="110" ver="5"/>
+		<designed target="RoundingRadius" value="5" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffffffff" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="Tooltip" ver="5">
+			<body>
+				<![CDATA[(here.ApSource_RedundancyPLC.ConnectionState==2)?("Наименование: " + _MainMachine + "\r" +"Состояние: " + Ap_ServicePLCDescription + "\r" + "Состояние: " + " " + ((Ap_FailureStatusMain == "0")?"нормальное":((Ap_FailureStatusMain == "1")?"предупредительное":"аварийное")) + "\r" + "В приоритете: " + (Ap_PriorityMain?"да":"нет") + "\r" + "Канал 1: " + (Ap_Channel1_connectionFromMain?"есть связь":"нет связи")):("Наименование: " + _MainMachine + "\r" +"Состояние: потеря связи с сервером")]]>
+			</body>
+		</do-trace>
+		<init target="Tooltip" ver="5" value=""/>
+		<object access-modifier="private" name="Line_1" display-name="Line_1" uuid="21137900-b199-47d6-b700-5ba935d95580" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
+			<designed target="X" value="10" ver="5"/>
+			<designed target="Y" value="30" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="140" ver="5"/>
+			<designed target="Height" value="70" ver="5"/>
+			<designed target="PenColor" value="0xffff0000" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="6" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+			<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="017d2839-6b06-440c-901f-a2ccf38ccfb1" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="0" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="257d6171-f341-4a76-aa62-3b9a521a25ee" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+				<designed target="X" value="140" ver="5"/>
+				<designed target="Y" value="70" ver="5"/>
+			</object>
+			<do-trace access-modifier="private" target="Visible" ver="5">
+				<conditional-expr>
+					<condition>
+						<![CDATA[here.ApSource_RedundancyPLC.ConnectionState!=2]]>
+					</condition>
+					<expr>
+						<![CDATA[true]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[false]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<designed target="Flip" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Line_2" display-name="Line_2" uuid="cf29d23e-e68c-4ec8-aae4-74a41cb270b2" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
+			<designed target="X" value="150" ver="5"/>
+			<designed target="Y" value="30" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="140" ver="5"/>
+			<designed target="Height" value="70" ver="5"/>
+			<designed target="PenColor" value="0xffff0000" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="6" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+			<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="26ab3752-e749-4eaf-a379-9e83e719cbc3" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="0" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="6f15a162-e4ea-4394-b6ae-c527f90afa43" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+				<designed target="X" value="-140" ver="5"/>
+				<designed target="Y" value="70" ver="5"/>
+			</object>
+			<do-trace access-modifier="private" target="Visible" ver="5">
+				<conditional-expr>
+					<condition>
+						<![CDATA[here.ApSource_RedundancyPLC.ConnectionState!=2]]>
+					</condition>
+					<expr>
+						<![CDATA[true]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[false]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<designed target="Flip" value="0" ver="5"/>
+		</object>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_InfoReserve" display-name="Rectangle_InfoReserve" uuid="d21bb984-ea1b-44b4-9766-97dbafce349b" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="480" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="160" ver="5"/>
+		<designed target="Height" value="110" ver="5"/>
+		<designed target="RoundingRadius" value="5" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="Tooltip" ver="5">
+			<body>
+				<![CDATA[(here.ApSource_RedundancyReserve.ConnectionState==2)?("Наименование: " + _ReserveMachine + "\r" +"Состояние: " + Ap_ServiceCloneDescription + "\r" + "Состояние:" + " " + ((Ap_FailureStatusClone == "0")?"нормальное":((Ap_FailureStatusClone == "1")?"предупредительное":"аварийное")) + "\r" + "В приоритете: " + (Ap_PriorityClone?"да":"нет") + "\r" + "Канал 1: " + (Ap_Channel1_connectionFromReserve?"есть связь":"нет связи")):("Наименование: " + _ReserveMachine + "\r" +"Состояние: потеря связи с сервером")]]>
+			</body>
+		</do-trace>
+		<object access-modifier="private" name="Line_1" display-name="Line_1" uuid="6f39bc1f-5a1c-4763-a409-f09b63429fc9" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
+			<designed target="X" value="10" ver="5"/>
+			<designed target="Y" value="30" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="140" ver="5"/>
+			<designed target="Height" value="70" ver="5"/>
+			<designed target="PenColor" value="0xffff0000" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="6" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+			<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="5fc6bbdf-8d44-4068-a67b-64edbf99c67a" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="0" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="35874c63-beaf-4d13-af67-882ed01bc506" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+				<designed target="X" value="140" ver="5"/>
+				<designed target="Y" value="70" ver="5"/>
+			</object>
+			<do-trace access-modifier="private" target="Visible" ver="5">
+				<conditional-expr>
+					<condition>
+						<![CDATA[here.ApSource_RedundancyReserve.ConnectionState!=2]]>
+					</condition>
+					<expr>
+						<![CDATA[true]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[false]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<designed target="Flip" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Line_2" display-name="Line_2" uuid="7276d8d9-3204-4608-9ade-59b6fbb2f50b" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
+			<designed target="X" value="150" ver="5"/>
+			<designed target="Y" value="30" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="140" ver="5"/>
+			<designed target="Height" value="70" ver="5"/>
+			<designed target="PenColor" value="0xffff0000" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="6" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+			<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="1f1426d4-2f7b-4680-8b37-ee79abbdc71c" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="0" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="42ca6762-0433-4c75-91ec-e483804c9318" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+				<designed target="X" value="-140" ver="5"/>
+				<designed target="Y" value="70" ver="5"/>
+			</object>
+			<do-trace access-modifier="private" target="Visible" ver="5">
+				<conditional-expr>
+					<condition>
+						<![CDATA[here.ApSource_RedundancyReserve.ConnectionState!=2]]>
+					</condition>
+					<expr>
+						<![CDATA[true]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[false]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Ap_ReasonFailureStatusClone" display-name="Ap_ReasonFailureStatusClone" uuid="72899e7d-32e4-4020-b9cc-5ee112a9e0e4" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="FailureStatus.Description"/>
+		<init target="Source" ver="5" ref="here.ApSource_RedundancyReserve"/>
+	</object>
+	<object access-modifier="private" name="ApSource_RedundancyPLC" display-name="ApSource_RedundancyPLC" uuid="cfa53fd8-02f8-4059-a8b1-025a01bc3517" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5">
+		<designed target="Path" value="Service.Redundancy" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="Location" value="" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+		<init target="ParentSource" ver="5" ref="here._ApSourceMain"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnConnectionStateChanged">
+			<body kind="om">
+				<![CDATA[if((here.ApSource_RedundancyPLC.ConnectionState == 0) && Ap_PriorityMain){
+Button_ActiveClone.Click();
+}
+
+if((here.ApSource_RedundancyPLC.ConnectionState == 2) && !Ap_PriorityMain && (here.ApSource_RedundancyReserve.ConnectionState == 0)){
+Button_ActivePLC.Click();
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="ApSource_RedundancyReserve" display-name="ApSource_RedundancyReserve" uuid="ed2e5f07-c136-45e1-b316-669e7f9f4b4c" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5">
+		<designed target="Path" value="Service.Redundancy" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="Location" value="" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+		<init target="ParentSource" ver="5" ref="here._ApSourceReserve"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnConnectionStateChanged">
+			<body kind="om">
+				<![CDATA[if((here.ApSource_RedundancyReserve.ConnectionState == 0) && Ap_PriorityClone){
+Button_ActivePLC.Click();
+}
+
+if((here.ApSource_RedundancyReserve.ConnectionState == 2) && !Ap_PriorityClone && (here.ApSource_RedundancyPLC.ConnectionState == 0)){
+Button_ActiveClone.Click();
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<param access-modifier="private" name="_ApSourceMain" display-name="_ApSourceMain" uuid="bd8f06dd-b8f5-49ed-84da-002f0b38ec38" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" base-const="true" base-ref="true" ver="5" description=""/>
+	<param access-modifier="private" name="_ApSourceReserve" display-name="_ApSourceReserve" uuid="f3f28669-1939-444d-81c6-28e114636eab" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" base-const="true" base-ref="true" ver="5" description=""/>
+	<designed target="Flip" value="0" ver="5"/>
+</type>
+

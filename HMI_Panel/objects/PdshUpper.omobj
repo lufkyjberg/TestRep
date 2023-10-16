@@ -1,0 +1,581 @@
+<type access-modifier="private" name="PdshUpper" display-name="PdshUpper" uuid="901e3d80-b624-4a70-97ca-0c041ca31e47" base-type="" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Width" value="1360" ver="5"/>
+	<designed target="Height" value="680" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xff646464" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="1360" ver="5"/>
+	<designed target="WindowHeight" value="680" ver="5"/>
+	<designed target="WindowCaption" value="MainForm" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="1" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="1" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="0" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<object access-modifier="private" name="SegmentsTitle" display-name="SegmentsTitle" uuid="939cc9a3-801d-4e2b-9fcc-d1847e714625" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="705" ver="5"/>
+		<designed target="Y" value="49.75" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="355" ver="5"/>
+		<designed target="Height" value="48.5" ver="5"/>
+		<designed target="Text" value="Сегменты" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Segments" display-name="Segments" uuid="6c26c72e-512f-4dd1-8242-ddc1bf38d1a1" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5">
+		<designed target="X" value="705" ver="5"/>
+		<designed target="Y" value="113" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="355" ver="5"/>
+		<designed target="Height" value="240" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffe1a900" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<object access-modifier="private" name="SegmentsRow1" display-name="SegmentsRow1" uuid="727f2694-3bf6-4683-b8fd-7904e0dfe8ad" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="73" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="500" ver="5"/>
+			<designed target="Height" value="72" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="0" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="SegmentsRow2" display-name="SegmentsRow2" uuid="4e4de86c-180a-4448-9804-0f74f24cb154" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="145.66666666666663" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="500" ver="5"/>
+			<designed target="Height" value="72" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="0" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="SegmentsRow3" display-name="SegmentsRow3" uuid="5e6dbd16-c09d-44cf-9205-e49f3a6bb854" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="248.33333333333326" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="500" ver="5"/>
+			<designed target="Height" value="72" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="0" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="SegmentsRow4" display-name="SegmentsRow4" uuid="d2fe7685-cb3b-4cf3-8324-f1593ea07082" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="261" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="500" ver="5"/>
+			<designed target="Height" value="72" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="0" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="SegmentsNumber_4" display-name="SegmentsNumber_4" uuid="93d4adce-9837-415c-a2e9-529c56b703a5" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+			<designed target="X" value="2" ver="5"/>
+			<designed target="Y" value="159" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="56" ver="5"/>
+			<designed target="Height" value="33.5" ver="5"/>
+			<designed target="Text" value="5" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+		<object access-modifier="private" name="SegmentsNumber_3" display-name="SegmentsNumber_3" uuid="9ac4b7d5-b611-4d6c-870d-322dcdbc7d68" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+			<designed target="X" value="2" ver="5"/>
+			<designed target="Y" value="122" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="56" ver="5"/>
+			<designed target="Height" value="33.5" ver="5"/>
+			<designed target="Text" value="4" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+		<object access-modifier="private" name="SegmentsNumber" display-name="SegmentsNumber" uuid="4c1da7ce-f382-4026-9371-ed3381118daa" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+			<designed target="X" value="2" ver="5"/>
+			<designed target="Y" value="11" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="56" ver="5"/>
+			<designed target="Height" value="33.5" ver="5"/>
+			<designed target="Text" value="1" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+		<object access-modifier="private" name="SegmentsNumber_1" display-name="SegmentsNumber_1" uuid="75233d47-6d40-4be5-9423-5ab3f52d5378" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+			<designed target="X" value="2" ver="5"/>
+			<designed target="Y" value="48" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="56" ver="5"/>
+			<designed target="Height" value="33.5" ver="5"/>
+			<designed target="Text" value="2" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+		<object access-modifier="private" name="SegmentsNumber_2" display-name="SegmentsNumber_2" uuid="8a863384-7454-4f2c-9b74-05da723e13b0" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+			<designed target="X" value="2" ver="5"/>
+			<designed target="Y" value="85" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="56" ver="5"/>
+			<designed target="Height" value="33.5" ver="5"/>
+			<designed target="Text" value="3" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+		<object access-modifier="private" name="SegmentsNumber_5" display-name="SegmentsNumber_5" uuid="0431733e-7822-4f65-80d3-c66a234c0f6a" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+			<designed target="X" value="2" ver="5"/>
+			<designed target="Y" value="196" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="56" ver="5"/>
+			<designed target="Height" value="33.5" ver="5"/>
+			<designed target="Text" value="6" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="MainTitle" display-name="MainTitle" uuid="93c6c25c-7a3a-4879-95f8-84e7e119e8ab" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="1360" ver="5"/>
+		<designed target="Height" value="35" ver="5"/>
+		<designed target="Text" value="Термоконтроль верхнего направляющего подшипника" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Font" value="Arial,24,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextPdshUp" display-name="TextPdshUp" uuid="7ff436b3-6a59-47d5-a14f-a371e4c957a8" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="224" ver="5"/>
+		<designed target="Y" value="49" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="210" ver="5"/>
+		<designed target="Height" value="50" ver="5"/>
+		<designed target="Text" value="Верхний бьеф" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Led_NNP1-H" display-name="Led_NNP1-H" uuid="6f847cf9-9605-4149-84c4-1dae91383a49" base-type="LedСircle" base-type-id="3d54fe2a-c4a1-42c4-8cdb-eb0e55139ced" ver="5" description="" cardinal="1">
+		<designed target="X" value="954" ver="5"/>
+		<designed target="Y" value="124.75" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="32.000000000000114" ver="5"/>
+		<designed target="Height" value="32" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.PSH.VN.T_VNP1_H"/>
+		<do-trace access-modifier="private" target="ColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuYellow]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuLightGrey]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Led_NNP1-HH" display-name="Led_NNP1-HH" uuid="08f2fea5-acc0-4e6d-9b45-8f2ecc294f4e" base-type="LedСircle" base-type-id="3d54fe2a-c4a1-42c4-8cdb-eb0e55139ced" ver="5" description="" cardinal="1">
+		<designed target="X" value="1013.4000000000005" ver="5"/>
+		<designed target="Y" value="124.75" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="32.000000000000114" ver="5"/>
+		<designed target="Height" value="32" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.PSH.VN.T_VNP1_HH"/>
+		<do-trace access-modifier="private" target="ColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuRed]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuLightGrey]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Led_NNP4-H" display-name="Led_NNP4-H" uuid="85043a02-df43-4c68-aac6-2b416e271db7" base-type="LedСircle" base-type-id="3d54fe2a-c4a1-42c4-8cdb-eb0e55139ced" ver="5" description="" cardinal="1">
+		<designed target="X" value="954" ver="5"/>
+		<designed target="Y" value="235.75" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="32.000000000000114" ver="5"/>
+		<designed target="Height" value="32" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.PSH.VN.T_VNP4_H"/>
+		<do-trace access-modifier="private" target="ColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuYellow]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuLightGrey]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Led_NNP4-HH" display-name="Led_NNP4-HH" uuid="cf5343c6-0868-4986-9757-401195366d35" base-type="LedСircle" base-type-id="3d54fe2a-c4a1-42c4-8cdb-eb0e55139ced" ver="5" description="" cardinal="1">
+		<designed target="X" value="1013.4000000000005" ver="5"/>
+		<designed target="Y" value="235.75" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="32.000000000000114" ver="5"/>
+		<designed target="Height" value="32" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.PSH.VN.T_VNP4_HH"/>
+		<do-trace access-modifier="private" target="ColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuRed]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuLightGrey]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Podspk" display-name="Podspk" uuid="429aa1b1-0bdf-440f-88b7-d875e75bf7ae" base-type="PodspkCircle" base-type-id="17bbc15f-8867-4c0e-961f-6da1b776dff8" ver="5" description="" cardinal="1">
+		<designed target="X" value="124" ver="5"/>
+		<designed target="Y" value="130" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="410" ver="5"/>
+		<designed target="Height" value="410" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextPdshDown" display-name="TextPdshDown" uuid="8f833c56-bc68-402b-be5b-4d0f678e9126" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="224" ver="5"/>
+		<designed target="Y" value="608" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="210" ver="5"/>
+		<designed target="Height" value="50" ver="5"/>
+		<designed target="Text" value="Нижний бьеф" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<designed target="Flip" value="0" ver="5"/>
+	<object access-modifier="private" name="OilTempLabel" display-name="OilTempLabel" uuid="be475112-d69c-4722-9fc7-96e968a4f320" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="681" ver="5"/>
+		<designed target="Y" value="353.73329999999964" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="403" ver="5"/>
+		<designed target="Height" value="47.5" ver="5"/>
+		<designed target="Text" value="Температура масла подшипника" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="OilTemp" display-name="OilTemp" uuid="6efc1488-928b-4238-bbb6-a2469eec8f77" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5">
+		<designed target="X" value="705" ver="5"/>
+		<designed target="Y" value="402" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="355" ver="5"/>
+		<designed target="Height" value="88" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffe1a900" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<object access-modifier="private" name="OilTempRow2" display-name="OilTempRow2" uuid="46206ad1-8c97-4b2f-babd-9917c6fa9fc5" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="22" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="500" ver="5"/>
+			<designed target="Height" value="72" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="0" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+			<object access-modifier="private" name="OilTempLabel" display-name="OilTempLabel" uuid="d87e7069-4e28-4e3b-b23c-bb04d68eb55a" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+				<designed target="X" value="2" ver="5"/>
+				<designed target="Y" value="-13.083333333333371" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="56" ver="5"/>
+				<designed target="Height" value="33.5" ver="5"/>
+				<designed target="Text" value="ГМ" ver="5"/>
+				<designed target="TextAlignment" value="132" ver="5"/>
+				<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			</object>
+			<object access-modifier="private" name="OilTempLabel_1" display-name="OilTempLabel_1" uuid="b88abf98-4e29-41b4-a02f-1cad71330bdb" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+				<designed target="X" value="2" ver="5"/>
+				<designed target="Y" value="23.916666666666742" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="56" ver="5"/>
+				<designed target="Height" value="33.5" ver="5"/>
+				<designed target="Text" value="ХМ" ver="5"/>
+				<designed target="TextAlignment" value="132" ver="5"/>
+				<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			</object>
+		</object>
+		<object access-modifier="private" name="OilTempRow1" display-name="OilTempRow1" uuid="9364cd3c-389e-40c0-a143-057e7a78aafa" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="355" ver="5"/>
+			<designed target="Height" value="72" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="0" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="OilTempLow" display-name="OilTempLow" uuid="66be8eda-55c7-4728-963c-15207ae6fef4" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="509" ver="5"/>
+			<designed target="Y" value="5.9999999999999432" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="140" ver="5"/>
+			<designed target="Height" value="100" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="0" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="OilTempHigh" display-name="OilTempHigh" uuid="3dad01ab-4970-4c1f-aa64-4725be6aa739" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="562" ver="5"/>
+			<designed target="Y" value="7.9999999999999432" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="140" ver="5"/>
+			<designed target="Height" value="100" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="0" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Histogram_1" display-name="Histogram_1" uuid="07745de4-55b8-4e84-be41-f3dffb44d844" base-type="Histogram" base-type-id="9fa60370-34d5-471e-ad1c-a0e779a58693" ver="5" description="" cardinal="1">
+		<designed target="X" value="766" ver="5"/>
+		<designed target="Y" value="160.75" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="180" ver="5"/>
+		<designed target="Height" value="34" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.VNPSH.T_VNP2"/>
+		<init target="InformationIsGivenInPercent" ver="5" value="false"/>
+	</object>
+	<object access-modifier="private" name="Histogram_2" display-name="Histogram_2" uuid="236246eb-69e1-45dc-b74b-29c68190aa53" base-type="Histogram" base-type-id="9fa60370-34d5-471e-ad1c-a0e779a58693" ver="5" description="" cardinal="1">
+		<designed target="X" value="766" ver="5"/>
+		<designed target="Y" value="197.75" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="180" ver="5"/>
+		<designed target="Height" value="34" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.VNPSH.T_VNP3"/>
+		<init target="InformationIsGivenInPercent" ver="5" value="false"/>
+	</object>
+	<object access-modifier="private" name="Histogram_3" display-name="Histogram_3" uuid="44fcfb3e-bd32-4d45-a710-e85f9b6d2913" base-type="Histogram" base-type-id="9fa60370-34d5-471e-ad1c-a0e779a58693" ver="5" description="" cardinal="1">
+		<designed target="X" value="766" ver="5"/>
+		<designed target="Y" value="271.75" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="180" ver="5"/>
+		<designed target="Height" value="34" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.VNPSH.T_VNP5"/>
+		<init target="InformationIsGivenInPercent" ver="5" value="false"/>
+	</object>
+	<object access-modifier="private" name="Histogram_4" display-name="Histogram_4" uuid="3a190bac-0b99-41f0-b7f2-cd065ac08428" base-type="Histogram" base-type-id="9fa60370-34d5-471e-ad1c-a0e779a58693" ver="5" description="" cardinal="1">
+		<designed target="X" value="766" ver="5"/>
+		<designed target="Y" value="308.75" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="180" ver="5"/>
+		<designed target="Height" value="34" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.VNPSH.T_VNP6"/>
+		<init target="InformationIsGivenInPercent" ver="5" value="false"/>
+	</object>
+	<object access-modifier="private" name="Histogram_5" display-name="Histogram_5" uuid="c41d77cb-4d90-483e-b071-7836dc83f260" base-type="Histogram" base-type-id="9fa60370-34d5-471e-ad1c-a0e779a58693" ver="5" description="" cardinal="1">
+		<designed target="X" value="766" ver="5"/>
+		<designed target="Y" value="410.66666666666663" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="180" ver="5"/>
+		<designed target="Height" value="34" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.VNPSH.T_oil_VNP1"/>
+		<init target="InformationIsGivenInPercent" ver="5" value="false"/>
+	</object>
+	<object access-modifier="private" name="Histogram_6" display-name="Histogram_6" uuid="2dab3512-59a6-468a-862b-c294e974bb5a" base-type="Histogram" base-type-id="9fa60370-34d5-471e-ad1c-a0e779a58693" ver="5" description="" cardinal="1">
+		<designed target="X" value="766" ver="5"/>
+		<designed target="Y" value="447.66666666666674" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="180" ver="5"/>
+		<designed target="Height" value="34" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.VNPSH.T_oil_VNP2"/>
+		<init target="InformationIsGivenInPercent" ver="5" value="false"/>
+	</object>
+	<object access-modifier="private" name="OilTempLabel_1" display-name="OilTempLabel_1" uuid="225d1b37-b1ba-47ba-8f3b-7c2f30842a68" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="1195" ver="5"/>
+		<designed target="Y" value="634.9166666666664" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="148" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<designed target="Text" value="ГМ - горячее масло" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="OilTempLabel_2" display-name="OilTempLabel_2" uuid="adf6b33c-13e4-4452-8aae-9d98fd8de76f" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="1195" ver="5"/>
+		<designed target="Y" value="652.91666666666652" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="148" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<designed target="Text" value="ХМ - холодное масло" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_1" display-name="DiscreteDpValue_1" uuid="d2a82e2d-0276-4606-b828-fbd09b31b7cc" base-type="DiscreteDpValue" base-type-id="0aa36430-7867-405c-b541-89e8cf6e92d2" ver="5" description="" cardinal="1">
+		<designed target="X" value="954.33333333333326" ver="5"/>
+		<designed target="Y" value="410.66666666666663" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="95.085903083700487" ver="5"/>
+		<designed target="Height" value="34" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.VNPSH.T_oil_VNP_H"/>
+		<do-trace access-modifier="private" target="TextColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuRed]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="TextColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGrey]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_2" display-name="DiscreteDpValue_2" uuid="d50c17b9-c58f-4b6c-aec0-6e22b54eeb25" base-type="DiscreteDpValue" base-type-id="0aa36430-7867-405c-b541-89e8cf6e92d2" ver="5" description="" cardinal="1">
+		<designed target="X" value="954.33333333333326" ver="5"/>
+		<designed target="Y" value="447.66666666666674" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="95.085903083700487" ver="5"/>
+		<designed target="Height" value="34" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.VNPSH.T_oil_VNP_L"/>
+		<do-trace access-modifier="private" target="TextColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuRed]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="TextColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGrey]]>
+			</body>
+		</do-trace>
+	</object>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Opened">
+		<body kind="om">
+			<![CDATA[Global.formWidth = here.Width;]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="AnalogDpValue_1" display-name="AnalogDpValue_1" uuid="7e2553da-06c7-4949-aa09-c57eb1ecbc1c" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="973" ver="5"/>
+		<designed target="Y" value="539.5" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.HydroMech.L_oil_VNP"/>
+		<init target="ParameterType" ver="5" value="AI"/>
+	</object>
+	<object access-modifier="private" name="TextSignalDescription_1" display-name="TextSignalDescription_1" uuid="6a83bad9-d4df-4f25-8c3f-177e8b3e045a" base-type="TextSignalDescription" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+		<designed target="X" value="687" ver="5"/>
+		<designed target="Y" value="537" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="275.00000000000011" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.HydroMech.L_oil_VNP"/>
+	</object>
+</type>
+

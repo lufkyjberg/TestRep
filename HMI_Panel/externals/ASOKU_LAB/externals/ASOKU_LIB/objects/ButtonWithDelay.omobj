@@ -1,0 +1,133 @@
+<type access-modifier="public" name="ButtonWithDelay" display-name="ButtonWithDelay" uuid="6c5f7a84-b25e-4c61-b839-ede35698c66b" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="130" ver="5"/>
+	<designed target="Height" value="30" ver="5"/>
+	<designed target="Checkable" value="false" ver="5"/>
+	<designed target="Checked" value="false" ver="5"/>
+	<designed target="Text" value="Кнопка" ver="5"/>
+	<designed target="TextAlignment" value="132" ver="5"/>
+	<designed target="Font" value="Arial,8,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	<designed target="FontColor" value="4278190080" ver="5"/>
+	<designed target="OnClickFontColor" value="4278190080" ver="5"/>
+	<designed target="OnHoverFontColor" value="4278190080" ver="5"/>
+	<designed target="DisabledFontColor" value="4278190080" ver="5"/>
+	<designed target="BrushColor" value="4293980400" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="OnClickBrushColor" value="4288716960" ver="5"/>
+	<designed target="OnClickBrushStyle" value="1" ver="5"/>
+	<designed target="OnHoverBrushColor" value="4294967295" ver="5"/>
+	<designed target="OnHoverBrushStyle" value="1" ver="5"/>
+	<designed target="DisabledBrushColor" value="4288716960" ver="5"/>
+	<designed target="DisabledBrushStyle" value="1" ver="5"/>
+	<designed target="PenColor" value="0xff000000" ver="5"/>
+	<designed target="PenStyle" value="1" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="OnClickPenColor" value="4278190080" ver="5"/>
+	<designed target="OnClickPenStyle" value="1" ver="5"/>
+	<designed target="OnClickPenWidth" value="1" ver="5"/>
+	<designed target="OnHoverPenColor" value="0xff000000" ver="5"/>
+	<designed target="OnHoverPenStyle" value="1" ver="5"/>
+	<designed target="OnHoverPenWidth" value="1" ver="5"/>
+	<designed target="DisabledPenColor" value="4288716960" ver="5"/>
+	<designed target="DisabledPenStyle" value="1" ver="5"/>
+	<designed target="DisabledPenWidth" value="1" ver="5"/>
+	<object access-modifier="private" name="ApSourcePar" display-name="ApSourcePar" uuid="8c9d431e-551d-466e-bc4d-be9dba2de1ab" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+		<designed target="Location" value="" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="Path" value="" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath.Value]]>
+			</body>
+		</do-trace>
+		<init target="ParentSource" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ParDevPath" display-name="Путь параметра" uuid="79558e81-2ef8-4334-858c-669d525476eb" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="StringText" display-name="Текст на кнопке" uuid="5ef28282-5c2f-4821-b7f6-15b63bdcdf42" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<do-trace access-modifier="private" target="Text" ver="5">
+		<body>
+			<![CDATA[StringText]]>
+		</body>
+	</do-trace>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MousePress">
+		<body kind="om">
+			<![CDATA[ApParValue.Value = true;
+Timer_1.Active = true;]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="Timer_1" display-name="Timer_1" uuid="d2cb9848-f41d-4070-a2f3-2a211ae2f857" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="5" description="" cardinal="1">
+		<designed target="Period" value="5000" ver="5"/>
+		<designed target="Active" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnTimer">
+			<body kind="om">
+				<![CDATA[ApParValue = false;
+Timer_1.Active = false;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="ApParValue" display-name="ApParValue" uuid="4f8e4a09-3a81-4363-99f7-c394519088a1" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Value"/>
+		<init target="Source" ver="5" ref="here.ApSourcePar"/>
+	</object>
+	<do-trace access-modifier="private" target="PenColor" ver="5">
+		<conditional-expr>
+			<condition>
+				<![CDATA[ApParValue.Value == true]]>
+			</condition>
+			<expr>
+				<![CDATA[AsokuColor.asokuGreen]]>
+			</expr>
+		</conditional-expr>
+		<conditional-expr>
+			<condition>
+				<![CDATA[ApParValue.Value == false]]>
+			</condition>
+			<expr>
+				<![CDATA[AsokuColor.asokuRed]]>
+			</expr>
+		</conditional-expr>
+		<default-expr>
+			<expr>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</expr>
+		</default-expr>
+	</do-trace>
+	<do-trace access-modifier="private" target="OnHoverPenColor" ver="5">
+		<conditional-expr>
+			<condition>
+				<![CDATA[ApParValue.Value == true]]>
+			</condition>
+			<expr>
+				<![CDATA[AsokuColor.asokuGreen]]>
+			</expr>
+		</conditional-expr>
+		<conditional-expr>
+			<condition>
+				<![CDATA[ApParValue.Value == false]]>
+			</condition>
+			<expr>
+				<![CDATA[AsokuColor.asokuRed]]>
+			</expr>
+		</conditional-expr>
+		<default-expr>
+			<expr>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</expr>
+		</default-expr>
+	</do-trace>
+</type>
+

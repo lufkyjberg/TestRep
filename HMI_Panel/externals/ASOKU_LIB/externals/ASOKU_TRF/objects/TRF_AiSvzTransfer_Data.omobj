@@ -1,0 +1,613 @@
+<type access-modifier="public" name="TRF_AiSvzTransfer_Data" display-name="TRF_AiSvzTransfer_Data" uuid="369e11f9-e9f9-42c0-ae3f-e3768b1a08ce" base-type="" base-type-id="00000000-0000-0000-0000-000000000000" ver="5" description="">
+	<object access-modifier="private" name="Ap_Source_Transfer" display-name="Ap_Source_Transfer" uuid="3e30c3c3-0767-47c0-ae37-b1218ed498e8" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+		<designed target="Location" value="" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="Path" value="" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[transferDevPath.Value]]>
+			</body>
+		</do-trace>
+		<init target="ParentSource" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="transferDevPath" display-name="полный путь до узла трансфера" uuid="e3e52919-ba48-478d-a9f8-4e539b91f288" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Ap_TRF_ExternalMode_In" display-name="Ap_TRF_ExternalMode_In" uuid="4434543d-d163-453d-b967-1c228b087966" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.ExternalMode.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_SmoothingOn_In" display-name="Ap_TRF_SmoothingOn_In" uuid="2aabbd30-9282-4664-bf9b-01c9bf7d1e7c" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.SmoothingOn.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_SmoothingOn_Out" display-name="Ap_TRF_SmoothingOn_Out" uuid="047cbc8c-e0c1-4953-a1ba-513e74d8db9b" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.SmoothingOn.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_SmoothTime_In" display-name="Ap_TRF_SmoothTime_In" uuid="493fe2d9-56b1-44a9-adc6-f8f9f227c166" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.smooth_time.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_SmoothTime_Out" display-name="Ap_TRF_SmoothTime_Out" uuid="fb9a6704-fd6f-4271-8a27-59451c832fe7" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.smooth_time.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ChClType_In" display-name="Ap_TRF_ChClType_In" uuid="2e69f2e9-0b62-4f3d-b817-4521253c07b9" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.CH_CL_Type.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ChClType_Out" display-name="Ap_TRF_ChClType_Out" uuid="e6d5f342-0ed3-469e-8cd4-d846b496aa19" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.CH_CL_Type.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_OOsType_In" display-name="Ap_TRF_OOsType_In" uuid="940234cf-c768-4cdf-bbd2-839e54000f09" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.OOsType.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_OOsType_Out" display-name="Ap_TRF_OOsType_Out" uuid="513fff2b-a0b0-4275-b5f1-53bdf16b08fc" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.OOsType.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_HH_off_In" display-name="Ap_TRF_HH_off_In" uuid="a20d4e82-c754-473c-a9a9-0edfa8c0f649" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.HH_delay.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_HH_off_Out" display-name="Ap_TRF_HH_off_Out" uuid="a39c4cd3-cee7-4c1e-b754-05736fa0b6d8" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.HH_off.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_HH_delay_In" display-name="Ap_TRF_HH_delay_In" uuid="f2bdbf4c-130f-4103-88a6-58c387c711e0" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.HH_delay.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_HH_delay_Out" display-name="Ap_TRF_HH_delay_Out" uuid="78ca6908-d8c5-442f-aef8-f024383fb833" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.HH_delay.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_HH_value_In" display-name="Ap_TRF_HH_value_In" uuid="ffbc9a38-1b72-447d-938f-77df43974381" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.HH_value.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_HH_value_Out" display-name="Ap_TRF_HH_value_Out" uuid="ec9735c7-7fd7-44f5-8624-e22b32a3afb0" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.HH_value.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_HH_hys_off_In" display-name="Ap_TRF_HH_hys_off_In" uuid="dbf61d7f-095c-475f-b0eb-2a42c872db72" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.HH_delay.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_HH_hys_off_Out" display-name="Ap_TRF_HH_hys_off_Out" uuid="3f75a949-4194-4f86-95da-d4809e137c4f" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.HH_delay.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_H_value_In" display-name="Ap_TRF_H_value_In" uuid="ee9c4a54-17d9-459a-987c-82f63b264605" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.H_value.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_H_value_Out" display-name="Ap_TRF_H_value_Out" uuid="321e74f1-3770-44b6-aeb9-d6c2c7fdc1e9" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.H_value.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_H_off_In" display-name="Ap_TRF_H_off_In" uuid="733fd38b-c63c-41ff-89a6-108c61d2b5b9" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.H_off.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_H_off_Out" display-name="Ap_TRF_H_off_Out" uuid="dcfb71f1-7287-4015-9eee-bbbbe9e216f6" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.H_off.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_H_delay_In" display-name="Ap_TRF_H_delay_In" uuid="cea0aaeb-f579-4103-9a3f-142a9145d2c1" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.H_delay.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_H_delay_Out" display-name="Ap_TRF_H_delay_Out" uuid="418f82a6-1e7c-4a94-9c96-0761134faaef" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.H_delay.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_H_hys_off_In" display-name="Ap_TRF_H_hys_off_In" uuid="7a97a384-c9a3-4469-8124-5a5a574be127" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.H_hys_off.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_H_hys_off_Out" display-name="Ap_TRF_H_hys_off_Out" uuid="9391b7ec-0dc4-45c3-b820-686ab36b6869" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.H_hys_off.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_L_off_In" display-name="Ap_TRF_L_off_In" uuid="6646ff54-a4d1-4287-a93e-a1c73e8d7e70" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.L_off.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_L_off_Out" display-name="Ap_TRF_L_off_Out" uuid="3927e242-fefe-40f5-af09-8f92ed546952" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.L_off.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_L_value_In" display-name="Ap_TRF_L_value_In" uuid="586a2989-57c2-4068-aaa4-1fee0a1d748d" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.L_value.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_L_value_Out" display-name="Ap_TRF_L_value_Out" uuid="d99f9546-e9ce-4d0b-80a4-9773491c640f" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.L_value.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_L_delay_In" display-name="Ap_TRF_L_delay_In" uuid="10073254-98ce-45ca-a7b8-3ce36a23ec75" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.L_delay.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_L_delay_Out" display-name="Ap_TRF_L_delay_Out" uuid="4e14b192-453b-4a6b-88b3-fa2f8214d97b" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.L_delay.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_L_hys_off_In" display-name="Ap_TRF_L_hys_off_In" uuid="0dfdb9b1-c27b-4b3c-a7de-d1e612c13ffb" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.L_hys_off.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_L_hys_off_Out" display-name="Ap_TRF_L_hys_off_Out" uuid="f6649468-8ab2-422f-b104-75982d590473" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.L_hys_off.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_LL_off_In" display-name="Ap_TRF_LL_off_In" uuid="dc65779e-bda0-4593-8507-a06802eda37c" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.LL_off.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_LL_off_Out" display-name="Ap_TRF_LL_off_Out" uuid="5fb3334a-93ca-4430-b28b-ffde792212e2" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.LL_off.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_LL_value_In" display-name="Ap_TRF_LL_value_In" uuid="89465781-2414-4a04-ae3a-f53a49ef6436" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.LL_value.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_LL_value_Out" display-name="Ap_TRF_LL_value_Out" uuid="de911e70-44cb-47f1-954b-4394addc0546" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.LL_value.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_LL_delay_In" display-name="Ap_TRF_LL_delay_In" uuid="2f49215f-258d-4fef-b170-a26e03ae5006" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.LL_delay.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_LL_delay_Out" display-name="Ap_TRF_LL_delay_Out" uuid="ad0c8fac-c5f5-470f-9283-1c7d20d0da27" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.LL_delay.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_LL_hys_off_In" display-name="Ap_TRF_LL_hys_off_In" uuid="653840fe-08e9-44c6-8cd8-01799a13e63c" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.LL_hys_off.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_LL_hys_off_Out" display-name="Ap_TRF_LL_hys_off_Out" uuid="f716c76e-76a4-4ee2-a9ab-7b4fe0c78632" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.LL_hys_off.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_CH_off_In" display-name="Ap_TRF_CH_off_In" uuid="521ad9bd-d05b-447e-aa43-6fc05a6ba07b" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.CH_off.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_CH_off_Out" display-name="Ap_TRF_CH_off_Out" uuid="fd0090ab-4279-41af-a524-ab28a424c290" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.CH_off.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_CH_value_In" display-name="Ap_TRF_CH_value_In" uuid="009ab41c-3a40-416b-8eb2-eea4ca9ca164" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.CH_value.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_CH_value_Out" display-name="Ap_TRF_CH_value_Out" uuid="690b5758-7de3-43e8-ab41-bfd27c7f5e77" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.CH_value.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_CH_delay_In" display-name="Ap_TRF_CH_delay_In" uuid="93f9ccd7-38d9-4630-9017-16b55a3e4640" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.CH_delay.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_CH_delay_Out" display-name="Ap_TRF_CH_delay_Out" uuid="c68a950f-ab24-4387-ae86-43baee69920d" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.CH_delay.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_CH_hys_off_In" display-name="Ap_TRF_CH_hys_off_In" uuid="7694256d-f5d4-46b3-a6e4-2f7c80d576fc" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.CH_hys_off.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_CH_hys_off_Out" display-name="Ap_TRF_CH_hys_off_Out" uuid="56dd14ce-2829-4c7c-ba1c-60bb4f04acee" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.CH_hys_off.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_CL_off_In" display-name="Ap_TRF_CL_off_In" uuid="19f37018-88ac-40d7-a058-8fc26d352c6d" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.CL_off.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_CL_off_Out" display-name="Ap_TRF_CL_off_Out" uuid="d093172b-0c53-4da6-931e-5187e61d6d0c" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.CL_off.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_CL_value_In" display-name="Ap_TRF_CL_value_In" uuid="3fd9870f-d491-440c-ab17-51eae55f6253" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.CL_value.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_CL_value_Out" display-name="Ap_TRF_CL_value_Out" uuid="c77eff19-1bfb-49e6-8415-f922ea9655c9" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.CL_value.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_CL_delay_In" display-name="Ap_TRF_CL_delay_In" uuid="045599f0-9e69-48eb-b007-9a81efceda6e" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.CL_delay.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_CL_delay_Out" display-name="Ap_TRF_CL_delay_Out" uuid="cac7e658-f86d-4871-8bb2-57122a5d637c" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.CL_delay.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_CL_hys_off_In" display-name="Ap_TRF_CL_hys_off_In" uuid="7da8a516-f477-46a9-9355-a4c570ebc155" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.CL_hys_off.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_CL_hys_off_Out" display-name="Ap_TRF_CL_hys_off_Out" uuid="f9a4b5ba-8207-48f6-8d72-b76196254c83" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.CL_hys_off.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_PhysRangeMin_In" display-name="Ap_TRF_PhysRangeMin_In" uuid="910e90a8-b19c-48bf-8ef3-ae280ec81697" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.PhysRangeMin.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_PhysRangeMin_Out" display-name="Ap_TRF_PhysRangeMin_Out" uuid="4ecbaab5-d45d-47d9-8f99-cc567ceb6ee4" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.PhysRangeMin.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_PhysRangeMax_In" display-name="Ap_TRF_PhysRangeMax_In" uuid="6d937479-c28d-4a30-b84a-e552af4e72df" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.PhysRangeMax.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_PhysRangeMax_Out" display-name="Ap_TRF_PhysRangeMax_Out" uuid="1bf15df9-0a69-4648-bfca-675fc04d36a4" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.PhysRangeMax.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_Groups_In" display-name="Ap_TRF_Groups_In" uuid="9d2b9042-9527-4053-96fb-a14e6db655ec" base-type="ApItemUInt4" base-type-id="322ce770-6c7b-49bc-9cd6-a367ca5b4627" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.Groups.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_Groups_Out" display-name="Ap_TRF_Groups_Out" uuid="42335fe9-7df0-4bda-a399-2cbb5d989147" base-type="ApItemUInt4" base-type-id="322ce770-6c7b-49bc-9cd6-a367ca5b4627" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.Groups.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_dAbs_jump_In" display-name="Ap_TRF_dAbs_jump_In" uuid="a81b915b-b3f6-4d1e-975e-f3f601b89aca" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.dAbs_jump.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_dAbs_jump_Out" display-name="Ap_TRF_dAbs_jump_Out" uuid="ac5ea4b4-557c-4240-8c48-b0349560d889" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.dAbs_jump.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_dAbs_t1_In" display-name="Ap_TRF_dAbs_t1_In" uuid="14a0edaf-c83b-46b0-8f14-36325fbf90c1" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.dAbs_t1.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_dAbs_t1_Out" display-name="Ap_TRF_dAbs_t1_Out" uuid="c96f3491-7524-4e20-bb93-1255e4f439d5" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.dAbs_t1.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_dAbs_t5_In" display-name="Ap_TRF_dAbs_t5_In" uuid="58c9a8d3-90e0-47cc-b19d-085c778d9f22" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.dAbs_t5.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_dAbs_t5_Out" display-name="Ap_TRF_dAbs_t5_Out" uuid="d235bcee-5608-4376-af5f-924e9bcf2bfe" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.dAbs_t5.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_dAbs_t30_In" display-name="Ap_TRF_dAbs_t30_In" uuid="0c5a3665-7dcb-4905-bdb6-e5bf0495c1a1" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.dAbs_t30.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_dAbs_t30_Out" display-name="Ap_TRF_dAbs_t30_Out" uuid="f688addc-1a9f-4a7a-a8c6-56d532f20e01" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.dAbs_t30.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_dAbs_t60_In" display-name="Ap_TRF_dAbs_t60_In" uuid="e5da5b29-cafa-4863-b294-74cb2abe9fff" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.dAbs_t60.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_dAbs_t60_Out" display-name="Ap_TRF_dAbs_t60_Out" uuid="37dbe427-ff77-49ea-aa07-0c02df2d70f1" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.dAbs_t60.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_dAbs_t120_In" display-name="Ap_TRF_dAbs_t120_In" uuid="43156e0b-09fd-4cbe-b112-03598facbf49" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.dAbs_t120.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_dAbs_t120_Out" display-name="Ap_TRF_dAbs_t120_Out" uuid="2fcd11fc-b553-4f40-8fa2-08c95471a048" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.dAbs_t120.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_dInt_t5_In" display-name="Ap_TRF_dInt_t5_In" uuid="0630b6fa-31c6-4f5b-806d-e54b363f6688" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.dInt_t5.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_dInt_t5_Out" display-name="Ap_TRF_dInt_t5_Out" uuid="1f3985c9-1ee8-4148-83e7-24305a6017c1" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.dInt_t5.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_dInt_t30_In" display-name="Ap_TRF_dInt_t30_In" uuid="91ed3fab-e6c7-4171-84bc-d667a60983f7" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.dInt_t30.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_dInt_t30_Out" display-name="Ap_TRF_dInt_t30_Out" uuid="f8c8b3bf-9e95-4911-bfe2-82b05519b2c9" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.dInt_t30.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_dInt_t60_In" display-name="Ap_TRF_dInt_t60_In" uuid="f0fa813d-3ae6-4131-8bd3-18fd20af3d3f" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.dInt_t60.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_dInt_t60_Out" display-name="Ap_TRF_dInt_t60_Out" uuid="a726d1b4-a6fc-4726-ad97-2f0f5e395e7c" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.dInt_t60.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_dInt_t120_In" display-name="Ap_TRF_dInt_t120_In" uuid="7e099916-0597-40fe-8ace-96f72b170fe4" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.dInt_t120.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_dInt_t120_Out" display-name="Ap_TRF_dInt_t120_Out" uuid="961a1dbf-973b-4d3a-9359-942f132321dc" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.dInt_t120.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_TimeOutCounter_In" display-name="Ap_TRF_TimeOutCounter_In" uuid="4fbf31de-3dab-48fc-b811-9925cba77fee" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.TimeOutCounter.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_TimeOutCounter_Out" display-name="Ap_TRF_TimeOutCounter_Out" uuid="8f5dfcc2-86e3-4eee-9680-5e14d17ab252" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.TimeOutCounter.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="DebugTool_1" display-name="DebugTool_1" uuid="2cf3109c-303f-4e65-9ab0-5d2bf196edde" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Ap_TRF_SimulationValue_In" display-name="Ap_TRF_SimulationValue_In" uuid="56b47580-8c67-43d4-b3d3-abe7bb5412b5" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.SimulationValue.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_SimulationValue_Out" display-name="Ap_TRF_SimulationValue_Out" uuid="6e34af56-3c89-48b0-b0db-f524a0b242f6" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.SimulationValue.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_Reserv_Out" display-name="Ap_TRF_Reserv_Out" uuid="656cb841-dafe-4f3a-bcc7-6c05b990463b" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+		<init target="Path" ver="5" value="In.Reserv.Value"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ElRangeMin_Out" display-name="Ap_TRF_ElRangeMin_Out" uuid="0c9c3387-f437-49e8-9aee-35a38497879f" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.ElRangeMin.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ElRangeMax_Out" display-name="Ap_TRF_ElRangeMax_Out" uuid="89747bf5-bcf8-472a-916d-55530fea9555" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.ElRangeMax.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ElRangeHyst_Out" display-name="Ap_TRF_ElRangeHyst_Out" uuid="141d0be2-3f0f-46bc-ab55-414e2f49c9a3" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.ElRangeHyst.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneA_off_In" display-name="Ap_TRF_ZoneA_off_In" uuid="722e7125-6d56-4c2a-b3b5-bc2985d1b6e7" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+		<init target="Path" ver="5" value="Out.ZoneA_off.Value"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneA_off_Out" display-name="Ap_TRF_ZoneA_off_Out" uuid="e8a14dec-09ce-436f-b62c-8b4e7373dc03" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+		<init target="Path" ver="5" value="In.ZoneA_off.Value"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneA_value_In" display-name="Ap_TRF_ZoneA_value_In" uuid="4ed740b1-dd6d-4ebd-8e8a-cfa0522ed4c3" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.ZoneA_value.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneA_value_Out" display-name="Ap_TRF_ZoneA_value_Out" uuid="19d29199-aefe-47ce-a899-dc2c91fbd178" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.ZoneA_value.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneA_delay_In" display-name="Ap_TRF_ZoneA_delay_In" uuid="8159f384-06cc-4017-a619-d2115c1e996a" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.ZoneA_delay.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneA_delay_Out" display-name="Ap_TRF_ZoneA_delay_Out" uuid="dd1b56cf-125c-49cd-a767-58a0fc281aa5" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.ZoneA_delay.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneA_val_off_In" display-name="Ap_TRF_ZoneA_val_off_In" uuid="f4d8c280-53b9-4f1e-98fd-e84f8144d447" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.ZoneA_val_off.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneA_val_off_Out" display-name="Ap_TRF_ZoneA_val_off_Out" uuid="f0bcf485-90b1-487b-82f2-6a43359f5bb5" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.ZoneA_value.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneB_off_In" display-name="Ap_TRF_ZoneB_off_In" uuid="1c9ee17b-9eca-4ee8-a860-748950049fb8" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+		<init target="Path" ver="5" value="Out.ZoneB_off.Value"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneB_off_Out" display-name="Ap_TRF_ZoneB_off_Out" uuid="4b2da053-bda3-4c60-bae8-8e141606fa19" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+		<init target="Path" ver="5" value="In.ZoneB_off.Value"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneB_value_In" display-name="Ap_TRF_ZoneB_value_In" uuid="a2f8b105-a465-4539-8a3f-1b50f255b8fc" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.ZoneB_value.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneB_value_Out" display-name="Ap_TRF_ZoneB_value_Out" uuid="a17b6512-ce95-4ea0-a81b-0b2d97957cf4" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.ZoneB_value.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneB_delay_In" display-name="Ap_TRF_ZoneB_delay_In" uuid="1a006810-0df7-4bee-8d91-ec88ed094bd6" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.ZoneB_delay.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneB_delay_Out" display-name="Ap_TRF_ZoneB_delay_Out" uuid="42a7e984-80ad-4a01-851b-64ee69658439" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.ZoneB_delay.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneB_val_off_In" display-name="Ap_TRF_ZoneB_val_off_In" uuid="faffb150-093c-4fe5-80f2-3b69072ae7b6" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.ZoneB_val_off.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneB_val_off_Out" display-name="Ap_TRF_ZoneB_val_off_Out" uuid="5c49a7b9-2c31-4e52-8bd1-665ff1215d8b" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.ZoneB_value.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneC_off_In" display-name="Ap_TRF_ZoneC_off_In" uuid="f7324f1f-9aea-42b8-abbf-52d5b9edb8b7" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+		<init target="Path" ver="5" value="Out.ZoneC_off.Value"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneC_off_Out" display-name="Ap_TRF_ZoneC_off_Out" uuid="53e0e5e6-29b1-49da-900e-1d763527da63" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+		<init target="Path" ver="5" value="In.ZoneC_off.Value"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneC_value_In" display-name="Ap_TRF_ZoneC_value_In" uuid="160f2a39-24ba-4e22-a47c-d83a5624514e" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.ZoneC_value.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneC_value_Out" display-name="Ap_TRF_ZoneC_value_Out" uuid="e2c3b984-520e-40e5-82eb-8db4a9d1ec0c" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.ZoneC_value.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneC_delay_In" display-name="Ap_TRF_ZoneC_delay_In" uuid="f13d8e13-022d-452b-8930-5c683aeeb93a" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.ZoneC_delay.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneC_delay_Out" display-name="Ap_TRF_ZoneC_delay_Out" uuid="7018c9ad-9bfd-4a4b-b3b6-bd408c3d460b" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.ZoneC_delay.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneC_val_off_In" display-name="Ap_TRF_ZoneC_val_off_In" uuid="64af3b42-fc6d-4bd0-8d6f-17b49ee72411" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.ZoneC_val_off.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneC_val_off_Out" display-name="Ap_TRF_ZoneC_val_off_Out" uuid="1d300db3-1ae0-492b-9988-23d9d1e1ac8a" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.ZoneC_value.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneD_off_In" display-name="Ap_TRF_ZoneD_off_In" uuid="76572e5d-fdfb-4df5-b14d-9bfe01e1d556" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+		<init target="Path" ver="5" value="Out.ZoneD_off.Value"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneD_off_Out" display-name="Ap_TRF_ZoneD_off_Out" uuid="6d794918-2c44-4c0d-8942-e9d285647dc7" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+		<init target="Path" ver="5" value="In.ZoneD_off.Value"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneD_value_In" display-name="Ap_TRF_ZoneD_value_In" uuid="81fc786b-0ffb-4579-9653-91e0416956e3" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.ZoneD_value.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneD_value_Out" display-name="Ap_TRF_ZoneD_value_Out" uuid="3e8e1d6a-22fe-4dde-9c51-464fa5f6b535" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.ZoneD_value.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneD_delay_In" display-name="Ap_TRF_ZoneD_delay_In" uuid="e8d67e42-0c74-44ed-b77f-1a23a2089ba1" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.ZoneD_delay.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneD_delay_Out" display-name="Ap_TRF_ZoneD_delay_Out" uuid="17e283f8-7ac9-40e0-a490-c2e774d642ba" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.ZoneD_delay.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneD_val_off_In" display-name="Ap_TRF_ZoneD_val_off_In" uuid="c468b221-8a74-4c4c-bc8c-d4c0a0290e56" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.ZoneD_val_off.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneD_val_off_Out" display-name="Ap_TRF_ZoneD_val_off_Out" uuid="3c883332-6c95-4d49-afc3-cfeefb875504" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.ZoneD_value.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneE1_off_In" display-name="Ap_TRF_ZoneE1_off_In" uuid="6ae95af3-52e9-4c50-a33a-47f2fad96d6c" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+		<init target="Path" ver="5" value="Out.ZoneE1_off.Value"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneE1_off_Out" display-name="Ap_TRF_ZoneE1_off_Out" uuid="24f94714-aa90-4676-ba58-5ad7ccff8a7c" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+		<init target="Path" ver="5" value="In.ZoneE1_off.Value"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneE1_value_In" display-name="Ap_TRF_ZoneE1_value_In" uuid="3976ec07-bac3-4877-ac56-56f0574d3758" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.ZoneE1_value.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneE1_value_Out" display-name="Ap_TRF_ZoneE1_value_Out" uuid="bf5d60bc-e209-49b7-8197-f5a3223bcbf3" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.ZoneE1_value.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneE1_delay_In" display-name="Ap_TRF_ZoneE1_delay_In" uuid="cc7cd95e-3648-4fff-a130-81a8b5d40b02" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.ZoneE1_delay.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneE1_delay_Out" display-name="Ap_TRF_ZoneE1_delay_Out" uuid="86813f33-4bce-4309-96a7-7f523f88416d" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.ZoneE1_delay.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneE1_val_off_In" display-name="Ap_TRF_ZoneE1_val_off_In" uuid="a920e1b3-f968-42a1-9e6c-a9f8c75172a8" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.ZoneE1_val_off.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneE1_val_off_Out" display-name="Ap_TRF_ZoneE1_val_off_Out" uuid="ca010ff7-f78a-4269-ba40-4c7cfe2e3c1c" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.ZoneE1_value.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneE2_off_In" display-name="Ap_TRF_ZoneE2_off_In" uuid="fe8b8b77-fb93-4dca-9995-fc0e2e7a014d" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+		<init target="Path" ver="5" value="Out.ZoneE2_off.Value"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneE2_off_Out" display-name="Ap_TRF_ZoneE2_off_Out" uuid="745362d6-c0ee-4237-99c7-039ce1a23167" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+		<init target="Path" ver="5" value="In.ZoneE2_off.Value"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneE2_value_In" display-name="Ap_TRF_ZoneE2_value_In" uuid="404013ae-43ea-4023-8b00-015e55572d62" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.ZoneE2_value.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneE2_value_Out" display-name="Ap_TRF_ZoneE2_value_Out" uuid="b9f4f7f9-51f8-41a8-bb33-74c4cccd15fe" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.ZoneE2_value.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneE2_delay_In" display-name="Ap_TRF_ZoneE2_delay_In" uuid="f902ce82-13af-4993-952d-8e87c204f6f4" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.ZoneE2_delay.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneE2_delay_Out" display-name="Ap_TRF_ZoneE2_delay_Out" uuid="9b845b5a-8603-4f96-9752-45e37305dbdb" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.ZoneE2_delay.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneE2_val_off_In" display-name="Ap_TRF_ZoneE2_val_off_In" uuid="c1f0df06-7851-4b65-8810-44287323136a" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.ZoneE2_val_off.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneE2_val_off_Out" display-name="Ap_TRF_ZoneE2_val_off_Out" uuid="1546e570-0d28-4745-ae18-73bc09a32d6b" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.ZoneE2_value.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneF_off_In" display-name="Ap_TRF_ZoneF_off_In" uuid="b2d0977c-d1d9-46c1-b064-176768aeab03" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+		<init target="Path" ver="5" value="Out.ZoneF_off.Value"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneF_off_Out" display-name="Ap_TRF_ZoneF_off_Out" uuid="c6ef61c6-9d27-46dd-94f1-7eb95fa6fc90" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+		<init target="Path" ver="5" value="In.ZoneF_off.Value"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneF_value_In" display-name="Ap_TRF_ZoneF_value_In" uuid="abae4e95-6858-4a31-9751-5ba9a2d8a99b" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.ZoneF_value.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneF_value_Out" display-name="Ap_TRF_ZoneF_value_Out" uuid="841f11a4-5b0d-47ff-81e9-3cf42a9b5e83" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.ZoneF_value.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneF_delay_In" display-name="Ap_TRF_ZoneF_delay_In" uuid="79088126-fa06-48f5-84d3-66866c42363f" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.ZoneF_delay.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneF_delay_Out" display-name="Ap_TRF_ZoneF_delay_Out" uuid="62b69c2b-47e8-4c15-8c54-3ed22f4c57a9" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.ZoneF_delay.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneF_val_off_In" display-name="Ap_TRF_ZoneF_val_off_In" uuid="9df4302c-b09f-40c5-ad9c-4a6bfbe50c6c" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out.ZoneF_val_off.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_ZoneF_val_off_Out" display-name="Ap_TRF_ZoneF_val_off_Out" uuid="c16ed58e-ff5f-43b5-b573-cc6dc0228029" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In.ZoneF_value.Value"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+	</object>
+	<object access-modifier="private" name="Ap_TRF_AckSpeedControl_Out" display-name="Ap_TRF_AckSpeedControl_Out" uuid="c08b77e4-46e3-4e21-af04-5e2c6089986d" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.Ap_Source_Transfer"/>
+		<init target="Path" ver="5" value="In.AckSpeedControl.Value"/>
+	</object>
+</type>
+

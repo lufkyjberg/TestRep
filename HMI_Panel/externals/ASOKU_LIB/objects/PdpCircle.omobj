@@ -1,0 +1,264 @@
+<type access-modifier="public" name="PdpCircle" display-name="Круг подпятника" uuid="7207ab32-b80a-4682-910e-8ffd7a7c92a3" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="450" ver="5"/>
+	<designed target="Height" value="450" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="1" ver="5"/>
+	<designed target="PenWidth" value="0" ver="5"/>
+	<designed target="BrushColor" value="0xff7f7f7f" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="PieAngle" value="360" ver="5"/>
+	<designed target="PieAngleStart" value="360" ver="5"/>
+	<designed target="HoleSize" value="0" ver="5"/>
+	<object access-modifier="private" name="InnerCircle" display-name="InnerCircle" uuid="dd3e58dc-009b-4092-9602-f98745bff64a" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5">
+		<designed target="X" value="107" ver="5"/>
+		<designed target="Y" value="107" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="236" ver="5"/>
+		<designed target="Height" value="236" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xff959595" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<designed target="Flip" value="0" ver="5"/>
+	<object access-modifier="private" name="Pdp1" display-name="Pdp1" uuid="5bfdd1cb-6ffb-4120-a964-00f4bbc215e0" base-type="PdpElement" base-type-id="ec637457-423e-4ab6-ba97-e18daea57515" ver="5" description="" cardinal="1">
+		<designed target="X" value="131.26666666666659" ver="5"/>
+		<designed target="Y" value="337.86666666666679" ver="5"/>
+		<designed target="Rotation" value="15" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.PP.T_PP1"/>
+		<object access-modifier="private" name="Pdp1_TextField" display-name="Pdp1_TextField" uuid="e876312e-c7a0-4612-be5a-e1c955ef30f0" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+			<designed target="X" value="34" ver="5"/>
+			<designed target="Y" value="34" ver="5"/>
+			<designed target="Rotation" value="-15" ver="5"/>
+			<designed target="Width" value="36" ver="5"/>
+			<designed target="Height" value="36" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<designed target="Text" value="1" ver="5"/>
+			<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="ZValue" value="1" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Pdp2" display-name="Pdp2" uuid="a2fc7c94-ee23-4644-a2ce-80d313bf9991" base-type="PdpElement" base-type-id="ec637457-423e-4ab6-ba97-e18daea57515" ver="5" description="" cardinal="1">
+		<designed target="X" value="55.714285714285793" ver="5"/>
+		<designed target="Y" value="294.28571428571439" ver="5"/>
+		<designed target="Rotation" value="45" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.PP.T_PP2"/>
+		<object access-modifier="private" name="Pdp2_TextField" display-name="Pdp2_TextField" uuid="9cf581d0-dc36-4022-86a2-61d5a74c5a28" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+			<designed target="X" value="34" ver="5"/>
+			<designed target="Y" value="34" ver="5"/>
+			<designed target="Rotation" value="-45" ver="5"/>
+			<designed target="Width" value="36" ver="5"/>
+			<designed target="Height" value="36" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<designed target="Text" value="2" ver="5"/>
+			<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="ZValue" value="1" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Pdp3" display-name="Pdp3" uuid="ae147405-1b94-4dfc-9504-159615e86052" base-type="PdpElement" base-type-id="ec637457-423e-4ab6-ba97-e18daea57515" ver="5" description="" cardinal="1">
+		<designed target="X" value="11.841269841269877" ver="5"/>
+		<designed target="Y" value="219.04761904761904" ver="5"/>
+		<designed target="Rotation" value="75" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.PP.T_PP3"/>
+		<object access-modifier="private" name="Pdp3_TextField" display-name="Pdp3_TextField" uuid="e49d15c4-f2f5-43cb-86a2-77befa02bae3" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+			<designed target="X" value="34" ver="5"/>
+			<designed target="Y" value="34" ver="5"/>
+			<designed target="Rotation" value="-75" ver="5"/>
+			<designed target="Width" value="36" ver="5"/>
+			<designed target="Height" value="36" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<designed target="Text" value="3" ver="5"/>
+			<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="ZValue" value="1" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Pdp4" display-name="Pdp4" uuid="3ab14240-4215-48a9-83c5-4c778744a0a5" base-type="PdpElement" base-type-id="ec637457-423e-4ab6-ba97-e18daea57515" ver="5" description="" cardinal="1">
+		<designed target="X" value="12.09090909090915" ver="5"/>
+		<designed target="Y" value="130.45454545454541" ver="5"/>
+		<designed target="Rotation" value="105" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.PP.T_PP4"/>
+		<object access-modifier="private" name="Pdp4_TextField" display-name="Pdp4_TextField" uuid="b7c13fe4-8025-42b4-aa93-117be2e5056c" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+			<designed target="X" value="34" ver="5"/>
+			<designed target="Y" value="34" ver="5"/>
+			<designed target="Rotation" value="-105" ver="5"/>
+			<designed target="Width" value="36" ver="5"/>
+			<designed target="Height" value="36" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<designed target="Text" value="4" ver="5"/>
+			<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Pdp5" display-name="Pdp5" uuid="623d2b10-5767-4fce-a8fc-271d173a1976" base-type="PdpElement" base-type-id="ec637457-423e-4ab6-ba97-e18daea57515" ver="5" description="" cardinal="1">
+		<designed target="X" value="56.444444444444542" ver="5"/>
+		<designed target="Y" value="54.76666666666668" ver="5"/>
+		<designed target="Rotation" value="135" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.PP.T_PP5"/>
+		<object access-modifier="private" name="Pdp5_TextField" display-name="Pdp5_TextField" uuid="977e625d-fe7c-4f63-9731-daf3307c712b" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+			<designed target="X" value="34" ver="5"/>
+			<designed target="Y" value="34" ver="5"/>
+			<designed target="Rotation" value="-135" ver="5"/>
+			<designed target="Width" value="36" ver="5"/>
+			<designed target="Height" value="36" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<designed target="Text" value="5" ver="5"/>
+			<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Pdp6" display-name="Pdp6" uuid="accc094a-d48a-4657-9ca4-53e8d7e59c84" base-type="PdpElement" base-type-id="ec637457-423e-4ab6-ba97-e18daea57515" ver="5" description="" cardinal="1">
+		<designed target="X" value="131.55000000000001" ver="5"/>
+		<designed target="Y" value="11.716666666666683" ver="5"/>
+		<designed target="Rotation" value="165" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.PP.T_PP6"/>
+		<object access-modifier="private" name="Pdp6_TextField" display-name="Pdp6_TextField" uuid="9bf10223-4726-461d-bcd5-d5530835b089" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+			<designed target="X" value="34" ver="5"/>
+			<designed target="Y" value="34" ver="5"/>
+			<designed target="Rotation" value="-165" ver="5"/>
+			<designed target="Width" value="36" ver="5"/>
+			<designed target="Height" value="36" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<designed target="Text" value="6" ver="5"/>
+			<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Pdp7" display-name="Pdp7" uuid="8abecce8-c683-4f05-87ef-7103b1fffcff" base-type="PdpElement" base-type-id="ec637457-423e-4ab6-ba97-e18daea57515" ver="5" description="" cardinal="1">
+		<designed target="X" value="219.05128205128204" ver="5"/>
+		<designed target="Y" value="12.000000000000057" ver="5"/>
+		<designed target="Rotation" value="195" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.PP.T_PP7"/>
+		<object access-modifier="private" name="Pdp7_TextField" display-name="Pdp7_TextField" uuid="842f7ea8-2818-49c2-9274-e48feb9447df" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+			<designed target="X" value="34" ver="5"/>
+			<designed target="Y" value="34" ver="5"/>
+			<designed target="Rotation" value="-195" ver="5"/>
+			<designed target="Width" value="36" ver="5"/>
+			<designed target="Height" value="36" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<designed target="Text" value="7" ver="5"/>
+			<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Pdp8" display-name="Pdp8" uuid="265cc55a-2d23-46b1-a4fa-37c67b8a7f00" base-type="PdpElement" base-type-id="ec637457-423e-4ab6-ba97-e18daea57515" ver="5" description="" cardinal="1">
+		<designed target="X" value="294.46153846153845" ver="5"/>
+		<designed target="Y" value="55.538461538461519" ver="5"/>
+		<designed target="Rotation" value="225" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.PP.T_PP8"/>
+		<object access-modifier="private" name="Pdp8_TextField" display-name="Pdp8_TextField" uuid="6bd2fbe2-6f29-4359-ab00-cbf8672d2d76" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+			<designed target="X" value="34" ver="5"/>
+			<designed target="Y" value="34" ver="5"/>
+			<designed target="Rotation" value="-225" ver="5"/>
+			<designed target="Width" value="36" ver="5"/>
+			<designed target="Height" value="36" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<designed target="Text" value="8" ver="5"/>
+			<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Pdp9" display-name="Pdp9" uuid="e3e77f01-30d5-4bd7-9a8b-f7b20bf4d072" base-type="PdpElement" base-type-id="ec637457-423e-4ab6-ba97-e18daea57515" ver="5" description="" cardinal="1">
+		<designed target="X" value="338.30769230769221" ver="5"/>
+		<designed target="Y" value="131.53846153846152" ver="5"/>
+		<designed target="Rotation" value="255" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.PP.T_PP9"/>
+		<object access-modifier="private" name="Pdp9_TextField" display-name="Pdp9_TextField" uuid="f3c03cba-e534-40eb-8971-de9823b9d9ee" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+			<designed target="X" value="34" ver="5"/>
+			<designed target="Y" value="34" ver="5"/>
+			<designed target="Rotation" value="-255" ver="5"/>
+			<designed target="Width" value="36" ver="5"/>
+			<designed target="Height" value="36" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<designed target="Text" value="9" ver="5"/>
+			<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Pdp10" display-name="Pdp10" uuid="899a308e-5c16-4858-8347-dc5c3bea0d81" base-type="PdpElement" base-type-id="ec637457-423e-4ab6-ba97-e18daea57515" ver="5" description="" cardinal="1">
+		<designed target="X" value="338.15384615384613" ver="5"/>
+		<designed target="Y" value="219.23076923076917" ver="5"/>
+		<designed target="Rotation" value="285" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.PP.T_PP10"/>
+		<object access-modifier="private" name="Pdp10_TextField" display-name="Pdp10_TextField" uuid="b3db9c89-7c2e-4847-9e02-403c50aca94c" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+			<designed target="X" value="34" ver="5"/>
+			<designed target="Y" value="34" ver="5"/>
+			<designed target="Rotation" value="-285" ver="5"/>
+			<designed target="Width" value="36" ver="5"/>
+			<designed target="Height" value="36" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<designed target="Text" value="10" ver="5"/>
+			<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Pdp11" display-name="Pdp11" uuid="f94a0eb2-bfde-4caf-ac21-98598a0a0776" base-type="PdpElement" base-type-id="ec637457-423e-4ab6-ba97-e18daea57515" ver="5" description="" cardinal="1">
+		<designed target="X" value="294.09090909090912" ver="5"/>
+		<designed target="Y" value="294.54545454545445" ver="5"/>
+		<designed target="Rotation" value="315" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.PP.T_PP11"/>
+		<object access-modifier="private" name="Pdp11_TextField" display-name="Pdp11_TextField" uuid="4c8d5f3b-2c4f-4360-9115-aa02c177cb1a" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+			<designed target="X" value="34" ver="5"/>
+			<designed target="Y" value="34" ver="5"/>
+			<designed target="Rotation" value="-315" ver="5"/>
+			<designed target="Width" value="36" ver="5"/>
+			<designed target="Height" value="36" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<designed target="Text" value="11" ver="5"/>
+			<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Pdp12" display-name="Pdp12" uuid="9605aae4-476b-43f3-b424-fd1719532469" base-type="PdpElement" base-type-id="ec637457-423e-4ab6-ba97-e18daea57515" ver="5" description="" cardinal="1">
+		<designed target="X" value="218.81818181818198" ver="5"/>
+		<designed target="Y" value="338.00000000000011" ver="5"/>
+		<designed target="Rotation" value="345" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.PP.T_PP12"/>
+		<object access-modifier="private" name="Pdp12_TextField" display-name="Pdp12_TextField" uuid="3b7611e8-d01f-4bd8-8f3a-8a260a5a1dc8" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+			<designed target="X" value="34" ver="5"/>
+			<designed target="Y" value="34" ver="5"/>
+			<designed target="Rotation" value="-345" ver="5"/>
+			<designed target="Width" value="36" ver="5"/>
+			<designed target="Height" value="36" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<designed target="Text" value="12" ver="5"/>
+			<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+</type>
+

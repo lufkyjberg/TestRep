@@ -1,0 +1,544 @@
+<type access-modifier="private" name="PdshTurb" display-name="PdshTurb" uuid="99193ea4-3fe7-46b4-b960-765100816cca" base-type="" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Width" value="1360" ver="5"/>
+	<designed target="Height" value="680" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xff646464" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="1360" ver="5"/>
+	<designed target="WindowHeight" value="680" ver="5"/>
+	<designed target="WindowCaption" value="MainForm" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="1" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="0" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<object access-modifier="private" name="Rectangle_4" display-name="Rectangle_4" uuid="1cb24128-33df-464a-b68c-c0726d192913" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="228.5" ver="5"/>
+		<designed target="Y" value="184.65238095238092" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="901" ver="5"/>
+		<designed target="Height" value="88.871428571428595" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="PenColor" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuWhite]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_250" display-name="Text_PropertiesDialogs_250" uuid="6d9ab0d4-ab7a-459d-a37d-dc7532f13836" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="228.53095238095241" ver="5"/>
+		<designed target="Y" value="184.58809523809521" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="161.3333333333334" ver="5"/>
+		<designed target="Height" value="88.5" ver="5"/>
+		<designed target="Text" value="Температура" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_3" display-name="Rectangle_3" uuid="42ca4711-2937-4535-ab6b-47e49732a683" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="228.5" ver="5"/>
+		<designed target="Y" value="154.64102564102564" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="901" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="PenColor" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuWhite]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Rectangle_13" display-name="Rectangle_13" uuid="361f35ec-c638-4c4f-8e6b-6f0972b9e4e0" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="228.5" ver="5"/>
+		<designed target="Y" value="273.54102564102561" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="901" ver="5"/>
+		<designed target="Height" value="89.871428571428623" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="PenColor" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuWhite]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_229" display-name="Text_PropertiesDialogs_229" uuid="8cd34e37-63c0-4ae4-8e8c-c59bed3644d0" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="391.85555555555555" ver="5"/>
+		<designed target="Y" value="154.70323441329535" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="259.17310924369741" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<designed target="Text" value="Сектора подшипника" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="MainTitle" display-name="MainTitle" uuid="e815d674-36ab-4e8a-a1c8-4d77fc0ac8c8" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="1360" ver="5"/>
+		<designed target="Height" value="35" ver="5"/>
+		<designed target="Text" value="Термоконтроль подшипника турбины" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="Font" value="Arial,24,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<designed target="Flip" value="0" ver="5"/>
+	<object access-modifier="private" name="DiscreteDpValue_179" display-name="DiscreteDpValue_179" uuid="34c5c407-7cc7-40f5-b30d-33feec319382" base-type="DiscreteDpValue" base-type-id="0aa36430-7867-405c-b541-89e8cf6e92d2" ver="5" description="" cardinal="1">
+		<designed target="X" value="438.44211017740423" ver="5"/>
+		<designed target="Y" value="228.92142857142852" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="155" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.PSH.T_PSH_H"/>
+		<init target="TextColorOn" ver="5" value="0xff00aa00"/>
+		<init target="TextColorOff" ver="5" value="0xffd50000"/>
+		<do-trace access-modifier="private" target="TextColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuRed]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="TextColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGrey]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_244" display-name="Text_PropertiesDialogs_244" uuid="f02b8534-93a2-45ae-b24e-bb53099a0b9a" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="642.43650793650784" ver="5"/>
+		<designed target="Y" value="154.70323441329535" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="243.67186147186169" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<designed target="Text" value="Маслованна" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_246" display-name="Text_PropertiesDialogs_246" uuid="2d081548-e5be-4314-84b0-5ff72286d15b" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="228.78095238095244" ver="5"/>
+		<designed target="Y" value="273.47673992673998" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="161.33333333333337" ver="5"/>
+		<designed target="Height" value="89.5" ver="5"/>
+		<designed target="Text" value="Уровень" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_247" display-name="Text_PropertiesDialogs_247" uuid="5c9625ce-0ee4-4b6a-a5e0-b6ffdcf95720" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="886.35079365079332" ver="5"/>
+		<designed target="Y" value="154.70323441329532" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="242.70216450216412" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<designed target="Text" value="Маслоохладитель" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_185" display-name="DiscreteDpValue_185" uuid="8ce2ffc7-a150-4845-a978-a1c5ae36b1e4" base-type="DiscreteDpValue" base-type-id="0aa36430-7867-405c-b541-89e8cf6e92d2" ver="5" description="" cardinal="1">
+		<designed target="X" value="930.77222222222292" ver="5"/>
+		<designed target="Y" value="188.92142857142855" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="155" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.MOTP.T_oil_oilref_HH"/>
+		<init target="TextColorOn" ver="5" value="0xff00aa00"/>
+		<init target="TextColorOff" ver="5" value="0xffd50000"/>
+		<do-trace access-modifier="private" target="TextColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuRed]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="TextColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGrey]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_243" display-name="DiscreteDpValue_243" uuid="54d38891-bb03-405b-ba88-d4f29bcd26f7" base-type="DiscreteDpValue" base-type-id="0aa36430-7867-405c-b541-89e8cf6e92d2" ver="5" description="" cardinal="1">
+		<designed target="X" value="930.77222222222292" ver="5"/>
+		<designed target="Y" value="277.97673992673987" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="155" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Protection.L_oil_oilref_H"/>
+		<init target="TextColorOn" ver="5" value="0xff00aa00"/>
+		<init target="TextColorOff" ver="5" value="0xffd50000"/>
+		<do-trace access-modifier="private" target="TextColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuRed]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="TextColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGrey]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_180" display-name="DiscreteDpValue_180" uuid="b05f50da-ab14-442b-a93e-5fc2e1e06837" base-type="DiscreteDpValue" base-type-id="0aa36430-7867-405c-b541-89e8cf6e92d2" ver="5" description="" cardinal="1">
+		<designed target="X" value="438.44211017740423" ver="5"/>
+		<designed target="Y" value="188.92142857142852" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="155" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.PSH.T_PSH_HH"/>
+		<init target="TextColorOn" ver="5" value="0xff00aa00"/>
+		<init target="TextColorOff" ver="5" value="0xffd50000"/>
+		<do-trace access-modifier="private" target="TextColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuRed]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="TextColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGrey]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_241" display-name="DiscreteDpValue_241" uuid="4d740b8a-df38-4b1c-b987-21966a06a7ea" base-type="DiscreteDpValue" base-type-id="0aa36430-7867-405c-b541-89e8cf6e92d2" ver="5" description="" cardinal="1">
+		<designed target="X" value="693.25555555555582" ver="5"/>
+		<designed target="Y" value="228.92142857142852" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="155" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+		<init target="TextColorOn" ver="5" value="0xff00aa00"/>
+		<init target="TextColorOff" ver="5" value="0xffd50000"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.T_oil_H"/>
+		<do-trace access-modifier="private" target="TextColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuRed]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="TextColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGrey]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_183" display-name="DiscreteDpValue_183" uuid="a6634bfe-faf5-429b-b7bb-34c367458d25" base-type="DiscreteDpValue" base-type-id="0aa36430-7867-405c-b541-89e8cf6e92d2" ver="5" description="" cardinal="1">
+		<designed target="X" value="693.25555555555582" ver="5"/>
+		<designed target="Y" value="188.92142857142852" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="155" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.T_oil_HH"/>
+		<init target="TextColorOn" ver="5" value="0xff00aa00"/>
+		<init target="TextColorOff" ver="5" value="0xffd50000"/>
+		<do-trace access-modifier="private" target="TextColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuRed]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="TextColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGrey]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_184" display-name="DiscreteDpValue_184" uuid="89af8705-a357-4673-825a-fe9f9210e1c7" base-type="DiscreteDpValue" base-type-id="0aa36430-7867-405c-b541-89e8cf6e92d2" ver="5" description="" cardinal="1">
+		<designed target="X" value="930.77222222222292" ver="5"/>
+		<designed target="Y" value="228.92142857142852" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="155" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.MOTP.T_oil_oilref_H"/>
+		<init target="TextColorOn" ver="5" value="0xff00aa00"/>
+		<init target="TextColorOff" ver="5" value="0xffd50000"/>
+		<do-trace access-modifier="private" target="TextColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuRed]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="TextColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGrey]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_243" display-name="DiscreteDpValue_243" uuid="b56c8c2b-9ae3-428b-95c0-80538d7aa8fa" base-type="DiscreteDpValue" base-type-id="0aa36430-7867-405c-b541-89e8cf6e92d2" ver="5" description="" cardinal="1">
+		<designed target="X" value="693.25555555555582" ver="5"/>
+		<designed target="Y" value="277.97673992673987" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="155" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Protection.L_oil_H"/>
+		<init target="TextColorOn" ver="5" value="0xff00aa00"/>
+		<init target="TextColorOff" ver="5" value="0xffd50000"/>
+		<do-trace access-modifier="private" target="TextColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuRed]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="TextColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGrey]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_242" display-name="DiscreteDpValue_242" uuid="6dc73367-e041-42d3-81de-668059d8f13a" base-type="DiscreteDpValue" base-type-id="0aa36430-7867-405c-b541-89e8cf6e92d2" ver="5" description="" cardinal="1">
+		<designed target="X" value="930.77222222222292" ver="5"/>
+		<designed target="Y" value="317.97673992673987" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="155" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Protection.L_oil_oilref_L"/>
+		<init target="TextColorOn" ver="5" value="0xff00aa00"/>
+		<init target="TextColorOff" ver="5" value="0xffd50000"/>
+		<do-trace access-modifier="private" target="TextColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuRed]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="TextColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGrey]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_242" display-name="DiscreteDpValue_242" uuid="6656de4d-ac19-4d33-b524-5c7c4ea9b1b5" base-type="DiscreteDpValue" base-type-id="0aa36430-7867-405c-b541-89e8cf6e92d2" ver="5" description="" cardinal="1">
+		<designed target="X" value="693.25555555555582" ver="5"/>
+		<designed target="Y" value="317.97673992673987" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="155" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Protection.L_oil_L"/>
+		<init target="TextColorOn" ver="5" value="0xff00aa00"/>
+		<init target="TextColorOff" ver="5" value="0xffd50000"/>
+		<do-trace access-modifier="private" target="TextColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuRed]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="TextColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGrey]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Rectangle_11" display-name="Rectangle_11" uuid="ff227eda-27e3-4eed-9428-dd3c9c81915c" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="782.43800042687485" ver="5"/>
+		<designed target="Y" value="259.06152194617732" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="270" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="208.30177692402839" ver="5"/>
+		<designed target="Height" value="0" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="PenColor" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuWhite]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Rectangle_5" display-name="Rectangle_5" uuid="3e5cf679-6477-4e92-9b70-8bc89972b51e" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="549.76061947448363" ver="5"/>
+		<designed target="Y" value="258.6269198407939" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="270" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="207.85653882879041" ver="5"/>
+		<designed target="Height" value="0" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="PenColor" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuWhite]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Rectangle_14" display-name="Rectangle_14" uuid="856c743c-d85b-4610-b57a-0822201889ba" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="285.71300042687483" ver="5"/>
+		<designed target="Y" value="258.85024743637319" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="270" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="208.41844359069515" ver="5"/>
+		<designed target="Height" value="0" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="PenColor" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuWhite]]>
+			</body>
+		</do-trace>
+	</object>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Opened">
+		<body kind="om">
+			<![CDATA[Global.formWidth = here.Width;]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="AnalogDpValue_1" display-name="AnalogDpValue_1" uuid="9d84148b-7cdb-42c6-bda0-47d998605d05" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="907" ver="5"/>
+		<designed target="Y" value="390" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.PSH.T_PSH1_TS1"/>
+		<init target="ParameterType" ver="5" value="AI"/>
+	</object>
+	<object access-modifier="private" name="TextSignalDescription_1" display-name="TextSignalDescription_1" uuid="a9adf880-166d-4566-a112-f5d77dee94c3" base-type="TextSignalDescription" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+		<designed target="X" value="387" ver="5"/>
+		<designed target="Y" value="387" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="513" ver="5"/>
+		<designed target="Height" value="31" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.PSH.T_PSH1_TS1"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_2" display-name="AnalogDpValue_2" uuid="8f6fe942-c9e1-4ec2-b892-b82073054ece" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="907" ver="5"/>
+		<designed target="Y" value="448" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.PSH.T_PSH2_TS2"/>
+		<init target="ParameterType" ver="5" value="AI"/>
+	</object>
+	<object access-modifier="private" name="TextSignalDescription_2" display-name="TextSignalDescription_2" uuid="25c6d2df-a782-4d88-8c8e-2562644f280b" base-type="TextSignalDescription" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+		<designed target="X" value="387" ver="5"/>
+		<designed target="Y" value="445" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="513" ver="5"/>
+		<designed target="Height" value="31" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.PSH.T_PSH2_TS2"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_3" display-name="AnalogDpValue_3" uuid="cfbc09f2-1329-4a69-b47e-c27581671721" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="907" ver="5"/>
+		<designed target="Y" value="506" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.PSH.T_PSH4_TS3"/>
+		<init target="ParameterType" ver="5" value="AI"/>
+	</object>
+	<object access-modifier="private" name="TextSignalDescription_3" display-name="TextSignalDescription_3" uuid="b67d8b01-89ea-4836-b4f3-0f66d9c48d5a" base-type="TextSignalDescription" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+		<designed target="X" value="387" ver="5"/>
+		<designed target="Y" value="503" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="513" ver="5"/>
+		<designed target="Height" value="31" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.PSH.T_PSH4_TS3"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_4" display-name="AnalogDpValue_4" uuid="904abedf-69b7-4460-8691-c7005c393dd6" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="907" ver="5"/>
+		<designed target="Y" value="564" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.PSH.T_PSH5_TS4"/>
+		<init target="ParameterType" ver="5" value="AI"/>
+	</object>
+	<object access-modifier="private" name="TextSignalDescription_4" display-name="TextSignalDescription_4" uuid="cae1907b-e25c-4726-99ed-4280025e45bd" base-type="TextSignalDescription" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+		<designed target="X" value="387" ver="5"/>
+		<designed target="Y" value="561" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="513" ver="5"/>
+		<designed target="Height" value="31" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.PSH.T_PSH5_TS4"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_5" display-name="AnalogDpValue_5" uuid="b3d77a9f-adc7-4339-a838-acdea16b1a54" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="907" ver="5"/>
+		<designed target="Y" value="622" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.MOTP.T_oil_TS5"/>
+		<init target="ParameterType" ver="5" value="AI"/>
+	</object>
+	<object access-modifier="private" name="TextSignalDescription_5" display-name="TextSignalDescription_5" uuid="e78f2ea7-b740-4452-beb0-cf0ddae09f18" base-type="TextSignalDescription" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+		<designed target="X" value="387" ver="5"/>
+		<designed target="Y" value="619" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="513" ver="5"/>
+		<designed target="Height" value="31" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.MOTP.T_oil_TS5"/>
+	</object>
+</type>
+

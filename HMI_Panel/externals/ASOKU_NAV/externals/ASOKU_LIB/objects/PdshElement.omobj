@@ -1,0 +1,230 @@
+<type access-modifier="public" name="PdshElement" display-name="Элемент подшипника" uuid="bd4cdf39-dfc2-48ae-8b85-ebd72d1a0110" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="105" ver="5"/>
+	<designed target="Height" value="55" ver="5"/>
+	<designed target="RoundingRadius" value="0" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0x00000000" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<object access-modifier="private" name="Line_12" display-name="Line_12" uuid="193db35d-be4b-4335-ad65-f4a0b625fbf5" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
+		<designed target="X" value="21.466666666666669" ver="5"/>
+		<designed target="Y" value="52.854545454545075" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="101" ver="5"/>
+		<designed target="Height" value="50.600000000000009" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xff6a6a6a" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="91f249de-24bc-46f7-a0dd-4584c0f64b71" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="4beb372d-5498-4c48-ad8e-6c6e045b74cc" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="63" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="4fb43235-8630-46ab-a91f-1e18dd394200" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="82" ver="5"/>
+			<designed target="Y" value="-14.992592592592599" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="a9afd6c2-2aee-4752-a281-d37b2f1067b1" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="63" ver="5"/>
+			<designed target="Y" value="-50.600000000000009" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_5" display-name="Point_5" uuid="eea6ded5-c334-4b76-9e3e-4d742705ccea" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="-50.600000000000009" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_6" display-name="Point_6" uuid="eb1b7c75-e95d-4c81-a569-8d16be41f55b" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="-19" ver="5"/>
+			<designed target="Y" value="-14.992592592592599" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_7" display-name="Point_7" uuid="60b7754f-d374-4a3d-9494-d6f53a1aaf78" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+		</object>
+		<designed target="Flip" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParH || ApParL || ApParH2 || ApParL2]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuYellow]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParHH || ApParLL || ApParHH2 || ApParLL2]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xff6a6a6a]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ApSourcePar" display-name="ApSourcePar" uuid="358b6625-6949-4c09-8cee-861b419352d4" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+		<designed target="Location" value="" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="Path" value="" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath.Value]]>
+			</body>
+		</do-trace>
+		<init target="ParentSource" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApParHH" display-name="ApParHH" uuid="a3221967-79c9-4659-b1d9-4e7153d22e2f" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[String.Length(ParDevPath2.Value) > 5]]>
+				</condition>
+				<expr>
+					<![CDATA["Value"]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA["SP_Result.Alarm_HH"]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<init target="Source" ver="5" ref="ApSourcePar"/>
+	</object>
+	<object access-modifier="private" name="ApParH" display-name="ApParH" uuid="3519971d-c49d-460a-ac53-1962bcb4f55c" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="ApSourcePar"/>
+		<init target="Path" ver="5" value="SP_Result.Alarm_H"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[String.Length(ParDevPath2.Value) > 5]]>
+				</condition>
+				<expr>
+					<![CDATA["Value"]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA["SP_Result.Alarm_H"]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ApParL" display-name="ApParL" uuid="62d5fe2b-9aad-4c11-b453-f32ccb6ad233" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="ApSourcePar"/>
+		<init target="Path" ver="5" value="SP_Result.Alarm_L"/>
+	</object>
+	<object access-modifier="private" name="ApParLL" display-name="ApParLL" uuid="c4e16097-124c-49f8-8d16-a2b065675bda" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="ApSourcePar"/>
+		<init target="Path" ver="5" value="SP_Result.Alarm_LL"/>
+	</object>
+	<object access-modifier="private" name="ParDevPath" display-name="Предупредительный параметр" uuid="2275e49b-c968-4210-b0ce-67baa604c54c" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ParDevPath2" display-name="Аварийный параметр" uuid="96a99822-5969-41be-98e6-6444b6f8b348" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ApSource_2" display-name="ApSource_2" uuid="284dc9d0-5cfc-4576-9d1f-0d0a42ba1e98" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+		<designed target="Location" value="" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="Path" value="" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+		<do-trace access-modifier="private" target="Active" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[String.Length(ParDevPath2.Value) < 5]]>
+				</condition>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath2.Value]]>
+			</body>
+		</do-trace>
+		<init target="ParentSource" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApParHH2" display-name="ApParHH2" uuid="7a38f1ba-f418-4164-935c-742da442efa8" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[String.Length(ParDevPath2.Value) > 5]]>
+				</condition>
+				<expr>
+					<![CDATA["Value"]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA["SP_Result.Alarm_HH"]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<init target="Source" ver="5" ref="ApSource_2"/>
+	</object>
+	<object access-modifier="private" name="ApParH2" display-name="ApParH2" uuid="25bfa083-13a0-4078-80fa-9f395761a68e" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="SP_Result.Alarm_H"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[String.Length(ParDevPath2.Value) > 5]]>
+				</condition>
+				<expr>
+					<![CDATA["Value"]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA["SP_Result.Alarm_H"]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<init target="Source" ver="5" ref="ApSource_2"/>
+	</object>
+	<object access-modifier="private" name="ApParL2" display-name="ApParL2" uuid="0c74dc8a-f315-4aa2-baa3-aeec1d75dd25" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="SP_Result.Alarm_L"/>
+		<init target="Source" ver="5" ref="ApSource_2"/>
+	</object>
+	<object access-modifier="private" name="ApParLL2" display-name="ApParLL2" uuid="6d4ec139-1289-41ef-b249-535dd6a23ff7" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="SP_Result.Alarm_LL"/>
+		<init target="Source" ver="5" ref="ApSource_2"/>
+	</object>
+</type>
+

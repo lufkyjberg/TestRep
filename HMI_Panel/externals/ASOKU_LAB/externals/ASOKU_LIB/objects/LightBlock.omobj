@@ -1,0 +1,132 @@
+<type access-modifier="public" name="LightBlock" display-name="LightBlock" uuid="a6c91c60-c011-4aae-9fe3-b3fcf5106d1e" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="20" ver="5"/>
+	<designed target="Height" value="20" ver="5"/>
+	<designed target="RoundingRadius" value="0" ver="5"/>
+	<designed target="PenColor" value="0xff000000" ver="5"/>
+	<designed target="PenStyle" value="1" ver="5"/>
+	<designed target="PenWidth" value="2" ver="5"/>
+	<designed target="BrushColor" value="0xffd6d6d6" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<object access-modifier="private" name="ApParValue" display-name="ApParValue" uuid="4154a81e-19b7-4858-ab53-1485d2ed0d7d" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5">
+		<init target="Path" ver="5" value="Value"/>
+		<init target="Source" ver="5" ref="ApSourcePar"/>
+	</object>
+	<object access-modifier="private" name="ApParAlarmBytes" display-name="ApParAlarmBytes" uuid="036479ca-838a-4bda-be40-dbb5abba0176" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5">
+		<init target="Source" ver="5" ref="ApSourcePar"/>
+		<init target="Path" ver="5" value="AlarmBytes"/>
+	</object>
+	<object access-modifier="private" name="ApSourcePar" display-name="ApSourcePar" uuid="92d57d6e-11b8-41d1-b977-f45017e25059" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5">
+		<designed target="Path" value="" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="Location" value="" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath.Value]]>
+			</body>
+		</do-trace>
+		<init target="ParentSource" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ParDevPath" display-name="Путь параметра" uuid="c8eb04eb-f04a-4d01-b1d1-49dde89b5e77" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5"/>
+	<do-on access-modifier="private" name="Handler_6" display-name="Handler_6" ver="5" event="MouseRightClick">
+		<body kind="javascript">
+			<![CDATA[if (ApParValueOpen.Advised && ApParValueOpened.Advised && ApParValueClose.Advised && ApParValueClosed.Advised) {OpenInfoTabView.Invoke();};]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="ApParValueOpen" display-name="ApParValueOpen" uuid="b82dab2b-7a9a-4e93-bb79-e985c26cbc95" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5">
+		<init target="Path" ver="5" value="Value"/>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + "_open.Value"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ApParValueOpened" display-name="ApParValueOpened" uuid="a4e56923-371e-4464-8e1a-3437376b3ffd" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5">
+		<init target="Path" ver="5" value="Value"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + "_opened.Value"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApParValueFlt" display-name="ApParValueFlt" uuid="140e4024-7911-411a-ae17-bf74b6901afd" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5">
+		<init target="Path" ver="5" value="Value"/>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + "_flt.Value"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ApParValueClose" display-name="ApParValueClose" uuid="bc011360-4c9e-412b-8a10-9812adf093d2" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5">
+		<init target="Path" ver="5" value="Value"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + "_close.Value"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApParValueClosed" display-name="ApParValueClosed" uuid="106001eb-caab-48fb-9cb9-a224283a2ef4" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5">
+		<init target="Path" ver="5" value="Value"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + "_closed.Value"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="OpenInfoTabView" display-name="команда открытия InfoTabView" uuid="5f504432-536b-4265-9ea6-1255edc4aa2b" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+	</object>
+	<object access-modifier="private" name="ApParName" display-name="Имя параметра" uuid="56980080-f42c-464c-8559-72bc19b5d546" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath.Value + ".Name"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ApParComment" display-name="Комментарий параметра" uuid="09f26ae1-abf4-406e-b67e-ecd21521455f" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath.Value + ".Comment"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ApParDescription" display-name="Описание параметра" uuid="63062f8d-5af8-47ba-bf18-110c43063611" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath.Value + ".Description"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ApParDisplayName" display-name="ApParDisplayName" uuid="d2df6611-819a-4f3c-bf3f-8b5acb7c7232" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath.Value + ".DisplayName.Value"]]>
+			</body>
+		</do-trace>
+	</object>
+</type>
+

@@ -1,0 +1,2032 @@
+<type access-modifier="public" name="TRF_Main" display-name="TRF_Main" uuid="d4681d9e-b6a5-4408-ba8b-4a961927345d" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="760" ver="5"/>
+	<designed target="Height" value="600" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xff646464" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="760" ver="5"/>
+	<designed target="WindowHeight" value="600" ver="5"/>
+	<designed target="WindowCaption" value="Массовая обработка сигналов" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="1" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="0" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<object access-modifier="private" name="LineEdit_Source" display-name="LineEdit_Source" uuid="93748a6f-03fe-4b5d-8750-e61e39880a30" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5" description="" cardinal="1">
+		<designed target="X" value="125" ver="5"/>
+		<designed target="Y" value="22" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="595" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="HideInput" value="false" ver="5"/>
+		<designed target="PlaceholderText" value="" ver="5"/>
+		<designed target="ReadOnly" value="false" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="806eee2e-9d2c-4e7b-a464-22818318e990" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="15" ver="5"/>
+		<designed target="Y" value="19" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="96" ver="5"/>
+		<designed target="Height" value="32.000000000000007" ver="5"/>
+		<designed target="Text" value="Файл дерева сигналов
+" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="33" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Button_1" display-name="Button_1" uuid="0029d060-6e76-454f-9271-ca9874d26430" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5" description="" cardinal="1">
+		<designed target="X" value="20" ver="5"/>
+		<designed target="Y" value="64" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="700" ver="5"/>
+		<designed target="Height" value="23" ver="5"/>
+		<designed target="Checkable" value="false" ver="5"/>
+		<designed target="Checked" value="false" ver="5"/>
+		<designed target="Text" value="Считать трансфер-блок" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="OnClickFontColor" value="4278190080" ver="5"/>
+		<designed target="OnHoverFontColor" value="4278190080" ver="5"/>
+		<designed target="DisabledFontColor" value="4278190080" ver="5"/>
+		<designed target="BrushColor" value="4293980400" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="OnClickBrushColor" value="4288716960" ver="5"/>
+		<designed target="OnClickBrushStyle" value="1" ver="5"/>
+		<designed target="OnHoverBrushColor" value="4294967295" ver="5"/>
+		<designed target="OnHoverBrushStyle" value="1" ver="5"/>
+		<designed target="DisabledBrushColor" value="4288716960" ver="5"/>
+		<designed target="DisabledBrushStyle" value="1" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="OnClickPenColor" value="4278190080" ver="5"/>
+		<designed target="OnClickPenStyle" value="1" ver="5"/>
+		<designed target="OnClickPenWidth" value="1" ver="5"/>
+		<designed target="OnHoverPenColor" value="4278190080" ver="5"/>
+		<designed target="OnHoverPenStyle" value="1" ver="5"/>
+		<designed target="OnHoverPenWidth" value="1" ver="5"/>
+		<designed target="DisabledPenColor" value="4288716960" ver="5"/>
+		<designed target="DisabledPenStyle" value="1" ver="5"/>
+		<designed target="DisabledPenWidth" value="1" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+			<body kind="om">
+				<![CDATA[timeStart = DateTime.Now();
+LineEdit_StartTime.Text = DateTime.ToString(timeStart);
+
+if(FileSystem.IsFile(LineEdit_Source.Text) ==true)
+{
+TreeSignals = FileSystem.ReadTextFile(LineEdit_Source.Text); 
+itemNumber = 0;//номер сигнала в списке                
+Timer_TreeItem.Active = true;
+}
+else 
+{
+ here.Open_UD_impossible.message = "Указанного файла не существует.\n Проверьте имя файла и его путь";
+ here.Open_UD_impossible.header = "Ошибка";
+ here.Open_UD_impossible.Invoke();
+}
+]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="TransferDevPath" display-name="Путь до папки трансферов" uuid="ba911726-b81c-4c2b-9dd4-b4fec25776bd" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="FileName" display-name="Имя файла сигналов" uuid="f5f60a5c-a33d-4488-953c-437c19319cf6" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ParDevPath" display-name="ParDevPath" uuid="b8ab6dd5-a94a-4535-a857-3716bd2a5a0a" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Initializer" display-name="Initializer" uuid="eac8b34a-08a2-47fa-a192-b5c59f0c0272" base-type="Initializer" base-type-id="6db89679-9299-4993-ad1a-0d086cd1c7d2" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Initialized">
+			<body kind="om">
+				<![CDATA[//путь до дерева сигналов
+if(FileName.Value != "")
+{
+	if(String.Contains(FileName.Value ,".json") == true) LineEdit_Source.Text = FileSystem.ParentPath(FileSystem.ProjectFolder) + "/resources/ASOKU/data/TRF/" + FileName.Value;
+	else LineEdit_Source.Text = FileSystem.ParentPath(FileSystem.ProjectFolder) + "/resources/ASOKU/data/TRF/" + FileName.Value +".json";
+}
+else
+{
+	LineEdit_Source.Text = FileSystem.ParentPath(FileSystem.ProjectFolder) + "/resources/ASOKU/data/TRF/" +" <имя файла> " + ".json";
+}
+]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="FileSystem" display-name="FileSystem" uuid="27409c44-0d38-4837-8933-7305e1a7cee3" base-type="FileSystem" base-type-id="34d744f9-7303-4077-a3f7-9c06c0945512" ver="5" description="" cardinal="1">
+		<designed target="RootPath" value="/" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TRF_AiTransfer" display-name="TRF_AiTransfer" uuid="c9c93afa-39a9-4c65-a58d-9cbb602267dd" base-type="TRF_AiTransfer" base-type-id="2977d052-fcad-4ff2-b562-78c1b081701b" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="transferDevPath" ver="5">
+			<body>
+				<![CDATA[here.TransferDevPath + ".AI"]]>
+			</body>
+		</do-trace>
+		<init target="LQ_TRF1" ver="5" ref="here.Rectangle_7.LQ_TRF1"/>
+		<init target="LQ_TRF2" ver="5" ref="here.Rectangle_7.LQ_TRF2"/>
+		<init target="LQ_TRF3" ver="5" ref="here.Rectangle_7.LQ_TRF3"/>
+		<init target="LQ_TRF4" ver="5" ref="here.Rectangle_7.LQ_TRF4"/>
+		<init target="LQ_TRF5" ver="5" ref="here.Rectangle_7.LQ_TRF5"/>
+	</object>
+	<object access-modifier="private" name="TRF_AoTransfer" display-name="TRF_AoTransfer" uuid="c1717e33-135c-4287-861f-82cd5039ca4e" base-type="TRF_AoTransfer" base-type-id="4c16ec6e-1a71-4a77-afb1-6b3d4e375c67" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="transferDevPath" ver="5">
+			<body>
+				<![CDATA[here.TransferDevPath + ".AO"]]>
+			</body>
+		</do-trace>
+		<init target="LQ_TRF1" ver="5" ref="here.Rectangle_10.LQ_TRF1"/>
+		<init target="LQ_TRF2" ver="5" ref="here.Rectangle_10.LQ_TRF2"/>
+		<init target="LQ_TRF3" ver="5" ref="here.Rectangle_10.LQ_TRF3"/>
+		<init target="LQ_TRF4" ver="5" ref="here.Rectangle_10.LQ_TRF4"/>
+		<init target="LQ_TRF5" ver="5" ref="here.Rectangle_10.LQ_TRF5"/>
+	</object>
+	<object access-modifier="private" name="TRF_AI_SVZ_Transfer" display-name="TRF_AI_SVZ_Transfer" uuid="bc940a89-b562-4958-8bb0-53f87e0fb291" base-type="TRF_AiSvzTransfer" base-type-id="8c1ee13b-aa1b-4035-abe2-844a1a14478c" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="transferDevPath" ver="5">
+			<body>
+				<![CDATA[here.TransferDevPath + ".AI_SVZ"]]>
+			</body>
+		</do-trace>
+		<init target="LQ_TRF5" ver="5" ref="here.Rectangle_7.LQ_TRF5"/>
+		<init target="LQ_TRF1" ver="5" ref="here.Rectangle_11.LQ_TRF1"/>
+		<init target="LQ_TRF2" ver="5" ref="here.Rectangle_11.LQ_TRF2"/>
+		<init target="LQ_TRF3" ver="5" ref="here.Rectangle_11.LQ_TRF3"/>
+		<init target="LQ_TRF4" ver="5" ref="here.Rectangle_11.LQ_TRF4"/>
+	</object>
+	<object access-modifier="private" name="TRF_fAiTransfer" display-name="TRF_fAiTransfer" uuid="9411a922-a9b8-41af-b40c-1e326284de11" base-type="TRF_fAiTransfer" base-type-id="6c4cb41e-9624-4e7b-a3b1-6c1f1932b6db" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="transferDevPath" ver="5">
+			<body>
+				<![CDATA[here.TransferDevPath + ".fAI"]]>
+			</body>
+		</do-trace>
+		<init target="LQ_TRF5" ver="5" ref="here.Rectangle_7.LQ_TRF5"/>
+		<init target="LQ_TRF1" ver="5" ref="here.Rectangle_12.LQ_TRF1"/>
+		<init target="LQ_TRF2" ver="5" ref="here.Rectangle_12.LQ_TRF2"/>
+		<init target="LQ_TRF3" ver="5" ref="here.Rectangle_12.LQ_TRF3"/>
+		<init target="LQ_TRF4" ver="5" ref="here.Rectangle_12.LQ_TRF4"/>
+	</object>
+	<object access-modifier="private" name="TRF_DiTransfer" display-name="TRF_DiTransfer" uuid="2e2c56b6-7a17-4b28-ab96-dbb8d40301c9" base-type="TRF_DiTransfer" base-type-id="b698bdcf-b361-4f19-9c13-c1d031e4e516" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="transferDevPath" ver="5">
+			<body>
+				<![CDATA[here.TransferDevPath + ".DI"]]>
+			</body>
+		</do-trace>
+		<init target="LQ_TRF1" ver="5" ref="here.Rectangle_8.LQ_TRF1"/>
+		<init target="LQ_TRF5" ver="5" ref="here.Rectangle_8.LQ_TRF5"/>
+		<init target="LQ_TRF4" ver="5" ref="here.Rectangle_8.LQ_TRF4"/>
+		<init target="LQ_TRF3" ver="5" ref="here.Rectangle_8.LQ_TRF3"/>
+		<init target="LQ_TRF2" ver="5" ref="here.Rectangle_8.LQ_TRF2"/>
+	</object>
+	<object access-modifier="private" name="TRF_DoTransfer" display-name="TRF_DoTransfer" uuid="cc07414f-2ce2-4e98-a5ea-316fe14f3d29" base-type="TRF_DoTransfer" base-type-id="743f1e40-a14b-4133-ad15-40ff684199d5" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="transferDevPath" ver="5">
+			<body>
+				<![CDATA[here.TransferDevPath + ".DO"]]>
+			</body>
+		</do-trace>
+		<init target="LQ_TRF1" ver="5" ref="here.Rectangle_9.LQ_TRF1"/>
+		<init target="LQ_TRF2" ver="5" ref="here.Rectangle_9.LQ_TRF2"/>
+		<init target="LQ_TRF3" ver="5" ref="here.Rectangle_9.LQ_TRF3"/>
+		<init target="LQ_TRF4" ver="5" ref="here.Rectangle_9.LQ_TRF4"/>
+		<init target="LQ_TRF5" ver="5" ref="here.Rectangle_9.LQ_TRF5"/>
+	</object>
+	<object access-modifier="private" name="DebugTool_1" display-name="DebugTool_1" uuid="7af5734e-9612-405c-851d-0eb626214076" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Open_UD_impossible" display-name="Open_UD_impossible" uuid="4a332114-8fca-40f3-ace8-4671aa5033a6" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-dialog" form-by-id="false">
+			<object access-modifier="private" uuid="82967fd8-7420-4c55-b789-29e02882d638" base-type="UserDialog_1" base-type-id="f235d2a1-8a61-4d94-b05f-36b0bcfa4a99" ver="5">
+				<init target="Message" ver="5" ref="message"/>
+				<init target="Icon" ver="5" value="0"/>
+				<init target="Buttons" ver="5" value="0"/>
+				<init target="Header" ver="5" ref="header"/>
+			</object>
+		</do-on>
+		<object access-modifier="private" name="message" display-name="message" uuid="696eb024-e906-4df7-acc3-6e9385a0773f" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="header" display-name="header" uuid="86ed84fc-2823-4ace-9ba3-33deeea048df" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description="" cardinal="1"/>
+	</object>
+	<init target="TransferDevPath" ver="5" value="HydroUnits.GA_01.Transfers"/>
+	<object access-modifier="private" name="itemNumber" display-name="itemNumber" uuid="015a808a-1c83-46f8-b6a3-8c6f627d439a" base-type="notifying_int4" base-type-id="5ccca629-a45d-46c8-a56c-83ecde8126f7" ver="5" description="" cardinal="1"/>
+	<init target="itemNumber" ver="5" value="0"/>
+	<object access-modifier="private" name="TreeSignals" display-name="TreeSignals" uuid="c46325fe-b76f-4489-8da2-a392cc47eba7" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ProgressBar_1" display-name="ProgressBar_1" uuid="dbc022e8-8910-49fe-b71e-91248d91f967" base-type="ProgressBar" base-type-id="a5193173-0399-4840-95f8-2e9958e4e74e" ver="5" description="" cardinal="1">
+		<designed target="X" value="20" ver="5"/>
+		<designed target="Y" value="103" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="485.99999999999989" ver="5"/>
+		<designed target="Height" value="21" ver="5"/>
+		<designed target="Orientation" value="1" ver="5"/>
+		<designed target="MinLimit" value="0" ver="5"/>
+		<designed target="MaxLimit" value="100" ver="5"/>
+		<designed target="Value" value="0" ver="5"/>
+		<designed target="ShowText" value="true" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_7" display-name="Rectangle_7" uuid="3fc2199d-9020-45d1-a004-b047e658cd30" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="20" ver="5"/>
+		<designed target="Y" value="240" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="330" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffffffff" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<object access-modifier="private" name="Text_6" display-name="Text_6" uuid="6b159048-23a7-435b-b87c-c9b05d8d7125" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="8" ver="5"/>
+			<designed target="Y" value="15" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="97.999999999999986" ver="5"/>
+			<designed target="Height" value="28" ver="5"/>
+			<designed target="Text" value="Использованный трансфер" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextEdit_TransferPath" display-name="TextEdit_TransferPath" uuid="0c82183b-cf92-419a-989c-80ba21e859af" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5" description="" cardinal="1">
+			<designed target="X" value="125" ver="5"/>
+			<designed target="Y" value="14" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="200" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="" ver="5"/>
+			<designed target="Font" value="Tahoma,8,-1,5,75,0,0,0,0,0" ver="5"/>
+			<designed target="FontColor" value="0xff000000" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+			<designed target="HideInput" value="false" ver="5"/>
+			<designed target="PlaceholderText" value="" ver="5"/>
+			<designed target="ReadOnly" value="true" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_2" display-name="TRF_Text_2" uuid="b921091f-fb02-4c07-b40e-93e918f37434" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="21.666666666666742" ver="5"/>
+			<designed target="Y" value="45" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="14" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_3" display-name="TRF_Text_3" uuid="9a76e3ca-7682-4da8-836d-2d634130a8ba" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="53.666666666666742" ver="5"/>
+			<designed target="Y" value="45" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="14" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="2" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_4" display-name="TRF_Text_4" uuid="f4bc2c07-907a-4e97-aa4d-20440ce06d1a" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="86.666666666666742" ver="5"/>
+			<designed target="Y" value="45" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="14" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="3" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_5" display-name="TRF_Text_5" uuid="8d2b4e97-51f8-4719-bf0e-7c250db29941" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="118.66666666666674" ver="5"/>
+			<designed target="Y" value="45" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="14" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="4" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_6" display-name="TRF_Text_6" uuid="50bed524-b278-4edf-8694-499701a64f88" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="153.66666666666674" ver="5"/>
+			<designed target="Y" value="45" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="14" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="5" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="b4f3e94c-44da-490b-ad0c-050bbdf956b1" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="10" ver="5"/>
+			<designed target="Y" value="-8" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="116" ver="5"/>
+			<designed target="Height" value="20.000000000000014" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="0" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="BrushColor" value="0xff646464" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LQ_TRF1" display-name="LQ_TRF1" uuid="5c6d52f9-51cf-4044-9ee7-4b937b3e21a8" base-type="LedQuadrateSimple" base-type-id="458a7e08-8b32-4c0e-92e1-513d25127bb2" ver="5" description="" cardinal="1">
+			<designed target="X" value="8" ver="5"/>
+			<designed target="Y" value="58" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="32" ver="5"/>
+			<designed target="Height" value="32" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LQ_TRF2" display-name="LQ_TRF2" uuid="61fc94a2-0069-4aba-a960-75190d6efb02" base-type="LedQuadrateSimple" base-type-id="458a7e08-8b32-4c0e-92e1-513d25127bb2" ver="5" description="" cardinal="1">
+			<designed target="X" value="41.666666666666742" ver="5"/>
+			<designed target="Y" value="58" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="32" ver="5"/>
+			<designed target="Height" value="32" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LQ_TRF3" display-name="LQ_TRF3" uuid="3e7d1953-2d65-4aa9-a840-ef278ee25853" base-type="LedQuadrateSimple" base-type-id="458a7e08-8b32-4c0e-92e1-513d25127bb2" ver="5" description="" cardinal="1">
+			<designed target="X" value="74.666666666666742" ver="5"/>
+			<designed target="Y" value="58" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="32" ver="5"/>
+			<designed target="Height" value="32" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LQ_TRF4" display-name="LQ_TRF4" uuid="4a08b65a-c966-4743-8da5-def800814b67" base-type="LedQuadrateSimple" base-type-id="458a7e08-8b32-4c0e-92e1-513d25127bb2" ver="5" description="" cardinal="1">
+			<designed target="X" value="107.66666666666674" ver="5"/>
+			<designed target="Y" value="58" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="32" ver="5"/>
+			<designed target="Height" value="32" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LQ_TRF5" display-name="LQ_TRF5" uuid="466fcb5b-66a0-45a5-bd05-b05b8e26b435" base-type="LedQuadrateSimple" base-type-id="458a7e08-8b32-4c0e-92e1-513d25127bb2" ver="5" description="" cardinal="1">
+			<designed target="X" value="140.66666666666674" ver="5"/>
+			<designed target="Y" value="58" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="32" ver="5"/>
+			<designed target="Height" value="32" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_7" display-name="TRF_Text_7" uuid="d8df0198-3577-4a38-8d01-96ad5b98e82e" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="10" ver="5"/>
+			<designed target="Y" value="-10" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="113" ver="5"/>
+			<designed target="Height" value="20.000000000000014" ver="5"/>
+			<designed target="Text" value="Трансфер-блок AI" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Button_1" display-name="Button_1" uuid="53d42c52-1c21-4a5a-89b6-6b8a4c64de38" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5" description="" cardinal="1">
+			<designed target="X" value="187" ver="5"/>
+			<designed target="Y" value="58" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="120" ver="5"/>
+			<designed target="Height" value="24" ver="5"/>
+			<designed target="Checkable" value="false" ver="5"/>
+			<designed target="Checked" value="false" ver="5"/>
+			<designed target="Text" value="Очистить трансферы" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="OnClickFontColor" value="4278190080" ver="5"/>
+			<designed target="OnHoverFontColor" value="4278190080" ver="5"/>
+			<designed target="DisabledFontColor" value="4278190080" ver="5"/>
+			<designed target="BrushColor" value="4293980400" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+			<designed target="OnClickBrushColor" value="4288716960" ver="5"/>
+			<designed target="OnClickBrushStyle" value="1" ver="5"/>
+			<designed target="OnHoverBrushColor" value="4294967295" ver="5"/>
+			<designed target="OnHoverBrushStyle" value="1" ver="5"/>
+			<designed target="DisabledBrushColor" value="4288716960" ver="5"/>
+			<designed target="DisabledBrushStyle" value="1" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="OnClickPenColor" value="4278190080" ver="5"/>
+			<designed target="OnClickPenStyle" value="1" ver="5"/>
+			<designed target="OnClickPenWidth" value="1" ver="5"/>
+			<designed target="OnHoverPenColor" value="4278190080" ver="5"/>
+			<designed target="OnHoverPenStyle" value="1" ver="5"/>
+			<designed target="OnHoverPenWidth" value="1" ver="5"/>
+			<designed target="DisabledPenColor" value="4288716960" ver="5"/>
+			<designed target="DisabledPenStyle" value="1" ver="5"/>
+			<designed target="DisabledPenWidth" value="1" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+				<body kind="om">
+					<![CDATA[TRF_AiTransfer.setTransferClearAll();]]>
+				</body>
+			</do-on>
+		</object>
+	</object>
+	<object access-modifier="private" name="Timer_TreeItem" display-name="Timer_TreeItem" uuid="71e378b2-a4c9-43b9-8240-53c7a1a29f58" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="5" description="" cardinal="1">
+		<designed target="Period" value="2500" ver="5"/>
+		<designed target="Active" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnTimer">
+			<body kind="javascript">
+				<![CDATA[//Таймер обработки сигнала 
+
+var items = JSON.parse(TreeSignals); //список сигналов
+    items = items.UserTree;
+    
+ProgressBar_1.MaxLimit = items.length;
+ProgressBar_1.Value = itemNumber.Value;
+LineEdit_numbersSignal.Text = items.length;
+    
+if(itemNumber.Value < items.length)
+{
+  var item = items[itemNumber.Value].Signal; 
+  let path =  item.OpcTag;
+  path = path.replace(".value", "");  
+  
+  ParDevPath = path;
+ 
+  Timer_GetType.Active = true;
+  
+  itemNumber.Value += 1;
+}
+else
+{
+	getTime();
+   Timer_TreeItem.Active = false;
+}
+]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Timer_GetType" display-name="Timer_GetType" uuid="1ad83922-6358-4a99-b05c-d76907771726" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="5" description="" cardinal="1">
+		<designed target="Period" value="300" ver="5"/>
+		<designed target="Active" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnTimer">
+			<body kind="om">
+				<![CDATA[//таймер чтения элементов
+LineEdit_currentSignal.Text = ParDevPath.Value;
+
+id: string = ApParID.Value;
+
+if(id!= "")
+{
+	type: string = String.SubString(id, String.IndexOf(id, ":")+1);
+	LineEdit_typeSignal.Text = type;
+
+
+	//DebugTool_1.Log("type  " + type);
+
+	if(type == "AI") 
+	{
+	  TRF_AiTransfer.parDevPath  =  ParDevPath.Value;
+ 	  Timer_ReadAI.Active = true;
+	}
+	else if(type == "AO") 
+	{
+	  TRF_AoTransfer.parDevPath  =  ParDevPath.Value;
+ 	  Timer_ReadAO.Active = true;
+	}
+	else if(type == "AI_SVZ") 
+	{
+	  TRF_AI_SVZ_Transfer.parDevPath  =  ParDevPath.Value;
+ 	  Timer_ReadAI_SVZ.Active = true;
+	}
+	else if(type == "fAI") 
+	{
+	  TRF_fAiTransfer.parDevPath  =  ParDevPath.Value;
+ 	  Timer_ReadfAI.Active = true;
+	}
+	
+	else if (type == "DI") 
+	{
+  	  TRF_DiTransfer.parDevPath  =  ParDevPath.Value;
+  	  Timer_ReadDI.Active = true;
+	}
+	else if (type == "DO") 
+	{
+ 	  TRF_DoTransfer.parDevPath  =  ParDevPath.Value;
+  	  Timer_ReadDO.Active = true;
+	}
+}
+Timer_GetType.Active = false;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Timer_ReadAI" display-name="Timer_ReadAI" uuid="30608ac7-b60c-49c3-9f5e-cce3dfd7fa76" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="5" description="" cardinal="1">
+		<designed target="Period" value="250" ver="5"/>
+		<designed target="Active" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnTimer">
+			<body kind="om">
+				<![CDATA[//таймер задержка после изменения пути
+
+_TransferDevPath: string = TRF_AiTransfer.getTransferDpByConnection(); // получение пути до трансфера
+
+if (_TransferDevPath == "")
+{
+  return;
+}
+
+TRF_AiTransfer.constructor(_TransferDevPath);
+Rectangle_7.TextEdit_TransferPath =  _TransferDevPath; //использованный трансфер
+TRF_AiTransfer.readData(); //чтение данных
+
+Timer_WriteSettingsAI.Active = true; //записать уставки сигнала
+
+
+
+Timer_ReadAI.Active = false;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Timer_ReadAO" display-name="Timer_ReadAO" uuid="785f2614-043c-4b35-bb38-a798f3930fb8" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="5" description="" cardinal="1">
+		<designed target="Period" value="250" ver="5"/>
+		<designed target="Active" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnTimer">
+			<body kind="om">
+				<![CDATA[//таймер задержка после изменения пути
+
+_TransferDevPath: string = TRF_AoTransfer.getTransferDpByConnection(); // получение пути до трансфера
+
+if (_TransferDevPath == "")
+{
+  return;
+}
+
+TRF_AoTransfer.constructor(_TransferDevPath);
+Rectangle_10.TextEdit_TransferPath =  _TransferDevPath; //использованный трансфер
+TRF_AoTransfer.readData(); //чтение данных
+
+Timer_WriteSettingsAO.Active = true; //записать уставки сигнала
+
+
+
+Timer_ReadAO.Active = false;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Timer_ReadAI_SVZ" display-name="Timer_ReadAI_SVZ" uuid="3fd3482b-33df-43de-8760-3307baadf9a3" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="5" description="" cardinal="1">
+		<designed target="Period" value="250" ver="5"/>
+		<designed target="Active" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnTimer">
+			<body kind="om">
+				<![CDATA[//таймер задержка после изменения пути
+
+_TransferDevPath: string = TRF_AI_SVZ_Transfer.getTransferDpByConnection(); // получение пути до трансфера
+
+if (_TransferDevPath == "")
+{
+  return;
+}
+
+TRF_AI_SVZ_Transfer.constructor(_TransferDevPath);
+Rectangle_11.TextEdit_TransferPath =  _TransferDevPath; //использованный трансфер
+TRF_AI_SVZ_Transfer.readData(); //чтение данных
+
+Timer_WriteSettingsAI_SVZ.Active = true; //записать уставки сигнала
+
+
+
+Timer_ReadAI_SVZ.Active = false;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Timer_ReadfAI" display-name="Timer_ReadfAI" uuid="e1a0be6b-5574-4f94-951d-c90dfc72e80e" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="5" description="" cardinal="1">
+		<designed target="Period" value="250" ver="5"/>
+		<designed target="Active" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnTimer">
+			<body kind="om">
+				<![CDATA[//таймер задержка после изменения пути
+
+_TransferDevPath: string = TRF_fAiTransfer.getTransferDpByConnection(); // получение пути до трансфера
+
+if (_TransferDevPath == "")
+{
+  Timer_ReadfAI.Active = false;
+}
+
+TRF_AiTransfer.constructor(_TransferDevPath);
+Rectangle_12.TextEdit_TransferPath =  _TransferDevPath; //использованный трансфер
+TRF_fAiTransfer.readData(); //чтение данных
+
+Timer_WriteSettingsfAI.Active = true; //записать уставки сигнала
+
+
+
+Timer_ReadfAI.Active = false;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Timer_ReadDI" display-name="Timer_ReadDI" uuid="d6613715-5bff-43a5-a5a1-546911d6ae0d" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="5" description="" cardinal="1">
+		<designed target="Period" value="250" ver="5"/>
+		<designed target="Active" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnTimer">
+			<body kind="om">
+				<![CDATA[//таймер задержка после изменения пути
+
+_TransferDevPath: string = TRF_DiTransfer.getTransferDpByConnection(); // получение пути до трансфера
+if (_TransferDevPath == "")
+{
+  return;
+}
+
+TRF_DiTransfer.constructor(_TransferDevPath);
+Rectangle_8.TextEdit_TransferPath =  _TransferDevPath; //использованный трансфер
+TRF_DiTransfer.readData(); //чтение данных
+
+Timer_WriteSettingsDI.Active = true; //записать уставки сигнала
+
+Timer_ReadDI.Active = false;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Timer_ReadDO" display-name="Timer_ReadDO" uuid="a460b172-d7b0-4e61-bb4b-8403da1bb8f5" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="5" description="" cardinal="1">
+		<designed target="Period" value="250" ver="5"/>
+		<designed target="Active" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnTimer">
+			<body kind="om">
+				<![CDATA[//таймер задержка после изменения пути
+
+_TransferDevPath: string = TRF_DoTransfer.getTransferDpByConnection(); // получение пути до трансфера
+if (_TransferDevPath == "")
+{
+  return;
+}
+
+TRF_DoTransfer.constructor(_TransferDevPath);
+Rectangle_9.TextEdit_TransferPath =  _TransferDevPath; //использованный трансфер
+TRF_DoTransfer.readData(); //чтение данных
+
+Timer_WriteSettingsDO.Active = true; //записать уставки сигнала
+
+Timer_ReadDO.Active = false;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Timer_WriteSettingsAI" display-name="Timer_WriteSettingsAI" uuid="d33ff362-625b-4883-a96a-c72ee1b6bbd9" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="5" description="" cardinal="1">
+		<designed target="Period" value="500" ver="5"/>
+		<designed target="Active" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnTimer">
+			<body kind="om">
+				<![CDATA[//таймер чтения элементов
+
+TRF_AiTransfer.writeDataSignal(); // записать уставки сигнала
+TRF_AiTransfer.setTransferClear(); //очистить трансферную точку
+
+Timer_WriteSettingsAI.Active= false;
+
+]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Timer_WriteSettingsAO" display-name="Timer_WriteSettingsAO" uuid="7eb003b7-959f-41cd-8444-ab575ed67aa0" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="5" description="" cardinal="1">
+		<designed target="Period" value="500" ver="5"/>
+		<designed target="Active" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnTimer">
+			<body kind="om">
+				<![CDATA[//таймер чтения элементов
+
+TRF_AoTransfer.writeDataSignal(); // записать уставки сигнала
+TRF_AoTransfer.setTransferClear(); //очистить трансферную точку
+
+Timer_WriteSettingsAO.Active= false;
+
+]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Timer_WriteSettingsAI_SVZ" display-name="Timer_WriteSettingsAI_SVZ" uuid="cc15f38b-3d55-4057-8711-2716cd49ddf1" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="5" description="" cardinal="1">
+		<designed target="Period" value="500" ver="5"/>
+		<designed target="Active" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnTimer">
+			<body kind="om">
+				<![CDATA[//таймер чтения элементов
+
+TRF_AI_SVZ_Transfer.writeDataSignal(); // записать уставки сигнала
+TRF_AI_SVZ_Transfer.setTransferClear(); //очистить трансферную точку
+
+Timer_WriteSettingsAI_SVZ.Active= false;
+
+]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Timer_WriteSettingsfAI" display-name="Timer_WriteSettingsfAI" uuid="033d94b4-6c79-4fcf-89a0-9fc750ac4f64" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="5" description="" cardinal="1">
+		<designed target="Period" value="500" ver="5"/>
+		<designed target="Active" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnTimer">
+			<body kind="om">
+				<![CDATA[//таймер чтения элементов
+
+TRF_fAiTransfer.writeDataSignal(); // записать уставки сигнала
+TRF_fAiTransfer.setTransferClear(); //очистить трансферную точку
+
+Timer_WriteSettingsfAI.Active= false;
+
+]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Timer_WriteSettingsDI" display-name="Timer_WriteSettingsDI" uuid="70976668-b77c-41a0-8012-d621f404d110" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="5" description="" cardinal="1">
+		<designed target="Period" value="500" ver="5"/>
+		<designed target="Active" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnTimer">
+			<body kind="om">
+				<![CDATA[//таймер чтения элементов
+
+TRF_DiTransfer.writeDataSignal(); // записать уставки сигнала
+TRF_DiTransfer.setTransferClear(); //очистить трансферную точку
+
+Timer_WriteSettingsDI.Active= false;
+
+]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Timer_WriteSettingsDO" display-name="Timer_WriteSettingsDO" uuid="38f8b213-ca23-4558-9d57-8619470b12f2" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="5" description="" cardinal="1">
+		<designed target="Period" value="500" ver="5"/>
+		<designed target="Active" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnTimer">
+			<body kind="om">
+				<![CDATA[//таймер чтения элементов
+
+TRF_DoTransfer.writeDataSignal(); // записать уставки сигнала
+TRF_DoTransfer.setTransferClear(); //очистить трансферную точку
+
+Timer_WriteSettingsDO.Active= false;
+
+]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="ApParID" display-name="ApParID" uuid="2bd3238d-638f-4623-837c-f2c679dd54e6" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath.Value + ".ID"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_8" display-name="Rectangle_8" uuid="5d8c0989-023f-474c-9a23-7e637a6a95f9" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="20" ver="5"/>
+		<designed target="Y" value="480" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="330" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffffffff" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<object access-modifier="private" name="Text_6" display-name="Text_6" uuid="9020d60b-c4a8-47c0-b7f8-1a2e47ab8d56" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="8" ver="5"/>
+			<designed target="Y" value="15" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="114" ver="5"/>
+			<designed target="Height" value="28" ver="5"/>
+			<designed target="Text" value="Использованный трансфер" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextEdit_TransferPath" display-name="TextEdit_TransferPath" uuid="a49dcc5c-1bee-430f-a7f6-b4e2410980b6" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5" description="" cardinal="1">
+			<designed target="X" value="125" ver="5"/>
+			<designed target="Y" value="14" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="200" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="" ver="5"/>
+			<designed target="Font" value="Tahoma,8,-1,5,75,0,0,0,0,0" ver="5"/>
+			<designed target="FontColor" value="0xff000000" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+			<designed target="HideInput" value="false" ver="5"/>
+			<designed target="PlaceholderText" value="" ver="5"/>
+			<designed target="ReadOnly" value="true" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_2" display-name="TRF_Text_2" uuid="fd4563e1-ab44-4160-9d24-9d071a32ad3d" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="24.666666666666742" ver="5"/>
+			<designed target="Y" value="45" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="14" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_3" display-name="TRF_Text_3" uuid="fd10ae4d-7f94-451d-9dcc-2286e06baf89" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="56.666666666666742" ver="5"/>
+			<designed target="Y" value="45" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="14" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="2" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_4" display-name="TRF_Text_4" uuid="0564215e-6db9-476c-a857-cc9387fd16d0" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="89.666666666666742" ver="5"/>
+			<designed target="Y" value="45" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="14" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="3" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_5" display-name="TRF_Text_5" uuid="99490f2f-61d7-41d3-9c07-813c85689da5" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="121.66666666666674" ver="5"/>
+			<designed target="Y" value="45" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="14" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="4" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_6" display-name="TRF_Text_6" uuid="7d15092a-9f9b-474d-915e-c9ea993c078d" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="156.66666666666674" ver="5"/>
+			<designed target="Y" value="45" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="14" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="5" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="eae16b03-39b9-431e-a8db-f73b49ea536e" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="10" ver="5"/>
+			<designed target="Y" value="-8" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="116" ver="5"/>
+			<designed target="Height" value="20.000000000000014" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="0" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="BrushColor" value="0xff646464" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LQ_TRF1" display-name="LQ_TRF1" uuid="1467de4b-c4d4-4206-b2e7-a1779ed0da32" base-type="LedQuadrateSimple" base-type-id="458a7e08-8b32-4c0e-92e1-513d25127bb2" ver="5" description="" cardinal="1">
+			<designed target="X" value="11.666666666666742" ver="5"/>
+			<designed target="Y" value="58" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="32" ver="5"/>
+			<designed target="Height" value="32" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LQ_TRF2" display-name="LQ_TRF2" uuid="ec2f966d-b722-498e-abbd-d164075bdbb8" base-type="LedQuadrateSimple" base-type-id="458a7e08-8b32-4c0e-92e1-513d25127bb2" ver="5" description="" cardinal="1">
+			<designed target="X" value="44.666666666666742" ver="5"/>
+			<designed target="Y" value="58" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="32" ver="5"/>
+			<designed target="Height" value="32" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LQ_TRF3" display-name="LQ_TRF3" uuid="f5472807-b983-4c5c-ba97-6fe3e218405e" base-type="LedQuadrateSimple" base-type-id="458a7e08-8b32-4c0e-92e1-513d25127bb2" ver="5" description="" cardinal="1">
+			<designed target="X" value="77.666666666666742" ver="5"/>
+			<designed target="Y" value="58" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="32" ver="5"/>
+			<designed target="Height" value="32" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LQ_TRF4" display-name="LQ_TRF4" uuid="6fcac727-7fda-4fa9-be2b-6ba88d59263b" base-type="LedQuadrateSimple" base-type-id="458a7e08-8b32-4c0e-92e1-513d25127bb2" ver="5" description="" cardinal="1">
+			<designed target="X" value="110.66666666666674" ver="5"/>
+			<designed target="Y" value="58" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="32" ver="5"/>
+			<designed target="Height" value="32" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LQ_TRF5" display-name="LQ_TRF5" uuid="d30f6ac9-6907-40a9-947d-6d4b9cc9aafc" base-type="LedQuadrateSimple" base-type-id="458a7e08-8b32-4c0e-92e1-513d25127bb2" ver="5" description="" cardinal="1">
+			<designed target="X" value="143.66666666666674" ver="5"/>
+			<designed target="Y" value="58" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="32" ver="5"/>
+			<designed target="Height" value="32" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_7" display-name="TRF_Text_7" uuid="84efef84-3c28-4295-8c55-12e7bab744db" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="10" ver="5"/>
+			<designed target="Y" value="-10" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="113" ver="5"/>
+			<designed target="Height" value="20.000000000000014" ver="5"/>
+			<designed target="Text" value="Трансфер-блок DI" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Button_1" display-name="Button_1" uuid="4e781c5c-69ea-42e7-b917-f69c30f5f8b8" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5" description="" cardinal="1">
+			<designed target="X" value="190" ver="5"/>
+			<designed target="Y" value="58" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="120" ver="5"/>
+			<designed target="Height" value="24" ver="5"/>
+			<designed target="Checkable" value="false" ver="5"/>
+			<designed target="Checked" value="false" ver="5"/>
+			<designed target="Text" value="Очистить трансферы" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="OnClickFontColor" value="4278190080" ver="5"/>
+			<designed target="OnHoverFontColor" value="4278190080" ver="5"/>
+			<designed target="DisabledFontColor" value="4278190080" ver="5"/>
+			<designed target="BrushColor" value="4293980400" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+			<designed target="OnClickBrushColor" value="4288716960" ver="5"/>
+			<designed target="OnClickBrushStyle" value="1" ver="5"/>
+			<designed target="OnHoverBrushColor" value="4294967295" ver="5"/>
+			<designed target="OnHoverBrushStyle" value="1" ver="5"/>
+			<designed target="DisabledBrushColor" value="4288716960" ver="5"/>
+			<designed target="DisabledBrushStyle" value="1" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="OnClickPenColor" value="4278190080" ver="5"/>
+			<designed target="OnClickPenStyle" value="1" ver="5"/>
+			<designed target="OnClickPenWidth" value="1" ver="5"/>
+			<designed target="OnHoverPenColor" value="4278190080" ver="5"/>
+			<designed target="OnHoverPenStyle" value="1" ver="5"/>
+			<designed target="OnHoverPenWidth" value="1" ver="5"/>
+			<designed target="DisabledPenColor" value="4288716960" ver="5"/>
+			<designed target="DisabledPenStyle" value="1" ver="5"/>
+			<designed target="DisabledPenWidth" value="1" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+				<body kind="om">
+					<![CDATA[TRF_DiTransfer.setTransferClearAll();]]>
+				</body>
+			</do-on>
+		</object>
+	</object>
+	<object access-modifier="private" name="Rectangle_9" display-name="Rectangle_9" uuid="c82f5c71-75b2-49e7-945e-60ca4b324d13" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="370" ver="5"/>
+		<designed target="Y" value="480" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="330" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffffffff" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<object access-modifier="private" name="Text_6" display-name="Text_6" uuid="0a9f3e98-c568-444a-84d6-236995986dfc" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="8" ver="5"/>
+			<designed target="Y" value="15" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="113" ver="5"/>
+			<designed target="Height" value="31" ver="5"/>
+			<designed target="Text" value="Использованный трансфер" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextEdit_TransferPath" display-name="TextEdit_TransferPath" uuid="3560f308-a7ac-4c16-b51a-c95db6ececee" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5" description="" cardinal="1">
+			<designed target="X" value="125" ver="5"/>
+			<designed target="Y" value="14" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="200" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="" ver="5"/>
+			<designed target="Font" value="Tahoma,8,-1,5,75,0,0,0,0,0" ver="5"/>
+			<designed target="FontColor" value="0xff000000" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+			<designed target="HideInput" value="false" ver="5"/>
+			<designed target="PlaceholderText" value="" ver="5"/>
+			<designed target="ReadOnly" value="true" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_2" display-name="TRF_Text_2" uuid="4995e1bd-b15d-4f56-be14-9eaacbedcb73" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="22.666666666666742" ver="5"/>
+			<designed target="Y" value="45" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="14" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_3" display-name="TRF_Text_3" uuid="e38cae8e-01ef-4e19-89d9-d2dbf274612b" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="54.666666666666742" ver="5"/>
+			<designed target="Y" value="45" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="14" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="2" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_4" display-name="TRF_Text_4" uuid="727e1a40-69d0-48d5-86a0-4b0a5d58d4f6" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="87.666666666666742" ver="5"/>
+			<designed target="Y" value="45" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="14" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="3" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_5" display-name="TRF_Text_5" uuid="2855e418-3d89-4b22-80cd-7767970303d8" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="119.66666666666674" ver="5"/>
+			<designed target="Y" value="45" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="14" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="4" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_6" display-name="TRF_Text_6" uuid="24b7e57f-3e6e-4ce6-b923-39ab2c4aeddb" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="154.66666666666674" ver="5"/>
+			<designed target="Y" value="45" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="14" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="5" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="bded671a-1b5e-4eb5-ae0b-6affdecc5d79" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="10" ver="5"/>
+			<designed target="Y" value="-8" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="116" ver="5"/>
+			<designed target="Height" value="20.000000000000014" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="0" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="BrushColor" value="0xff646464" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LQ_TRF1" display-name="LQ_TRF1" uuid="3e69ca7e-a72b-4008-a2f9-c2951c8ce286" base-type="LedQuadrateSimple" base-type-id="458a7e08-8b32-4c0e-92e1-513d25127bb2" ver="5" description="" cardinal="1">
+			<designed target="X" value="9.6666666666667425" ver="5"/>
+			<designed target="Y" value="59" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="32" ver="5"/>
+			<designed target="Height" value="32" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LQ_TRF2" display-name="LQ_TRF2" uuid="cf9fd13d-b9f5-4967-b4c4-564e41c19893" base-type="LedQuadrateSimple" base-type-id="458a7e08-8b32-4c0e-92e1-513d25127bb2" ver="5" description="" cardinal="1">
+			<designed target="X" value="42.666666666666742" ver="5"/>
+			<designed target="Y" value="59" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="32" ver="5"/>
+			<designed target="Height" value="32" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LQ_TRF3" display-name="LQ_TRF3" uuid="761288ad-efbb-4ac9-92c6-8a40c3e0e9d9" base-type="LedQuadrateSimple" base-type-id="458a7e08-8b32-4c0e-92e1-513d25127bb2" ver="5" description="" cardinal="1">
+			<designed target="X" value="75.666666666666742" ver="5"/>
+			<designed target="Y" value="59" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="32" ver="5"/>
+			<designed target="Height" value="32" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LQ_TRF4" display-name="LQ_TRF4" uuid="9a5aa8bb-8dac-4d59-a776-ea505d1acad8" base-type="LedQuadrateSimple" base-type-id="458a7e08-8b32-4c0e-92e1-513d25127bb2" ver="5" description="" cardinal="1">
+			<designed target="X" value="108.66666666666674" ver="5"/>
+			<designed target="Y" value="59" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="32" ver="5"/>
+			<designed target="Height" value="32" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LQ_TRF5" display-name="LQ_TRF5" uuid="4cf7d358-f414-4e48-b5f0-6d9b75fb5b24" base-type="LedQuadrateSimple" base-type-id="458a7e08-8b32-4c0e-92e1-513d25127bb2" ver="5" description="" cardinal="1">
+			<designed target="X" value="141.66666666666674" ver="5"/>
+			<designed target="Y" value="59" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="32" ver="5"/>
+			<designed target="Height" value="32" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_7" display-name="TRF_Text_7" uuid="9f3ca786-94e2-422d-bba5-c7750d7875f0" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="10" ver="5"/>
+			<designed target="Y" value="-10" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="113" ver="5"/>
+			<designed target="Height" value="20.000000000000014" ver="5"/>
+			<designed target="Text" value="Трансфер-блок DO" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Button_1" display-name="Button_1" uuid="09ddaffc-835d-4e02-b35c-9dffc3bcb398" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5" description="" cardinal="1">
+			<designed target="X" value="188" ver="5"/>
+			<designed target="Y" value="59" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="120" ver="5"/>
+			<designed target="Height" value="24" ver="5"/>
+			<designed target="Checkable" value="false" ver="5"/>
+			<designed target="Checked" value="false" ver="5"/>
+			<designed target="Text" value="Очистить трансферы" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="OnClickFontColor" value="4278190080" ver="5"/>
+			<designed target="OnHoverFontColor" value="4278190080" ver="5"/>
+			<designed target="DisabledFontColor" value="4278190080" ver="5"/>
+			<designed target="BrushColor" value="4293980400" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+			<designed target="OnClickBrushColor" value="4288716960" ver="5"/>
+			<designed target="OnClickBrushStyle" value="1" ver="5"/>
+			<designed target="OnHoverBrushColor" value="4294967295" ver="5"/>
+			<designed target="OnHoverBrushStyle" value="1" ver="5"/>
+			<designed target="DisabledBrushColor" value="4288716960" ver="5"/>
+			<designed target="DisabledBrushStyle" value="1" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="OnClickPenColor" value="4278190080" ver="5"/>
+			<designed target="OnClickPenStyle" value="1" ver="5"/>
+			<designed target="OnClickPenWidth" value="1" ver="5"/>
+			<designed target="OnHoverPenColor" value="4278190080" ver="5"/>
+			<designed target="OnHoverPenStyle" value="1" ver="5"/>
+			<designed target="OnHoverPenWidth" value="1" ver="5"/>
+			<designed target="DisabledPenColor" value="4288716960" ver="5"/>
+			<designed target="DisabledPenStyle" value="1" ver="5"/>
+			<designed target="DisabledPenWidth" value="1" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+				<body kind="om">
+					<![CDATA[TRF_DoTransfer.setTransferClearAll();]]>
+				</body>
+			</do-on>
+		</object>
+	</object>
+	<object access-modifier="private" name="LineEdit_StartTime" display-name="LineEdit_StartTime" uuid="90af03c4-0cf4-4f0f-a91e-c83d3e085e6c" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5" description="" cardinal="1">
+		<designed target="X" value="85" ver="5"/>
+		<designed target="Y" value="148" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="133" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="HideInput" value="false" ver="5"/>
+		<designed target="PlaceholderText" value="" ver="5"/>
+		<designed target="ReadOnly" value="true" ver="5"/>
+	</object>
+	<object access-modifier="private" name="LineEdit_Time" display-name="LineEdit_Time" uuid="0b81a999-db6e-414b-8ec0-4f5cbb1c95c2" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5" description="" cardinal="1">
+		<designed target="X" value="557" ver="5"/>
+		<designed target="Y" value="148" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="105" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="HideInput" value="false" ver="5"/>
+		<designed target="PlaceholderText" value="" ver="5"/>
+		<designed target="ReadOnly" value="true" ver="5"/>
+	</object>
+	<object access-modifier="private" name="LineEdit_EndTime" display-name="LineEdit_EndTime" uuid="881ac752-631e-461c-9b9a-48e6fcd5c560" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5" description="" cardinal="1">
+		<designed target="X" value="289" ver="5"/>
+		<designed target="Y" value="148" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="133" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="HideInput" value="false" ver="5"/>
+		<designed target="PlaceholderText" value="" ver="5"/>
+		<designed target="ReadOnly" value="true" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_2" display-name="Text_2" uuid="5c28f79a-9574-4d84-933e-8c3e3627b01e" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="427" ver="5"/>
+		<designed target="Y" value="147.5" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="125" ver="5"/>
+		<designed target="Height" value="21" ver="5"/>
+		<designed target="Text" value="Время обработки" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="33" ver="5"/>
+	</object>
+	<object access-modifier="private" name="timeStart" display-name="timeStart" uuid="294fc764-06c1-4487-9f23-a0076d2c3536" base-type="uint8" base-type-id="c8ff7701-da6e-4d53-888a-81fa680ff561" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Text_2" display-name="Text_2" uuid="05e276d0-1935-476c-9dc8-99db5cf2435b" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="20" ver="5"/>
+		<designed target="Y" value="148" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="61" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="Начало" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="33" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_3" display-name="Text_3" uuid="0419c12a-2e3f-4724-8747-e06ec23e47b9" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="223" ver="5"/>
+		<designed target="Y" value="148" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="61" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="Конец" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="33" ver="5"/>
+	</object>
+	<do access-modifier="private" name="getTime" display-name="getTime" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="om">
+			<![CDATA[timeEnd: uint8 = DateTime.Now();
+LineEdit_EndTime.Text = DateTime.ToString(timeEnd);
+LineEdit_Time.Text = String.ToString(DateTime.Hour(timeEnd - timeStart))+ ":" + String.ToString(DateTime.Minute(timeEnd - timeStart)) + ":"+ String.ToString(DateTime.Second(timeEnd - timeStart));]]>
+		</body>
+	</do>
+	<object access-modifier="private" name="Text_4" display-name="Text_4" uuid="4a2c215d-e6e8-4cb1-8b7e-b30c8d971333" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="534" ver="5"/>
+		<designed target="Y" value="103" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="75" ver="5"/>
+		<designed target="Height" value="33" ver="5"/>
+		<designed target="Text" value="Всего сигналов" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="33" ver="5"/>
+	</object>
+	<object access-modifier="private" name="LineEdit_numbersSignal" display-name="LineEdit_numbersSignal" uuid="e9845118-eecc-4bd5-b6b3-9086474b86cc" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5" description="" cardinal="1">
+		<designed target="X" value="602" ver="5"/>
+		<designed target="Y" value="106" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="102" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="HideInput" value="false" ver="5"/>
+		<designed target="PlaceholderText" value="" ver="5"/>
+		<designed target="ReadOnly" value="true" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_5" display-name="Text_5" uuid="1f9fa71d-9933-4bf7-a68a-88742ba6251d" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="20" ver="5"/>
+		<designed target="Y" value="184.5" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="81" ver="5"/>
+		<designed target="Height" value="33" ver="5"/>
+		<designed target="Text" value="Текущий сигнал
+" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="33" ver="5"/>
+	</object>
+	<object access-modifier="private" name="LineEdit_currentSignal" display-name="LineEdit_currentSignal" uuid="33c52f61-1549-4e02-b30b-3622fc5ef213" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5" description="" cardinal="1">
+		<designed target="X" value="88" ver="5"/>
+		<designed target="Y" value="191" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="334" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="HideInput" value="false" ver="5"/>
+		<designed target="PlaceholderText" value="" ver="5"/>
+		<designed target="ReadOnly" value="true" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_6" display-name="Text_6" uuid="bfddf4a9-ad67-4c86-bccd-33a8f318be7f" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="469" ver="5"/>
+		<designed target="Y" value="184.5" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="81" ver="5"/>
+		<designed target="Height" value="33" ver="5"/>
+		<designed target="Text" value="Тип сигнала" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="33" ver="5"/>
+	</object>
+	<object access-modifier="private" name="LineEdit_typeSignal" display-name="LineEdit_typeSignal" uuid="84935a2b-ac74-463d-a4d3-02441073d54d" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5" description="" cardinal="1">
+		<designed target="X" value="561" ver="5"/>
+		<designed target="Y" value="191" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="102" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="HideInput" value="false" ver="5"/>
+		<designed target="PlaceholderText" value="" ver="5"/>
+		<designed target="ReadOnly" value="true" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_10" display-name="Rectangle_10" uuid="eaae982c-e32c-4ed4-896f-be28eb3c1909" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="370" ver="5"/>
+		<designed target="Y" value="240" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="330" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffffffff" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<object access-modifier="private" name="Text_6" display-name="Text_6" uuid="c7357479-bd66-4416-b343-f748e964f6a1" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="8" ver="5"/>
+			<designed target="Y" value="15" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="113" ver="5"/>
+			<designed target="Height" value="31" ver="5"/>
+			<designed target="Text" value="Использованный трансфер" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextEdit_TransferPath" display-name="TextEdit_TransferPath" uuid="d6f7008d-9566-4da7-9d0c-8748436ad34b" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5" description="" cardinal="1">
+			<designed target="X" value="125" ver="5"/>
+			<designed target="Y" value="14" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="200" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="" ver="5"/>
+			<designed target="Font" value="Tahoma,8,-1,5,75,0,0,0,0,0" ver="5"/>
+			<designed target="FontColor" value="0xff000000" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+			<designed target="HideInput" value="false" ver="5"/>
+			<designed target="PlaceholderText" value="" ver="5"/>
+			<designed target="ReadOnly" value="true" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_2" display-name="TRF_Text_2" uuid="74f7f0a3-6e03-404d-944b-eaacb5e0a24b" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="22.666666666666742" ver="5"/>
+			<designed target="Y" value="45" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="14" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_3" display-name="TRF_Text_3" uuid="dfda8b68-d774-4e39-a22c-2bbe1d5d58cc" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="54.666666666666742" ver="5"/>
+			<designed target="Y" value="45" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="14" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="2" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_4" display-name="TRF_Text_4" uuid="9e93773a-1253-454b-97b7-7d16e42fc00b" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="87.666666666666742" ver="5"/>
+			<designed target="Y" value="45" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="14" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="3" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_5" display-name="TRF_Text_5" uuid="362ee9de-3116-44b0-9a76-c4df440f30bd" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="119.66666666666674" ver="5"/>
+			<designed target="Y" value="45" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="14" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="4" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_6" display-name="TRF_Text_6" uuid="0edef6ec-4bf8-4e67-bfa9-8572efb9ebf2" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="154.66666666666674" ver="5"/>
+			<designed target="Y" value="45" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="14" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="5" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="12859e5e-68aa-49e6-9b4b-a1ad53312ebe" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="10" ver="5"/>
+			<designed target="Y" value="-8" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="116" ver="5"/>
+			<designed target="Height" value="20.000000000000014" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="0" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="BrushColor" value="0xff646464" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LQ_TRF1" display-name="LQ_TRF1" uuid="3cb35fa7-39e0-434a-93e0-f22f4fe27e12" base-type="LedQuadrateSimple" base-type-id="458a7e08-8b32-4c0e-92e1-513d25127bb2" ver="5" description="" cardinal="1">
+			<designed target="X" value="9.6666666666667425" ver="5"/>
+			<designed target="Y" value="59" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="32" ver="5"/>
+			<designed target="Height" value="32" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LQ_TRF2" display-name="LQ_TRF2" uuid="d2e054a4-310f-4bf4-a41b-0d9d913ff165" base-type="LedQuadrateSimple" base-type-id="458a7e08-8b32-4c0e-92e1-513d25127bb2" ver="5" description="" cardinal="1">
+			<designed target="X" value="42.666666666666742" ver="5"/>
+			<designed target="Y" value="59" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="32" ver="5"/>
+			<designed target="Height" value="32" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LQ_TRF3" display-name="LQ_TRF3" uuid="7be0342e-0e9b-44a5-a894-0368d5e0ae61" base-type="LedQuadrateSimple" base-type-id="458a7e08-8b32-4c0e-92e1-513d25127bb2" ver="5" description="" cardinal="1">
+			<designed target="X" value="75.666666666666742" ver="5"/>
+			<designed target="Y" value="59" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="32" ver="5"/>
+			<designed target="Height" value="32" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LQ_TRF4" display-name="LQ_TRF4" uuid="7ead2be7-ef7a-43ad-878c-3e72f329c008" base-type="LedQuadrateSimple" base-type-id="458a7e08-8b32-4c0e-92e1-513d25127bb2" ver="5" description="" cardinal="1">
+			<designed target="X" value="108.66666666666674" ver="5"/>
+			<designed target="Y" value="59" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="32" ver="5"/>
+			<designed target="Height" value="32" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LQ_TRF5" display-name="LQ_TRF5" uuid="0c10d2fe-a59a-4c90-9d9e-d70e78abfb8d" base-type="LedQuadrateSimple" base-type-id="458a7e08-8b32-4c0e-92e1-513d25127bb2" ver="5" description="" cardinal="1">
+			<designed target="X" value="141.66666666666674" ver="5"/>
+			<designed target="Y" value="59" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="32" ver="5"/>
+			<designed target="Height" value="32" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_7" display-name="TRF_Text_7" uuid="7f2e9657-c082-4b31-8b4e-fb44d12e79bb" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="10" ver="5"/>
+			<designed target="Y" value="-10" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="113" ver="5"/>
+			<designed target="Height" value="20.000000000000014" ver="5"/>
+			<designed target="Text" value="Трансфер-блок AO" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Button_1" display-name="Button_1" uuid="4f2667a5-9c26-4973-9161-64dd02bcd6a7" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5" description="" cardinal="1">
+			<designed target="X" value="188" ver="5"/>
+			<designed target="Y" value="59" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="120" ver="5"/>
+			<designed target="Height" value="24" ver="5"/>
+			<designed target="Checkable" value="false" ver="5"/>
+			<designed target="Checked" value="false" ver="5"/>
+			<designed target="Text" value="Очистить трансферы" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="OnClickFontColor" value="4278190080" ver="5"/>
+			<designed target="OnHoverFontColor" value="4278190080" ver="5"/>
+			<designed target="DisabledFontColor" value="4278190080" ver="5"/>
+			<designed target="BrushColor" value="4293980400" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+			<designed target="OnClickBrushColor" value="4288716960" ver="5"/>
+			<designed target="OnClickBrushStyle" value="1" ver="5"/>
+			<designed target="OnHoverBrushColor" value="4294967295" ver="5"/>
+			<designed target="OnHoverBrushStyle" value="1" ver="5"/>
+			<designed target="DisabledBrushColor" value="4288716960" ver="5"/>
+			<designed target="DisabledBrushStyle" value="1" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="OnClickPenColor" value="4278190080" ver="5"/>
+			<designed target="OnClickPenStyle" value="1" ver="5"/>
+			<designed target="OnClickPenWidth" value="1" ver="5"/>
+			<designed target="OnHoverPenColor" value="4278190080" ver="5"/>
+			<designed target="OnHoverPenStyle" value="1" ver="5"/>
+			<designed target="OnHoverPenWidth" value="1" ver="5"/>
+			<designed target="DisabledPenColor" value="4288716960" ver="5"/>
+			<designed target="DisabledPenStyle" value="1" ver="5"/>
+			<designed target="DisabledPenWidth" value="1" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+				<body kind="om">
+					<![CDATA[TRF_DoTransfer.setTransferClearAll();]]>
+				</body>
+			</do-on>
+		</object>
+	</object>
+	<object access-modifier="private" name="Rectangle_11" display-name="Rectangle_11" uuid="6f208260-65d3-4d23-a4cc-b016824cb6d5" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="20" ver="5"/>
+		<designed target="Y" value="360" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="330" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffffffff" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<object access-modifier="private" name="Text_6" display-name="Text_6" uuid="7fa98bd0-5333-400c-843d-30efb7196d7b" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="8" ver="5"/>
+			<designed target="Y" value="15" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="113" ver="5"/>
+			<designed target="Height" value="31" ver="5"/>
+			<designed target="Text" value="Использованный трансфер" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextEdit_TransferPath" display-name="TextEdit_TransferPath" uuid="f11a68e5-f033-45a8-a977-e8f829937485" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5" description="" cardinal="1">
+			<designed target="X" value="125" ver="5"/>
+			<designed target="Y" value="14" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="200" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="" ver="5"/>
+			<designed target="Font" value="Tahoma,8,-1,5,75,0,0,0,0,0" ver="5"/>
+			<designed target="FontColor" value="0xff000000" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+			<designed target="HideInput" value="false" ver="5"/>
+			<designed target="PlaceholderText" value="" ver="5"/>
+			<designed target="ReadOnly" value="true" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_2" display-name="TRF_Text_2" uuid="d36ef7c1-5191-4a66-8d35-6652c42ae623" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="22.666666666666742" ver="5"/>
+			<designed target="Y" value="45" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="14" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_3" display-name="TRF_Text_3" uuid="18749468-bc3e-448b-919d-00dabd19a513" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="54.666666666666742" ver="5"/>
+			<designed target="Y" value="45" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="14" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="2" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_4" display-name="TRF_Text_4" uuid="19ee06f1-7149-434f-8b1a-4527ef3d7be3" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="87.666666666666742" ver="5"/>
+			<designed target="Y" value="45" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="14" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="3" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_5" display-name="TRF_Text_5" uuid="5786df35-8aaa-48e0-baf8-f4988d021f32" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="119.66666666666674" ver="5"/>
+			<designed target="Y" value="45" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="14" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="4" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="a68ebdd9-ac08-4775-adb7-56bf17fbc361" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="10" ver="5"/>
+			<designed target="Y" value="-10" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="140" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="0" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="BrushColor" value="0xff646464" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LQ_TRF1" display-name="LQ_TRF1" uuid="94d2b8c2-bc27-4296-bb42-9d11f14ae20d" base-type="LedQuadrateSimple" base-type-id="458a7e08-8b32-4c0e-92e1-513d25127bb2" ver="5" description="" cardinal="1">
+			<designed target="X" value="9.6666666666667425" ver="5"/>
+			<designed target="Y" value="59" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="32" ver="5"/>
+			<designed target="Height" value="32" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LQ_TRF2" display-name="LQ_TRF2" uuid="0f451e92-2ed2-45ee-ad8c-b351e88ece85" base-type="LedQuadrateSimple" base-type-id="458a7e08-8b32-4c0e-92e1-513d25127bb2" ver="5" description="" cardinal="1">
+			<designed target="X" value="42.666666666666742" ver="5"/>
+			<designed target="Y" value="59" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="32" ver="5"/>
+			<designed target="Height" value="32" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LQ_TRF3" display-name="LQ_TRF3" uuid="54827d21-d2e8-4096-bb64-1f6763493fff" base-type="LedQuadrateSimple" base-type-id="458a7e08-8b32-4c0e-92e1-513d25127bb2" ver="5" description="" cardinal="1">
+			<designed target="X" value="75.666666666666742" ver="5"/>
+			<designed target="Y" value="59" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="32" ver="5"/>
+			<designed target="Height" value="32" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LQ_TRF4" display-name="LQ_TRF4" uuid="8df28358-8e25-4b93-a6bc-1457c302e511" base-type="LedQuadrateSimple" base-type-id="458a7e08-8b32-4c0e-92e1-513d25127bb2" ver="5" description="" cardinal="1">
+			<designed target="X" value="108.66666666666674" ver="5"/>
+			<designed target="Y" value="59" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="32" ver="5"/>
+			<designed target="Height" value="32" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_7" display-name="TRF_Text_7" uuid="4ceb945f-6def-402d-af60-c90249924a63" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="10" ver="5"/>
+			<designed target="Y" value="-10" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="140" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="Трансфер-блок AI_SVZ" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Button_1" display-name="Button_1" uuid="4c4b1a7a-f8e5-42a5-a4f3-85c0f8014a74" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5" description="" cardinal="1">
+			<designed target="X" value="188" ver="5"/>
+			<designed target="Y" value="59" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="120" ver="5"/>
+			<designed target="Height" value="24" ver="5"/>
+			<designed target="Checkable" value="false" ver="5"/>
+			<designed target="Checked" value="false" ver="5"/>
+			<designed target="Text" value="Очистить трансферы" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="OnClickFontColor" value="4278190080" ver="5"/>
+			<designed target="OnHoverFontColor" value="4278190080" ver="5"/>
+			<designed target="DisabledFontColor" value="4278190080" ver="5"/>
+			<designed target="BrushColor" value="4293980400" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+			<designed target="OnClickBrushColor" value="4288716960" ver="5"/>
+			<designed target="OnClickBrushStyle" value="1" ver="5"/>
+			<designed target="OnHoverBrushColor" value="4294967295" ver="5"/>
+			<designed target="OnHoverBrushStyle" value="1" ver="5"/>
+			<designed target="DisabledBrushColor" value="4288716960" ver="5"/>
+			<designed target="DisabledBrushStyle" value="1" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="OnClickPenColor" value="4278190080" ver="5"/>
+			<designed target="OnClickPenStyle" value="1" ver="5"/>
+			<designed target="OnClickPenWidth" value="1" ver="5"/>
+			<designed target="OnHoverPenColor" value="4278190080" ver="5"/>
+			<designed target="OnHoverPenStyle" value="1" ver="5"/>
+			<designed target="OnHoverPenWidth" value="1" ver="5"/>
+			<designed target="DisabledPenColor" value="4288716960" ver="5"/>
+			<designed target="DisabledPenStyle" value="1" ver="5"/>
+			<designed target="DisabledPenWidth" value="1" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+				<body kind="om">
+					<![CDATA[TRF_DoTransfer.setTransferClearAll();]]>
+				</body>
+			</do-on>
+		</object>
+	</object>
+	<object access-modifier="private" name="Rectangle_12" display-name="Rectangle_12" uuid="43c969d6-01a7-4db2-bcac-b3bffd9c6981" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="370" ver="5"/>
+		<designed target="Y" value="360" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="330" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffffffff" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<object access-modifier="private" name="Text_6" display-name="Text_6" uuid="702707fb-22c8-4310-af84-77d3f2b4047a" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="8" ver="5"/>
+			<designed target="Y" value="15" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="113" ver="5"/>
+			<designed target="Height" value="31" ver="5"/>
+			<designed target="Text" value="Использованный трансфер" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextEdit_TransferPath" display-name="TextEdit_TransferPath" uuid="29021b30-e4e9-458b-9b98-1751ffd2c729" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5" description="" cardinal="1">
+			<designed target="X" value="125" ver="5"/>
+			<designed target="Y" value="14" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="200" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="" ver="5"/>
+			<designed target="Font" value="Tahoma,8,-1,5,75,0,0,0,0,0" ver="5"/>
+			<designed target="FontColor" value="0xff000000" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+			<designed target="HideInput" value="false" ver="5"/>
+			<designed target="PlaceholderText" value="" ver="5"/>
+			<designed target="ReadOnly" value="true" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_2" display-name="TRF_Text_2" uuid="0893f0dc-8a92-4e8a-873f-d9bc8d108994" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="22.666666666666742" ver="5"/>
+			<designed target="Y" value="45" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="14" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_3" display-name="TRF_Text_3" uuid="dc1f61d3-51cc-477e-948a-1cc676be6c87" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="54.666666666666742" ver="5"/>
+			<designed target="Y" value="45" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="14" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="2" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_4" display-name="TRF_Text_4" uuid="2b333050-e268-4745-a4be-dc4e7e855aa9" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="87.666666666666742" ver="5"/>
+			<designed target="Y" value="45" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="14" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="3" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_5" display-name="TRF_Text_5" uuid="885d1453-6460-4025-8233-6c9c2d2f674a" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="119.66666666666674" ver="5"/>
+			<designed target="Y" value="45" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="14" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="4" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="2bea04a8-97bb-4e9e-af83-3febe02f6262" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="10" ver="5"/>
+			<designed target="Y" value="-10" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="140" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="0" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="BrushColor" value="0xff646464" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LQ_TRF1" display-name="LQ_TRF1" uuid="6853724d-d48b-4686-9a65-1a61abfe4f3b" base-type="LedQuadrateSimple" base-type-id="458a7e08-8b32-4c0e-92e1-513d25127bb2" ver="5" description="" cardinal="1">
+			<designed target="X" value="9.6666666666667425" ver="5"/>
+			<designed target="Y" value="59" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="32" ver="5"/>
+			<designed target="Height" value="32" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LQ_TRF2" display-name="LQ_TRF2" uuid="8590aee5-2d77-48dd-af76-3374c251b136" base-type="LedQuadrateSimple" base-type-id="458a7e08-8b32-4c0e-92e1-513d25127bb2" ver="5" description="" cardinal="1">
+			<designed target="X" value="42.666666666666742" ver="5"/>
+			<designed target="Y" value="59" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="32" ver="5"/>
+			<designed target="Height" value="32" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LQ_TRF3" display-name="LQ_TRF3" uuid="0d875f1b-4152-4b49-80bb-4937fb2162c5" base-type="LedQuadrateSimple" base-type-id="458a7e08-8b32-4c0e-92e1-513d25127bb2" ver="5" description="" cardinal="1">
+			<designed target="X" value="75.666666666666742" ver="5"/>
+			<designed target="Y" value="59" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="32" ver="5"/>
+			<designed target="Height" value="32" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LQ_TRF4" display-name="LQ_TRF4" uuid="01d0afa6-5b11-43b4-9d4c-acddf2f28a65" base-type="LedQuadrateSimple" base-type-id="458a7e08-8b32-4c0e-92e1-513d25127bb2" ver="5" description="" cardinal="1">
+			<designed target="X" value="108.66666666666674" ver="5"/>
+			<designed target="Y" value="59" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="32" ver="5"/>
+			<designed target="Height" value="32" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_7" display-name="TRF_Text_7" uuid="cac7082a-256d-4775-823d-748d62cc8e92" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="10" ver="5"/>
+			<designed target="Y" value="-10" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="140" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="Трансфер-блок fAI" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Button_1" display-name="Button_1" uuid="1d2b2f2f-04e0-4b62-87ec-527a0748add8" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5" description="" cardinal="1">
+			<designed target="X" value="188" ver="5"/>
+			<designed target="Y" value="59" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="120" ver="5"/>
+			<designed target="Height" value="24" ver="5"/>
+			<designed target="Checkable" value="false" ver="5"/>
+			<designed target="Checked" value="false" ver="5"/>
+			<designed target="Text" value="Очистить трансферы" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="OnClickFontColor" value="4278190080" ver="5"/>
+			<designed target="OnHoverFontColor" value="4278190080" ver="5"/>
+			<designed target="DisabledFontColor" value="4278190080" ver="5"/>
+			<designed target="BrushColor" value="4293980400" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+			<designed target="OnClickBrushColor" value="4288716960" ver="5"/>
+			<designed target="OnClickBrushStyle" value="1" ver="5"/>
+			<designed target="OnHoverBrushColor" value="4294967295" ver="5"/>
+			<designed target="OnHoverBrushStyle" value="1" ver="5"/>
+			<designed target="DisabledBrushColor" value="4288716960" ver="5"/>
+			<designed target="DisabledBrushStyle" value="1" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="OnClickPenColor" value="4278190080" ver="5"/>
+			<designed target="OnClickPenStyle" value="1" ver="5"/>
+			<designed target="OnClickPenWidth" value="1" ver="5"/>
+			<designed target="OnHoverPenColor" value="4278190080" ver="5"/>
+			<designed target="OnHoverPenStyle" value="1" ver="5"/>
+			<designed target="OnHoverPenWidth" value="1" ver="5"/>
+			<designed target="DisabledPenColor" value="4288716960" ver="5"/>
+			<designed target="DisabledPenStyle" value="1" ver="5"/>
+			<designed target="DisabledPenWidth" value="1" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+				<body kind="om">
+					<![CDATA[TRF_DoTransfer.setTransferClearAll();]]>
+				</body>
+			</do-on>
+		</object>
+	</object>
+</type>
+

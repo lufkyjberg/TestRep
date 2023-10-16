@@ -1,0 +1,22 @@
+<type access-modifier="public" name="NarabotkiSignal" display-name="Значения наработок" uuid="08299ae1-b509-4c66-ac1b-fadb9886dd67" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="248" ver="5"/>
+	<designed target="Height" value="18" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<object access-modifier="private" name="postfix" display-name="postfix" uuid="a3a375db-3fea-441b-9c96-90972dcba1e8" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description=""/>
+	<object access-modifier="private" name="ParDevPath" display-name="Путь параметра" uuid="ecb7d410-b056-4760-8051-fdd8eb7eb0cf" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="postfixStSt" display-name="postfixStSt" uuid="697d71aa-e741-4cac-85ec-3283619fb813" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description=""/>
+	<designed target="Text" value="000" ver="5"/>
+	<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="5"/>
+	<designed target="FontColor" value="0xff000000" ver="5"/>
+	<designed target="TextAlignment" value="132" ver="5"/>
+</type>
+

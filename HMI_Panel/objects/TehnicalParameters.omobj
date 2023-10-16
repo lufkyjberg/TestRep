@@ -1,0 +1,611 @@
+<type access-modifier="private" name="TehnicalParameters" display-name="TehnicalParameters" uuid="2bbd4629-d7d9-41e7-b62a-4e427c3a74e7" base-type="" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Width" value="1920" ver="5"/>
+	<designed target="Height" value="880" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xff646464" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="1920" ver="5"/>
+	<designed target="WindowHeight" value="880" ver="5"/>
+	<designed target="WindowCaption" value="MainForm" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="1" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="0" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<object access-modifier="private" name="DiscreteDpValue_192" display-name="DiscreteDpValue_192" uuid="e41549f9-5630-4290-82ad-8445e59acfa8" base-type="DiscreteDpValue" base-type-id="0aa36430-7867-405c-b541-89e8cf6e92d2" ver="5" description="" cardinal="1">
+		<designed target="X" value="1090" ver="5"/>
+		<designed target="Y" value="139" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="95" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.SK.L_wtr_SK_H"/>
+		<init target="TextColorOn" ver="5" value="0xff00aa00"/>
+		<init target="TextColorOff" ver="5" value="0xffd50000"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_248" display-name="Text_PropertiesDialogs_248" uuid="53c0fb80-2ec9-476f-87fc-c540aca4d2cd" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+		<designed target="X" value="683" ver="5"/>
+		<designed target="Y" value="124" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="395" ver="5"/>
+		<designed target="Height" value="71" ver="5"/>
+		<designed target="Text" value="Повышенный уровень отжатия" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.SK.L_wtr_SK_H"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_193" display-name="DiscreteDpValue_193" uuid="c4d22686-b794-4733-8154-78f21aebf00d" base-type="DiscreteDpValue" base-type-id="0aa36430-7867-405c-b541-89e8cf6e92d2" ver="5" description="" cardinal="1">
+		<designed target="X" value="1090" ver="5"/>
+		<designed target="Y" value="219" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="95" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.SK.L_wtr_SK_norm"/>
+		<init target="TextColorOn" ver="5" value="0xff00aa00"/>
+		<init target="TextColorOff" ver="5" value="0xffd50000"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_249" display-name="Text_PropertiesDialogs_249" uuid="6fc0c3cb-8acd-4c65-870c-039e799e4ec0" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+		<designed target="X" value="683" ver="5"/>
+		<designed target="Y" value="204" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="395" ver="5"/>
+		<designed target="Height" value="71" ver="5"/>
+		<designed target="Text" value="Нормальный уровень отжатия" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.SK.L_wtr_SK_norm"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextPropertiesDialogs_1" display-name="TextPropertiesDialogs_1" uuid="49a8b574-e810-42eb-8485-a163f64be04b" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="1920" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="Text" value="Технические параметры" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_98" display-name="DiscreteDpValue_98" uuid="27f05d88-8622-4169-a98d-113f00b48d7b" base-type="DiscreteDpValue" base-type-id="0aa36430-7867-405c-b541-89e8cf6e92d2" ver="5" description="" cardinal="1">
+		<designed target="X" value="468" ver="5"/>
+		<designed target="Y" value="139" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="95" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+		<init target="TextColorOn" ver="5" value="0xff00aa00"/>
+		<init target="TextColorOff" ver="5" value="0xffd50000"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Protection.SR1_on"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_154" display-name="Text_PropertiesDialogs_154" uuid="c1099abe-db26-477e-8853-94620aa25898" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+		<designed target="X" value="58" ver="5"/>
+		<designed target="Y" value="124" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="395" ver="5"/>
+		<designed target="Height" value="71.666666666666643" ver="5"/>
+		<designed target="Text" value="Сработало противоразгонное устройство (SR1)
+" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Protection.SR1_on"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_99" display-name="DiscreteDpValue_99" uuid="c34af73d-6964-4ed2-8f2a-9255e13b3a8e" base-type="DiscreteDpValue" base-type-id="0aa36430-7867-405c-b541-89e8cf6e92d2" ver="5" description="" cardinal="1">
+		<designed target="X" value="468" ver="5"/>
+		<designed target="Y" value="219" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="95" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+		<init target="TextColorOn" ver="5" value="0xff00aa00"/>
+		<init target="TextColorOff" ver="5" value="0xffd50000"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Protection.SR1_off"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_185" display-name="Text_PropertiesDialogs_185" uuid="e9e8e125-8150-434d-b4c8-f4888db88503" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+		<designed target="X" value="58" ver="5"/>
+		<designed target="Y" value="494" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="395" ver="5"/>
+		<designed target="Height" value="71" ver="5"/>
+		<designed target="Text" value="Вода в сухотрубе АУПТ ГА" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Protection.AUPT.Wtr_AUPT"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_155" display-name="Text_PropertiesDialogs_155" uuid="c5b10bbd-512c-49ed-817a-e25f3f8478ea" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+		<designed target="X" value="58" ver="5"/>
+		<designed target="Y" value="204" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="395" ver="5"/>
+		<designed target="Height" value="71" ver="5"/>
+		<designed target="Text" value="Противоразгонное устройство - взведено (SR1)
+" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Protection.SR1_off"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_194" display-name="DiscreteDpValue_194" uuid="b40be8d8-32af-4ea1-9d46-84aecb541f8f" base-type="DiscreteDpValue" base-type-id="0aa36430-7867-405c-b541-89e8cf6e92d2" ver="5" description="" cardinal="1">
+		<designed target="X" value="1090" ver="5"/>
+		<designed target="Y" value="299" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="95" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.SK.VlvSK_opened"/>
+		<init target="TextColorOn" ver="5" value="0xff00aa00"/>
+		<init target="TextColorOff" ver="5" value="0xffd50000"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_250" display-name="Text_PropertiesDialogs_250" uuid="c4bb8216-1216-4246-a7bf-508ae86dc32b" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+		<designed target="X" value="683" ver="5"/>
+		<designed target="Y" value="284" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="395" ver="5"/>
+		<designed target="Height" value="71" ver="5"/>
+		<designed target="Text" value="Повышенный уровень отжатия" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.SK.VlvSK_opened"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_195" display-name="DiscreteDpValue_195" uuid="ef2548a2-83a6-49f9-87db-4d3e9619345b" base-type="DiscreteDpValue" base-type-id="0aa36430-7867-405c-b541-89e8cf6e92d2" ver="5" description="" cardinal="1">
+		<designed target="X" value="1090" ver="5"/>
+		<designed target="Y" value="379" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="95" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.SK.VlvSK_closed"/>
+		<init target="TextColorOn" ver="5" value="0xff00aa00"/>
+		<init target="TextColorOff" ver="5" value="0xffd50000"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_251" display-name="Text_PropertiesDialogs_251" uuid="b226f84a-cc36-4b43-b8e5-42a17c4da5ef" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+		<designed target="X" value="683" ver="5"/>
+		<designed target="Y" value="364" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="395" ver="5"/>
+		<designed target="Height" value="71" ver="5"/>
+		<designed target="Text" value="Нормальный уровень отжатия" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.SK.VlvSK_closed"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_129" display-name="DiscreteDpValue_129" uuid="a8970a77-9ca0-465d-9474-5ca15f9d9c7a" base-type="DiscreteDpValue" base-type-id="0aa36430-7867-405c-b541-89e8cf6e92d2" ver="5" description="" cardinal="1">
+		<designed target="X" value="468" ver="5"/>
+		<designed target="Y" value="509" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="95" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+		<init target="TextColorOn" ver="5" value="0xff00aa00"/>
+		<init target="TextColorOff" ver="5" value="0xffd50000"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Protection.AUPT.Wtr_AUPT"/>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_127" display-name="DiscreteDpValue_127" uuid="cc9e1cdf-a503-4121-a5cb-358eb6f3f907" base-type="DiscreteDpValue" base-type-id="0aa36430-7867-405c-b541-89e8cf6e92d2" ver="5" description="" cardinal="1">
+		<designed target="X" value="468" ver="5"/>
+		<designed target="Y" value="349" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="95" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+		<init target="TextColorOn" ver="5" value="0xff00aa00"/>
+		<init target="TextColorOff" ver="5" value="0xffd50000"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Protection.AUPT.Flt_AUPT"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_183" display-name="Text_PropertiesDialogs_183" uuid="ac8d6ade-4004-476d-b0a9-c67efbf4f451" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+		<designed target="X" value="58" ver="5"/>
+		<designed target="Y" value="334" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="395" ver="5"/>
+		<designed target="Height" value="71" ver="5"/>
+		<designed target="Text" value="Неисправность АУПТ ГА" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Protection.AUPT.Flt_AUPT"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_128" display-name="DiscreteDpValue_128" uuid="c4acee1e-dd85-4c3c-b8ff-36aeebdaf03b" base-type="DiscreteDpValue" base-type-id="0aa36430-7867-405c-b541-89e8cf6e92d2" ver="5" description="" cardinal="1">
+		<designed target="X" value="468" ver="5"/>
+		<designed target="Y" value="429" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="95" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+		<init target="TextColorOn" ver="5" value="0xff00aa00"/>
+		<init target="TextColorOff" ver="5" value="0xffd50000"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Protection.AUPT.Nready_AUPT"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_254" display-name="Text_PropertiesDialogs_254" uuid="73403863-142d-499b-8090-9f813bc7574d" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+		<designed target="X" value="683" ver="5"/>
+		<designed target="Y" value="444" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="395" ver="5"/>
+		<designed target="Height" value="71" ver="5"/>
+		<designed target="Text" value="Контроль износа уплотнения вала" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Protection.Runout_seal"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_237" display-name="DiscreteDpValue_237" uuid="af3c111d-ae59-4634-8a2a-56fb190cf19c" base-type="DiscreteDpValue" base-type-id="0aa36430-7867-405c-b541-89e8cf6e92d2" ver="5" description="" cardinal="1">
+		<designed target="X" value="1090" ver="5"/>
+		<designed target="Y" value="459" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="95" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+		<init target="TextColorOn" ver="5" value="0xff00aa00"/>
+		<init target="TextColorOff" ver="5" value="0xffd50000"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Protection.Runout_seal"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_184" display-name="Text_PropertiesDialogs_184" uuid="304cde76-1d3a-4e69-b62b-20dfc9dfc454" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+		<designed target="X" value="58" ver="5"/>
+		<designed target="Y" value="414" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="395" ver="5"/>
+		<designed target="Height" value="71" ver="5"/>
+		<designed target="Text" value="Нет готовности АУПТ ГА" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Protection.AUPT.Nready_AUPT"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_130" display-name="DiscreteDpValue_130" uuid="ca8d3ad4-b9bf-4da8-941f-f39e70ef9a64" base-type="DiscreteDpValue" base-type-id="0aa36430-7867-405c-b541-89e8cf6e92d2" ver="5" description="" cardinal="1">
+		<designed target="X" value="468" ver="5"/>
+		<designed target="Y" value="589" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="95" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Protection.AUPT.Fire_AUPT"/>
+		<init target="TextColorOn" ver="5" value="0xff00aa00"/>
+		<init target="TextColorOff" ver="5" value="0xffd50000"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_186" display-name="Text_PropertiesDialogs_186" uuid="a951f44b-a190-4ea3-889b-d18651cb18f5" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+		<designed target="X" value="58" ver="5"/>
+		<designed target="Y" value="574" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="395" ver="5"/>
+		<designed target="Height" value="71" ver="5"/>
+		<designed target="Text" value="Отключить ГА (Пожар) от АУПТ ГА" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Protection.AUPT.Fire_AUPT"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_218" display-name="DiscreteDpValue_218" uuid="1fca7c13-fe4b-4df4-bb14-e8f5e67da65e" base-type="DiscreteDpValue" base-type-id="0aa36430-7867-405c-b541-89e8cf6e92d2" ver="5" description="" cardinal="1">
+		<designed target="X" value="1090" ver="5"/>
+		<designed target="Y" value="539" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="95" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.HydroMech.OilVaporClean_auto"/>
+		<init target="TextColorOn" ver="5" value="0xff00aa00"/>
+		<init target="TextColorOff" ver="5" value="0xffd50000"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_274" display-name="Text_PropertiesDialogs_274" uuid="a19e0838-ac02-4753-a33b-99709d434179" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+		<designed target="X" value="683" ver="5"/>
+		<designed target="Y" value="524" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="395" ver="5"/>
+		<designed target="Height" value="71" ver="5"/>
+		<designed target="Text" value="Автоматический режим очистки паров масла" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.HydroMech.OilVaporClean_auto"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_58" display-name="Text_PropertiesDialogs_58" uuid="090820bd-d6ab-4a6a-8b06-c2a779a03fe9" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+		<designed target="X" value="1236" ver="5"/>
+		<designed target="Y" value="75" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="459" ver="5"/>
+		<designed target="Height" value="71" ver="5"/>
+		<designed target="Text" value="Сигнал ДП НА1 (GI1)" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.HydroMech.Pos_NA1"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_31" display-name="AnalogDpValue_31" uuid="a76e0c94-7973-4ec5-abd6-a31d153c6890" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="1720" ver="5"/>
+		<designed target="Y" value="80" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="140" ver="5"/>
+		<designed target="Height" value="55" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.HydroMech.Pos_NA1"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_226" display-name="Text_PropertiesDialogs_226" uuid="7860af8d-63f8-48a9-80a4-e609f8bcc86a" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="4">
+		<designed target="X" value="1236" ver="4"/>
+		<designed target="Y" value="217" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Width" value="459" ver="4"/>
+		<designed target="Height" value="71" ver="4"/>
+		<designed target="Text" value="Открытие НА2" ver="4"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.HydroMech.Pos_NA2"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_35" display-name="AnalogDpValue_35" uuid="34ef4f0b-4aeb-428b-8859-bb4557106b6d" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="1720" ver="5"/>
+		<designed target="Y" value="152" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="140" ver="5"/>
+		<designed target="Height" value="55" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.HydroMech.L_nb"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_62" display-name="Text_PropertiesDialogs_62" uuid="bb1a18d2-eeca-4f7e-b5e8-7ad4e20ec1ea" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+		<designed target="X" value="1236" ver="5"/>
+		<designed target="Y" value="146" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="459" ver="5"/>
+		<designed target="Height" value="71" ver="5"/>
+		<designed target="Text" value="Уровень нижнего бъефа (LS5)" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.HydroMech.L_nb"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_34" display-name="AnalogDpValue_34" uuid="553a1fa4-373c-4502-b53f-e076fa6ddcd8" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="1720" ver="5"/>
+		<designed target="Y" value="224" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="140" ver="5"/>
+		<designed target="Height" value="55" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.HydroMech.Pos_NA2"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_66" display-name="Text_PropertiesDialogs_66" uuid="6c82e107-3c94-48c9-8c7e-17daa01c5b39" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+		<designed target="X" value="1236" ver="5"/>
+		<designed target="Y" value="288" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="459" ver="5"/>
+		<designed target="Height" value="71" ver="5"/>
+		<designed target="Text" value="Частота вращения" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.HydroMech.F_rot"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_39" display-name="AnalogDpValue_39" uuid="19c8a9d8-c15c-4747-b127-96592c987d88" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="1720" ver="5"/>
+		<designed target="Y" value="291" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="140" ver="5"/>
+		<designed target="Height" value="55" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.HydroMech.F_rot"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_40" display-name="AnalogDpValue_40" uuid="a3ce33d0-1c27-4f4a-a7cc-8c2509a8618a" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="1720" ver="5"/>
+		<designed target="Y" value="363" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="140" ver="5"/>
+		<designed target="Height" value="55" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.HydroMech.L_oil_VNP"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_41" display-name="AnalogDpValue_41" uuid="461fe468-3fd2-4925-8a3d-efcaa077a1dc" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="1720" ver="5"/>
+		<designed target="Y" value="435" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="140" ver="5"/>
+		<designed target="Height" value="55" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.HydroMech.L_oil_NNP"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_42" display-name="AnalogDpValue_42" uuid="232d5471-18e9-4412-8bc8-b7b767d71708" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="1720" ver="5"/>
+		<designed target="Y" value="507" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="140" ver="5"/>
+		<designed target="Height" value="55" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.TVS.Q_wtr_oilref_UP"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_43" display-name="AnalogDpValue_43" uuid="879538df-219d-4327-89af-68c0aeb7835b" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="1720" ver="5"/>
+		<designed target="Y" value="579" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="140" ver="5"/>
+		<designed target="Height" value="55" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.TVS.Q_wtr_oilref_DN"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_67" display-name="Text_PropertiesDialogs_67" uuid="10e26e57-e1f6-48a8-8891-a9bf5a72f193" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+		<designed target="X" value="1236" ver="5"/>
+		<designed target="Y" value="359" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="459" ver="5"/>
+		<designed target="Height" value="71" ver="5"/>
+		<designed target="Text" value="Уровень в маслованне ВНП" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.HydroMech.L_oil_VNP"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_68" display-name="Text_PropertiesDialogs_68" uuid="afcc05ab-0f49-4c10-a871-8cf2dec19bf6" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+		<designed target="X" value="1236" ver="5"/>
+		<designed target="Y" value="430" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="459" ver="5"/>
+		<designed target="Height" value="71" ver="5"/>
+		<designed target="Text" value="Уровень в маслованне ННП" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.HydroMech.L_oil_NNP"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_69" display-name="Text_PropertiesDialogs_69" uuid="22d3695b-e2e5-4acb-bac9-df1e71ebceb7" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+		<designed target="X" value="1236" ver="5"/>
+		<designed target="Y" value="501" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="459" ver="5"/>
+		<designed target="Height" value="71" ver="5"/>
+		<designed target="Text" value="Расход воды из 
+маслоохладителей 
+верхней крестовины (76)" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.TVS.Q_wtr_oilref_UP"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_70" display-name="Text_PropertiesDialogs_70" uuid="8b8a8ff7-20d8-401f-973d-44656bf9b5ca" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+		<designed target="X" value="1236" ver="5"/>
+		<designed target="Y" value="572" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="459" ver="5"/>
+		<designed target="Height" value="71" ver="5"/>
+		<designed target="Text" value="Расход воды из маслоохладителей нижней крестовины (77)" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.TVS.Q_wtr_oilref_DN"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_50" display-name="AnalogDpValue_50" uuid="cd3066c8-74ae-4914-87cd-b9e015b20e12" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="1720" ver="5"/>
+		<designed target="Y" value="651" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="140" ver="5"/>
+		<designed target="Height" value="55" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.HydroMech.Q_wtr_turbine"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_51" display-name="AnalogDpValue_51" uuid="13f6d4b3-6bde-4bfc-a61c-67c017320ee4" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="1720" ver="5"/>
+		<designed target="Y" value="723" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="140" ver="5"/>
+		<designed target="Height" value="55" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.HydroMech.P_air_1PTI"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_52" display-name="AnalogDpValue_52" uuid="f0008715-58e6-41f7-a581-43389da59eed" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="1720" ver="5"/>
+		<designed target="Y" value="795" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="140" ver="5"/>
+		<designed target="Height" value="55" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.HydroMech.P_air_2PTI"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_77" display-name="Text_PropertiesDialogs_77" uuid="997800c1-8c46-409a-852c-c0dd7a23f301" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+		<designed target="X" value="1236" ver="5"/>
+		<designed target="Y" value="643" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="459" ver="5"/>
+		<designed target="Height" value="71" ver="5"/>
+		<designed target="Text" value="Расход воды на 
+через турбину (FLUS1)" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.HydroMech.Q_wtr_turbine"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_78" display-name="Text_PropertiesDialogs_78" uuid="0c62b2b3-2a9c-4cb2-ae79-226f7b7071dc" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+		<designed target="X" value="1236" ver="5"/>
+		<designed target="Y" value="714" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="459" ver="5"/>
+		<designed target="Height" value="71" ver="5"/>
+		<designed target="Text" value="Давление воздуха в магистрали (на входе 1PTI)" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.HydroMech.P_air_1PTI"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_79" display-name="Text_PropertiesDialogs_79" uuid="e603749b-7c49-487d-a00f-886c4ed7bec1" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+		<designed target="X" value="1236" ver="5"/>
+		<designed target="Y" value="785" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="459" ver="5"/>
+		<designed target="Height" value="71" ver="5"/>
+		<designed target="Text" value="Давление воздуха на тормозах (на выходе 2PTI)" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.HydroMech.P_air_2PTI"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="f748f6e7-4ef1-4141-9e7f-ba79ca6058e1" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="59" ver="5"/>
+		<designed target="Y" value="74" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="502" ver="5"/>
+		<designed target="Height" value="44.000000000000014" ver="5"/>
+		<designed target="Text" value="Противоразгонное устройство" ver="5"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_2" display-name="Text_2" uuid="756684e4-7889-4286-80f4-c0dbec81d8a8" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="58" ver="5"/>
+		<designed target="Y" value="290" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="502" ver="5"/>
+		<designed target="Height" value="44.000000000000014" ver="5"/>
+		<designed target="Text" value="АУПТ ГА" ver="5"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_3" display-name="Text_3" uuid="e494e11c-9319-410c-9233-c9a807d527b2" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="683" ver="5"/>
+		<designed target="Y" value="74" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="502" ver="5"/>
+		<designed target="Height" value="44.000000000000014" ver="5"/>
+		<designed target="Text" value="Синхронный компенсатор" ver="5"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_126" display-name="DiscreteDpValue_126" uuid="25207266-81a7-4616-a97b-a1f7395134e5" base-type="DiscreteDpValue" base-type-id="0aa36430-7867-405c-b541-89e8cf6e92d2" ver="5" description="" cardinal="1">
+		<designed target="X" value="1090" ver="5"/>
+		<designed target="Y" value="619" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="95" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+		<init target="TextColorOn" ver="5" value="0xff00aa00"/>
+		<init target="TextColorOff" ver="5" value="0xffd50000"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.SK.P_air_RSS"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_182" display-name="Text_PropertiesDialogs_182" uuid="eb11c880-ffb6-4428-baf9-17975d0eaf66" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+		<designed target="X" value="683" ver="5"/>
+		<designed target="Y" value="604" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="395" ver="5"/>
+		<designed target="Height" value="71" ver="5"/>
+		<designed target="Text" value="Давление воздуха в ремонтном уплотнении вала (резерв)
+" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.SK.P_air_RSS"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+</type>
+

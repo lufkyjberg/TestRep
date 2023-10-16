@@ -1,0 +1,110 @@
+<type access-modifier="public" name="AnalogDpSimpleValue_1" display-name="AnalogDpSimpleValue_1" uuid="4ee0ccd2-c862-4b80-af52-d7084ed1d7ec" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="60" ver="5"/>
+	<designed target="Height" value="17" ver="5"/>
+	<designed target="RoundingRadius" value="0" ver="5"/>
+	<designed target="PenColor" value="0x00000000" ver="5"/>
+	<designed target="PenStyle" value="1" ver="5"/>
+	<designed target="PenWidth" value="3" ver="5"/>
+	<designed target="BrushColor" value="0x00ffffff" ver="5"/>
+	<designed target="BrushStyle" value="0" ver="5"/>
+	<object access-modifier="private" name="Value" display-name="Value" uuid="87372f2e-ed98-4f9c-905a-7dfbdd643a25" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="60" ver="5"/>
+		<designed target="Height" value="17" ver="5"/>
+		<designed target="Text" value="+99.99 A" ver="5"/>
+		<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xff000000" ver="5"/>
+		<designed target="TextAlignment" value="130" ver="5"/>
+		<do-trace access-modifier="private" target="FontColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParValue.Advised == false || ApParStatusBytes.Value == AsokuConst.StatusBytes.Invalid]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuBlack]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[AsokuColor.asokuGreen]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[!ApParValue.Advised]]>
+				</condition>
+				<expr>
+					<![CDATA["99.99"]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[String.ToString(ApParDisplayFormat.Value, ApParValue.Value)  + " " + ApParValue.Units]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Initializer" display-name="Initializer" uuid="5b75bde8-8fb8-4534-bad4-91b15c3c3867" base-type="Initializer" base-type-id="6db89679-9299-4993-ad1a-0d086cd1c7d2" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="SizeComparisionHndlr" display-name="SizeComparisionHndlr" ver="5" event="Initialized">
+			<body kind="om">
+				<![CDATA[Value.Width = here.Width;
+Value.Height = here.Height;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="ParDevPath" display-name="Путь параметра" uuid="5ab3ed79-a1f8-454d-b2d1-106eaf2f156c" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ApParValue" display-name="Значение параметра" uuid="b84f3243-8dce-490f-99a7-915c5b49a41d" base-type="ApItemFloat" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + ".Value"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<do-trace access-modifier="private" target="Tooltip" ver="5">
+		<body>
+			<![CDATA["Cтатус: "+ String.ToString(ApParValue.Quality) + "\nвремя: "+ DateTime.ToString(ApParValue.TimeStamp) + "\nсостояние: "+ String.ToString(ApParStatusBytes.Quality)]]>
+		</body>
+	</do-trace>
+	<designed target="Flip" value="0" ver="5"/>
+	<object access-modifier="private" name="ApParStatusBytes" display-name="Статус параметра" uuid="1f884447-e0c5-42c0-b150-a171f7ad6031" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value=""/>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + ".StatusBytes"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ApParDisplayFormat" display-name="ApParDisplayFormat" uuid="5216db10-5f97-4bcd-9afa-fe55586a813f" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value=""/>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + ".DisplayFormat"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="DebugTool" display-name="DebugTool" uuid="e1ee9832-0c58-4dcd-b786-70779634d818" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="5" description="" cardinal="1"/>
+</type>
+

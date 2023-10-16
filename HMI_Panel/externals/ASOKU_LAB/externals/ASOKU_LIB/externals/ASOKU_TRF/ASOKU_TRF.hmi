@@ -1,0 +1,21 @@
+<unit uuid="00df50d8-2725-4c5d-af21-2093dfce94b7" name="ASOKU_TRF" display-name="ASOKU_TRF" description="" ver="5" main-form-id="3daf06f1-0e17-4349-82f7-83cc61d80133">
+	<object file="MainForm.omobj" filter=""/>
+	<object file="1001_TRF_AiTransfer_Data.omobj" filter="AI"/>
+	<object file="LedQuadrateSimple.omobj" filter="Оформление"/>
+	<object file="1001_TRF_AiTransfer.omobj" filter="AI"/>
+	<object file="TRF_Base_Data.omobj" filter=""/>
+	<object file="TRF_Base.omobj" filter=""/>
+	<object file="1001_TRF_DiTransfer.omobj" filter="DI"/>
+	<object file="1001_TRF_DiTransfer_Data.omobj" filter="DI"/>
+	<object file="TRF_InfoSettingsAI.omobj" filter="AI"/>
+	<object file="TRF_InfoSettingsDI.omobj" filter="DI"/>
+	<object file="TRF_InfoViewSettingAnalog.omobj" filter="AI"/>
+	<object file="TRF_InfoViewSettingDiscrete.omobj" filter="DI"/>
+	<unit-link name="CommonLib" type="b0491687-7585-47f3-b51f-4e24fd62aef1" type-hint="" assembly-path="CommonLib" ver="5"/>
+	<object file="TRF_Button.omobj" filter="Оформление"/>
+	<object file="TRF_Text.omobj" filter="Оформление"/>
+	<object file="TRF_Checkbox.omobj" filter="Оформление"/>
+	<object file="TRF_UserDialog.omobj" filter=""/>
+	<unit-link name="ASOKU_SYS" type="b0491687-7585-47f3-b51f-4e24fd62aef1" type-hint="" assembly-path="ASOKU_SYS" ver="5"/>
+</unit>
+

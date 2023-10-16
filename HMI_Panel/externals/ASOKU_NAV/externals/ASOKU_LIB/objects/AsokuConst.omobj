@@ -1,0 +1,23 @@
+<object access-modifier="public" name="AsokuConst" display-name="AsokuConst" uuid="fadc9e20-1730-4699-ae52-fa79abffa37e" base-type="" base-type-id="00000000-0000-0000-0000-000000000000" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="StatusBytes" display-name="StatusBytes" uuid="fedcf012-205e-443b-97ae-9cb25f19a3ee" base-type="notifying_uint2" base-type-id="ac10cc3c-8557-43b5-8da5-1144cd866e59" ver="5" description="" cardinal="1">
+		<object access-modifier="private" name="OK" display-name="OK" uuid="a5b627df-e771-488f-9562-33a8e03f7d79" base-type="notifying_uint2" base-type-id="ac10cc3c-8557-43b5-8da5-1144cd866e59" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="Changed" display-name="Параметр подменен" uuid="0cf7ab20-4f87-497a-be1b-23b7a682eb9a" base-type="notifying_uint2" base-type-id="ac10cc3c-8557-43b5-8da5-1144cd866e59" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="Invalid" display-name="Параметр не действителен" uuid="968464d7-5d3d-4e1c-a3ce-4fbcb5e4d633" base-type="notifying_uint2" base-type-id="ac10cc3c-8557-43b5-8da5-1144cd866e59" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="NotRelevantOrOverfilled" display-name="Параметр не актуален или переполнен" uuid="60e27f61-b45b-4706-811e-6b7070da876d" base-type="notifying_uint2" base-type-id="ac10cc3c-8557-43b5-8da5-1144cd866e59" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="Blocked" display-name="Параметр заблокирован" uuid="b9a820e5-1cc8-4d24-a425-a9b3c3884ffa" base-type="notifying_uint2" base-type-id="ac10cc3c-8557-43b5-8da5-1144cd866e59" ver="5" description="" cardinal="1"/>
+		<init target="OK" ver="5" value="0"/>
+		<init target="Changed" ver="5" value="8"/>
+		<init target="Invalid" ver="5" value="1"/>
+		<init target="NotRelevantOrOverfilled" ver="5" value="2"/>
+		<init target="Blocked" ver="5" value="4"/>
+	</object>
+	<object access-modifier="private" name="AlarmBytes" display-name="AlarmBytes" uuid="81a99fec-305e-4909-ae08-c8e58c15ca81" base-type="notifying_uint2" base-type-id="ac10cc3c-8557-43b5-8da5-1144cd866e59" ver="5" description="" cardinal="1">
+		<object access-modifier="private" name="Warning" display-name="Предупредительная сигнализация" uuid="f68e01a3-01cf-4515-8013-3ce9149d8a9c" base-type="notifying_uint2" base-type-id="ac10cc3c-8557-43b5-8da5-1144cd866e59" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="Alarm" display-name="Аварийная сигнализация" uuid="9443de61-f989-4063-b9b2-590dfb524c0f" base-type="notifying_uint2" base-type-id="ac10cc3c-8557-43b5-8da5-1144cd866e59" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="WarningAndAlarm" display-name="Предупредительная и аварийная сигнализация" uuid="b6284d2d-9b71-4b50-9235-86536a140605" base-type="notifying_uint2" base-type-id="ac10cc3c-8557-43b5-8da5-1144cd866e59" ver="5" description="" cardinal="1"/>
+		<init target="Warning" ver="5" value="2"/>
+		<init target="Alarm" ver="5" value="4"/>
+		<init target="WarningAndAlarm" ver="5" value="6"/>
+	</object>
+</object>
+

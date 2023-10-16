@@ -1,0 +1,85 @@
+{
+ "UserTree": [
+ {
+   "Signal":{
+    "UserTree":"GA_01/Electro/P1/GA_01.Electro.P1.value",
+    "OpcTag":"GA_01.Electro.P1.value",
+    "EUnit":"МВт",
+    "Description":"Активная мощность ИПМ 1 [МВт]",
+    "DataType":"float" 
+   }
+  },
+  {
+   "Signal":{
+    "UserTree":"GA_01/Electro/F_gen/GA_01.Electro.F_gen.value",
+    "OpcTag":"GA_01.Electro.F_gen.value",
+    "EUnit":"Гц",
+    "Description":"Сигнал частоты генератора от ТНГ [Гц]",
+    "DataType":"float" 
+   }
+  },
+  {
+   "Signal":{
+    "UserTree":"GA_01/Electro/F_net/GA_01.Electro.F_net.value",
+    "OpcTag":"GA_01.Electro.F_net.value",
+    "EUnit":"Гц",
+    "Description":"Сигнал частоты сети от ТНС [Гц]",
+    "DataType":"float" 
+   }
+  },
+  {
+   "Signal":{
+    "UserTree":"GA_01/Electro/AI_task_GRAM/GA_01.Electro.AI_task_GRAM.value",
+    "OpcTag":"GA_01.Electro.AI_task_GRAM.value",
+    "EUnit":"МВт",
+    "Description":"Групповое задание мощности (резерв) [МВт]",
+    "DataType":"float" 
+   }
+  },
+  {
+   "Signal":{
+    "UserTree":"GA_01/HydroMech/L_nb/GA_01.HydroMech.L_nb.value",
+    "OpcTag":"GA_01.HydroMech.L_nb.value",
+    "EUnit":"м",
+    "Description":"Уровень нижнего бъефа (LS5) [м]",
+    "DataType":"float" 
+   }
+  },
+  {
+   "Signal":{
+    "UserTree":"GA_01/HydroMech/Pos_NA2/GA_01.HydroMech.Pos_NA2.value",
+    "OpcTag":"GA_01.HydroMech.Pos_NA2.value",
+    "EUnit":"%",
+    "Description":"Сигнал ДП НА2 (резерв) [%]",
+    "DataType":"float" 
+   }
+  },
+  {
+   "Signal":{
+    "UserTree":"GA_01/Electro/P2/GA_01.Electro.P2.value",
+    "OpcTag":"GA_01.Electro.P2.value",
+    "EUnit":"МВт",
+    "Description":"Активная мощность ИПМ 2 (резерв) [МВт]",
+    "DataType":"float" 
+   }
+  },
+  {
+   "Signal":{
+    "UserTree":"GA_01/Electro/I_rot/GA_01.Electro.I_rot.value",
+    "OpcTag":"GA_01.Electro.I_rot.value",
+    "EUnit":"А",
+    "Description":"Ток ротора [А]",
+    "DataType":"float" 
+   }
+  },
+  {
+   "Signal":{
+    "UserTree":"GA_01/Electro/U_rot/GA_01.Electro.U_rot.value",
+    "OpcTag":"GA_01.Electro.U_rot.value",
+    "EUnit":"кВ",
+    "Description":"Напряжение ротора (резерв) [кВ]",
+    "DataType":"float" 
+   }
+  }
+ ]
+}

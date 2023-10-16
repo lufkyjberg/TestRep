@@ -1,0 +1,2620 @@
+<type access-modifier="private" name="RegulWarning" display-name="RegulWarning" uuid="c774935c-4fa0-42ce-b8b9-8bb20cf61fd7" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="1360" ver="5"/>
+	<designed target="Height" value="670" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xff646464" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="1920" ver="5"/>
+	<designed target="WindowHeight" value="880" ver="5"/>
+	<designed target="WindowCaption" value="MainForm" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="1" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="0" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="4e5a5142-f52e-4128-871c-8d323fa93d26" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="493" ver="5"/>
+		<designed target="Y" value="-20" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="388" ver="5"/>
+		<designed target="Height" value="72" ver="5"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Text" value="Неисправность модуля" ver="5"/>
+	</object>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<object access-modifier="private" name="Image_1" display-name="Image_1" uuid="241ad383-6eff-4566-b5a3-4cf6ffb6e669" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="118" ver="5"/>
+		<designed target="Y" value="347.00000000000006" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="143.33333333333331" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/CU.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="96cd7b42-a762-4770-86bc-665a07e67bcc" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="213.79391852408867" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c0_m3_TA"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_2" display-name="Image_2" uuid="a2f22790-a673-4983-8e0c-139ea232436e" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="111" ver="5"/>
+		<designed target="Y" value="347" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="90.666666666666686" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/PP.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="15a2c1de-d0db-46dd-b690-7b7dc293256d" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="190.57048092868988" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c0_m2_TA"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_3" display-name="Image_3" uuid="5a9e07db-0839-42de-bdc7-84418d6660f3" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="158.90049751243768" ver="5"/>
+		<designed target="Y" value="347" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="cf9bed67-f79c-4c80-90e6-ee8bcd963b57" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="201.25870646766168" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c0_m4_TA"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="0dab34cf-1b41-45c1-bccb-30b2dca70ca9" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="48.258153676064119" ver="5"/>
+			<designed target="Y" value="6.9243350311261906" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="24.809286898839105" ver="5"/>
+			<designed target="Height" value="8.9849462365591535" ver="5"/>
+			<designed target="Text" value="CP" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_4" display-name="Image_4" uuid="15d624cb-a95d-4e3b-88e8-e1a07c5477b9" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="67.999999999999972" ver="5"/>
+		<designed target="Y" value="346" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="21bcc30e-69fc-45ea-af88-116e73766dd5" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="202.92537313432834" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c0_m1_TA"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="8e82265e-3b4c-43b6-a72d-dde2c9873a91" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="46.258153676064097" ver="5"/>
+			<designed target="Y" value="8.191001697792899" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="24.809286898839161" ver="5"/>
+			<designed target="Height" value="8.4516129032257368" ver="5"/>
+			<designed target="Text" value="ST" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_5" display-name="Image_5" uuid="9aa13167-255a-4f61-aec2-6a7b6b0e5603" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="201.45771144278592" ver="5"/>
+		<designed target="Y" value="347" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="98.285714285714278" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/PP.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="a1b0c2e9-0163-4fe1-8eff-d3621e51532e" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="192.95143330964225" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c0_m5_TA"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_6" display-name="Image_6" uuid="31ef3bd4-9c77-4c46-8ac4-793ad97438af" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="225.83416252072954" ver="5"/>
+		<designed target="Y" value="347" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="1912a66e-0948-4716-8d4c-66bacdf01412" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="203.71663399822893" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c0_m6_TA"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="788b0185-9e27-453d-adfa-8ec467f6adb1" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="48.258153676064126" ver="5"/>
+			<designed target="Y" value="6.691001697792899" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="24.809286898839161" ver="5"/>
+			<designed target="Height" value="9.4516129032258078" ver="5"/>
+			<designed target="Text" value="ST" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_10" display-name="Image_10" uuid="e4ba01f1-c99d-415d-b668-513c1fcdfa77" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="483.25373134328356" ver="5"/>
+		<designed target="Y" value="538" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="55121e5b-c056-426d-a035-445f67a67401" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="202.25870646766168" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c2_m1_TA"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="7ec23403-ed3f-4e1b-9dc3-ae6c2f6ddf12" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="44.349062766973127" ver="5"/>
+			<designed target="Y" value="7.948577455368607" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="24.809286898839161" ver="5"/>
+			<designed target="Height" value="11.618279569892437" ver="5"/>
+			<designed target="Text" value="ST" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_12" display-name="Image_12" uuid="cab92069-5fbe-4a87-954d-80e31a0d06ee" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="647.11442786069642" ver="5"/>
+		<designed target="Y" value="538" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="c738d081-ee50-44c7-a515-a86bc2eea479" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="202.25870646766168" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c2_m7_TA"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="7ee174a2-41d3-4529-a7f8-e4e67682f198" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="47.84906276697312" ver="5"/>
+			<designed target="Y" value="6.948577455368607" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="24.809286898839218" ver="5"/>
+			<designed target="Height" value="11.618279569892451" ver="5"/>
+			<designed target="Text" value="ST" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_13" display-name="Image_13" uuid="2aa7915a-32dc-488f-b4d0-8a25befe3649" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="523.69320066334967" ver="5"/>
+		<designed target="Y" value="538" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/PP.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="6520eef8-3527-4365-b9b3-d52e937372d7" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="193.23714759535653" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c2_m2_TA"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_14" display-name="Image_14" uuid="1486f1e7-5991-42b8-87e9-23ba18505acf" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="549.08955223880594" ver="5"/>
+		<designed target="Y" value="538" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="55f59676-e784-41da-8dd5-d8a1bbc1a7bf" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="201.25870646766168" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c2_m3_TA"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="b9a982be-5f3e-41c2-bb12-6fdafcefdd79" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="47.076335494245932" ver="5"/>
+			<designed target="Y" value="8.0697895765807317" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="24.809286898839105" ver="5"/>
+			<designed target="Height" value="12.906158357771233" ver="5"/>
+			<designed target="Text" value="AI" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_15" display-name="Image_15" uuid="d87d28c3-ac24-4808-b016-e1dfd0ab4a38" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="582.15422885572116" ver="5"/>
+		<designed target="Y" value="538" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="cbd457e3-69cd-4416-95a5-971ff438d0bc" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="202.25870646766168" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c2_m4_TA"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="4dfb8118-d818-4981-89c5-e7f1f3fbb4f1" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="47.258153676064119" ver="5"/>
+			<designed target="Y" value="8.0243350311262418" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="15.309286898839105" ver="5"/>
+			<designed target="Height" value="10.118279569892479" ver="5"/>
+			<designed target="Text" value="AI" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_16" display-name="Image_16" uuid="bd133113-b13c-4868-9f9b-1a40c81d5188" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="614.37645107794356" ver="5"/>
+		<designed target="Y" value="538" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="5c83c94c-83b1-45b6-ab71-8bd22fe54f34" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="202.25870646766168" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c2_m5_TA"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="171b3fe6-fe80-4f62-8ac2-7f272e934881" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="46.924820342730747" ver="5"/>
+			<designed target="Y" value="8.1910016977928279" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="24.809286898839218" ver="5"/>
+			<designed target="Height" value="8.9516129032258362" ver="5"/>
+			<designed target="Text" value="AO" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_17" display-name="Image_17" uuid="5cd5e803-bda5-4b3e-a92a-585cc328189f" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="687.71807628524039" ver="5"/>
+		<designed target="Y" value="538" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/PP.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="43c06a95-e5bb-46b9-895d-e4f7999fca7c" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="194.5704809286899" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c2_m6_TA"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_2" display-name="Text_PropertiesDialogs_2" uuid="ca87ba08-a172-4ee2-a9ee-2abc316b2b80" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="184.13333333333335" ver="5"/>
+		<designed target="Y" value="302.13333333333333" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="50" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="C0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_23" display-name="Text_PropertiesDialogs_23" uuid="11fc5257-f2d0-4a78-9add-d349ef78e897" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="632.38333333333321" ver="5"/>
+		<designed target="Y" value="524.41666666666663" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="31.449999999999989" ver="5"/>
+		<designed target="Height" value="15.600000000000023" ver="5"/>
+		<designed target="Text" value="AI2" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_3" display-name="Text_PropertiesDialogs_3" uuid="11969d16-e0ef-45a0-b28f-1a953044a1e5" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="636" ver="5"/>
+		<designed target="Y" value="500" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="50" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="C2" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_4" display-name="Text_PropertiesDialogs_4" uuid="39a6ec87-9e56-4f06-aab7-daa850575cb4" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="225.33720287451638" ver="5"/>
+		<designed target="Y" value="509.77079796264854" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="22.553897180762817" ver="5"/>
+		<designed target="Height" value="12.949066213921924" ver="5"/>
+		<designed target="Text" value="C1" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Image_18" display-name="Image_18" uuid="16dec8e0-22e5-407d-827d-752f80dc0d64" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="24.405306799336515" ver="5"/>
+		<designed target="Y" value="538" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="97.200000000000003" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/PP.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="afd40a9b-9b14-49b9-9588-2225c153f51c" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="192.23714759535653" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c1_m2_TA"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_19" display-name="Image_19" uuid="5a708a2c-a909-4cf4-bebc-18ff56776aea" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="-16.736318407960312" ver="5"/>
+		<designed target="Y" value="538" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="2521e8b6-9096-4f3c-95a1-e0ba5a9a2641" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="202.25870646766168" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c1_m1_TA"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="15aa20a7-ac75-40a0-9375-02b86f7122d8" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="45.258153676064119" ver="5"/>
+			<designed target="Y" value="8.5243350311261565" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="24.809286898839133" ver="5"/>
+			<designed target="Height" value="9.4516129032257936" ver="5"/>
+			<designed target="Text" value="ST" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_20" display-name="Image_20" uuid="a0c9573f-3424-462d-9f54-d8e314874d80" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="46.648424543946817" ver="5"/>
+		<designed target="Y" value="538" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="b54dd24d-3473-4911-9b14-e9a8d2e129c4" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="201.25870646766168" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c1_m3_TA"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="78c563cc-6321-4102-bd4c-c34eece2a817" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="45.258153676064126" ver="5"/>
+			<designed target="Y" value="8.5243350311261565" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="24.809286898839161" ver="5"/>
+			<designed target="Height" value="9.4516129032257936" ver="5"/>
+			<designed target="Text" value="DI" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_21" display-name="Image_21" uuid="892ac083-dcb6-4c16-8d8a-4c396d00440c" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="79.419568822553856" ver="5"/>
+		<designed target="Y" value="538" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="a00e354c-df41-4291-9f41-b08732b930ea" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="201.25870646766168" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c1_m4_TA"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="5999cc35-8a35-43fa-9a79-a5ebe6ecca5c" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="45.258153676064126" ver="5"/>
+			<designed target="Y" value="8.5243350311261565" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="24.809286898839161" ver="5"/>
+			<designed target="Height" value="9.4516129032257936" ver="5"/>
+			<designed target="Text" value="DI" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_22" display-name="Image_22" uuid="f7c8de2a-1190-481f-8008-bde0f257fae8" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="111.3864013266998" ver="5"/>
+		<designed target="Y" value="538" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="c8980631-7758-4af1-8500-e7a3145f6d3e" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="202.25870646766168" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c1_m5_TA"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="60cdb5c8-071a-4559-b998-a410e41f2af9" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="45.258153676064126" ver="5"/>
+			<designed target="Y" value="8.5243350311261565" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="24.809286898839105" ver="5"/>
+			<designed target="Height" value="9.4516129032257936" ver="5"/>
+			<designed target="Text" value="DI" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_23" display-name="Image_23" uuid="1ebf3e1b-27b4-41fc-b355-0f492318765b" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="143.35323383084574" ver="5"/>
+		<designed target="Y" value="538" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="1933e2a9-5665-4ee7-89bf-75230053d1b3" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="201.25870646766168" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c1_m6_TA"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="414535ce-feaf-4875-ae56-e4c4f018d03e" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="45.258153676064126" ver="5"/>
+			<designed target="Y" value="8.5243350311261565" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="24.809286898839161" ver="5"/>
+			<designed target="Height" value="9.4516129032257936" ver="5"/>
+			<designed target="Text" value="DI" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_24" display-name="Image_24" uuid="3794cdc1-cf55-41b0-be2b-f6f9b92f8b19" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="175.22222222222217" ver="5"/>
+		<designed target="Y" value="538" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="bc1ec718-0bec-46bb-87af-8304433f8e39" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="202.25870646766168" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c1_m7_TA"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="addf48b1-3177-4396-a7d1-3d8817ce2dc1" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="45.258153676064126" ver="5"/>
+			<designed target="Y" value="8.5243350311261565" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="24.809286898839105" ver="5"/>
+			<designed target="Height" value="9.4516129032257936" ver="5"/>
+			<designed target="Text" value="DI" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_25" display-name="Image_25" uuid="c6c5f4d7-da72-47c5-8d34-eec6789a62c3" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="207.64013266998336" ver="5"/>
+		<designed target="Y" value="538" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="97807461-c631-4ff1-a46b-dd7c40585bbb" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="202.25870646766168" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c1_m8_TA"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="354232bc-a0b2-4dfd-a702-8789a6809507" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="45.258153676064126" ver="5"/>
+			<designed target="Y" value="8.5243350311261565" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="24.809286898839105" ver="5"/>
+			<designed target="Height" value="9.4516129032257936" ver="5"/>
+			<designed target="Text" value="DI" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_26" display-name="Image_26" uuid="8e837562-93f3-4771-829c-c3c442984a0f" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="240.41127694859028" ver="5"/>
+		<designed target="Y" value="538" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="1fccfbc2-6d25-4c8d-bb30-15d921e0c99b" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="201.25870646766168" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c1_m9_TA"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="0f293161-6af7-431c-a1f2-4eea3e7258cb" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="45.258153676064126" ver="5"/>
+			<designed target="Y" value="8.5243350311261565" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="24.809286898839105" ver="5"/>
+			<designed target="Height" value="9.4516129032257936" ver="5"/>
+			<designed target="Text" value="DO" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_27" display-name="Image_27" uuid="982c514e-a4dc-4488-8134-e6b4b95d107e" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="272.82918739635147" ver="5"/>
+		<designed target="Y" value="538" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="9b077295-aedd-4d03-b289-734ae5f08d1a" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="202.25870646766168" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c1_m10_TA"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="252ff79b-87eb-4f38-9ba1-7a2d145144a5" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="45.258153676064126" ver="5"/>
+			<designed target="Y" value="8.5243350311261565" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="24.809286898839105" ver="5"/>
+			<designed target="Height" value="9.4516129032257936" ver="5"/>
+			<designed target="Text" value="DO" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_28" display-name="Image_28" uuid="7a636f54-0288-4e82-946c-1d741b621815" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="304.69817578772791" ver="5"/>
+		<designed target="Y" value="538" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="b37fb8f8-3292-44de-9dce-3b55c65e5f32" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="201.25870646766168" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c1_m11_TA"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="78a84bb8-40b1-442e-863c-89f724ed5297" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="45.258153676064119" ver="5"/>
+			<designed target="Y" value="8.5243350311261992" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="24.809286898839161" ver="5"/>
+			<designed target="Height" value="9.4516129032257936" ver="5"/>
+			<designed target="Text" value="DA" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_29" display-name="Image_29" uuid="dd4980ac-97be-449b-92c9-268bacae1eb3" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="346.13764510779447" ver="5"/>
+		<designed target="Y" value="539" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="98.666666666666686" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/PP.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="f5e03922-57ab-4eb0-8d54-9aa96f924849" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="193.23714759535653" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c1_m12_TA"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_30" display-name="Image_30" uuid="d1b4f167-2bf5-4041-a2da-25c8f989808f" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="370.7296849087893" ver="5"/>
+		<designed target="Y" value="538" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="421d46c3-9595-414d-b520-2d37ec1d173e" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="202.25870646766168" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c1_m13_TA"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="f89627d4-0bee-4140-9b0b-42a539c10a10" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="46.258153676064119" ver="5"/>
+			<designed target="Y" value="8.5243350311261992" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="24.809286898838991" ver="5"/>
+			<designed target="Height" value="9.4516129032257936" ver="5"/>
+			<designed target="Text" value="ST" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_5" display-name="Text_PropertiesDialogs_5" uuid="3c882fd1-482d-44ce-ac4a-97961e6a2664" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="1071.7744348675992" ver="5"/>
+		<designed target="Y" value="483.67729257641929" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="63.893230128062442" ver="5"/>
+		<designed target="Height" value="25.186986920126401" ver="5"/>
+		<designed target="Text" value="C4" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Image_31" display-name="Image_31" uuid="84ba8cb4-f157-4b20-82b4-42c1c1a38300" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="870.01849121770692" ver="5"/>
+		<designed target="Y" value="547.86997256816221" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="95.666666666666742" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/PP.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="acc5fc8d-a3bf-4a0d-aad9-134782abdaa5" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="192.70404450455646" ver="5"/>
+			<designed target="Y" value="126.62721894811381" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c4_m2_TKVK"/>
+			<designed target="Scale" value="1" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_32" display-name="Image_32" uuid="c511a288-f99b-4eb3-b04d-28af39ccd0d2" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="826.73333333333267" ver="5"/>
+		<designed target="Y" value="547.70330590149547" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="d677293c-a128-4d52-b404-46d7bd222318" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="203.54283927454651" ver="5"/>
+			<designed target="Y" value="125.78926780968231" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c4_m1_TKVK"/>
+			<designed target="Scale" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="55b9a506-d546-4864-ae33-73d49adb745d" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="47.32651309846409" ver="5"/>
+			<designed target="Y" value="7.7727047399778684" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="16.976745882843375" ver="5"/>
+			<designed target="Height" value="9.5708302369977218" ver="5"/>
+			<designed target="Text" value="ST" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_33" display-name="Image_33" uuid="9ecd6656-5fcc-4ca4-a27c-0d8897b4b8c3" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="892.91085309793539" ver="5"/>
+		<designed target="Y" value="546.92552812371775" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="fb3c7189-6096-4107-8672-42656f076990" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="203.5428392745464" ver="5"/>
+			<designed target="Y" value="126.45593447634906" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c4_m3_TKVK"/>
+			<designed target="Scale" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="c387b5f3-56e1-47ba-a4ef-b33330b976f4" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="46.559846431797411" ver="5"/>
+			<designed target="Y" value="7.5560380733112815" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="12.710079216177292" ver="5"/>
+			<designed target="Height" value="13.970830236997699" ver="5"/>
+			<designed target="Text" value="AI" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_34" display-name="Image_34" uuid="80f1c5cd-3a55-420a-99c8-bb4ec2d4c7be" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="926.30521194818402" ver="5"/>
+		<designed target="Y" value="546.79854399673366" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="144c9eac-8f6a-42e7-8e2e-9541278e7142" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="203.5428392745464" ver="5"/>
+			<designed target="Y" value="126.45593447634894" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c4_m4_TKVK"/>
+			<designed target="Scale" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="7e7ca380-b8ed-43a8-ab89-b79c1eaedd11" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="46.321384893335818" ver="5"/>
+			<designed target="Y" value="7.9300212247916981" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="10.876745882843352" ver="5"/>
+			<designed target="Height" value="10.720830236997699" ver="5"/>
+			<designed target="Text" value="AI" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_35" display-name="Image_35" uuid="91f9fa51-ff7b-455c-aca2-f45f09730b8b" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="959.31059508475983" ver="5"/>
+		<designed target="Y" value="547.14775034593993" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="62d38296-f457-4ed9-81ab-d7080aaf8944" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="204.20950594121314" ver="5"/>
+			<designed target="Y" value="125.78926780968231" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c4_m5_TKVK"/>
+			<designed target="Scale" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="32fa45b3-c149-4e59-8a67-ef775267d5fa" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="47.91698928894013" ver="5"/>
+			<designed target="Y" value="7.1563948511652136" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="13.376745882843352" ver="5"/>
+			<designed target="Height" value="10.685115951283365" ver="5"/>
+			<designed target="Text" value="AI" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_36" display-name="Image_36" uuid="334d5825-f31e-4fc7-a584-c80712aa6c13" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="992.09375599911391" ver="5"/>
+		<designed target="Y" value="547.03663923482895" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="0de8a0e7-7481-49dd-a6cc-f88a378d21ef" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="203.5428392745464" ver="5"/>
+			<designed target="Y" value="125.12260114301557" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c4_m6_TKVK"/>
+			<designed target="Scale" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="33ddfa07-0324-4ca7-ad5d-ed41a90c9702" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="46.159846431797149" ver="5"/>
+			<designed target="Y" value="7.3992519940223467" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="15.376745882843352" ver="5"/>
+			<designed target="Height" value="13.970830236997699" ver="5"/>
+			<designed target="Text" value="AI" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_37" display-name="Image_37" uuid="a33291c4-29f8-4e6f-925b-4b0e8ab1507a" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="1024.5437572297014" ver="5"/>
+		<designed target="Y" value="546.36997256816221" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="e2dc42b2-f76b-41a7-946a-acde04797a0a" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="202.87617260787965" ver="5"/>
+			<designed target="Y" value="125.12260114301557" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c4_m7_TKVK"/>
+			<designed target="Scale" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="be289ed7-cf5c-4969-aa6b-1420aefabcb7" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="46.202703574654635" ver="5"/>
+			<designed target="Y" value="7.4421091368794343" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="13.091031597129358" ver="5"/>
+			<designed target="Height" value="11.113687379854923" ver="5"/>
+			<designed target="Text" value="AI" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_38" display-name="Image_38" uuid="d6bda6c3-1d56-4c19-895c-9104aa48395d" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="1058.1920843339178" ver="5"/>
+		<designed target="Y" value="546.36997256816221" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="4e973ffe-b1a1-449d-b5c4-02e5f7ca85b2" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="203.5428392745464" ver="5"/>
+			<designed target="Y" value="126.45593447634894" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c4_m8_TKVK"/>
+			<designed target="Scale" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="ac80263d-d999-4955-896f-ce2c6e63b863" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="45.345560717511461" ver="5"/>
+			<designed target="Y" value="7.2516329464032871" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="14.710079216176837" ver="5"/>
+			<designed target="Height" value="13.304163570330957" ver="5"/>
+			<designed target="Text" value="AI" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_39" display-name="Image_39" uuid="0243b40e-17d1-458c-b10d-a24a326ad258" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="1091.2768325498587" ver="5"/>
+		<designed target="Y" value="546.36997256816221" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="dce58876-b434-4f17-baf5-d79da3d71df6" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="203.5428392745464" ver="5"/>
+			<designed target="Y" value="126.45593447634894" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c4_m9_TKVK"/>
+			<designed target="Scale" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="e7302bb4-df92-4357-8187-a989480d75d2" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="45.726513098463755" ver="5"/>
+			<designed target="Y" value="6.9659186606889527" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="15.710079216176609" ver="5"/>
+			<designed target="Height" value="13.304163570330957" ver="5"/>
+			<designed target="Text" value="AI" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_40" display-name="Image_40" uuid="ec185a12-9c53-43f3-8ac0-7cf92cc721c5" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="1123.7823025112184" ver="5"/>
+		<designed target="Y" value="546.36997256816221" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="c8b904a2-1817-4ddc-b0d4-d08cf14bdda9" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="203.5428392745464" ver="5"/>
+			<designed target="Y" value="126.45593447634894" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c4_m10_TKVK"/>
+			<designed target="Scale" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="9463798b-a1ad-421e-822c-a47aac7f4522" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="45.393179765130725" ver="5"/>
+			<designed target="Y" value="7.2992519940223239" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="12.376745882843807" ver="5"/>
+			<designed target="Height" value="10.970830236997699" ver="5"/>
+			<designed target="Text" value="AI" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_41" display-name="Image_41" uuid="7b174fb0-74cd-4191-85d8-4f243736dc8c" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="1156.565637075139" ver="5"/>
+		<designed target="Y" value="546.36997256816221" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="b3a19a58-a206-4e67-bb44-eac318f34bd3" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="203.5428392745464" ver="5"/>
+			<designed target="Y" value="126.45593447634894" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c4_m11_TKVK"/>
+			<designed target="Scale" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_2" display-name="Text_PropertiesDialogs_2" uuid="3684d864-3280-4a40-8cfe-8a8815917804" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="45.369092786165595" ver="5"/>
+			<designed target="Y" value="7.7649889882888488" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="12.171066738129866" ver="5"/>
+			<designed target="Height" value="9.3198338984281008" ver="5"/>
+			<designed target="Text" value="CP" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_42" display-name="Image_42" uuid="6e06e6cb-69d6-4cba-b395-59933f83c51a" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="1200.2950657543911" ver="5"/>
+		<designed target="Y" value="546.36997256816221" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="96.333333333333258" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/PP.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="c2fdf419-6b8f-4bb3-b397-2b5515bc122f" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="192.27480755898353" ver="5"/>
+			<designed target="Y" value="125.78129918910946" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c4_m12_TKVK"/>
+			<designed target="Scale" value="1" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_43" display-name="Image_43" uuid="8d807171-cd54-4b5e-99e0-6a5de303655b" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="1223.1317852542797" ver="5"/>
+		<designed target="Y" value="546.36997256816221" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="a24ab3ca-e3ce-4116-8e2e-f5010d0dc842" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="202.87617260787965" ver="5"/>
+			<designed target="Y" value="126.45593447634894" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c4_m13_TKVK"/>
+			<designed target="Scale" value="1" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_6" display-name="Text_PropertiesDialogs_6" uuid="04d17fd6-c996-4680-b107-d6dd1072f4e5" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="1145.1927312303565" ver="5"/>
+		<designed target="Y" value="187.7999999999999" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="63.746388063824043" ver="5"/>
+		<designed target="Height" value="61.677300837007465" ver="5"/>
+		<designed target="Text" value="C3" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Image_44" display-name="Image_44" uuid="11ab29f8-1f4e-41a4-80f9-3ab79ba86852" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="884.66409780373851" ver="5"/>
+		<designed target="Y" value="270.41193123297961" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="91.200000000000273" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/PP.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="ac5e9343-c2b2-4ef3-8e4e-d6d1e68fc116" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="190.53180762252396" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c3_m2_TKVK"/>
+			<designed target="Scale" value="1" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_45" display-name="Image_45" uuid="d28380fe-178a-40da-98de-a48b3cb1c4ca" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="841.48333333333289" ver="5"/>
+		<designed target="Y" value="270.14350004634503" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="0f9f318d-3e25-43bb-83a6-4a4bf881d2e5" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="203.35582397149415" ver="5"/>
+			<designed target="Y" value="126" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c3_m1_TKVK"/>
+			<designed target="Scale" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="17eac76b-e9ab-4575-8ebe-ff9973cc970a" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="47.098267669410461" ver="5"/>
+			<designed target="Y" value="6.4964513157636397" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="14.394354296596134" ver="5"/>
+			<designed target="Height" value="12.280763412145745" ver="5"/>
+			<designed target="Text" value="ST" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_46" display-name="Image_46" uuid="121cd640-2553-49c9-acb1-00f2640ffa8c" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="904.55962095321047" ver="5"/>
+		<designed target="Y" value="269.4966746495196" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="184bde2f-6605-494f-9f2a-0039d6eb3cec" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="202.35582397149415" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c3_m3_TKVK"/>
+			<designed target="Scale" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="a837dc36-adb5-4f0f-96a9-26c4ea9f42d8" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="46.86017243131505" ver="5"/>
+			<designed target="Y" value="7.4488322681446029" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="13.346735248976984" ver="5"/>
+			<designed target="Height" value="11.185525316907615" ver="5"/>
+			<designed target="Text" value="DI" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_47" display-name="Image_47" uuid="ba80edbf-3cfe-4b35-9a56-e62e390e4b9b" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="937.17786907047412" ver="5"/>
+		<designed target="Y" value="270.12207147491642" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="0c9865fc-9527-45ee-8410-4e2bed3e35cf" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="202.35582397149415" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c3_m4_TKVK"/>
+			<designed target="Scale" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="44bc1f72-b0f2-4fdb-909a-85716eccbe9b" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="45.831601002743582" ver="5"/>
+			<designed target="Y" value="7.7085725278848862" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="16.261020963263036" ver="5"/>
+			<designed target="Height" value="13.414096745479014" ver="5"/>
+			<designed target="Text" value="DI" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_48" display-name="Image_48" uuid="4454884d-d199-4df8-92bb-f099a2af2500" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="970.12339026961536" ver="5"/>
+		<designed target="Y" value="269.89350004634503" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="580065af-fce6-495a-ac1f-ee03735ffa0d" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="202.35582397149415" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c3_m5_TKVK"/>
+			<designed target="Scale" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="0795bc8d-2721-4a99-9ae9-afe047a5b777" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="47.542712113854805" ver="5"/>
+			<designed target="Y" value="7.0520068713192394" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="22.061020963263218" ver="5"/>
+			<designed target="Height" value="14.61409674547906" ver="5"/>
+			<designed target="Text" value="DI" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_49" display-name="Image_49" uuid="f8332540-1a81-4845-91ba-8be6347b0a65" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="1001.5689114687575" ver="5"/>
+		<designed target="Y" value="270.22683337967834" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="26924796-613a-47d2-a44e-36dd5285a8c7" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="202.35582397149415" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c3_m6_TKVK"/>
+			<designed target="Scale" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="d7bffc3d-9c5f-4707-bfe3-8e90679bdeb1" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="46.731601002743901" ver="5"/>
+			<designed target="Y" value="7.263117982430348" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="13.561020963262763" ver="5"/>
+			<designed target="Height" value="11.11409674547906" ver="5"/>
+			<designed target="Text" value="AI" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_50" display-name="Image_50" uuid="738a1ce4-8071-4b91-bcbe-2568284cbd10" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="1033.2642881904519" ver="5"/>
+		<designed target="Y" value="270.39350004634503" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="11ea15eb-470d-4fc6-8c62-54c9ed38ff92" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="202.35582397149415" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c3_m7_TKVK"/>
+			<designed target="Scale" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="c884249d-67a9-47e0-8221-4ff861746bb2" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="46.886146457289215" ver="5"/>
+			<designed target="Y" value="7.8903907097030732" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="14.061020963263218" ver="5"/>
+			<designed target="Height" value="12.11409674547906" ver="5"/>
+			<designed target="Text" value="AI" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_51" display-name="Image_51" uuid="77260d8d-99da-43f0-8b1a-5ba86257b7ae" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="1065.9847371508697" ver="5"/>
+		<designed target="Y" value="270.09350004634501" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="d77035cc-dbf1-47ba-b0b2-c54c8e9d1cc4" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="202.35582397149415" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c3_m8_TKVK"/>
+			<designed target="Scale" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="dbc660cc-259f-498b-9435-bae7248d9b3d" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="46.231601002743673" ver="5"/>
+			<designed target="Y" value="7.5631179824303594" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="13.461020963262399" ver="5"/>
+			<designed target="Height" value="11.814096745479048" ver="5"/>
+			<designed target="Text" value="AI" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_52" display-name="Image_52" uuid="e420c0f9-5d81-448f-82ec-68de2f58f8c9" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="1098.3299693951171" ver="5"/>
+		<designed target="Y" value="270.293500046345" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="28db5939-925c-41e9-b869-40e40b57b1a5" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="202.35582397149415" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c3_m9_TKVK"/>
+			<designed target="Scale" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="1e141af9-7898-4f03-aefc-b8880bf72060" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="45.431601002743719" ver="5"/>
+			<designed target="Y" value="7.5631179824303025" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="12.661020963262217" ver="5"/>
+			<designed target="Height" value="10.61409674547906" ver="5"/>
+			<designed target="Text" value="AI" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_53" display-name="Image_53" uuid="3f7ea2d5-9fc0-4a26-b6a0-a9f9945475fd" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="1131.0504183555349" ver="5"/>
+		<designed target="Y" value="269.89350004634503" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="fbb27c89-e7ee-47b0-975f-16b7246f2c3a" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="202.35582397149415" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c3_m10_TKVK"/>
+			<designed target="Scale" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="5b1c208f-0b90-43b5-a5ad-843710be69c5" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="46.631601002743764" ver="5"/>
+			<designed target="Y" value="7.9631179824303366" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="14.661020963263127" ver="5"/>
+			<designed target="Height" value="14.61409674547906" ver="5"/>
+			<designed target="Text" value="AI" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_54" display-name="Image_54" uuid="8967fd03-1323-49a7-9f13-b3cc15f4ed67" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="1163.6457950772296" ver="5"/>
+		<designed target="Y" value="269.89350004634503" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="8efda2aa-3c4f-4dca-b865-219de7ff6eec" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="202.35582397149415" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c3_m11_TKVK"/>
+			<designed target="Scale" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="713d7f7f-a5e3-4d89-95fe-39a0f7863874" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="44.764934336076976" ver="5"/>
+			<designed target="Y" value="8.4964513157636965" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="17.727687629929733" ver="5"/>
+			<designed target="Height" value="10.61409674547906" ver="5"/>
+			<designed target="Text" value="DO" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_55" display-name="Image_55" uuid="7577b24d-a7de-445a-92a4-d1490ef3ce08" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="1206.4647992631776" ver="5"/>
+		<designed target="Y" value="269.75478837583682" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="93.866666666666788" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/PP.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="199e7372-3a48-422d-96d5-ccd55f34eb8b" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="190.87059259265561" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c3_m12_TKVK"/>
+			<designed target="Scale" value="1" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_56" display-name="Image_56" uuid="656cda93-ccf6-40bf-94a9-b0e72eb77e7c" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="1228.1869819529602" ver="5"/>
+		<designed target="Y" value="269.89350004634503" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="726c720e-9fae-43f9-ad38-0d8ecd13194a" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="202.95582397149406" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c3_m13_TKVK"/>
+			<designed target="Scale" value="1" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_7" display-name="Text_PropertiesDialogs_7" uuid="6b4c85c0-cb88-431f-8957-51dba45a1bd7" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="158.40000000000001" ver="5"/>
+		<designed target="Y" value="334.86666666666667" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="25.199999999999989" ver="5"/>
+		<designed target="Height" value="15.600000000000009" ver="5"/>
+		<designed target="Text" value="UG5" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_8" display-name="Text_PropertiesDialogs_8" uuid="27f80326-3934-4601-90b6-fbfd65812bfe" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="197.73333333333335" ver="5"/>
+		<designed target="Y" value="334.86666666666667" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="31.199999999999932" ver="5"/>
+		<designed target="Height" value="15.600000000000009" ver="5"/>
+		<designed target="Text" value="CPU1" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_9" display-name="Text_PropertiesDialogs_9" uuid="033ce20c-cd56-456b-a64a-2aad0624a061" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="242.73333333333335" ver="5"/>
+		<designed target="Y" value="335.0333333333333" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="27.866666666666617" ver="5"/>
+		<designed target="Height" value="15.266666666666708" ver="5"/>
+		<designed target="Text" value="CP1" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_10" display-name="Text_PropertiesDialogs_10" uuid="32cc2654-abc9-4507-b583-6b63cd02e41b" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="270.73333333333335" ver="5"/>
+		<designed target="Y" value="334.86666666666667" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="25.199999999999989" ver="5"/>
+		<designed target="Height" value="15.600000000000009" ver="5"/>
+		<designed target="Text" value="UG6" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_11" display-name="Text_PropertiesDialogs_11" uuid="dcf21bbf-65d2-41ec-998c-4596001d582e" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="64.066666666666677" ver="5"/>
+		<designed target="Y" value="526.66666666666674" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="28.523018025203356" ver="5"/>
+		<designed target="Height" value="15.600000000000023" ver="5"/>
+		<designed target="Text" value="UG9" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_12" display-name="Text_PropertiesDialogs_12" uuid="bf47b243-7f43-4991-9bda-a3009c9cb088" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="95.985282075822752" ver="5"/>
+		<designed target="Y" value="526.66666666666674" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="28.52301802520337" ver="5"/>
+		<designed target="Height" value="15.600000000000023" ver="5"/>
+		<designed target="Text" value="DI1" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_13" display-name="Text_PropertiesDialogs_13" uuid="62345536-83ef-406c-92e3-69ad6e531c14" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="127.90389748497896" ver="5"/>
+		<designed target="Y" value="526.66666666666674" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="28.523018025203356" ver="5"/>
+		<designed target="Height" value="15.600000000000023" ver="5"/>
+		<designed target="Text" value="DI2" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_14" display-name="Text_PropertiesDialogs_14" uuid="6d64f372-f805-4007-ad90-60bd7a201c64" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="159.82251289413517" ver="5"/>
+		<designed target="Y" value="526.66666666666674" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="28.523018025203356" ver="5"/>
+		<designed target="Height" value="15.600000000000023" ver="5"/>
+		<designed target="Text" value="DI3" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_15" display-name="Text_PropertiesDialogs_15" uuid="bf232d4f-0b60-48d1-bc06-c30cb33429cd" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="191.74112830329113" ver="5"/>
+		<designed target="Y" value="526.66666666666674" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="28.523018025203356" ver="5"/>
+		<designed target="Height" value="15.600000000000023" ver="5"/>
+		<designed target="Text" value="DI4" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_16" display-name="Text_PropertiesDialogs_16" uuid="e9475f98-42c7-4da4-93f6-d931937dabfe" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="223.65974371244758" ver="5"/>
+		<designed target="Y" value="524.66666666666674" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="26.259286435901544" ver="5"/>
+		<designed target="Height" value="17.600000000000023" ver="5"/>
+		<designed target="Text" value="DI5" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_17" display-name="Text_PropertiesDialogs_17" uuid="456a6220-8a42-42b5-aa74-35f71217a9a1" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="255.57835912160357" ver="5"/>
+		<designed target="Y" value="526.66666666666674" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="28.523018025203385" ver="5"/>
+		<designed target="Height" value="15.600000000000023" ver="5"/>
+		<designed target="Text" value="DI6" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_18" display-name="Text_PropertiesDialogs_18" uuid="aa4a893f-8e12-42c4-89f1-d6d21c2f5631" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="287.49697453075959" ver="5"/>
+		<designed target="Y" value="526.66666666666674" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="28.523018025203385" ver="5"/>
+		<designed target="Height" value="15.600000000000023" ver="5"/>
+		<designed target="Text" value="DO1" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_19" display-name="Text_PropertiesDialogs_19" uuid="09ae1397-7324-4380-ad40-96ab8103b893" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="319.41558993991583" ver="5"/>
+		<designed target="Y" value="526.66666666666674" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="28.523018025203385" ver="5"/>
+		<designed target="Height" value="15.600000000000023" ver="5"/>
+		<designed target="Text" value="DO2" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_20" display-name="Text_PropertiesDialogs_20" uuid="676513cc-1f8b-448c-a597-da519d395fcd" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="351.33420534907208" ver="5"/>
+		<designed target="Y" value="526.66666666666674" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="28.523018025203385" ver="5"/>
+		<designed target="Height" value="15.600000000000023" ver="5"/>
+		<designed target="Text" value="DA1" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_21" display-name="Text_PropertiesDialogs_21" uuid="43cd282f-6112-43e9-8242-f2ed140bbe7b" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="383.25282075822832" ver="5"/>
+		<designed target="Y" value="526.66666666666674" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="35.597179241771642" ver="5"/>
+		<designed target="Height" value="15.600000000000023" ver="5"/>
+		<designed target="Text" value="UG10" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_22" display-name="Text_PropertiesDialogs_22" uuid="67edb5eb-8596-4596-a7d2-6ddd7bc78992" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="571.73333333333323" ver="5"/>
+		<designed target="Y" value="524.66666666666674" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="31.449999999999989" ver="5"/>
+		<designed target="Height" value="15.600000000000023" ver="5"/>
+		<designed target="Text" value="UG11" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_23" display-name="Text_PropertiesDialogs_23" uuid="b4e19d7e-cae4-4cb8-9d31-ba84270cb463" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="607.18333333333328" ver="5"/>
+		<designed target="Y" value="525.16666666666674" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="31.449999999999989" ver="5"/>
+		<designed target="Height" value="15.600000000000023" ver="5"/>
+		<designed target="Text" value="AI1" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_24" display-name="Text_PropertiesDialogs_24" uuid="53cb411a-ef2c-411c-86f9-15d3db06904f" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="660.58333333333314" ver="5"/>
+		<designed target="Y" value="524.66666666666674" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="31.449999999999989" ver="5"/>
+		<designed target="Height" value="15.600000000000023" ver="5"/>
+		<designed target="Text" value="AO1" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_25" display-name="Text_PropertiesDialogs_25" uuid="b7a33ab6-ad7e-4499-80fc-15ddabd67586" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="687.53333333333319" ver="5"/>
+		<designed target="Y" value="525.16666666666674" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="31.449999999999989" ver="5"/>
+		<designed target="Height" value="15.600000000000023" ver="5"/>
+		<designed target="Text" value="UG12" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_26" display-name="Text_PropertiesDialogs_26" uuid="c8bd89a1-4e4f-4c2d-8e4b-0574785ba951" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="923.25669617525477" ver="5"/>
+		<designed target="Y" value="243.70937079915393" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="32" ver="5"/>
+		<designed target="Height" value="35.699285403455121" ver="5"/>
+		<designed target="Text" value="UG7" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_27" display-name="Text_PropertiesDialogs_27" uuid="a597c34e-cc88-4047-a650-da3c8499c48a" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="958.25669617525477" ver="5"/>
+		<designed target="Y" value="243.70937079915393" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="32" ver="5"/>
+		<designed target="Height" value="35.699285403455121" ver="5"/>
+		<designed target="Text" value="DI1" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_28" display-name="Text_PropertiesDialogs_28" uuid="af6d4d1c-7124-48a2-8ea4-189676e7a765" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="993.25669617525477" ver="5"/>
+		<designed target="Y" value="243.70937079915393" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="32" ver="5"/>
+		<designed target="Height" value="35.699285403455121" ver="5"/>
+		<designed target="Text" value="DI2" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_29" display-name="Text_PropertiesDialogs_29" uuid="e6c5c91f-3b04-4f78-8043-f9245a9e8932" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="1028.2566961752545" ver="5"/>
+		<designed target="Y" value="243.70937079915393" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="32" ver="5"/>
+		<designed target="Height" value="35.699285403455121" ver="5"/>
+		<designed target="Text" value="DI3" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_30" display-name="Text_PropertiesDialogs_30" uuid="dcadd61c-f8f6-4b6a-bbbd-ea67ac973873" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="1063.2566961752548" ver="5"/>
+		<designed target="Y" value="243.70937079915393" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="32" ver="5"/>
+		<designed target="Height" value="35.699285403455121" ver="5"/>
+		<designed target="Text" value="AI1" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_31" display-name="Text_PropertiesDialogs_31" uuid="a97617e1-6733-4351-a7f2-dc0ea2f8e396" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="1098.2566961752548" ver="5"/>
+		<designed target="Y" value="243.70937079915393" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="32" ver="5"/>
+		<designed target="Height" value="35.699285403455121" ver="5"/>
+		<designed target="Text" value="AI2" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_32" display-name="Text_PropertiesDialogs_32" uuid="71f5936a-6c5e-4bdd-b9ba-4f9d6358a7a3" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="1133.2566961752548" ver="5"/>
+		<designed target="Y" value="243.70937079915393" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="32" ver="5"/>
+		<designed target="Height" value="35.699285403455121" ver="5"/>
+		<designed target="Text" value="AI3" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_33" display-name="Text_PropertiesDialogs_33" uuid="e5d0f14e-26f9-423c-803a-ece1ac1072de" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="1168.2566961752545" ver="5"/>
+		<designed target="Y" value="243.70937079915393" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="32" ver="5"/>
+		<designed target="Height" value="35.699285403455121" ver="5"/>
+		<designed target="Text" value="AI4" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_34" display-name="Text_PropertiesDialogs_34" uuid="64957d0e-4c98-4525-a624-74dbf67143de" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="1203.2566961752548" ver="5"/>
+		<designed target="Y" value="243.70937079915393" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="32" ver="5"/>
+		<designed target="Height" value="35.699285403455121" ver="5"/>
+		<designed target="Text" value="AI5" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_35" display-name="Text_PropertiesDialogs_35" uuid="876b1faa-29ba-42b2-8905-21a7fa512de7" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="1238.256696175255" ver="5"/>
+		<designed target="Y" value="243.70937079915393" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="32" ver="5"/>
+		<designed target="Height" value="35.699285403455121" ver="5"/>
+		<designed target="Text" value="DO1" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_36" display-name="Text_PropertiesDialogs_36" uuid="026345be-5caa-40af-bf62-07b32b0a53b0" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="1273.256696175255" ver="5"/>
+		<designed target="Y" value="243.70937079915393" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="32" ver="5"/>
+		<designed target="Height" value="35.699285403455121" ver="5"/>
+		<designed target="Text" value="UG8" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_37" display-name="Text_PropertiesDialogs_37" uuid="381cd808-0d09-4a2c-b1fe-dbef6c56efb2" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="868.38604336043318" ver="5"/>
+		<designed target="Y" value="521.83057938254262" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="32" ver="5"/>
+		<designed target="Height" value="31.13784475953139" ver="5"/>
+		<designed target="Text" value="UG9" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_38" display-name="Text_PropertiesDialogs_38" uuid="0c0e5635-3844-4a86-8489-55c80ecd49a0" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="907.38604336043318" ver="5"/>
+		<designed target="Y" value="521.83057938254285" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="32" ver="5"/>
+		<designed target="Height" value="31.13784475953139" ver="5"/>
+		<designed target="Text" value="RTD1" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_39" display-name="Text_PropertiesDialogs_39" uuid="10426918-d179-4c4f-a218-7cef9abffb87" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="946.38604336043318" ver="5"/>
+		<designed target="Y" value="521.83057938254262" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="32" ver="5"/>
+		<designed target="Height" value="31.13784475953139" ver="5"/>
+		<designed target="Text" value="RTD2" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_40" display-name="Text_PropertiesDialogs_40" uuid="685d7b75-30e3-4e31-b48a-9488c8b099b6" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="985.38604336043318" ver="5"/>
+		<designed target="Y" value="521.83057938254262" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="32" ver="5"/>
+		<designed target="Height" value="31.13784475953139" ver="5"/>
+		<designed target="Text" value="RTD3" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_41" display-name="Text_PropertiesDialogs_41" uuid="63a6d50e-5154-4456-9a5b-050629f2c2bd" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="1024.3860433604332" ver="5"/>
+		<designed target="Y" value="521.83057938254262" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="32" ver="5"/>
+		<designed target="Height" value="31.13784475953139" ver="5"/>
+		<designed target="Text" value="RTD4" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_42" display-name="Text_PropertiesDialogs_42" uuid="b6e73c2d-5439-4cb9-bb3e-bec144d067cc" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="1063.3860433604332" ver="5"/>
+		<designed target="Y" value="521.83057938254262" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="32" ver="5"/>
+		<designed target="Height" value="31.13784475953139" ver="5"/>
+		<designed target="Text" value="RTD5" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_43" display-name="Text_PropertiesDialogs_43" uuid="06d999d7-8671-40d6-aef1-e0021a2372c9" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="1102.3860433604332" ver="5"/>
+		<designed target="Y" value="521.83057938254262" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="32" ver="5"/>
+		<designed target="Height" value="31.13784475953139" ver="5"/>
+		<designed target="Text" value="RTD6" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_44" display-name="Text_PropertiesDialogs_44" uuid="8f3ef78e-fdb2-4ff8-bccb-8e34577816e3" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="1141.3860433604332" ver="5"/>
+		<designed target="Y" value="521.83057938254262" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="32" ver="5"/>
+		<designed target="Height" value="31.13784475953139" ver="5"/>
+		<designed target="Text" value="RTD7" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_45" display-name="Text_PropertiesDialogs_45" uuid="35c82890-b639-4bca-8d20-f285cfef9a9e" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="1180.3860433604332" ver="5"/>
+		<designed target="Y" value="521.83057938254262" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="32" ver="5"/>
+		<designed target="Height" value="31.13784475953139" ver="5"/>
+		<designed target="Text" value="RTD8" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_46" display-name="Text_PropertiesDialogs_46" uuid="5c9e468a-7ef3-45bb-9d7b-ad33f23d9595" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="1219.3860433604332" ver="5"/>
+		<designed target="Y" value="521.83057938254262" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="32" ver="5"/>
+		<designed target="Height" value="31.13784475953139" ver="5"/>
+		<designed target="Text" value="CP1" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_47" display-name="Text_PropertiesDialogs_47" uuid="2df27581-2e96-420c-aee1-8edb23d30552" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="1258.3860433604332" ver="5"/>
+		<designed target="Y" value="521.83057938254262" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="32" ver="5"/>
+		<designed target="Height" value="31.13784475953139" ver="5"/>
+		<designed target="Text" value="UG10" ver="5"/>
+	</object>
+	<object access-modifier="private" name="ServerRedundancy_1" display-name="ServerRedundancy_1" uuid="845df6f6-fe79-49f5-be4a-a3bec863238a" base-type="ServerRedundancy" base-type-id="e325538a-6456-460b-9299-78edcea2bb9a" ver="5" description="" cardinal="1">
+		<designed target="X" value="366" ver="5"/>
+		<designed target="Y" value="56" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="640" ver="5"/>
+		<designed target="Height" value="130" ver="5"/>
+		<init target="_ApSourceMain" ver="5" ref="AsokuMain.ApMainSource"/>
+		<init target="_MainMachine" ver="5" value="Основная"/>
+		<init target="_ReserveMachine" ver="5" value="Резервная"/>
+		<init target="_ApSourceReserve" ver="5" ref="Global.ApReserveSource"/>
+		<designed target="Scale" value="1" ver="5"/>
+	</object>
+	<object access-modifier="private" name="ConnectionLine_1" display-name="ConnectionLine_1" uuid="5e9ccc34-57b0-4ff1-bd4c-db3591e77211" base-type="ConnectionLine" base-type-id="37af6ad2-1854-4867-b881-1239e1665327" ver="5" description="" cardinal="1">
+		<designed target="X" value="324.75206611570246" ver="5"/>
+		<designed target="Y" value="291" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="123" ver="5"/>
+		<designed target="Height" value="62" ver="5"/>
+		<designed target="EnableDecoration" value="false" ver="5"/>
+		<designed target="PenColor" value="0xffff0000" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="5" ver="5"/>
+		<object access-modifier="private" name="Point_4" display-name="Point_1" uuid="3977baa4-8c10-4eef-9e9b-a05bcf897924" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="-107.75206611570248" ver="5"/>
+			<designed target="Y" value="37" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_2" display-name="Point_4" uuid="3e0b2720-971f-4fb3-84d4-e668ae63322b" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="-107.75206611570248" ver="5"/>
+			<designed target="Y" value="-25" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_5" display-name="Point_5" uuid="7b8bcdec-4edb-4049-92d5-378fa7839005" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="15.247933884297519" ver="5"/>
+			<designed target="Y" value="-25" ver="5"/>
+		</object>
+		<object access-modifier="private" name="ParDevPath" display-name="Путь параметра" uuid="f8a6714b-d3e2-4f82-aec9-21be79785c11" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="ApSourcePar" display-name="Источник" uuid="4398ec42-2dde-4b26-97ab-4481ca144459" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+			<designed target="Location" value="" ver="5"/>
+			<designed target="Port" value="4388" ver="5"/>
+			<designed target="HistoryPort" value="4950" ver="5"/>
+			<designed target="Path" value="" ver="5"/>
+			<designed target="Active" value="true" ver="5"/>
+			<designed target="ReAdvise" value="0" ver="5"/>
+			<designed target="ClientDisplayName" value="HMI" ver="5"/>
+			<designed target="ClientId" value="HMI" ver="5"/>
+			<init target="ParentSource" ver="5" ref="AsokuMain.ApMainSource"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[ParDevPath.Value]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="ApParIECActivated" display-name="ApParIECActivated" uuid="d2668f6c-faf1-4cab-a08a-124a9d92a11e" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Path" ver="5" value="IECActivated"/>
+			<init target="Source" ver="5" ref="ApSourcePar"/>
+		</object>
+		<object access-modifier="private" name="ApParTCPConnected" display-name="ApParTCPConnected" uuid="84ab072e-6bb3-40bc-bd4d-8795a21f3bfe" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Path" ver="5" value="TCPConnected"/>
+			<init target="Source" ver="5" ref="ApSourcePar"/>
+		</object>
+		<init target="ParDevPath" ver="5" value="Service.Modules.Iec104Master.Stations.Station 1.Sources.Source 1.Channels.Channel 1"/>
+		<do-trace access-modifier="private" target="PenColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParIECActivated]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParTCPConnected]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuBlue]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParIECActivated && ApParTCPConnected]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuGreen]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[AsokuColor.asokuLightGrey]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Image_57" display-name="Image_57" uuid="7eb96dd9-8630-424a-9c33-ccc153ff5d51" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="331.89220563847437" ver="5"/>
+		<designed target="Y" value="347" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="165.99999999999977" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/CU.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="e412f4dd-a3b4-4c30-88dc-ecadc9b3b925" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="224.46058519075535" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c0_m3_TA"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_58" display-name="Image_58" uuid="04cc487d-0a7b-4568-90e1-6582e93311f4" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="395.67495854063009" ver="5"/>
+		<designed target="Y" value="347" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="100.00000000000011" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/PP.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="15905b78-c4b4-4792-ac1f-41e8ac157454" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="196.23714759535653" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c0_m2_TA"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_59" display-name="Image_59" uuid="c364fd49-9117-416d-8e1a-e814c892db43" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="421.56716417910434" ver="5"/>
+		<designed target="Y" value="347" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="9e3e4370-6204-4f2d-a7ff-4861407dc567" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="201.25870646766168" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c0_m4_TA"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="51140210-ab33-428b-bce2-8ea9404724e0" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="48.258153676064119" ver="5"/>
+			<designed target="Y" value="7.9243350311261906" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="24.809286898839105" ver="5"/>
+			<designed target="Height" value="8.6516129032258391" ver="5"/>
+			<designed target="Text" value="CP" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_60" display-name="Image_60" uuid="717f38cc-087c-4a1c-a6a5-8b9e44fe6f04" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="320.33333333333326" ver="5"/>
+		<designed target="Y" value="347" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="8581b5ca-81a1-483b-a0f3-2fd357cd1d1c" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="203.25870646766168" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c0_m1_TA"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="e11b4f05-872d-4b85-b8db-3cdc0e1ba280" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="45.258153676064126" ver="5"/>
+			<designed target="Y" value="7.810049316840491" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="24.809286898839105" ver="5"/>
+			<designed target="Height" value="8.8801843317971816" ver="5"/>
+			<designed target="Text" value="ST" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_61" display-name="Image_61" uuid="6be5fdd6-b158-46f2-bde9-764c2a5ee8d0" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="462.45771144278592" ver="5"/>
+		<designed target="Y" value="347" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="102" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/PP.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="47d19fd7-bf31-4a1a-ad89-7686c20881e7" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="196.23714759535653" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c0_m5_TA"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Image_62" display-name="Image_62" uuid="d2ec84c7-29e8-44f4-b633-89a7bbe34418" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="488.50082918739622" ver="5"/>
+		<designed target="Y" value="347" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="120" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/DI.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="Dummy_16_1" display-name="Dummy_16_1" uuid="74db23e4-fb3b-42b7-a508-ce7e74dcb9a6" base-type="Dummy_16" base-type-id="a0ee7c3f-c9c2-411d-a5ba-a26605afd50e" ver="5" description="" cardinal="1">
+			<designed target="X" value="203.25870646766168" ver="5"/>
+			<designed target="Y" value="127" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Messages.MS_c0_m6_TA"/>
+		</object>
+		<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="1968637a-e9ad-4f58-a199-d9bdde3e74e5" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="45.258153676064126" ver="5"/>
+			<designed target="Y" value="7.9529064596976013" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="24.809286898839105" ver="5"/>
+			<designed target="Height" value="8.5944700460829608" ver="5"/>
+			<designed target="Text" value="ST" ver="5"/>
+			<designed target="Font" value="Tahoma,6,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_48" display-name="Text_PropertiesDialogs_48" uuid="ed8b94a1-01b0-4129-b26e-67b3823b9738" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="451.9666666666667" ver="5"/>
+		<designed target="Y" value="302.13333333333333" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="50" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="C0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_49" display-name="Text_PropertiesDialogs_49" uuid="374e8824-4819-4e44-958a-0ed29c2fe535" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="394.40000000000009" ver="5"/>
+		<designed target="Y" value="333.86666666666667" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="25.199999999999989" ver="5"/>
+		<designed target="Height" value="15.600000000000009" ver="5"/>
+		<designed target="Text" value="UG5" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_50" display-name="Text_PropertiesDialogs_50" uuid="ba7d6075-2999-46ac-bf9b-430ef3a1da30" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="433.73333333333335" ver="5"/>
+		<designed target="Y" value="333.86666666666667" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="31.199999999999932" ver="5"/>
+		<designed target="Height" value="15.600000000000009" ver="5"/>
+		<designed target="Text" value="CPU2" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_51" display-name="Text_PropertiesDialogs_51" uuid="dc76332e-d6ea-44ba-bf08-d3906ec0a0a2" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="478.73333333333335" ver="5"/>
+		<designed target="Y" value="334.0333333333333" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="27.866666666666617" ver="5"/>
+		<designed target="Height" value="15.266666666666708" ver="5"/>
+		<designed target="Text" value="CP1" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_52" display-name="Text_PropertiesDialogs_52" uuid="1944161b-7555-49ee-8630-0c9b694865a4" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="506.73333333333335" ver="5"/>
+		<designed target="Y" value="333.86666666666667" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="25.199999999999989" ver="5"/>
+		<designed target="Height" value="15.600000000000009" ver="5"/>
+		<designed target="Text" value="UG6" ver="5"/>
+	</object>
+	<object access-modifier="private" name="ConnectionLine_2" display-name="ConnectionLine_2" uuid="38b9a52a-eb96-46a7-b355-ae1ee59e2018" base-type="ConnectionLine" base-type-id="37af6ad2-1854-4867-b881-1239e1665327" ver="5" description="" cardinal="1">
+		<designed target="X" value="422.47520661157023" ver="5"/>
+		<designed target="Y" value="293.01612903225811" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="97" ver="5"/>
+		<designed target="Height" value="67.000000000000043" ver="5"/>
+		<designed target="EnableDecoration" value="false" ver="5"/>
+		<designed target="PenColor" value="0xffff0000" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="5" ver="5"/>
+		<object access-modifier="private" name="Point_4" display-name="Point_1" uuid="3d484cf9-40ba-4e6b-abf3-26a6712cad91" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="-84.975206611570243" ver="5"/>
+			<designed target="Y" value="39.983870967741964" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_2" display-name="Point_4" uuid="6bf2b6e6-a7ff-4c6c-9666-231ada93afa4" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="-84.975206611570243" ver="5"/>
+			<designed target="Y" value="-27.016129032258075" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_5" display-name="Point_5" uuid="5cf5625c-1a02-4120-9a73-f36906f12ef5" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="12.024793388429751" ver="5"/>
+			<designed target="Y" value="-27.016129032258075" ver="5"/>
+		</object>
+		<object access-modifier="private" name="ParDevPath" display-name="Путь параметра" uuid="a9d9c037-2e24-4478-a186-6b6ad2011eaa" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="ApSourcePar" display-name="Источник" uuid="f78f5dd0-22ee-4627-aa77-bed22d67e256" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+			<designed target="Location" value="" ver="5"/>
+			<designed target="Port" value="4388" ver="5"/>
+			<designed target="HistoryPort" value="4950" ver="5"/>
+			<designed target="Path" value="" ver="5"/>
+			<designed target="Active" value="true" ver="5"/>
+			<designed target="ReAdvise" value="0" ver="5"/>
+			<designed target="ClientDisplayName" value="HMI" ver="5"/>
+			<designed target="ClientId" value="HMI" ver="5"/>
+			<init target="ParentSource" ver="5" ref="AsokuMain.ApMainSource"/>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[ParDevPath.Value]]>
+				</body>
+			</do-trace>
+		</object>
+		<init target="ParDevPath" ver="5" value="Service.Modules.Iec104Master.Stations.Station 1.Sources.Source 1.Channels.Channel 2"/>
+		<object access-modifier="private" name="ApParIECActivated" display-name="ApParIECActivated" uuid="aef97422-3898-4402-9e2a-35e39b7e4fd2" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Path" ver="5" value="IECActivated"/>
+			<init target="Source" ver="5" ref="ApSourcePar"/>
+		</object>
+		<object access-modifier="private" name="ApParTCPConnected" display-name="ApParTCPConnected" uuid="368ec27c-4ad5-4e52-ac7c-b2f21bcac03d" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Path" ver="5" value="TCPConnected"/>
+			<init target="Source" ver="5" ref="ApSourcePar"/>
+		</object>
+		<do-trace access-modifier="private" target="PenColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParIECActivated]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParTCPConnected]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuBlue]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParIECActivated && ApParTCPConnected]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuGreen]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[AsokuColor.asokuLightGrey]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+</type>
+

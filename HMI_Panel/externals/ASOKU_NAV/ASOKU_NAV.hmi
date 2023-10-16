@@ -1,0 +1,17 @@
+<unit uuid="691c8b66-e531-4280-8e4b-8a0a019f8ecf" name="ASOKU_NAV" display-name="ASOKU_NAV" description="" ver="5" main-form-id="bb8eb325-8e5b-4467-bc96-ee6a6c68f532">
+	<object file="JSON_MenuGenerator.omobj" filter=""/>
+	<object file="MenuButtonResult.omobj" filter=""/>
+	<object file="MenuButton.omobj" filter=""/>
+	<object file="MenuButton_v2.omobj" filter=""/>
+	<object file="MenuPanel_1.omobj" filter=""/>
+	<object file="MenuPanel_2.omobj" filter=""/>
+	<unit-link name="ASOKU_LIB" type="b0491687-7585-47f3-b51f-4e24fd62aef1" type-hint="" assembly-path="ASOKU_LIB" ver="5"/>
+	<unit-link name="ASOKU_MSG" type="b0491687-7585-47f3-b51f-4e24fd62aef1" type-hint="" assembly-path="ASOKU_MSG" ver="5"/>
+	<unit-link name="CommonLib" type="b0491687-7585-47f3-b51f-4e24fd62aef1" type-hint="" assembly-path="CommonLib" ver="5"/>
+	<unit-link name="ASOKU_TRD" type="b0491687-7585-47f3-b51f-4e24fd62aef1" type-hint="" assembly-path="ASOKU_TRD" ver="5"/>
+	<object file="MenuPanel_3.omobj" filter=""/>
+	<object file="MenuButton_v3(deprecated).omobj" filter=""/>
+	<object file="ButtonAgregation.omobj" filter=""/>
+	<unit-link name="ASOKU_SYS" type="b0491687-7585-47f3-b51f-4e24fd62aef1" type-hint="" assembly-path="ASOKU_SYS" ver="5"/>
+</unit>
+

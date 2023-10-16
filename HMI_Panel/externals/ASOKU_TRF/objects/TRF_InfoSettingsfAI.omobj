@@ -1,0 +1,1037 @@
+<type access-modifier="private" name="TRF_InfoSettingsfAI" display-name="TRF_InfoSettingsfAI" uuid="150bff1b-a23d-4833-85a7-60803a85793c" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="420" ver="5"/>
+	<designed target="Height" value="480" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xff646464" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="420" ver="5"/>
+	<designed target="WindowHeight" value="480" ver="5"/>
+	<designed target="WindowCaption" value="Настройки сигнала" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="1" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="0" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="681ef6cf-f07f-4c59-a30c-e2152d4e9d25" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="10" ver="5"/>
+		<designed target="Y" value="10" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="400" ver="5"/>
+		<designed target="Height" value="200" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffffffff" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="2a074bfd-31f9-4b53-b8a1-6b8904eeebad" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="10" ver="5"/>
+			<designed target="Y" value="-10" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="42" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="0" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="BrushColor" value="0xff646464" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_FrameName" display-name="Text_FrameName" uuid="d70419c8-e2f6-4c57-b013-44f47887d082" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="11" ver="5"/>
+			<designed target="Y" value="-10" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="40" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="Общее" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_1" display-name="TRF_Text_1" uuid="466e5faa-dbd0-43b1-8b83-8097b0e9660b" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="10" ver="5"/>
+			<designed target="Y" value="10" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="89" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="ИД сигнала:" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_4" display-name="TRF_Text_4" uuid="f4c07224-db03-4e3e-b70f-707c7041f7a7" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="10" ver="5"/>
+			<designed target="Y" value="100" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="150" ver="5"/>
+			<designed target="Height" value="30" ver="5"/>
+			<designed target="Text" value="Макс. величина для масштабирования" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LineEdit_SignalId" display-name="LineEdit_SignalId" uuid="a15ebede-c760-4b3f-a283-5713d297ccfa" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5" description="" cardinal="1">
+			<designed target="X" value="180" ver="5"/>
+			<designed target="Y" value="10" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="200" ver="5"/>
+			<designed target="Height" value="22" ver="5"/>
+			<designed target="Text" value="" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="5"/>
+			<designed target="FontColor" value="0xff000000" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+			<designed target="HideInput" value="false" ver="5"/>
+			<designed target="PlaceholderText" value="" ver="5"/>
+			<designed target="ReadOnly" value="false" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="EditFinished">
+				<body kind="om">
+					<![CDATA[this.FontColor =AsokuColor.asokuSky;
+parChanged = true;]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="LineEdit_in_rangeEnd" display-name="LineEdit_in_rangeEnd" uuid="4b73a6d7-3498-477d-ae03-9dc7d0eae97d" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5" description="" cardinal="1">
+			<designed target="X" value="180" ver="5"/>
+			<designed target="Y" value="100" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="200" ver="5"/>
+			<designed target="Height" value="22" ver="5"/>
+			<designed target="Text" value="" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+			<designed target="HideInput" value="false" ver="5"/>
+			<designed target="PlaceholderText" value="" ver="5"/>
+			<designed target="ReadOnly" value="false" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="EditFinished">
+				<body kind="om">
+					<![CDATA[this.FontColor =AsokuColor.asokuSky;
+parChanged = true;]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="Checkbox_in_staticOff" display-name="Checkbox_in_staticOff" uuid="a388feec-56ad-4f38-a0c8-1634ccf91ffe" base-type="CheckboxPropertiesDialogs_1" base-type-id="879df632-3eea-4531-a167-fec217981267" ver="5" description="" cardinal="1">
+			<designed target="X" value="10" ver="5"/>
+			<designed target="Y" value="140" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="161" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="Канал отключен" ver="5"/>
+			<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="Clicked">
+				<body kind="om">
+					<![CDATA[this.FontColor =AsokuColor.asokuSky;
+parChanged = true;]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="Checkbox_in_simON" display-name="Checkbox_in_simON" uuid="08539d92-291e-4c47-8bba-ebad4c52d7ad" base-type="CheckboxPropertiesDialogs_1" base-type-id="879df632-3eea-4531-a167-fec217981267" ver="5" description="" cardinal="1">
+			<designed target="X" value="10" ver="5"/>
+			<designed target="Y" value="170" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="175" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="Режим симуляции" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Clicked">
+				<body kind="om">
+					<![CDATA[this.FontColor =AsokuColor.asokuSky;
+parChanged = true;]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="LineEdit_in_valueDirect" display-name="LineEdit_in_valueDirect" uuid="c622f3ea-3d2b-4cbb-8c31-00f35a91447b" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5" description="" cardinal="1">
+			<designed target="X" value="180" ver="5"/>
+			<designed target="Y" value="40" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="200" ver="5"/>
+			<designed target="Height" value="22" ver="5"/>
+			<designed target="Text" value="" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+			<designed target="HideInput" value="false" ver="5"/>
+			<designed target="PlaceholderText" value="" ver="5"/>
+			<designed target="ReadOnly" value="false" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="EditFinished">
+				<body kind="om">
+					<![CDATA[this.FontColor =AsokuColor.asokuSky;
+parChanged = true;]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="TRF_Text_9" display-name="TRF_Text_9" uuid="a8f7dc53-c073-4fe9-8bfa-efff956a6f9f" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="10" ver="5"/>
+			<designed target="Y" value="40" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="120" ver="5"/>
+			<designed target="Height" value="30" ver="5"/>
+			<designed target="Text" value="Значение в режиме симуляции" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_10" display-name="TRF_Text_10" uuid="3d097e61-4e93-46f3-b0e2-6a587b05b279" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="10" ver="5"/>
+			<designed target="Y" value="70" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="210" ver="5"/>
+			<designed target="Height" value="30" ver="5"/>
+			<designed target="Text" value="Мин. величина для масштабирования" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LineEdit_in_rangeBeg" display-name="LineEdit_in_rangeBeg" uuid="15c7c46b-37f0-4f46-92ce-2897b5d28628" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5" description="" cardinal="1">
+			<designed target="X" value="180" ver="5"/>
+			<designed target="Y" value="70" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="200" ver="5"/>
+			<designed target="Height" value="22" ver="5"/>
+			<designed target="Text" value="" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+			<designed target="HideInput" value="false" ver="5"/>
+			<designed target="PlaceholderText" value="" ver="5"/>
+			<designed target="ReadOnly" value="false" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="EditFinished">
+				<body kind="om">
+					<![CDATA[this.FontColor =AsokuColor.asokuSky;
+parChanged = true;]]>
+				</body>
+			</do-on>
+		</object>
+	</object>
+	<object access-modifier="private" name="Rectangle_7" display-name="Rectangle_7" uuid="35ac3cba-cc7f-4ac1-a2ba-4e4d0192ad2b" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="10" ver="5"/>
+		<designed target="Y" value="220" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="400" ver="5"/>
+		<designed target="Height" value="160" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffffffff" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<object access-modifier="private" name="Image_NeedUpdate" display-name="Image_NeedUpdate" uuid="ee0a50bb-faaa-43d7-881b-478ce9f9e9f9" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+			<designed target="X" value="270" ver="5"/>
+			<designed target="Y" value="120" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="35" ver="5"/>
+			<designed target="Height" value="29" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="0" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="ImageFile" value="ASOKU/pictures/alert2.png" ver="5"/>
+			<designed target="Active" value="true" ver="5"/>
+			<designed target="CurrentFrameNumber" value="0" ver="5"/>
+			<designed target="Speed" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_4" display-name="Text_4" uuid="684af522-b205-47b4-b427-ab1c3f7c59e0" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="10" ver="5"/>
+			<designed target="Y" value="12" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="70" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="ID сигнала" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_5" display-name="Text_5" uuid="405b9b37-ef7a-47c2-9a27-bbe8a7e0ce7c" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="10" ver="5"/>
+			<designed target="Y" value="35" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="184" ver="5"/>
+			<designed target="Height" value="37" ver="5"/>
+			<designed target="Text" value="Время обновления из ПЛК" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextEdit_UpdateTime" display-name="TextEdit_UpdateTime" uuid="68f85045-c95c-4b43-8f26-7fa3b6368471" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5" description="" cardinal="1">
+			<designed target="X" value="180" ver="5"/>
+			<designed target="Y" value="35" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="200" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="" ver="5"/>
+			<designed target="Font" value="Tahoma,8,-1,5,75,0,0,0,0,0" ver="5"/>
+			<designed target="FontColor" value="0xff000000" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+			<designed target="HideInput" value="false" ver="5"/>
+			<designed target="PlaceholderText" value="" ver="5"/>
+			<designed target="ReadOnly" value="true" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextEdit_ID" display-name="TextEdit_ID" uuid="3271299d-0431-4fce-8b51-38f6cc13da19" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5" description="" cardinal="1">
+			<designed target="X" value="180" ver="5"/>
+			<designed target="Y" value="11" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="200" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="" ver="5"/>
+			<designed target="Font" value="Tahoma,8,-1,5,75,0,0,0,0,0" ver="5"/>
+			<designed target="FontColor" value="0xff000000" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+			<designed target="HideInput" value="false" ver="5"/>
+			<designed target="PlaceholderText" value="" ver="5"/>
+			<designed target="ReadOnly" value="true" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_6" display-name="Text_6" uuid="ae70c1cf-295e-41c0-b9a3-0004543177c4" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="10" ver="5"/>
+			<designed target="Y" value="60" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="181" ver="5"/>
+			<designed target="Height" value="21" ver="5"/>
+			<designed target="Text" value="Использованный трансфер" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextEdit_TransferPath" display-name="TextEdit_TransferPath" uuid="a4f04f13-3627-49d2-896d-45d9655ae9fa" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5" description="" cardinal="1">
+			<designed target="X" value="180" ver="5"/>
+			<designed target="Y" value="59" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="200" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="" ver="5"/>
+			<designed target="Font" value="Tahoma,8,-1,5,75,0,0,0,0,0" ver="5"/>
+			<designed target="FontColor" value="0xff000000" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+			<designed target="HideInput" value="false" ver="5"/>
+			<designed target="PlaceholderText" value="" ver="5"/>
+			<designed target="ReadOnly" value="true" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_7" display-name="Text_7" uuid="498c616e-abfc-4d3f-9d09-8bf90a1efa6f" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="10" ver="5"/>
+			<designed target="Y" value="90" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="181" ver="5"/>
+			<designed target="Height" value="21" ver="5"/>
+			<designed target="Text" value="Трансферы" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_2" display-name="TRF_Text_2" uuid="8a291caa-a4df-44ee-86b5-1177814dc5bd" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="23.666666666666742" ver="5"/>
+			<designed target="Y" value="107" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="14" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_3" display-name="TRF_Text_3" uuid="8b892b49-befb-4f87-8f1e-5c69a632118f" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="55.666666666666742" ver="5"/>
+			<designed target="Y" value="107" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="14" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="2" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_4" display-name="TRF_Text_4" uuid="63da9d2b-46f8-4d59-b50f-2bb1b92ad507" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="88.666666666666742" ver="5"/>
+			<designed target="Y" value="107" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="14" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="3" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_5" display-name="TRF_Text_5" uuid="1c97615f-fe32-4d53-9575-880f28ad9cc9" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="120.66666666666674" ver="5"/>
+			<designed target="Y" value="107" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="14" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="4" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="1f184e00-121c-4dbf-bbb8-571232c28db0" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="10" ver="5"/>
+			<designed target="Y" value="-8" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="93" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="0" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="BrushColor" value="0xff646464" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LQ_TRF1" display-name="LQ_TRF1" uuid="618e2618-1046-4dd0-946d-306af43ffe68" base-type="LedQuadrateSimple" base-type-id="458a7e08-8b32-4c0e-92e1-513d25127bb2" ver="5" description="" cardinal="1">
+			<designed target="X" value="10.666666666666742" ver="5"/>
+			<designed target="Y" value="119" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="32" ver="5"/>
+			<designed target="Height" value="32" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LQ_TRF2" display-name="LQ_TRF2" uuid="66d43e75-5122-473f-a074-6e3da1bcd72a" base-type="LedQuadrateSimple" base-type-id="458a7e08-8b32-4c0e-92e1-513d25127bb2" ver="5" description="" cardinal="1">
+			<designed target="X" value="43.666666666666742" ver="5"/>
+			<designed target="Y" value="119" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="32" ver="5"/>
+			<designed target="Height" value="32" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LQ_TRF3" display-name="LQ_TRF3" uuid="99f1baa6-78c5-43d8-867a-6e0c675f8c6e" base-type="LedQuadrateSimple" base-type-id="458a7e08-8b32-4c0e-92e1-513d25127bb2" ver="5" description="" cardinal="1">
+			<designed target="X" value="76.666666666666742" ver="5"/>
+			<designed target="Y" value="119" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="32" ver="5"/>
+			<designed target="Height" value="32" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LQ_TRF4" display-name="LQ_TRF4" uuid="52447d35-ac63-42e0-96ae-a2e053ec97c1" base-type="LedQuadrateSimple" base-type-id="458a7e08-8b32-4c0e-92e1-513d25127bb2" ver="5" description="" cardinal="1">
+			<designed target="X" value="109.66666666666674" ver="5"/>
+			<designed target="Y" value="119" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="32" ver="5"/>
+			<designed target="Height" value="32" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TRF_Text_7" display-name="TRF_Text_7" uuid="39a3105f-1019-4ae6-be5d-d5892bbbc184" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="10" ver="5"/>
+			<designed target="Y" value="-10" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="100" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="Трансфер-блок" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="ParDevPath" display-name="Путь параметра" uuid="e5710e94-2abc-4e31-93b2-9b141e4813af" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="TransferDevPath" display-name="Путь до папки трансферов" uuid="a207a75b-3f7d-434c-a13a-f728a72f541d" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="_TransferDevPath" display-name="_полный путь до трансферного узла" uuid="f01409ab-f142-446d-b323-50a029687d68" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description="" cardinal="1"/>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Opened">
+		<body kind="om">
+			<![CDATA[
+TRF_Base.parDevPath = here.ParDevPath.Value; //задание пути параметра
+
+//задание положения окна
+posWindowNum = 0; 
+while(posWindowNum<= AsokuMain.InfoTabViewPosNumber.Length && AsokuMain.InfoTabViewPosNumber[posWindowNum] == true )
+{
+  posWindowNum += 1;
+}
+if(posWindowNum == 1)
+{
+  this.WindowX = 400;
+  this.WindowY = 10;
+}
+if(posWindowNum == 2)
+{
+  this.WindowX = 800;
+  this.WindowY = 10;
+}
+if(posWindowNum == 3)
+{
+  this.WindowX = 1200;
+  this.WindowY = 10;
+}
+if(posWindowNum == 4)
+{
+  this.WindowX = 400;
+  this.WindowY = 500;
+}
+if(posWindowNum == 5)
+{
+  this.WindowX = 800;
+  this.WindowY = 500;
+}
+if(posWindowNum == 6)
+{
+  this.WindowX = 1200;
+  this.WindowY = 500;
+}
+
+Button_Acc.Enabled = false;
+Button_Refresh.Enabled = false;
+
+
+Timer_Init.Active = true;     //запуск таймера инициализации
+Button_Acc.Enabled = true;
+Button_Refresh.Enabled = true;
+
+]]>
+		</body>
+	</do-on>
+	<do access-modifier="private" name="Update" display-name="Update" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="om">
+			<![CDATA[
+  // Чтение данных Status.transferState -> transfer   
+  TRF_Base.readData(); //чтение данных
+
+ 
+  Timer_ReadElements.Active = true;
+  Timer_CheckActual.Active = true;
+  _TransferDevPath = "";
+  
+
+
+ 
+ 
+ 
+ ]]>
+		</body>
+	</do>
+	<object access-modifier="private" name="parChanged" display-name="parChanged" uuid="e7c45e73-3556-4360-913c-fd0247c9574e" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="TRF_Base" display-name="TRF_Base" uuid="ef87d216-0b22-4a6c-bfb7-17dfdf86ddff" base-type="TRF_fAiTransfer" base-type-id="6c4cb41e-9624-4e7b-a3b1-6c1f1932b6db" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="transferDevPath" ver="5">
+			<body>
+				<![CDATA[here.TransferDevPath + ".fAI"]]>
+			</body>
+		</do-trace>
+		<init target="LQ_TRF1" ver="5" ref="here.Rectangle_7.LQ_TRF1"/>
+		<init target="LQ_TRF2" ver="5" ref="here.Rectangle_7.LQ_TRF2"/>
+		<init target="LQ_TRF3" ver="5" ref="here.Rectangle_7.LQ_TRF3"/>
+		<init target="LQ_TRF4" ver="5" ref="here.Rectangle_7.LQ_TRF4"/>
+	</object>
+	<do access-modifier="private" name="ReadElements" display-name="ReadElements" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="om">
+			<![CDATA[//Функция заполнения значений из типа Трансфера
+
+// Общее              
+Rectangle_1.LineEdit_SignalId.Text = String.ToString(TRF_Base.in_ID);           // id настраиваемого сигнала
+Rectangle_1.LineEdit_in_valueDirect.Text = String.ToString(TRF_Base.in_valueDirect);
+Rectangle_1.LineEdit_in_rangeBeg.Text = String.ToString( TRF_Base.in_rangeBeg);      
+Rectangle_1.LineEdit_in_rangeEnd.Text = String.ToString( TRF_Base.in_rangeEnd); 
+
+
+Rectangle_1.Checkbox_in_staticOff.State = TRF_Base.in_staticOff;                            // канал отключен
+Rectangle_1.Checkbox_in_simON.State = TRF_Base.in_simON;                            
+        
+Rectangle_7.TextEdit_ID.Text = String.ToString(TRF_Base.in_ID);
+Rectangle_7.TextEdit_UpdateTime.Text = DateTime.ToString(TRF_Base.TransferStateTime);
+
+if(isNeedUpdateSettings() == true) Rectangle_7.Image_NeedUpdate.Visible = true;
+else Rectangle_7.Image_NeedUpdate.Visible = false;
+
+
+
+
+]]>
+		</body>
+	</do>
+	<object access-modifier="private" name="DebugTool_1" display-name="DebugTool_1" uuid="ffd3ae2b-9f1f-433b-b706-ad90959245d8" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Timer_Init" display-name="Timer_Init" uuid="8d680c79-0f4f-4be2-891e-8d28327428c7" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="5" description="" cardinal="1">
+		<designed target="Period" value="300" ver="5"/>
+		<designed target="Active" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnTimer">
+			<body kind="om">
+				<![CDATA[//таймер инициализации панели
+
+here.WindowCaption = "Настройка сигнала: " + TRF_Base.Ap_Par_Description;// задать имя панели
+
+if( isNeedUpdateSettings() == true) //сохраненные значения трансфера отличаются от сигнала
+{
+   Rectangle_7.Image_NeedUpdate.Visible = true;
+ 
+  /* if(TRF_Base.isTransferActive())  //не используется
+   {
+    	Open_UD_impossible.message = "Настройка данного параметра сейчас активна";
+    	Open_UD_impossible.header = "Невозможно открыть трансферный блок для сигнала";
+    	Open_UD_impossible.Invoke();
+    	return;
+   }*/
+   
+  _TransferDevPath = TRF_Base.getTransferDpByConnection(); // получение пути до трансфера
+  if (_TransferDevPath == "")
+  {
+     Open_UD_impossible.message = "В данный момент нет свободных трансферных блоков";
+     Open_UD_impossible.header = "Невозможно открыть трансферный блок для сигнала";
+     Open_UD_impossible.Invoke();
+     Timer_Init.Active = false;
+  }
+
+  TRF_Base.constructor(_TransferDevPath); 
+  Rectangle_7.TextEdit_TransferPath =  _TransferDevPath;
+  
+}
+else
+{
+  TRF_Base.constructor(""); 
+  Rectangle_7.Image_NeedUpdate.Visible = false; 
+}
+
+
+TRF_Base.readData(); //чтение данных
+Timer_ReadElements.Active = true; // запуск таймера чтения элементов
+_TransferDevPath = "";
+
+Button_Acc.Enabled = true;
+Button_Refresh.Enabled = true;
+
+Timer_Init.Active = false;
+]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Timer_ReadElements" display-name="Timer_ReadElements" uuid="8e622e17-61c8-45ea-bdf5-2a9eb10eaad2" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="5" description="" cardinal="1">
+		<designed target="Period" value="500" ver="5"/>
+		<designed target="Active" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnTimer">
+			<body kind="om">
+				<![CDATA[//таймер чтения элементов
+
+ReadElements(); //считать значения в поля формы
+TRF_Base.setTransferClear(); //очистить трансферную точку
+Timer_ReadElements.Active= false;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Timer_CheckActual" display-name="Timer_CheckActual" uuid="b900ec74-8838-4cf6-a77d-58cc035b887f" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="5" description="" cardinal="1">
+		<designed target="Period" value="300" ver="5"/>
+		<designed target="Active" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnTimer">
+			<body kind="om">
+				<![CDATA[
+if(isNeedUpdateSettings() == true) 
+{
+  Rectangle_7.Image_NeedUpdate.Visible = true;
+}
+else
+{
+  Rectangle_7.Image_NeedUpdate.Visible = false; 
+}
+
+Timer_CheckActual.Active = false;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Timer_Clean" display-name="Timer_Clean" uuid="d7e848fa-3fcc-409b-8433-cc225e6f30a5" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="5" description="" cardinal="1">
+		<designed target="Period" value="500" ver="5"/>
+		<designed target="Active" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnTimer">
+			<body kind="om">
+				<![CDATA[//DebugTool_1.Log("Timer_Clean");
+TRF_Base.setTransferClear();
+Timer_Clean.Active = false;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Open_UD_impossible" display-name="Open_UD_impossible" uuid="91bbc31c-91e6-4c8c-bbda-d66fff9cab45" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-dialog" form-by-id="false">
+			<object access-modifier="private" uuid="d454f761-786d-4d14-b6a3-ce6fb2013b89" base-type="UserDialog_1" base-type-id="f235d2a1-8a61-4d94-b05f-36b0bcfa4a99" ver="5">
+				<init target="Message" ver="5" ref="message"/>
+				<init target="Icon" ver="5" value="0"/>
+				<init target="Buttons" ver="5" value="0"/>
+				<init target="Header" ver="5" ref="header"/>
+			</object>
+		</do-on>
+		<object access-modifier="private" name="message" display-name="message" uuid="ec24cd8e-a8dd-4b57-976d-1bff58e95064" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="header" display-name="header" uuid="262ad3c0-0ca7-409d-8aa7-5e17923e4815" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description="" cardinal="1"/>
+	</object>
+	<do access-modifier="private" name="SetColorField" display-name="SetColorField" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="om">
+			<![CDATA[// Функция, которая устанавливает цвет фона у полей мнемосхемы в первоначальный цвет
+
+parChanged = false;
+
+// Общее              
+Rectangle_1.LineEdit_SignalId.FontColor = AsokuColor.asokuBlack; 
+Rectangle_1.LineEdit_in_valueDirect.FontColor = AsokuColor.asokuBlack; 
+Rectangle_1.LineEdit_in_rangeBeg.FontColor = AsokuColor.asokuBlack; 
+Rectangle_1.LineEdit_in_rangeEnd.FontColor = AsokuColor.asokuBlack; 
+
+Rectangle_1.Checkbox_in_staticOff.FontColor =AsokuColor.asokuWhite; 
+Rectangle_1.Checkbox_in_simON.FontColor =AsokuColor.asokuWhite;    
+
+
+
+
+
+]]>
+		</body>
+	</do>
+	<init target="parChanged" ver="5" value="false"/>
+	<object access-modifier="private" name="Open_UD_SaveTransferValue" display-name="Open_UD_SaveTransferValue" uuid="32e6119f-789b-4988-bb2e-b2fb577dc463" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-dialog" form-by-id="false">
+			<object access-modifier="private" uuid="f583165d-bc6c-4133-b7e7-cbc40880b7db" base-type="UserDialog_1" base-type-id="f235d2a1-8a61-4d94-b05f-36b0bcfa4a99" ver="5">
+				<init target="Message" ver="5" ref="message"/>
+				<init target="Header" ver="5" ref="header"/>
+				<init target="Icon" ver="5" value="1"/>
+				<init target="Buttons" ver="5" value="2"/>
+				<init target="YesAction" ver="5" ref="Yes_Action"/>
+				<init target="NoAction" ver="5" ref="No_Action"/>
+			</object>
+		</do-on>
+		<object access-modifier="private" name="message" display-name="message" uuid="d6877cce-0e56-4983-9995-298a8d776a93" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="header" display-name="header" uuid="8c4ffc77-efca-47a7-b7c1-4e6ae92765fe" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="Yes_Action" display-name="Yes_Action" uuid="0579a134-4bb6-4a36-a331-5de6a11a98e9" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="InvokeTrigger" value="false" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked">
+				<body kind="om">
+					<![CDATA[
+  
+if (parChanged)// есть изменение параметров
+{
+	/*if(TRF_Base.isTransferActive())
+	{
+    Open_UD_impossible.message = "Настройка данного параметра сейчас активна";
+    Open_UD_impossible.header = "Невозможно открыть трансферный блок для сигнала";
+    Open_UD_impossible.Invoke();
+    return;
+	}*/
+
+  _TransferDevPath = TRF_Base.getTransferDpByConnection();   
+  //DebugTool_1.Log("_TransferDevPath " + _TransferDevPath);
+  if (_TransferDevPath == "")
+  {
+    Open_UD_impossible.message = "В данный момент нет свободных трансферных блоков";
+    Open_UD_impossible.header = "Невозможно открыть трансферный блок для сигнала";
+    Open_UD_impossible.Invoke();
+    return;
+  }
+    
+  TRF_Base.constructor(_TransferDevPath); 
+  Rectangle_7.TextEdit_TransferPath =  _TransferDevPath;   
+   
+   
+   Button_Acc.Enabled = false;
+   Button_Refresh.Enabled = false;
+  
+     
+   WriteElements();                            // запись значений из полей мнемосхемы -> ТД трансфер-блока
+   SetColorField();                            // установка цвета фона у полей мнемосхемы в первоначальный цвет
+   TRF_Base.takeMessage();                     // выдача сообщения об изменениях пользователя
+   TRF_Base.writeData();                       // отправка значений из ТД трансфер-блока в контроллер
+      
+  
+   Button_Acc.Enabled = true;
+   Button_Refresh.Enabled = true;
+       
+}
+Button_Acc.Enabled = true;
+Button_Refresh.Enabled = true;
+_TransferDevPath  == "";
+Timer_Clean.Active = true;
+
+]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="No_Action" display-name="No_Action" uuid="b9b72f30-e69a-44bf-90c8-bce4511a031a" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="InvokeTrigger" value="false" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked">
+				<body kind="om">
+					<![CDATA[//TRF_Base.setTransferClear();
+_TransferDevPath  == "";
+]]>
+				</body>
+			</do-on>
+		</object>
+	</object>
+	<do access-modifier="private" name="WriteElements" display-name="WriteElements" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="om">
+			<![CDATA[/*
+  Функция, которая записывает значения из полей мнемохсемы -> ТД трансфер-блока
+*/
+
+TRF_Base.in_ID = String.ToFloat(Rectangle_1.LineEdit_SignalId.Text,0);
+TRF_Base.in_valueDirect = String.ToFloat(Rectangle_1.LineEdit_in_valueDirect.Text, 0);
+TRF_Base.in_rangeBeg = String.ToFloat(Rectangle_1.LineEdit_in_rangeBeg.Text, 0);
+TRF_Base.in_rangeEnd = String.ToFloat(Rectangle_1.LineEdit_in_rangeEnd.Text, 0);
+
+TRF_Base.in_staticOff =  Rectangle_1.Checkbox_in_staticOff.State ;              // канал отключен
+TRF_Base.in_simON =  Rectangle_1.Checkbox_in_simON.State ;             
+
+
+
+
+
+
+]]>
+		</body>
+	</do>
+	<object access-modifier="private" name="Close_Window" display-name="Close_Window" uuid="0ed16b0c-41d6-471d-af23-5c9bb519af11" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="close"/>
+	</object>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="Closed">
+		<body kind="om">
+			<![CDATA[TRF_Base.setTransferClear(); //освобождение трансфера]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="posWindowNum" display-name="Номер позиции панели" uuid="3742de5f-9dcf-470f-a95a-1c980dffce3a" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="5" description="" cardinal="1"/>
+	<do access-modifier="private" name="isNeedUpdateSettings" display-name="isNeedUpdateSettings" ver="5" type="bool" type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8">
+		<body kind="javascript">
+			<![CDATA[// Функция проверки актуальности данных сигнала
+
+let isNeedUpdate = false;
+
+var tooltip; //всплывающая подсказка
+
+
+if(TRF_Base.Ap_Par_ID.Value != "")
+{
+  if( (TRF_Base.Ap_Par_transferState.Advised == true) && (TRF_Base.Ap_Par_transferState.Value != ""))
+  {
+    var transferStates  = JSON.parse(TRF_Base.Ap_Par_transferState.Value); 
+    var transferState  = transferStates[0];   
+    
+    tooltip = "Несоответствия в следующих полях: ";
+     
+    if(TRF_Base.Ap_Par_ID.Value != transferState.ID)
+    {
+   	 	tooltip  += "\n *ID" ;
+    	 	isNeedUpdate = true;  
+    }
+    if(TRF_Base.Ap_Par_MinValue.Value != transferState.in_rangeBeg)
+    {
+    		tooltip  += "\n *минимальное значение";
+    	   isNeedUpdate = true;
+    }
+    if(TRF_Base.Ap_Par_MaxValue.Value != transferState.in_rangeEnd)
+    {
+    		tooltip  += "\n *максимальное значение" ;
+    	   isNeedUpdate = true;
+    }
+    if(TRF_Base.isUpdateTime(transferState.TransferStateTime)) 
+    {
+   		tooltip  += "\n *превышено время актуальности"         
+     		isNeedUpdate = true;  
+    }
+    
+    if (isNeedUpdate == false ) tooltip = "";
+    
+    Rectangle_7.Image_NeedUpdate.Tooltip = tooltip;     
+    return isNeedUpdate;
+  }
+  else if (TRF_Base.Ap_Par_transferState.Value == "") 
+  { 
+      tooltip  = "Нет сохраненных значений трансфер-блока";
+      Rectangle_7.Image_NeedUpdate.Tooltip = tooltip;     
+  	 	return true; //трансфер ранее не считывался
+  }
+}
+
+else return false;]]>
+		</body>
+	</do>
+	<object access-modifier="private" name="Button_Refresh" display-name="Button_Refresh" uuid="29006350-8a65-47ba-a356-bf9713f832f7" base-type="TRF_Button" base-type-id="099cd930-f0b4-40e6-80ab-df2788e3eecf" ver="5" description="" cardinal="1">
+		<designed target="X" value="135" ver="5"/>
+		<designed target="Y" value="390" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="135" ver="5"/>
+		<designed target="Height" value="36" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+			<body kind="om">
+				<![CDATA[
+/*if(TRF_Base.isTransferActive()) не используется 
+{
+  Open_UD_impossible.message = "Настройка данного параметра сейчас активна";
+  Open_UD_impossible.header = "Невозможно открыть трансферный блок для сигнала";
+  Open_UD_impossible.Invoke();
+  return;
+}*/
+
+
+_TransferDevPath = TRF_Base.getTransferDpByConnection(); // получение пути до трансфера
+if (_TransferDevPath == "")
+{
+  Open_UD_impossible.message = "В данный момент нет свободных трансферных блоков";
+  Open_UD_impossible.header = "Невозможно открыть трансферный блок для сигнала";
+  Open_UD_impossible.Invoke();
+  return;
+}
+
+TRF_Base.constructor(_TransferDevPath);
+Rectangle_7.TextEdit_TransferPath =  _TransferDevPath;
+Button_Acc.Enabled = false;
+Button_Refresh.Enabled = false;
+
+SetColorField();                    // установка цвета фона у полей мнемосхемы в первоначальный цвет
+Update();                           // обновление данных мнемосхемы с обновлением данных из контроллера
+
+Button_Acc.Enabled = true;
+Button_Refresh.Enabled = true;
+
+
+
+
+
+
+
+
+
+
+
+
+]]>
+			</body>
+		</do-on>
+		<designed target="Text" value="Считать из ПЛК" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Button_Acc" display-name="Button_Acc" uuid="16e5bd0d-c40b-4da9-84c7-4f179af2e42d" base-type="TRF_Button" base-type-id="099cd930-f0b4-40e6-80ab-df2788e3eecf" ver="5" description="" cardinal="1">
+		<designed target="X" value="275" ver="5"/>
+		<designed target="Y" value="430" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="135" ver="5"/>
+		<designed target="Height" value="36" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+			<body kind="om">
+				<![CDATA[if( AsokuUserRights.ChangeTransferValue.Value) //проверка полномочий 
+{  
+  Open_UD_SaveTransferValue.message = "Применить изменения?";
+  Open_UD_SaveTransferValue.header = "Окно подтверждения сохранения настроек";
+  Open_UD_SaveTransferValue.Invoke();
+  
+}
+else
+{
+  Open_UD_impossible.message = "Для выполнения указанного действия Вам не хватает полномочий.\n Для получения дополнительных сведений обратитесь к Администратору";
+  Open_UD_impossible.header = "Недостаточно полномочий";
+  Open_UD_impossible.Invoke();
+
+}
+  
+]]>
+			</body>
+		</do-on>
+		<designed target="Text" value="Отправить в ПЛК" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Button_RefreshSignal" display-name="Button_RefreshSignal" uuid="ca420dce-1b9f-40cf-a79b-38205ca9e73e" base-type="TRF_Button" base-type-id="099cd930-f0b4-40e6-80ab-df2788e3eecf" ver="5" description="" cardinal="1">
+		<designed target="X" value="275" ver="5"/>
+		<designed target="Y" value="390" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="135" ver="5"/>
+		<designed target="Height" value="36" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+			<body kind="om">
+				<![CDATA[//Записать значения из трансфер-блока в теги сигнала
+TRF_Base.writeDataSignal();
+
+Timer_CheckActual.Active = true;
+/*if(isNeedUpdateSettings() == true) Rectangle_7.Image_NeedUpdate.Visible = true;
+  else Rectangle_7.Image_NeedUpdate.Visible = false;
+*/
+
+
+
+
+
+]]>
+			</body>
+		</do-on>
+		<designed target="Text" value="Обновить 
+уставки сигнала" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Button_ReadSignal" display-name="Button_ReadSignal" uuid="6dbfeb58-2275-4c62-920f-1e08ea3e1133" base-type="TRF_Button" base-type-id="099cd930-f0b4-40e6-80ab-df2788e3eecf" ver="5" description="" cardinal="1">
+		<designed target="X" value="135" ver="5"/>
+		<designed target="Y" value="430" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="135" ver="5"/>
+		<designed target="Height" value="36" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+			<body kind="om">
+				<![CDATA[TRF_Base.loadDataSignal(); //считать значения сигнала в трансфер
+ReadElementsSignal(); //считать значения сигнала в поля формы
+Timer_CheckActual.Active = true;
+//Rectangle_7.Image_NeedUpdate.Visible = false;
+  
+  
+]]>
+			</body>
+		</do-on>
+		<designed target="Text" value="Считать 
+уставки сигнала" ver="5"/>
+	</object>
+	<do access-modifier="private" name="ReadElementsSignal" display-name="ReadElementsSignal" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="om">
+			<![CDATA[//Функция чтения данных из сигнала
+            
+             
+// Уставки
+
+
+Rectangle_1.LineEdit_in_rangeBeg.Text = String.ToString(TRF_Base.in_rangeBeg);
+Rectangle_1.LineEdit_in_rangeEnd.Text = String.ToString(TRF_Base.in_rangeEnd);
+
+
+]]>
+		</body>
+	</do>
+</type>
+

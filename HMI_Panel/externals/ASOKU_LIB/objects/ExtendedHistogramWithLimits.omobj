@@ -1,0 +1,246 @@
+<type access-modifier="public" name="ExtendedHistogramWithLimits" display-name="Расширенная гистограмма с ограничителями (несколько сигналов через разделитель)" uuid="110f74d2-3830-4e6d-92b8-1f20e868bb6e" base-type="HistogramWithLimits" base-type-id="19a3baea-6fdc-47a4-ad0a-b5fb59dd8cd1" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Width" value="375" ver="5"/>
+	<designed target="Height" value="35" ver="5"/>
+	<object access-modifier="private" name="LowLimit" display-name="LowLimit" uuid="95eee56d-439b-43ab-a86e-e189838cc77d" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="-2" ver="5"/>
+		<designed target="Y" value="56" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="50" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="3" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="LowLimitText" display-name="LowLimitText" uuid="7fc2ed71-b769-4f2d-adff-e57f2de35276" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="28" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="50" ver="5"/>
+			<designed target="Height" value="19.333333333333336" ver="5"/>
+			<designed target="Text" value="Нижний" ver="5"/>
+			<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<do-trace access-modifier="private" target="FontColor" ver="5">
+				<body>
+					<![CDATA[AsokuColor.asokuWhite]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="LowLimitAnalogValue" display-name="LowLimitAnalogValue" uuid="2714c031-f498-4eee-8310-2909ed8f0141" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+			<designed target="X" value="1.6666666666666661" ver="5"/>
+			<designed target="Y" value="20" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="75" ver="5"/>
+			<designed target="Height" value="27" ver="5"/>
+			<do-trace access-modifier="private" target="InDevPath" ver="5">
+				<body>
+					<![CDATA[LowLimitSCPath]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="OutDevPath" ver="5">
+				<body>
+					<![CDATA[LowLimitSPPath]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="ParDevPath" ver="5">
+				<body>
+					<![CDATA[LowLimitValuePath]]>
+				</body>
+			</do-trace>
+		</object>
+	</object>
+	<object access-modifier="private" name="OperatorLimit" display-name="OperatorLimit" uuid="fdcde082-7cea-4e34-813e-c90b614d3c15" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="128" ver="5"/>
+		<designed target="Y" value="56" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="50" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="3" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="OperatorLimitText" display-name="OperatorLimitText" uuid="655b88d6-ecfd-468a-a517-fb8aa8a47a67" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="13" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="62.666666666666657" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="Оператор" ver="5"/>
+			<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<do-trace access-modifier="private" target="FontColor" ver="5">
+				<body>
+					<![CDATA[AsokuColor.asokuWhite]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="OperatorLimitAnalogValue" display-name="OperatorLimitAnalogValue" uuid="ac8b3359-87e9-4168-8c29-72cd4e6ceaff" base-type="AODpValue" base-type-id="41ab7777-ecfb-4ad9-8dce-6258006c472b" ver="5" description="" cardinal="1">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="20" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="75" ver="5"/>
+			<designed target="Height" value="27" ver="5"/>
+			<do-trace access-modifier="private" target="OutDevPath" ver="5">
+				<body>
+					<![CDATA[OperatorLimitSPPath]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="InDevPath" ver="5">
+				<body>
+					<![CDATA[OperatorLimitSCPath]]>
+				</body>
+			</do-trace>
+		</object>
+	</object>
+	<object access-modifier="private" name="HighLimit" display-name="HighLimit" uuid="c359213e-26ce-4386-baea-2692382f7bdd" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="258" ver="5"/>
+		<designed target="Y" value="56" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="50" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="3" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="HighLimitText" display-name="HighLimitText" uuid="ba9decfc-fb80-488b-82e5-b1832da5d831" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="18" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="58" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="Верхний" ver="5"/>
+			<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<do-trace access-modifier="private" target="FontColor" ver="5">
+				<body>
+					<![CDATA[AsokuColor.asokuWhite]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="HighLimitAnalogValue" display-name="HighLimitAnalogValue" uuid="4b57f667-3d50-4f69-bb8d-c53dd7012c06" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="20" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="75" ver="5"/>
+			<designed target="Height" value="27" ver="5"/>
+			<do-trace access-modifier="private" target="InDevPath" ver="5">
+				<body>
+					<![CDATA[HighLimitSCPath]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="OutDevPath" ver="5">
+				<body>
+					<![CDATA[HighLimitSPPath]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="ParDevPath" ver="5">
+				<body>
+					<![CDATA[HighLimitValuePath]]>
+				</body>
+			</do-trace>
+		</object>
+	</object>
+	<object access-modifier="private" name="MinValueText" display-name="MinValueText" uuid="2c4404c2-7ed4-4b35-9bcf-c3f6dfde02f7" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="-22" ver="5"/>
+		<designed target="Y" value="44" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="50" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<designed target="Text" value="min" ver="5"/>
+		<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<body>
+				<![CDATA[ApParMinValue.Value]]>
+			</body>
+		</do-trace>
+		<init target="FontColor" ver="5" ref="AsokuColor.asokuWhite"/>
+	</object>
+	<object access-modifier="private" name="MaxValueText" display-name="MaxValueText" uuid="e6e2c36f-29a9-4450-8165-0bcee89edc08" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="345" ver="5"/>
+		<designed target="Y" value="44" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="50" ver="5"/>
+		<designed target="Height" value="18" ver="5"/>
+		<designed target="Text" value="max" ver="5"/>
+		<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xff000000" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<body>
+				<![CDATA[ApParMaxValue.Value]]>
+			</body>
+		</do-trace>
+		<init target="FontColor" ver="5" ref="AsokuColor.asokuWhite"/>
+	</object>
+</type>
+

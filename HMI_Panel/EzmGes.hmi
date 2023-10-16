@@ -1,0 +1,90 @@
+<unit uuid="f4d0d577-78c7-463e-b5fe-9f591703ced2" name="EzmGes" display-name="EzmGes" description="" ver="5" main-form-id="ab5edf83-12fc-4cd0-b738-327fb46262d8">
+	<object file="AnalogSignals.omobj" filter="Мнемосхемы/Диагностика"/>
+	<object file="Autosync.omobj" filter="Мнемосхемы/Электросхема"/>
+	<object file="ConditionsSTOP.omobj" filter="Мнемосхемы/Главная"/>
+	<object file="Diagnostik.omobj" filter="Мнемосхемы/Диагностика"/>
+	<object file="DiscreteSignals.omobj" filter="Мнемосхемы/Диагностика"/>
+	<object file="ExcitationSystem.omobj" filter="Мнемосхемы/Электросхема"/>
+	<object file="FingerCut.omobj" filter="Мнемосхемы/Главная"/>
+	<object file="DiskZatvor.omobj" filter="Мнемосхемы/РЧВ"/>
+	<object file="MessagesSignal.omobj" filter="Мнемосхемы/Диагностика"/>
+	<object file="Ostanov.omobj" filter="Мнемосхемы/Главная"/>
+	<object file="PdpControl.omobj" filter="Мнемосхемы/Термоконтроль"/>
+	<object file="PdshUpper.omobj" filter="Мнемосхемы/Термоконтроль"/>
+	<object file="PdshLower.omobj" filter="Мнемосхемы/Термоконтроль"/>
+	<object file="Protection.omobj" filter="Мнемосхемы/Защиты"/>
+	<object file="RCHV.omobj" filter="Мнемосхемы/РЧВ"/>
+	<object file="RCHVSPR.omobj" filter="Мнемосхемы/РЧВ"/>
+	<object file="RegulWarning.omobj" filter="Мнемосхемы/Диагностика"/>
+	<object file="TehnicalParameters.omobj" filter="Мнемосхемы/Диагностика"/>
+	<object file="SKPicture.omobj" filter="Мнемосхемы/ТВС"/>
+	<object file="SPR.omobj" filter="Мнемосхемы/Диагностика"/>
+	<object file="SPX.omobj" filter="Мнемосхемы/Диагностика"/>
+	<object file="AirControl.omobj" filter="Мнемосхемы/Термоконтроль"/>
+	<object file="ShkAll.omobj" filter="Мнемосхемы/Диагностика"/>
+	<object file="Start.omobj" filter="Мнемосхемы/Главная"/>
+	<object file="Stator.omobj" filter="Мнемосхемы/Термоконтроль"/>
+	<object file="TVS.omobj" filter="Мнемосхемы/ТВС"/>
+	<object file="TVSPicture.omobj" filter="Мнемосхемы/ТВС"/>
+	<object file="TermoControl.omobj" filter="Мнемосхемы/Термоконтроль"/>
+	<object file="UsloviePerehoda.omobj" filter="Мнемосхемы/Главная"/>
+	<object file="Vibrocontrol.omobj" filter="Мнемосхемы/Виброконтроль"/>
+	<object file="WiringDiagram.omobj" filter="Мнемосхемы/Электросхема"/>
+	<object file="MainPanel.omobj" filter=""/>
+	<object file="Global.omobj" filter=""/>
+	<object file="MainEzmGES.omobj" filter="Мнемосхемы/Главная"/>
+	<object file="OU8KPD.omobj" filter="Мнемосхемы/Главная"/>
+	<object file="OU8WF.omobj" filter="Мнемосхемы/Главная"/>
+	<object file="MainScheme(1920x930).omobj" filter="Мнемосхемы/Однолинейки"/>
+	<object file="110kV (OPU).omobj" filter="Мнемосхемы/Однолинейки"/>
+	<object file="110kV_2(OPU).omobj" filter="Мнемосхемы/Однолинейки"/>
+	<object file="35kV (ZRU).omobj" filter="Мнемосхемы/Однолинейки"/>
+	<object file="10kV (GRU).omobj" filter="Мнемосхемы/Однолинейки"/>
+	<object file="10kV (KRU).omobj" filter="Мнемосхемы/Однолинейки"/>
+	<object file="0.4kVMainScheme.omobj" filter="Мнемосхемы/Однолинейки"/>
+	<object file="WiringDiagramObject.omobj" filter=""/>
+	<object file="PdshTurb.omobj" filter="Мнемосхемы/Термоконтроль"/>
+	<object file="ElectroProtections.omobj" filter="Мнемосхемы/Электросхема"/>
+	<object file="Выработка ЭЭ.omobj" filter="Мнемосхемы/ВУ"/>
+	<object file="Нагрузка ГЭС.omobj" filter="Мнемосхемы/ВУ"/>
+	<object file="ВспомОбор. АУТП.omobj" filter="Мнемосхемы/ВУ"/>
+	<object file="SAU GA Obzor.omobj" filter="Мнемосхемы/ВУ"/>
+	<object file="AV.omobj" filter="Мнемосхемы/Электросхема"/>
+	<object file="(One Scheme).omobj" filter="Мнемосхемы/ТВС"/>
+	<object file="GAModeSettings.omobj" filter="Мнемосхемы/Электросхема"/>
+	<object file="GAModeSet.omobj" filter="Мнемосхемы/Электросхема"/>
+	<object file="NarabotkiForm.omobj" filter="Мнемосхемы/Главная"/>
+	<object file="Stator_img.omobj" filter=""/>
+	<unit-link name="ASOKU_LIB" type="b0491687-7585-47f3-b51f-4e24fd62aef1" type-hint="" assembly-path="ASOKU_LIB" ver="5"/>
+	<unit-link name="ASOKU_LAB" type="b0491687-7585-47f3-b51f-4e24fd62aef1" type-hint="" assembly-path="ASOKU_LAB" ver="5"/>
+	<unit-link name="ASOKU_NAV" type="b0491687-7585-47f3-b51f-4e24fd62aef1" type-hint="" assembly-path="ASOKU_NAV" ver="5"/>
+	<unit-link name="ASOKU_MSG" type="b0491687-7585-47f3-b51f-4e24fd62aef1" type-hint="" assembly-path="ASOKU_MSG" ver="5"/>
+	<unit-link name="ASOKU_SYS" type="b0491687-7585-47f3-b51f-4e24fd62aef1" type-hint="" assembly-path="ASOKU_SYS" ver="5"/>
+	<unit-link name="CommonLib" type="b0491687-7585-47f3-b51f-4e24fd62aef1" type-hint="" assembly-path="CommonLib" ver="5"/>
+	<unit-link name="ASOKU_TRD" type="b0491687-7585-47f3-b51f-4e24fd62aef1" type-hint="" assembly-path="ASOKU_TRD" ver="5"/>
+	<unit-link name="ASOKU_TRF" type="b0491687-7585-47f3-b51f-4e24fd62aef1" type-hint="" assembly-path="ASOKU_TRF" ver="5"/>
+	<object file="ENIP_1.omobj" filter="Мнемосхемы/Электросхема"/>
+	<object file="ЕСМ.omobj" filter="Мнемосхемы/ВУ"/>
+	<object file="Энип Общий.omobj" filter="Мнемосхемы/ВУ"/>
+	<object file="110kVMainScheme_2.omobj" filter="Мнемосхемы/Однолинейки"/>
+	<object file="110kVMainScheme_1_1.omobj" filter="Мнемосхемы/Однолинейки"/>
+	<object file="Form_1.omobj" filter=""/>
+	<object file="ГТИ.omobj" filter="Мнемосхемы/ВУ"/>
+	<object file="SOPT (SHROT-1).omobj" filter="Мнемосхемы/ВУ/СН"/>
+	<object file="SHGP_in_building_OPU.omobj" filter="Мнемосхемы/ВУ/СН"/>
+	<object file="SHGP_in_building_HPS.omobj" filter="Мнемосхемы/ВУ/СН"/>
+	<object file="GRSCH_OPU(2.1-2.2_section).omobj" filter="Мнемосхемы/ВУ/СН"/>
+	<object file="GRSCH_OPU(2-3_section).omobj" filter="Мнемосхемы/ВУ/СН"/>
+	<object file="SOPT_in_building_HPS.omobj" filter="Мнемосхемы/ВУ/СН"/>
+	<object file="SOPT (SHROT-5).omobj" filter="Мнемосхемы/ВУ/СН"/>
+	<object file="SOPT (SHROT-2).omobj" filter="Мнемосхемы/ВУ/СН"/>
+	<object file="SOPT (SHROT-6).omobj" filter="Мнемосхемы/ВУ/СН"/>
+	<object file="SOPT (SHROT-3).omobj" filter="Мнемосхемы/ВУ/СН"/>
+	<object file="GRSCH_OPU(1_section).omobj" filter="Мнемосхемы/ВУ/СН"/>
+	<object file="0.4kVBuildingHPSScheme.omobj" filter="Мнемосхемы/ВУ/СН"/>
+	<object file="Diagnostic_Hardware.omobj" filter="Мнемосхемы/Диагностика"/>
+	<object file="Diagnostic_Logic.omobj" filter="Мнемосхемы/Диагностика"/>
+	<object file="InfoPanel.omobj" filter=""/>
+	<object file="ECRA_Dinamic.omobj" filter=""/>
+</unit>
+

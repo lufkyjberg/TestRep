@@ -1,0 +1,112 @@
+<type access-modifier="private" name="TextParse" display-name="Текст" uuid="1af5504e-970a-4c5a-a636-e4495454be8c" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="20" ver="5"/>
+	<designed target="Height" value="20" ver="5"/>
+	<designed target="Text" value="P" ver="5"/>
+	<designed target="Font" value="Tahoma,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	<designed target="FontColor" value="0xffe1a900" ver="5"/>
+	<designed target="TextAlignment" value="66" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<do-trace access-modifier="private" target="Text" ver="5">
+		<body>
+			<![CDATA[String.Remove(ApParDescription.Value, String.IndexOf(ApParDescription.Value,notifyingSimbolToSeparate), 999)]]>
+		</body>
+	</do-trace>
+	<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="dbf91890-d663-4edf-940a-a479d9c98686" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="19" ver="5"/>
+		<designed target="Y" value="7" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="90.444444444444485" ver="5"/>
+		<designed target="Height" value="16.888888888888893" ver="5"/>
+		<designed target="Text" value="активная" ver="5"/>
+		<designed target="Font" value="Tahoma,8,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xffe1a900" ver="5"/>
+		<designed target="TextAlignment" value="33" ver="5"/>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<body>
+				<![CDATA[String.Replace(ApParDescription.Value, String.Remove(ApParDescription.Value, String.IndexOf(ApParDescription.Value,notifyingSimbolToSeparate), 999), "")]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="X" ver="5">
+			<body>
+				<![CDATA[19+ 12*(String.Length(String.Remove(ApParDescription.Value, String.IndexOf(ApParDescription.Value,notifyingSimbolToSeparate), 999)))]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ApSourcePar" display-name="ApSourcePar" uuid="37c2c652-b9d3-4cde-8904-7659acfba8cd" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+		<designed target="Location" value="" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="Path" value="" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath]]>
+			</body>
+		</do-trace>
+		<init target="ParentSource" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ParDevPath" display-name="Путь параметра" uuid="1edebdd6-759f-44b5-ac6e-352a51318366" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ApParDescription" display-name="Описание" uuid="e9a1155a-6d2e-4274-b3f8-d1e54c2afc0d" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="ApSourcePar"/>
+		<init target="Path" ver="5" value="Name"/>
+	</object>
+	<object access-modifier="private" name="notifyingSimbolToSeparate" display-name="Разделительный символ(по стандарту пробел)" uuid="a3d357e1-cacb-411b-a59a-0b423e92d065" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="notifyingLenghtOfString" display-name="Ограничение длины строки" uuid="f73a8066-aa8b-4533-a0f9-a86fe3983a8c" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<do-trace access-modifier="private" target="Width" ver="5">
+		<body>
+			<![CDATA[20+ 12*(String.Length(String.Remove(ApParDescription.Value, String.IndexOf(ApParDescription.Value,notifyingSimbolToSeparate), 999)))]]>
+		</body>
+	</do-trace>
+	<object access-modifier="private" name="ApParUnits" display-name="Единицы измерения" uuid="45ca2d1a-3ec5-4fcf-a503-4b4a9ce53a4c" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="ApSourcePar"/>
+		<init target="Path" ver="5" value="Units"/>
+	</object>
+	<object access-modifier="private" name="Text_2" display-name="Text_2" uuid="71262465-7e38-46cc-ac48-61480498b120" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="87.936507936507923" ver="5"/>
+		<designed target="Y" value="6.6666666666666696" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="55.333333333333357" ver="5"/>
+		<designed target="Height" value="23.111111111111111" ver="5"/>
+		<designed target="Text" value=", км" ver="5"/>
+		<designed target="Font" value="Tahoma,8,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xffe1a900" ver="5"/>
+		<designed target="TextAlignment" value="33" ver="5"/>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<body>
+				<![CDATA[", " + ApParUnits]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="X" ver="5">
+			<body>
+				<![CDATA[(String.Length(String.Remove(ApParDescription.Value, String.IndexOf(ApParDescription.Value,notifyingSimbolToSeparate), 999)))*20 + (String.Length(String.Replace(ApParDescription.Value, String.Remove(ApParDescription.Value, String.IndexOf(ApParDescription.Value,notifyingSimbolToSeparate), 999), "")))* 8]]>
+			</body>
+		</do-trace>
+	</object>
+</type>
+

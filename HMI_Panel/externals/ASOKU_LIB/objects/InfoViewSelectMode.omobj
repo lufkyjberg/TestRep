@@ -1,0 +1,904 @@
+<type access-modifier="private" name="InfoViewSelectMode" display-name="InfoViewSelectMode" uuid="12a406b5-0609-4746-8cd4-0d2519fee496" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="500" ver="5"/>
+	<designed target="Height" value="360" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xff505050" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="500" ver="5"/>
+	<designed target="WindowHeight" value="360" ver="5"/>
+	<designed target="WindowCaption" value="AnalogDpValue" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="false" ver="5"/>
+	<designed target="ShowWindowMaximize" value="false" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="true" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="2" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="1" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<object access-modifier="private" name="ParDevPath" display-name="Путь параметра" uuid="2526e70b-7e99-44f6-8ca5-1cee3a6e79f9" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Ap_Source_Par" display-name="Источник параметра" uuid="6f96270d-acb4-4bf8-b8eb-9c0caef8390c" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+		<designed target="Location" value="" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="Path" value="" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath.Value]]>
+			</body>
+		</do-trace>
+		<init target="ParentSource" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_Value" display-name="Значение параметра" uuid="e5ff64a2-f7aa-4a9b-af72-02877a339ff9" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Value"/>
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_Name" display-name="Имя параметра " uuid="4d4cc407-319a-46a2-8252-32a4b45eecd0" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+		<init target="Path" ver="5" value="Name"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_Description" display-name="Описание параметра" uuid="f91ae43d-c5c6-4333-80b2-5274d98fb554" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+		<init target="Path" ver="5" value="Description"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_Comment" display-name="Комментарий параметра" uuid="1d6bd4c0-95e0-4c00-9ccf-5cf034ef77d6" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+		<init target="Path" ver="5" value="Comment"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_MinValue" display-name="Минимальное значение параметра" uuid="7133c374-e6a6-4e18-b83f-b3165c10f4f3" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+		<init target="Path" ver="5" value="MinValue"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_MaxValue" display-name="Максимальное значение параметра" uuid="af37d4dd-0ce0-47c2-b903-37652c117719" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+		<init target="Path" ver="5" value="MaxValue"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_DisplayFormat" display-name="Формат значения параметра" uuid="5238eb0b-762d-46c8-b74f-0ae53072f191" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+		<init target="Path" ver="5" value="DisplayFormat"/>
+	</object>
+	<object access-modifier="private" name="restoreMin" display-name="restoreMin" uuid="b81929bd-87dd-4860-a69a-336868050dd6" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="restoreMax" display-name="restoreMax" uuid="908847b1-454f-4b19-81bf-c3bc5fa3bafd" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Open_TrendView" display-name="команда открытия TrendView" uuid="14bd5a4f-2e7d-4ead-a338-dd837a903f2c" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-new" form-by-id="false">
+			<object access-modifier="private" uuid="2b856067-161c-4673-885b-8dc6a51640f4" base-type="TrendView" base-type-id="635eeb20-53b6-4787-8ce7-142a64cd0e89" ver="5">
+				<init target="ParDevPath" ver="5" ref="here.ParDevPath"/>
+			</object>
+		</do-on>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+	</object>
+	<object access-modifier="private" name="DebugTool" display-name="DebugTool" uuid="5d1bbc41-7588-4945-bf4c-f17af089f7ac" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="5" description="" cardinal="1"/>
+	<init target="restoreMin" ver="5" value="false"/>
+	<init target="restoreMax" ver="5" value="false"/>
+	<object access-modifier="private" name="Ap_Par_Units" display-name="Ap_Par_Units" uuid="ec2d5eac-9eae-491a-9b54-bfb9d8d4476b" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5">
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+		<init target="Path" ver="5" value="Units"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_Catalogs" display-name="Rectangle_Catalogs" uuid="312ba8ac-6dbb-49c7-a5b0-be8caeeef464" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="5" ver="5"/>
+		<designed target="Y" value="65" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="490" ver="5"/>
+		<designed target="Height" value="245" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffd9d9d9" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="Rectangle_Sources" display-name="Rectangle_Sources" uuid="025c6205-247e-4494-85fa-0e412d239eb5" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="6">
+			<designed target="X" value="5" ver="5"/>
+			<designed target="Y" value="30" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="480" ver="5"/>
+			<designed target="Height" value="30" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="0xffffffff" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="BrushColor" value="0xffffffff" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<object access-modifier="private" name="Initializer_1" display-name="Initializer_1" uuid="33738c12-8d2c-4625-aa4a-040a36603876" base-type="Initializer" base-type-id="6db89679-9299-4993-ad1a-0d086cd1c7d2" ver="5" description="" cardinal="1">
+				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Initialized">
+					<body kind="javascript">
+						<![CDATA[for (let i = 0; i < Rectangle_Sources.Length; i ++){
+	Rectangle_Sources[i].X = Rectangle_Sources.X;
+	Rectangle_Sources[i].Y = Rectangle_Sources.Y + i * 34;
+}]]>
+					</body>
+				</do-on>
+			</object>
+		</object>
+		<object access-modifier="private" name="Checkbox_Sources" display-name="Checkbox_Sources" uuid="c258379b-15aa-4eb6-88f1-402ea2af58a3" base-type="Checkbox_PropertiesDialogs" base-type-id="cce67041-fe8a-49f5-a7d2-1eddf9d00c43" ver="5" description="" cardinal="6">
+			<designed target="X" value="10" ver="5"/>
+			<designed target="Y" value="35" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="300" ver="5"/>
+			<designed target="Height" value="23" ver="5"/>
+			<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0" ver="5"/>
+			<designed target="FontColor" value="0xffffffff" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="StateChanged">
+				<body kind="javascript">
+					<![CDATA[for (let i = 0; i < Checkbox_Sources.Length; i++){
+	if(Checkbox_Sources[i].State){
+		if (Ap_Par_PrioritySources[i] == 99)  Checkbox_Sources[i].FontColor = AsokuColor.asokuSky;
+		else Checkbox_Sources[i].FontColor = AsokuColor.asokuWhite;
+	}
+	else {
+		if(Ap_Par_PrioritySources[i] != 99) Checkbox_Sources[i].FontColor = AsokuColor.asokuSky;
+		else Checkbox_Sources[i].FontColor = AsokuColor.asokuWhite;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+if (ComboBox_SelectMode.SelectedIndex == 0){
+	if(State)
+		if (Ap_Par_PrioritySource1 == 99)  FontColor = AsokuColor.asokuSky;
+		else FontColor = AsokuColor.asokuWhite;
+	else 
+		if(Ap_Par_PrioritySource1 != 99) FontColor = AsokuColor.asokuSky;
+		else FontColor = AsokuColor.asokuWhite;
+
+//т.к. при изменении настроек новые значения сразу не отправляются на сервер, где прописана логика чекбоксов (ставим галочку в чекбокс, с другого убирается галочка автоматически), а только красятся - прописываем логику в HMI
+	if(State){//ставим галочку
+		if(Ap_Par_UserChoiceBytes != 1){//не равно серверному значению
+			RefreshChekboxSky(); //убираем галочки со всех синих чекбоксов и возвращаем цвет (этот чекбокс уже с галочкой, но пока белый, т.е. с него галочка не убирется)
+			FontColor = AsokuColor.asokuSky; // теперь красим этот чекбокс в синий
+			RefreshChekboxWhite(); //убираем галочку со всех чекбоксов белого цвета (т.е. по факту убирется одна галочка, которая считалась с сервера) и красим в синий - показываем, что произошло изменение
+		}
+		else{//ставим галочку в чекбокс, в котором изначально она была(считали с сервера), но потом убрали
+			FontColor = AsokuColor.asokuWhite; //возвращаем белый цвет(показываем что текущая настройка = серверной, т.е. изменеий по факту нет)
+ 			RefreshChekboxSky();//убираем галочки со всех синих чекбоксов и возвращаем цвет
+		}	
+ 	}
+ 	else{ //убираем галочку
+		if (Ap_Par_UserChoiceBytes != 1) FontColor = AsokuColor.asokuWhite; //если не равно серверном значени и нет галочки - возвращаем белый цвет (изменений нет)
+		else FontColor = AsokuColor.asokuSky; //если значение равно серверному (должна стоять галочка) и нет галочки - красим в синий (произошло изменение)
+	}
+}
+*/]]>
+				</body>
+			</do-on>
+			<do-trace access-modifier="private" target="Enabled" ver="5">
+				<conditional-expr>
+					<condition>
+						<![CDATA[ComboBox_SelectMode.SelectedIndex == ComboBox_SelectMode.IndexOf("Первый достоверный")]]>
+					</condition>
+					<expr>
+						<![CDATA[false]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[true]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<object access-modifier="private" name="Initializer_1" display-name="Initializer_1" uuid="7cc7728b-eecc-44dd-b9b2-0a4388d23113" base-type="Initializer" base-type-id="6db89679-9299-4993-ad1a-0d086cd1c7d2" ver="5" description="" cardinal="1">
+				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Initialized">
+					<body kind="javascript">
+						<![CDATA[for (let i = 0; i < Checkbox_Sources.Length; i ++){
+	Checkbox_Sources[i].Text = "Source" + (i + 1);
+	Checkbox_Sources[i].X = Checkbox_Sources.X;
+	Checkbox_Sources[i].Y = Checkbox_Sources.Y + i * 34;
+}
+
+]]>
+					</body>
+				</do-on>
+			</object>
+		</object>
+		<object access-modifier="private" name="Text_forAvarageValue" display-name="Text_forAvarageValue" uuid="f7b6b4b4-b72a-49a7-88a1-b201cec8e215" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="25" ver="5"/>
+			<designed target="Y" value="5" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="111" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="Источники:" ver="5"/>
+			<designed target="FontColor" value="0xffffffff" ver="5"/>
+			<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_forAvarageValue_1" display-name="Text_forAvarageValue_1" uuid="dd765f81-d29f-46e2-bb56-e2eb9e8b7a07" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="325" ver="5"/>
+			<designed target="Y" value="5" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="70" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="Номер:" ver="5"/>
+			<designed target="FontColor" value="0xffffffff" ver="5"/>
+			<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_forAvarageValue_2" display-name="Text_forAvarageValue_2" uuid="7145f7c7-0f24-46ca-a5cd-8ef9f2cc4181" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="400" ver="5"/>
+			<designed target="Y" value="5" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="70" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="Значение:" ver="5"/>
+			<designed target="FontColor" value="0xffffffff" ver="5"/>
+			<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		</object>
+		<designed target="Flip" value="0" ver="5"/>
+		<object access-modifier="private" name="ComboBox_Priority_Sources" display-name="ComboBox_Priority_Sources" uuid="1e5c65f1-de16-46f6-888e-95264e96d009" base-type="ComboBox" base-type-id="3495bcd2-01f2-4709-b7f4-e9cf6f3a00bc" ver="5" description="" cardinal="6">
+			<designed target="X" value="325" ver="5"/>
+			<designed target="Y" value="33" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="50" ver="5"/>
+			<designed target="Height" value="25" ver="5"/>
+			<designed target="Editable" value="false" ver="5"/>
+			<designed target="Text" value="" ver="5"/>
+			<designed target="SelectedIndex" value="-1" ver="5"/>
+			<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="MaxVisibleItems" value="10" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="SelectedChanged">
+				<body kind="javascript">
+					<![CDATA[for (let i = 0; i < ComboBox_Priority_Sources.Length; i ++){
+	for (let j = 0; j < 7; j ++){
+		if (ComboBox_Priority_Sources[i].SelectedIndex != ComboBox_Priority_Sources[i].IndexOf("Искл.")){
+			if (ComboBox_Priority_Sources[i].SelectedIndex == j){
+				if (Ap_Par_PrioritySources[i].Value != j + 1) ComboBox_Priority_Sources[i].FontColor = AsokuColor.asokuSky; 
+				else ComboBox_Priority_Sources[i].FontColor =(AsokuColor.asokuBlack); 
+			}
+		}
+		else { 
+			if (Ap_Par_PrioritySources[i] != 99) ComboBox_Priority_Sources[i].FontColor = AsokuColor.asokuSky; 	
+			else ComboBox_Priority_Sources[i].FontColor = AsokuColor.asokuBlack;
+		}	
+	}
+}
+]]>
+				</body>
+			</do-on>
+			<do-trace access-modifier="private" target="Opacity" ver="5">
+				<conditional-expr>
+					<condition>
+						<![CDATA[SelectedIndex == IndexOf("Искл.")]]>
+					</condition>
+					<expr>
+						<![CDATA[0.5]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[1]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<do-trace access-modifier="private" target="Enabled" ver="5">
+				<conditional-expr>
+					<condition>
+						<![CDATA[ComboBox_SelectMode.SelectedIndex == ComboBox_SelectMode.IndexOf("Первый достоверный")]]>
+					</condition>
+					<expr>
+						<![CDATA[true]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[false]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="InsertPolicy" value="3" ver="5"/>
+			<object access-modifier="private" name="Initializer_1" display-name="Initializer_1" uuid="212d341c-6c61-47e9-bc4a-b03cd381cc97" base-type="Initializer" base-type-id="6db89679-9299-4993-ad1a-0d086cd1c7d2" ver="5" description="" cardinal="1">
+				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Initialized">
+					<body kind="javascript">
+						<![CDATA[for (let i = 0; i < ComboBox_Priority_Sources.Length; i ++){
+	ComboBox_Priority_Sources[i].X = ComboBox_Priority_Sources.X;
+	ComboBox_Priority_Sources[i].Y = ComboBox_Priority_Sources.Y + i * 34;
+}
+
+for (let j = 0; j < 7; j ++){
+	if (j != 6) AddItem(j + 1);
+	else AddItem("Искл.");
+}
+
+
+
+]]>
+					</body>
+				</do-on>
+			</object>
+		</object>
+		<object access-modifier="private" name="AnalogDpSimpleValue_ValueSources" display-name="AnalogDpSimpleValue_ValueSources" uuid="a726087f-0156-40c6-a2b3-eb5ca967b82f" base-type="AnalogDpSimpleValue" base-type-id="b9a17b45-ac08-4dbc-8897-fafdc5c40126" ver="5" description="" cardinal="6">
+			<designed target="X" value="395" ver="5"/>
+			<designed target="Y" value="35" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="80" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<do-trace access-modifier="private" target="Tooltip" ver="5">
+				<body kind="om">
+					<![CDATA["статус: "+ String.ToString(Ap_Par_Value.Quality) + "\nвремя: "+ DateTime.ToString(Ap_Par_Value.TimeStamp)]]>
+				</body>
+			</do-trace>
+			<designed target="PenColor" value="0xffd9d9d9" ver="5"/>
+			<designed target="PenWidth" value="0" ver="5"/>
+			<object access-modifier="private" name="Initializer_1" display-name="Initializer_1" uuid="06a529ed-3467-4e3f-858c-0e69f6a2e9c0" base-type="Initializer" base-type-id="6db89679-9299-4993-ad1a-0d086cd1c7d2" ver="5" description="" cardinal="1">
+				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Initialized">
+					<body kind="javascript">
+						<![CDATA[for (let i = 0; i < AnalogDpSimpleValue_ValueSources.Length; i ++){
+	AnalogDpSimpleValue_ValueSources[i].X = AnalogDpSimpleValue_ValueSources.X;
+	AnalogDpSimpleValue_ValueSources[i].Y = AnalogDpSimpleValue_ValueSources.Y + i * 34;
+//	AnalogDpSimpleValue_ValueSources[i].ParDevPath = Ap_Par_HMI_Path_Sources[i].ValueAsString + ".Value";
+
+
+}]]>
+					</body>
+				</do-on>
+			</object>
+			<designed target="BrushColor" value="0x00ffffff" ver="5"/>
+			<designed target="PenStyle" value="0" ver="5"/>
+			<init target="ShowStatus" ver="5" value="true"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="ComboBox_SelectMode" display-name="ComboBox_SelectMode" uuid="c83fc975-9e64-444e-b811-291e5df8d331" base-type="ComboBox" base-type-id="3495bcd2-01f2-4709-b7f4-e9cf6f3a00bc" ver="5" description="" cardinal="1">
+		<designed target="X" value="100" ver="5"/>
+		<designed target="Y" value="10" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="170" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Editable" value="false" ver="5"/>
+		<designed target="Text" value="" ver="5"/>
+		<designed target="SelectedIndex" value="-1" ver="5"/>
+		<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="0xff000000" ver="5"/>
+		<designed target="MaxVisibleItems" value="10" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="SelectedChanged">
+			<body kind="om">
+				<![CDATA[// меняем цвет выпадающего списка, если выбранный индекс не равен серверному значению(т.е. хотим внести изменения - поменять режим)
+//Чтобы избежать путанницы с соответсвием индексов (0 - Среднее значение, 1 - Выбор пользователя и т.д.) - пользуемся IndexOf (т.е. IndexOf("Среднее значение") == 0)
+// т.к. режим "Среднее значение без учета качества сигнала" реализован как доп опция к режиму "Среднее значение" в виде чекбокса - сразу сравниваем с двумя значениями, потому что на сервере это два разных режима. Не меняем (возвращаем) цвет если выбираем режим, который и так действует (изменений по факту нет)
+if (selected == IndexOf("Среднее значение")) this.FontColor = (Ap_Par_SelectModeBytes != 1 && Ap_Par_SelectModeBytes != 2 && Ap_Par_SelectModeBytes != 0)?(AsokuColor.asokuSky):(AsokuColor.asokuBlack); //Инициализация ТОЛЬКО (проверил) первой строки "Среднее значение" и условие при запуске выполняется быстрее, чем подтягивается значение с сервера Ap_Par_SelectModeBytes (не подтянулось - равно 0), поэтому первй раз красит в asokuSky. Поэтому добавил сравнение с 0.
+else if (selected == IndexOf("Выбор пользователя")) this.FontColor = (Ap_Par_SelectModeBytes != 4)?(AsokuColor.asokuSky):(AsokuColor.asokuBlack);
+else if (selected == IndexOf("Первый достоверный")) this.FontColor = (Ap_Par_SelectModeBytes != 8)?(AsokuColor.asokuSky):(AsokuColor.asokuBlack);
+
+
+]]>
+			</body>
+		</do-on>
+		<object access-modifier="private" name="Text_ComboBox_SelectMode" display-name="Text_ComboBox_SelectMode" uuid="8bae93dc-bb59-4ee1-90fe-6571a68ac0af" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="-90" ver="5"/>
+			<designed target="Y" value="2" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="111" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="Выбор:" ver="5"/>
+		</object>
+		<do-trace access-modifier="private" target="SelectedIndex" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Ap_Par_SelectModeBytes.Value == 1 || Ap_Par_SelectModeBytes.Value == 2]]>
+				</condition>
+				<expr>
+					<![CDATA[IndexOf("Среднее значение")]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Ap_Par_SelectModeBytes.Value == 4]]>
+				</condition>
+				<expr>
+					<![CDATA[IndexOf("Выбор пользователя")]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Ap_Par_SelectModeBytes.Value == 8]]>
+				</condition>
+				<expr>
+					<![CDATA[IndexOf("Первый достоверный")]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="InsertPolicy" value="3" ver="5"/>
+		<object access-modifier="private" name="Initializer_1" display-name="Initializer_1" uuid="0998ea08-e828-4ffa-8955-eef8ac3adf1d" base-type="Initializer" base-type-id="6db89679-9299-4993-ad1a-0d086cd1c7d2" ver="5" description="" cardinal="1">
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Initialized">
+				<body kind="om">
+					<![CDATA[AddItem("Среднее значение");
+AddItem("Выбор пользователя");
+AddItem("Первый достоверный");]]>
+				</body>
+			</do-on>
+		</object>
+	</object>
+	<object access-modifier="private" name="Checkbox_ModeAvarageValueWithoutQiality" display-name="Checkbox_ModeAvarageValueWithoutQiality" uuid="58cd753c-fb8d-4a59-877c-912eba4f3f3c" base-type="Checkbox_PropertiesDialogs" base-type-id="cce67041-fe8a-49f5-a7d2-1eddf9d00c43" ver="5" description="" cardinal="1">
+		<designed target="X" value="282" ver="5"/>
+		<designed target="Y" value="10" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="211.99999999999994" ver="5"/>
+		<designed target="Height" value="23" ver="5"/>
+		<designed target="Text" value="Не учитывать качество сигнала" ver="5"/>
+		<designed target="Font" value="Arial,8,-1,5,75,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="StateChanged">
+			<body kind="om">
+				<![CDATA[if (ComboBox_SelectMode.SelectedIndex == ComboBox_SelectMode.IndexOf("Среднее значение")){
+	if (ComboBox_SelectMode.FontColor == AsokuColor.asokuBlack){
+		if(State == false) this.FontColor = (Ap_Par_SelectModeBytes.Value != 1 && Ap_Par_SelectModeBytes.Value != 0)?(AsokuColor.asokuSky):(AsokuColor.asokuWhite); //Если убираем галочку и серверное значение не равно 1, что соответсвует режиму "Среднее значение" (будет считаться изменением) - красим в синий
+		else this.FontColor = (Ap_Par_SelectModeBytes.Value != 2 && Ap_Par_SelectModeBytes.Value != 0)?(AsokuColor.asokuSky):(AsokuColor.asokuWhite); //Если ставим галочку и серверное значение не равно 2, что соответсвует режиму "Среднее значение без учета качества" (будет считаться изменением) - красим в синий
+	}
+	else this.FontColor = (State)?(AsokuColor.asokuSky):(AsokuColor.asokuWhite);
+}]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[ComboBox_SelectMode.SelectedIndex == 0
+]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[false
+]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="State" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Ap_Par_SelectModeBytes == 2]]>
+				</condition>
+				<expr>
+					<![CDATA[true
+]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Ap_Par_SelectModeBytes" display-name="Ap_Par_SelectModeBytes" uuid="26efdf69-669b-4565-aebb-a9c2eb0c4d85" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="SelectModeBytes"/>
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+	</object>
+	<object access-modifier="private" name="Button_Refresh" display-name="Button_Refresh" uuid="8cf14eb8-d165-4d9b-bcbc-84f5f7a8fb0b" base-type="Button_PropertiesDialogs" base-type-id="eb940a52-68cb-41b0-824e-d3672b520ebf" ver="5" description="" cardinal="1">
+		<designed target="X" value="252.5" ver="5"/>
+		<designed target="Y" value="320" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+			<body kind="om">
+				<![CDATA[RefreshSettings();//сброс настроек
+SetColorField();  //сброс цвета текста
+Button_Acc.FontColor = AsokuColor.asokuWhite;  // сброс цвета символов у кнопки Применить]]>
+			</body>
+		</do-on>
+		<designed target="Text" value="Сбросить" ver="5"/>
+		<designed target="Width" value="118.75" ver="5"/>
+		<designed target="Height" value="35" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="OnClickFontColor" value="0xff000000" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Button_Acc" display-name="Button_Acc" uuid="0a2d0b72-071b-417e-a635-3de1e55286b7" base-type="Button_PropertiesDialogs" base-type-id="eb940a52-68cb-41b0-824e-d3672b520ebf" ver="5" description="" cardinal="1">
+		<designed target="X" value="376" ver="5"/>
+		<designed target="Y" value="320" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+			<body kind="om">
+				<![CDATA[if(true)//AsokuUserRights.ChangeSettings) //проверка полномочий 
+{
+ Open_UD_AppSettings.Invoke(); //открыть окно подтверждения сохранения настроек
+}
+else Open_UD_PermissionFault.Invoke();  ]]>
+			</body>
+		</do-on>
+		<designed target="Text" value="Применить" ver="5"/>
+		<designed target="Width" value="118.75" ver="5"/>
+		<designed target="Height" value="35" ver="5"/>
+		<do-trace access-modifier="private" target="Enabled" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[AsokuUserRights.ChangeSettings.Value]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="FontColor" value="0xff000000" ver="5"/>
+		<designed target="OnClickFontColor" value="0xff000000" ver="5"/>
+	</object>
+	<do access-modifier="private" name="RefreshSettings" display-name="Функция сброса уставок" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="javascript">
+			<![CDATA[//Функция считывания уставок
+for (let i = 0; i < 6; i ++){
+	Rectangle_Catalogs.Checkbox_Sources[i].State = (Ap_Par_PrioritySources[i].Value != 99);
+	Rectangle_Catalogs.ComboBox_Priority_Sources[i].SelectedIndex = Rectangle_Catalogs.ComboBox_Priority_Sources[i].IndexOf(Ap_Par_PrioritySources[i].ValueAsString)
+}
+
+Checkbox_ModeAvarageValueWithoutQiality.State = (Ap_Par_SelectModeBytes == 2); // Считываем значение чекбокса, котоырй на сервере релизован как отдельный режим под порядковым номером 2
+
+
+//устанавливаем индекс в выпадающем списке соответсвующий порядковому номеру на сервере
+if (Ap_Par_SelectModeBytes == 1) ComboBox_SelectMode.SelectedIndex = ComboBox_SelectMode.IndexOf("Среднее значение");
+else if (Ap_Par_SelectModeBytes == 2) ComboBox_SelectMode.SelectedIndex = ComboBox_SelectMode.IndexOf("Среднее значение");
+else if (Ap_Par_SelectModeBytes == 4) ComboBox_SelectMode.SelectedIndex = ComboBox_SelectMode.IndexOf("Выбор пользователя");
+else if (Ap_Par_SelectModeBytes == 8) ComboBox_SelectMode.SelectedIndex = ComboBox_SelectMode.IndexOf("Первый достоверный");
+
+	
+
+	
+]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="SetColorField" display-name="Установка первоначального цвета" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="javascript">
+			<![CDATA[//Возвращаем цвета
+ComboBox_SelectMode.FontColor = AsokuColor.asokuBlack; //Выпадающий список выбора режима
+Checkbox_ModeAvarageValueWithoutQiality.FontColor = AsokuColor.asokuWhite; //Чекбокс установки режима "Среднее значение (без учета качества сигналов)"
+
+for (let i = 0; i < 6; i ++){
+	Rectangle_Catalogs.Checkbox_Sources[i].FontColor = AsokuColor.asokuWhite; //Блок с чекбоксами (режим "Выбор пользователя" и "Среднее значение")
+	Rectangle_Catalogs.ComboBox_Priority_Sources[i].FontColor = AsokuColor.asokuBlack; // Блок с выпадающими списками (режим "Первый достоверный")
+}
+
+
+
+
+
+
+]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="TakeMessage" display-name="  Функция, которая выдает сообщение об изменениях пользователя" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="javascript">
+			<![CDATA[//выдача сообщений об изменениях пользователя
+
+//смена режима
+if(ComboBox_SelectMode.FontColor == AsokuColor.asokuSky){
+	if(ComboBox_SelectMode.SelectedIndex == ComboBox_SelectMode.IndexOf("Среднее значение")){
+		if(Checkbox_ModeAvarageValueWithoutQiality.State == false && Checkbox_ModeAvarageValueWithoutQiality.FontColor == AsokuColor.asokuWhite) AsokuMain.CreateUserMessage("расчета результирующего значения ''" + Ap_Par_Name.ValueAsString + "''. Установил режим: Среднее значение " + Ap_Source_Par.Path); 
+		else if(Checkbox_ModeAvarageValueWithoutQiality.State == true && Checkbox_ModeAvarageValueWithoutQiality.FontColor == AsokuColor.asokuSky) AsokuMain.CreateUserMessage("расчета результирующего значения ''" + Ap_Par_Name.ValueAsString + "''. Установил режим: Среднее значение без учета качества сигнала " + Ap_Source_Par.Path);
+	} 
+	else if(ComboBox_SelectMode.SelectedIndex ==  ComboBox_SelectMode.IndexOf("Выбор пользователя")) AsokuMain.CreateUserMessage("расчета результирующего значения ''" + Ap_Par_Name.ValueAsString + "''. Установил режим: Выбор пользователя " + Ap_Source_Par.Path);
+	else if(ComboBox_SelectMode.SelectedIndex ==  ComboBox_SelectMode.IndexOf("Первый достоверный")) AsokuMain.CreateUserMessage("расчета результирующего значения ''" + Ap_Par_Name.ValueAsString + "''. Установил режим: По приоритету " + Ap_Source_Par.Path);
+}
+
+//Если меняем режим с "Среднего значение" на "Срденее значение без учета качества" и наоборот. В это случае в выпадающем списке изменений не будет - только смена состояния чекбокса "без учета качества"), поэтому учитываем эту ситуацию отдельным условием
+else if (Checkbox_ModeAvarageValueWithoutQiality.FontColor == AsokuColor.asokuSky){
+	if(Checkbox_ModeAvarageValueWithoutQiality.State) AsokuMain.CreateUserMessage("расчета результирующего значения ''" + Ap_Par_Name.ValueAsString + "''. Установил режим: Среднее значение без учета качества сигнала " + Ap_Source_Par.Path);
+	else AsokuMain.CreateUserMessage("расчета результирующего значения ''" + Ap_Par_Name.ValueAsString + "''. Установил режим: Среднее значение " + Ap_Source_Par.Path);
+}
+
+for (let i = 0; i < 6; i ++){
+	if (Rectangle_Catalogs.Checkbox_Sources[i].FontColor == AsokuColor.asokuSky || Rectangle_Catalogs.ComboBox_Priority_Sources[i].FontColor == AsokuColor.asokuSky) AsokuMain.CreateUserMessage("расчета результирующего значения ''" + Ap_Par_Name.ValueAsString + "''. " + Ap_Source_Par.Path);
+	break;
+}
+
+
+
+
+]]>
+		</body>
+	</do>
+	<object access-modifier="private" name="Open_UD_AppSettings" display-name="Open_UD_AppSettings" uuid="4d712910-d19a-41c2-b4dc-fd917fb067d8" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-dialog" form-by-id="false">
+			<object access-modifier="private" uuid="d6611056-fc6d-449e-99fa-43cea0cc7357" base-type="UserDialog" base-type-id="3c54f3db-a950-487c-861e-56a8d2eba70d" ver="5">
+				<init target="YesAction" ver="5" ref="here.YesAction_UD_AppSettings"/>
+				<init target="Icon" ver="5" value="1"/>
+				<init target="Buttons" ver="5" value="2"/>
+				<init target="Message" ver="5" value="Вы действительно хотите применить настройки для сигнала?"/>
+				<init target="Header" ver="5" value="Окно подтверждения действий"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="YesAction_UD_AppSettings" display-name="YesAction_UD_AppSettings" uuid="81448cbf-d936-4d41-9225-7ef0beeefb88" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked">
+			<body kind="javascript">
+				<![CDATA[// Применение измененных значений
+
+for (let i = 0; i < 6; i ++){
+	if(Rectangle_Catalogs.Checkbox_Sources[i].FontColor == AsokuColor.asokuSky){
+		if (Rectangle_Catalogs.Checkbox_Sources[i].State) Ap_Par_PrioritySources[i].Value = 1;
+		else Ap_Par_PrioritySources[i].Value = 99;
+	}
+	if(Rectangle_Catalogs.ComboBox_Priority_Sources[i].FontColor == AsokuColor.asokuSky){ Ap_Par_PrioritySources[i].Value =  (Rectangle_Catalogs.ComboBox_Priority_Sources[i].GetItem(Rectangle_Catalogs.ComboBox_Priority_Sources[i].SelectedIndex) != "Искл.")?(Rectangle_Catalogs.ComboBox_Priority_Sources[i].GetItem(Rectangle_Catalogs.ComboBox_Priority_Sources[i].SelectedIndex)):(99);
+	//String.ToUint2(Rectangle_Catalogs.ComboBox_Priority_Sources[i].GetItem(Rectangle_Catalogs.ComboBox_Priority_Sources[i].SelectedIndex), 99); //вытаскиваем значение итема выпадающего списка по выбранному индексу(с помощью GetItem), преобразуем в uint2 и записываем на сервер(если преобразование успешно (число "1,2..") - оно и запишется, если неуспешно (текст "Искл." - запишется 99, что соответсвует логике в ДЕВ) 
+	}
+}
+
+
+	//Устанавливаем режим (с учетом ЧекБокса отвечающего за режим Среднее значение без учета качества)
+if (ComboBox_SelectMode.SelectedIndex == 0 && !(Checkbox_ModeAvarageValueWithoutQiality.State)) Ap_Par_SelectModeBytes.Value = 1;	
+else if (ComboBox_SelectMode.SelectedIndex == 0 && Checkbox_ModeAvarageValueWithoutQiality.State) Ap_Par_SelectModeBytes.Value = 2;
+else if (ComboBox_SelectMode.SelectedIndex == 1) Ap_Par_SelectModeBytes.Value = 4;	
+else if (ComboBox_SelectMode.SelectedIndex == 2) Ap_Par_SelectModeBytes.Value = 8;                                    
+
+for (let i = 0; i < 6; i ++){
+	if (Rectangle_Catalogs.Checkbox_Sources[i].FontColor == AsokuColor.asokuSky || Rectangle_Catalogs.ComboBox_Priority_Sources[i].FontColor == AsokuColor.asokuSky || ComboBox_SelectMode.FontColor == AsokuColor.asokuSky || Checkbox_ModeAvarageValueWithoutQiality.FontColor == AsokuColor.asokuSky){
+		TakeMessage();                                        // выдача сообщения об изменениях пользователя 
+		SetColorField();                                      // установка первоначального цвета шрифта у полей
+		Button_Acc.FontColor = AsokuColor.asokuWhite;    // сброс цвета символов у кнопки Применить
+		break;
+	}  
+}	
+	
+
+
+      ]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Open_UD_PermissionFault" display-name="Open_UD_PermissionFault" uuid="09d211a5-e7cb-401a-8482-7e1314de0cd9" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-dialog" form-by-id="false">
+			<object access-modifier="private" uuid="ff560564-ccfb-45ec-a575-2f824d58dc2a" base-type="UserDialog" base-type-id="3c54f3db-a950-487c-861e-56a8d2eba70d" ver="5">
+				<init target="Header" ver="5" value="Недостаточно полномочий"/>
+				<init target="Icon" ver="5" value="0"/>
+				<init target="Buttons" ver="5" value="0"/>
+				<init target="Message" ver="5" value="Для выполнения указанного действия Вам не хватает полномочий. Для получения дополнительных сведений обратитесь к Администратору"/>
+			</object>
+		</do-on>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="276b9da7-d345-42cc-ab50-86ba982a3358" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="10" ver="5"/>
+		<designed target="Y" value="40" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="111" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="Алгоритм:" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_UserDialogs_1" display-name="Text_UserDialogs_1" uuid="64641464-f03d-418a-81a6-5cbc8c13d73c" base-type="Text_UserDialogs" base-type-id="d59a4f47-69b1-45aa-8a4f-88d2cf705cbc" ver="5" description="" cardinal="1">
+		<designed target="X" value="100" ver="5"/>
+		<designed target="Y" value="40" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="345" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Ap_Par_SelectModeBytes.Value == 1 || Ap_Par_SelectModeBytes.Value == 2]]>
+				</condition>
+				<expr>
+					<![CDATA["Среднее значение"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Ap_Par_SelectModeBytes.Value == 4]]>
+				</condition>
+				<expr>
+					<![CDATA["Выбор пользователя"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[Ap_Par_SelectModeBytes.Value == 8]]>
+				</condition>
+				<expr>
+					<![CDATA["Первый достоверный"]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<designed target="Font" value="Arial,12,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_HMI_Path_ResultValue" display-name="Ap_Par_HMI_Path_ResultValue" uuid="e4acd77a-2514-4be7-b51a-5fb5d7f34a68" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+		<init target="Path" ver="5" value="HMI_Path_ResultValue"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnValueChanged">
+			<body kind="javascript">
+				<![CDATA[for (let i = 0; i < Rectangle_Catalogs.Rectangle_Sources.Length; i ++){
+	if (Ap_Par_HMI_Path_ResultValue.ValueAsString == Ap_Par_HMI_Path_Sources[i].ValueAsString && Ap_Par_SelectModeBytes.Value > 2) Rectangle_Catalogs.Rectangle_Sources[i].Visible = true;
+	else Rectangle_Catalogs.Rectangle_Sources[i].Visible = false;
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<designed target="Flip" value="0" ver="5"/>
+	<object access-modifier="private" name="Ap_Par_Name_Sources" display-name="Ap_Par_Name_Sources" uuid="c58371f6-1e06-4c6f-8f3a-fc2a48a87324" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="6">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<init target="Value" ver="5" value=""/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnValueChangedAsString">
+			<body kind="javascript">
+				<![CDATA[for (let i = 0; i < Ap_Par_Name_Sources.Length; i++){
+	Rectangle_Catalogs.Checkbox_Sources[i].Text = Ap_Par_Name_Sources[i].ValueAsString;
+}
+
+for (let i = 0; i < Ap_Par_Name_Sources.Length; i++){
+	for (let j = 0; j < Ap_Par_Name_Sources.Length; j++){
+		if (i == j) continue;
+		else
+			if	(Ap_Par_Name_Sources[i].ValueAsString == Ap_Par_Name_Sources[j].ValueAsString){
+				//let tmp = Ap_Par_Comment_Sources[i].ValueAsString.split(".");
+				Rectangle_Catalogs.Checkbox_Sources[i].Text = Ap_Par_Name_Sources[i].ValueAsString + Ap_Par_Comment_Sources[i].ValueAsString.split(".")[Ap_Par_Comment_Sources[i].ValueAsString.split(".").length - 1];			
+		}
+	}
+}
+
+]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Ap_Par_Comment_Sources" display-name="Ap_Par_Comment_Sources" uuid="deed4c00-523e-4673-ab3c-89b0d5068657" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="6">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<init target="Value" ver="5" value="1"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_HMI_Path_Sources" display-name="Ap_Par_HMI_Path_Sources" uuid="fe5108fe-7f35-4bd0-99a5-ab50474febe7" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="6">
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnValueChangedAsString">
+			<body kind="javascript">
+				<![CDATA[for (let i = 0; i < Ap_Par_HMI_Path_Sources.Length; i ++){
+	if (Ap_Par_HMI_Path_Sources[i].ValueAsString == "Empty"){
+		Rectangle_Catalogs.Checkbox_Sources[i].Visible = false;
+		Rectangle_Catalogs.ComboBox_Priority_Sources[i].Visible = false;
+		Rectangle_Catalogs.AnalogDpSimpleValue_ValueSources[i].Visible = false;
+	}
+	else{
+		Rectangle_Catalogs.Checkbox_Sources[i].Visible = true;
+		Rectangle_Catalogs.ComboBox_Priority_Sources[i].Visible = true;
+		Rectangle_Catalogs.AnalogDpSimpleValue_ValueSources[i].Visible = true;
+	}
+}
+
+
+for (let i = 0; i < Ap_Par_Comment_Sources.Length; i ++){
+	Ap_Par_Comment_Sources[i].Path = Ap_Par_HMI_Path_Sources[i].ValueAsString + ".Comment";
+}
+
+for (let i = 0; i < Ap_Par_Name_Sources.Length; i++){
+	Ap_Par_Name_Sources[i].Path = Ap_Par_HMI_Path_Sources[i].ValueAsString + ".Name";
+}
+
+for (let i = 0; i < Rectangle_Catalogs.AnalogDpSimpleValue_ValueSources.Length; i ++){
+	DebugTool.Log(i);
+	Rectangle_Catalogs.AnalogDpSimpleValue_ValueSources[i].ParDevPath = Ap_Par_HMI_Path_Sources[i].ValueAsString;
+}
+]]>
+			</body>
+		</do-on>
+		<object access-modifier="private" name="Initializer_1" display-name="Initializer_1" uuid="e92be8c4-752d-4cfd-9a22-8946708b3c39" base-type="Initializer" base-type-id="6db89679-9299-4993-ad1a-0d086cd1c7d2" ver="5" description="" cardinal="1">
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Initialized">
+				<body kind="javascript">
+					<![CDATA[for (let i = 0; i < Ap_Par_HMI_Path_Sources.Length; i ++){
+	Ap_Par_HMI_Path_Sources[i].Path = "HMI_Path_Sources.Source" + (i + 1);
+}]]>
+				</body>
+			</do-on>
+		</object>
+	</object>
+	<object access-modifier="private" name="Ap_Par_PrioritySources" display-name="Ap_Par_PrioritySources" uuid="022cf7fb-18dd-4434-85b4-ce960d37b292" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="6">
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+		<object access-modifier="private" name="Initializer_1" display-name="Initializer_1" uuid="ba91e7df-fe3c-4910-a066-59b36f37d8e0" base-type="Initializer" base-type-id="6db89679-9299-4993-ad1a-0d086cd1c7d2" ver="5" description="" cardinal="1">
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Initialized">
+				<body kind="javascript">
+					<![CDATA[for (let i = 0; i < Ap_Par_PrioritySources.Length; i ++){
+	Ap_Par_PrioritySources[i].Path = "Priority.Source" + (i + 1);
+}
+
+
+]]>
+				</body>
+			</do-on>
+		</object>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnValueChanged">
+			<body kind="javascript">
+				<![CDATA[for (let i = 0; i < Ap_Par_PrioritySources.Length; i ++){
+	if (Ap_Par_PrioritySources[i].Value != 99) {
+		Rectangle_Catalogs.Checkbox_Sources[i].State = true;
+		Rectangle_Catalogs.ComboBox_Priority_Sources[i].SelectedIndex = Rectangle_Catalogs.ComboBox_Priority_Sources[i].IndexOf(Ap_Par_PrioritySources[i].ValueAsString);
+	}
+	else{ 
+		Rectangle_Catalogs.Checkbox_Sources[i].State = false;
+		Rectangle_Catalogs.ComboBox_Priority_Sources[i].SelectedIndex = Rectangle_Catalogs.ComboBox_Priority_Sources[i].IndexOf("Искл.");
+	}
+}
+
+
+
+for (let i = 0; i < Rectangle_Catalogs.AnalogDpSimpleValue_ValueSources.Length; i ++){
+	
+
+	Rectangle_Catalogs.AnalogDpSimpleValue_ValueSources[i].ParDevPath = Ap_Par_HMI_Path_Sources[i].ValueAsString;
+}
+
+]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Ap_Par_ValueSources" display-name="Ap_Par_ValueSources" uuid="54aab658-1d8a-40e5-8cda-998df1557b44" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="6">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<object access-modifier="private" name="Initializer_1" display-name="Initializer_1" uuid="612b0ba6-67d4-463f-8243-ce612d191472" base-type="Initializer" base-type-id="6db89679-9299-4993-ad1a-0d086cd1c7d2" ver="5" description="" cardinal="1">
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Initialized">
+				<body kind="javascript">
+					<![CDATA[for (let i = 0; i < Ap_Par_ValueSources.Length; i ++){
+	Ap_Par_ValueSources[i].Path = Ap_Par_HMI_Path_Sources[i].ValueAsString + ".Value";
+}
+]]>
+				</body>
+			</do-on>
+		</object>
+	</object>
+</type>
+

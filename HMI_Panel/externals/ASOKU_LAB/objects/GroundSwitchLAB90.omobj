@@ -1,0 +1,576 @@
+<type access-modifier="public" name="GroundSwitchLAB90" display-name="GroundSwitchLAB90" uuid="ad6ec52d-f8f8-4746-89d0-bd3626cf67c7" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="50" ver="5"/>
+	<designed target="Height" value="75" ver="5"/>
+	<designed target="RoundingRadius" value="0" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="1" ver="5"/>
+	<designed target="PenWidth" value="3" ver="5"/>
+	<designed target="BrushColor" value="0x00ffffff" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<object access-modifier="private" name="ParDevPath" display-name="Путь параметра" uuid="2753a239-9ba8-4cb0-a843-f96e857efd9f" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ColorLine" display-name="Цвет линий" uuid="b263770e-3723-4b48-bb0e-a364cc6ed81c" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ColorDisconnectorOn" display-name="Цвет разъединителя On" uuid="3bbd0dbe-7854-4d6e-8477-ab88a4f5c0c2" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ColorDisconnectorOff" display-name="Цвет разъединителя Off" uuid="09e8ebf9-5f9c-49e4-9c09-5c0147ffb3d0" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="DisplayText" display-name="Выводимый текст" uuid="81ddbbe3-f108-41b8-9a6b-f2e4827d86df" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description="" cardinal="1"/>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseRightClick">
+		<body kind="om">
+			<![CDATA[if(ApParValue.Advised) OpenInfoTabView.Invoke();]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="DebugTool" display-name="DebugTool" uuid="39eb900c-05a6-4783-892b-b1ea9b33e879" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="OpenInfoTabView" display-name="команда открытия InfoTabView" uuid="96d820ed-65b7-47dd-98e8-e6b4f7983ea2" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-by-id="false" form-action="open-new">
+			<object access-modifier="private" uuid="918fc7b2-b61a-47aa-a59f-69d51b80bc88" base-type="InfoTabView" base-type-id="146efb0d-a148-4c91-94ff-f69c196a5132" ver="5">
+				<init target="ParameterType" ver="5" value="дискретный"/>
+				<init target="PanelType" ver="5" value="информация"/>
+				<init target="ParDevPath" ver="5" ref="here.ParDevPath"/>
+				<designed target="WindowPosition" value="2" ver="5"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="OpenTrendView" display-name="команда открытия TrendView" uuid="2cacc84d-91e7-45c5-9c7d-77d645fb5648" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-by-id="false" form-action="open-new">
+			<object access-modifier="private" uuid="54822527-1611-4b34-b4b6-15709c381f37" base-type="TrendView" base-type-id="635eeb20-53b6-4787-8ce7-142a64cd0e89" ver="5">
+				<init target="ParDevPath" ver="5" ref="here.ParDevPath"/>
+			</object>
+		</do-on>
+	</object>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="MouseClick">
+		<body kind="om">
+			<![CDATA[if(ApParValue.Advised)
+{
+  if (AsokuMain.WindowGroup_TrendView.WindowCount < 1) OpenTrendView.Invoke();
+  else 
+  {
+    AsokuMain.WindowGroup_TrendView.SendToAll("sendmessage", ParDevPath.Value);
+  }
+}
+]]>
+		</body>
+	</do-on>
+	<do-trace access-modifier="private" target="PenColor" ver="5">
+		<conditional-expr>
+			<condition>
+				<![CDATA[ApParStatusBytes.Value == AsokuConst.StatusBytes.Changed]]>
+			</condition>
+			<expr>
+				<![CDATA[AsokuColor.asokuCyan]]>
+			</expr>
+		</conditional-expr>
+		<default-expr>
+			<expr>
+				<![CDATA[AsokuColor.asokuTransparent]]>
+			</expr>
+		</default-expr>
+	</do-trace>
+	<do-trace access-modifier="private" target="Tooltip" ver="5">
+		<body>
+			<![CDATA["Наименование: " + ApParName.Value + "\nПояснение: " + ApParDescription.Value +  " " + DisplayText +"\nИсточник: "+ ApParComment.Value + "\nстатус: "+ String.ToString(ApParValue.Quality) + 
+"\nвремя: "+ 
+DateTime.ToString(ApParValue.TimeStamp)+
+"\nнеисправность: "+ String.ToString(ApParStatusBytes) + 
+"\nпределы: "+ String.ToString(ApParAlarmBytes)
+]]>
+		</body>
+	</do-trace>
+	<object access-modifier="private" name="FrameAlarm" display-name="FrameAlarm" uuid="d67dbc2f-e6d9-4260-abe7-9723b5cb5834" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="3" ver="5"/>
+		<designed target="Y" value="3" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="44" ver="5"/>
+		<designed target="Height" value="69" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffff0000" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="3" ver="5"/>
+		<designed target="BrushColor" value="0x00ffffff" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="PenColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParAlarmBytes.Value == AsokuConst.AlarmBytes.Warning.Value]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuYellow]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParAlarmBytes.Value == AsokuConst.AlarmBytes.Alarm.Value || ApParAlarmBytes.Value == AsokuConst.AlarmBytes.WarningAndAlarm.Value]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[AsokuColor.asokuTransparent]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="LineOn" display-name="LineOn" uuid="1cf39f7a-bb9e-4233-9a23-a91339be6681" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" cardinal="1">
+		<designed target="X" value="23.5" ver="5"/>
+		<designed target="Y" value="18.166666666666664" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="3" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffd50000" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffd50000" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParValue.Value == true]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParValue.Value == false]]>
+				</condition>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParStatusBytes.Value == AsokuConst.StatusBytes.Invalid.Value]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuBlack.Value]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[ColorDisconnectorOn]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="LineOff_R" display-name="LineOff_R" uuid="003514e3-b015-4bca-bd36-467ccdc859bd" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5">
+		<designed target="X" value="30.966666666666661" ver="5"/>
+		<designed target="Y" value="17.93333333333333" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="25" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="3" ver="5"/>
+		<designed target="Height" value="27" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffd50000" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffd50000" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParValue.Value == false]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParValue.Value == true]]>
+				</condition>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParStatusBytes.Value == AsokuConst.StatusBytes.Invalid.Value]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuBlack]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[ColorDisconnectorOff]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="5" event="MouseEnter">
+		<body kind="om">
+			<![CDATA[if(ApParValue.Advised == true)
+{
+   if(ApParStatusBytes.Value != 8) here.PenColor = AsokuColor.asokuGrey;
+   here.PenWidth = 5;
+}
+]]>
+		</body>
+	</do-on>
+	<do-on access-modifier="private" name="Handler_4" display-name="Handler_4" ver="5" event="MouseLeave">
+		<body kind="om">
+			<![CDATA[if(ApParStatusBytes.Value == 8) here.PenColor = AsokuColor.asokuCyan;
+else here.PenColor =  AsokuColor.asokuTransparent;
+here.PenWidth = 3;]]>
+		</body>
+	</do-on>
+	<designed target="Flip" value="0" ver="5"/>
+	<object access-modifier="private" name="LineGroundSm" display-name="LineGroundSm" uuid="01fb05e4-abf1-4121-9338-379cfe929216" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="20" ver="5"/>
+		<designed target="Y" value="64.666666666666657" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="10" ver="5"/>
+		<designed target="Height" value="3" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffffff00" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
+			<body>
+				<![CDATA[ColorLine]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="LineGroundMd" display-name="LineGroundMd" uuid="65ac14da-c822-4c16-ba6e-8b3447bd32a2" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="17" ver="5"/>
+		<designed target="Y" value="59.333333333333336" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="16" ver="5"/>
+		<designed target="Height" value="3" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffffff00" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
+			<body>
+				<![CDATA[ColorLine]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="LineGroundLg" display-name="LineGroundLg" uuid="22931a32-de37-4ac9-9f76-8129800b3cff" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="14" ver="5"/>
+		<designed target="Y" value="53.333333333333329" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="22" ver="5"/>
+		<designed target="Height" value="3" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffffff00" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
+			<body>
+				<![CDATA[ColorLine]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="LineFromGround" display-name="LineFromGround" uuid="d8973a75-c7dc-4fa6-a451-53b0ecf3d30d" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="23.5" ver="5"/>
+		<designed target="Y" value="43.5" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="3" ver="5"/>
+		<designed target="Height" value="23" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffffff00" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
+			<body>
+				<![CDATA[ColorLine]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="CrosslineFromGround" display-name="CrosslineFromGround" uuid="6c704d27-895b-400a-8610-acd6556cc7cb" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="20" ver="5"/>
+		<designed target="Y" value="42.666666666666664" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="10" ver="5"/>
+		<designed target="Height" value="3" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffffff00" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
+			<body>
+				<![CDATA[ColorLine]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParValue.Value == true]]>
+				</condition>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParValue.Value == false]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="LineToGo" display-name="LineToGo" uuid="866644b5-f353-42f4-8320-235d67ff40f8" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="23.5" ver="5"/>
+		<designed target="Y" value="6.8333333333333286" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="3" ver="5"/>
+		<designed target="Height" value="9" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffffff00" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
+			<body>
+				<![CDATA[ColorLine]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="CrosslineToGo" display-name="CrosslineToGo" uuid="79f45a8c-c8e2-42b0-9283-b699dfae40e8" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="20" ver="5"/>
+		<designed target="Y" value="15.666666666666668" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="10" ver="5"/>
+		<designed target="Height" value="3" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffffff00" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="5">
+			<body>
+				<![CDATA[ColorLine]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ApParValue" display-name="Значение параметра" uuid="8dc4503c-c39b-4d38-8103-ae636f957ac0" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnValueChanged">
+			<body kind="om">
+				<![CDATA[if(this.Value == true)DisplayText = ApParDisplayOn.Value;
+else DisplayText = ApParDisplayOff.Value;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath.Value + ".Value"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ApParName" display-name="Имя параметра" uuid="4d94225b-cf58-4d39-9d5a-83942f6a2710" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath.Value + ".Name"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ApParComment" display-name="Комментарий параметра" uuid="03094dc0-f9d1-449f-9fc6-2184635724ab" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath.Value + ".Comment"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ApParDescription" display-name="Описание параметра" uuid="43818a17-b229-42b5-a361-9a82348c5f27" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath.Value + ".Description"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ApParDisplayOn" display-name="Формат отображения параметра включенного состояния" uuid="727de757-d8a8-4484-a45f-ef5150ce1449" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath.Value + ".DisplayOn"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ApParDisplayOff" display-name="Формат отображения параметра выключенного состояния" uuid="dce040ca-8d05-4eb2-96ea-27bbe0ea95ea" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath.Value + ".DisplayOff"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ApParStatusBytes" display-name="Статус параметра" uuid="f2873fab-c61e-4961-a129-9ff08b66f263" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath.Value + ".StatusBytes"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ApParAlarmBytes" display-name="Аларм параметра" uuid="0ea313fe-7093-48be-a576-991d3ce4a052" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath.Value + ".AlarmBytes"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ParDevPathLab" display-name="Путь параметра плакатов" uuid="cbe7301a-4d0d-43c8-9fb9-9fc11bc76aee" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="idLabel" display-name="id передаваемого плаката" uuid="dc7b37ed-bdf7-42ad-bf97-7f6bd5555e08" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Initializer" display-name="Initializer" uuid="5c4616a2-ed0b-468c-aff5-d0eb44d18e7a" base-type="Initializer" base-type-id="6db89679-9299-4993-ad1a-0d086cd1c7d2" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Initialized">
+			<body kind="om">
+				<![CDATA[DragNDrop.AddAcceptedFormat("idLabel");
+DragNDrop.AddAcceptedFormat("Name");]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="RotationEx" display-name="RotationEx" uuid="7d6ee636-d132-4bb3-be5f-76312b3fbf37" base-type="notifying_double" base-type-id="3f905fb7-7738-4619-b402-5a91f136d4bd" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ValueChanged">
+			<body kind="om">
+				<![CDATA[this.Value = Rotation;
+LabelInputObject.Rotation = 360 - RotationEx.Value;
+if(RotationEx.Value == 90){
+	LabelInputObject.Y = here.Height/2;
+	LabelInputObject.X = -23;
+}
+if(RotationEx.Value == 180){
+	LabelInputObject.Y = here.Height - 33;
+	LabelInputObject.X = here.Width -13;
+}
+if(RotationEx.Value == 270){
+	LabelInputObject.Y = -here.Height;
+	LabelInputObject.X = here.Width * 1/4;
+}
+]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="LabelInputObject" display-name="LabelInputObject" uuid="e6689c7a-1069-479d-8e12-36595f8e04df" base-type="LabelInputObject" base-type-id="202b8325-4387-44f4-89d5-40afd5fca4b9" ver="5" description="" cardinal="1">
+		<designed target="X" value="-51" ver="5"/>
+		<designed target="Y" value="-13" ver="5"/>
+		<designed target="Width" value="50" ver="5"/>
+		<designed target="Height" value="75" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA[here.ParDevPathLab]]>
+			</body>
+		</do-trace>
+		<designed target="Rotation" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="DragNDrop" display-name="DragNDrop" uuid="0d7d7c6b-151a-4bd6-8623-cda9ab45807b" base-type="DragNDrop" base-type-id="c4ddb32f-3653-44c8-be57-3a595e10c2fb" ver="5" description="" cardinal="1">
+		<designed target="DragEnabled" value="true" ver="5"/>
+		<designed target="DropEnabled" value="true" ver="5"/>
+		<designed target="Image" value="" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnDrop">
+			<body kind="om">
+				<![CDATA[LabelInputObject.idLabel = data.GetData("idLabel");
+LabelInputObject.Name = data.GetData("Name");
+
+]]>
+			</body>
+		</do-on>
+	</object>
+</type>
+

@@ -1,0 +1,686 @@
+<type access-modifier="protected" name="TRF_AiTransfer" display-name="TRF_AiTransfer" uuid="2977d052-fcad-4ff2-b562-78c1b081701b" base-type="1001_TRF_BaseClass" base-type-id="013fd696-1697-40b4-89f4-7fe8236dd404" ver="5" description="">
+	<object access-modifier="private" name="DebugTool_1" display-name="DebugTool_1" uuid="0b984b63-5ea7-419a-b3bc-a0288a7325a5" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="5" description="" cardinal="1"/>
+	<do access-modifier="private" name="readPreviousTransferState" display-name="readPreviousTransferState" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="javascript">
+			<![CDATA[// Возвращает значения параметров,  записанного ранее трансфер-блока
+
+if(Ap_Par_transferState.Advised == true && Ap_Par_transferState.Value != "")
+{
+  var transferStates  = JSON.parse(Ap_Par_transferState.Value); 
+  var transferState  = transferStates[0];   
+     
+  ID = transferState.ID;   
+  NumRack =  transferState.NumRack;
+  NumModul = transferState.NumModul;
+  NumChan = transferState.NumChan;
+  StaticOff = transferState.StaticOff;
+  DisableCheckOOS =  transferState.DisableCheckOOS;
+  SimulationMode =  transferState.SimulationMode;
+  DelayStateOOSOff =  transferState.DelayStateOOSOff;
+  DelayStateOOSOn =  transferState.DelayStateOOSOn;
+  NoMes =  transferState.NoMes; 
+  ClientID =  transferState.ClientID;
+  SimulationValue =  transferState.SimulationValue; 
+  TransferStateTime = transferState.TransferStateTime;    
+    
+  PhysRangeMax =  transferState.PhysRangeMax;
+  PhysRangeMin =  transferState.PhysRangeMin; 
+  CH_value =  transferState.CH_delay;
+  CH_hys_off =  transferState.CH_hys_off;
+  CH_off =  transferState.CH_off;
+  CH_value =  transferState.CH_value;
+  CL_delay =  transferState.CL_delay;
+  CL_hys_off =  transferState.CL_hys_off;
+  CL_off =  transferState.CL_off;
+  CL_value =  transferState.CL_value;
+  ClientID =  transferState.ClientID;
+  ExternalMode =  transferState.ExternalMode;
+  Groups =  transferState.Groups;
+  
+  HH_delay =  transferState.HH_delay;
+  HH_hys_off =  transferState.HH_hys_off;
+  HH_off =  transferState.HH_off;  
+  HH_value =  transferState.HH_value;    
+  H_delay =  transferState.H_delay;
+  H_hys_off =  transferState.H_hys_off;
+  H_off =  transferState.H_off;
+  H_value =  transferState.H_value;
+  
+  LL_delay =  transferState.LL_delay;
+  LL_hys_off =  transferState.LL_hys_off;
+  LL_off =  transferState.LL_off;
+  LL_value =  transferState.LL_value;
+  L_delay =  transferState.L_delay;
+  L_hys_off =  transferState.L_hys_off;
+  L_off =  transferState.L_off;
+  L_value =  transferState.L_value;
+   
+  dAbs_jump =  transferState.dAbs_jump;
+  dAbs_t1 =  transferState.dAbs_t1;
+  dAbs_t120 =  transferState.dAbs_t120;
+  dAbs_t30 =  transferState.dAbs_t30;
+  dAbs_t5 =  transferState.dAbs_t5;
+  dAbs_t60 =  transferState.dAbs_t60;
+  dInt_t120 =  transferState.dInt_t120;
+  dInt_t30 =  transferState.dInt_t30;
+  dInt_t5 =  transferState.dInt_t5;
+  dInt_t60 =  transferState.dInt_t60;
+  SmoothTime =  transferState.SmoothTime;    
+    
+}
+]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="loadData" display-name="loadData" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="om">
+			<![CDATA[// Заполнение параметров значениями из контроллера  
+//DebugTool_1.Log("loadData");
+//DebugTool_1.Log(TRF_Base_Data[transferNumber].Ap_TRF_ID_Out.ValueAsString);
+//DebugTool_1.Log(TRF_Base_Data[transferNumber].Ap_TRF_ID_In.ValueAsString);
+ID = TRF_Base_Data[transferNumber].Ap_TRF_ID_In.Value;  
+
+NumRack = TRF_Base_Data[transferNumber].Ap_TRF_NumRack_In.Value;
+NumModul = TRF_Base_Data[transferNumber].Ap_TRF_NumModul_In.Value;
+NumChan = TRF_Base_Data[transferNumber].Ap_TRF_NumChan_In.Value;
+DisableCheckOOS = TRF_Base_Data[transferNumber].Ap_TRF_DisableCheckOOS_In.Value;
+SimulationValue = TRF_AiTransfer_Data[transferNumber].Ap_TRF_SimulationValue_In.Value;
+SimulationMode = TRF_Base_Data[transferNumber].Ap_TRF_SimulationMode_In.Value;
+
+StaticOff = TRF_Base_Data[transferNumber].Ap_TRF_StaticOff_In.Value;
+ClientID = TRF_Base_Data[transferNumber].Ap_TRF_ClientID_In.Value;
+NoMes = TRF_Base_Data[transferNumber].Ap_TRF_NoMes_In.Value;
+DelayStateOOSOff = TRF_Base_Data[transferNumber].Ap_TRF_DelayStateOOSOff_In.Value;
+DelayStateOOSOn = TRF_Base_Data[transferNumber].Ap_TRF_DelayStateOOSOn_In.Value;
+
+OOsType = TRF_AiTransfer_Data[transferNumber].Ap_TRF_OOsType_In.Value;
+ChClType = TRF_AiTransfer_Data[transferNumber].Ap_TRF_ChClType_In.Value;
+ExternalMode = TRF_AiTransfer_Data[transferNumber].Ap_TRF_ExternalMode_In.Value;
+Groups = TRF_AiTransfer_Data[transferNumber].Ap_TRF_Groups_In.Value;
+
+PhysRangeMax = TRF_AiTransfer_Data[transferNumber].Ap_TRF_PhysRangeMax_In.Value;
+PhysRangeMin = TRF_AiTransfer_Data[transferNumber].Ap_TRF_PhysRangeMin_In.Value;
+
+CH_value = TRF_AiTransfer_Data[transferNumber].Ap_TRF_CH_value_In.Value;
+CH_hys_off = TRF_AiTransfer_Data[transferNumber].Ap_TRF_CH_hys_off_In.Value;
+CH_off = TRF_AiTransfer_Data[transferNumber].Ap_TRF_CH_off_In.Value;
+CH_value = TRF_AiTransfer_Data[transferNumber].Ap_TRF_CH_value_In.Value;
+
+CL_delay = TRF_AiTransfer_Data[transferNumber].Ap_TRF_CL_delay_In.Value;
+CL_hys_off = TRF_AiTransfer_Data[transferNumber].Ap_TRF_CL_hys_off_In.Value;
+CL_off = TRF_AiTransfer_Data[transferNumber].Ap_TRF_CL_off_In.Value;
+CL_value = TRF_AiTransfer_Data[transferNumber].Ap_TRF_CL_value_In.Value;
+
+HH_delay = TRF_AiTransfer_Data[transferNumber].Ap_TRF_HH_delay_In.Value;
+HH_hys_off = TRF_AiTransfer_Data[transferNumber].Ap_TRF_HH_hys_off_In.Value;
+HH_off = TRF_AiTransfer_Data[transferNumber].Ap_TRF_HH_off_In.Value;
+HH_value = TRF_AiTransfer_Data[transferNumber].Ap_TRF_HH_value_In.Value;
+
+H_delay = TRF_AiTransfer_Data[transferNumber].Ap_TRF_H_delay_In.Value;
+H_hys_off = TRF_AiTransfer_Data[transferNumber].Ap_TRF_H_hys_off_In.Value;
+H_off = TRF_AiTransfer_Data[transferNumber].Ap_TRF_H_off_In.Value;
+H_value = TRF_AiTransfer_Data[transferNumber].Ap_TRF_H_value_In.Value;
+
+LL_delay = TRF_AiTransfer_Data[transferNumber].Ap_TRF_LL_delay_In.Value;
+LL_hys_off = TRF_AiTransfer_Data[transferNumber].Ap_TRF_LL_hys_off_In.Value;
+LL_off = TRF_AiTransfer_Data[transferNumber].Ap_TRF_LL_off_In.Value;
+LL_value = TRF_AiTransfer_Data[transferNumber].Ap_TRF_LL_value_In.Value;
+
+L_delay = TRF_AiTransfer_Data[transferNumber].Ap_TRF_L_delay_In.Value;
+L_hys_off = TRF_AiTransfer_Data[transferNumber].Ap_TRF_L_hys_off_In.Value;
+L_off = TRF_AiTransfer_Data[transferNumber].Ap_TRF_L_off_In.Value;
+L_value = TRF_AiTransfer_Data[transferNumber].Ap_TRF_L_value_In.Value;
+
+
+dAbs_jump = TRF_AiTransfer_Data[transferNumber].Ap_TRF_dAbs_jump_In.Value;
+dAbs_t1 = TRF_AiTransfer_Data[transferNumber].Ap_TRF_dAbs_t1_In.Value;
+dAbs_t120 = TRF_AiTransfer_Data[transferNumber].Ap_TRF_dAbs_t120_In.Value;
+dAbs_t30 = TRF_AiTransfer_Data[transferNumber].Ap_TRF_dAbs_t30_In.Value;
+dAbs_t5 = TRF_AiTransfer_Data[transferNumber].Ap_TRF_dAbs_t5_In.Value;
+dAbs_t60 = TRF_AiTransfer_Data[transferNumber].Ap_TRF_dAbs_t60_In.Value;
+dInt_t120 = TRF_AiTransfer_Data[transferNumber].Ap_TRF_dInt_t120_In.Value;
+dInt_t30 = TRF_AiTransfer_Data[transferNumber].Ap_TRF_dInt_t30_In.Value;
+dInt_t5 = TRF_AiTransfer_Data[transferNumber].Ap_TRF_dInt_t5_In.Value;
+dInt_t60 = TRF_AiTransfer_Data[transferNumber].Ap_TRF_dInt_t60_In.Value;
+SmoothTime = TRF_AiTransfer_Data[transferNumber].Ap_TRF_SmoothTime_In.Value;
+
+TransferStateTime = DateTime.Now();
+
+
+
+
+]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="saveTransferState" display-name="saveTransferState" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="javascript">
+			<![CDATA[// Сохраняет состояние трансфер-блока в элемент ".Status.transferState" точки данных сигнала
+if(Ap_Par_transferState.Advised == false) return;
+
+var transferData = [];
+transferData.push({ //добавляем поля трансфера
+'ID':ID,
+'NumRack':NumRack,
+'NumModul':NumModul,
+'NumChan':NumChan,
+'StaticOff':StaticOff,
+'DisableCheckOOS':DisableCheckOOS,
+'SimulationMode':SimulationMode,
+'DelayStateOOSOff':DelayStateOOSOff,
+'DelayStateOOSOn':DelayStateOOSOn,
+'NoMes':NoMes,
+'ClientID':ClientID,
+'SimulationValue':SimulationValue,
+'TransferStateTime':getCurrentTime(),
+
+'CH_CL_Type':ChClType, 
+'CH_delay':CH_value,
+'CH_hys_off':CH_hys_off,
+'CH_off':CH_off,
+'CH_value':CH_value,
+'CL_delay':CL_delay,
+'CL_hys_off':CL_hys_off,
+'CL_off':CL_off,
+'CL_value':CL_value,
+'ExternalMode':ExternalMode,
+'Groups':Groups,
+'HH_delay':HH_delay,
+'HH_hys_off':HH_hys_off,
+'HH_off':HH_off,
+'HH_value':HH_value,
+'H_delay':H_delay,
+'H_hys_off':H_hys_off,
+'H_off':H_off,
+'H_value':H_value,
+'LL_delay':LL_delay,
+'LL_hys_off':LL_hys_off,
+'LL_off':LL_off,
+'LL_value':LL_value,
+'L_delay':L_delay,
+'L_hys_off':L_hys_off,
+'L_off':L_off,
+'L_value':L_value,
+
+'OOSType':OOsType,
+'PhysRangeMax':PhysRangeMax,
+'PhysRangeMin':PhysRangeMin,
+'dAbs_jump':dAbs_jump,
+'dAbs_t1':dAbs_t1,
+'dAbs_t120':dAbs_t120,
+'dAbs_t30':dAbs_t30,
+'dAbs_t5':dAbs_t5,
+'dAbs_t60':dAbs_t60,
+'dInt_t120':dInt_t120,
+'dInt_t30':dInt_t30,
+'dInt_t5':dInt_t5,
+'dInt_t60':dInt_t60,
+'SmoothTime':SmoothTime});   
+
+
+                                        
+Ap_Par_transferState.Value = JSON.stringify(transferData);  //сохраняем строку параметров трансферов
+
+]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="writeData" display-name="writeData" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="om">
+			<![CDATA[// Запись данных в ТД трансфер-блока для отправки в контроллер
+//DebugTool_1.Log("writeData");
+
+if(_isReadOnlyMode)
+   return;
+
+ // посылка новых значений ЭТД трансфер-блока -> контроллер                                        
+ TRF_Base_Data[transferNumber].Ap_TRF_ID_Out.Value = ID ;
+ TRF_Base_Data[transferNumber].Ap_TRF_NumRack_Out.Value = NumRack ;
+ TRF_Base_Data[transferNumber].Ap_TRF_NumModul_Out.Value = NumModul ;
+ TRF_Base_Data[transferNumber].Ap_TRF_NumChan_Out.Value = NumChan ;
+ TRF_Base_Data[transferNumber].Ap_TRF_DisableCheckOOS_Out.Value = DisableCheckOOS ;
+ TRF_AiTransfer_Data[transferNumber].Ap_TRF_SimulationValue_Out.Value = SimulationValue ;
+ TRF_Base_Data[transferNumber].Ap_TRF_SimulationMode_Out.Value = SimulationMode ;
+ TRF_Base_Data[transferNumber].Ap_TRF_StaticOff_Out.Value = StaticOff ;
+ TRF_Base_Data[transferNumber].Ap_TRF_ClientID_Out.Value = ClientID ;
+ TRF_Base_Data[transferNumber].Ap_TRF_NoMes_Out.Value = NoMes ;
+ TRF_Base_Data[transferNumber].Ap_TRF_DelayStateOOSOff_Out.Value = DelayStateOOSOff ;
+ TRF_Base_Data[transferNumber].Ap_TRF_DelayStateOOSOn_Out.Value = DelayStateOOSOn ;
+
+ TRF_AiTransfer_Data[transferNumber].Ap_TRF_OOsType_Out.Value = OOsType ;
+ TRF_AiTransfer_Data[transferNumber].Ap_TRF_ChClType_Out.Value = ChClType ;
+ //! TRF_AiTransfer_Data[transferNumber].Ap_TRF_ExternalMode_Out.Value = ExternalMode ;
+ TRF_AiTransfer_Data[transferNumber].Ap_TRF_Groups_Out.Value = Groups ;
+
+ TRF_AiTransfer_Data[transferNumber].Ap_TRF_PhysRangeMax_Out.Value = PhysRangeMax ;
+ TRF_AiTransfer_Data[transferNumber].Ap_TRF_PhysRangeMin_Out.Value = PhysRangeMin ;
+ 
+ TRF_AiTransfer_Data[transferNumber].Ap_TRF_CH_value_Out.Value = CH_value ;
+ TRF_AiTransfer_Data[transferNumber].Ap_TRF_CH_hys_off_Out.Value = CH_hys_off ;
+ TRF_AiTransfer_Data[transferNumber].Ap_TRF_CH_off_Out.Value = CH_off ;
+ TRF_AiTransfer_Data[transferNumber].Ap_TRF_CH_value_Out.Value = CH_value ;
+ 
+ TRF_AiTransfer_Data[transferNumber].Ap_TRF_CL_delay_Out.Value = CL_delay ;
+ TRF_AiTransfer_Data[transferNumber].Ap_TRF_CL_hys_off_Out.Value = CL_hys_off ;
+ TRF_AiTransfer_Data[transferNumber].Ap_TRF_CL_off_Out.Value = CL_off ;
+ TRF_AiTransfer_Data[transferNumber].Ap_TRF_CL_value_Out.Value = CL_value ;
+
+ TRF_AiTransfer_Data[transferNumber].Ap_TRF_HH_delay_Out.Value = HH_delay ;
+ TRF_AiTransfer_Data[transferNumber].Ap_TRF_HH_hys_off_Out.Value = HH_hys_off ;
+ TRF_AiTransfer_Data[transferNumber].Ap_TRF_HH_off_Out.Value = HH_off ;
+ TRF_AiTransfer_Data[transferNumber].Ap_TRF_HH_value_Out.Value = HH_value ;
+ 
+ TRF_AiTransfer_Data[transferNumber].Ap_TRF_H_delay_Out.Value = H_delay ;
+ TRF_AiTransfer_Data[transferNumber].Ap_TRF_H_hys_off_Out.Value = H_hys_off ;
+ TRF_AiTransfer_Data[transferNumber].Ap_TRF_H_off_Out.Value = H_off ;
+ TRF_AiTransfer_Data[transferNumber].Ap_TRF_H_value_Out.Value = H_value ;
+  
+ TRF_AiTransfer_Data[transferNumber].Ap_TRF_LL_delay_Out.Value = LL_delay ;
+ TRF_AiTransfer_Data[transferNumber].Ap_TRF_LL_hys_off_Out.Value = LL_hys_off ;
+ TRF_AiTransfer_Data[transferNumber].Ap_TRF_LL_off_Out.Value = LL_off ;
+ TRF_AiTransfer_Data[transferNumber].Ap_TRF_LL_value_Out.Value = LL_value ;
+
+ TRF_AiTransfer_Data[transferNumber].Ap_TRF_L_delay_Out.Value = L_delay ;
+ TRF_AiTransfer_Data[transferNumber].Ap_TRF_L_hys_off_Out.Value = L_hys_off ;
+ TRF_AiTransfer_Data[transferNumber].Ap_TRF_L_off_Out.Value = L_off ;
+ TRF_AiTransfer_Data[transferNumber].Ap_TRF_L_value_Out.Value = L_value ;
+
+
+
+ TRF_AiTransfer_Data[transferNumber].Ap_TRF_dAbs_jump_Out.Value = dAbs_jump ;
+ TRF_AiTransfer_Data[transferNumber].Ap_TRF_dAbs_t1_Out.Value = dAbs_t1 ;
+ TRF_AiTransfer_Data[transferNumber].Ap_TRF_dAbs_t120_Out.Value = dAbs_t120 ;
+ TRF_AiTransfer_Data[transferNumber].Ap_TRF_dAbs_t30_Out.Value = dAbs_t30 ;
+ TRF_AiTransfer_Data[transferNumber].Ap_TRF_dAbs_t5_Out.Value = dAbs_t5 ;
+ TRF_AiTransfer_Data[transferNumber].Ap_TRF_dAbs_t60_Out.Value = dAbs_t60 ;
+ TRF_AiTransfer_Data[transferNumber].Ap_TRF_dInt_t120_Out.Value = dInt_t120 ;
+ TRF_AiTransfer_Data[transferNumber].Ap_TRF_dInt_t30_Out.Value = dInt_t30 ;
+ TRF_AiTransfer_Data[transferNumber].Ap_TRF_dInt_t5_Out.Value = dInt_t5 ;
+ TRF_AiTransfer_Data[transferNumber].Ap_TRF_dInt_t60_Out.Value = dInt_t60 ;
+ TRF_AiTransfer_Data[transferNumber].Ap_TRF_SmoothTime_Out.Value = SmoothTime ;
+
+
+
+Timer_SetDp.Active = true;  // посылка команды записи значений трансфер-блок -> контроллер
+
+
+
+
+
+]]>
+		</body>
+	</do>
+	<object access-modifier="private" name="TRF_AiTransfer_Data" display-name="TRF_AiTransfer_Data" uuid="3cf4f136-d071-4e44-832c-f9d30f3780c4" base-type="1001_TRF_AiTransfer_Data" base-type-id="39ed76d7-8db7-4950-8b72-545c3880602f" ver="5" description="" cardinal="5">
+		<do-trace access-modifier="private" target="transferDevPath" ver="5">
+			<body>
+				<![CDATA[here.transferDevPath +  String.ToString( this.Index +1)]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="TRF_Base_Data" display-name="TRF_Base_Data" uuid="9aa6ef19-5a1f-4d21-9599-7927886276e0" base-type="1001_TRF_Base_Data" base-type-id="e527c6b6-2448-4c97-a434-f9b2ab7e0b5a" ver="5" description="" cardinal="5">
+		<do-trace access-modifier="private" target="transferDevPath" ver="5">
+			<body>
+				<![CDATA[here.transferDevPath + String.ToString( this.Index +1)]]>
+			</body>
+		</do-trace>
+		<init target="_Action_setLQFreeTRF" ver="5" ref="here.Action_setLQFreeTRF"/>
+	</object>
+	<object access-modifier="private" name="ExternalMode" display-name="ExternalMode" uuid="d3805ca2-8fb9-4d12-8318-7688685799bd" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="SmoothingOn" display-name="SmoothingOn" uuid="13bb16aa-0463-4480-bd84-5da2d4c65ac7" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="SmoothTime" display-name="SmoothTime" uuid="e063e822-fdae-44bd-a6b1-7c4d2091ce39" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ChClType" display-name="ChClType" uuid="8ac18660-a913-4d0d-b1cf-5a5930c0ebe1" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="OOsType" display-name="OOsType" uuid="d847e931-cfce-4d67-9ffa-683af823288b" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="HH_off" display-name="HH_off" uuid="3debe072-5d5b-4202-88e4-784649305558" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="HH_value" display-name="HH_value" uuid="0a6177fd-8130-424d-8464-488bce011cf7" base-type="float" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="H_off" display-name="H_off" uuid="a24a3d87-39bd-4571-8b4c-37e1c17246f6" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="H_value" display-name="H_value" uuid="b39435f9-ee52-4d14-af12-5e265a671682" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="HH_delay" display-name="HH_delay" uuid="97089876-17b2-4f39-9a19-c54d3bb89025" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="HH_hys_off" display-name="HH_hys_off" uuid="5e305b7c-f5b4-44e4-beae-6002c177a582" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="H_delay" display-name="H_delay" uuid="88f73142-7624-4e42-b595-166cb56bf9f0" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="H_hys_off" display-name="H_hys_off" uuid="c6c12b27-48bd-4474-b248-2df419b8c050" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="L_off" display-name="L_off" uuid="42c09688-9d12-4b36-b069-2cc6bac32a61" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="L_value" display-name="L_value" uuid="8e4ee8bd-bbd6-499e-9aaa-d3a8a3795575" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="L_delay" display-name="L_delay" uuid="7b299237-ddcd-4a8e-946e-acc4c85b882d" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="L_hys_off" display-name="L_hys_off" uuid="d3381786-febf-4aef-b281-8cb0b6b73612" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="LL_off" display-name="LL_off" uuid="09ec1fa3-014a-49e0-b246-7fcc3d25dc31" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="LL_value" display-name="LL_value" uuid="2c20cd4e-0724-4fec-8325-d41b35e420fd" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="LL_delay" display-name="LL_delay" uuid="d460515e-4337-4af9-ba1d-c26c28cde95f" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="LL_hys_off" display-name="LL_hys_off" uuid="cc871275-6d0a-4887-9771-9410d6c9165a" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="CH_off" display-name="CH_off" uuid="61c12c51-ad16-4f37-9bfc-ea4d199c5d17" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="CH_value" display-name="CH_value" uuid="971dda52-7f5c-49c7-bcb9-0621211a3dcb" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="CH_delay" display-name="CH_delay" uuid="9afd46dd-b819-4fe4-b597-a2110c58f574" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="CH_hys_off" display-name="CH_hys_off" uuid="4ca7963d-b730-4760-b2d3-2bc55a93e4ca" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="CL_off" display-name="CL_off" uuid="c7b9fdce-c90c-4bfb-8d6d-ea9a16ce0e38" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="CL_value" display-name="CL_value" uuid="17c1fd97-655f-43a4-90a7-aa1843b560c5" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="CL_delay" display-name="CL_delay" uuid="200dd336-9192-4b38-a0eb-54017d5a65cd" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="CL_hys_off" display-name="CL_hys_off" uuid="ea507446-64db-48ec-bb9a-1f54ac087d0e" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="PhysRangeMin" display-name="PhysRangeMin" uuid="875f66b8-c0e9-491d-8f89-5d67ccb5489f" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="PhysRangeMax" display-name="PhysRangeMax" uuid="7d10ec7f-ce86-40a0-8e31-5c73e8f15aaf" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Groups" display-name="Groups" uuid="4daa2eeb-0a58-403f-a213-9d74e36003fd" base-type="uint4" base-type-id="a42274b8-724b-4f03-bcf9-dd8498c29f8e" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="dAbs_jump" display-name="dAbs_jump" uuid="7057bfc5-8468-4043-b0f0-b0e7882e292d" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="dAbs_t1" display-name="dAbs_t1" uuid="a3fe254e-b3bb-4320-a5e3-39c3dad47961" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="dAbs_t5" display-name="dAbs_t5" uuid="afd6000a-d454-4405-b111-5f355f499c57" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="dAbs_t30" display-name="dAbs_t30" uuid="e3693ea4-7e32-4bec-8e33-bac9e0fef5e9" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="dAbs_t60" display-name="dAbs_t60" uuid="18ecfb06-b30e-471c-b977-56384e3eb476" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="dAbs_t120" display-name="dAbs_t120" uuid="2747ab77-f6bb-4d0b-b108-750050bb3a0f" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="dInt_t5" display-name="dInt_t5" uuid="f5825c70-6431-4667-847d-99f0b419011a" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="dInt_t30" display-name="dInt_t30" uuid="2d597492-5e0a-4f1f-8029-932eb83f6cc9" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="dInt_t60" display-name="dInt_t60" uuid="70ddfca6-7b0b-4538-bbdc-bdcdc59e8288" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="dInt_t120" display-name="dInt_t120" uuid="4a3c1766-e82c-4be7-9196-1d9af3a7b048" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="TimeOutCounter" display-name="TimeOutCounter" uuid="9ab463a6-adb2-4ba8-93a1-aea87d681f72" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<do access-modifier="private" name="getTransferDpByConnection" display-name="getTransferDpByConnection" ver="5" type="string" type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d">
+		<body kind="om">
+			<![CDATA[//Функция, возвращающая номер свободного трансфер-блока
+transferNumber  = 0;
+
+while(transferNumber < TRF_AiTransfer_Data.Length)
+{ 
+  if( TRF_Base_Data[transferNumber].Ap_TRF_ID_In.Advised == true) 
+  {      
+    if(( TRF_Base_Data[transferNumber].Ap_TRF_ID_Out.Value == String.ToFloat( getParId(),0) ) || ( TRF_Base_Data[transferNumber].Ap_TRF_ID_Out.Value == 0))
+    {       
+      return transferDevPath.Value + "_" +  String.ToString(transferNumber+1);
+    }
+  }
+  transferNumber +=1;
+}
+
+return "";
+]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="refreshDP" display-name=" Запрос на обновление данных" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="om">
+			<![CDATA[// Запрос на обновление данных 
+//DebugTool_1.Log("refreshDP");
+TRF_Base_Data[transferNumber].Ap_TRF_ID_Out.Value = String.ToFloat(getParId(),0); //отправить в контроллер ID  
+TRF_Base_Data[transferNumber].Ap_TRF_RW_Out.Value = 1; //отправить в контроллер команду на чтение  
+TRF_Base_Data[transferNumber].Ap_TRF_ClientID_Out.Value = getClientId();]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="setDP" display-name="setDP" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="om">
+			<![CDATA[//функция записи значений трансфер блок -> контроллер
+//DebugTool_1.Log("setDP");
+// Запрос на запись данных 
+TRF_Base_Data[transferNumber].Ap_TRF_RW_Out.Value = 2; 
+TRF_Base_Data[transferNumber].Ap_TRF_ID_Out.Value = String.ToFloat( getParId(),0); //отправить в контроллер ID
+
+
+ ]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="setTransferClear" display-name="setTransferClear" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="om">
+			<![CDATA[//  Освобождение трансфер-блока при закрытии формы настройки трансфера
+
+if(transferNumber < TRF_AiTransfer_Data.Length)
+{      
+  TRF_Base_Data[transferNumber].Ap_TRF_RW_Out.Value = 0;
+  TRF_Base_Data[transferNumber].Ap_TRF_RW_In.Value = 0;
+  TRF_Base_Data[transferNumber].Ap_TRF_ID_Out.Value = 0;
+  TRF_Base_Data[transferNumber].Ap_TRF_ClientID_Out.Value = 0;
+  TRF_Base_Data[transferNumber].Ap_TRF_ID_In.Value = 0;
+  TRF_Base_Data[transferNumber].Ap_TRF_ClientID_In.Value = 0; 
+
+}
+
+
+  
+
+
+
+
+
+]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="readData" display-name="readData" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="om">
+			<![CDATA[// Управление чтением данных в ТД трансфер-блока из контроллера
+
+//DebugTool_1.Log("readData");
+ if(_isReadOnlyMode == true)//считываем сохраненные значения
+ {       
+   readPreviousTransferState(); //возвращает true если сохраненные параметры были считаны      
+ }   
+ else
+ {
+   refreshDP();  
+   Timer_LoadData.Active = true;                                                                                                                    
+ } 
+ 
+
+    
+    
+
+]]>
+		</body>
+	</do>
+	<object access-modifier="private" name="SimulationValue" display-name="SimulationValue" uuid="98f7dbe5-27c0-4e86-9ec6-c8a03678d72e" base-type="float" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Ap_Par_Value" display-name="Значение параметра" uuid="b836b89b-e0fc-4f14-bf1a-275436659359" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Value"/>
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_Name" display-name="Имя параметра " uuid="5d5db50d-8133-43fa-a506-acf7c54d1ce7" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+		<init target="Path" ver="5" value="Name"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_SP_HH_on" display-name="Ap_Par_SP_HH_on" uuid="d944a590-bde6-4c52-afb8-14781f007340" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="SP_HH.On"/>
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_SP_HH_value" display-name="Ap_Par_SP_HH_value" uuid="99ebc481-ccca-40da-aa48-6f9d7917f5ef" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="SP_HH.LimitValue"/>
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_SP_H_on" display-name="Ap_Par_SP_H_on" uuid="08733330-9f5c-49e7-ba9f-130e1e6bbd59" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="SP_H.On"/>
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_SP_H_value" display-name="Ap_Par_SP_H_value" uuid="3122935e-5040-4f42-8044-11744ff4ca53" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="SP_H.LimitValue"/>
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_SP_L_on" display-name="Ap_Par_SP_L_on" uuid="f80d575a-d5ff-4b02-8a52-fff4a8e35d99" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="SP_L.On"/>
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_SP_L_value" display-name="Ap_Par_SP_L_value" uuid="f4ba026d-c75b-4771-9108-10410fad82df" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="SP_L.LimitValue"/>
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_SP_LL_on" display-name="Ap_Par_SP_LL_on" uuid="e941ce47-264a-42a5-b3d9-d87d87116284" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="SP_LL.On"/>
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_SP_LL_value" display-name="Ap_Par_SP_LL_value" uuid="5f9e1d26-e914-4e01-b5ba-6f9f8e7b2164" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="SP_LL.LimitValue"/>
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_DelayLimits" display-name="Ap_Par_DelayLimits" uuid="d4797e4a-e76c-4894-b226-a73a4708bed7" base-type="ApItemUInt4" base-type-id="322ce770-6c7b-49bc-9cd6-a367ca5b4627" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="DelayLimits"/>
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_MinValue" display-name="Минимальное значение параметра" uuid="be1be833-5e1b-4a85-a43b-ae4056271f94" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+		<init target="Path" ver="5" value="MinValue"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_MaxValue" display-name="Максимальное значение параметра" uuid="3a034799-39e9-4c07-995c-2b96e7a7bb4b" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+		<init target="Path" ver="5" value="MaxValue"/>
+	</object>
+	<object access-modifier="private" name="Timer_LoadData" display-name="Timer_LoadData" uuid="c92a4d9c-e3e7-48ed-a1fa-0638b60d6901" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="5" description="" cardinal="1">
+		<designed target="Period" value="400" ver="5"/>
+		<designed target="Active" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnTimer">
+			<body kind="om">
+				<![CDATA[
+
+/*
+    Заполнение параметров значениями из контроллера  
+*/
+//DebugTool_1.Log("Timer_LoadData");
+//DebugTool_1.Log(TRF_Base_Data[transferNumber].Ap_TRF_ID_Out.ValueAsString);
+loadData();    
+saveTransferState();
+
+Timer_LoadData.Active = false;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Timer_SetDp" display-name="Timer_SetDp" uuid="a6e8d446-3fc0-4b88-a64f-0da71f24f3a7" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="5" description="" cardinal="1">
+		<designed target="Period" value="300" ver="5"/>
+		<designed target="Active" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnTimer">
+			<body kind="om">
+				<![CDATA[/*
+    Заполнение параметров значениями из контроллера  
+*/
+//DebugTool_1.Log("Timer_SetDp");
+setDP();
+Timer_SetDp.Active = false;]]>
+			</body>
+		</do-on>
+	</object>
+	<do access-modifier="private" name="isUpdateTime" display-name="isUpdateTime" ver="5" type="bool" type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8">
+		<body kind="om">
+			<![CDATA[//функция проверки актуальности времени уставки   
+ 
+if(DateTime.Now() - transferStateTime <= AsokuConst.TimeActualSettings) return false;
+ else return true;
+    ]]>
+		</body>
+		<param access-modifier="private" name="transferStateTime" display-name="" uuid="bc8f0e5c-f267-46ca-9f29-a766bb654add" base-type="uint8" base-type-id="c8ff7701-da6e-4d53-888a-81fa680ff561" ver="5"/>
+	</do>
+	<do access-modifier="private" name="getCurrentTime" display-name="getCurrentTime" ver="5" type="uint8" type-id="c8ff7701-da6e-4d53-888a-81fa680ff561">
+		<body kind="om">
+			<![CDATA[// функция получения текущего времени
+return DateTime.Now();]]>
+		</body>
+	</do>
+	<object access-modifier="private" name="Action_setLQFreeTRF" display-name="Action_setLQFreeTRF" uuid="fc7fea79-2b74-41f5-823c-2e758b582844" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked">
+			<body kind="om">
+				<![CDATA[//Функция отображения свободных трансферов
+if( TRF_Base_Data[0].Ap_TRF_ID_Out.Value == 0 || TRF_Base_Data[0].Ap_TRF_ID_Out.ValueAsString == "" ) LQ_TRF1.Color.Value =AsokuColor.asokuGreen;
+else LQ_TRF1.Color.Value =AsokuColor.asokuRed;
+
+if( TRF_Base_Data[1].Ap_TRF_ID_Out.Value == 0 || TRF_Base_Data[1].Ap_TRF_ID_Out.ValueAsString == "" ) LQ_TRF2.Color.Value =AsokuColor.asokuGreen;
+else LQ_TRF2.Color.Value =AsokuColor.asokuRed;
+
+if( TRF_Base_Data[2].Ap_TRF_ID_Out.Value == 0 || TRF_Base_Data[2].Ap_TRF_ID_Out.ValueAsString == "" ) LQ_TRF3.Color.Value =AsokuColor.asokuGreen;
+else LQ_TRF3.Color.Value =AsokuColor.asokuRed;
+
+if( TRF_Base_Data[3].Ap_TRF_ID_Out.Value == 0 || TRF_Base_Data[3].Ap_TRF_ID_Out.ValueAsString == "" ) LQ_TRF4.Color.Value =AsokuColor.asokuGreen;
+else LQ_TRF4.Color.Value =AsokuColor.asokuRed;
+
+if( TRF_Base_Data[4].Ap_TRF_ID_Out.Value == 0 || TRF_Base_Data[4].Ap_TRF_ID_Out.ValueAsString == "" ) LQ_TRF5.Color.Value =AsokuColor.asokuGreen;
+else LQ_TRF5.Color.Value =AsokuColor.asokuRed;]]>
+			</body>
+		</do-on>
+	</object>
+	<do access-modifier="private" name="loadDataSignal" display-name="loadDataSignal" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="om">
+			<![CDATA[//Функция записи из сигнала в трансфер
+HH_value = Ap_Par_SP_HH_value.Value;
+HH_off = (Ap_Par_SP_HH_on.Value == true)?(false):(true);
+
+H_value = Ap_Par_SP_H_value.Value;
+H_off = (Ap_Par_SP_H_on.Value == true)?(false):(true);
+
+LL_value = Ap_Par_SP_LL_value.Value;
+LL_off = (Ap_Par_SP_LL_on.Value == true)?(false):(true);
+
+L_value  = Ap_Par_SP_L_value.Value;
+L_off = (Ap_Par_SP_L_on.Value == true)?(false):(true);
+
+PhysRangeMin = Ap_Par_MinValue.Value;
+PhysRangeMax = Ap_Par_MaxValue.Value;
+]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="writeDataSignal" display-name="writeDataSignal" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="om">
+			<![CDATA[//Функция записи значений из трансфера в сигнал
+
+Ap_Par_SP_HH_value.Value = HH_value;
+Ap_Par_SP_HH_on.Value = (HH_off == true)?(false):(true);
+
+Ap_Par_SP_H_value.Value = H_value;
+Ap_Par_SP_H_on.Value = (H_off == true)?(false):(true);
+
+Ap_Par_SP_LL_value.Value = LL_value;
+Ap_Par_SP_LL_on.Value = (LL_off == true)?(false):(true);
+
+Ap_Par_SP_L_value.Value = L_value;
+Ap_Par_SP_L_on.Value = (L_off == true)?(false):(true);
+
+Ap_Par_MinValue.Value = PhysRangeMin;
+Ap_Par_MaxValue.Value = PhysRangeMax;
+
+
+
+
+]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="saveTransferStateSignal" display-name="saveTransferStateSignal" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="javascript">
+			<![CDATA[// Сохраняет значения сигнала в элемент ".Status.transferState" точки данных сигнала
+
+if(Ap_Par_transferState.Advised == false) return;
+
+var transferData = [];
+//добавляем поля трансфера
+transferData.push({
+'HH_off':HH_off,
+'HH_value':HH_value,
+'H_off':H_off,
+'H_value':H_value,
+'LL_off':LL_off,
+'LL_value':LL_value,
+'L_off':L_off,
+'L_value':L_value,
+'PhysRangeMax':PhysRangeMax,
+'PhysRangeMin':PhysRangeMin,
+'TransferStateTime':  getCurrentTime()});   
+                                        
+Ap_Par_transferState.Value = JSON.stringify(transferData);  //сохраняем строку параметров трансферов
+
+]]>
+		</body>
+	</do>
+	<object access-modifier="private" name="LQ_TRF1" display-name="LQ_TRF1" uuid="98f427b0-cdec-4fc1-bcb2-e726cc604675" base-type="LedQuadrateSimple" base-type-id="458a7e08-8b32-4c0e-92e1-513d25127bb2" base-const="true" base-ref="true" ver="5" description=""/>
+	<object access-modifier="private" name="LQ_TRF2" display-name="LQ_TRF2" uuid="4c1c5ddd-f11c-45b9-be2e-e2d28c2562ab" base-type="LedQuadrateSimple" base-type-id="458a7e08-8b32-4c0e-92e1-513d25127bb2" base-const="true" base-ref="true" ver="5" description=""/>
+	<object access-modifier="private" name="LQ_TRF3" display-name="LQ_TRF3" uuid="c2d75c77-f751-43a7-ba44-43bf69ea726f" base-type="LedQuadrateSimple" base-type-id="458a7e08-8b32-4c0e-92e1-513d25127bb2" base-const="true" base-ref="true" ver="5" description=""/>
+	<object access-modifier="private" name="LQ_TRF4" display-name="LQ_TRF4" uuid="f1f939b6-ef23-4255-a500-55883504fad5" base-type="LedQuadrateSimple" base-type-id="458a7e08-8b32-4c0e-92e1-513d25127bb2" base-const="true" base-ref="true" ver="5" description=""/>
+	<object access-modifier="private" name="LQ_TRF5" display-name="LQ_TRF5" uuid="4249064b-6bd4-4fa5-bc60-e52ba0e443c9" base-type="LedQuadrateSimple" base-type-id="458a7e08-8b32-4c0e-92e1-513d25127bb2" base-const="true" base-ref="true" ver="5" description=""/>
+	<do access-modifier="private" name="setTransferClearAll" display-name="setTransferClearAll" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="om">
+			<![CDATA[//  Освобождение всех трансфер-блоков
+
+for (i: int4 = 0; i < TRF_AiTransfer_Data.Length; i += 1)
+{
+  if(transferNumber < TRF_AiTransfer_Data.Length)
+  {      
+ 	 TRF_Base_Data[i].Ap_TRF_RW_Out.Value = 0;
+ 	 TRF_Base_Data[i].Ap_TRF_RW_In.Value = 0;
+  	 TRF_Base_Data[i].Ap_TRF_ID_Out.Value = 0;
+ 	 TRF_Base_Data[i].Ap_TRF_ClientID_Out.Value = 0;
+ 	 TRF_Base_Data[i].Ap_TRF_ID_In.Value = 0;
+ 	 TRF_Base_Data[i].Ap_TRF_ClientID_In.Value = 0; 
+  }
+}
+
+
+  
+
+
+
+
+
+]]>
+		</body>
+	</do>
+</type>
+

@@ -1,0 +1,605 @@
+<type access-modifier="public" name="InfoPanel" display-name="InfoPanel" uuid="4a2881ca-9a6e-4049-a5a8-dff86363b63c" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="616" ver="5"/>
+	<designed target="Height" value="70" ver="5"/>
+	<designed target="RoundingRadius" value="0" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xff646464" ver="5"/>
+	<designed target="BrushStyle" value="0" ver="5"/>
+	<object access-modifier="private" name="TextField_Timestamp" display-name="TextField_Timestamp" uuid="827c3f9a-8969-46ef-a1b3-69cb7964945b" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="424.60000000000002" ver="5"/>
+		<designed target="Y" value="0.19999999999999929" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="172" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="" ver="5"/>
+		<designed target="Font" value="Arial,11,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Timer" display-name="Timer" uuid="557e2296-0b39-47b7-a517-6b2a65f1774a" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="5" description="" cardinal="1">
+		<designed target="Period" value="1000" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnTimer">
+			<body kind="om">
+				<![CDATA[TextField_Timestamp.Text = DateTime.ToString(DateTime.ToLocal(Timer.Now));
+]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="TextField_User" display-name="TextField_User" uuid="f548f1ff-ad99-495c-ba92-12941b3a4b9f" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="308.14285714285711" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="117" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="Гость" ver="5"/>
+		<designed target="Font" value="Arial,12,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick">
+			<body kind="om">
+				<![CDATA[if(Global.OpenedLoginPanel == false){
+	Click_UserChange.Invoke();
+}]]>
+			</body>
+		</do-on>
+		<designed target="Flip" value="0" ver="5"/>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="MouseEnter">
+			<body kind="om">
+				<![CDATA[this.Scale = 1.2;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="5" event="MouseLeave">
+			<body kind="om">
+				<![CDATA[this.Scale = 1;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[AsokuUserRights.SecurityContext_UserRights.Connected]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuUserRights.SecurityContext_UserRights.CurrentUser]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="TextLabel_P" display-name="TextLabel_P" uuid="18357364-199f-4797-8d34-4cef7042047b" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="36" ver="5"/>
+		<designed target="Y" value="30" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="23" ver="5"/>
+		<designed target="Height" value="33" ver="5"/>
+		<designed target="Text" value="P" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="ValueField_P" display-name="ValueField_P" uuid="0a5d0c39-fcef-4bfd-bc95-62ea48daea3e" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="64.166666666666714" ver="5"/>
+		<designed target="Y" value="34" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits._Summary.P_summary"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<init target="ParameterType" ver="5" value="RAI"/>
+	</object>
+	<object access-modifier="private" name="TextLabel_Q" display-name="TextLabel_Q" uuid="f9946a4c-0eca-4ea3-9276-b82d30aa5feb" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="241" ver="5"/>
+		<designed target="Y" value="30" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="23" ver="5"/>
+		<designed target="Height" value="33" ver="5"/>
+		<designed target="Text" value="Q" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="ValueField_Q" display-name="ValueField_Q" uuid="82b730cd-955e-4583-aad3-155cbfee5d4c" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="271.83333333333297" ver="5"/>
+		<designed target="Y" value="34" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits._Summary.Q_summary"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<init target="ParameterType" ver="5" value="RAI"/>
+	</object>
+	<object access-modifier="private" name="TextLabel_N" display-name="TextLabel_N" uuid="c5ae243f-42c5-4054-b5d2-0db7683cf483" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="453" ver="5"/>
+		<designed target="Y" value="30" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="23" ver="5"/>
+		<designed target="Height" value="33" ver="5"/>
+		<designed target="Text" value="N" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Click_UserChange" display-name="Click_UserChange" uuid="78ff99e9-7e30-4964-a072-9a42e359dcff" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" base-const="true" base-ref="true" ver="5" description=""/>
+	<object access-modifier="private" name="DiscreteDpGAWorkStatus_4" display-name="DiscreteDpGAWorkStatus_4" uuid="325ec3d1-1d74-49d6-a1f7-93db00ff5def" base-type="EnumValue" base-type-id="0e0655fb-7150-4be8-9e96-9c6e2db56382" ver="5" description="" cardinal="1">
+		<designed target="X" value="116.93719971076459" ver="5"/>
+		<designed target="Y" value="-3.3888888888889355" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="234.28571428571445" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<init target="notifyingFontStyle" ver="5" value="Tahoma,14,-1,5,75,0,0,0,0,0,Полужирный"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Control.OPr_GA_mode_OP"/>
+		<do-trace access-modifier="private" target="TextColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 0]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuBlack]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 1]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuLightGrey]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 2]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuWhite]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 3]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuWhite]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 4]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuWhite]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 5]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuYellow]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 6]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuBlue]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 7]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 8]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 9]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuGreen]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 10]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuYellow]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 11]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuWhite]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 12]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuWhite]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 13]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuWhite]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 14]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuWhite]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 15]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 16]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 17]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuGreen]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 18]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuLightGrey]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 19]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuLightGrey]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 20]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuLightGrey]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 21]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuLightGrey]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 22]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuLightGrey]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 24]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuLightGrey]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[AsokuColor.asokuGrey]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="BlinkerColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 0]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuBlack]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 1]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuLightGrey]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 2]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuWhite]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 3]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuBlue]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 4]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 5]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuYellow]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 6]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuBlue]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 7]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 8]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 9]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuGreen]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 10]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuWhite]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 11]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuBlue]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 12]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 13]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 14]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuGreen]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 15]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuYellow]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 16]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuBlue]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 17]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 18]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 19]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 20]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 21]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 22]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 24]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[AsokuColor.asokuGrey]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<designed target="Scale" value="0.59999999999999998" ver="5"/>
+	</object>
+	<object access-modifier="private" name="ValueField_N" display-name="ValueField_N" uuid="ed972b3c-b4b1-4f5e-b7cc-4d67fca9aebc" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="483.16666666666697" ver="5"/>
+		<designed target="Y" value="34" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Regulator.OPr_Speed_sum_gov"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<init target="ParameterType" ver="5" value="RAI"/>
+	</object>
+	<object access-modifier="private" name="Close_MainPanel" display-name="Close_MainPanel" uuid="a93892bd-71d8-4e63-aa77-fc888939f2f0" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" base-const="true" base-ref="true" ver="5" description=""/>
+	<object access-modifier="private" name="TextField_Mode" display-name="TextField_Mode" uuid="f32010d0-8327-452a-a996-b1aa17a4e221" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="4" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="159" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="Режим работы ГА" ver="5"/>
+		<designed target="Font" value="Arial,11,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="36" ver="5"/>
+	</object>
+	<object access-modifier="private" name="CloseButton_1" display-name="CloseButton_1" uuid="42d68afd-a0fd-4b56-88bc-09985be7fc81" base-type="CloseButton" base-type-id="ecfb315b-91f8-4d99-97d9-dd614221b53a" ver="5" description="" cardinal="1">
+		<designed target="X" value="595.31428571428569" ver="5"/>
+		<designed target="Y" value="1.1142857142857157" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="20" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+	</object>
+</type>
+

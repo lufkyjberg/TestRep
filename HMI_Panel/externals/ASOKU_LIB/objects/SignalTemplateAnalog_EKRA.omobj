@@ -1,0 +1,37 @@
+<type access-modifier="public" name="SignalTemplateAnalog_EKRA" display-name="SignalTemplateAnalog_EKRA" uuid="80e3b23f-6801-45d7-96f1-688940bb89f5" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="250" ver="5"/>
+	<designed target="Height" value="100" ver="5"/>
+	<designed target="RoundingRadius" value="0" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="1" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="4278190080" ver="5"/>
+	<designed target="BrushStyle" value="0" ver="5"/>
+	<object access-modifier="private" name="AnalogDpValue_1" display-name="AnalogDpValue_1" uuid="377bb6b7-7ca4-4392-81e7-af8314563951" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="125" ver="5"/>
+		<designed target="Y" value="30" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Scale" value="0.80000000000000004" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextSignalDescription_1" display-name="TextSignalDescription_1" uuid="bb47a4df-fcd7-4923-b9c4-7f464c5cc868" base-type="TextSignalDescription" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+		<designed target="X" value="15" ver="5"/>
+		<designed target="Y" value="34" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="140" ver="5"/>
+		<designed target="Height" value="50" ver="5"/>
+		<designed target="Font" value="Arial,11,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+</type>
+

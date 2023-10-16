@@ -1,0 +1,819 @@
+<type access-modifier="public" name="TRF_InfoViewSettingDiscrete" display-name="TRF_InfoViewSettingDiscrete" uuid="0a1a7fff-bde3-46ee-a0a8-d63506a0babd" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="500" ver="5"/>
+	<designed target="Height" value="360" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xff646464" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="500" ver="5"/>
+	<designed target="WindowHeight" value="360" ver="5"/>
+	<designed target="WindowCaption" value="MainForm" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="2" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="0" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="3eb68b2d-9b71-4503-bb0d-e7f6e1fd741c" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="12" ver="5"/>
+		<designed target="Y" value="12" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="270" ver="5"/>
+		<designed target="Height" value="105" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffffffff" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Checkbox_SimOn" display-name="Checkbox_SimOn" uuid="dbb15b06-c46d-40c4-b727-78924eb48c8a" base-type="CheckboxPropertiesDialogs_1" base-type-id="879df632-3eea-4531-a167-fec217981267" ver="5" description="" cardinal="1">
+		<designed target="X" value="21" ver="5"/>
+		<designed target="Y" value="23" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="Имитация" ver="5"/>
+		<do-trace access-modifier="private" target="Enabled" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[(AsokuUserRights.ChangeTransferValue.Value == true)]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="State" ver="5">
+			<body>
+				<![CDATA[Ap_Par_SimOn.Value]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="StateChanged">
+			<body kind="om">
+				<![CDATA[if(this.State != Ap_Par_SimOn.Value) this.FontColor =AsokuColor.asokuSky.Value;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="7e4d9d7b-e0a9-4fd5-b84d-d4098a83db71" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+		<designed target="X" value="21" ver="5"/>
+		<designed target="Y" value="51" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="70" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="Значение" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_2" display-name="Text_2" uuid="66546073-c890-4ca5-9f4e-8390c30a21a9" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+		<designed target="X" value="21" ver="5"/>
+		<designed target="Y" value="81" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="70" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="Качество" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextEdit_Value" display-name="TextEdit_Value" uuid="1a1a9a8b-5d3f-443b-895a-82cc184eb855" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5" description="" cardinal="1">
+		<designed target="X" value="200" ver="5"/>
+		<designed target="Y" value="48" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="70" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="" ver="5"/>
+		<designed target="Font" value="Tahoma,8,-1,5,75,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="0xff000000" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="HideInput" value="false" ver="5"/>
+		<designed target="PlaceholderText" value="" ver="5"/>
+		<designed target="ReadOnly" value="false" ver="5"/>
+		<do-trace access-modifier="private" target="ReadOnly" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[(AsokuUserRights.ChangeTransferValue.Value == true)&&(Checkbox_SimOn.State == true)]]>
+				</condition>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="EditFinished">
+			<body kind="om">
+				<![CDATA[this.FontColor =AsokuColor.asokuSky;
+Button_Acc.FontColor =AsokuColor.asokuSky;]]>
+			</body>
+		</do-on>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextEdit_SimState" display-name="TextEdit_SimState" uuid="0d9c1643-34b2-4a73-aa2e-c4b82990e993" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5" description="" cardinal="1">
+		<designed target="X" value="200" ver="5"/>
+		<designed target="Y" value="79" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="70" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="" ver="5"/>
+		<designed target="Font" value="Tahoma,8,-1,5,75,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="0xff000000" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="HideInput" value="false" ver="5"/>
+		<designed target="PlaceholderText" value="" ver="5"/>
+		<designed target="ReadOnly" value="false" ver="5"/>
+		<do-trace access-modifier="private" target="ReadOnly" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[(AsokuUserRights.ChangeTransferValue.Value == true)&& (Checkbox_SimOn.State == true)]]>
+				</condition>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="EditFinished">
+			<body kind="om">
+				<![CDATA[this.FontColor =AsokuColor.asokuSky;
+Button_Acc.FontColor =AsokuColor.asokuSky;]]>
+			</body>
+		</do-on>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_2" display-name="Rectangle_2" uuid="9fc2192e-79b5-4890-9547-af0f8871230a" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="11" ver="5"/>
+		<designed target="Y" value="130" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="270" ver="5"/>
+		<designed target="Height" value="107" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_3" display-name="Text_3" uuid="d8d480a7-886f-48fb-95e8-1f9684a72793" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+		<designed target="X" value="23" ver="5"/>
+		<designed target="Y" value="139.33333333333331" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="70" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="Задержка" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextEdit_DelayLimits" display-name="TextEdit_DelayLimits" uuid="5e32fb9b-bd92-4127-bd7d-0452749c9af2" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5" description="" cardinal="1">
+		<designed target="X" value="199" ver="5"/>
+		<designed target="Y" value="139.33333333333331" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="70" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="" ver="5"/>
+		<designed target="Font" value="Tahoma,8,-1,5,75,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="0xff000000" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="HideInput" value="false" ver="5"/>
+		<designed target="PlaceholderText" value="" ver="5"/>
+		<designed target="ReadOnly" value="false" ver="5"/>
+		<do-trace access-modifier="private" target="ReadOnly" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[(AsokuUserRights.ChangeTransferValue.Value == true)]]>
+				</condition>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<body>
+				<![CDATA[Ap_Par_DelayLimits.ValueAsString]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="EditFinished">
+			<body kind="om">
+				<![CDATA[this.FontColor =AsokuColor.asokuSky;
+Button_Acc.FontColor =AsokuColor.asokuSky;]]>
+			</body>
+		</do-on>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="ParDevPath" display-name="Путь параметра" uuid="6d28f836-467d-4e93-8b20-00aaba644d8b" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="TransferType" display-name="Тип трансфера" uuid="a8721f5d-b4b1-4e53-b389-3dad9218762e" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="TransferDevPath" display-name="TransferDevPath" uuid="4d1cddf5-cc7a-48f1-8222-1de60db9a827" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Ap_Source_Par" display-name="Источник параметра" uuid="1883777b-d1b3-40f8-a6cc-d002ea2720c3" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+		<designed target="Location" value="" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="Path" value="" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath.Value]]>
+			</body>
+		</do-trace>
+		<init target="ParentSource" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_Value" display-name="Ap_Par_Value" uuid="691474eb-7a35-49b7-9feb-4be571e4758b" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Value"/>
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+	</object>
+	<do access-modifier="private" name="RefreshSettings" display-name="Функция сброса уставок" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="om">
+			<![CDATA[//Функция считывания уставок
+Checkbox_SimOn.State = (Ap_Par_StatusBytes==8);
+TextEdit_Value.Text = String.ToString(TypeConvert.ToUint1(Ap_Par_Value.Value));
+TextEdit_SimState.Text = String.ToString(Ap_Par_Value.Quality);
+TextEdit_DelayLimits.Text = Ap_Par_DelayLimits.ValueAsString;
+TextEdit_SuppressionTimeLimit.Text = Ap_Par_SuppressionTimeLimit.ValueAsString;
+
+Checkbox_SP_Alarm.State = Ap_Par_ST_AlarmOn.Value;
+Checkbox_SP_Warning.State = Ap_Par_ST_WarningOn.Value;
+Checkbox_SP_Inverted.State = Ap_Par_ST_InvertedOn.Value;
+]]>
+		</body>
+	</do>
+	<object access-modifier="private" name="Ap_Par_StatusBytes" display-name="Ap_Par_StatusBytes" uuid="beed9a88-7680-4cfd-af09-804db0dcfa4b" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="StatusBytes"/>
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_SimOn" display-name="Ap_Par_SimOn" uuid="5fbac09c-3e77-45ce-a26a-58ef967af25c" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Simulation.On"/>
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_SimValue" display-name="Ap_Par_SimValue" uuid="15d27fd5-16f5-4d9a-af25-1f0df44b70a7" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Simulation.Value"/>
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_SimStatus" display-name="Ap_Par_SimStatus" uuid="c49ece1c-e097-40b6-ba16-f3db67472dad" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Simulation.Status"/>
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_ST_InvertedOn" display-name="Ap_Par_ST_InvertedOn" uuid="460827ae-71c5-4c62-aef2-5493781bbf9b" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="SignalType.Inverted"/>
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_ST_AlarmOn" display-name="Ap_Par_ST_AlarmOn" uuid="e971090f-3fef-4a01-bf5b-98ad33f52265" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="SignalType.Alarm"/>
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_ST_WarningOn" display-name="Ap_Par_ST_WarningOn" uuid="9425c7cb-e397-43c4-9bf7-3b69b268b527" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="SignalType.Warning"/>
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_DelayLimits" display-name="Ap_Par_DelayLimits" uuid="09cd42ae-76e7-40d1-8a52-f688f878968c" base-type="ApItemUInt4" base-type-id="322ce770-6c7b-49bc-9cd6-a367ca5b4627" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="DelayLimits"/>
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+	</object>
+	<object access-modifier="private" name="Checkbox_SP_Alarm" display-name="Checkbox_SP_Alarm" uuid="289caafa-b974-4c08-a90b-925d0550db24" base-type="CheckboxPropertiesDialogs_1" base-type-id="879df632-3eea-4531-a167-fec217981267" ver="5" description="" cardinal="1">
+		<designed target="X" value="20" ver="5"/>
+		<designed target="Y" value="166.33333333333331" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="145" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="Аварийный" ver="5"/>
+		<do-trace access-modifier="private" target="Enabled" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[(AsokuUserRights.ChangeTransferValue.Value == true)]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="State" ver="5">
+			<body>
+				<![CDATA[Ap_Par_ST_AlarmOn.Value]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="StateChanged">
+			<body kind="om">
+				<![CDATA[if(this.State != Ap_Par_ST_AlarmOn.Value) this.FontColor =AsokuColor.asokuSky.Value;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Checkbox_SP_Warning" display-name="Checkbox_SP_Warning" uuid="7ac8dff3-1fb6-4d3e-897c-0a0df4c1876d" base-type="CheckboxPropertiesDialogs_1" base-type-id="879df632-3eea-4531-a167-fec217981267" ver="5" description="" cardinal="1">
+		<designed target="X" value="20" ver="5"/>
+		<designed target="Y" value="196.33333333333331" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="173" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="Предупредительный" ver="5"/>
+		<do-trace access-modifier="private" target="Enabled" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[(AsokuUserRights.ChangeTransferValue.Value == true)]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="State" ver="5">
+			<body>
+				<![CDATA[Ap_Par_ST_WarningOn.Value]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="StateChanged">
+			<body kind="om">
+				<![CDATA[if(this.State != Ap_Par_ST_WarningOn.Value) this.FontColor =AsokuColor.asokuSky.Value;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Rectangle_3" display-name="Rectangle_3" uuid="ebbcfbe1-7079-411a-a038-e3a7a35d3f3a" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="11" ver="5"/>
+		<designed target="Y" value="250" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="270" ver="5"/>
+		<designed target="Height" value="74" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Checkbox_SP_Inverted" display-name="Checkbox_SP_Inverted" uuid="d6d51dd8-3482-42c6-ac01-2cb5f0280c03" base-type="CheckboxPropertiesDialogs_1" base-type-id="879df632-3eea-4531-a167-fec217981267" ver="5" description="" cardinal="1">
+		<designed target="X" value="20.333333333333314" ver="5"/>
+		<designed target="Y" value="262" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="173" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="Инвертированный" ver="5"/>
+		<do-trace access-modifier="private" target="Enabled" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[(AsokuUserRights.ChangeTransferValue.Value == true)]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="State" ver="5">
+			<body>
+				<![CDATA[Ap_Par_ST_InvertedOn.Value]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="StateChanged">
+			<body kind="om">
+				<![CDATA[if(this.State != Ap_Par_ST_InvertedOn.Value) this.FontColor =AsokuColor.asokuSky.Value;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Text_4" display-name="Text_4" uuid="5f65d2d2-e929-458c-a639-5a8c0bf7b22b" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+		<designed target="X" value="20.333333333333314" ver="5"/>
+		<designed target="Y" value="292" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="86" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="Подавление" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextEdit_SuppressionTimeLimit" display-name="TextEdit_SuppressionTimeLimit" uuid="fd75204d-e655-49d5-8fa7-5bc96eec9435" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5" description="" cardinal="1">
+		<designed target="X" value="199.33333333333331" ver="5"/>
+		<designed target="Y" value="290" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="70" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="" ver="5"/>
+		<designed target="Font" value="Tahoma,8,-1,5,75,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="0xff000000" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<designed target="HideInput" value="false" ver="5"/>
+		<designed target="PlaceholderText" value="" ver="5"/>
+		<designed target="ReadOnly" value="false" ver="5"/>
+		<do-trace access-modifier="private" target="ReadOnly" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[(AsokuUserRights.ChangeTransferValue.Value == true)]]>
+				</condition>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<body>
+				<![CDATA[Ap_Par_SuppressionTimeLimit.ValueAsString]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="EditFinished">
+			<body kind="om">
+				<![CDATA[this.FontColor =AsokuColor.asokuSky;
+Button_Acc.FontColor =AsokuColor.asokuSky;]]>
+			</body>
+		</do-on>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_SuppressionTimeLimit" display-name="Ap_Par_SuppressionTimeLimit" uuid="8bde5476-2265-4032-821b-8cae55884fcc" base-type="ApItemUInt4" base-type-id="322ce770-6c7b-49bc-9cd6-a367ca5b4627" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.Ap_Source_Par"/>
+		<init target="Path" ver="5" value="SupressionTimeLimit"/>
+	</object>
+	<object access-modifier="private" name="Open_UD_AppSettings" display-name="Open_UD_AppSettings" uuid="ce03d40f-5608-4136-bfa8-5966e588eaa7" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-dialog" form-by-id="false">
+			<object access-modifier="private" uuid="f84e73be-1d33-4fac-a3a3-21d6271325f3" base-type="UserDialog_1" base-type-id="f235d2a1-8a61-4d94-b05f-36b0bcfa4a99" ver="5">
+				<init target="Header" ver="5" value="Окно подтверждения действий"/>
+				<init target="YesAction" ver="5" ref="here.YesAction_UD_AppSettings"/>
+				<init target="Icon" ver="5" value="1"/>
+				<init target="Buttons" ver="5" value="2"/>
+				<init target="Message" ver="5" value="Вы действительно хотите применить настройки для сигнала?"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="YesAction_UD_AppSettings" display-name="YesAction_UD_AppSettings" uuid="62393631-6542-45a3-9ac7-f5f0bc6423c0" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked">
+			<body kind="om">
+				<![CDATA[// Применение измененных значений                                                       
+if(Checkbox_SimOn.FontColor ==AsokuColor.asokuSky) Ap_Par_SimOn.Value = Checkbox_SimOn.State;
+if(TextEdit_Value.FontColor ==AsokuColor.asokuSky) Ap_Par_SimValue.Value = String.ToUint1(TextEdit_Value.Text,0) > 0;
+if(TextEdit_SimState.FontColor ==AsokuColor.asokuSky) Ap_Par_SimStatus.Value = String.ToUint2(TextEdit_SimState.Text,0);
+if(TextEdit_DelayLimits.FontColor ==AsokuColor.asokuSky) Ap_Par_DelayLimits.Value = String.ToUint4(TextEdit_DelayLimits.Text,1000);
+if(TextEdit_SuppressionTimeLimit.FontColor ==AsokuColor.asokuSky) Ap_Par_SuppressionTimeLimit.Value = String.ToUint4(TextEdit_SuppressionTimeLimit.Text,1000);
+
+if(Checkbox_SimOn.FontColor ==AsokuColor.asokuSky)       Ap_Par_SimOn.Value = Checkbox_SimOn.State;
+if(Checkbox_SP_Alarm.FontColor ==AsokuColor.asokuSky)    Ap_Par_ST_AlarmOn.Value = Checkbox_SP_Alarm.State;
+if(Checkbox_SP_Warning.FontColor ==AsokuColor.asokuSky)  Ap_Par_ST_WarningOn.Value = Checkbox_SP_Warning.State;
+if(Checkbox_SP_Inverted.FontColor ==AsokuColor.asokuSky) Ap_Par_ST_InvertedOn.Value = Checkbox_SP_Inverted.State;
+
+ if((TextEdit_Value.FontColor ==AsokuColor.asokuSky)  ||(TextEdit_SimState.FontColor ==AsokuColor.asokuSky) || (TextEdit_DelayLimits.FontColor ==AsokuColor.asokuSky) || (TextEdit_SuppressionTimeLimit.FontColor ==AsokuColor.asokuSky)
+||(Checkbox_SimOn.FontColor ==AsokuColor.asokuSky) || (Checkbox_SP_Alarm.FontColor ==AsokuColor.asokuSky) ||(Checkbox_SP_Warning.FontColor ==AsokuColor.asokuSky) || (Checkbox_SP_Inverted.FontColor ==AsokuColor.asokuSky)) 
+{
+  TakeMessage(); // выдача сообщения об изменениях пользователя //
+  SetColorField();                            // установка первоначального цвета шрифта у полей
+  Button_Acc.FontColor =AsokuColor.asokuWhite;  // сброс цвета символов у кнопки Применить
+} ]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Open_UD_PermissionFault" display-name="Open_UD_PermissionFault" uuid="cae7176b-fb92-448d-8ec3-fa225f6944f2" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-dialog" form-by-id="false">
+			<object access-modifier="private" uuid="39d51dd0-adb2-418f-a68c-2abf0ab51f4a" base-type="UserDialog_1" base-type-id="f235d2a1-8a61-4d94-b05f-36b0bcfa4a99" ver="5">
+				<init target="Message" ver="5" value="Для выполнения указанного действия Вам не хватает полномочий.
+Для получения дополнительных сведений обратитесь к Администратору"/>
+				<init target="Icon" ver="5" value="0"/>
+				<init target="Buttons" ver="5" value="0"/>
+				<init target="Header" ver="5" value="Недостаточно полномочий"/>
+			</object>
+		</do-on>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+	</object>
+	<do access-modifier="private" name="SetColorField" display-name="SetColorField" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="om">
+			<![CDATA[
+TextEdit_SimState.FontColor    =AsokuColor.asokuBlack;
+TextEdit_Value.FontColor       =AsokuColor.asokuBlack;
+TextEdit_DelayLimits.FontColor    =AsokuColor.asokuBlack;
+TextEdit_SuppressionTimeLimit.FontColor    =AsokuColor.asokuBlack;
+
+
+Checkbox_SimOn.FontColor =AsokuColor.asokuWhite;
+Checkbox_SP_Alarm.FontColor =AsokuColor.asokuWhite;
+Checkbox_SP_Warning.FontColor =AsokuColor.asokuWhite;
+Checkbox_SP_Inverted.FontColor =AsokuColor.asokuWhite;]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="TakeMessage" display-name="  Функция, которая выдает сообщение об изменениях пользователя" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="om">
+			<![CDATA[//выдача сообщений об изменениях пользователя
+
+if(TextEdit_Value.FontColor ==AsokuColor.asokuSky) AsokuMain.CreateUserMessage("значение имитации у сигнала " +  Ap_Source_Par.Path);
+
+if(TextEdit_SimState.FontColor ==AsokuColor.asokuSky) AsokuMain.CreateUserMessage("качество у сигнала " +  Ap_Source_Par.Path);
+
+if(TextEdit_DelayLimits.FontColor ==AsokuColor.asokuSky) AsokuMain.CreateUserMessage("задержки у сигнала " +  Ap_Source_Par.Path);
+
+if(TextEdit_SuppressionTimeLimit.FontColor ==AsokuColor.asokuSky) AsokuMain.CreateUserMessage("лимита времени подавления у сигнала " +  Ap_Source_Par.Path);
+
+
+if(Checkbox_SimOn.FontColor ==AsokuColor.asokuSky) AsokuMain.CreateUserMessage("флага имитации у сигнала " +  Ap_Source_Par.Path);
+
+if(Checkbox_SP_Alarm.FontColor ==AsokuColor.asokuSky) AsokuMain.CreateUserMessage("флага аварийной сигнализации у сигнала " +  Ap_Source_Par.Path);
+
+if(Checkbox_SP_Warning.FontColor ==AsokuColor.asokuSky) AsokuMain.CreateUserMessage("флага предупредительной сигнализации у сигнала " +  Ap_Source_Par.Path);
+
+if(Checkbox_SP_Inverted.FontColor ==AsokuColor.asokuSky) AsokuMain.CreateUserMessage("флага инвертированного значения у сигнала " +  Ap_Source_Par.Path);
+
+]]>
+		</body>
+	</do>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Opened">
+		<body kind="om">
+			<![CDATA[TextEdit_Value.Text = String.ToString(TypeConvert.ToUint1(Ap_Par_Value.Value));
+TextEdit_SimState.Text = String.ToString(Ap_Par_Value.Quality);]]>
+		</body>
+	</do-on>
+	<designed target="Flip" value="0" ver="5"/>
+	<object access-modifier="private" name="Rectangle_4" display-name="Rectangle_4" uuid="e72657f0-e692-446d-b3d6-2d4d8aeebd7a" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="290" ver="5"/>
+		<designed target="Y" value="12" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="196" ver="5"/>
+		<designed target="Height" value="124" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffffffff" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<object access-modifier="private" name="Image_NeedUpdate" display-name="Image_NeedUpdate" uuid="365a2edd-b4ee-4340-a37b-3079b24d353a" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+			<designed target="X" value="78" ver="5"/>
+			<designed target="Y" value="82" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="35" ver="5"/>
+			<designed target="Height" value="29" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="0" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="ImageFile" value="pictures/alert2.png" ver="5"/>
+			<designed target="Active" value="true" ver="5"/>
+			<designed target="CurrentFrameNumber" value="0" ver="5"/>
+			<designed target="Speed" value="1" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_4" display-name="Text_4" uuid="2ca56865-67ee-48f0-9963-ab1a061e0735" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="10" ver="5"/>
+			<designed target="Y" value="10" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="70" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="ID сигнала" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextEdit_UpdateTime" display-name="TextEdit_UpdateTime" uuid="510fa4f7-ee2a-44f5-a173-0007cb2f95bc" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5" description="" cardinal="1">
+			<designed target="X" value="10" ver="5"/>
+			<designed target="Y" value="57" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="173" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="" ver="5"/>
+			<designed target="Font" value="Tahoma,8,-1,5,75,0,0,0,0,0" ver="5"/>
+			<designed target="FontColor" value="0xff000000" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+			<designed target="HideInput" value="false" ver="5"/>
+			<designed target="PlaceholderText" value="" ver="5"/>
+			<designed target="ReadOnly" value="true" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextEdit_ID" display-name="TextEdit_ID" uuid="33507bfa-a38a-4fa3-94a3-1cae782c99d2" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5" description="" cardinal="1">
+			<designed target="X" value="114" ver="5"/>
+			<designed target="Y" value="10" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="70" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="" ver="5"/>
+			<designed target="Font" value="Tahoma,8,-1,5,75,0,0,0,0,0" ver="5"/>
+			<designed target="FontColor" value="0xff000000" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+			<designed target="HideInput" value="false" ver="5"/>
+			<designed target="PlaceholderText" value="" ver="5"/>
+			<designed target="ReadOnly" value="true" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="EditFinished">
+				<body kind="om">
+					<![CDATA[this.FontColor =AsokuColor.asokuSky;
+Button_Acc.FontColor =AsokuColor.asokuSky;]]>
+				</body>
+			</do-on>
+			<designed target="Flip" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Text_5" display-name="Text_5" uuid="146359f5-ce0d-4083-86ee-b6517163ba3f" base-type="TRF_Text" base-type-id="e1772021-c26e-4e69-9538-338633da412b" ver="5" description="" cardinal="1">
+			<designed target="X" value="10" ver="5"/>
+			<designed target="Y" value="42" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="184" ver="5"/>
+			<designed target="Height" value="37" ver="5"/>
+			<designed target="Text" value="Время обновления из ПЛК" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Open_Transfer_DI" display-name="Open_Transfer_DI" uuid="482f304d-e415-43ff-8535-5ca82610bdc6" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-new" form-by-id="false">
+			<object access-modifier="private" uuid="4d29dee1-47ac-49c7-bad9-4e5e444612f0" base-type="1001_TRF_InfoSettingsDI" base-type-id="345db9cf-5cf1-4115-b0e8-1b12ee352787" ver="5">
+				<init target="ParDevPath" ver="5" ref="here.ParDevPath"/>
+				<init target="TransferDevPath" ver="5" ref="here.TransferDevPath"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Button_Settings" display-name="Button_Settings" uuid="671696b7-e0f3-426d-9f23-64f1951ddbc0" base-type="TRF_Button" base-type-id="099cd930-f0b4-40e6-80ab-df2788e3eecf" ver="5" description="" cardinal="1">
+		<designed target="X" value="345" ver="5"/>
+		<designed target="Y" value="205" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="135" ver="5"/>
+		<designed target="Height" value="36" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+			<body kind="om">
+				<![CDATA[//выбор панели трансферов
+if(TransferType.Value == "DI") Open_Transfer_DI.Invoke(); 
+
+]]>
+			</body>
+		</do-on>
+		<designed target="Text" value="Настройки" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Button_Refresh" display-name="Button_Refresh" uuid="c683795e-550b-431b-809d-1aa620c40915" base-type="TRF_Button" base-type-id="099cd930-f0b4-40e6-80ab-df2788e3eecf" ver="5" description="" cardinal="1">
+		<designed target="X" value="345" ver="5"/>
+		<designed target="Y" value="247" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="135" ver="5"/>
+		<designed target="Height" value="36" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+			<body kind="om">
+				<![CDATA[RefreshSettings();//сброс настроек
+]]>
+			</body>
+		</do-on>
+		<designed target="Text" value="Сбросить" ver="5"/>
+		<do-trace access-modifier="private" target="Enabled" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[AsokuUserRights.ChangeSettings.Value == true]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Button_Acc" display-name="Button_Acc" uuid="9455e80b-2196-4389-974d-d174b02a9426" base-type="TRF_Button" base-type-id="099cd930-f0b4-40e6-80ab-df2788e3eecf" ver="5" description="" cardinal="1">
+		<designed target="X" value="345" ver="5"/>
+		<designed target="Y" value="289" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="135" ver="5"/>
+		<designed target="Height" value="36" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+			<body kind="om">
+				<![CDATA[if ( !AsokuMain.IsNotWeb() ) {
+		Open_UD_WebClient.Invoke(); //открыть окно о веб клиенте
+}
+else if( AsokuUserRights.ChangeTransferValue.Value) //проверка полномочий 
+{
+ Open_UD_AppSettings.Invoke(); //открыть окно подтверждения сохранения настроек
+}
+else Open_UD_PermissionFault.Invoke();  ]]>
+			</body>
+		</do-on>
+		<designed target="Text" value="Применить" ver="5"/>
+		<do-trace access-modifier="private" target="Enabled" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[AsokuUserRights.ChangeSettings.Value == true]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Open_UD_WebClient" display-name="Open_UD_WebClient" uuid="1a98f092-4451-4bbe-b315-ac6655099d41" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-dialog" form-by-id="false">
+			<object access-modifier="private" uuid="efcf0730-e59c-44ee-a123-01213fe91c0c" base-type="UserDialog_1" base-type-id="f235d2a1-8a61-4d94-b05f-36b0bcfa4a99" ver="5">
+				<init target="Icon" ver="5" value="0"/>
+				<init target="Buttons" ver="5" value="0"/>
+				<init target="Message" ver="5" value="Вы используете WEB-клиент для работы с проектом.\nДля использования полного функционала воспользуйтесь настольной версией приложения"/>
+				<init target="Header" ver="5" value="Ограничение WEB-клиента"/>
+			</object>
+		</do-on>
+	</object>
+</type>
+

@@ -1,0 +1,162 @@
+[
+{
+	"MenuItemName": "Главная",
+	"SchemeFormName": "Main_EzmGES",
+	"SchemeFormId": "db294669-52b7-4d9e-9bc9-f744ad15e5d9",
+	"MsgFilter": "GA_01.Control|GA_01.Electro",
+	"Items": []
+},
+{
+	"MenuItemName": "Защиты",
+	"SchemeFormName": "Def_GA",
+	"SchemeFormId": "8a815dca-f6e9-4d33-8689-9fada7df800c",
+	"MsgFilter": "GA_01.Messages",
+	"Items": []
+},
+{
+	"MenuItemName": "Электросх.",
+	"SchemeFormName": "ELShema",
+	"SchemeFormId": "8f6083d5-abef-4bf3-8e89-524dfb9a8642",
+	"MsgFilter": "GA_01.Electro",
+	"Items": []
+},
+{
+	"MenuItemName": "Т.контроль",
+	"SchemeFormName": "Podptk",
+	"SchemeFormId": "4ab53304-187f-4266-8773-34e8fac96e51",
+	"MsgFilter": "GA_01.Thermal",
+	"Items": [
+	{
+		"MenuItemName": "Подпятник",
+		"SchemeFormName": "Podptk",
+		"SchemeFormId": "4ab53304-187f-4266-8773-34e8fac96e51",
+		"MsgFilter": "GA_01.Thermal",
+		"Items": []
+	},
+	{
+		"MenuItemName": "Охл.возд.",
+		"SchemeFormName": "GG",
+		"SchemeFormId": "e7086433-2115-46c0-8852-f63d6465a640",
+		"MsgFilter": "GA_01.Thermal",
+		"Items": []
+	},
+	{
+		"MenuItemName": "Турб.Подшип.",
+		"SchemeFormName": "GG",
+		"SchemeFormId": "47d19ed8-51cc-4675-bc5c-43fb5b2313cb",
+		"MsgFilter": "GA_01.Thermal",
+		"Items": []
+	},
+	{
+		"MenuItemName": "Статор",
+		"SchemeFormName": "Stator",
+		"SchemeFormId": "b500df94-35e4-4352-9091-62bed6803a52",
+		"MsgFilter": "GA_01.Thermal",
+		"Items": []
+	},
+	{
+		"MenuItemName": "В.Подшип.",
+		"SchemeFormName": "PodspkV",
+		"SchemeFormId": "901e3d80-b624-4a70-97ca-0c041ca31e47",
+		"MsgFilter": "GA_01.Thermal",
+		"Items": []
+	},
+	{
+		"MenuItemName": "Н.Подшип.",
+		"SchemeFormName": "PodspkN",
+		"SchemeFormId": "25c44ed9-3b72-4688-9359-bf8b7dd05b81",
+		"MsgFilter": "GA_01.Thermal",
+		"Items": []
+	}]
+},
+{
+	"MenuItemName": "В.контроль",
+	"SchemeFormName": "Vibro",
+	"SchemeFormId": "390c152f-79a8-4c3c-a6f1-5086a4fc4256",
+	"MsgFilter": "GA_01",
+	"Items": []
+},
+{
+	"MenuItemName": "ТВС",
+	"SchemeFormName": "TVS",
+	"SchemeFormId": "fbd121f1-3ab7-4507-a4a1-354479aa533f",
+	"MsgFilter": "GA_01.TVS",
+	"Items": []
+},
+{
+	"MenuItemName": "РЧВ/МНУ",
+	"SchemeFormName": "MNU",
+	"SchemeFormId": "e8aa5ac7-2b2e-4096-a179-d4c1ace75548",
+	"MsgFilter": "GA_01",
+	"Items": [
+	{
+		"MenuItemName": "РЧВ",
+		"SchemeFormName": "Podptk",
+		"SchemeFormId": "e8aa5ac7-2b2e-4096-a179-d4c1ace75548",
+		"MsgFilter": "GA_01.TVS",
+		"Items": []
+	},
+	{
+		"MenuItemName": "МНУ",
+		"SchemeFormName": "Podptk",
+		"SchemeFormId": "49ec4eb9c-0978-4029-b0ab-4c13c8c5cc1b",
+		"MsgFilter": "",
+		"Items": []
+	}]
+},
+{
+	"MenuItemName": "СК",
+	"SchemeFormName": "SK",
+	"SchemeFormId": "2bbd4629-d7d9-41e7-b62a-4e427c3a74e7",
+	"MsgFilter": "GA_01.SK",
+	"Items": []
+},
+{
+	"MenuItemName": "Диагност.",
+	"SchemeFormName": "Diagnostik",
+	"SchemeFormId": "c774935c-4fa0-42ce-b8b9-8bb20cf61fd7",
+	"MsgFilter": "GA_01.Diagnostik",
+	"Items": [
+		{
+		"MenuItemName": "Модули",
+		"SchemeFormName": "Podptk",
+		"SchemeFormId": "c774935c-4fa0-42ce-b8b9-8bb20cf61fd7",
+		"MsgFilter": "GA_01.Diagnostik",
+		"Items": []
+	},
+	{
+		"MenuItemName": "AI",
+		"SchemeFormName": "GG",
+		"SchemeFormId": "919a0402-1c3b-4542-9588-eb7a211fd786",
+		"MsgFilter": "GA_01.Diagnostik",
+		"Items": []
+	},
+	{
+		"MenuItemName": "DI",
+		"SchemeFormName": "GG",
+		"SchemeFormId": "c0107b3f-6a83-403c-88c7-ee8c5c0f6d98",
+		"MsgFilter": "GA_01.Diagnostik",
+		"Items": []
+	},
+	{
+		"MenuItemName": "SPR",
+		"SchemeFormName": "GG",
+		"SchemeFormId": "c8b0ca8c-0096-43da-a06b-39144ee0bdb6",
+		"MsgFilter": "GA_01.Diagnostik",
+		"Items": []
+	},
+	{
+		"MenuItemName": "SPX",
+		"SchemeFormName": "GG",
+		"SchemeFormId": "1d1f024a-9e92-414b-a1be-3858a16ef5f5",
+		"MsgFilter": "GA_01.Diagnostik",
+		"Items": []
+	},
+	{
+		"MenuItemName": "Шкафы",
+		"SchemeFormName": "PodspkV",
+		"SchemeFormId": "bc9328a2-b2bd-47a9-98ce-e7c1faf12a55",
+		"MsgFilter": "GA_01.Diagnostik",
+		"Items": []
+	}]
+}]

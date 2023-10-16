@@ -1,0 +1,698 @@
+<type access-modifier="private" name="Энип Общий" display-name="Энип Общий" uuid="9838d94e-70d5-4a06-8e83-d360813fa8a7" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="600" ver="5"/>
+	<designed target="Height" value="400" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xff646464" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="600" ver="5"/>
+	<designed target="WindowHeight" value="400" ver="5"/>
+	<designed target="WindowCaption" value="Form_1" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="1" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="0" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<object access-modifier="private" name="Rectangle_3" display-name="Rectangle_3" uuid="e8404679-32d5-43de-95f6-ba995560748d" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="335" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="599.00000000000011" ver="5"/>
+		<designed target="Height" value="66.000000000000057" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_2" display-name="Rectangle_2" uuid="b61faffc-24f2-4862-a53b-37b56cd36012" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="43" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="599.00000000000011" ver="5"/>
+		<designed target="Height" value="292" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextParseDescrete_5" display-name="TextParseDescrete_5" uuid="60745395-71e4-444e-9beb-f381749a1d16" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="9" ver="5"/>
+		<designed target="Y" value="366" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="230" ver="5"/>
+		<designed target="Height" value="29" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["RU.GRU-10.GA_0" + NumberGA + ".TN" + NumberGA + "-ENIP.U_lin_AB"]]>
+			</body>
+		</do-trace>
+		<designed target="Text" value="U лин." ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="999"/>
+	</object>
+	<object access-modifier="private" name="TextParseDescrete_14" display-name="TextParseDescrete_14" uuid="ce6316fa-c316-420d-bf09-22c7bfa346d5" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="9" ver="5"/>
+		<designed target="Y" value="132" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="72.000000000000014" ver="5"/>
+		<designed target="Height" value="29" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["RU.GRU-10.GA_0" + NumberGA + ".TN" + NumberGA + "-ENIP.P"]]>
+			</body>
+		</do-trace>
+		<init target="notifyingLenghtOfString" ver="5" value="999"/>
+		<designed target="Text" value="P" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextParseDescrete_18" display-name="TextParseDescrete_18" uuid="6d4e2cb1-a221-4e04-a613-97a55433de7c" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="9" ver="5"/>
+		<designed target="Y" value="166" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="230" ver="5"/>
+		<designed target="Height" value="29" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["RU.GRU-10.GA_0" + NumberGA + ".TN" + NumberGA + "-ENIP.Q"]]>
+			</body>
+		</do-trace>
+		<init target="notifyingLenghtOfString" ver="5" value="999"/>
+		<designed target="Text" value="Q" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextParseDescrete_22" display-name="TextParseDescrete_22" uuid="a3c35e66-96c3-464e-b53e-11db5eb43f3b" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="9" ver="5"/>
+		<designed target="Y" value="200" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="230" ver="5"/>
+		<designed target="Height" value="29" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["RU.GRU-10.GA_0" + NumberGA + ".TN" + NumberGA + "-ENIP.S"]]>
+			</body>
+		</do-trace>
+		<init target="notifyingLenghtOfString" ver="5" value="999"/>
+		<designed target="Text" value="S" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextParseDescrete_26" display-name="TextParseDescrete_26" uuid="fed76c9b-f434-479c-8ef3-5d5069818d01" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="9" ver="5"/>
+		<designed target="Y" value="234" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="230" ver="5"/>
+		<designed target="Height" value="29" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["RU.GRU-10.GA_0" + NumberGA + ".TN" + NumberGA + "-ENIP.cosfi"]]>
+			</body>
+		</do-trace>
+		<init target="notifyingLenghtOfString" ver="5" value="999"/>
+		<designed target="Text" value="cosφ" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextParseDescrete_28" display-name="TextParseDescrete_28" uuid="fff20591-f2b4-47eb-baeb-a63aa9ac5b30" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="9" ver="5"/>
+		<designed target="Y" value="268" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="230" ver="5"/>
+		<designed target="Height" value="29" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["RU.GRU-10.GA_0" + NumberGA + ".TN" + NumberGA + "-ENIP.I"]]>
+			</body>
+		</do-trace>
+		<init target="notifyingLenghtOfString" ver="5" value="999"/>
+		<designed target="Text" value="I" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextParseDescrete_29" display-name="TextParseDescrete_29" uuid="8ac0ef48-b4e1-496b-87b7-79146a8b7c85" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="9" ver="5"/>
+		<designed target="Y" value="302" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="230" ver="5"/>
+		<designed target="Height" value="29" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["RU.GRU-10.GA_0" + NumberGA + ".TN" + NumberGA + "-ENIP.U_lin"]]>
+			</body>
+		</do-trace>
+		<init target="notifyingLenghtOfString" ver="5" value="999"/>
+		<designed target="Text" value="U" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextParseDescrete_54" display-name="TextParseDescrete_54" uuid="1bb0611c-ae67-4ec5-944b-74f36d41ddb9" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="103" ver="5"/>
+		<designed target="Y" value="304" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="Text" value="RU.GRU-10.GA_01.OL-ENIP.cosfi" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["RU.GRU-10.GA_0" + NumberGA + ".TN" + NumberGA + "-ENIP.U_phs_A"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="TextParseDescrete_55" display-name="TextParseDescrete_55" uuid="b0378146-5eb4-48bb-a8e5-ff75face4354" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="223" ver="5"/>
+		<designed target="Y" value="304" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["RU.GRU-10.GA_0" + NumberGA + ".TN" + NumberGA + "-ENIP.U_phs_B"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="TextParseDescrete_56" display-name="TextParseDescrete_56" uuid="7c2f6119-df1e-410d-80e4-4387263485af" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="343" ver="5"/>
+		<designed target="Y" value="304" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["RU.GRU-10.GA_0" + NumberGA + ".TN" + NumberGA + "-ENIP.U_phs_C"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="TextParseDescrete_57" display-name="TextParseDescrete_57" uuid="56fe69d7-b375-4ef8-8a55-c50026cf9d8d" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="103" ver="5"/>
+		<designed target="Y" value="368" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["RU.GRU-10.GA_0" + NumberGA + ".TN" + NumberGA + "-ENIP.U_lin_AB"]]>
+			</body>
+		</do-trace>
+		<designed target="Text" value="Uab" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextParseDescrete_58" display-name="TextParseDescrete_58" uuid="913d3c62-69e9-470f-8bf3-12ef1b7c89be" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="223" ver="5"/>
+		<designed target="Y" value="368" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["RU.GRU-10.GA_0" + NumberGA + ".TN" + NumberGA + "-ENIP.U_lin_BC"]]>
+			</body>
+		</do-trace>
+		<designed target="Text" value="Ubc" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextParseDescrete_59" display-name="TextParseDescrete_59" uuid="3a5fe10c-603e-4b21-b15d-e3a778e43301" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="343" ver="5"/>
+		<designed target="Y" value="368" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["RU.GRU-10.GA_0" + NumberGA + ".TN" + NumberGA + "-ENIP.U_lin_AB"]]>
+			</body>
+		</do-trace>
+		<designed target="Text" value="Uca" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextParseDescrete_60" display-name="TextParseDescrete_60" uuid="c3c576fc-d0b0-41c7-9b79-0065631887b9" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="103" ver="5"/>
+		<designed target="Y" value="270" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["RU.GRU-10.GA_0" + NumberGA + ".TN" + NumberGA + "-ENIP.I_phs_A"]]>
+			</body>
+		</do-trace>
+		<designed target="Text" value="Ia" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextParseDescrete_61" display-name="TextParseDescrete_61" uuid="9591a472-59bb-4243-b3ec-32197eb16072" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="223" ver="5"/>
+		<designed target="Y" value="270" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["RU.GRU-10.GA_0" + NumberGA + ".TN" + NumberGA + "-ENIP.I_phs_B"]]>
+			</body>
+		</do-trace>
+		<designed target="Text" value="Ib" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextParseDescrete_62" display-name="TextParseDescrete_62" uuid="54ef89cb-3c06-4281-a754-685594be0ce5" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="343" ver="5"/>
+		<designed target="Y" value="270" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["RU.GRU-10.GA_0" + NumberGA + ".TN" + NumberGA + "-ENIP.I_phs_C"]]>
+			</body>
+		</do-trace>
+		<designed target="Text" value="Ic" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextParseDescrete_63" display-name="TextParseDescrete_63" uuid="f9b9dde1-2bcd-4aa3-9cbe-8284a48ff0c0" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="103" ver="5"/>
+		<designed target="Y" value="134" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["RU.GRU-10.GA_0" + NumberGA + ".TN" + NumberGA + "-ENIP.P_phs_A"]]>
+			</body>
+		</do-trace>
+		<designed target="Text" value="Pa" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextParseDescrete_64" display-name="TextParseDescrete_64" uuid="5bf7a766-b70a-44ea-81fe-508a6ab45bc7" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="223" ver="5"/>
+		<designed target="Y" value="134" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["RU.GRU-10.GA_0" + NumberGA + ".TN" + NumberGA + "-ENIP.P_phs_B"]]>
+			</body>
+		</do-trace>
+		<designed target="Text" value="Pb" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextParseDescrete_65" display-name="TextParseDescrete_65" uuid="e6f07201-0b4e-4885-a152-d5c090377a39" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="343" ver="5"/>
+		<designed target="Y" value="134" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["RU.GRU-10.GA_0" + NumberGA + ".TN" + NumberGA + "-ENIP.P_phs_C"]]>
+			</body>
+		</do-trace>
+		<designed target="Text" value="Pc" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextParseDescrete_66" display-name="TextParseDescrete_66" uuid="75075706-bd9f-4832-8b83-90575da6d065" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="463" ver="5"/>
+		<designed target="Y" value="134" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["RU.GRU-10.GA_0" + NumberGA + ".TN" + NumberGA + "-ENIP.P"]]>
+			</body>
+		</do-trace>
+		<init target="notifyingLenghtOfString" ver="5" value="999"/>
+		<designed target="Text" value="P" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextParseDescrete_67" display-name="TextParseDescrete_67" uuid="7e2059e5-9d21-4029-8a44-ead3d663717f" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="103" ver="5"/>
+		<designed target="Y" value="168" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["RU.GRU-10.GA_0" + NumberGA + ".TN" + NumberGA + "-ENIP.Q_phs_A"]]>
+			</body>
+		</do-trace>
+		<init target="notifyingLenghtOfString" ver="5" value="999"/>
+		<designed target="Text" value="Qa" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextParseDescrete_68" display-name="TextParseDescrete_68" uuid="afdab7cc-50e0-4973-91e5-47a49c325677" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="223" ver="5"/>
+		<designed target="Y" value="168" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["RU.GRU-10.GA_0" + NumberGA + ".TN" + NumberGA + "-ENIP.Q_phs_B"]]>
+			</body>
+		</do-trace>
+		<init target="notifyingLenghtOfString" ver="5" value="999"/>
+		<designed target="Text" value="Qb" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextParseDescrete_69" display-name="TextParseDescrete_69" uuid="c82ea06b-2651-4cd9-878b-21d75f2f48bd" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="343" ver="5"/>
+		<designed target="Y" value="168" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["RU.GRU-10.GA_0" + NumberGA + ".TN" + NumberGA + "-ENIP.Q_phs_C"]]>
+			</body>
+		</do-trace>
+		<init target="notifyingLenghtOfString" ver="5" value="999"/>
+		<designed target="Text" value="Qc" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextParseDescrete_70" display-name="TextParseDescrete_70" uuid="2825768f-760e-4dc2-bcbb-c855f65b8510" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="463" ver="5"/>
+		<designed target="Y" value="168" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["RU.GRU-10.GA_0" + NumberGA + ".TN" + NumberGA + "-ENIP.Q"]]>
+			</body>
+		</do-trace>
+		<init target="notifyingLenghtOfString" ver="5" value="999"/>
+		<designed target="Text" value="Q" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextParseDescrete_73" display-name="TextParseDescrete_73" uuid="862ec146-c208-4b31-b322-e10bc98e43ae" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="463" ver="5"/>
+		<designed target="Y" value="304" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["RU.GRU-10.GA_0" + NumberGA + ".TN" + NumberGA + "-ENIP.U"]]>
+			</body>
+		</do-trace>
+		<init target="notifyingLenghtOfString" ver="5" value="999"/>
+		<designed target="Text" value="U фаз сред" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextParseDescrete_74" display-name="TextParseDescrete_74" uuid="43c8078a-50ca-49c3-8ca2-fae0a0a0076f" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="463" ver="5"/>
+		<designed target="Y" value="270" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["RU.GRU-10.GA_0" + NumberGA + ".TN" + NumberGA + "-ENIP.I"]]>
+			</body>
+		</do-trace>
+		<init target="notifyingLenghtOfString" ver="5" value="999"/>
+		<designed target="Text" value="I средний" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextParseDescrete_75" display-name="TextParseDescrete_75" uuid="0fb1162f-731c-4045-838b-46dc9052e6d9" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="103" ver="5"/>
+		<designed target="Y" value="202" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["RU.GRU-10.GA_0" + NumberGA + ".TN" + NumberGA + "-ENIP.S_phs_A"]]>
+			</body>
+		</do-trace>
+		<init target="notifyingLenghtOfString" ver="5" value="999"/>
+		<designed target="Text" value="Sa" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextParseDescrete_76" display-name="TextParseDescrete_76" uuid="a1638802-192c-4aa3-a43f-059ca4b1f4a5" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="223" ver="5"/>
+		<designed target="Y" value="202" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["RU.GRU-10.GA_0" + NumberGA + ".TN" + NumberGA + "-ENIP.S_phs_B"]]>
+			</body>
+		</do-trace>
+		<init target="notifyingLenghtOfString" ver="5" value="999"/>
+		<designed target="Text" value="Sb" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextParseDescrete_77" display-name="TextParseDescrete_77" uuid="d606c4b9-e6fa-4f9a-b16d-5cfa38d0c459" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="343" ver="5"/>
+		<designed target="Y" value="202" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["RU.GRU-10.GA_0" + NumberGA + ".TN" + NumberGA + "-ENIP.S_phs_C"]]>
+			</body>
+		</do-trace>
+		<init target="notifyingLenghtOfString" ver="5" value="999"/>
+		<designed target="Text" value="Sc" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextParseDescrete_78" display-name="TextParseDescrete_78" uuid="a6054f1b-5474-46b2-83c2-239c2de0f4f9" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="463" ver="5"/>
+		<designed target="Y" value="202" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["RU.GRU-10.GA_0" + NumberGA + ".TN" + NumberGA + "-ENIP.S"]]>
+			</body>
+		</do-trace>
+		<init target="notifyingLenghtOfString" ver="5" value="999"/>
+		<designed target="Text" value="S" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextParseDescrete_79" display-name="TextParseDescrete_79" uuid="84acaf26-8da3-4849-af6b-dcd1c780247d" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="103" ver="5"/>
+		<designed target="Y" value="236" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["RU.GRU-10.GA_0" + NumberGA + ".TN" + NumberGA + "-ENIP.cosfi_A"]]>
+			</body>
+		</do-trace>
+		<init target="notifyingLenghtOfString" ver="5" value="999"/>
+		<designed target="Text" value="cosφa 
+" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextParseDescrete_80" display-name="TextParseDescrete_80" uuid="eccf1448-6ac9-496c-a530-cb10abc551f0" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="223" ver="5"/>
+		<designed target="Y" value="236" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["RU.GRU-10.GA_0" + NumberGA + ".TN" + NumberGA + "-ENIP.cosfi_B"]]>
+			</body>
+		</do-trace>
+		<init target="notifyingLenghtOfString" ver="5" value="999"/>
+		<designed target="Text" value="cosφb" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextParseDescrete_81" display-name="TextParseDescrete_81" uuid="4dcaa1f7-ab71-46a9-a797-20ad2cb27559" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="343" ver="5"/>
+		<designed target="Y" value="236" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["RU.GRU-10.GA_0" + NumberGA + ".TN" + NumberGA + "-ENIP.cosfi_C"]]>
+			</body>
+		</do-trace>
+		<init target="notifyingLenghtOfString" ver="5" value="999"/>
+		<designed target="Text" value="cosφc" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextParseDescrete_82" display-name="TextParseDescrete_82" uuid="db622b17-f79f-4957-8b24-e3c54c2089b1" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="463" ver="5"/>
+		<designed target="Y" value="236" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["RU.GRU-10.GA_0" + NumberGA + ".TN" + NumberGA + "-ENIP.cosfi"]]>
+			</body>
+		</do-trace>
+		<init target="notifyingLenghtOfString" ver="5" value="999"/>
+		<designed target="Text" value="cosφ сред" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextPropertiesDialogs_1" display-name="TextPropertiesDialogs_1" uuid="c211f9e6-0537-4192-bb20-e3987ce579fa" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="137.60000000000002" ver="5"/>
+		<designed target="Y" value="96" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="20.799999999999955" ver="5"/>
+		<designed target="Height" value="28" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="Text" value="A" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextPropertiesDialogs_2" display-name="TextPropertiesDialogs_2" uuid="2e41efb4-8c2b-4e22-bad7-90fddc7bd748" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="257.60000000000002" ver="5"/>
+		<designed target="Y" value="96" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="20.799999999999955" ver="5"/>
+		<designed target="Height" value="28" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="Text" value="B" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextPropertiesDialogs_3" display-name="TextPropertiesDialogs_3" uuid="d0feeb1c-4944-463c-b55e-07f1814c548a" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="377.60000000000002" ver="5"/>
+		<designed target="Y" value="96" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="20.799999999999955" ver="5"/>
+		<designed target="Height" value="28" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="Text" value="C" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextPropertiesDialogs_4" display-name="TextPropertiesDialogs_4" uuid="611724f9-23bb-44c9-bd08-74bd2721e283" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="456.85000000000014" ver="5"/>
+		<designed target="Y" value="96" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="102.29999999999973" ver="5"/>
+		<designed target="Height" value="28" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="Text" value="Среднее" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextPropertiesDialogs_5" display-name="TextPropertiesDialogs_5" uuid="68726693-706c-4b2b-81c0-ea1ebcf9cbba" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="128.74495742767999" ver="5"/>
+		<designed target="Y" value="337" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="38.510085144640016" ver="5"/>
+		<designed target="Height" value="28" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="Text" value="AB" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextPropertiesDialogs_6" display-name="TextPropertiesDialogs_6" uuid="cf4f8385-3056-41c8-88f3-8f97b94fcee1" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="248.74495742767999" ver="5"/>
+		<designed target="Y" value="337" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="38.510085144640016" ver="5"/>
+		<designed target="Height" value="28" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="Text" value="BC" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextPropertiesDialogs_7" display-name="TextPropertiesDialogs_7" uuid="16ba8180-8f73-4203-ae35-c97e888b0716" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="368.74495742767999" ver="5"/>
+		<designed target="Y" value="337" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="38.510085144640129" ver="5"/>
+		<designed target="Height" value="28" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="Text" value="CA" ver="5"/>
+	</object>
+	<object access-modifier="private" name="NumberGA" display-name="NumberGA" uuid="e389baa5-ff87-42ce-90d5-5a82f503209c" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="TextParseDescrete_83" display-name="TextParseDescrete_83" uuid="ce30c4eb-b0f9-41e4-8f07-c844681d06d8" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="208" ver="5"/>
+		<designed target="Y" value="60" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="72.000000000000014" ver="5"/>
+		<designed target="Height" value="29" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["RU.GRU-10.GA_0" + NumberGA + ".TN" + NumberGA + "-ENIP.P"]]>
+			</body>
+		</do-trace>
+		<init target="notifyingLenghtOfString" ver="5" value="999"/>
+		<designed target="Text" value="F" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextParseDescrete_84" display-name="TextParseDescrete_84" uuid="7c7bd05d-f5f8-4a52-959d-479d26152ac3" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="302" ver="5"/>
+		<designed target="Y" value="62" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["RU.GRU-10.GA_0" + NumberGA + ".TN" + NumberGA + "-ENIP.F"]]>
+			</body>
+		</do-trace>
+		<designed target="Text" value="Pa" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="c434203b-7fdb-4898-9c5c-64f34197f3e2" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="-1" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="599.00000000000011" ver="5"/>
+		<designed target="Height" value="44" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="TextPropertiesDialogs_1" display-name="TextPropertiesDialogs_1" uuid="d489b461-c949-455b-90d6-e6f20c3f15b2" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="272" ver="5"/>
+			<designed target="Y" value="4" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="99.999999999999943" ver="5"/>
+			<designed target="Height" value="39" ver="5"/>
+			<designed target="Font" value="Sans Serif,18,-1,5,50,0,0,0,0,0" ver="5"/>
+			<designed target="Text" value="ЭНИП" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Header" display-name="Название формы" uuid="9f0f80dd-4bab-4ddc-b009-3bfeae5319c2" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+</type>
+

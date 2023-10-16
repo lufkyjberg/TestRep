@@ -1,0 +1,208 @@
+<type access-modifier="private" name="ElectroProtections" display-name="ElectroProtections" uuid="0b22dea9-f2d6-4445-9267-65608f036fee" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="630" ver="5"/>
+	<designed target="Height" value="640" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xff646464" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="580" ver="5"/>
+	<designed target="WindowHeight" value="640" ver="5"/>
+	<designed target="WindowCaption" value="MainForm" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="1" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="0" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="1364460e-782e-4a23-9cdf-2ebe6f25454d" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="630" ver="5"/>
+		<designed target="Height" value="60" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Text" value="Электрозащиты" ver="5"/>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[FormParDevPath.Value == "EP1"]]>
+				</condition>
+				<expr>
+					<![CDATA["Электрозащиты(комплект 1)"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[FormParDevPath.Value == "EP2"]]>
+				</condition>
+				<expr>
+					<![CDATA["Электрозащиты(комплект 2)"]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA["Электрозащиты"]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<object access-modifier="private" name="Text_PropertiesDialogs_156" display-name="Text_PropertiesDialogs_156" uuid="a5377139-b25e-439b-8544-b7a5c5ca7a58" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="5" ver="5"/>
+		<designed target="Y" value="80" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="620" ver="5"/>
+		<designed target="Height" value="45" ver="5"/>
+		<designed target="Text" value="Предупредительная сигнализация ЭЗ (комплект 1)" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="999"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Protection.EP1.Warn_EP1"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["HydroUnits.GA_01.Protection."+ FormParDevPath + ".Warn_" + FormParDevPath]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_157" display-name="Text_PropertiesDialogs_157" uuid="2c207815-8e3b-49ad-9761-7f9fb9a21a0f" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="5" ver="5"/>
+		<designed target="Y" value="125" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="620" ver="5"/>
+		<designed target="Height" value="45" ver="5"/>
+		<designed target="Text" value="Аварийная сигнализация ЭЗ (комплект 1)" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="999"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Protection.EP1.Alarm_EP1"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["HydroUnits.GA_01.Protection." + FormParDevPath + ".Alarm_" + FormParDevPath]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_158" display-name="Text_PropertiesDialogs_158" uuid="214be3de-383c-46a0-8b06-14a910f06f34" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="5" ver="5"/>
+		<designed target="Y" value="170" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="620" ver="5"/>
+		<designed target="Height" value="45" ver="5"/>
+		<designed target="Text" value="Неисправность/вывод ЭЗ (комплект 1)" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="999"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Protection.EP1.Flt_EP1"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["HydroUnits.GA_01.Protection." + FormParDevPath+ ".Flt_" + FormParDevPath]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_159" display-name="Text_PropertiesDialogs_159" uuid="966254a2-4f57-4f33-9a11-2af4506b1ad7" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="5" ver="5"/>
+		<designed target="Y" value="215" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="620" ver="5"/>
+		<designed target="Height" value="45" ver="5"/>
+		<designed target="Text" value="Аварийный останов от ЭЗ (комплект 1)" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="999"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Protection.EP1.ES_EP1"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["HydroUnits.GA_01.Protection." + FormParDevPath + ".ES_" + FormParDevPath]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_160" display-name="Text_PropertiesDialogs_160" uuid="06ebae96-c105-4709-9971-a4bbb087b289" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="5" ver="5"/>
+		<designed target="Y" value="260" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="620" ver="5"/>
+		<designed target="Height" value="45" ver="5"/>
+		<designed target="Text" value="Разгрузка агрегата от ЭЗ (комлпект 1)" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="999"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Protection.EP1.Unload_EP1"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["HydroUnits.GA_01.Protection." + FormParDevPath + ".Unload_" + FormParDevPath]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_161" display-name="Text_PropertiesDialogs_161" uuid="9b7f2735-f150-4d4c-9b45-310e1ce858c7" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="5" ver="5"/>
+		<designed target="Y" value="305" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="620" ver="5"/>
+		<designed target="Height" value="45" ver="5"/>
+		<designed target="Text" value="Р=0 от ЭЗ (комплект 1)" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="999"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Protection.EP1.P_zero_EP1"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["HydroUnits.GA_01.Protection." + FormParDevPath + ".P_zero_" + FormParDevPath]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_162" display-name="Text_PropertiesDialogs_162" uuid="919d8c53-a3af-4710-9d8a-eab13b8a1493" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="5" ver="5"/>
+		<designed target="Y" value="350" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="620" ver="5"/>
+		<designed target="Height" value="45" ver="5"/>
+		<designed target="Text" value="Контроль тока ротора (комплект 1)" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="999"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Protection.EP1.I_control_EP1"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["HydroUnits.GA_01.Protection." + FormParDevPath + ".I_control_" + FormParDevPath]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_163" display-name="Text_PropertiesDialogs_163" uuid="91e086ee-ccc4-4295-ae62-29eaa9e2b29f" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="5" ver="5"/>
+		<designed target="Y" value="395" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="620" ver="5"/>
+		<designed target="Height" value="45" ver="5"/>
+		<designed target="Text" value="Пуск АУПТ ГА (комплект 1)" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="999"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Protection.EP1.AUPT_start_EP1"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA["HydroUnits.GA_01.Protection." + FormParDevPath + ".AUPT_start_" + FormParDevPath]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="FormParDevPath" display-name="FormParDevPath" uuid="5b6c9beb-e346-4d28-b900-f871ee61a194" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+</type>
+

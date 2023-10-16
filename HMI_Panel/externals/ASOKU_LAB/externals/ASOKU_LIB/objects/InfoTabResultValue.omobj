@@ -1,0 +1,306 @@
+<type access-modifier="private" name="InfoTabResultValue" display-name="InfoTabResultValue" uuid="7f1d4725-0530-440f-bbd5-e9e6c1004df6" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="491" ver="5"/>
+	<designed target="Height" value="346" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xfff0f0f0" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="491" ver="5"/>
+	<designed target="WindowHeight" value="346" ver="5"/>
+	<designed target="WindowCaption" value="" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="2" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="0" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<object access-modifier="private" name="ParDevPath" display-name="Путь параметра" uuid="33f976d9-f1c3-4484-bebe-77820dae1b87" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="PanelType" display-name="Тип панели" uuid="eee84ca4-66a2-4443-b094-70c14738fabb" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Opened">
+		<body kind="om">
+			<![CDATA[//Определение положения окна
+posWindowNum = 0;
+while(posWindowNum<= AsokuMain.InfoTabViewPosNumber.Length && AsokuMain.InfoTabViewPosNumber[posWindowNum] == true )
+{
+  posWindowNum += 1;
+}
+AsokuMain.InfoTabViewPosNumber[posWindowNum] = true;
+
+if(posWindowNum == 0)
+{
+  this.WindowX = 10;
+  this.WindowY = 100;
+}
+if(posWindowNum == 1)
+{
+  this.WindowX = 500;
+  this.WindowY = 100;
+}
+if(posWindowNum == 2)
+{
+  this.WindowX = 990;
+  this.WindowY = 100;
+}
+if(posWindowNum == 3)
+{
+  this.WindowX = 10;
+  this.WindowY = 480;
+}
+if(posWindowNum == 4)
+{
+  this.WindowX = 500;
+  this.WindowY = 480;
+}
+if(posWindowNum == 5)
+{
+  this.WindowX = 990;
+  this.WindowY = 480;
+}
+
+
+this.WindowCaption = PanelType.Value +": " + Ap_Par_Description.ValueAsString;// задать имя панели
+OpenedTab = "Button_Tab_Info"; //Открытая вкладка
+if(ParameterType.Value == "AI")Open_InfoViewAnalog.Invoke(); //Загрузка в фрейм параметра первой вкладки
+else Open_InfoViewDiscrete.Invoke();
+
+
+
+
+
+
+
+
+
+]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="Frame_TabInfo" display-name="Frame_TabInfo" uuid="7d1ce25a-2470-4cc2-8a1e-20b36042df6a" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="26" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="488" ver="5"/>
+		<designed target="Height" value="320" ver="5"/>
+		<designed target="PenColor" value="0xffd9d9d9" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="OverrideScaling" value="false" ver="5"/>
+		<designed target="ShowScrollBars" value="true" ver="5"/>
+		<designed target="MoveByMouse" value="false" ver="5"/>
+	</object>
+	<object access-modifier="private" name="ParameterType" display-name="Тип параметра" uuid="e76a410b-9386-412c-8608-b896bac6f4c1" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Ap_Source_Par" display-name="Источник параметра" uuid="a285af73-610e-430f-b4fd-bf12933699f0" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+		<designed target="Location" value="" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="Path" value="" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath.Value]]>
+			</body>
+		</do-trace>
+		<init target="ParentSource" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_Description" display-name="Описание параметра" uuid="ab0413e1-9b84-480a-88bd-ad68e342fd15" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+		<init target="Path" ver="5" value="Description"/>
+	</object>
+	<object access-modifier="private" name="Open_InfoViewAnalog" display-name="команда открытия InfoView" uuid="507caae8-2bf0-4835-ab3b-5e7d3a222d69" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" frame-link="here.Frame_TabInfo" form-action="open-in-frame" form-by-id="false">
+			<object access-modifier="private" uuid="10be3361-2732-4a03-8c24-ee9e57b6f066" base-type="InfoViewAnalog" base-type-id="55921da2-96f4-4377-b75d-5a85af14880f" ver="5">
+				<designed target="AlwaysOnTop" value="false" ver="5"/>
+				<init target="ParDevPath" ver="5" ref="here.ParDevPath"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Open_InfoViewSettingAnalog" display-name="команда открытия InfoViewSetting" uuid="969946e2-a40c-4a5f-84b7-adb553757ace" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="Invoked" frame-link="Frame_TabInfo" form-action="open-in-frame" form-by-id="false">
+			<object access-modifier="private" uuid="d0b038b1-7662-4db5-89ac-fc0cb307c275" base-type="InfoViewSettingAnalog" base-type-id="f2bad851-97b8-4c84-9b6e-fea132b070cb" ver="5">
+				<init target="ParDevPath" ver="5" ref="here.ParDevPath"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Open_InfoViewDiscrete" display-name="Open_InfoViewDiscrete" uuid="3c27f1f6-d4fe-457e-8a7b-d2314c4880dc" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" frame-link="here.Frame_TabInfo" form-action="open-in-frame" form-by-id="false">
+			<object access-modifier="private" uuid="2649e30f-c381-4080-bbf5-7c2f14533be8" base-type="InfoViewDiscrete" base-type-id="9d4cee92-d04d-4b1d-8a3a-ac8e222b0e16" ver="5">
+				<init target="ParDevPath" ver="5" ref="here.ParDevPath"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Open_InfoViewSettingDiscrete" display-name="Open_InfoViewSettingDiscrete" uuid="e7525caf-bf9f-4eb2-ac10-dd0ee548b9b1" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="Invoked" frame-link="Frame_TabInfo" form-action="open-in-frame" form-by-id="false">
+			<object access-modifier="private" uuid="e6a87914-907b-4413-a96c-a2edb35b5dbd" base-type="InfoViewSettingDiscrete" base-type-id="730f6b4b-8768-415b-9aa9-1aa73868ea7b" ver="5">
+				<init target="ParDevPath" ver="5" ref="here.ParDevPath"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="DebugTool" display-name="DebugTool" uuid="8eafccb5-255d-445e-9443-49ed416a020d" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Button_Tab_Info" display-name="Button_Tab_Info" uuid="0c34794a-8bec-4ab3-a904-a5e37db868e0" base-type="ButtonTab" base-type-id="78b9186d-9daf-46f8-b860-aaa65ddb9447" ver="5" description="" cardinal="1">
+		<designed target="X" value="1" ver="5"/>
+		<designed target="Y" value="2" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="23" ver="5"/>
+		<designed target="Text" value="Информация" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+			<body kind="om">
+				<![CDATA[if(ParameterType.Value == "AI")Open_InfoViewAnalog.Invoke();
+else Open_InfoViewDiscrete.Invoke();
+OpenedTab.Value = "Button_Tab_Info"; 
+]]>
+			</body>
+		</do-on>
+		<init target="Checked" ver="5" value="true"/>
+		<do-trace access-modifier="private" target="Checked" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[OpenedTab.Value == "Button_Tab_Info"]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Button_Tab_Setting" display-name="Button_Tab_Setting" uuid="b0912c15-8135-4a99-9834-995a0f5f612a" base-type="ButtonTab" base-type-id="78b9186d-9daf-46f8-b860-aaa65ddb9447" ver="5" description="" cardinal="1">
+		<designed target="X" value="245" ver="5"/>
+		<designed target="Y" value="2" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="23" ver="5"/>
+		<designed target="Text" value="Уставки" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+			<body kind="om">
+				<![CDATA[if(ParameterType.Value == "AI")Open_InfoViewSettingAnalog.Invoke(); 
+else Open_InfoViewSettingDiscrete.Invoke();
+
+OpenedTab.Value = "Button_Tab_Setting";
+
+]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Checked" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[OpenedTab.Value == "Button_Tab_Setting"]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="OpenedTab" display-name="Имя открытой вкладки" uuid="f245c3e1-4ff0-4de6-9332-fedbc673be1c" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="posWindowNum" display-name="Номер позиции панели" uuid="9a7d7ce3-4e82-4db8-8caa-4aae2b29522c" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="5" description="" cardinal="1"/>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="Closed">
+		<body kind="om">
+			<![CDATA[AsokuMain.InfoTabViewPosNumber[posWindowNum] = false;]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="Button_Tab_SelectMode" display-name="Button_Tab_SelectMode" uuid="bc6f87e8-a526-47e4-9b77-4ebefad6a48a" base-type="ButtonTab" base-type-id="78b9186d-9daf-46f8-b860-aaa65ddb9447" ver="5" description="" cardinal="1">
+		<designed target="X" value="123" ver="5"/>
+		<designed target="Y" value="2" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="23" ver="5"/>
+		<designed target="Text" value="Режим" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+			<body kind="om">
+				<![CDATA[if(ParameterType.Value == "AI")Open_InfoViewSelectMode.Invoke(); 
+else Open_InfoViewSelectMode.Invoke();
+
+OpenedTab.Value = "Button_Tab_SelectMode";
+
+]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Checked" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[OpenedTab.Value == "Button_Tab_Setting"]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Open_InfoViewSelectMode" display-name="Open_InfoViewSelectMode" uuid="5796e5d8-2b95-4f93-a0ad-5188f182cf74" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" frame-link="here.Frame_TabInfo" form-action="open-in-frame" form-by-id="false">
+			<object access-modifier="private" uuid="374d6914-dfeb-44f6-b507-7fb93e2a4a58" base-type="InfoViewSelectMode" base-type-id="12a406b5-0609-4746-8cd4-0d2519fee496" ver="5">
+				<init target="ParDevPath" ver="5" ref="here.ParDevPath"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="AnalogDpSimpleValue_1" display-name="AnalogDpSimpleValue_1" uuid="086002ae-8291-48d8-8314-fa6332f73485" base-type="AnalogDpSimpleValue" base-type-id="b9a17b45-ac08-4dbc-8897-fafdc5c40126" ver="5" description="" cardinal="1">
+		<designed target="X" value="385" ver="5"/>
+		<designed target="Y" value="4" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="83" ver="5"/>
+		<designed target="Height" value="17" ver="5"/>
+		<do-trace access-modifier="private" target="ParDevPath" ver="5">
+			<body>
+				<![CDATA[here.ParDevPath.Value]]>
+			</body>
+		</do-trace>
+		<designed target="PenColor" value="0xffd9d9d9" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+	</object>
+	<designed target="Flip" value="0" ver="5"/>
+</type>
+

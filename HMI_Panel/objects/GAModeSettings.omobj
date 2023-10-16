@@ -1,0 +1,1307 @@
+<type access-modifier="private" name="GAModeSettings" display-name="GAModeSettings" uuid="df85f106-ae21-40b0-ba2c-41d5ceefe828" base-type="" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Width" value="1366" ver="5"/>
+	<designed target="Height" value="680" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xff646464" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="1920" ver="5"/>
+	<designed target="WindowHeight" value="880" ver="5"/>
+	<designed target="WindowCaption" value="MainForm" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="1" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="0" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="bfc48402-8534-493a-b5d9-c175fc00d741" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="756" ver="5"/>
+		<designed target="Y" value="11" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="590" ver="5"/>
+		<designed target="Height" value="80.999999999999986" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="TextParse_15" display-name="TextParse_15" uuid="4a6c2710-d161-4c80-977b-e2d56364f292" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+			<designed target="X" value="11" ver="5"/>
+			<designed target="Y" value="13.916666666666629" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="352" ver="5"/>
+			<designed target="Height" value="29" ver="5"/>
+			<init target="notifyingMainFontSize" ver="5" value="26"/>
+			<init target="notifyingSymbolToSeparate" ver="5" value=" "/>
+			<do-trace access-modifier="private" target="ParDevPath" ver="5">
+				<body>
+					<![CDATA[NumberGA + ".WorkingHours.Repair.Nar_START_af_r_cnt"]]>
+				</body>
+			</do-trace>
+			<designed target="Font" value="Tahoma,20,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AnalogDpValue_22" display-name="AnalogDpValue_22" uuid="46765ae5-c98e-4bdb-8345-336b34967488" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+			<designed target="X" value="461.65454545454486" ver="5"/>
+			<designed target="Y" value="18.916666666666629" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="90" ver="5"/>
+			<designed target="Height" value="25" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<do-trace access-modifier="private" target="ParDevPath" ver="5">
+				<body>
+					<![CDATA[NumberGA + ".WorkingHours.Repair.Nar_START_af_r_cnt"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="TextParse_16" display-name="TextParse_16" uuid="a66e2dc8-3488-44d6-a2b0-90bd0a2c4997" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+			<designed target="X" value="11" ver="5"/>
+			<designed target="Y" value="44.916666666666629" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="352" ver="5"/>
+			<designed target="Height" value="29" ver="5"/>
+			<init target="notifyingMainFontSize" ver="5" value="26"/>
+			<init target="notifyingSymbolToSeparate" ver="5" value=" "/>
+			<do-trace access-modifier="private" target="ParDevPath" ver="5">
+				<body>
+					<![CDATA[NumberGA + ".WorkingHours.Repair.Nar_GEN_af_r"]]>
+				</body>
+			</do-trace>
+			<designed target="Font" value="Tahoma,20,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AnalogDpValue_23" display-name="AnalogDpValue_23" uuid="7b879b89-6c48-47bd-9ef8-98a1ccf58315" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+			<designed target="X" value="461.65454545454486" ver="5"/>
+			<designed target="Y" value="49.916666666666629" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="90" ver="5"/>
+			<designed target="Height" value="25" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<do-trace access-modifier="private" target="ParDevPath" ver="5">
+				<body>
+					<![CDATA[NumberGA + ".WorkingHours.Repair.Nar_GEN_af_r"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="TextPropertiesDialogs_1" display-name="TextPropertiesDialogs_1" uuid="2e471eb2-7933-40aa-a745-86685dc788cc" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="3.4000000000000909" ver="5"/>
+			<designed target="Y" value="-18.200000000000045" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="231.5" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Font" value="Tahoma,14,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+			<designed target="Text" value="История с кап. ремонта" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_221" display-name="Text_PropertiesDialogs_221" uuid="b62f45f4-3426-44f3-b186-91f19a2c49c8" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="-2" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="358" ver="5"/>
+		<designed target="Height" value="80" ver="5"/>
+		<designed target="Text" value="Режим работы ГА" ver="5"/>
+		<designed target="Font" value="Tahoma,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[NumberGA == "GA_01"]]>
+				</condition>
+				<expr>
+					<![CDATA["Режим управления ГА1"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[NumberGA == "GA_02"]]>
+				</condition>
+				<expr>
+					<![CDATA["Режим управления ГА2"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[NumberGA == "GA_03"]]>
+				</condition>
+				<expr>
+					<![CDATA["Режим управления ГА3"]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA["Режим управления"]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="NumberGA" display-name="Numer GA(GA_01..)" uuid="a5b613d7-37cc-4133-ae08-d8d74cf5260c" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="OU8_KPD_1" display-name="OU8_KPD_1" uuid="56bfcb49-9f4b-4f38-b349-fd4ff5b48359" base-type="OU8_KPD" base-type-id="7784091c-d3df-4e88-b08e-ad2373fdb28e" ver="5" description="" cardinal="1">
+		<designed target="X" value="27.666666666666629" ver="5"/>
+		<designed target="Y" value="149.99999999999994" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="646.66666666666663" ver="5"/>
+		<designed target="Height" value="499.99999999999989" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Button_PropertiesDialogs_5" display-name="Button_PropertiesDialogs_5" uuid="dcfd1824-8d86-465a-be24-d09d23dc9949" base-type="Button_PropertiesDialogs" base-type-id="eb940a52-68cb-41b0-824e-d3672b520ebf" ver="5" description="" cardinal="1">
+		<designed target="X" value="185" ver="5"/>
+		<designed target="Y" value="74" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="180" ver="5"/>
+		<designed target="Height" value="60" ver="5"/>
+		<designed target="Text" value="Эксплутационная" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+			<body kind="om">
+				<![CDATA[OU8_WF_1.Visible = false;
+OU8_KPD_1.Visible = true;]]>
+			</body>
+		</do-on>
+		<designed target="Font" value="Tahoma,14,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+		<designed target="Scale" value="0.80000000000000004" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Button_PropertiesDialogs_7" display-name="Button_PropertiesDialogs_7" uuid="c66891b0-e073-4a48-9d64-2591d3514128" base-type="Button_PropertiesDialogs" base-type-id="eb940a52-68cb-41b0-824e-d3672b520ebf" ver="5" description="" cardinal="1">
+		<designed target="X" value="365" ver="5"/>
+		<designed target="Y" value="74" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="180" ver="5"/>
+		<designed target="Height" value="60" ver="5"/>
+		<designed target="Text" value="Расходная" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+			<body kind="om">
+				<![CDATA[OU8_WF_1.Visible = true;
+OU8_KPD_1.Visible = false;]]>
+			</body>
+		</do-on>
+		<designed target="Font" value="Tahoma,14,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+		<designed target="Scale" value="0.80000000000000004" ver="5"/>
+	</object>
+	<object access-modifier="private" name="OU8_WF_1" display-name="OU8_WF_1" uuid="2d22cea8-0bb3-47f4-8801-1428c38e0e15" base-type="OU8_WF" base-type-id="b572f311-17d2-46d4-8c40-8a62b3ed91fc" ver="5" description="" cardinal="1">
+		<designed target="X" value="11.25" ver="5"/>
+		<designed target="Y" value="66.999999999999943" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="898" ver="5"/>
+		<designed target="Height" value="700" ver="5"/>
+		<designed target="Visible" value="false" ver="5"/>
+		<designed target="Scale" value="0.75" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_2" display-name="Rectangle_2" uuid="1314cca1-7f6e-4b74-a02f-292603c34543" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="754" ver="5"/>
+		<designed target="Y" value="103" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="590" ver="5"/>
+		<designed target="Height" value="270" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="TextParse_15" display-name="TextParse_15" uuid="b2671d3d-c923-41bb-95b9-bb5b0b44df00" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+			<designed target="X" value="6" ver="5"/>
+			<designed target="Y" value="48.916666666666629" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="352" ver="5"/>
+			<designed target="Height" value="24" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.HydroMech.H_real"/>
+			<init target="notifyingMainFontSize" ver="5" value="26"/>
+			<init target="notifyingSymbolToSeparate" ver="5" value=" "/>
+			<do-trace access-modifier="private" target="ParDevPath" ver="5">
+				<body>
+					<![CDATA[NumberGA + ".WorkingHours.Nar_START_af_r_cnt"]]>
+				</body>
+			</do-trace>
+			<designed target="Font" value="Tahoma,20,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AnalogDpValue_22" display-name="AnalogDpValue_22" uuid="149e964e-077e-4787-8738-b6e03e0f7f57" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+			<designed target="X" value="454.15000000000009" ver="5"/>
+			<designed target="Y" value="48.416666666666629" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="90" ver="5"/>
+			<designed target="Height" value="25" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.WorkingHours.Nar_START_af_r_cnt"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<do-trace access-modifier="private" target="ParDevPath" ver="5">
+				<body>
+					<![CDATA[NumberGA + ".WorkingHours.Nar_START_af_r_cnt"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="TextParse_16" display-name="TextParse_16" uuid="59318ec1-31ad-4755-830b-db82905aaebd" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+			<designed target="X" value="6" ver="5"/>
+			<designed target="Y" value="80.916666666666629" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="352" ver="5"/>
+			<designed target="Height" value="24" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.HydroMech.H_real"/>
+			<init target="notifyingMainFontSize" ver="5" value="26"/>
+			<init target="notifyingSymbolToSeparate" ver="5" value=" "/>
+			<do-trace access-modifier="private" target="ParDevPath" ver="5">
+				<body>
+					<![CDATA[NumberGA + ".WorkingHours.Nar_GEN_af_r"]]>
+				</body>
+			</do-trace>
+			<designed target="Font" value="Tahoma,20,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AnalogDpValue_23" display-name="AnalogDpValue_23" uuid="27266fdc-af2f-4c28-be00-4138218cc609" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+			<designed target="X" value="454.15000000000009" ver="5"/>
+			<designed target="Y" value="80.416666666666629" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="90" ver="5"/>
+			<designed target="Height" value="25" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.WorkingHours.Nar_START_af_r_cnt"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<do-trace access-modifier="private" target="ParDevPath" ver="5">
+				<body>
+					<![CDATA[NumberGA + ".WorkingHours.Nar_GEN_af_r"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="TextPropertiesDialogs_1" display-name="TextPropertiesDialogs_1" uuid="8db8df51-013e-465d-8cf4-e3eca1960341" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="3.4000000000000909" ver="5"/>
+			<designed target="Y" value="-18.200000000000045" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="231.5" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Font" value="Tahoma,14,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+			<designed target="Text" value="Основные параметры" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextPropertiesDialogs_2" display-name="TextPropertiesDialogs_2" uuid="1c511f05-09e1-4329-af6d-fe32ed2dee96" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="303.40000000000009" ver="5"/>
+			<designed target="Y" value="1.7999999999999545" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="86.5" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Font" value="Tahoma,14,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+			<designed target="Text" value="Текущее" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextPropertiesDialogs_3" display-name="TextPropertiesDialogs_3" uuid="c44c0e27-3cff-4f3e-9300-215f5447428b" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="453.90000000000009" ver="5"/>
+			<designed target="Y" value="1.7999999999999545" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="120.5" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Font" value="Tahoma,14,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+			<designed target="Text" value="Оптимальное" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextParse_17" display-name="TextParse_17" uuid="4b334957-cc0b-4c04-b9ec-7cfe4bfc99d5" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+			<designed target="X" value="6" ver="5"/>
+			<designed target="Y" value="112.91666666666663" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="352" ver="5"/>
+			<designed target="Height" value="24" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.HydroMech.H_real"/>
+			<init target="notifyingMainFontSize" ver="5" value="26"/>
+			<init target="notifyingSymbolToSeparate" ver="5" value=" "/>
+			<do-trace access-modifier="private" target="ParDevPath" ver="5">
+				<body>
+					<![CDATA[NumberGA + ".WorkingHours.Nar_GEN_af_r"]]>
+				</body>
+			</do-trace>
+			<designed target="Font" value="Tahoma,20,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextParse_18" display-name="TextParse_18" uuid="da26c487-d546-475a-85c5-dde4650b97f2" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+			<designed target="X" value="6" ver="5"/>
+			<designed target="Y" value="144.91666666666663" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="352" ver="5"/>
+			<designed target="Height" value="24" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.HydroMech.H_real"/>
+			<init target="notifyingMainFontSize" ver="5" value="26"/>
+			<init target="notifyingSymbolToSeparate" ver="5" value=" "/>
+			<do-trace access-modifier="private" target="ParDevPath" ver="5">
+				<body>
+					<![CDATA[NumberGA + ".WorkingHours.Nar_GEN_af_r"]]>
+				</body>
+			</do-trace>
+			<designed target="Font" value="Tahoma,20,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextParse_19" display-name="TextParse_19" uuid="76ff72df-cf29-405e-8d0b-f3c306193290" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+			<designed target="X" value="6" ver="5"/>
+			<designed target="Y" value="176.91666666666663" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="352" ver="5"/>
+			<designed target="Height" value="24" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.HydroMech.H_real"/>
+			<init target="notifyingMainFontSize" ver="5" value="26"/>
+			<init target="notifyingSymbolToSeparate" ver="5" value=" "/>
+			<do-trace access-modifier="private" target="ParDevPath" ver="5">
+				<body>
+					<![CDATA[NumberGA + ".WorkingHours.Nar_GEN_af_r"]]>
+				</body>
+			</do-trace>
+			<designed target="Font" value="Tahoma,20,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextParse_20" display-name="TextParse_20" uuid="f7059860-ed78-410b-85e6-3d826d8777ab" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+			<designed target="X" value="6" ver="5"/>
+			<designed target="Y" value="208.91666666666663" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="352" ver="5"/>
+			<designed target="Height" value="24" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.HydroMech.H_real"/>
+			<init target="notifyingMainFontSize" ver="5" value="26"/>
+			<init target="notifyingSymbolToSeparate" ver="5" value=" "/>
+			<do-trace access-modifier="private" target="ParDevPath" ver="5">
+				<body>
+					<![CDATA[NumberGA + ".WorkingHours.Nar_GEN_af_r"]]>
+				</body>
+			</do-trace>
+			<designed target="Font" value="Tahoma,20,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextParse_21" display-name="TextParse_21" uuid="24d7c59c-e188-4c6e-ad2b-a02b871778b5" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+			<designed target="X" value="6" ver="5"/>
+			<designed target="Y" value="240.91666666666663" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="352" ver="5"/>
+			<designed target="Height" value="24" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.HydroMech.H_real"/>
+			<init target="notifyingMainFontSize" ver="5" value="26"/>
+			<init target="notifyingSymbolToSeparate" ver="5" value=" "/>
+			<do-trace access-modifier="private" target="ParDevPath" ver="5">
+				<body>
+					<![CDATA[NumberGA + ".WorkingHours.Nar_GEN_af_r"]]>
+				</body>
+			</do-trace>
+			<designed target="Font" value="Tahoma,20,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AnalogDpValue_24" display-name="AnalogDpValue_24" uuid="5e4f0928-58ea-46ae-9131-112efabd63c2" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+			<designed target="X" value="454.15000000000009" ver="5"/>
+			<designed target="Y" value="112.41666666666663" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="90" ver="5"/>
+			<designed target="Height" value="25" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.WorkingHours.Nar_START_af_r_cnt"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<do-trace access-modifier="private" target="ParDevPath" ver="5">
+				<body>
+					<![CDATA[NumberGA + ".WorkingHours.Nar_START_af_r_cnt"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="AnalogDpValue_25" display-name="AnalogDpValue_25" uuid="06fe022c-17f6-41a1-bb20-5316d6e98704" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+			<designed target="X" value="454.15000000000009" ver="5"/>
+			<designed target="Y" value="144.41666666666663" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="90" ver="5"/>
+			<designed target="Height" value="25" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.WorkingHours.Nar_START_af_r_cnt"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<do-trace access-modifier="private" target="ParDevPath" ver="5">
+				<body>
+					<![CDATA[NumberGA + ".WorkingHours.Nar_GEN_af_r"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="AnalogDpValue_26" display-name="AnalogDpValue_26" uuid="671ac833-959e-41aa-aba2-ec1a067aafa2" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+			<designed target="X" value="290.65000000000009" ver="5"/>
+			<designed target="Y" value="48.416666666666629" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="90" ver="5"/>
+			<designed target="Height" value="25" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.WorkingHours.Nar_START_af_r_cnt"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<do-trace access-modifier="private" target="ParDevPath" ver="5">
+				<body>
+					<![CDATA[NumberGA + ".WorkingHours.Nar_START_af_r_cnt"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="AnalogDpValue_27" display-name="AnalogDpValue_27" uuid="07bf3ae9-78e6-4670-b28a-3ed8b0641019" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+			<designed target="X" value="290.65000000000009" ver="5"/>
+			<designed target="Y" value="80.416666666666629" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="90" ver="5"/>
+			<designed target="Height" value="25" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.WorkingHours.Nar_START_af_r_cnt"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<do-trace access-modifier="private" target="ParDevPath" ver="5">
+				<body>
+					<![CDATA[NumberGA + ".WorkingHours.Nar_GEN_af_r"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="AnalogDpValue_28" display-name="AnalogDpValue_28" uuid="853f7784-3fb8-4d64-b456-5a1c6d17f3d3" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+			<designed target="X" value="290.65000000000009" ver="5"/>
+			<designed target="Y" value="112.41666666666663" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="90" ver="5"/>
+			<designed target="Height" value="25" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.WorkingHours.Nar_START_af_r_cnt"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<do-trace access-modifier="private" target="ParDevPath" ver="5">
+				<body>
+					<![CDATA[NumberGA + ".WorkingHours.Nar_START_af_r_cnt"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="AnalogDpValue_29" display-name="AnalogDpValue_29" uuid="219c7c44-c611-4744-822f-d1f23c780ef2" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+			<designed target="X" value="290.65000000000009" ver="5"/>
+			<designed target="Y" value="144.41666666666663" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="90" ver="5"/>
+			<designed target="Height" value="25" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.WorkingHours.Nar_START_af_r_cnt"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<do-trace access-modifier="private" target="ParDevPath" ver="5">
+				<body>
+					<![CDATA[NumberGA + ".WorkingHours.Nar_GEN_af_r"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="AnalogDpValue_30" display-name="AnalogDpValue_30" uuid="94eaed84-5537-4ef1-896e-3efce7a1af01" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+			<designed target="X" value="372" ver="5"/>
+			<designed target="Y" value="176.41666666666663" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="90" ver="5"/>
+			<designed target="Height" value="25" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.WorkingHours.Nar_START_af_r_cnt"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<do-trace access-modifier="private" target="ParDevPath" ver="5">
+				<body>
+					<![CDATA[NumberGA + ".WorkingHours.Nar_START_af_r_cnt"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="AnalogDpValue_31" display-name="AnalogDpValue_31" uuid="70c17765-d1ba-42ec-9dbf-521fd843cbc5" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+			<designed target="X" value="372.65454545454531" ver="5"/>
+			<designed target="Y" value="208.41666666666663" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="90" ver="5"/>
+			<designed target="Height" value="25" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.WorkingHours.Nar_START_af_r_cnt"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<do-trace access-modifier="private" target="ParDevPath" ver="5">
+				<body>
+					<![CDATA[NumberGA + ".WorkingHours.Nar_GEN_af_r"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="AnalogDpValue_32" display-name="AnalogDpValue_32" uuid="c7f3606e-c2a9-4b8a-b802-9bd540080ca2" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+			<designed target="X" value="373.65454545454509" ver="5"/>
+			<designed target="Y" value="240.41666666666663" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="90" ver="5"/>
+			<designed target="Height" value="25" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.WorkingHours.Nar_START_af_r_cnt"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<do-trace access-modifier="private" target="ParDevPath" ver="5">
+				<body>
+					<![CDATA[NumberGA + ".WorkingHours.Nar_START_af_r_cnt"]]>
+				</body>
+			</do-trace>
+		</object>
+	</object>
+	<object access-modifier="private" name="Rectangle_3" display-name="Rectangle_3" uuid="6e5ff51a-a0ce-42f9-883e-06aaa834dd51" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="756" ver="5"/>
+		<designed target="Y" value="386" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="590" ver="5"/>
+		<designed target="Height" value="180" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="TextParse_15" display-name="TextParse_15" uuid="69ce1f97-f4ca-43e8-99f3-af3f9eb8b35a" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+			<designed target="X" value="6" ver="5"/>
+			<designed target="Y" value="48.916666666666629" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="352" ver="5"/>
+			<designed target="Height" value="24" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.HydroMech.H_real"/>
+			<init target="notifyingMainFontSize" ver="5" value="26"/>
+			<init target="notifyingSymbolToSeparate" ver="5" value=" "/>
+			<do-trace access-modifier="private" target="ParDevPath" ver="5">
+				<body>
+					<![CDATA[NumberGA + ".WorkingHours.Nar_START_af_r_cnt"]]>
+				</body>
+			</do-trace>
+			<designed target="Font" value="Tahoma,20,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AnalogDpValue_22" display-name="AnalogDpValue_22" uuid="18479aed-4c8f-47d6-868a-6f0fa8c22e3f" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+			<designed target="X" value="456.15000000000009" ver="5"/>
+			<designed target="Y" value="47.416666666666629" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="90" ver="5"/>
+			<designed target="Height" value="25" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.WorkingHours.Nar_START_af_r_cnt"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<do-trace access-modifier="private" target="ParDevPath" ver="5">
+				<body>
+					<![CDATA[NumberGA + ".WorkingHours.Nar_START_af_r_cnt"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="TextParse_16" display-name="TextParse_16" uuid="770571ea-c0ca-4adb-b9c3-25ef18189ba2" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+			<designed target="X" value="6" ver="5"/>
+			<designed target="Y" value="80.916666666666629" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="352" ver="5"/>
+			<designed target="Height" value="24" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.HydroMech.H_real"/>
+			<init target="notifyingMainFontSize" ver="5" value="26"/>
+			<init target="notifyingSymbolToSeparate" ver="5" value=" "/>
+			<do-trace access-modifier="private" target="ParDevPath" ver="5">
+				<body>
+					<![CDATA[NumberGA + ".WorkingHours.Nar_GEN_af_r"]]>
+				</body>
+			</do-trace>
+			<designed target="Font" value="Tahoma,20,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AnalogDpValue_23" display-name="AnalogDpValue_23" uuid="058b717b-108c-4c75-92ef-960f6bbe73c1" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+			<designed target="X" value="456.15000000000009" ver="5"/>
+			<designed target="Y" value="79.416666666666629" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="90" ver="5"/>
+			<designed target="Height" value="25" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.WorkingHours.Nar_START_af_r_cnt"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<do-trace access-modifier="private" target="ParDevPath" ver="5">
+				<body>
+					<![CDATA[NumberGA + ".WorkingHours.Nar_GEN_af_r"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="TextPropertiesDialogs_1" display-name="TextPropertiesDialogs_1" uuid="db68bf77-8441-4fd0-a729-3302054f791d" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="3.4000000000000909" ver="5"/>
+			<designed target="Y" value="-18.200000000000045" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="231.5" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Font" value="Tahoma,14,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+			<designed target="Text" value="Ограничения" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextPropertiesDialogs_2" display-name="TextPropertiesDialogs_2" uuid="c4a7d5d1-204b-4fc9-b037-497107fe3d50" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="340.40000000000009" ver="5"/>
+			<designed target="Y" value="0.79999999999995453" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="44.5" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Font" value="Tahoma,14,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+			<designed target="Text" value="мин." ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextPropertiesDialogs_3" display-name="TextPropertiesDialogs_3" uuid="36b2d29c-bd08-4376-b7c4-23d8a25d3094" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="502.90000000000009" ver="5"/>
+			<designed target="Y" value="0.79999999999995453" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="46.5" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Font" value="Tahoma,14,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+			<designed target="Text" value="макс." ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextParse_17" display-name="TextParse_17" uuid="28ccb616-a23e-4482-b269-2cb9746d51ba" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+			<designed target="X" value="6" ver="5"/>
+			<designed target="Y" value="112.91666666666663" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="352" ver="5"/>
+			<designed target="Height" value="24" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.HydroMech.H_real"/>
+			<init target="notifyingMainFontSize" ver="5" value="26"/>
+			<init target="notifyingSymbolToSeparate" ver="5" value=" "/>
+			<do-trace access-modifier="private" target="ParDevPath" ver="5">
+				<body>
+					<![CDATA[NumberGA + ".WorkingHours.Nar_GEN_af_r"]]>
+				</body>
+			</do-trace>
+			<designed target="Font" value="Tahoma,20,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextParse_18" display-name="TextParse_18" uuid="da7df698-50c3-4240-b22c-15a7c56f28fc" base-type="TextParseDescrete" base-type-id="7ad26d10-066f-4fbd-b9ea-c58c3ba8c7f0" ver="5" description="" cardinal="1">
+			<designed target="X" value="6" ver="5"/>
+			<designed target="Y" value="144.91666666666663" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="352" ver="5"/>
+			<designed target="Height" value="24" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.HydroMech.H_real"/>
+			<init target="notifyingMainFontSize" ver="5" value="26"/>
+			<init target="notifyingSymbolToSeparate" ver="5" value=" "/>
+			<do-trace access-modifier="private" target="ParDevPath" ver="5">
+				<body>
+					<![CDATA[NumberGA + ".WorkingHours.Nar_GEN_af_r"]]>
+				</body>
+			</do-trace>
+			<designed target="Font" value="Tahoma,20,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AnalogDpValue_24" display-name="AnalogDpValue_24" uuid="9f3b3229-e9bc-48a2-93ca-3c611a2ae75a" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+			<designed target="X" value="456.15000000000009" ver="5"/>
+			<designed target="Y" value="111.41666666666663" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="90" ver="5"/>
+			<designed target="Height" value="25" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.WorkingHours.Nar_START_af_r_cnt"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<do-trace access-modifier="private" target="ParDevPath" ver="5">
+				<body>
+					<![CDATA[NumberGA + ".WorkingHours.Nar_START_af_r_cnt"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="AnalogDpValue_25" display-name="AnalogDpValue_25" uuid="9b9269a1-7e77-4bdd-b0a4-55fad160d516" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+			<designed target="X" value="456.15000000000009" ver="5"/>
+			<designed target="Y" value="143.41666666666663" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="90" ver="5"/>
+			<designed target="Height" value="25" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.WorkingHours.Nar_START_af_r_cnt"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<do-trace access-modifier="private" target="ParDevPath" ver="5">
+				<body>
+					<![CDATA[NumberGA + ".WorkingHours.Nar_GEN_af_r"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="AnalogDpValue_26" display-name="AnalogDpValue_26" uuid="ad71755f-8022-4c3c-9a71-4b0a9ecdf8bf" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+			<designed target="X" value="292.65000000000009" ver="5"/>
+			<designed target="Y" value="47.416666666666629" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="90" ver="5"/>
+			<designed target="Height" value="25" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.WorkingHours.Nar_START_af_r_cnt"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<do-trace access-modifier="private" target="ParDevPath" ver="5">
+				<body>
+					<![CDATA[NumberGA + ".WorkingHours.Nar_START_af_r_cnt"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="AnalogDpValue_27" display-name="AnalogDpValue_27" uuid="cc8e69ac-2329-4ae3-876d-3962e1f6aa49" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+			<designed target="X" value="292.65000000000009" ver="5"/>
+			<designed target="Y" value="79.416666666666629" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="90" ver="5"/>
+			<designed target="Height" value="25" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.WorkingHours.Nar_START_af_r_cnt"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<do-trace access-modifier="private" target="ParDevPath" ver="5">
+				<body>
+					<![CDATA[NumberGA + ".WorkingHours.Nar_GEN_af_r"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="AnalogDpValue_28" display-name="AnalogDpValue_28" uuid="4177db32-070e-4e4b-b325-28a23054c569" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+			<designed target="X" value="292.65000000000009" ver="5"/>
+			<designed target="Y" value="111.41666666666663" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="90" ver="5"/>
+			<designed target="Height" value="25" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.WorkingHours.Nar_START_af_r_cnt"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<do-trace access-modifier="private" target="ParDevPath" ver="5">
+				<body>
+					<![CDATA[NumberGA + ".WorkingHours.Nar_START_af_r_cnt"]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="AnalogDpValue_29" display-name="AnalogDpValue_29" uuid="959d8e71-9638-4c72-9b4b-4b26021501c4" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+			<designed target="X" value="292.65000000000009" ver="5"/>
+			<designed target="Y" value="143.41666666666663" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="90" ver="5"/>
+			<designed target="Height" value="25" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.WorkingHours.Nar_START_af_r_cnt"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<do-trace access-modifier="private" target="ParDevPath" ver="5">
+				<body>
+					<![CDATA[NumberGA + ".WorkingHours.Nar_GEN_af_r"]]>
+				</body>
+			</do-trace>
+		</object>
+	</object>
+	<object access-modifier="private" name="Rectangle_4" display-name="Rectangle_4" uuid="92527e8a-8a4f-4d87-9142-a4e77c95ffd6" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="756" ver="5"/>
+		<designed target="Y" value="578" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="401" ver="5"/>
+		<designed target="Height" value="102" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="TextPropertiesDialogs_1" display-name="TextPropertiesDialogs_1" uuid="6de8da39-798c-4582-9d2e-1477e707ecd0" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="3.4000000000000909" ver="5"/>
+			<designed target="Y" value="-18.200000000000045" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="262.49999999999977" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="Font" value="Tahoma,14,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+			<designed target="Text" value="Задание активной мощности " ver="5"/>
+		</object>
+		<object access-modifier="private" name="DiscreteDpValueLong_42" display-name="DiscreteDpValueLong_42" uuid="cdae536f-0284-4a56-ae13-18efc7213722" base-type="DiscreteDpValue" base-type-id="0aa36430-7867-405c-b541-89e8cf6e92d2" ver="5" description="" cardinal="1">
+			<designed target="X" value="7" ver="5"/>
+			<designed target="Y" value="41.333333333333371" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="187.99999999999989" ver="5"/>
+			<designed target="Height" value="30" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Conditions.Cond_GEN_to_HHT1"/>
+			<init target="notifyingLenghtOfString" ver="5" value="40"/>
+			<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<do-trace access-modifier="private" target="TextColorOn" ver="5">
+				<body>
+					<![CDATA[AsokuColor.asokuBlack]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="TextColorOff" ver="5">
+				<body>
+					<![CDATA[AsokuColor.asokuBlack]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="ColorOn" ver="5">
+				<body>
+					<![CDATA[AsokuColor.asokuGreen]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="ColorOff" ver="5">
+				<body>
+					<![CDATA[AsokuColor.asokuGrey]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="DiscreteDpValueLong_43" display-name="DiscreteDpValueLong_43" uuid="8563de6a-bd42-42ce-be11-25d4c9313b5b" base-type="DiscreteDpValue" base-type-id="0aa36430-7867-405c-b541-89e8cf6e92d2" ver="5" description="" cardinal="1">
+			<designed target="X" value="207.66666666666674" ver="5"/>
+			<designed target="Y" value="41.333333333333371" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="187.99999999999989" ver="5"/>
+			<designed target="Height" value="30" ver="5"/>
+			<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Conditions.Cond_GEN_to_HHT1"/>
+			<init target="notifyingLenghtOfString" ver="5" value="40"/>
+			<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<do-trace access-modifier="private" target="TextColorOn" ver="5">
+				<body>
+					<![CDATA[AsokuColor.asokuBlack]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="TextColorOff" ver="5">
+				<body>
+					<![CDATA[AsokuColor.asokuBlack]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="ColorOn" ver="5">
+				<body>
+					<![CDATA[AsokuColor.asokuGreen]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="ColorOff" ver="5">
+				<body>
+					<![CDATA[AsokuColor.asokuGrey]]>
+				</body>
+			</do-trace>
+		</object>
+	</object>
+	<object access-modifier="private" name="ButtonClose" display-name="ButtonClose" uuid="24bff7b9-f1b9-454f-ac5b-4d441652eb1e" base-type="Button_PropertiesDialogs" base-type-id="eb940a52-68cb-41b0-824e-d3672b520ebf" ver="5" description="" cardinal="1">
+		<designed target="X" value="1194" ver="5"/>
+		<designed target="Y" value="633.5" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="150" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+		<designed target="Text" value="Закрыть" ver="5"/>
+		<designed target="Font" value="Arial,12,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="Checkable" value="false" ver="5"/>
+		<do-trace access-modifier="private" target="OnHoverBrushColor" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlue]]>
+			</body>
+		</do-trace>
+		<designed target="OnHoverFontColor" value="0xff000000" ver="5"/>
+		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+			<body kind="javascript">
+				<![CDATA[here.Close();]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="ButtonControl" display-name="ButtonControl" uuid="94882c5c-8939-4476-ad2a-dbaffd56c0ba" base-type="Button_PropertiesDialogs" base-type-id="eb940a52-68cb-41b0-824e-d3672b520ebf" ver="5" description="" cardinal="1">
+		<designed target="X" value="1194" ver="5"/>
+		<designed target="Y" value="590.5" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="150" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+		<designed target="Text" value="Управление" ver="5"/>
+		<designed target="Font" value="Arial,12,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="Checkable" value="false" ver="5"/>
+		<do-trace access-modifier="private" target="OnHoverBrushColor" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlue]]>
+			</body>
+		</do-trace>
+		<designed target="OnHoverFontColor" value="0xff000000" ver="5"/>
+		<designed target="PenColor" value="0xff000000" ver="5"/>
+	</object>
+	<object access-modifier="private" name="DiscreteDpGAWorkStatus_4" display-name="DiscreteDpGAWorkStatus_4" uuid="0e134a38-4b4e-469d-b548-b96ac11842a3" base-type="EnumValue" base-type-id="0e0655fb-7150-4be8-9e96-9c6e2db56382" ver="5" description="" cardinal="1">
+		<designed target="X" value="340.42898649312542" ver="5"/>
+		<designed target="Y" value="22.499999999999943" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="250" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<init target="notifyingFontStyle" ver="5" value="Tahoma,14,-1,5,75,0,0,0,0,0,Полужирный"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Control.OPr_GA_mode_OP"/>
+		<do-trace access-modifier="private" target="TextColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 0]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuBlack]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 1]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuLightGrey]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 2]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuWhite]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 3]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuWhite]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 4]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuWhite]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 5]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuYellow]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 6]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuBlue]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 7]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 8]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 9]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuGreen]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 10]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuYellow]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 11]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuWhite]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 12]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuWhite]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 13]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuWhite]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 14]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuWhite]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 15]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 16]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 17]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuGreen]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 18]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuLightGrey]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 19]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuLightGrey]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 20]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuLightGrey]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 21]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuLightGrey]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 22]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuLightGrey]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 24]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuLightGrey]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[AsokuColor.asokuGrey]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="BlinkerColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 0]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuBlack]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 1]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuLightGrey]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 2]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuWhite]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 3]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuBlue]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 4]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 5]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuYellow]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 6]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuBlue]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 7]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 8]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 9]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuGreen]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 10]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuWhite]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 11]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuBlue]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 12]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 13]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 14]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuGreen]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 15]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuYellow]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 16]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuBlue]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 17]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 18]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 19]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 20]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 21]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 22]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[this.ApParValue.Value == 24]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[AsokuColor.asokuGrey]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+</type>
+

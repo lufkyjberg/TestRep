@@ -1,0 +1,186 @@
+<type access-modifier="public" name="LabelMain" display-name="LabelMain" uuid="cb0fac76-39cc-48e5-baae-54a64814df5f" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="500" ver="5"/>
+	<designed target="Height" value="50" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xffffffff" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<object access-modifier="private" name="LabelObjects" display-name="LabelObjects" uuid="cd341034-4eea-4ced-9e2e-fdf859fa94d1" base-type="LabelObject" base-type-id="78a45759-691b-40c8-87f2-361c02d3712f" ver="5" description="" cardinal="30">
+		<designed target="X" value="5" ver="5"/>
+		<designed target="Y" value="10" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="60" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<designed target="Visible" value="false" ver="5"/>
+	</object>
+	<do access-modifier="private" name="ParseItemsJson" display-name="ParseItemsJson" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="javascript">
+			<![CDATA[//функция разбиения списка плакатов
+var value = FileSystem.ReadTextFile(FileSystem.ParentPath(FileSystem.ProjectFolder) + "/externals/ASOKU_LAB/resources/data/source.json");
+
+var items = JSON.parse(value); //список плакатов
+    items = items.Label;
+
+var miIndex = 0;               //номер объекта плаката
+var i = 0;                     //номер плаката в списке
+
+var delta = here.height *0.1;              //расстояние между плакатами
+var heightLabel = here.height - 2 * delta; //высота плакатов
+heightMax = here.height;                   //максимальная высота панели плакатов
+
+var startX = delta;  //позиция первого плаката
+var startY = delta;
+
+var widthMax = items.length *( 2 * heightLabel + delta);
+if ( widthMax > width) //уменьшаем плакаты, если не умещаются
+{ 
+   heightLabel = heightLabel * width / widthMax; //высота плакатов 
+}  
+
+while(i < items.length)
+{
+  var item = items[i]; 
+  if (miIndex < LabelObjects.Length)
+  {
+	  // добавляем плакаты на панель
+	  LabelObjects[miIndex].Name.Value = item.Name;
+	  LabelObjects[miIndex].Pixmap.Value = item.Pixmap;
+	  LabelObjects[miIndex].idLabel.Value = item.Panel
+
+    var widthLabel; //ширина плаката
+    if(item.Shape == "прямоугольник")
+    {
+      widthLabel = 2 * heightLabel;
+    }
+    else if (item.Shape == "квадрат")
+    {
+       widthLabel = heightLabel;
+    }
+    else if (item.Shape == "треугольник")
+    {
+       widthLabel = 1.16 * heightLabel;
+    }
+    else
+    {
+       widthLabel = 2 * heightLabel;
+    }
+  
+    //передаем параметры высоты и ширины 
+    LabelObjects[miIndex].height = heightLabel; 
+    LabelObjects[miIndex].width = widthLabel;    
+    LabelObjects[miIndex].Image_1.Height = heightLabel;
+    LabelObjects[miIndex].Image_1.Width = widthLabel;
+   
+    if ((width - 25) < (startX + widthLabel))   //проверяем необходимость перехода ко второй строке
+    {
+      startX = delta;
+      startY += here.height;
+      heightMax += here.height;
+    } 
+   //размещение плаката           
+	  LabelObjects[miIndex].X = startX;	 
+	  LabelObjects[miIndex].Y = startY;	 				
+	  LabelObjects[miIndex].Visible = true;
+     				    
+	  startX += widthLabel + delta;
+	  miIndex += 1;
+	}			
+	i += 1;
+}
+
+
+    ]]>
+		</body>
+	</do>
+	<object access-modifier="private" name="Initializer" display-name="Initializer" uuid="6dce0e6f-e93d-46e0-919e-8afa101741a3" base-type="Initializer" base-type-id="6db89679-9299-4993-ad1a-0d086cd1c7d2" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Initialized">
+			<body kind="om">
+				<![CDATA[ParseItemsJson();]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="FileSystem" display-name="FileSystem" uuid="fd30fbb8-c9b1-46a4-b6e9-ce11e66e0f96" base-type="FileSystem" base-type-id="34d744f9-7303-4077-a3f7-9c06c0945512" ver="5" description="" cardinal="1">
+		<designed target="RootPath" value="/" ver="5"/>
+	</object>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="500" ver="5"/>
+	<designed target="WindowHeight" value="500" ver="5"/>
+	<designed target="WindowCaption" value="Плакаты" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="true" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="2" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="0" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<object access-modifier="private" name="Close_LabelMain" display-name="Close_LabelMain" uuid="e37f0c8a-f71b-4dcc-8bb4-ee6d6df462b2" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="close"/>
+	</object>
+	<object access-modifier="private" name="isOpenLabelMain" display-name="isOpenLabelMain" uuid="0b95c86a-f150-4cad-a451-4f0e4175d525" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ValueChanged">
+			<body kind="om">
+				<![CDATA[if(isOpenLabelMain==false)Close();]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="width" display-name="Ширина панели" uuid="a551ac7b-5414-4825-872a-ef695870a905" base-type="notifying_float8" base-type-id="3f905fb7-7738-4619-b402-5a91f136d4bd" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="height" display-name="Высота панели" uuid="4997b186-076e-47ef-83ea-c47b59177a73" base-type="notifying_float8" base-type-id="3f905fb7-7738-4619-b402-5a91f136d4bd" ver="5" description="" cardinal="1"/>
+	<do-trace access-modifier="private" target="Width" ver="5">
+		<body>
+			<![CDATA[here.width]]>
+		</body>
+	</do-trace>
+	<object access-modifier="private" name="heightMax" display-name="heightMax" uuid="fc6035ff-7968-4c61-af5e-37f9fe0be567" base-type="notifying_float4" base-type-id="bb7d05ee-cbf0-4c44-8740-1905239c8ead" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="DebugTool_1" display-name="DebugTool_1" uuid="3292c51c-9d61-4fcc-9e20-95ac558c49cc" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="5" description="" cardinal="1"/>
+	<do-trace access-modifier="private" target="Height" ver="5">
+		<conditional-expr>
+			<condition>
+				<![CDATA[here.height > here.heightMax]]>
+			</condition>
+			<expr>
+				<![CDATA[here.height]]>
+			</expr>
+		</conditional-expr>
+		<default-expr>
+			<expr>
+				<![CDATA[here.heightMax]]>
+			</expr>
+		</default-expr>
+	</do-trace>
+	<do-trace access-modifier="private" target="WindowWidth" ver="5">
+		<body>
+			<![CDATA[here.width]]>
+		</body>
+	</do-trace>
+	<do-trace access-modifier="private" target="WindowHeight" ver="5">
+		<body>
+			<![CDATA[here.height]]>
+		</body>
+	</do-trace>
+	<object access-modifier="private" name="DragNDrop" display-name="DragNDrop" uuid="7580d032-16a8-42fd-a6c1-038ce187ede4" base-type="DragNDrop" base-type-id="c4ddb32f-3653-44c8-be57-3a595e10c2fb" ver="5" description="" cardinal="1">
+		<designed target="DragEnabled" value="true" ver="5"/>
+		<designed target="DropEnabled" value="false" ver="5"/>
+		<designed target="Image" value="" ver="5"/>
+	</object>
+	<designed target="Flip" value="0" ver="5"/>
+</type>
+

@@ -1,0 +1,381 @@
+<type access-modifier="public" name="MenuButton_v3(deprecated)" display-name="MenuButton_v3(deprecated)" uuid="702a7da9-65d3-4f88-8bd4-f3f7a7357963" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="72" ver="5"/>
+	<designed target="Height" value="25" ver="5"/>
+	<designed target="RoundingRadius" value="0" ver="5"/>
+	<designed target="PenColor" value="0xff000000" ver="5"/>
+	<designed target="PenStyle" value="1" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="4278190080" ver="5"/>
+	<designed target="BrushStyle" value="0" ver="5"/>
+	<object access-modifier="private" name="Button" display-name="Button" uuid="36f9c3ed-d872-476a-8248-c54f3401ad41" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="72" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="Checkable" value="true" ver="5"/>
+		<designed target="Checked" value="false" ver="5"/>
+		<designed target="Text" value="Button" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Font" value="Tahoma,7,-1,5,50,0,0,0,0,0,Regular" ver="5"/>
+		<designed target="FontColor" value="0xff000000" ver="5"/>
+		<designed target="OnClickFontColor" value="4278190080" ver="5"/>
+		<designed target="OnHoverFontColor" value="4278190080" ver="5"/>
+		<designed target="DisabledFontColor" value="4278190080" ver="5"/>
+		<designed target="BrushColor" value="0xfff0f0f0" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="OnClickBrushColor" value="0xff55aaff" ver="5"/>
+		<designed target="OnClickBrushStyle" value="1" ver="5"/>
+		<designed target="OnHoverBrushColor" value="4294967295" ver="5"/>
+		<designed target="OnHoverBrushStyle" value="1" ver="5"/>
+		<designed target="DisabledBrushColor" value="4288716960" ver="5"/>
+		<designed target="DisabledBrushStyle" value="1" ver="5"/>
+		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="OnClickPenColor" value="0xff000000" ver="5"/>
+		<designed target="OnClickPenStyle" value="1" ver="5"/>
+		<designed target="OnClickPenWidth" value="1" ver="5"/>
+		<designed target="OnHoverPenColor" value="4278190080" ver="5"/>
+		<designed target="OnHoverPenStyle" value="1" ver="5"/>
+		<designed target="OnHoverPenWidth" value="1" ver="5"/>
+		<designed target="DisabledPenColor" value="4288716960" ver="5"/>
+		<designed target="DisabledPenStyle" value="1" ver="5"/>
+		<designed target="DisabledPenWidth" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<body>
+				<![CDATA[NAME]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+			<body kind="om">
+				<![CDATA[//Global.DebugTool.Log("-------------------------------------");
+//
+//Global.DebugTool.Log(ParDevPath);
+//Global.DebugTool.Log(Ap_Source_Par.Path);
+//Global.DebugTool.Log(Fault.Path);
+//Global.DebugTool.Log(Fault.ValueAsString);
+//
+//Global.DebugTool.Log("-------------------------------------");
+this.Checked = Active.Value;
+onPressButton.Invoke();]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Checked" ver="5">
+			<body>
+				<![CDATA[Active.Value]]>
+			</body>
+		</do-trace>
+		<designed target="Flip" value="0" ver="5"/>
+		<object access-modifier="private" name="Blinker" display-name="Blinker" uuid="d4e4c6ce-d2e3-4d05-8534-0b63756b2135" base-type="Blinker" base-type-id="de67e797-c7fd-4703-9e0a-c04ac4022006" ver="5" description="" cardinal="1">
+			<designed target="Period" value="1000" ver="5"/>
+			<designed target="Active" value="false" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="BrushColor" value="0xff000000" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<do-trace access-modifier="private" target="Active" ver="5">
+				<conditional-expr>
+					<condition>
+						<![CDATA[AckAlarm.Value == 600 || AckAlarm_1.Value == 600 || AckAlarm_2.Value == 600 || AckAlarm_3.Value == 600 || AckAlarm_4.Value == 600]]>
+					</condition>
+					<expr>
+						<![CDATA[true]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[AckWarning.Value == 400 || AckWarning_1.Value == 400 || AckWarning_2.Value == 400 || AckWarning_3.Value == 400 || AckWarning_4.Value == 400]]>
+					</condition>
+					<expr>
+						<![CDATA[true]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[AckFault.Value == 800 || AckFault_1.Value == 800 || AckFault_2.Value == 800 || AckFault_3.Value == 800 || AckFault_4.Value == 800]]>
+					</condition>
+					<expr>
+						<![CDATA[true]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[false]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<do-trace access-modifier="private" target="BrushColor" ver="5">
+				<conditional-expr>
+					<condition>
+						<![CDATA[AckFault.Value == 800 || AckFault_1.Value == 800 || AckFault_2.Value == 800 || AckFault_3.Value == 800 || AckFault_4.Value == 800]]>
+					</condition>
+					<expr>
+						<![CDATA[AsokuColor.asokuGrey]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[AckAlarm.Value == 600 || AckAlarm_1.Value == 600 || AckAlarm_2.Value == 600 || AckAlarm_3.Value == 600 || AckAlarm_4.Value == 600]]>
+					</condition>
+					<expr>
+						<![CDATA[AsokuColor.asokuRed]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[AckWarning.Value == 400 || AckWarning_1.Value == 400 || AckWarning_2.Value == 400 || AckWarning_3.Value == 400 || AckWarning_4.Value == 400]]>
+					</condition>
+					<expr>
+						<![CDATA[AsokuColor.asokuYellow]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+		</object>
+		<do-trace access-modifier="private" target="PenColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[AckSimulatte.Value == 900 || AckSimulatte_1.Value == 900 || AckSimulatte_2.Value == 900 || AckSimulatte_3.Value == 900 || AckSimulatte_4.Value == 900]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuCyan]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Title" display-name="Title" uuid="896b24f8-0d7b-4d65-aefa-fc567fc0b31f" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Items" display-name="Items" uuid="58b87e2c-578c-427b-a3db-987e36975579" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Active" display-name="Active" uuid="1ad4f7ae-3b7f-4a5d-a9eb-4e698d696d35" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="MenuLevel" display-name="MenuLevel" uuid="6d349f66-4b14-4ca1-b028-64c39b8ce37a" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="onPressButton" display-name="onPressButton" uuid="fb6a311c-4915-4970-ad00-8060b9c83767" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" base-const="true" base-ref="true" ver="5" description=""/>
+	<object access-modifier="private" name="MenuButtonResult" display-name="MenuButtonResult" uuid="390ae10e-113c-4c33-84af-640fc7758351" base-type="MenuButtonResult" base-type-id="8bd86758-ab59-4b9f-b15b-38e1d493c839" base-const="true" base-ref="true" ver="5" description=""/>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseEnter">
+		<body kind="om">
+			<![CDATA[here.PenWidth = 3;]]>
+		</body>
+	</do-on>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="MouseLeave">
+		<body kind="om">
+			<![CDATA[here.PenWidth = 1;]]>
+		</body>
+	</do-on>
+	<designed target="Flip" value="0" ver="5"/>
+	<object access-modifier="private" name="NAME" display-name="NAME" uuid="a40e4830-689d-4d70-8e18-44a5894fc368" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ParDevPath" display-name="Путь параметра" uuid="9b79584c-8e79-4018-b757-4e466bf21a0c" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ValueChanged">
+			<body kind="javascript">
+				<![CDATA[Fault.Path = ParDevPath.Value.split("|")[0] + ".Aggregation_Fault.MaxImportantEventsInBranch";
+Alarm.Path = ParDevPath.Value.split("|")[0] + ".Aggregation_Alarm.MaxImportantEventsInBranch";
+Warning.Path = ParDevPath.Value.split("|")[0] + ".Aggregation_Warn.MaxImportantEventsInBranch";
+Simulatte.Path = ParDevPath.Value.split("|")[0] + ".Aggregation_Simulation.MaxImportantEventsInBranch";
+AckFault.Path = ParDevPath.Value.split("|")[0] + ".Aggregation_Fault.MaxImportantNonAckEventsInBranch";
+AckAlarm.Path = ParDevPath.Value.split("|")[0] + ".Aggregation_Alarm.MaxImportantNonAckEventsInBranch";
+AckWarning.Path = ParDevPath.Value.split("|")[0] + ".Aggregation_Warn.MaxImportantNonAckEventsInBranch";
+AckSimulatte.Path = ParDevPath.Value.split("|")[0] + ".Aggregation_Simulation.MaxImportantNonAckEventsInBranch";
+Fault_1.Path = ParDevPath.Value.split("|")[1] + ".Aggregation_Fault.MaxImportantEventsInBranch";
+Alarm_1.Path = ParDevPath.Value.split("|")[1] + ".Aggregation_Alarm.MaxImportantEventsInBranch";
+Warning_1.Path = ParDevPath.Value.split("|")[1] + ".Aggregation_Warn.MaxImportantEventsInBranch";
+Simulatte_1.Path = ParDevPath.Value.split("|")[1] + ".Aggregation_Simulation.MaxImportantEventsInBranch";
+AckFault_1.Path = ParDevPath.Value.split("|")[1] + ".Aggregation_Fault.MaxImportantNonAckEventsInBranch";
+AckAlarm_1.Path = ParDevPath.Value.split("|")[1] + ".Aggregation_Alarm.MaxImportantNonAckEventsInBranch";
+AckWarning_1.Path = ParDevPath.Value.split("|")[1] + ".Aggregation_Warn.MaxImportantNonAckEventsInBranch";
+AckSimulatte_1.Path = ParDevPath.Value.split("|")[1] + ".Aggregation_Simulation.MaxImportantNonAckEventsInBranch";
+Fault_2.Path = ParDevPath.Value.split("|")[2] + ".Aggregation_Fault.MaxImportantEventsInBranch";
+Alarm_2.Path = ParDevPath.Value.split("|")[2] + ".Aggregation_Alarm.MaxImportantEventsInBranch";
+Warning_2.Path = ParDevPath.Value.split("|")[2] + ".Aggregation_Warn.MaxImportantEventsInBranch";
+Simulatte_2.Path = ParDevPath.Value.split("|")[2] + ".Aggregation_Simulation.MaxImportantEventsInBranch";
+AckFault_2.Path = ParDevPath.Value.split("|")[2] + ".Aggregation_Fault.MaxImportantNonAckEventsInBranch";
+AckAlarm_2.Path = ParDevPath.Value.split("|")[2] + ".Aggregation_Alarm.MaxImportantNonAckEventsInBranch";
+AckWarning_2.Path = ParDevPath.Value.split("|")[2] + ".Aggregation_Warn.MaxImportantNonAckEventsInBranch";
+AckSimulatte_2.Path = ParDevPath.Value.split("|")[2] + ".Aggregation_Simulation.MaxImportantNonAckEventsInBranch";
+Fault_3.Path = ParDevPath.Value.split("|")[3] + ".Aggregation_Fault.MaxImportantEventsInBranch";
+Alarm_3.Path = ParDevPath.Value.split("|")[3] + ".Aggregation_Alarm.MaxImportantEventsInBranch";
+Warning_3.Path = ParDevPath.Value.split("|")[3] + ".Aggregation_Warn.MaxImportantEventsInBranch";
+Simulatte_3.Path = ParDevPath.Value.split("|")[3] + ".Aggregation_Simulation.MaxImportantEventsInBranch";
+AckFault_3.Path = ParDevPath.Value.split("|")[3] + ".Aggregation_Fault.MaxImportantNonAckEventsInBranch";
+AckAlarm_3.Path = ParDevPath.Value.split("|")[3] + ".Aggregation_Alarm.MaxImportantNonAckEventsInBranch";
+AckWarning_3.Path = ParDevPath.Value.split("|")[3] + ".Aggregation_Warn.MaxImportantNonAckEventsInBranch";
+AckSimulatte_3.Path = ParDevPath.Value.split("|")[3] + ".Aggregation_Simulation.MaxImportantNonAckEventsInBranch";
+Fault_4.Path = ParDevPath.Value.split("|")[4] + ".Aggregation_Fault.MaxImportantEventsInBranch";
+Alarm_4.Path = ParDevPath.Value.split("|")[4] + ".Aggregation_Alarm.MaxImportantEventsInBranch";
+Warning_4.Path = ParDevPath.Value.split("|")[4] + ".Aggregation_Warn.MaxImportantEventsInBranch";
+Simulatte_4.Path = ParDevPath.Value.split("|")[4] + ".Aggregation_Simulation.MaxImportantEventsInBranch";
+AckFault_4.Path = ParDevPath.Value.split("|")[4] + ".Aggregation_Fault.MaxImportantNonAckEventsInBranch";
+AckAlarm_4.Path = ParDevPath.Value.split("|")[4] + ".Aggregation_Alarm.MaxImportantNonAckEventsInBranch";
+AckWarning_4.Path = ParDevPath.Value.split("|")[4] + ".Aggregation_Warn.MaxImportantNonAckEventsInBranch";
+AckSimulatte_4.Path = ParDevPath.Value.split("|")[4] + ".Aggregation_Simulation.MaxImportantNonAckEventsInBranch";
+
+
+
+
+here.Button.Height = here.Height;
+here.Button.Width = here.Width;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Fault" display-name="Fault" uuid="74c1a5b0-ac36-4373-8380-e7049fe3c8ad" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="Alarm" display-name="Alarm" uuid="adf50483-5cc5-472f-8aca-53403262efc7" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="Simulatte" display-name="Simulatte" uuid="411e2a0a-72e5-47c4-bfbc-528c14ee9eb1" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="Warning" display-name="Warning" uuid="3c0cde8d-58b5-41d7-8ef2-da8c6ba92c6a" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Aggregation_Warn.MaxImportantEventsInBranch"/>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="AckFault" display-name="AckFault" uuid="597f7d6e-2f5e-44c9-b439-e9bf00718881" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Aggregation_Fault.MaxImportantNonAckEventsInBranch"/>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="AckAlarm" display-name="AckAlarm" uuid="8884741e-e3aa-4ccc-871b-39a55b02a593" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Aggregation_Alarm.MaxImportantNonAckEventsInBranch"/>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="AckWarning" display-name="AckWarning" uuid="216fd209-fda2-4a7f-af4d-81970c227f79" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Aggregation_Warn.MaxImportantNonAckEventsInBranch"/>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="AckSimulatte" display-name="AckSimulatte" uuid="7e958467-ff3e-4bc1-8d54-c3db5c91f665" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Aggregation_Simulation.MaxImportantNonAckEventsInBranch"/>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="Fault_1" display-name="Fault_1" uuid="25b23e12-0d6c-403c-a318-0f0862f522be" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="Alarm_1" display-name="Alarm_1" uuid="412b87ce-794b-480b-8dfb-4dd096cf0bd1" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="Simulatte_1" display-name="Simulatte_1" uuid="fc81d9d6-6c13-4a9f-ab4b-df202ff03a02" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="Warning_1" display-name="Warning_1" uuid="6d497334-5706-4a39-8628-c3574aa22fbf" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Aggregation_Warn.MaxImportantEventsInBranch"/>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="AckFault_1" display-name="AckFault_1" uuid="db32586c-3be9-472e-b080-bcf89a4a7640" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Aggregation_Fault.MaxImportantNonAckEventsInBranch"/>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="AckAlarm_1" display-name="AckAlarm_1" uuid="90637367-550a-484c-addf-b128c7609b28" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Aggregation_Alarm.MaxImportantNonAckEventsInBranch"/>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="AckWarning_1" display-name="AckWarning_1" uuid="ae7bdd8f-2753-4a16-ba59-78015a794a8d" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Aggregation_Warn.MaxImportantNonAckEventsInBranch"/>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="AckSimulatte_1" display-name="AckSimulatte_1" uuid="5374fcd1-9265-4959-8449-94dcb266e471" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Aggregation_Simulation.MaxImportantNonAckEventsInBranch"/>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="Fault_2" display-name="Fault_2" uuid="5785b3f3-ebd2-4dce-9ce0-dab588893b8f" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="Alarm_2" display-name="Alarm_2" uuid="e31cc194-1a3e-41e2-9150-e66274b96377" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="Simulatte_2" display-name="Simulatte_2" uuid="566d109f-0560-4a7e-a76d-48bd7a065406" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="Warning_2" display-name="Warning_2" uuid="d2f031c6-dcaf-4a10-8f5e-c18062b1a86c" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Aggregation_Warn.MaxImportantEventsInBranch"/>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="AckFault_2" display-name="AckFault_2" uuid="0fa74be9-256d-4392-8a9c-0ac519b8dc68" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Aggregation_Fault.MaxImportantNonAckEventsInBranch"/>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="AckAlarm_2" display-name="AckAlarm_2" uuid="4f088d2e-b0a0-4e00-9bf0-29ae5e992e10" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Aggregation_Alarm.MaxImportantNonAckEventsInBranch"/>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="AckWarning_2" display-name="AckWarning_2" uuid="813cc4cf-bc67-4330-8e22-4eca49bac6ea" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Aggregation_Warn.MaxImportantNonAckEventsInBranch"/>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="AckSimulatte_2" display-name="AckSimulatte_2" uuid="1c075765-d532-40e5-b08d-dcfcaed7725b" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Aggregation_Simulation.MaxImportantNonAckEventsInBranch"/>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="Fault_3" display-name="Fault_3" uuid="9d8a23dd-501d-450c-a8b5-f10a92a27679" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="Alarm_3" display-name="Alarm_3" uuid="dc89f475-35e4-47bb-a082-16e1855146c9" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="Simulatte_3" display-name="Simulatte_3" uuid="67e0af6d-2b82-41aa-b053-75422b43975c" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="Warning_3" display-name="Warning_3" uuid="c4f12f9e-18de-4753-9dbc-f27fe82e0a99" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Aggregation_Warn.MaxImportantEventsInBranch"/>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="AckFault_3" display-name="AckFault_3" uuid="bdb742a3-91a7-47d4-bd4a-78b99d7285e9" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Aggregation_Fault.MaxImportantNonAckEventsInBranch"/>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="AckAlarm_3" display-name="AckAlarm_3" uuid="635c969d-470d-4cdb-b89b-ed3137af3416" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Aggregation_Alarm.MaxImportantNonAckEventsInBranch"/>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="AckWarning_3" display-name="AckWarning_3" uuid="69cfba30-eb50-49bc-ac15-f4f915dace7f" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Aggregation_Warn.MaxImportantNonAckEventsInBranch"/>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="AckSimulatte_3" display-name="AckSimulatte_3" uuid="f8f543f6-a13d-4e6b-a38b-8dda7f7bb760" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Aggregation_Simulation.MaxImportantNonAckEventsInBranch"/>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="Fault_4" display-name="Fault_4" uuid="94e319f3-5d07-466d-96c7-1880ca6abcb5" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="Alarm_4" display-name="Alarm_4" uuid="cb274c0b-5e63-4a9b-ac40-3141648eb246" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="Simulatte_4" display-name="Simulatte_4" uuid="d586b9b7-f223-4bc6-abd1-97ae26daf10b" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="Warning_4" display-name="Warning_4" uuid="7705a733-abf1-46ec-b786-44e09e9c390d" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Aggregation_Warn.MaxImportantEventsInBranch"/>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="AckFault_4" display-name="AckFault_4" uuid="92ab9fcd-2003-432d-ac31-2cce29b2c135" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Aggregation_Fault.MaxImportantNonAckEventsInBranch"/>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="AckAlarm_4" display-name="AckAlarm_4" uuid="f370b780-5fee-4a22-a9e0-7b987154c86a" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Aggregation_Alarm.MaxImportantNonAckEventsInBranch"/>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="AckWarning_4" display-name="AckWarning_4" uuid="efbe2251-0113-42b4-832a-a2f02d848b2d" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Aggregation_Warn.MaxImportantNonAckEventsInBranch"/>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="AckSimulatte_4" display-name="AckSimulatte_4" uuid="cdaa692a-157f-420f-b184-4c2a50121334" base-type="ApItemInt4" base-type-id="5b29f957-961e-4313-bde4-d20611af1b9a" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Aggregation_Simulation.MaxImportantNonAckEventsInBranch"/>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+</type>
+

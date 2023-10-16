@@ -1,0 +1,138 @@
+<type access-modifier="private" name="LabelObject" display-name="LabelObject" uuid="78a45759-691b-40c8-87f2-361c02d3712f" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="60" ver="5"/>
+	<designed target="Height" value="30" ver="5"/>
+	<designed target="RoundingRadius" value="0" ver="5"/>
+	<designed target="PenColor" value="0xff000000" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="4278190080" ver="5"/>
+	<designed target="BrushStyle" value="0" ver="5"/>
+	<object access-modifier="private" name="DragNDrop_1" display-name="DragNDrop_1" uuid="60755a83-7799-4c58-acb2-138081dfdec6" base-type="DragNDrop" base-type-id="c4ddb32f-3653-44c8-be57-3a595e10c2fb" ver="5" description="" cardinal="1">
+		<designed target="DragEnabled" value="true" ver="5"/>
+		<designed target="DropEnabled" value="false" ver="5"/>
+		<designed target="Image" value="" ver="5"/>
+		<do-trace access-modifier="private" target="Image" ver="5">
+			<body>
+				<![CDATA[Pixmap.Value]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="DragEnabled" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[AsokuUserRights.LocatingLabels.Value == true && AsokuMain.IsNotWeb()]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Name" display-name="Name" uuid="539f5aec-74ae-4c08-bf99-01568ac1ec8d" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Pixmap" display-name="Pixmap" uuid="1f0a2562-44f5-4f9c-83a1-8f48e7885e9f" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="idLabel" display-name="idLabel" uuid="92f129cb-9dd2-4b30-98ed-1eea7e33cb8f" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="DebugTool_1" display-name="DebugTool_1" uuid="5ac47326-37a6-47e1-a758-70a4659e9221" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="5" description="" cardinal="1"/>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseMove">
+		<body kind="om">
+			<![CDATA[  
+  DragNDrop_1.SetData("idLabel",idLabel.Value);
+  DragNDrop_1.SetData("Name",Name.Value);
+  DragNDrop_1.DoDragDrop();
+]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="Image_1" display-name="Image_1" uuid="1f95476a-8a62-4006-b7c8-8fe40a8f4552" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="60" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="ImageFile" ver="5">
+			<body>
+				<![CDATA[Pixmap.Value]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Width" ver="5">
+			<body>
+				<![CDATA[width]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Height" ver="5">
+			<body>
+				<![CDATA[height]]>
+			</body>
+		</do-trace>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Open_UD_PermissionFault" display-name="Open_UD_PermissionFault" uuid="dd57f086-905f-4dcc-81f9-3fc8c90351f5" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-dialog" form-by-id="false">
+			<object access-modifier="private" uuid="9a8abd80-fedc-470e-b6f7-525a5dd0132d" base-type="UserDialog" base-type-id="3c54f3db-a950-487c-861e-56a8d2eba70d" ver="5">
+				<init target="Message" ver="5" value="Для выполнения указанного действия Вам не хватает полномочий.
+Обратитесь к Администратору"/>
+				<init target="Icon" ver="5" value="0"/>
+				<init target="Buttons" ver="5" value="0"/>
+				<init target="Header" ver="5" value="Недостаточно полномочий"/>
+			</object>
+		</do-on>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+	</object>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="MousePress">
+		<body kind="om">
+			<![CDATA[if (AsokuUserRights.LocatingLabels.Value == false) Open_UD_PermissionFault.Invoke();
+if (!AsokuMain.IsNotWeb()) Open_UD_WebClient.Invoke();]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="Open_UD_WebClient" display-name="Open_UD_WebClient" uuid="a1aa562b-452a-4210-8c69-55de65e536bb" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-dialog" form-by-id="false">
+			<object access-modifier="private" uuid="8c4f97ef-d2dc-410a-be2b-f91a34e6d676" base-type="UserDialog" base-type-id="3c54f3db-a950-487c-861e-56a8d2eba70d" ver="5">
+				<init target="Icon" ver="5" value="0"/>
+				<init target="Buttons" ver="5" value="0"/>
+				<init target="Header" ver="5" value="Использование WEB-клиента"/>
+				<init target="Message" ver="5" value="Вы используете WEB-клиент для работы с проектом.\nДля использования полного функционала воспользуйтесь настольной версией приложения"/>
+			</object>
+		</do-on>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+	</object>
+	<object access-modifier="private" name="width" display-name="Ширина плаката" uuid="baf917ed-57b7-4331-baf6-ef81ceb2b69e" base-type="notifying_float8" base-type-id="3f905fb7-7738-4619-b402-5a91f136d4bd" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="height" display-name="Высота плаката" uuid="ba7bff01-29dd-48cc-904f-52b98f405947" base-type="notifying_float8" base-type-id="3f905fb7-7738-4619-b402-5a91f136d4bd" ver="5" description="" cardinal="1"/>
+	<do-trace access-modifier="private" target="width" ver="5">
+		<body>
+			<![CDATA[here.width]]>
+		</body>
+	</do-trace>
+	<do-trace access-modifier="private" target="height" ver="5">
+		<body>
+			<![CDATA[here.height]]>
+		</body>
+	</do-trace>
+	<designed target="Flip" value="0" ver="5"/>
+</type>
+

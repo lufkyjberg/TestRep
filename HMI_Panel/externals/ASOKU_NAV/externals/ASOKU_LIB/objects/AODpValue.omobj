@@ -1,0 +1,245 @@
+<type access-modifier="public" name="AODpValue" display-name="Аналоговое изменяемое значение" uuid="a8116a2c-82e7-4f84-a016-edc374ec894e" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="120" ver="5"/>
+	<designed target="Height" value="30" ver="5"/>
+	<designed target="RoundingRadius" value="0" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="1" ver="5"/>
+	<designed target="PenWidth" value="3" ver="5"/>
+	<designed target="BrushColor" value="0xffffffff" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<object access-modifier="private" name="ParDevPath" display-name="Путь параметра" uuid="a0d1d352-4d9b-4f98-bf19-01a401e1818d" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ApSourcePar" display-name="Источник параметра" uuid="f16e3c2a-9bcd-43b8-be8b-ad2abb1024c5" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+		<designed target="Location" value="" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="Path" value="" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath.Value]]>
+			</body>
+		</do-trace>
+		<init target="ParentSource" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApParComment" display-name="Комментарий параметра" uuid="037f45cc-a00c-4b22-b839-edfb5f615a15" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="ApSourcePar"/>
+		<init target="Path" ver="5" value="Comment"/>
+	</object>
+	<object access-modifier="private" name="ApParDescription" display-name="Описание параметра" uuid="d1a0f1ca-977f-4119-ad2b-ebab615d8101" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="ApSourcePar"/>
+		<init target="Path" ver="5" value="Description"/>
+	</object>
+	<object access-modifier="private" name="ApParStatusBytes" display-name="Статус параметра" uuid="27840d37-13f5-4a7a-bd8c-e68a97fc12f6" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="StatusBytes"/>
+		<init target="Source" ver="5" ref="ApSourcePar"/>
+	</object>
+	<object access-modifier="private" name="ApParAlarmBytes" display-name="Аларм параметра" uuid="e9277b2a-0e2f-4cf7-bee9-5777363c1a30" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="ApSourcePar"/>
+		<init target="Path" ver="5" value="AlarmBytes"/>
+	</object>
+	<object access-modifier="private" name="ApParDisplayFormat" display-name="Формат значения параметра" uuid="a86d8469-4f54-44b2-831f-93603d45c05f" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="ApSourcePar"/>
+		<init target="Path" ver="5" value="DisplayFormat"/>
+	</object>
+	<object access-modifier="private" name="DebugTool" display-name="DebugTool" uuid="eb0f4f66-6f38-4cdc-b28c-c64cfbfdaf5b" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="OpenInfoTabView" display-name="команда открытия InfoTabView" uuid="c5f4593a-d17a-4ab7-a5dd-fe621ab1e92c" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-by-id="false" form-action="open-new">
+			<object access-modifier="private" uuid="48bf4987-897f-458a-a090-fb649df9950c" base-type="InfoTabView" base-type-id="146efb0d-a148-4c91-94ff-f69c196a5132" ver="5">
+				<init target="PanelType" ver="5" value="информация"/>
+				<init target="ParDevPath" ver="5" ref="here.ParDevPath"/>
+				<init target="ParameterType" ver="5" value="аналоговый"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="OpenTrendView" display-name="команда открытия TrendView" uuid="449c1975-b9a4-4f37-8ac2-cb037e5b5c33" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-by-id="false" form-action="open-new">
+			<object access-modifier="private" uuid="4e005113-bf24-4982-95e9-6e020e86ce5d" base-type="TrendView" base-type-id="635eeb20-53b6-4787-8ce7-142a64cd0e89" ver="5">
+				<init target="ParDevPath" ver="5" ref="here.ParDevPath"/>
+			</object>
+		</do-on>
+	</object>
+	<do-trace access-modifier="private" target="BrushColor" ver="5">
+		<conditional-expr>
+			<condition>
+				<![CDATA[ApParAlarmBytes.Value == 2]]>
+			</condition>
+			<expr>
+				<![CDATA[AsokuColor.asokuYellow]]>
+			</expr>
+		</conditional-expr>
+		<conditional-expr>
+			<condition>
+				<![CDATA[ApParAlarmBytes.Value == 4 || ApParAlarmBytes.Value == 6]]>
+			</condition>
+			<expr>
+				<![CDATA[AsokuColor.asokuRed]]>
+			</expr>
+		</conditional-expr>
+		<default-expr>
+			<expr>
+				<![CDATA[AsokuColor.asokuTransparent]]>
+			</expr>
+		</default-expr>
+	</do-trace>
+	<do-trace access-modifier="private" target="PenColor" ver="5">
+		<conditional-expr>
+			<condition>
+				<![CDATA[ApParStatusBytes.Value == 8]]>
+			</condition>
+			<expr>
+				<![CDATA[AsokuColor.asokuCyan]]>
+			</expr>
+		</conditional-expr>
+		<default-expr>
+			<expr>
+				<![CDATA[AsokuColor.asokuTransparent]]>
+			</expr>
+		</default-expr>
+	</do-trace>
+	<object access-modifier="private" name="ApParUnits" display-name="ApParUnits" uuid="7b299ed1-bbbd-472e-a4e7-16b027793c42" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5">
+		<init target="Source" ver="5" ref="ApSourcePar"/>
+		<init target="Path" ver="5" value="Units"/>
+	</object>
+	<designed target="Flip" value="0" ver="5"/>
+	<object access-modifier="private" name="LineEdit_1" display-name="LineEdit_1" uuid="0d6c43a5-f039-4eff-8c18-3b0cd39b923a" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5" description="" cardinal="1">
+		<designed target="X" value="1" ver="5"/>
+		<designed target="Y" value="1" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="false" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="119" ver="5"/>
+		<designed target="Height" value="28" ver="5"/>
+		<designed target="Text" value="" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,7.5,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="HideInput" value="false" ver="5"/>
+		<designed target="PlaceholderText" value="" ver="5"/>
+		<designed target="ReadOnly" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="EditFinished">
+			<body kind="om">
+				<![CDATA[ApParIn = String.ToFloat(LineEdit_1.Text, 9999999);
+LineEdit_1.Visible = false;
+Text_PropertiesDialogs_1.Visible = true;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParOut.Advised == false]]>
+				</condition>
+				<expr>
+					<![CDATA["99.99"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParOut.Advised != false]]>
+				</condition>
+				<expr>
+					<![CDATA[String.ToString(ApParDisplayFormat.Value, ApParOut)]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA["default"]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="FocusChanged">
+			<body kind="om">
+				<![CDATA[if(LineEdit_1.Focus == false){
+Text_PropertiesDialogs_1.Visible = true;
+LineEdit_1.Visible = false;
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="ApParIn" display-name="ApParIn" uuid="41ef3f5b-303b-4890-8947-cc6954f1db83" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="In"/>
+		<init target="Source" ver="5" ref="ApSourcePar"/>
+	</object>
+	<object access-modifier="private" name="ApParOut" display-name="ApParOut" uuid="84bd5512-d20c-4d64-ac83-a74be4af8475" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Out"/>
+		<init target="Source" ver="5" ref="ApSourcePar"/>
+	</object>
+	<do-trace access-modifier="private" target="Tooltip" ver="5">
+		<body>
+			<![CDATA["Путь: " + ParDevPath + "\nПояснение: " + ApParDescription.Value +"\nИсточник: "+ ApParComment.Value + "\nстатус: "+ String.ToString(ApParOut.Quality) + 
+"\nвремя: "+ 
+DateTime.ToString(ApParOut.TimeStamp) +
+"\nЕд. изм." + ApParUnits.Value]]>
+		</body>
+	</do-trace>
+	<object access-modifier="private" name="OpenTab" display-name="OpenTab" uuid="e157418e-40b3-4df7-a76a-817e46ad3a22" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-new" form-by-id="false">
+			<object access-modifier="private" uuid="d27031ad-4a94-4bce-945b-b7d439a4fcc7" base-type="InfoTabSPR(X)" base-type-id="d610ad46-9efa-43ca-ba2c-92ee19ce944d" ver="5"/>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="11fa9cda-c88a-490a-8f4a-041506a71d8c" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="-1.538461538461545" ver="5"/>
+		<designed target="Y" value="-1.3846153846153868" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="122.76923076923077" ver="5"/>
+		<designed target="Height" value="32.769230769230774" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="FontColor" value="0xff000000" ver="5"/>
+		<designed target="Text" value="" ver="5"/>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParOut.Advised == false]]>
+				</condition>
+				<expr>
+					<![CDATA["99.99"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParOut.Advised != false]]>
+				</condition>
+				<expr>
+					<![CDATA[String.ToString(ApParDisplayFormat.Value, ApParOut)]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA["default"]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick">
+			<body kind="om">
+				<![CDATA[LineEdit_1.Visible = true;
+Text_PropertiesDialogs_1.Visible = false;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="MouseRightClick" form-action="open-new" form-by-id="false">
+			<object access-modifier="private" uuid="048b70de-b4b2-43e0-8755-ca9b74dbf50e" base-type="InfoTabSPR(X)" base-type-id="d610ad46-9efa-43ca-ba2c-92ee19ce944d" ver="5"/>
+		</do-on>
+	</object>
+</type>
+

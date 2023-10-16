@@ -1,0 +1,817 @@
+<type access-modifier="private" name="Start" display-name="Start" uuid="dea24273-91f2-4d15-af00-e101522593d0" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="650" ver="5"/>
+	<designed target="Height" value="500" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xff646464" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="1920" ver="5"/>
+	<designed target="WindowHeight" value="1000" ver="5"/>
+	<designed target="WindowCaption" value="MainForm" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="1" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="0" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<object access-modifier="private" name="Rectangle_9" display-name="Rectangle_9" uuid="a9725724-4d94-4cdb-965e-bb164f0e9e9d" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="3" ver="5"/>
+		<designed target="Y" value="357.99999999999989" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="643.66666666666674" ver="5"/>
+		<designed target="Height" value="141.45679012345664" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_8" display-name="Rectangle_8" uuid="8e2a81c3-3492-4ca4-951a-162f807afe85" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="3" ver="5"/>
+		<designed target="Y" value="4.9999999999998952" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="643.66666666666674" ver="5"/>
+		<designed target="Height" value="352.45679012345664" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_10" display-name="Rectangle_10" uuid="e90ac650-2fac-493a-8e9d-6381caef26b0" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="3" ver="5"/>
+		<designed target="Y" value="4.9999999999998934" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="33.666666666666742" ver="5"/>
+		<designed target="Height" value="493.45679012345664" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_76" display-name="Text_PropertiesDialogs_76" uuid="46bd8188-c7ac-4b45-85f9-dabd1e780e2f" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="-3.9999999999999858" ver="5"/>
+		<designed target="Y" value="171" ver="5"/>
+		<designed target="Rotation" value="-90" ver="5"/>
+		<designed target="Width" value="49.399966666666586" ver="5"/>
+		<designed target="Height" value="25.666666666666629" ver="5"/>
+		<designed target="Text" value="ХХТ" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_77" display-name="Text_PropertiesDialogs_77" uuid="cf1c4739-7b78-44fd-98cb-6d553186feed" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="-5.4999999999997726" ver="5"/>
+		<designed target="Y" value="414" ver="5"/>
+		<designed target="Rotation" value="-90" ver="5"/>
+		<designed target="Width" value="51.39996666666616" ver="5"/>
+		<designed target="Height" value="24.666666666666629" ver="5"/>
+		<designed target="Text" value="ХХГ" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_1" display-name="DiscreteDpValue_1" uuid="5d210bf0-2661-4f71-8ff5-352fdf9007f9" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="320" ver="5"/>
+		<designed target="Y" value="140" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="320" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Conditions.OPx_Cond_Rdy_start01"/>
+		<do-trace access-modifier="private" target="TextColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="TextColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGreen]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGrey]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_2" display-name="DiscreteDpValue_2" uuid="c02e4066-00bf-4506-95e0-a481d9c2a5c8" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="320" ver="5"/>
+		<designed target="Y" value="202" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="320" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Conditions.OPx_Cond_Rdy_start02"/>
+		<do-trace access-modifier="private" target="TextColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="TextColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGreen]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGrey]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_3" display-name="DiscreteDpValue_3" uuid="23a2819b-6815-4b24-90a2-c32ce2b03a1f" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="320" ver="5"/>
+		<designed target="Y" value="171" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="320" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Conditions.OPx_Cond_Rdy_start03"/>
+		<do-trace access-modifier="private" target="TextColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="TextColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGreen]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGrey]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_4" display-name="DiscreteDpValue_4" uuid="fae60ff3-0063-4915-9b72-3f239b6bd7a7" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="320" ver="5"/>
+		<designed target="Y" value="78" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="320" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Conditions.OPx_Cond_Rdy_start04"/>
+		<do-trace access-modifier="private" target="TextColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="TextColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGreen]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGrey]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_5" display-name="DiscreteDpValue_5" uuid="b2c2cdfd-620d-4c8e-9b30-0352d684c09f" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="320" ver="5"/>
+		<designed target="Y" value="109" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="320" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Conditions.OPx_Cond_Rdy_start05"/>
+		<do-trace access-modifier="private" target="TextColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="TextColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGreen]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGrey]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_6" display-name="DiscreteDpValue_6" uuid="800dbc64-ae0c-4f9e-b83c-ddfc6cb1315a" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="320" ver="5"/>
+		<designed target="Y" value="16" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="320" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Conditions.OPx_Cond_Rdy_start06"/>
+		<do-trace access-modifier="private" target="TextColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="TextColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGreen]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGrey]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_7" display-name="DiscreteDpValue_7" uuid="ccd84378-d3b1-40ca-9f89-6848a6df4b16" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="45" ver="5"/>
+		<designed target="Y" value="171" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="275" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Conditions.OPx_Cond_Rdy_start07"/>
+		<do-trace access-modifier="private" target="TextColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="TextColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGreen]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGrey]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_8" display-name="DiscreteDpValue_8" uuid="3c270102-e4ab-49f5-b95b-06114041dbb7" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="45" ver="5"/>
+		<designed target="Y" value="16" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="275" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Conditions.OPx_Cond_Rdy_start08"/>
+		<do-trace access-modifier="private" target="TextColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="TextColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGreen]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGrey]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_9" display-name="DiscreteDpValue_9" uuid="542732d2-c92f-4121-96a8-935eca5c32f8" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="45" ver="5"/>
+		<designed target="Y" value="47" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="275" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Conditions.OPx_Cond_Rdy_start09"/>
+		<do-trace access-modifier="private" target="TextColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="TextColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGreen]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGrey]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_10" display-name="DiscreteDpValue_10" uuid="deeeafd5-1d89-483d-bba4-ea14ef29b4dd" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="45" ver="5"/>
+		<designed target="Y" value="202" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="275" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Conditions.OPx_Cond_Rdy_start10"/>
+		<do-trace access-modifier="private" target="TextColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="TextColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGreen]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGrey]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_11" display-name="DiscreteDpValue_11" uuid="295cc826-99bf-4616-8a04-a28e2b50dbc4" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="45" ver="5"/>
+		<designed target="Y" value="78" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="275" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Conditions.OPx_Cond_Rdy_start11"/>
+		<do-trace access-modifier="private" target="TextColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="TextColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGreen]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGrey]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_12" display-name="DiscreteDpValue_12" uuid="cbc34f4e-a832-4e16-bae0-7802c08bb77d" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="45" ver="5"/>
+		<designed target="Y" value="109" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="275" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Conditions.OPx_Cond_Rdy_start12"/>
+		<do-trace access-modifier="private" target="TextColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="TextColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGreen]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGrey]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_13" display-name="DiscreteDpValue_13" uuid="add1c4ba-b0fc-4320-b45c-37781b6b45a1" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="45" ver="5"/>
+		<designed target="Y" value="233" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="275" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Conditions.OPx_Cond_Rdy_start13"/>
+		<do-trace access-modifier="private" target="TextColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="TextColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGreen]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGrey]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_14" display-name="DiscreteDpValue_14" uuid="905367ed-9d22-49af-8ed8-b683031992c4" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="45" ver="5"/>
+		<designed target="Y" value="140" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="275" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Conditions.OPx_Cond_Rdy_start14"/>
+		<do-trace access-modifier="private" target="TextColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="TextColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGreen]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGrey]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_15" display-name="DiscreteDpValue_15" uuid="1dc88641-2c1e-40d9-9d3b-2606880d6634" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="320" ver="5"/>
+		<designed target="Y" value="264" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="320" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Conditions.OPx_Cond_Rdy_start15"/>
+		<do-trace access-modifier="private" target="TextColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="TextColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGreen]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGrey]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_16" display-name="DiscreteDpValue_16" uuid="e24f9b14-2061-4638-a154-c0e03a954e44" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="320" ver="5"/>
+		<designed target="Y" value="295" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="320" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Conditions.OPx_Cond_Rdy_start16"/>
+		<do-trace access-modifier="private" target="TextColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="TextColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGreen]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGrey]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_19" display-name="DiscreteDpValue_19" uuid="c9926d49-8b0f-44bd-b138-f164ee31a4e0" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="45" ver="5"/>
+		<designed target="Y" value="264" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="275" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Conditions.OPx_Cond_Rdy_start19"/>
+		<do-trace access-modifier="private" target="TextColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="TextColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGreen]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGrey]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_20" display-name="DiscreteDpValue_20" uuid="c4fb22c2-8f3a-4cb3-9c4d-0e2112d2893d" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="320" ver="5"/>
+		<designed target="Y" value="233" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="320" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Conditions.OPx_Cond_Rdy_start20"/>
+		<do-trace access-modifier="private" target="TextColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="TextColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGreen]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGrey]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_21" display-name="DiscreteDpValue_21" uuid="87296bfa-9f36-4b55-8e14-8f01f36ccc56" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="320" ver="5"/>
+		<designed target="Y" value="47" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="320" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Conditions.OPx_Cond_Rdy_start21"/>
+		<do-trace access-modifier="private" target="TextColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="TextColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGreen]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGrey]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_22" display-name="DiscreteDpValue_22" uuid="14bc3fd5-d887-408c-b501-26cc48141052" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="45" ver="5"/>
+		<designed target="Y" value="381" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="250" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Conditions.OPx_Cond_Rdy_start22"/>
+		<do-trace access-modifier="private" target="TextColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="TextColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGreen]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGrey]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_23" display-name="DiscreteDpValue_23" uuid="32c3cfcc-1dc6-45c9-bf70-d4e40e383642" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="45" ver="5"/>
+		<designed target="Y" value="411" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="250" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Conditions.OPx_Cond_Rdy_start23"/>
+		<do-trace access-modifier="private" target="TextColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="TextColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGreen]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGrey]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_24" display-name="DiscreteDpValue_24" uuid="433839c1-d7f9-470f-a637-1bc7099db131" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="320" ver="5"/>
+		<designed target="Y" value="381" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="300" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Conditions.OPx_Cond_Rdy_start24"/>
+		<do-trace access-modifier="private" target="TextColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="TextColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGreen]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGrey]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_25" display-name="DiscreteDpValue_25" uuid="1fda0a9a-e2ce-4abd-9880-2d425148d47e" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="320" ver="5"/>
+		<designed target="Y" value="412" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="300" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Conditions.OPx_Cond_Rdy_start25"/>
+		<do-trace access-modifier="private" target="TextColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="TextColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGreen]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGrey]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_26" display-name="DiscreteDpValue_26" uuid="31b6ff17-11ee-493a-ae16-a23eae1340f1" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="45" ver="5"/>
+		<designed target="Y" value="441" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="250" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Conditions.OPx_Cond_Rdy_start26"/>
+		<do-trace access-modifier="private" target="TextColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="TextColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGreen]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGrey]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_27" display-name="DiscreteDpValue_27" uuid="5030aacf-e40b-4401-abbc-4d2e037ab179" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="45" ver="5"/>
+		<designed target="Y" value="295" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="275" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Conditions.OPx_Cond_Rdy_start31"/>
+		<do-trace access-modifier="private" target="TextColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="TextColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOn" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGreen]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ColorOff" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuGrey]]>
+			</body>
+		</do-trace>
+	</object>
+</type>
+

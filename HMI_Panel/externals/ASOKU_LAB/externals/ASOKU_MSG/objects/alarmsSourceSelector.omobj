@@ -1,0 +1,211 @@
+<type access-modifier="private" name="alarmsSourceSelector" display-name="alarmsSourceSelector" uuid="c2bc921a-f854-4b57-9ec5-49a36e2a7921" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="640" ver="5"/>
+	<designed target="Height" value="415" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="4293980400" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="200" ver="5"/>
+	<designed target="WindowY" value="100" ver="5"/>
+	<designed target="WindowWidth" value="640" ver="5"/>
+	<designed target="WindowHeight" value="415" ver="5"/>
+	<designed target="WindowCaption" value="Дерево выбора источника сообщений" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="false" ver="5"/>
+	<designed target="ShowWindowMaximize" value="false" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="2" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="0" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<object access-modifier="private" name="Tree" display-name="Tree" uuid="cd34a479-0bb0-49c9-af76-a887beb95443" base-type="Tree" base-type-id="bebad81f-83c4-4dc1-8ac4-e7fe7b6ee966" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="640" ver="5"/>
+		<designed target="Height" value="415" ver="5"/>
+		<designed target="Font" value="Segoe UI,9,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="BackgroundColor" value="4294967295" ver="5"/>
+		<designed target="FrameVisible" value="true" ver="5"/>
+		<designed target="ColumnCount" value="2" ver="5"/>
+		<designed target="HeaderVisible" value="true" ver="5"/>
+		<designed target="CurrentItem" value="" ver="5"/>
+		<object access-modifier="private" name="IdColumn" display-name="IdColumn" uuid="5e955a88-6830-4161-a113-b404f6b37b9f" base-type="TreeColumn" base-type-id="b2427bd0-4897-43ca-b426-97290870cf62" ver="5" description="" cardinal="1">
+			<designed target="Name" value="id" ver="5"/>
+			<designed target="Id" value="id" ver="5"/>
+			<designed target="Type" value="0" ver="5"/>
+		</object>
+		<object access-modifier="private" name="DescriptionColumn" display-name="DescriptionColumn" uuid="d8949078-69f4-4162-a07b-72f0aee9481d" base-type="TreeColumn" base-type-id="b2427bd0-4897-43ca-b426-97290870cf62" ver="5" description="" cardinal="1">
+			<designed target="Name" value="Название параметра" ver="5"/>
+			<designed target="Id" value="TagName" ver="5"/>
+			<designed target="Type" value="1" ver="5"/>
+		</object>
+		<do access-modifier="private" name="SetItemIcon" display-name="SetItemIcon" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+			<body kind="om">
+				<![CDATA[icon: string = GetItemIconPath(itemId, isExpanded);
+SetItemIconPath(itemId, icon, 0);]]>
+			</body>
+			<param access-modifier="private" name="itemId" display-name="" uuid="1e7b04b4-2a79-47f5-8f91-1ef60d7e3a31" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5"/>
+			<param access-modifier="private" name="isExpanded" display-name="" uuid="e89b5ff5-63ca-48fe-b5f7-492a08979123" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="5"/>
+		</do>
+		<do access-modifier="private" name="GetItemIconPath" display-name="GetItemIconPath" ver="5" type="string" type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d">
+			<body kind="om">
+				<![CDATA[fileName: string = isExpanded ? "FolderOpened.png" : "FolderClosed.png";
+return "CommonLib_Icons/" + fileName;]]>
+			</body>
+			<param access-modifier="private" name="itemId" display-name="" uuid="1c142073-228a-48e4-810f-6c0450260591" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5"/>
+			<param access-modifier="private" name="isExpanded" display-name="" uuid="5af88500-f86e-40b5-9ce0-d75e999d2119" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="5"/>
+		</do>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ItemExpanded">
+			<body kind="om">
+				<![CDATA[SetItemIcon(itemId, true);]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="ItemCollapsed">
+			<body kind="om">
+				<![CDATA[SetItemIcon(itemId, false);]]>
+			</body>
+		</do-on>
+		<object access-modifier="private" name="DragNDrop" display-name="DragNDrop" uuid="f97379e7-ba79-4d23-9183-4f983ffd4db2" base-type="DragNDrop" base-type-id="c4ddb32f-3653-44c8-be57-3a595e10c2fb" ver="5" description="" cardinal="1">
+			<designed target="DragEnabled" value="true" ver="5"/>
+			<designed target="DropEnabled" value="false" ver="5"/>
+			<designed target="Image" value="icons/add.png" ver="5"/>
+		</object>
+		<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="5" event="MousePress">
+			<body kind="om">
+				<![CDATA[Tree.DragNDrop.SetText(Tree.GetItemText(this.CurrentItem, 1)); 
+Tree.DragNDrop.DoDragDrop();]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="FileSystem" display-name="FileSystem" uuid="f785e4c0-897f-44c0-9b7a-adb8326add71" base-type="FileSystem" base-type-id="34d744f9-7303-4077-a3f7-9c06c0945512" ver="5" description="" cardinal="1">
+		<designed target="RootPath" value="/" ver="5"/>
+	</object>
+	<do access-modifier="private" name="createTagName" display-name="createTagName" ver="5" type="string" type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d">
+		<body kind="javascript">
+			<![CDATA[var tagName = Tag.split(".");
+var ret = tagName[0]; 
+for (var j = 1; j <= level; j++)
+{
+  ret = ret + "." + tagName[j];
+}
+return ret;]]>
+		</body>
+		<param access-modifier="private" name="Tag" display-name="" uuid="26eb7c66-8dca-464f-ae1e-5d8b12e9560d" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5"/>
+		<param access-modifier="private" name="level" display-name="" uuid="69eecee0-c4b6-4a1d-9d55-5aa2b3bbc05d" base-type="uint1" base-type-id="f73099bc-ee13-42cf-82bb-87368b826707" ver="5"/>
+	</do>
+	<do access-modifier="private" name="nodeExist" display-name="nodeExist" ver="5" type="string" type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d">
+		<body kind="javascript">
+			<![CDATA[var items = Tree_1.EnumChildrenJSON("");
+
+
+var tagName = Tag.split(".");
+var ret = tagName[0]; 
+for (var j = 1; j <= level; j++)
+{
+  ret = ret + "." + tagName[j];
+}
+return ret;]]>
+		</body>
+		<param access-modifier="private" name="Node" display-name="" uuid="95b39e18-c197-4857-822b-9d6103068290" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5"/>
+		<param access-modifier="private" name="level" display-name="" uuid="74844863-f829-4534-86b5-0108bdde988a" base-type="uint1" base-type-id="f73099bc-ee13-42cf-82bb-87368b826707" ver="5"/>
+	</do>
+	<do access-modifier="private" name="init" display-name="init" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="javascript">
+			<![CDATA[Tree.SetColumnName("Название параметра", 0);
+Tree.SetColumnName("TagName", 1);
+Tree.SetColumnHidden(0, false);
+Tree.SetColumnHidden(1, false);
+Tree.SetColumnWidth(0, 250);
+
+var sText = FileSystem.ReadTextFile(FileSystem.ParentPath(FileSystem.ProjectFolder) + "/resources/ASOKU/data/CustomTree/Tree.json");
+var items = JSON.parse(sText);
+    items = items.UserTree;
+var i = 0;
+var addedNodes = [];  
+
+while (i < items.length)
+{
+  var item = items[i].Signal;
+//  var TreeItem    = fixUnits(item.UserTree);
+  var TreeItem    = item.UserTree;
+  var Description = item.Description;
+// -------------------------------------------------------
+  var iUnits = TreeItem.indexOf("[");
+  if (iUnits > -1)
+  {  
+    var units = TreeItem.substring(iUnits);
+    if (units.indexOf("/") > -1)
+    {
+      var tmpUnits = units.replace("/", "$");
+      TreeItem = TreeItem.replace(units, tmpUnits);
+    }
+  }
+// -------------------------------------------------------
+  var s = TreeItem.split("/");
+  var Tag = s[s.length - 1];
+  var id = ""; 
+  var FullNodeName = "";
+  for (var j = 0; j < s.length; j++)
+  {
+    var last = (j == s.length - 1);
+    var node = last ? Description : s[j];
+//    var nodeData = createTagName(Tag, j);// если использовать функцию вместо кода далее, то время выполнения увеличится на 1 секунду
+//----------------------------------------    но в функции содержится точно такой же код!!!
+    var tagName = Tag.split(".");
+    var nodeData = tagName[0]; 
+    for (var k = 1; k <= j; k++)
+    {
+      nodeData = nodeData + "." + tagName[k];
+    }
+//----------------------------------------------------------------------------------------    
+    FullNodeName = (FullNodeName == "") ? node : FullNodeName + "+" + node;
+    var k = addedNodes.indexOf(FullNodeName);
+    if (k > -1) 
+    {
+      id = addedNodes[k + 1];
+      continue;
+    }
+    
+    id = Tree.AddItem(id, node);
+    Tree.SetItemText(id, nodeData, 1);          
+    if (!last) Tree.SetItemIcon(id, false);
+    addedNodes.push(FullNodeName, id);
+  }
+  i = i + 1;
+}
+DebugTool_1.Log("ProgressBar_1.Value " + ProgressBar_1.Value);
+]]>
+		</body>
+	</do>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Opened">
+		<body kind="om">
+			<![CDATA[init();]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="DebugTool_1" display-name="DebugTool_1" uuid="05bb79c6-3600-4320-8790-67d22a495943" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="5" description="" cardinal="1"/>
+	<designed target="Flip" value="0" ver="5"/>
+</type>
+

@@ -1,0 +1,920 @@
+<type access-modifier="private" name="SnapShot" display-name="SnapShot" uuid="acd02878-49f7-4738-af77-ea8048bf8626" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="760" ver="5"/>
+	<designed target="Height" value="200" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xff505050" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="1920" ver="5"/>
+	<designed target="WindowHeight" value="1080" ver="5"/>
+	<designed target="WindowCaption" value="Snapshot модуль" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="2" ver="5"/>
+	<designed target="WindowBorderStyle" value="1" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="1" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<object access-modifier="private" name="ApSource_SnapShotModule" display-name="ApSource_SnapShotModule" uuid="f7b62c2d-1477-450f-b7e0-82509afc61a0" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+		<designed target="Location" value="" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="Path" value="Service.Modules.SnapShots.Control" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+		<init target="ParentSource" ver="5">
+			<object access-modifier="private" uuid="ad6e68fb-48d1-4aae-b7b4-d5ba6b8feb0d" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5">
+				<designed target="Location" value="192.168.21.211" ver="5"/>
+				<designed target="Port" value="4388" ver="5"/>
+				<designed target="HistoryPort" value="4950" ver="5"/>
+				<designed target="Path" value="" ver="5"/>
+				<designed target="Active" value="true" ver="5"/>
+				<designed target="ReAdvise" value="0" ver="5"/>
+				<designed target="ClientDisplayName" value="HMI" ver="5"/>
+				<designed target="ClientId" value="HMI" ver="5"/>
+			</object>
+		</init>
+	</object>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Opened">
+		<body kind="om">
+			<![CDATA[Action_ComboBoxFill.Invoke();]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="Action_ComboBoxFill" display-name="Action_ComboBoxFill" uuid="9266ce58-5163-41b3-814d-ea45b4a8d4e5" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked">
+			<body kind="om">
+				<![CDATA[Rectangle_SnapShot.Rectangle_2.ComboBox_FileName.Clear();
+Rectangle_SnapShot.Rectangle_2.ComboBox_FileName.AddItem(Rectangle_SnapShot.Rectangle_2.Ap_SnapShotName_1);
+Rectangle_SnapShot.Rectangle_2.ComboBox_FileName.AddItem(Rectangle_SnapShot.Rectangle_2.Ap_SnapShotName_2);
+Rectangle_SnapShot.Rectangle_2.ComboBox_FileName.AddItem(Rectangle_SnapShot.Rectangle_2.Ap_SnapShotName_3);
+Rectangle_SnapShot.Rectangle_2.ComboBox_FileName.AddItem(Rectangle_SnapShot.Rectangle_2.Ap_SnapShotName_4);
+Rectangle_SnapShot.Rectangle_2.ComboBox_FileName.AddItem(Rectangle_SnapShot.Rectangle_2.Ap_SnapShotName_5);
+Rectangle_SnapShot.Rectangle_2.ComboBox_FileName.AddItem(Rectangle_SnapShot.Rectangle_2.Ap_SnapShotName_6);
+Rectangle_SnapShot.Rectangle_2.ComboBox_FileName.AddItem(Rectangle_SnapShot.Rectangle_2.Ap_SnapShotName_7);
+Rectangle_SnapShot.Rectangle_2.ComboBox_FileName.AddItem(Rectangle_SnapShot.Rectangle_2.Ap_SnapShotName_8);
+Rectangle_SnapShot.Rectangle_2.ComboBox_FileName.AddItem(Rectangle_SnapShot.Rectangle_2.Ap_SnapShotName_9);
+Rectangle_SnapShot.Rectangle_2.ComboBox_FileName.AddItem(Rectangle_SnapShot.Rectangle_2.Ap_SnapShotName_10);]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Ap_StorageRefresh" display-name="Ap_StorageRefresh" uuid="4957473a-d651-4231-b021-c086494fba06" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Storage.Refresh"/>
+		<init target="Source" ver="5" ref="here.ApSource_SnapShotModule"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_SnapShot" display-name="Rectangle_SnapShot" uuid="45a1c258-cad7-40b1-8cfd-4c962840ee74" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="760" ver="5"/>
+		<designed target="Height" value="200" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="SnapShot_Title" display-name="SnapShot_Title" uuid="8b7dd051-c8ec-4592-b180-71cc3b7b8492" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="760" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="Snapshot модуль" ver="5"/>
+			<designed target="Font" value="MS Shell Dlg 2,13,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="FontColor" value="0xffffffff" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="a7855155-f29b-49b8-9ed7-227ceeff1d77" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="20" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="380" ver="5"/>
+			<designed target="Height" value="180" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+			<object access-modifier="private" name="Line_FileName" display-name="Line_FileName" uuid="1103a033-c7de-48ef-995e-d10cd4535a3b" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5" description="" cardinal="1">
+				<designed target="X" value="90" ver="5"/>
+				<designed target="Y" value="40" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="290" ver="5"/>
+				<designed target="Height" value="20" ver="5"/>
+				<designed target="Text" value="" ver="5"/>
+				<designed target="Font" value="Tahoma,8,-1,5,50,0,0,0,0,0" ver="5"/>
+				<designed target="FontColor" value="4278190080" ver="5"/>
+				<designed target="TextAlignment" value="129" ver="5"/>
+				<designed target="HideInput" value="false" ver="5"/>
+				<designed target="PlaceholderText" value="Введите имя выгрузки (по умолч. шаблон дата-время)" ver="5"/>
+				<designed target="ReadOnly" value="false" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="b709b733-6805-4721-bbe1-5837cf7f685a" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="5" ver="5"/>
+				<designed target="Y" value="40" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="80" ver="5"/>
+				<designed target="Height" value="20" ver="5"/>
+				<designed target="Text" value="Имя выгрузки" ver="5"/>
+				<designed target="Font" value="Tahoma,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+				<designed target="FontColor" value="0xffffffff" ver="5"/>
+				<designed target="TextAlignment" value="129" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Line_PatternName" display-name="Line_PatternName" uuid="ce4fd032-3930-4076-b7af-7d5c879cea27" base-type="LineEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5" description="" cardinal="1">
+				<designed target="X" value="90" ver="5"/>
+				<designed target="Y" value="70" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="290" ver="5"/>
+				<designed target="Height" value="20" ver="5"/>
+				<designed target="Text" value="" ver="5"/>
+				<designed target="Font" value="Tahoma,8,-1,5,50,0,0,0,0,0" ver="5"/>
+				<designed target="FontColor" value="4278190080" ver="5"/>
+				<designed target="TextAlignment" value="129" ver="5"/>
+				<designed target="HideInput" value="false" ver="5"/>
+				<designed target="PlaceholderText" value="Введите имя выгрузки" ver="5"/>
+				<designed target="ReadOnly" value="false" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Text_2" display-name="Text_2" uuid="c8614d6c-ecc4-4ebf-80e2-d928437b655f" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="5" ver="5"/>
+				<designed target="Y" value="70" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="86" ver="5"/>
+				<designed target="Height" value="20" ver="5"/>
+				<designed target="Text" value="Имя шаблона" ver="5"/>
+				<designed target="Font" value="Tahoma,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+				<designed target="FontColor" value="0xffffffff" ver="5"/>
+				<designed target="TextAlignment" value="129" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Text_Generator" display-name="Text_Generator" uuid="d447592d-7c10-45b6-b885-53b35e799f5f" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="0" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="380" ver="5"/>
+				<designed target="Height" value="30" ver="5"/>
+				<designed target="Text" value="Запись данных в файл-срез" ver="5"/>
+				<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+				<designed target="FontColor" value="0xffffffff" ver="5"/>
+				<designed target="TextAlignment" value="132" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Button_Generator" display-name="Button_Generator" uuid="a5b67b11-eff4-4291-b641-a2a14319fbf8" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5" description="" cardinal="1">
+				<designed target="X" value="240" ver="5"/>
+				<designed target="Y" value="100" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="130" ver="5"/>
+				<designed target="Height" value="25" ver="5"/>
+				<designed target="Checkable" value="false" ver="5"/>
+				<designed target="Checked" value="false" ver="5"/>
+				<designed target="Text" value="Записать" ver="5"/>
+				<designed target="TextAlignment" value="132" ver="5"/>
+				<designed target="Font" value="Tahoma,8,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+				<designed target="FontColor" value="0xff000000" ver="5"/>
+				<designed target="OnClickFontColor" value="0xffffffff" ver="5"/>
+				<designed target="OnHoverFontColor" value="0xffffffff" ver="5"/>
+				<designed target="DisabledFontColor" value="4278190080" ver="5"/>
+				<designed target="BrushColor" value="0xffd4d0c8" ver="5"/>
+				<designed target="BrushStyle" value="1" ver="5"/>
+				<designed target="OnClickBrushColor" value="0xffd4d0c8" ver="5"/>
+				<designed target="OnClickBrushStyle" value="1" ver="5"/>
+				<designed target="OnHoverBrushColor" value="0xffcc6666" ver="5"/>
+				<designed target="OnHoverBrushStyle" value="1" ver="5"/>
+				<designed target="DisabledBrushColor" value="0xc8d4d0c8" ver="5"/>
+				<designed target="DisabledBrushStyle" value="1" ver="5"/>
+				<designed target="PenColor" value="0xff000000" ver="5"/>
+				<designed target="PenStyle" value="1" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="OnClickPenColor" value="4278190080" ver="5"/>
+				<designed target="OnClickPenStyle" value="1" ver="5"/>
+				<designed target="OnClickPenWidth" value="1" ver="5"/>
+				<designed target="OnHoverPenColor" value="4278190080" ver="5"/>
+				<designed target="OnHoverPenStyle" value="1" ver="5"/>
+				<designed target="OnHoverPenWidth" value="1" ver="5"/>
+				<designed target="DisabledPenColor" value="4288716960" ver="5"/>
+				<designed target="DisabledPenStyle" value="1" ver="5"/>
+				<designed target="DisabledPenWidth" value="1" ver="5"/>
+				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+					<body kind="om">
+						<![CDATA[here.Rectangle_SnapShot.Rectangle_1.Ap_FileName = Line_FileName.Text;
+here.Rectangle_SnapShot.Rectangle_1.Ap_PatternName= Line_PatternName.Text;
+Ap_SnapShotGenerate = true;
+Ap_StorageRefresh = true;]]>
+					</body>
+				</do-on>
+			</object>
+			<object access-modifier="private" name="Ap_FileName" display-name="Ap_FileName" uuid="991ddc19-5d5d-49a0-93af-c6c51d1b910d" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+				<init target="Path" ver="5" value="Generator.OutFileName"/>
+				<init target="Source" ver="5" ref="here.ApSource_SnapShotModule"/>
+			</object>
+			<object access-modifier="private" name="Ap_PatternName" display-name="Ap_PatternName" uuid="fb237ed7-13be-44fd-a92c-882701394ac4" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+				<init target="Source" ver="5" ref="here.ApSource_SnapShotModule"/>
+				<init target="Path" ver="5" value="Generator.TemplateName"/>
+			</object>
+			<object access-modifier="private" name="Ap_SnapShotGenerate" display-name="Ap_SnapShotGenerate" uuid="722cf123-efa4-4172-a0d9-5745ef249fce" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+				<init target="Path" ver="5" value="Generator.Generate"/>
+				<init target="Source" ver="5" ref="here.ApSource_SnapShotModule"/>
+			</object>
+			<object access-modifier="private" name="Text_SignalNum" display-name="Text_SignalNum" uuid="a68ae2b0-9499-465a-b898-c2b53473f8b0" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="130" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="210" ver="5"/>
+				<designed target="Height" value="20" ver="5"/>
+				<designed target="Text" value="Количество записаных сигналов:" ver="5"/>
+				<designed target="Font" value="Tahoma,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+				<designed target="FontColor" value="0xffffffff" ver="5"/>
+				<designed target="TextAlignment" value="130" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Text_3" display-name="Text_3" uuid="7a2487d9-c7c8-419c-832f-4660c27253be" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="220" ver="5"/>
+				<designed target="Y" value="130" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="110" ver="5"/>
+				<designed target="Height" value="20" ver="5"/>
+				<designed target="Text" value="*****" ver="5"/>
+				<designed target="Font" value="Tahoma,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+				<designed target="FontColor" value="0xffffffff" ver="5"/>
+				<designed target="TextAlignment" value="129" ver="5"/>
+				<do-trace access-modifier="private" target="Text" ver="5">
+					<body>
+						<![CDATA[Ap_GenSignalCount.ValueAsString]]>
+					</body>
+				</do-trace>
+			</object>
+			<object access-modifier="private" name="Ap_GenSignalCount" display-name="Ap_GenSignalCount" uuid="ff799179-7439-490f-82db-a29823acc24e" base-type="ApItemUInt4" base-type-id="322ce770-6c7b-49bc-9cd6-a367ca5b4627" ver="5" description="" cardinal="1">
+				<init target="Source" ver="5" ref="here.ApSource_SnapShotModule"/>
+				<init target="Path" ver="5" value="Generator.GenSignalCount"/>
+			</object>
+			<object access-modifier="private" name="Text_SignalNum_1" display-name="Text_SignalNum_1" uuid="7a0eaeea-44e5-4afa-9b81-b8fb67a1e553" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="160" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="210" ver="5"/>
+				<designed target="Height" value="20" ver="5"/>
+				<designed target="Text" value="Прогресс записи:" ver="5"/>
+				<designed target="Font" value="Tahoma,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+				<designed target="FontColor" value="0xffffffff" ver="5"/>
+				<designed target="TextAlignment" value="130" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Text_ProgressGen" display-name="Text_ProgressGen" uuid="cc7c2a3b-8162-4a18-8b7e-d9e9e1b3d65c" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="220" ver="5"/>
+				<designed target="Y" value="160" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="110" ver="5"/>
+				<designed target="Height" value="20" ver="5"/>
+				<designed target="Text" value="*****" ver="5"/>
+				<designed target="Font" value="Tahoma,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+				<designed target="FontColor" value="0xffffffff" ver="5"/>
+				<designed target="TextAlignment" value="129" ver="5"/>
+				<do-trace access-modifier="private" target="Text" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[Ap_GenInProgress]]>
+						</condition>
+						<expr>
+							<![CDATA["В прогрессе"]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[!Ap_GenInProgress && (Ap_GenLastError == "")]]>
+						</condition>
+						<expr>
+							<![CDATA["Выполнено"]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[!Ap_GenInProgress && (Ap_GenLastError != "")]]>
+						</condition>
+						<expr>
+							<![CDATA["Не выполнено"]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+				<do-trace access-modifier="private" target="Tooltip" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[Ap_GenLastError != ""]]>
+						</condition>
+						<expr>
+							<![CDATA[Ap_GenLastError]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+				<do-trace access-modifier="private" target="FontColor" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[Ap_GenInProgress]]>
+						</condition>
+						<expr>
+							<![CDATA[0xffffaa00]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[!Ap_GenInProgress && (Ap_GenLastError == "")]]>
+						</condition>
+						<expr>
+							<![CDATA[0xff00ff00]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[!Ap_GenInProgress && (Ap_GenLastError != "")]]>
+						</condition>
+						<expr>
+							<![CDATA[0xffff0000]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+			</object>
+			<object access-modifier="private" name="Ap_GenInProgress" display-name="Ap_GenInProgress" uuid="6743fa59-c17f-4172-a7c1-5734b89b0015" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+				<init target="Path" ver="5" value="Generator.GenInProgress"/>
+				<init target="Source" ver="5" ref="here.ApSource_SnapShotModule"/>
+			</object>
+			<object access-modifier="private" name="Ap_GenLastError" display-name="Ap_GenLastError" uuid="3feef4e8-ecfe-46a0-b581-6974797b02a3" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+				<init target="Path" ver="5" value="Generator.GenLastError"/>
+				<init target="Source" ver="5" ref="here.ApSource_SnapShotModule"/>
+			</object>
+			<object access-modifier="private" name="Line_1" display-name="Line_1" uuid="96f321e7-7791-4702-92b0-2b032aa1d4c7" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="30" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="380" ver="5"/>
+				<designed target="Height" value="0" ver="5"/>
+				<designed target="PenColor" value="4278190080" ver="5"/>
+				<designed target="PenStyle" value="1" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="BrushColor" value="4278190080" ver="5"/>
+				<designed target="BrushStyle" value="0" ver="5"/>
+				<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="ebb9ea22-43af-42ec-857f-63844924acf3" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+					<designed target="X" value="0" ver="5"/>
+					<designed target="Y" value="0" ver="5"/>
+				</object>
+				<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="e4d8574c-3323-4b41-8739-c3e50d2e5632" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+					<designed target="X" value="380" ver="5"/>
+					<designed target="Y" value="0" ver="5"/>
+				</object>
+			</object>
+		</object>
+		<object access-modifier="private" name="Rectangle_2" display-name="Rectangle_2" uuid="d93a93a8-346a-46e7-ba18-0d7cae9b1be1" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="380" ver="5"/>
+			<designed target="Y" value="20" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="380" ver="5"/>
+			<designed target="Height" value="180" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+			<object access-modifier="private" name="Text_Extractor" display-name="Text_Extractor" uuid="3e570813-90fc-49e2-bd3e-d37f502fed66" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="0" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="380" ver="5"/>
+				<designed target="Height" value="30" ver="5"/>
+				<designed target="Text" value="Восстановленние данных из файла-среза" ver="5"/>
+				<designed target="Font" value="Tahoma,12,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+				<designed target="FontColor" value="0xffffffff" ver="5"/>
+				<designed target="TextAlignment" value="132" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Text_FileName" display-name="Text_FileName" uuid="7c60ad4d-2ac4-4381-888c-e47ae5e3a13e" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="5" ver="5"/>
+				<designed target="Y" value="40" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="80" ver="5"/>
+				<designed target="Height" value="20" ver="5"/>
+				<designed target="Text" value="Имя выгрузки" ver="5"/>
+				<designed target="Font" value="Tahoma,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+				<designed target="FontColor" value="0xffffffff" ver="5"/>
+				<designed target="TextAlignment" value="129" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Button_Extractor" display-name="Button_Extractor" uuid="4e32dbe5-cfde-4cfd-a50b-8e76b97fa732" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5" description="" cardinal="1">
+				<designed target="X" value="240" ver="5"/>
+				<designed target="Y" value="100" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="130" ver="5"/>
+				<designed target="Height" value="25" ver="5"/>
+				<designed target="Checkable" value="false" ver="5"/>
+				<designed target="Checked" value="false" ver="5"/>
+				<designed target="Text" value="Восстановить" ver="5"/>
+				<designed target="TextAlignment" value="132" ver="5"/>
+				<designed target="Font" value="Tahoma,8,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+				<designed target="FontColor" value="0xff000000" ver="5"/>
+				<designed target="OnClickFontColor" value="0xffffffff" ver="5"/>
+				<designed target="OnHoverFontColor" value="0xffffffff" ver="5"/>
+				<designed target="DisabledFontColor" value="4278190080" ver="5"/>
+				<designed target="BrushColor" value="0xffd4d0c8" ver="5"/>
+				<designed target="BrushStyle" value="1" ver="5"/>
+				<designed target="OnClickBrushColor" value="0xffd4d0c8" ver="5"/>
+				<designed target="OnClickBrushStyle" value="1" ver="5"/>
+				<designed target="OnHoverBrushColor" value="0xffcc6666" ver="5"/>
+				<designed target="OnHoverBrushStyle" value="1" ver="5"/>
+				<designed target="DisabledBrushColor" value="0xc8d4d0c8" ver="5"/>
+				<designed target="DisabledBrushStyle" value="1" ver="5"/>
+				<designed target="PenColor" value="0xff000000" ver="5"/>
+				<designed target="PenStyle" value="1" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="OnClickPenColor" value="4278190080" ver="5"/>
+				<designed target="OnClickPenStyle" value="1" ver="5"/>
+				<designed target="OnClickPenWidth" value="1" ver="5"/>
+				<designed target="OnHoverPenColor" value="4278190080" ver="5"/>
+				<designed target="OnHoverPenStyle" value="1" ver="5"/>
+				<designed target="OnHoverPenWidth" value="1" ver="5"/>
+				<designed target="DisabledPenColor" value="4288716960" ver="5"/>
+				<designed target="DisabledPenStyle" value="1" ver="5"/>
+				<designed target="DisabledPenWidth" value="1" ver="5"/>
+				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+					<body kind="om">
+						<![CDATA[here.Rectangle_SnapShot.Rectangle_2.Ap_FileNameExtractor = ComboBox_FileName.Text;
+Ap_SnapShotExtract = true;
+]]>
+					</body>
+				</do-on>
+			</object>
+			<object access-modifier="private" name="Ap_FileNameExtractor" display-name="Ap_FileNameExtractor" uuid="fdc76b6f-f4d0-46ad-bf97-4e4945dec263" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+				<init target="Source" ver="5" ref="here.ApSource_SnapShotModule"/>
+				<init target="Path" ver="5" value="Extractor.SnapShotName"/>
+			</object>
+			<object access-modifier="private" name="ComboBox_FileName" display-name="ComboBox_FileName" uuid="d54a5278-0fe4-4114-9753-f19060835a02" base-type="ComboBox" base-type-id="3495bcd2-01f2-4709-b7f4-e9cf6f3a00bc" ver="5" description="" cardinal="1">
+				<designed target="X" value="90" ver="5"/>
+				<designed target="Y" value="40" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="290" ver="5"/>
+				<designed target="Height" value="20" ver="5"/>
+				<designed target="Editable" value="true" ver="5"/>
+				<designed target="Text" value="" ver="5"/>
+				<designed target="SelectedIndex" value="-1" ver="5"/>
+				<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="5"/>
+				<designed target="FontColor" value="4278190080" ver="5"/>
+				<designed target="MaxVisibleItems" value="10" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Ap_SnapShotName_1" display-name="Ap_SnapShotName_1" uuid="4321b612-29c7-47ca-905e-00daf03008d3" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+				<init target="Source" ver="5" ref="here.ApSource_SnapShotModule"/>
+				<init target="Path" ver="5" value="Storage.SnapShotName1"/>
+				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnValueChanged">
+					<body kind="om">
+						<![CDATA[Action_ComboBoxFill.Invoke();]]>
+					</body>
+				</do-on>
+			</object>
+			<object access-modifier="private" name="Ap_SnapShotName_2" display-name="Ap_SnapShotName_2" uuid="110fcbff-c1d6-4233-bb11-66cb7fc3c069" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+				<init target="Source" ver="5" ref="here.ApSource_SnapShotModule"/>
+				<init target="Path" ver="5" value="Storage.SnapShotName2"/>
+			</object>
+			<object access-modifier="private" name="Ap_SnapShotName_3" display-name="Ap_SnapShotName_3" uuid="c174cee9-7fdd-465b-88e8-6d77c3bcbdf2" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+				<init target="Source" ver="5" ref="here.ApSource_SnapShotModule"/>
+				<init target="Path" ver="5" value="Storage.SnapShotName3"/>
+			</object>
+			<object access-modifier="private" name="Ap_SnapShotName_4" display-name="Ap_SnapShotName_4" uuid="95b18a4d-cb64-4210-bc10-ad9e81355e32" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+				<init target="Source" ver="5" ref="here.ApSource_SnapShotModule"/>
+				<init target="Path" ver="5" value="Storage.SnapShotName4"/>
+			</object>
+			<object access-modifier="private" name="Ap_SnapShotName_5" display-name="Ap_SnapShotName_5" uuid="20aeb029-9895-465c-b41e-e4ffe802f8ed" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+				<init target="Source" ver="5" ref="here.ApSource_SnapShotModule"/>
+				<init target="Path" ver="5" value="Storage.SnapShotName5"/>
+			</object>
+			<object access-modifier="private" name="Ap_SnapShotName_6" display-name="Ap_SnapShotName_6" uuid="7e5c281d-d050-4053-9632-bba9e8300b8c" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+				<init target="Source" ver="5" ref="here.ApSource_SnapShotModule"/>
+				<init target="Path" ver="5" value="Storage.SnapShotName6"/>
+			</object>
+			<object access-modifier="private" name="Ap_SnapShotName_7" display-name="Ap_SnapShotName_7" uuid="a9a11851-e336-4231-83dc-979d3d1cb1c3" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+				<init target="Source" ver="5" ref="here.ApSource_SnapShotModule"/>
+				<init target="Path" ver="5" value="Storage.SnapShotName7"/>
+			</object>
+			<object access-modifier="private" name="Ap_SnapShotName_8" display-name="Ap_SnapShotName_8" uuid="2bc7775b-27b0-4e01-aab3-d61537df7448" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+				<init target="Source" ver="5" ref="here.ApSource_SnapShotModule"/>
+				<init target="Path" ver="5" value="Storage.SnapShotName8"/>
+			</object>
+			<object access-modifier="private" name="Ap_SnapShotName_9" display-name="Ap_SnapShotName_9" uuid="9f5144e9-515a-4ef3-a4c5-a3aae34a5210" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+				<init target="Source" ver="5" ref="here.ApSource_SnapShotModule"/>
+				<init target="Path" ver="5" value="Storage.SnapShotName9"/>
+			</object>
+			<object access-modifier="private" name="Ap_SnapShotName_10" display-name="Ap_SnapShotName_10" uuid="1056ea74-a24c-41b3-9f63-10c44876208d" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+				<init target="Source" ver="5" ref="here.ApSource_SnapShotModule"/>
+				<init target="Path" ver="5" value="Storage.SnapShotName10"/>
+			</object>
+			<object access-modifier="private" name="Ap_SnapShotExtract" display-name="Ap_SnapShotExtract" uuid="0c3a7b32-6a51-4d49-960e-af155275789e" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+				<init target="Source" ver="5" ref="here.ApSource_SnapShotModule"/>
+				<init target="Path" ver="5" value="Extractor.Extract"/>
+			</object>
+			<object access-modifier="private" name="Text_SignalNum" display-name="Text_SignalNum" uuid="3daef932-aa61-458f-a94a-2e1fa35c665a" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="10" ver="5"/>
+				<designed target="Y" value="130" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="240" ver="5"/>
+				<designed target="Height" value="20" ver="5"/>
+				<designed target="Text" value="Количество восстановленных сигналов:" ver="5"/>
+				<designed target="Font" value="Tahoma,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+				<designed target="FontColor" value="0xffffffff" ver="5"/>
+				<designed target="TextAlignment" value="130" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Text_3" display-name="Text_3" uuid="d6d8bf3a-0e54-4b11-8fb4-a8c705369281" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="260" ver="5"/>
+				<designed target="Y" value="130" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="110" ver="5"/>
+				<designed target="Height" value="20" ver="5"/>
+				<designed target="Text" value="*****" ver="5"/>
+				<designed target="Font" value="Tahoma,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+				<designed target="FontColor" value="0xffffffff" ver="5"/>
+				<designed target="TextAlignment" value="129" ver="5"/>
+				<do-trace access-modifier="private" target="Text" ver="5">
+					<body>
+						<![CDATA[Ap_ExtrSignalCount.ValueAsString]]>
+					</body>
+				</do-trace>
+			</object>
+			<object access-modifier="private" name="Ap_ExtrSignalCount" display-name="Ap_ExtrSignalCount" uuid="bb838416-fec2-4824-a945-e75b8767c9fb" base-type="ApItemUInt4" base-type-id="322ce770-6c7b-49bc-9cd6-a367ca5b4627" ver="5" description="" cardinal="1">
+				<init target="Source" ver="5" ref="here.ApSource_SnapShotModule"/>
+				<init target="Path" ver="5" value="Extractor.ExtrSignalCount"/>
+			</object>
+			<object access-modifier="private" name="Text_SignalNum_1" display-name="Text_SignalNum_1" uuid="5fa66f72-20fd-4b34-a44b-592c6b04ea18" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="10" ver="5"/>
+				<designed target="Y" value="160" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="240" ver="5"/>
+				<designed target="Height" value="20" ver="5"/>
+				<designed target="Text" value="Прогресс записи:" ver="5"/>
+				<designed target="Font" value="Tahoma,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+				<designed target="FontColor" value="0xffffffff" ver="5"/>
+				<designed target="TextAlignment" value="130" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Text_4" display-name="Text_4" uuid="daf8bd68-3f2b-4772-9c55-d3ad1e648e97" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+				<designed target="X" value="260" ver="5"/>
+				<designed target="Y" value="160" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="110" ver="5"/>
+				<designed target="Height" value="20" ver="5"/>
+				<designed target="Text" value="*****" ver="5"/>
+				<designed target="Font" value="Tahoma,10,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+				<designed target="FontColor" value="0xffffffff" ver="5"/>
+				<designed target="TextAlignment" value="129" ver="5"/>
+				<do-trace access-modifier="private" target="Text" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[Ap_ExtrInProgress]]>
+						</condition>
+						<expr>
+							<![CDATA["В прогрессе"]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[!Ap_ExtrInProgress && (Ap_ExtrLastError == "")]]>
+						</condition>
+						<expr>
+							<![CDATA["Выполнено"]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[!Ap_ExtrInProgress && (Ap_ExtrLastError != "")]]>
+						</condition>
+						<expr>
+							<![CDATA["Не выполнено"]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+				<do-trace access-modifier="private" target="Tooltip" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[Ap_ExtrLastError != ""]]>
+						</condition>
+						<expr>
+							<![CDATA[Ap_ExtrLastError]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+				<do-trace access-modifier="private" target="FontColor" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[Ap_ExtrInProgress]]>
+						</condition>
+						<expr>
+							<![CDATA[0xffffaa00]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[!Ap_ExtrInProgress && (Ap_ExtrLastError == "")]]>
+						</condition>
+						<expr>
+							<![CDATA[0xff00ff00]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[!Ap_ExtrInProgress && (Ap_ExtrLastError != "")]]>
+						</condition>
+						<expr>
+							<![CDATA[0xffff0000]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+			</object>
+			<object access-modifier="private" name="Ap_ExtrInProgress" display-name="Ap_ExtrInProgress" uuid="bdf6c41d-ca04-4a4e-9afb-c066e4719a1a" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+				<init target="Path" ver="5" value="Extractor.ExtrInProgress"/>
+				<init target="Source" ver="5" ref="here.ApSource_SnapShotModule"/>
+			</object>
+			<object access-modifier="private" name="Ap_ExtrLastError" display-name="Ap_ExtrLastError" uuid="7ab57bad-787c-4277-a882-58e3168e5ecb" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+				<init target="Path" ver="5" value="Extractor.ExtrLastError"/>
+				<init target="Source" ver="5" ref="here.ApSource_SnapShotModule"/>
+			</object>
+			<object access-modifier="private" name="Button_BackwardEx" display-name="Button_BackwardEx" uuid="caa6a620-2155-4065-91c6-f4ee5d9a457b" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5" description="" cardinal="1">
+				<designed target="X" value="90" ver="5"/>
+				<designed target="Y" value="60" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="140" ver="5"/>
+				<designed target="Height" value="15" ver="5"/>
+				<designed target="Checkable" value="false" ver="5"/>
+				<designed target="Checked" value="false" ver="5"/>
+				<designed target="Text" value="Предыдущие" ver="5"/>
+				<designed target="TextAlignment" value="36" ver="5"/>
+				<designed target="Font" value="Tahoma,8,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+				<designed target="FontColor" value="4278190080" ver="5"/>
+				<designed target="OnClickFontColor" value="0xffffffff" ver="5"/>
+				<designed target="OnHoverFontColor" value="0xffffffff" ver="5"/>
+				<designed target="DisabledFontColor" value="4278190080" ver="5"/>
+				<designed target="BrushColor" value="0xffd4d0c8" ver="5"/>
+				<designed target="BrushStyle" value="1" ver="5"/>
+				<designed target="OnClickBrushColor" value="0xffd4d0c8" ver="5"/>
+				<designed target="OnClickBrushStyle" value="1" ver="5"/>
+				<designed target="OnHoverBrushColor" value="0xffcc6666" ver="5"/>
+				<designed target="OnHoverBrushStyle" value="1" ver="5"/>
+				<designed target="DisabledBrushColor" value="0xc8d4d0c8" ver="5"/>
+				<designed target="DisabledBrushStyle" value="1" ver="5"/>
+				<designed target="PenColor" value="0xff000000" ver="5"/>
+				<designed target="PenStyle" value="1" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="OnClickPenColor" value="4278190080" ver="5"/>
+				<designed target="OnClickPenStyle" value="1" ver="5"/>
+				<designed target="OnClickPenWidth" value="1" ver="5"/>
+				<designed target="OnHoverPenColor" value="4278190080" ver="5"/>
+				<designed target="OnHoverPenStyle" value="1" ver="5"/>
+				<designed target="OnHoverPenWidth" value="1" ver="5"/>
+				<designed target="DisabledPenColor" value="4288716960" ver="5"/>
+				<designed target="DisabledPenStyle" value="1" ver="5"/>
+				<designed target="DisabledPenWidth" value="1" ver="5"/>
+				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+					<body kind="om">
+						<![CDATA[Ap_Backward = true;
+Action_ComboBoxFill.Invoke();]]>
+					</body>
+				</do-on>
+			</object>
+			<object access-modifier="private" name="Button_ForwardEx" display-name="Button_ForwardEx" uuid="8d3730c1-40db-4143-b7ff-40b6e35f3d2e" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5" description="" cardinal="1">
+				<designed target="X" value="240" ver="5"/>
+				<designed target="Y" value="60" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="140" ver="5"/>
+				<designed target="Height" value="15" ver="5"/>
+				<designed target="Checkable" value="false" ver="5"/>
+				<designed target="Checked" value="false" ver="5"/>
+				<designed target="Text" value="Следующие" ver="5"/>
+				<designed target="TextAlignment" value="36" ver="5"/>
+				<designed target="Font" value="Tahoma,8,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+				<designed target="FontColor" value="0xff000000" ver="5"/>
+				<designed target="OnClickFontColor" value="0xffffffff" ver="5"/>
+				<designed target="OnHoverFontColor" value="0xffffffff" ver="5"/>
+				<designed target="DisabledFontColor" value="4278190080" ver="5"/>
+				<designed target="BrushColor" value="0xffd4d0c8" ver="5"/>
+				<designed target="BrushStyle" value="1" ver="5"/>
+				<designed target="OnClickBrushColor" value="0xffd4d0c8" ver="5"/>
+				<designed target="OnClickBrushStyle" value="1" ver="5"/>
+				<designed target="OnHoverBrushColor" value="0xffcc6666" ver="5"/>
+				<designed target="OnHoverBrushStyle" value="1" ver="5"/>
+				<designed target="DisabledBrushColor" value="0xc8d4d0c8" ver="5"/>
+				<designed target="DisabledBrushStyle" value="1" ver="5"/>
+				<designed target="PenColor" value="0xff000000" ver="5"/>
+				<designed target="PenStyle" value="1" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="OnClickPenColor" value="4278190080" ver="5"/>
+				<designed target="OnClickPenStyle" value="1" ver="5"/>
+				<designed target="OnClickPenWidth" value="1" ver="5"/>
+				<designed target="OnHoverPenColor" value="4278190080" ver="5"/>
+				<designed target="OnHoverPenStyle" value="1" ver="5"/>
+				<designed target="OnHoverPenWidth" value="1" ver="5"/>
+				<designed target="DisabledPenColor" value="4288716960" ver="5"/>
+				<designed target="DisabledPenStyle" value="1" ver="5"/>
+				<designed target="DisabledPenWidth" value="1" ver="5"/>
+				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+					<body kind="om">
+						<![CDATA[Ap_Forward = true;
+Action_ComboBoxFill.Invoke();]]>
+					</body>
+				</do-on>
+			</object>
+			<object access-modifier="private" name="Ap_Backward" display-name="Ap_Backward" uuid="87d27e3d-2c05-4986-9ac9-f3f0afeb8eea" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+				<init target="Path" ver="5" value="Storage.Backward"/>
+				<init target="Source" ver="5" ref="here.ApSource_SnapShotModule"/>
+			</object>
+			<object access-modifier="private" name="Ap_Forward" display-name="Ap_Forward" uuid="88e4d0a5-ed1c-4747-a679-5256974e5a9b" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+				<init target="Path" ver="5" value="Storage.Forward"/>
+				<init target="Source" ver="5" ref="here.ApSource_SnapShotModule"/>
+			</object>
+			<object access-modifier="private" name="Line_1" display-name="Line_1" uuid="c772f8f8-2f9e-4e6a-84af-3eb0291a941e" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
+				<designed target="X" value="0" ver="5"/>
+				<designed target="Y" value="30" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="380" ver="5"/>
+				<designed target="Height" value="0" ver="5"/>
+				<designed target="PenColor" value="4278190080" ver="5"/>
+				<designed target="PenStyle" value="1" ver="5"/>
+				<designed target="PenWidth" value="1" ver="5"/>
+				<designed target="BrushColor" value="4278190080" ver="5"/>
+				<designed target="BrushStyle" value="0" ver="5"/>
+				<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="cf106fc4-cf3a-4ed5-ba9a-b8b48162fbfa" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+					<designed target="X" value="0" ver="5"/>
+					<designed target="Y" value="0" ver="5"/>
+				</object>
+				<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="b747cccb-01b4-42b8-bb8c-dcb9300c2eac" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+					<designed target="X" value="380" ver="5"/>
+					<designed target="Y" value="0" ver="5"/>
+				</object>
+			</object>
+		</object>
+	</object>
+	<designed target="Flip" value="0" ver="5"/>
+</type>
+

@@ -1,0 +1,98 @@
+<type access-modifier="private" name="IEC_ReverseStationInfoForm" display-name="IEC_ReverseStationInfoForm" uuid="2ae36793-f002-4906-8053-a800c819c86f" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="700" ver="5"/>
+	<designed target="Height" value="570" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="4293980400" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="1920" ver="5"/>
+	<designed target="WindowHeight" value="1080" ver="5"/>
+	<designed target="WindowCaption" value="MainForm" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="2" ver="5"/>
+	<designed target="WindowBorderStyle" value="1" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="1" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<object access-modifier="private" name="IEC_ReverseStationInfo_1" display-name="IEC_ReverseStationInfo_1" uuid="09e96d06-0e68-4423-ab2b-29fb6b4aced8" base-type="IEC_ReverseStationInfo" base-type-id="66e4fa10-0de5-440a-b6d7-cb5456ebdb19" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="700" ver="5"/>
+		<designed target="Height" value="570" ver="5"/>
+		<do-trace access-modifier="private" target="_PLC_or_EQM" ver="5">
+			<body>
+				<![CDATA[here._PLC_or_EQM.Value]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="_Station_number" ver="5">
+			<body>
+				<![CDATA[here._Station_number.Value]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="_StationSource_number" ver="5">
+			<body>
+				<![CDATA[here._StationSource_number.Value]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="_StationSourceChannel_number" ver="5">
+			<body>
+				<![CDATA[here._StationSourceChannel_number.Value]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="_IEC104MasterNumber" ver="5">
+			<body>
+				<![CDATA[here._IEC104MasterNumber.Value]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="_PLCname" ver="5">
+			<body>
+				<![CDATA[here._PLCname.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="_Station_number" display-name="_Station_number" uuid="da4dc1b4-d838-4b5e-bda0-c3a0a6c9dae3" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="_StationSource_number" display-name="_StationSource_number" uuid="783a8aad-0146-4ae7-9eb0-0f35a02354db" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="_StationSourceChannel_number" display-name="_StationSourceChannel_number" uuid="87ab2761-e3c5-4a34-b215-5f79f5047c98" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="_PLCname" display-name="_PLCname" uuid="70e038b4-87e3-468b-b1b4-35392b1f7925" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="_PLC_or_EQM" display-name="_PLC_or_EQM" uuid="59455082-f535-4653-a81a-a6a6433c2288" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Initializer_1" display-name="Initializer_1" uuid="a9bdb51b-c89e-4fe6-8d7e-ee21fa785710" base-type="Initializer" base-type-id="6db89679-9299-4993-ad1a-0d086cd1c7d2" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Initialized">
+			<body kind="om">
+				<![CDATA[IEC_ReverseStationInfo_1._PLCname = _PLCname;
+IEC_ReverseStationInfo_1._PLC_or_EQM = _PLC_or_EQM;
+IEC_ReverseStationInfo_1._Station_number = _Station_number;
+IEC_ReverseStationInfo_1._StationSource_number = _StationSource_number;
+IEC_ReverseStationInfo_1._StationSourceChannel_number = _StationSourceChannel_number;
+IEC_ReverseStationInfo_1._IEC104MasterNumber = _IEC104MasterNumber;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="_IEC104MasterNumber" display-name="_IEC104MasterNumber" uuid="f59049f2-00d5-429f-b2fe-de95dba2b6de" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<do-trace access-modifier="private" target="WindowCaption" ver="5">
+		<body>
+			<![CDATA["информация: " + _PLC_or_EQM +" " + _PLCname]]>
+		</body>
+	</do-trace>
+	<designed target="Flip" value="0" ver="5"/>
+</type>
+

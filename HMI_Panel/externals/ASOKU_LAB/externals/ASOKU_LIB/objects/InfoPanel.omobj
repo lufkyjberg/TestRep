@@ -1,0 +1,202 @@
+<type access-modifier="public" name="InfoPanel" display-name="Информационная панель" uuid="b03b8b3e-a1d1-4778-b8eb-2758b789d68b" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="616" ver="5"/>
+	<designed target="Height" value="70" ver="5"/>
+	<designed target="RoundingRadius" value="0" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xff646464" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<object access-modifier="private" name="TextField_Timestamp" display-name="TextField_Timestamp" uuid="6e72b583-8d2a-4616-ab64-36b7e023c6f3" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="396.60000000000002" ver="5"/>
+		<designed target="Y" value="0.19999999999999929" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="200" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Timer" display-name="Timer" uuid="8d044856-83c3-45ad-9974-3c6a3bfb8ce3" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="5" description="" cardinal="1">
+		<designed target="Period" value="1000" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnTimer">
+			<body kind="om">
+				<![CDATA[TextField_Timestamp.Text = DateTime.ToString(DateTime.ToLocal(Timer.Now));
+]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="TextField_User" display-name="TextField_User" uuid="2c990a9e-8f9a-4740-b7b9-74ea1793fbe2" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="311.14285714285711" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="86" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="Гость" ver="5"/>
+		<designed target="Font" value="Arial,12,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick">
+			<body kind="om">
+				<![CDATA[Click_UserChange.Invoke();]]>
+			</body>
+		</do-on>
+		<designed target="Flip" value="0" ver="5"/>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="MouseEnter">
+			<body kind="om">
+				<![CDATA[this.Scale = 1.2;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="5" event="MouseLeave">
+			<body kind="om">
+				<![CDATA[this.Scale = 1;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[AsokuUserRights.SecurityContext_UserRights.Connected]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuUserRights.SecurityContext_UserRights.CurrentUser]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="TextLabel_P" display-name="TextLabel_P" uuid="014689d9-08e1-4dda-8a3a-e3d5ee22329d" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="36" ver="5"/>
+		<designed target="Y" value="29" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="23" ver="5"/>
+		<designed target="Height" value="33" ver="5"/>
+		<designed target="Text" value="P" ver="5"/>
+		<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="ValueField_P" display-name="ValueField_P" uuid="d2107aca-6a68-4245-9236-7d45f1c53378" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="43.166666666666714" ver="5"/>
+		<designed target="Y" value="18" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="145" ver="5"/>
+		<designed target="Height" value="55" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Electro.P1"/>
+		<designed target="Scale" value="0.69999999999999996" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextLabel_Q" display-name="TextLabel_Q" uuid="2f546efc-eb83-4d77-9b08-8bad00c90f4e" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="241" ver="5"/>
+		<designed target="Y" value="29" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="23" ver="5"/>
+		<designed target="Height" value="33" ver="5"/>
+		<designed target="Text" value="Q" ver="5"/>
+		<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="ValueField_Q" display-name="ValueField_Q" uuid="b7a96624-984d-412e-9005-362faddd87ba" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="250.83333333333297" ver="5"/>
+		<designed target="Y" value="18" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="145" ver="5"/>
+		<designed target="Height" value="55" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Electro.Q_Mvar_ENIP"/>
+		<designed target="Scale" value="0.69999999999999996" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextLabel_N" display-name="TextLabel_N" uuid="e20f60d9-5716-4084-b3ee-d00a01e5256a" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="453" ver="5"/>
+		<designed target="Y" value="29" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="23" ver="5"/>
+		<designed target="Height" value="33" ver="5"/>
+		<designed target="Text" value="F" ver="5"/>
+		<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xffffffff" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Click_UserChange" display-name="Click_UserChange" uuid="699ed3fc-85bd-4672-9236-afe8f232294f" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" base-const="true" base-ref="true" ver="5" description=""/>
+	<object access-modifier="private" name="ValueField_N" display-name="ValueField_N" uuid="e05f2716-2524-49b5-a801-e5a09474d868" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="469.16666666666697" ver="5"/>
+		<designed target="Y" value="18" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="145" ver="5"/>
+		<designed target="Height" value="55" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Electro.F_net"/>
+		<designed target="Scale" value="0.69999999999999996" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Close_MainPanel" display-name="Close_MainPanel" uuid="a37a352d-e741-4396-9a5e-879976c8b850" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" base-const="true" base-ref="true" ver="5" description=""/>
+	<object access-modifier="private" name="TextField_Mode" display-name="TextField_Mode" uuid="2a43d10c-afd8-40ca-8621-6f3817b56111" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="180" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<designed target="Text" value="Режим работы ГА" ver="5"/>
+		<designed target="Font" value="Arial,12,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="36" ver="5"/>
+	</object>
+	<designed target="Flip" value="0" ver="5"/>
+	<object access-modifier="private" name="DiscreteDpGAWorkStatus_1" display-name="DiscreteDpGAWorkStatus_1" uuid="364c71fc-db37-4a50-9538-0544f26c4003" base-type="DiscreteDpGAWorkStatus" base-type-id="a808def0-bc7c-423b-8202-ae4fa118c49e" ver="5" description="" cardinal="1">
+		<designed target="X" value="121.14285714285711" ver="5"/>
+		<designed target="Y" value="-4.9999999999999982" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="234.28571428571445" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<designed target="Scale" value="0.59999999999999998" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Control.Opr_GA_mode_OP"/>
+		<init target="notifyingFontStyle" ver="5" value="Arial,15,-1,5,75,0,0,0,0,0,Полужирный"/>
+	</object>
+	<object access-modifier="private" name="CloseButton_1" display-name="CloseButton_1" uuid="5200c054-06b7-42ba-bc4b-6e99f7ccb316" base-type="CloseButton" base-type-id="ecfb315b-91f8-4d99-97d9-dd614221b53a" ver="5" description="" cardinal="1">
+		<designed target="X" value="596.31428571428569" ver="5"/>
+		<designed target="Y" value="0.11428571428571566" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="20" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+	</object>
+</type>
+

@@ -1,0 +1,229 @@
+{
+ "UserTree": [
+  {
+   "Signal":{
+    "UserTree":"GA_01/HydroMech/L_oil_VNP/GA_01.HydroMech.L_oil_VNP.value",
+    "OpcTag":"HydroUnits.GA_01.HydroMech.L_oil_VNP.value",
+    "EUnit":"мм",
+    "Description":"Уровень в маслованне ВНП [мм]",
+    "DataType":"float" 
+   }
+  },
+  {
+   "Signal":{
+    "UserTree":"GA_01/Electro/P1/GA_01.Electro.P1.value",
+    "OpcTag":"HydroUnits.GA_01.Electro.P1.value",
+    "EUnit":"МВт",
+    "Description":"Активная мощность ИПМ 1 [МВт]",
+    "DataType":"float" 
+   }
+  },
+  {
+   "Signal":{
+    "UserTree":"GA_01/HydroMech/N_Z1/GA_01.HydroMech.N_Z1.value",
+    "OpcTag":"HydroUnits.GA_01.HydroMech.N_Z1.value",
+    "EUnit":"об/с",
+    "Description":"Частота вращения, датчик зубчатки №1 [об/с]",
+    "DataType":"float" 
+   }
+  },
+  {
+   "Signal":{
+    "UserTree":"GA_01/Control/Key_ACHVR/GA_01.Control.Key_ACHVR.value",
+    "OpcTag":"HydroUnits.GA_01.Control.Key_ACHVR.value",
+    "EUnit":"-",
+    "Description":"Ключ АЧВР 'Введен'",
+    "DataType":"bool" 
+   }
+  },
+  {
+   "Signal":{
+    "UserTree":"GA_01/HydroMech/NA_lock_on/GA_01.HydroMech.NA_lock_on.value",
+    "OpcTag":"HydroUnits.GA_01.HydroMech.NA_lock_on.value",
+    "EUnit":"-",
+    "Description":"Стопор НА установлен (GS22)",
+    "DataType":"bool" 
+   }
+  },
+  {
+   "Signal":{
+    "UserTree":"GA_01/HydroMech/NA_brk_off/GA_01.HydroMech.NA_brk_off.value",
+    "OpcTag":"HydroUnits.GA_01.HydroMech.NA_brk_off.value",
+    "EUnit":"-",
+    "Description":"Тормоз ЭЦ НА освобожден (GS23)",
+    "DataType":"bool" 
+   }
+  },
+  {
+   "Signal":{
+    "UserTree":"GA_01/HydroMech/NA_brk_on/GA_01.HydroMech.NA_brk_on.value",
+    "OpcTag":"HydroUnits.GA_01.HydroMech.NA_brk_on.value",
+    "EUnit":"-",
+    "Description":"Тормоз ЭЦ НА установлен (GS24)",
+    "DataType":"bool" 
+   }
+  },
+  {
+   "Signal":{
+    "UserTree":"GA_01/HydroMech/ES_NA/GA_01.HydroMech.ES_NA.value",
+    "OpcTag":"HydroUnits.GA_01.HydroMech.ES_NA.value",
+    "EUnit":"-",
+    "Description":"Аварийный останов от ШУ НА ЭЦ",
+    "DataType":"bool" 
+   }
+  },
+  {
+   "Signal":{
+    "UserTree":"GA_01/HydroMech/PDZ_opened/GA_01.HydroMech.PDZ_opened.value",
+    "OpcTag":"HydroUnits.GA_01.HydroMech.PDZ_opened.value",
+    "EUnit":"-",
+    "Description":"ПДЗ открыт (открывается)",
+    "DataType":"bool" 
+   }
+  },
+  {
+   "Signal":{
+    "UserTree":"GA_01/HydroMech/PDZ_closed/GA_01.HydroMech.PDZ_closed.value",
+    "OpcTag":"HydroUnits.GA_01.HydroMech.PDZ_closed.value",
+    "EUnit":"-",
+    "Description":"ПДЗ закрыт (закрывается)",
+    "DataType":"bool" 
+   }
+  },
+  {
+   "Signal":{
+    "UserTree":"GA_01/HydroMech/BypassDZ_opened/GA_01.HydroMech.BypassDZ_opened.value",
+    "OpcTag":"HydroUnits.GA_01.HydroMech.BypassDZ_opened.value",
+    "EUnit":"-",
+    "Description":"Байпас ДЗ открыт (открывается)",
+    "DataType":"bool" 
+   }
+  },
+  {
+   "Signal":{
+    "UserTree":"GA_01/HydroMech/BypassDZ_closed/GA_01.HydroMech.BypassDZ_closed.value",
+    "OpcTag":"HydroUnits.GA_01.HydroMech.BypassDZ_closed.value",
+    "EUnit":"-",
+    "Description":"Байпас ДЗ закрыт (закрывается)",
+    "DataType":"bool" 
+   }
+  },
+  {
+   "Signal":{
+    "UserTree":"GA_01/HydroMech/Permit_NA_open/GA_01.HydroMech.Permit_NA_open.value",
+    "OpcTag":"HydroUnits.GA_01.HydroMech.Permit_NA_open.value",
+    "EUnit":"-",
+    "Description":"Разерешение открыть НА",
+    "DataType":"bool" 
+   }
+  },
+  {
+   "Signal":{
+    "UserTree":"GA_01/HydroMech/Warn_flt_SHPDZ/GA_01.HydroMech.Warn_flt_SHPDZ.value",
+    "OpcTag":"HydroUnits.GA_01.HydroMech.Warn_flt_SHPDZ.value",
+    "EUnit":"-",
+    "Description":"Неисправность (предупреждение)",
+    "DataType":"bool" 
+   }
+  }, 
+  {
+   "Signal":{
+    "UserTree":"GA_01/Electro/F_gen/GA_01.Electro.F_gen.value",
+    "OpcTag":"HydroUnits.GA_01.Electro.F_gen.value",
+    "EUnit":"Гц",
+    "Description":"Сигнал частоты генератора от ТНГ [Гц]",
+    "DataType":"float" 
+   }
+  },
+  {
+   "Signal":{
+    "UserTree":"GA_01/Electro/F_net/GA_01.Electro.F_net.value",
+    "OpcTag":"HydroUnits.GA_01.Electro.F_net.value",
+    "EUnit":"Гц",
+    "Description":"Сигнал частоты сети от ТНС [Гц]",
+    "DataType":"float" 
+   }
+  },
+  {
+   "Signal":{
+    "UserTree":"GA_01/Electro/AI_task_GRAM/GA_01.Electro.AI_task_GRAM.value",
+    "OpcTag":"HydroUnits.GA_01.Electro.AI_task_GRAM.value",
+    "EUnit":"МВт",
+    "Description":"Групповое задание мощности (резерв) [МВт]",
+    "DataType":"float" 
+   }
+  },
+  {
+   "Signal":{
+    "UserTree":"GA_01/HydroMech/L_nb/GA_01.HydroMech.L_nb.value",
+    "OpcTag":"HydroUnits.GA_01.HydroMech.L_nb.value",
+    "EUnit":"м",
+    "Description":"Уровень нижнего бъефа (LS5) [м]",
+    "DataType":"float" 
+   }
+  },
+  {
+   "Signal":{
+    "UserTree":"GA_01/HydroMech/Pos_NA2/GA_01.HydroMech.Pos_NA2.value",
+    "OpcTag":"HydroUnits.GA_01.HydroMech.Pos_NA2.value",
+    "EUnit":"%",
+    "Description":"Сигнал ДП НА2 (резерв) [%]",
+    "DataType":"float" 
+   }
+  },
+  {
+   "Signal":{
+    "UserTree":"GA_01/Electro/P2/GA_01.Electro.P2.value",
+    "OpcTag":"HydroUnits.GA_01.Electro.P2.value",
+    "EUnit":"МВт",
+    "Description":"Активная мощность ИПМ 2 (резерв) [МВт]",
+    "DataType":"float" 
+   }
+  },
+  {
+   "Signal":{
+    "UserTree":"GA_01/Electro/I_rot/GA_01.Electro.I_rot.value",
+    "OpcTag":"HydroUnits.GA_01.Electro.I_rot.value",
+    "EUnit":"А",
+    "Description":"Ток ротора [А]",
+    "DataType":"float" 
+   }
+  },
+  {
+   "Signal":{
+    "UserTree":"GA_01/Electro/U_rot/GA_01.Electro.U_rot.value",
+    "OpcTag":"HydroUnits.GA_01.Electro.U_rot.value",
+    "EUnit":"кВ",
+    "Description":"Напряжение ротора (резерв) [кВ]",
+    "DataType":"float" 
+   }
+  },
+  {
+   "Signal":{
+    "UserTree":"GA_01/HydroMech/H_real/GA_01.HydroMech.H_real.value",
+    "OpcTag":"HydroUnits.GA_01.HydroMech.H_real.value",
+    "EUnit":"м",
+    "Description":"Напор (реальный) [м]",
+    "DataType":"float" 
+   }
+  },
+  {
+   "Signal":{
+    "UserTree":"GA_01/HydroMech/Pos_NA1/GA_01.HydroMech.Pos_NA1.value",
+    "OpcTag":"HydroUnits.GA_01.HydroMech.Pos_NA1.value",
+    "EUnit":"%",
+    "Description":"Сигнал ДП НА1 (GI1) [%]",
+    "DataType":"float" 
+   }
+  },
+   {
+   "Signal":{
+    "UserTree":"GA_01/Electro/ENIP1/Q_Mvar_ENIP1/GA_01.Electro.ENIP1.Q_Mvar_ENIP1.value",
+    "OpcTag":"HydroUnits.GA_01.Electro.ENIP1.Q_Mvar_ENIP1.value",
+    "EUnit":"-",
+    "Description":"ЭНИП1.Мощность реактивная средняя (Мвар)",
+    "DataType":"float" 
+   }
+  }
+ ]
+}

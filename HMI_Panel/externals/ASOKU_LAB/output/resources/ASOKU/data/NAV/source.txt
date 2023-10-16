@@ -1,0 +1,34 @@
+﻿Основная :: SAGES :: Main_SaGES :: 8a815dca-f6e9-4d33-8689-9fada7df800c ::  :: sages  
+ГА :: Blocks :: block_1 :: 0445b19f-3283-4487-89ec-95af2155973c :: HydroUnits.B1 | HydroUnits.B2 | HydroUnits.B3 | HydroUnits.B4 | HydroUnits.B5 :: blocks
+  Блок 1 :: :: block_1 :: 0445b19f-3283-4487-89ec-95af2155973c :: HydroUnits.B1 :: blocks-block_1
+    Основная :: :: block_1 :: 0445b19f-3283-4487-89ec-95af2155973c :: HydroUnits.B1 :: blocks-block_1-block_1
+    Таблица :: :: gen_1_4 :: 941f0f93-f581-42e6-acce-7aea2f9be03f :: HydroUnits.B1 :: blocks-block_1-gen_1_4
+  Блок 2 :: :: block_2 :: 48115933-da38-4ac8-9a98-150db406b6b7 :: HydroUnits.B2 :: blocks-block_2
+    Основная :: :: block_1 :: 48115933-da38-4ac8-9a98-150db406b6b7 :: HydroUnits.B2 :: blocks-block_2-block_2
+    Таблица :: :: gen_5_8 :: 01ec34ad-d818-4b08-8ef1-acc476c98af8 :: HydroUnits.B2 :: blocks-block_2-gen_5_8
+  Блок 3 :: :: block_3 :: eae449a6-9dff-4df1-9977-0d31605a0ad2 :: HydroUnits.B3 :: blocks-block_3
+    Основная :: :: block_1 :: eae449a6-9dff-4df1-9977-0d31605a0ad2 :: HydroUnits.B3 :: blocks-block_3-block_3
+    Таблица :: :: gen_9_12 :: a6afe6c3-e754-4338-8aae-ad4b52f4a894 :: HydroUnits.B3 :: blocks-block_3-gen_9_12
+  Блок 4 :: :: block_4 :: afcdb6ac-6fa3-4b37-90fd-543f5abe064f :: HydroUnits.B4 :: blocks-block_4
+    Основная :: :: block_1 :: afcdb6ac-6fa3-4b37-90fd-543f5abe064f :: HydroUnits.B4 :: blocks-block_4-block_4
+    Таблица :: :: gen_13_16 :: d4f56675-9356-48d5-a783-612dcacd94ae :: HydroUnits.B4 :: blocks-block_4-gen_13_16
+  Блок 5 :: :: block_5 :: 8fd50afd-d010-4b43-af0c-5811b1c3dc4a :: HydroUnits.B5:: blocks-block_5
+    Основная :: :: block_1 :: 8fd50afd-d010-4b43-af0c-5811b1c3dc4a :: HydroUnits.B5 :: blocks-block_5-block_5
+    Таблица :: :: gen_17_20 :: 0f1988ff-fa46-48f7-ad2e-f70afa99b3c0 :: HydroUnits.B5 :: blocks-block_5-gen_17_20
+РУ :: РУ :: ORU_35:: 7cbd6561-5cbf-41c2-9a49-d4d460d34f76 :: RU :: ru
+  ОРУ35 :: :: ORU_35 :: 7cbd6561-5cbf-41c2-9a49-d4d460d34f76 :: RU.ORU_35 :: ru-oru_35
+    Основная :: :: oru_35 :: 7cbd6561-5cbf-41c2-9a49-d4d460d34f76 :: RU.ORU_35 :: ru-oru_35-oru_35
+    Таблица :: :: gen_20_24 :: f04431f2-0a47-480c-8dba-f020b5b0e212 :: RU.ORU_35 :: ru-oru_35-gen_21_24
+  ОРУ220 :: :: ORU_220 :: 9bdfa7e8-e840-40bd-917f-7badc3d47011 :: RU.ORU_220 :: ru-oru_220
+    Основная :: :: oru-220 :: 9bdfa7e8-e840-40bd-917f-7badc3d47011 :: RU.ORU_220 :: ru-oru_220-oru_220
+    Таблица :: :: gen_25_28 :: 6fa79582-56e6-4226-9519-baaf2fb8675a :: RU.ORU_220 :: ru-oru_220-gen_25_28
+  ОРУ500 :: :: ORU_500 :: 7cf5949d-3138-412b-9d38-e3f3e5070560 :: RU.ORU_500 :: ru-oru_500
+    Основная :: :: oru_500 :: 7cf5949d-3138-412b-9d38-e3f3e5070560 :: RU.ORU_500 :: ru-oru_500-oru_500
+    Таблица :: :: gen_29_32 :: d6baa83e-7bd4-4624-9785-215a423beccd :: RU.ORU_500 :: ru-oru_500-gen_29_32
+ТИ и ТС :: TI_TS :: TI_TS :: a96a0837-5bbf-4fad-b27b-dd688313dad3 :: RDU :: TI_TS	
+    Основная :: :: TI_TS :: a96a0837-5bbf-4fad-b27b-dd688313dad3 :: RDU :: TI_TS-TI_TS
+    Таблица 1 :: :: TI_TS_1 :: a617f3ed-f85d-43b6-8810-5259d62acc1e :: RDU :: TI_TS-TI_TS_1
+    Таблица 2 :: :: TI_TS_2 :: f0cdb8ec-804a-42fc-b15d-9f9392d5f8eb :: RDU :: TI_TS-TI_TS_2
+Диагностика :: diagnostics :: IEC_ReverseStationInfoForm :: cd3e9730-e759-47d1-8cc1-dbd346cd23e9 :: -1 :: diagnostics 
+  Соединения :: :: Connections :: cd3e9730-e759-47d1-8cc1-dbd346cd23e9 :: -1 :: diagnostics-connections
+  Оборудование :: :: IEC_ReverseStationInfoForm :: 2ae36793-f002-4906-8053-a800c819c86f :: -1 :: diagnostics-iec_reverseStationInfoForm

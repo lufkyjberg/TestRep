@@ -1,0 +1,249 @@
+<type access-modifier="public" name="DiscreteDpOnOffKey" display-name="DiscreteDpOnOffKey" uuid="eed86abb-bc23-4394-a780-d6f41ac1c8c2" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="150" ver="5"/>
+	<designed target="Height" value="40" ver="5"/>
+	<designed target="RoundingRadius" value="0" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="1" ver="5"/>
+	<designed target="PenWidth" value="3" ver="5"/>
+	<designed target="BrushColor" value="0x00000000" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<object access-modifier="private" name="TextField" display-name="TextField" uuid="228c56b0-5611-47d8-91eb-fb55a8796bb7" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="1.75" ver="5"/>
+		<designed target="Y" value="1.9166666666666665" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="150" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+		<designed target="Text" value="*****" ver="5"/>
+		<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xffaaaaaa" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<body>
+				<![CDATA[ApParDisplayOn.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ApParValue" display-name="Значение параметра" uuid="3eb6af87-7964-4f0f-aea0-b4f6bbc89503" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="5">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="OnValueChanged">
+			<body kind="javascript">
+				<![CDATA[var isAlarm = false;
+var isWarning = false;
+var arrIndex = -1;
+for(var i = 0; i < ApParValue.Length; i++){
+   if(ApParValue[i].Value){
+      TextField.Text = ApParDisplayOn[i].Value;
+      TextField.FontColor = AsokuColor.asokuGreen;
+   }
+   if(ApParAlarmBytes[i].Value == 2){
+      isWarning = true;
+      arrIndex = i;
+      break;
+      }
+   if(ApParAlarmBytes[i].Value == 6){
+      isAlarm = true;
+      arrIndex = i;
+      break;
+      }
+   /*DebugTool.Log(isAlarm);
+   DebugTool.Log(isWarning);
+   DebugTool.Log(arrIndex);
+   DebugTool.Log(here.ApParValue[i]);
+   DebugTool.Log(here.ApParDescription[i].Value);*/
+}
+if((isAlarm || isWarning) && (arrIndex != -1)){
+   /*DebugTool.Log("in IF");
+   DebugTool.Log(arrIndex);
+   DebugTool.Log(here.ApParDescription[arrIndex].Value);
+   DebugTool.Log(here.ApParDisplayOn[arrIndex].Value);*/
+   TextField.Text = ApParDescription[arrIndex].Value;
+   TextField.FontColor = isAlarm ? AsokuColor.asokuRed : AsokuColor.asokuYellow;
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="ApParDescription" display-name="Описание параметра" uuid="20a832ef-c736-4b58-bd32-526371aef727" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="5">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApParDisplayOn" display-name="Формат отображения параметра включенного состояния" uuid="bd890217-14df-497f-895b-835a70b73f3a" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="5">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApParDisplayOff" display-name="Формат отображения параметра выключенного состояния" uuid="b7b77df5-64e3-4b73-9962-5b6cd4ed5f96" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="5">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApParStatusBytes" display-name="Статус параметра" uuid="cf0321e2-54f3-428a-aafd-86083b0e7843" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="5">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApParAlarmBytes" display-name="Аларм параметра" uuid="b420f33c-9d0b-4568-96b1-e7732bda0ed2" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="5">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="5" event="OnValueChanged">
+			<body kind="javascript">
+				<![CDATA[var isAlarm = false; 
+var isWarning = false;
+var arrIndex = -1;
+for(var i = 0; i < ApParValue.Length; i++){
+   if(ApParAlarmBytes[i].Value == 2){
+      isWarning = true;
+      arrIndex = i;
+      break;
+   }
+   if(ApParAlarmBytes[i].Value == 6){
+      isAlarm = true;
+      arrIndex = i;
+      break;
+   }
+   else{
+      TextField.FontColor = AsokuColor.asokuGreen;
+   }
+}
+if ((isAlarm || isWarning) && (arrIndex != -1)){
+   TextField.Text = ApParDescription[arrIndex].Value;
+   TextField.FontColor = isAlarm ? AsokuColor.asokuRed : AsokuColor.asokuYellow;
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="DebugTool" display-name="DebugTool" uuid="29092a3b-2247-47ca-9ac9-14ffe745e8aa" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="5" description="" cardinal="1"/>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="MouseClick">
+		<body kind="om">
+			<![CDATA[/*if(ApParName.Advised == true)
+{
+  if (AsokuMain.WindowGroup_InfoViewMessages.WindowCount < 1) Open_AlarmView.Invoke();
+  else 
+  {
+    AsokuMain.WindowGroup_InfoViewMessages.SendToAll("sendmessage", ParDevPath.Value);
+  }
+}*/
+]]>
+		</body>
+	</do-on>
+	<do-trace access-modifier="private" target="PenColor" ver="5">
+		<conditional-expr>
+			<condition>
+				<![CDATA[ApParStatusBytes.Value == AsokuConst.StatusBytes.Changed]]>
+			</condition>
+			<expr>
+				<![CDATA[AsokuColor.asokuCyan]]>
+			</expr>
+		</conditional-expr>
+		<default-expr>
+			<expr>
+				<![CDATA[AsokuColor.asokuTransparent]]>
+			</expr>
+		</default-expr>
+	</do-trace>
+	<do-trace access-modifier="private" target="BrushColor" ver="5">
+		<default-expr>
+			<expr>
+				<![CDATA[AsokuColor.asokuTransparent]]>
+			</expr>
+		</default-expr>
+	</do-trace>
+	<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="5" event="MouseEnter">
+		<body kind="javascript">
+			<![CDATA[for(var i = 0; i < ApParValue.Length; i++){
+   DebugTool.Log("123");
+   if(ApParValue[i].Advised == true){
+      if(ApParStatusBytes[i].Value != 8) here.PenColor = AsokuColor.asokuBlack;
+      here.PenWidth = 5;
+   }
+}]]>
+		</body>
+	</do-on>
+	<do-on access-modifier="private" name="Handler_4" display-name="Handler_4" ver="5" event="MouseLeave">
+		<body kind="om">
+			<![CDATA[if(ApParStatusBytes.Value == 8) here.PenColor = AsokuColor.asokuCyan;
+else here.PenColor =  AsokuColor.asokuTransparent;
+here.PenWidth = 3;]]>
+		</body>
+	</do-on>
+	<designed target="Flip" value="0" ver="5"/>
+	<object access-modifier="private" name="Open_AlarmView" display-name="команда открытия AlarmView" uuid="179f7a3b-ad51-4422-80f8-076642a5f89f" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-by-id="false" form-action="open-new-independent">
+			<object access-modifier="private" uuid="00dd770a-640e-44ff-8421-a4f4a13f2a35" base-type="InfoViewMessages" base-type-id="2768341d-28ac-4654-8f4f-d392551ca1b7" ver="5"/>
+		</do-on>
+	</object>
+	<do-on access-modifier="private" name="Handler_5" display-name="Handler_5" ver="5" event="MouseRightClick">
+		<body kind="javascript">
+			<![CDATA[var paths = ParDevPath.Value.split(" | ");
+// разбили pardevpath на массив строчек, представляющих собой пути до сигналов
+
+for(var i = 0; i < paths.length; i++){
+	// пройдемся циклом по количеству элементе после сплита
+
+	Counter = i;
+	// запишем текущую позицию в некий наружний счётчик
+	// почему он не уведомляющий? чтобы при активации функции открытия схемы, схема не получала новое значение переменной, а приняла её слепок на момент вызова
+	// зачем её заводить снаружи, если можно передать как аргумент функции? при работе с логикой открытия новой формы, доступ к переменным, переданным в функцию в момент вызова почему-то не выдается
+	Paths[i] = paths[i];
+	// в массив путей запишем разбитые кусочки. сделать этом можно было и сразу, как только pardevpath получил свое значение, но это лишняя работа при инициализации типа
+	
+   OpenInfoTabView();
+   //запустить функцию которая откроет InfoTabView с путем до параметра, рассчитывающимся как Paths[Counter] (все переменные внешние и доступны функции в момент вызова у родителя)
+}]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="ParDevPath" display-name="ParDevPath" uuid="9fd6ca98-149e-47b9-9889-7b2d6a39ff53" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ValueChanged">
+			<body kind="javascript">
+				<![CDATA[var array = ParDevPath.Value.split(" | ");
+for(var i = 0; i < array.length; i++){
+   ApParValue[i].Path = array[i] + ".Value";
+   ApParDescription[i].Path = array[i] + ".Description";
+   ApParDisplayOn[i].Path = array[i] + ".DisplayOn";
+   ApParDisplayOff[i].Path = array[i] + ".DisplayOff";
+   ApParStatusBytes[i].Path = array[i] + ".StatusBytes";
+   ApParAlarmBytes[i].Path = array[i] + ".AlarmBytes";
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<do access-modifier="private" name="OpenInfoTabView" display-name="OpenInfoTabView" ver="5" form-by-id="false" form-action="open-new" type="void">
+		<object access-modifier="private" uuid="725f6e52-b784-4b5a-877b-0d78391ff6b5" base-type="InfoTabView" base-type-id="146efb0d-a148-4c91-94ff-f69c196a5132" ver="5">
+			<init target="PanelType" ver="5" value="информация"/>
+			<init target="ParameterType" ver="5" value="DI"/>
+			<init target="ParDevPath" ver="5">
+				<expr>
+					<![CDATA[Paths[Counter]]]>
+				</expr>
+			</init>
+			<init target="TransferDevPath" ver="5" ref="here.TransferDevPath"/>
+		</object>
+	</do>
+	<object access-modifier="private" name="Paths" display-name="Paths" uuid="dcb3a07f-1eda-4ca9-991f-31dd1cb67f44" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description="" cardinal="5">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ValueChanged">
+			<body kind="javascript">
+				<![CDATA[/*var array = ParDevPath.Value.split(" | ");
+for(var i = 0; i < array.length; i++){
+   ApParValue[i].Path = array[i] + ".Value";
+   ApParDescription[i].Path = array[i] + ".Description";
+   ApParDisplayOn[i].Path = array[i] + ".DisplayOn";
+   ApParDisplayOff[i].Path = array[i] + ".DisplayOff";
+   ApParStatusBytes[i].Path = array[i] + ".StatusBytes";
+   ApParAlarmBytes[i].Path = array[i] + ".AlarmBytes";
+}*/]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Counter" display-name="Counter" uuid="4ed9694c-206a-48a6-8e7b-d1a0521a5f24" base-type="int1" base-type-id="756a0a23-7e63-4a13-8a35-e8a38909e5ed" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="TransferDevPath" display-name="Путь до папки трансферов" uuid="199a7a30-8339-41ca-ad9e-c25c51573e18" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+</type>
+

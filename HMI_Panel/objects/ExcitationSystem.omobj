@@ -1,0 +1,180 @@
+<type access-modifier="private" name="ExcitationSystem" display-name="ExcitationSystem" uuid="165a2305-3abf-48f5-9267-11c7318c9b2f" base-type="" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Width" value="630" ver="5"/>
+	<designed target="Height" value="640" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xff646464" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="580" ver="5"/>
+	<designed target="WindowHeight" value="640" ver="5"/>
+	<designed target="WindowCaption" value="MainForm" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="1" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="0" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<object access-modifier="private" name="Text_PropertiesDialogs_119" display-name="Text_PropertiesDialogs_119" uuid="0984a3a0-42e9-435a-ac43-f6ade2c0ff64" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="5" ver="5"/>
+		<designed target="Y" value="80" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="620" ver="5"/>
+		<designed target="Height" value="45" ver="5"/>
+		<designed target="Text" value="Готовность ШУВ к возбуждению" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Electro.SV.Ready_SV"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_128" display-name="Text_PropertiesDialogs_128" uuid="71089402-8d6b-403a-bfe9-e8e2353ea6a9" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="5" ver="5"/>
+		<designed target="Y" value="170" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="620" ver="5"/>
+		<designed target="Height" value="45" ver="5"/>
+		<designed target="Text" value="В работе РРВ" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Electro.SV.RRV_work_SV"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_130" display-name="Text_PropertiesDialogs_130" uuid="eb2ce9c2-2840-48c9-82d9-1ed7f7218455" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="5" ver="5"/>
+		<designed target="Y" value="440" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="620" ver="5"/>
+		<designed target="Height" value="45" ver="5"/>
+		<designed target="Text" value="Возбуждение включено" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Electro.SV.Excit_on_SV"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_131" display-name="Text_PropertiesDialogs_131" uuid="52c828d2-c7b8-4e9a-885d-62a2cf785c41" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="5" ver="5"/>
+		<designed target="Y" value="125" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="620" ver="5"/>
+		<designed target="Height" value="45" ver="5"/>
+		<designed target="Text" value="Возбуждение отключено" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Electro.SV.Excit_off_SV"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_132" display-name="Text_PropertiesDialogs_132" uuid="c2cf367c-fe3b-4970-8892-1edf60c39a3e" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="5" ver="5"/>
+		<designed target="Y" value="215" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="620" ver="5"/>
+		<designed target="Height" value="45" ver="5"/>
+		<designed target="Text" value="Подгонка уставки СВ завершена" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Electro.SV.Task_load_end_SV"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_134" display-name="Text_PropertiesDialogs_134" uuid="0d4d3e14-32b3-4e78-a1c4-048f630ecbb0" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="5" ver="5"/>
+		<designed target="Y" value="485" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="620" ver="5"/>
+		<designed target="Height" value="45" ver="5"/>
+		<designed target="Text" value="Авария ШУВ" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Electro.SV.Alarm_SV"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_135" display-name="Text_PropertiesDialogs_135" uuid="2a3510cc-dad8-4267-b667-6077dcfaedda" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="5" ver="5"/>
+		<designed target="Y" value="395" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="620" ver="5"/>
+		<designed target="Height" value="45" ver="5"/>
+		<designed target="Text" value="Перегрев ротора" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Electro.SV.T_rot_H_SV"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_136" display-name="Text_PropertiesDialogs_136" uuid="44e2af75-c349-40b4-a97d-626c983ab91d" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="5" ver="5"/>
+		<designed target="Y" value="260" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="620" ver="5"/>
+		<designed target="Height" value="45" ver="5"/>
+		<designed target="Text" value="Ограничение перегрузки по току" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Electro.SV.I_over_limit_SV"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_129" display-name="Text_PropertiesDialogs_129" uuid="8ac51e50-4513-493f-b349-7897644c3507" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="5" ver="5"/>
+		<designed target="Y" value="530" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="620" ver="5"/>
+		<designed target="Height" value="45" ver="5"/>
+		<designed target="Text" value="Работа ограничителей (ОМВ)" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Electro.SV.OMV_work_SV"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_133" display-name="Text_PropertiesDialogs_133" uuid="78a4cabe-0f3c-4a39-a0b0-9cf5f33ed60f" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="5" ver="5"/>
+		<designed target="Y" value="305" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="620" ver="5"/>
+		<designed target="Height" value="45" ver="5"/>
+		<designed target="Text" value="Разгрузка уставки СВ завершена" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Electro.SV.Task_unload_end_SV"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_137" display-name="Text_PropertiesDialogs_137" uuid="3d23191d-c944-4ac1-b75a-c4dfc0cd7912" base-type="DiscreteDescrValue" base-type-id="13242d6e-4622-45e2-bf67-9043e2665cf9" ver="5" description="" cardinal="1">
+		<designed target="X" value="5" ver="5"/>
+		<designed target="Y" value="350" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="620" ver="5"/>
+		<designed target="Height" value="45" ver="5"/>
+		<designed target="Text" value="СВ готова к самосинхронизации" ver="5"/>
+		<init target="notifyingLenghtOfString" ver="5" value="30"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Electro.SV.SSync_ready_SV"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="129" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="5e799a59-4a1e-4d1e-aeef-a93497976e96" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="630" ver="5"/>
+		<designed target="Height" value="60" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Text" value="Система возбуждения" ver="5"/>
+	</object>
+</type>
+

@@ -1,0 +1,366 @@
+<type access-modifier="public" name="DODpValue" display-name="Дискретное значение команд (CMD)" uuid="f1b1a670-0855-4353-a623-a7e49a2a16a6" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="85" ver="5"/>
+	<designed target="Height" value="35" ver="5"/>
+	<designed target="Checkable" value="false" ver="5"/>
+	<designed target="Checked" value="false" ver="5"/>
+	<designed target="Text" value="***" ver="5"/>
+	<designed target="TextAlignment" value="132" ver="5"/>
+	<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	<designed target="FontColor" value="4278190080" ver="5"/>
+	<designed target="OnClickFontColor" value="4278190080" ver="5"/>
+	<designed target="OnHoverFontColor" value="4278190080" ver="5"/>
+	<designed target="DisabledFontColor" value="0xff000000" ver="5"/>
+	<designed target="BrushColor" value="0xfff0f0f0" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="OnClickBrushColor" value="0xffa0a0a0" ver="5"/>
+	<designed target="OnClickBrushStyle" value="1" ver="5"/>
+	<designed target="OnHoverBrushColor" value="0xffffffff" ver="5"/>
+	<designed target="OnHoverBrushStyle" value="1" ver="5"/>
+	<designed target="DisabledBrushColor" value="0xffa0a0a0" ver="5"/>
+	<designed target="DisabledBrushStyle" value="1" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="1" ver="5"/>
+	<designed target="PenWidth" value="0" ver="5"/>
+	<designed target="OnClickPenColor" value="4278190080" ver="5"/>
+	<designed target="OnClickPenStyle" value="1" ver="5"/>
+	<designed target="OnClickPenWidth" value="0" ver="5"/>
+	<designed target="OnHoverPenColor" value="0xff000000" ver="5"/>
+	<designed target="OnHoverPenStyle" value="1" ver="5"/>
+	<designed target="OnHoverPenWidth" value="0" ver="5"/>
+	<designed target="DisabledPenColor" value="4288716960" ver="5"/>
+	<designed target="DisabledPenStyle" value="1" ver="5"/>
+	<designed target="DisabledPenWidth" value="0" ver="5"/>
+	<do-trace access-modifier="private" target="Text" ver="5">
+		<conditional-expr>
+			<condition>
+				<![CDATA[ViewOnly]]>
+			</condition>
+			<expr>
+				<![CDATA[""]]>
+			</expr>
+		</conditional-expr>
+		<conditional-expr>
+			<condition>
+				<![CDATA[ApParValueIn.Advised == false]]>
+			</condition>
+			<expr>
+				<![CDATA["***"]]>
+			</expr>
+		</conditional-expr>
+		<conditional-expr>
+			<condition>
+				<![CDATA[ApParValueIn.Value]]>
+			</condition>
+			<expr>
+				<![CDATA[ButtonTextOn]]>
+			</expr>
+		</conditional-expr>
+		<default-expr>
+			<expr>
+				<![CDATA[ButtonTextOff]]>
+			</expr>
+		</default-expr>
+	</do-trace>
+	<do-trace access-modifier="private" target="BrushColor" ver="5">
+		<conditional-expr>
+			<condition>
+				<![CDATA[!ApParValueIn.Advised || !ApParValueOut.Advised]]>
+			</condition>
+			<expr>
+				<![CDATA[AsokuColor.asokuButton]]>
+			</expr>
+		</conditional-expr>
+		<conditional-expr>
+			<condition>
+				<![CDATA[ApParValueIn.Value]]>
+			</condition>
+			<expr>
+				<![CDATA[ButtonColorOn]]>
+			</expr>
+		</conditional-expr>
+		<default-expr>
+			<expr>
+				<![CDATA[ButtonColorOff]]>
+			</expr>
+		</default-expr>
+	</do-trace>
+	<object access-modifier="private" name="InDevPath" display-name="Путь до входного сигнала" uuid="015ddf5e-477e-4389-9c74-631b81191b63" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="OutDevPath" display-name="Путь до выходного сигнала" uuid="79d4ee82-1534-4a14-b318-8e77068a29d6" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="TransferDevPath" display-name="Путь до папки трансферов" uuid="cf9b7c92-b519-4677-9587-8e18b5363ab6" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ViewOnly" display-name="Использовать в качестве лампочки?" uuid="dea303a4-10f0-422f-975c-ba592d040379" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ButtonTextOff" display-name="Текст отключенной кнопки" uuid="c27380fd-e4f4-4ab3-9898-3f0f7a4bf5fe" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ButtonTextOn" display-name="Текст включенной кнопки" uuid="b1e2f5ca-41a3-4cd3-a862-b9fc5548bd30" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="EnabledFlag" display-name="Флажок для включенности кнопки (системное)" uuid="230fd11d-c31d-4946-bf7d-885892188fc5" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ApParValueIn" display-name="Значение входного параметра" uuid="c5b83b4c-d217-45da-9b76-a65db8ee3c85" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[InDevPath + ".Value"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnAdviseStateChanged">
+			<body kind="om">
+				<![CDATA[EnabledFlag = Advised;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="ApParValueOut" display-name="Значене выходного параметра" uuid="e48074a5-6f78-4131-a503-87dce0ab7ccd" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[OutDevPath + ".Value"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="OnAdviseStateChanged">
+			<body kind="om">
+				<![CDATA[EnabledFlag = Advised;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="ApParName" display-name="ApParName" uuid="f3589cae-189b-49a6-aa22-7285651a0641" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[InDevPath + ".Name"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ApParComment" display-name="Комментарий параметра" uuid="c9353900-a25d-4c54-bc25-c6c4cc68f2d1" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[InDevPath + ".Comment"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApParDescription" display-name="Описание параметра" uuid="3263c993-46e5-4045-93a3-24374dc47cf9" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[InDevPath + ".Description"]]>
+			</body>
+		</do-trace>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="DebugTool" display-name="DebugTool" uuid="dcce2ea9-3b09-4aec-a822-0c120f22edf3" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ButtonColorOn" display-name="Цвет включенной кнопки" uuid="79c93389-8320-428d-a722-4c76afdc3473" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ButtonColorOff" display-name="Цвет отключенной кнопки" uuid="e21ce4e8-6699-43bf-a109-e438a03d29e2" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="OpenInfoTabViewOut" display-name="команда открытия InfoTabView" uuid="d7d77df5-6709-4029-a9ef-9bfe37690fcc" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="InfoTabViewOutHndlr" display-name="InfoTabViewOutHndlr" ver="5" event="Invoked" form-by-id="false" form-action="open-new">
+			<object access-modifier="private" uuid="07e4e826-7fb1-4ec1-ae16-ea8027c33ee5" base-type="InfoTabView" base-type-id="146efb0d-a148-4c91-94ff-f69c196a5132" ver="5">
+				<init target="PanelType" ver="5" value="информация"/>
+				<init target="ParameterType" ver="5" value="DO"/>
+				<init target="TransferDevPath" ver="5" ref="here.TransferDevPath"/>
+				<init target="ParDevPath" ver="5" ref="here.OutDevPath"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="OpenInfoTabViewIn" display-name="OpenInfoTabViewIn" uuid="6d577977-0a50-4fc3-a844-98980fcdafcb" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="InfoTabViewInHndlr" display-name="InfoTabViewInHndlr" ver="5" event="Invoked" form-by-id="false" form-action="open-new">
+			<object access-modifier="private" uuid="32b4665d-add2-4070-908c-608e03608b06" base-type="InfoTabView" base-type-id="146efb0d-a148-4c91-94ff-f69c196a5132" ver="5">
+				<init target="PanelType" ver="5" value="информация"/>
+				<init target="ParameterType" ver="5" value="DO"/>
+				<init target="ParDevPath" ver="5" ref="here.InDevPath"/>
+				<init target="TransferDevPath" ver="5" ref="here.TransferDevPath"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Open_UD_AppSettings" display-name="Open_UD_AppSettings" uuid="5f24a598-ccf8-4370-8cd9-8b0c1ad46d1b" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-dialog" form-by-id="false">
+			<object access-modifier="private" uuid="4a41bccc-6da3-468c-80d0-6aeb45863259" base-type="UserDialog" base-type-id="3c54f3db-a950-487c-861e-56a8d2eba70d" ver="5">
+				<init target="Icon" ver="5" value="1"/>
+				<init target="Buttons" ver="5" value="2"/>
+				<init target="YesAction" ver="5" ref="here.YesAction_UD_AppSettings"/>
+				<init target="Header" ver="5" value="Окно подтверждения действий"/>
+				<init target="Message" ver="5" value="Вы действительно хотите выполнить применение команды?"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Open_UD_PermissionFault" display-name="Open_UD_PermissionFault" uuid="a0aa50ea-211d-4538-94c8-69ba942c03e8" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-dialog" form-by-id="false">
+			<object access-modifier="private" uuid="6d927417-0bf5-491a-896f-b8aec2b46593" base-type="UserDialog" base-type-id="3c54f3db-a950-487c-861e-56a8d2eba70d" ver="5">
+				<init target="Message" ver="5" value="Для выполнения указанного действия Вам не хватает полномочий. Для получения дополнительных сведений обратитесь к Администратору"/>
+				<init target="Icon" ver="5" value="0"/>
+				<init target="Buttons" ver="5" value="0"/>
+				<init target="Header" ver="5" value="Недостаточно полномочий"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="YesAction_UD_AppSettings" display-name="YesAction_UD_AppSettings" uuid="134f7131-6c71-49cb-9689-e3914810c466" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked">
+			<body kind="javascript">
+				<![CDATA[if (ViewOnly == false) {
+	ApParValueOut.Value = !ApParValueIn.Value;
+	
+	CreateUserMessage.Invoke();
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Open_UD_WebClient" display-name="Open_UD_WebClient" uuid="8172f111-cb27-4cb0-972e-9274a6570201" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-dialog" form-by-id="false">
+			<object access-modifier="private" uuid="5df0e487-ed7a-4676-a942-8be7a8780d1a" base-type="UserDialog" base-type-id="3c54f3db-a950-487c-861e-56a8d2eba70d" ver="5">
+				<init target="Header" ver="5" value="Ограничение WEB-клиента"/>
+				<init target="Icon" ver="5" value="0"/>
+				<init target="Buttons" ver="5" value="0"/>
+				<init target="Message" ver="5" value="Вы используете WEB-клиент для работы с проектом. Для использования полного функционала воспользуйтесь настольной версией приложения"/>
+			</object>
+		</do-on>
+	</object>
+	<do-trace access-modifier="private" target="Tooltip" ver="5">
+		<body>
+			<![CDATA["Пояснение: " + ApParName.Value +"\nИсточник: "+ ApParComment.Value + "\nстатус: "+ String.ToString(ApParValueIn.Quality) + 
+"\nвремя: "+ 
+DateTime.ToString(ApParValueIn.TimeStamp)]]>
+		</body>
+	</do-trace>
+	<do-on access-modifier="private" name="Handler_5" display-name="Handler_5" ver="5" event="ButtonPressed">
+		<body kind="javascript">
+			<![CDATA[if ( !AsokuMain.IsNotWeb() ) {
+		Open_UD_WebClient.Invoke(); //открыть окно о веб клиенте
+}
+else if( AsokuUserRights.SendingComands.Value ) //проверка полномочий 
+{
+	Open_UD_AppSettings.Invoke();
+}
+
+else Open_UD_PermissionFault.Invoke();]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="CreateUserMessage" display-name="CreateUserMessage" uuid="3c068421-9b5e-4a6d-8646-08069458995d" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="CreateMessageHndlr" display-name="CreateMessageHndlr" ver="5" event="Invoked">
+			<body kind="om">
+				<![CDATA[ApUserName = AsokuUserRights.SecurityContext_UserRights.Group(0) + " " + AsokuUserRights.SecurityContext_UserRights.CurrentUser;
+ApSignalName = ApParName.Value;
+ApParameterType = 1;
+ApMake = false;
+ApMake = true;]]>
+			</body>
+		</do-on>
+		<object access-modifier="private" name="ApMake" display-name="ApMake" uuid="ea18011c-0017-4f6c-ae6c-20c74ac219da" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+			<init target="Path" ver="5" value="_System.Messages.UserChangeSignalMessage.Make"/>
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		</object>
+		<object access-modifier="private" name="ApParameterType" display-name="ApParameterType" uuid="2aa1b234-445b-4f59-b54f-db6d80e6920c" base-type="ApItemUInt1" base-type-id="ed85e2d2-e5ed-42df-91a6-9455307a85c9" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<init target="Path" ver="5" value="_System.Messages.UserChangeSignalMessage.ParameterType"/>
+		</object>
+		<object access-modifier="private" name="ApUserName" display-name="ApUserName" uuid="499c1677-c2ac-46e6-89a7-2f6cf25b837d" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<init target="Path" ver="5" value="_System.Messages.UserChangeSignalMessage.UserName"/>
+		</object>
+		<object access-modifier="private" name="ApSignalName" display-name="ApSignalName" uuid="b4e11582-982a-4658-9590-aa5b46c8e17e" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+			<init target="Path" ver="5" value="_System.Messages.UserChangeSignalMessage.SignalName"/>
+		</object>
+	</object>
+	<init target="ButtonTextOff" ver="5" value="Включить"/>
+	<init target="ButtonTextOn" ver="5" value="Выключить"/>
+	<do-trace access-modifier="private" target="ButtonColorOn" ver="5">
+		<body>
+			<![CDATA[AsokuColor.asokuBtnCommandOn]]>
+		</body>
+	</do-trace>
+	<do-trace access-modifier="private" target="ButtonColorOff" ver="5">
+		<body>
+			<![CDATA[AsokuColor.asokuBtnCommandOff]]>
+		</body>
+	</do-trace>
+	<init target="ViewOnly" ver="5" value="false"/>
+	<do-trace access-modifier="private" target="Enabled" ver="5">
+		<body>
+			<![CDATA[EnabledFlag]]>
+		</body>
+	</do-trace>
+	<do-trace access-modifier="private" target="OnHoverPenWidth" ver="5">
+		<conditional-expr>
+			<condition>
+				<![CDATA[ViewOnly]]>
+			</condition>
+			<expr>
+				<![CDATA[0]]>
+			</expr>
+		</conditional-expr>
+		<default-expr>
+			<expr>
+				<![CDATA[3]]>
+			</expr>
+		</default-expr>
+	</do-trace>
+	<do-trace access-modifier="private" target="OnHoverBrushColor" ver="5">
+		<conditional-expr>
+			<condition>
+				<![CDATA[!ApParValueIn.Advised || !ApParValueOut.Advised]]>
+			</condition>
+			<expr>
+				<![CDATA[AsokuColor.asokuButton]]>
+			</expr>
+		</conditional-expr>
+		<conditional-expr>
+			<condition>
+				<![CDATA[ApParValueIn.Value]]>
+			</condition>
+			<expr>
+				<![CDATA[ButtonColorOn]]>
+			</expr>
+		</conditional-expr>
+		<default-expr>
+			<expr>
+				<![CDATA[ButtonColorOff]]>
+			</expr>
+		</default-expr>
+	</do-trace>
+	<do-on access-modifier="private" name="Handler_6" display-name="Handler_6" ver="5" event="MouseRightClick">
+		<body kind="om">
+			<![CDATA[OpenInfoTabViewIn.Invoke();
+OpenInfoTabViewOut.Invoke();]]>
+		</body>
+	</do-on>
+	<do-trace access-modifier="private" target="FontColor" ver="5">
+		<body>
+			<![CDATA[AsokuColor.asokuBlack]]>
+		</body>
+	</do-trace>
+	<object access-modifier="private" name="RerenderTimer" display-name="RerenderTimer" uuid="de759c9d-6b8c-48cf-b4db-eb55e233a97c" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="5" description="" cardinal="1">
+		<designed target="Period" value="50" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<do-on access-modifier="private" name="RerenderHndlr" display-name="RerenderHndlr" ver="5" event="OnTimer">
+			<body kind="om">
+				<![CDATA[if (ViewOnly) {
+	here.Text = "";
+}
+else {
+	if (ApParValueIn.Advised && ApParValueOut.Advised) {
+		if (ApParValueIn.Value) here.Text = ButtonTextOn;
+		else here.Text = ButtonTextOff;
+	}
+	else here.Text = "***";
+}]]>
+			</body>
+		</do-on>
+	</object>
+</type>
+

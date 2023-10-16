@@ -1,0 +1,400 @@
+<type access-modifier="public" name="MenuPanel_2" display-name="MenuPanel_2" uuid="d00ecb30-e3ac-4437-969d-c4e4d61603d5" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="1205" ver="5"/>
+	<designed target="Height" value="70" ver="5"/>
+	<designed target="PenColor" value="0xff000000" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xff505050" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="1200" ver="5"/>
+	<designed target="WindowHeight" value="74" ver="5"/>
+	<designed target="WindowCaption" value="MainForm" ver="5"/>
+	<designed target="ShowWindowCaption" value="false" ver="5"/>
+	<designed target="ShowWindowMinimize" value="false" ver="5"/>
+	<designed target="ShowWindowMaximize" value="false" ver="5"/>
+	<designed target="ShowWindowClose" value="false" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="0" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="0" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<object access-modifier="private" name="MenuButtons" display-name="MenuButtons" uuid="a9503b99-777c-47ed-989a-f72396793c82" base-type="MenuButton_v2" base-type-id="6409f55b-b810-4c3b-b81d-d0c3644aa0f0" ver="5" description="" cardinal="30">
+		<designed target="X" value="1" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="72" ver="5"/>
+		<designed target="Height" value="36" ver="5"/>
+		<designed target="Visible" value="false" ver="5"/>
+		<object access-modifier="private" name="SchemeFormId" display-name="SchemeFormId" uuid="fe6b17ba-8c4d-4668-966d-07418a263067" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description="" cardinal="1"/>
+		<init target="onPressButton" ver="5" ref="Action"/>
+		<object access-modifier="private" name="MsgFilter" display-name="MsgFilter" uuid="77ae5d24-db2c-4952-8f1d-9d7d105ebd94" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="Action" display-name="Action" uuid="769a1dff-20c3-4c53-895b-2c1c266c39a4" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="InvokeTrigger" value="false" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked">
+				<body kind="javascript">
+					<![CDATA[ if (here.CurrentActive != Index || pResult.isActiveButtonMenu == false)
+ {  
+   pResult.isActiveButtonMenu = true;
+   //передаем результат нажатой кнопки
+   pResult.SchemeFormId = SchemeFormId;
+   pResult.MsgFilter = MsgFilter;
+   
+   CurrentActive = Index;
+   CurrentActive_2.Value = 0;
+   CurrentActive_3.Value = 0;
+   if(MenuButtons[CurrentActive].Items == "")
+   {
+     for (let i = 0; i < MenuButtons_2.Length; i++)
+     {
+       MenuButtons_2[i].Visible = false; //убираем меню 2го уровня  
+       MenuButtons_2[i].Items = "";
+     }
+     for (let i = 0; i < MenuButtons_3.Length; i++)
+     {
+       MenuButtons_3[i].Visible = false; //убираем меню 3го уровня
+     }   
+   }
+   else ParseItemsJson_2(MenuButtons[CurrentActive].Items);
+
+	 // выполняем команду
+	 pAction.Invoke();
+
+ }
+	
+]]>
+				</body>
+			</do-on>
+		</object>
+		<do-trace access-modifier="private" target="Active" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[here.CurrentActive == Index  && pResult.isActiveButtonMenu == true]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Items" display-name="Items" uuid="018295c5-b4ae-4e59-b200-059c3868ba87" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ValueChanged">
+			<body kind="om">
+				<![CDATA[if (oldValue == value)
+	return;
+
+oldValue = value;
+ParseItemsJson(value);
+
+pAction.Invoke();]]>
+			</body>
+		</do-on>
+		<object access-modifier="private" name="oldValue" display-name="oldValue" uuid="b93f033e-545a-42d4-b579-d3e87023f14d" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description="" cardinal="1"/>
+	</object>
+	<do access-modifier="private" name="ParseItemsJson" display-name="ParseItemsJson" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="javascript">
+			<![CDATA[var items = JSON.parse(value);
+var x = 0;
+var miIndex = 0;
+var sIndex = 0;
+var i = 0;
+
+while(i < items.length)
+{
+  var item = items[i];
+			
+  if (miIndex < MenuButtons.Length)
+  {
+	  // добавляем элемент меню
+	  MenuButtons[miIndex].Title.Value = item.MenuItemName;
+	  MenuButtons[miIndex].X = x;
+	  MenuButtons[miIndex].SchemeFormId = item.SchemeFormId;
+	  MenuButtons[miIndex].MsgFilter = item.MsgFilter;			
+	  MenuButtons[miIndex].Visible = true;
+	  MenuButtons[miIndex].ParDevPath.Value = fixPath(item.MsgFilter);
+     
+    if (item.Items != "")
+    {
+      MenuButtons[miIndex].Items = JSON.stringify(item.Items); 
+     
+      if (i == CurrentActive)
+      {
+         pResult.SchemeFormId = MenuButtons[miIndex].SchemeFormId;
+         pResult.MsgFilter = MenuButtons[miIndex].MsgFilter;
+         ParseItemsJson_2(MenuButtons[miIndex].Items); //генерация меню 2го уровня               
+      }	           
+    }
+				    
+	  x += MenuButtons[miIndex].Width;
+	  miIndex += 1;
+	}		
+	i += 1;
+}
+
+
+    
+
+
+
+]]>
+		</body>
+		<param access-modifier="private" name="value" display-name="" uuid="e38a7ff9-e02e-487f-8497-c37365f5c194" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5"/>
+	</do>
+	<object access-modifier="private" name="DebugTool_1" display-name="DebugTool_1" uuid="4d047ccc-3fa8-4745-88ce-de7bbd2b1e3d" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="pAction" display-name="pAction" uuid="fe959e70-0bcb-4af8-8d66-f0f56f1e490a" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" base-const="true" base-ref="true" ver="5" description=""/>
+	<object access-modifier="private" name="pResult" display-name="pResult" uuid="a9e19670-b106-4d50-8738-e1dec12ab1ea" base-type="MenuButtonResult" base-type-id="8bd86758-ab59-4b9f-b15b-38e1d493c839" base-const="true" base-ref="true" ver="5" description=""/>
+	<object access-modifier="private" name="CurrentActive" display-name="CurrentActive" uuid="99f15288-9359-4fcd-97ce-4652f18459dc" base-type="notifying_int8" base-type-id="c594ba4b-148e-403d-a019-22af8f44ab42" ver="5" description="" cardinal="1"/>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Opened">
+		<body kind="om">
+			<![CDATA[CurrentActive.Value = 0;
+CurrentActive_2.Value = 0;
+CurrentActive_3.Value = 0;]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="CurrentActive_2" display-name="CurrentActive_2" uuid="bb657311-596f-4610-bea0-39db51ec2e68" base-type="notifying_int8" base-type-id="c594ba4b-148e-403d-a019-22af8f44ab42" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="CurrentActive_3" display-name="CurrentActive_3" uuid="91e3cc0e-3ef1-40fd-8471-1ede8eaf6114" base-type="notifying_int8" base-type-id="c594ba4b-148e-403d-a019-22af8f44ab42" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="MenuButtons_2" display-name="MenuButtons_2" uuid="627b3029-f32c-4e53-9462-ead0553a2af9" base-type="MenuButton_v2" base-type-id="6409f55b-b810-4c3b-b81d-d0c3644aa0f0" ver="5" description="" cardinal="30">
+		<designed target="X" value="1" ver="5"/>
+		<designed target="Y" value="34" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="72" ver="5"/>
+		<designed target="Height" value="36" ver="5"/>
+		<designed target="Visible" value="false" ver="5"/>
+		<object access-modifier="private" name="SchemeFormId" display-name="SchemeFormId" uuid="85384951-9b9c-4c0c-8755-4ca60008a41a" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description="" cardinal="1"/>
+		<init target="onPressButton" ver="5" ref="Action"/>
+		<object access-modifier="private" name="MsgFilter" display-name="MsgFilter" uuid="c8f42bf1-a0f3-43ec-ab80-18496b9da8dd" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="Action" display-name="Action" uuid="a7852714-4ec8-467c-9d51-4bb66f58d1b5" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="InvokeTrigger" value="false" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked">
+				<body kind="javascript">
+					<![CDATA[
+ if (CurrentActive_2 != Index || pResult.isActiveButtonMenu == false)
+ {  
+   pResult.isActiveButtonMenu = true;
+   //передаем результат нажатой кнопки
+   pResult.SchemeFormId = SchemeFormId;
+   pResult.MsgFilter = MsgFilter;
+   
+   CurrentActive_2 = Index;
+   CurrentActive_3.Value = 0;
+
+   ParseItemsJson_3(MenuButtons_2[CurrentActive_2].Items);
+      
+	 // выполняем команду
+	 pAction.Invoke();
+
+ }
+	
+
+
+
+	]]>
+				</body>
+			</do-on>
+		</object>
+		<do-trace access-modifier="private" target="Active" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[here.CurrentActive_2 == Index && pResult.isActiveButtonMenu == true]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="MenuButtons_3" display-name="MenuButtons_3" uuid="d81ef06e-9960-48ae-bc13-ade80952d9a6" base-type="MenuButton_v2" base-type-id="6409f55b-b810-4c3b-b81d-d0c3644aa0f0" ver="5" description="" cardinal="30">
+		<designed target="X" value="1" ver="5"/>
+		<designed target="Y" value="47" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="121" ver="5"/>
+		<designed target="Height" value="23" ver="5"/>
+		<designed target="Visible" value="false" ver="5"/>
+		<object access-modifier="private" name="SchemeFormId" display-name="SchemeFormId" uuid="f02bd559-ab89-4593-9c97-eec9d112269d" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description="" cardinal="1"/>
+		<init target="onPressButton" ver="5" ref="Action"/>
+		<object access-modifier="private" name="MsgFilter" display-name="MsgFilter" uuid="b11179a3-e89e-43c4-9989-8804cc86bd1c" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="Action" display-name="Action" uuid="0f639a9b-1820-4ff7-a133-83860c272bf8" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="InvokeTrigger" value="false" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked">
+				<body kind="javascript">
+					<![CDATA[if (CurrentActive_3 != Index|| pResult.isActiveButtonMenu == false)
+ {  
+   pResult.isActiveButtonMenu = true;
+   //передаем результат нажатой кнопки
+   pResult.SchemeFormId = SchemeFormId;
+   pResult.MsgFilter = MsgFilter;
+
+   CurrentActive_3.Value =  Index;  
+   // выполняем команду
+   pAction.Invoke();
+}
+]]>
+				</body>
+			</do-on>
+		</object>
+		<do-trace access-modifier="private" target="Active" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[here.CurrentActive_3 == Index && pResult.isActiveButtonMenu == true]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<do access-modifier="private" name="ParseItemsJson_2" display-name="ParseItemsJson_2" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="javascript">
+			<![CDATA[
+var items = JSON.parse(value);
+var x = 0;
+var miIndex = 0;
+var sIndex = 0;
+
+
+for (let i = 0; i < MenuButtons_2.Length; i++)
+{
+  MenuButtons_2[i].Visible = false; //убираем меню 2го уровня  
+  MenuButtons_2[i].Items = "";
+}
+for (let i = 0; i < MenuButtons_3.Length; i++)
+{
+  MenuButtons_3[i].Visible = false; //убираем меню 3го уровня
+}
+
+
+var i = 0;
+
+while(i < items.length)
+{
+  var item = items[i];
+			
+  if (miIndex < MenuButtons.Length)
+  {
+	  // добавляем элемент меню
+	  MenuButtons_2[miIndex].Title.Value = item.MenuItemName;
+	  MenuButtons_2[miIndex].X = x;
+	  MenuButtons_2[miIndex].SchemeFormId = item.SchemeFormId;
+	  MenuButtons_2[miIndex].MsgFilter = item.MsgFilter;			
+	  MenuButtons_2[miIndex].Visible = true;
+	  MenuButtons_2[miIndex].ParDevPath.Value = fixPath(item.MsgFilter);
+     
+   if (item.Items != "")
+   {
+      MenuButtons_2[miIndex].Items = JSON.stringify(item.Items); 
+      
+      if (miIndex == CurrentActive_2)
+      {
+        pResult.SchemeFormId = MenuButtons_2[miIndex].SchemeFormId;
+        pResult.MsgFilter = MenuButtons_2[miIndex].MsgFilter;
+        ParseItemsJson_3(MenuButtons_2[miIndex].Items); //генерация меню 3го уровня     
+      }                                           
+   }
+					    
+	  x += MenuButtons_2[miIndex].Width;
+	  miIndex += 1;
+	}		
+	i += 1;
+}
+
+
+    
+
+
+
+]]>
+		</body>
+		<param access-modifier="private" name="value" display-name="" uuid="8bbddff8-89c5-4ee1-8241-151877590ff5" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5"/>
+	</do>
+	<do access-modifier="private" name="ParseItemsJson_3" display-name="ParseItemsJson_3" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="javascript">
+			<![CDATA[var items = JSON.parse(value);
+var x = 0;
+var miIndex = 0;
+var sIndex = 0;
+
+for (let i = 0; i < MenuButtons_3.Length; i++)
+{
+  MenuButtons_3[i].Visible = false; //убираем меню 3го уровня
+}
+
+var i=0;
+
+while(i < items.length)
+{
+  var item = items[i];
+					
+  if (miIndex < MenuButtons.Length)
+  {
+	  // добавляем элемент меню
+	  MenuButtons_3[miIndex].Title.Value = item.MenuItemName;
+	  MenuButtons_3[miIndex].X = x;
+	  MenuButtons_3[miIndex].SchemeFormId = item.SchemeFormId;
+	  MenuButtons_3[miIndex].MsgFilter = item.MsgFilter;			
+	  MenuButtons_3[miIndex].Visible = true;
+	  MenuButtons_3[miIndex].ParDevPath.Value = fixPath(item.MsgFilter);
+    
+     if(miIndex == CurrentActive_3)
+     {
+         pResult.SchemeFormId = MenuButtons_3[miIndex].SchemeFormId;
+         pResult.MsgFilter = MenuButtons_3[miIndex].MsgFilter;    
+     }
+  
+     
+	  x += MenuButtons_3[miIndex].Width;
+	  miIndex += 1;
+	}		
+	i += 1;
+}
+
+    
+
+
+
+]]>
+		</body>
+		<param access-modifier="private" name="value" display-name="" uuid="c9733392-d386-4b2e-a6bb-9bc0a60341b4" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5"/>
+	</do>
+	<designed target="Flip" value="0" ver="5"/>
+	<do access-modifier="private" name="fixPath" display-name="fixPath" ver="5" type="string" type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d">
+		<param access-modifier="private" name="s" display-name="" uuid="a9255fee-d00b-4450-8e83-a32222879b38" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5"/>
+		<body kind="javascript">
+			<![CDATA[if ((s == "") || (s == " ")) return "";
+if (s.indexOf("|") > -1) return s.substring(0, s.indexOf("."));
+return s;]]>
+		</body>
+	</do>
+</type>
+

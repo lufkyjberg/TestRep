@@ -1,0 +1,274 @@
+{
+ "UserTree": [
+  {
+   "Signal":{
+   "UserTree":"Генераторы/ГА01/HydroUnits.GA01.F_1G.Value [Гц]",
+   "OpcTag":"HydroUnits.GA01.F_1G.Value",
+   "EUnit":"Гц",
+   "Description":"Генератор 1Г. Частота  ",
+   "DataType":"float"
+   }
+  },
+  {
+   "Signal":{
+   "UserTree":"Генераторы/ГА01/HydroUnits.GA01.Ia_1G.Value [А]",
+   "OpcTag":"HydroUnits.GA01.Ia_1G.Value",
+   "EUnit":"А",
+   "Description":"Генератор 1Г. Ток фазы A",
+   "DataType":"float"
+   }
+  },
+  {
+   "Signal":{
+   "UserTree":"Генераторы/ГА01/HydroUnits.GA01.Ib_1G.Value [А]",
+   "OpcTag":"HydroUnits.GA01.Ib_1G.Value",
+   "EUnit":"А",
+   "Description":"Генератор 1Г. Ток фазы B",
+   "DataType":"float"
+   }
+  },
+  {
+   "Signal":{
+   "UserTree":"Генераторы/ГА01/HydroUnits.GA01.Ic_1G.Value [А]",
+   "OpcTag":"HydroUnits.GA01.Ic_1G.Value",
+   "EUnit":"А",
+   "Description":"Генератор 1Г. Ток фазы C",
+   "DataType":"float"
+   }
+  },
+  {
+   "Signal":{
+   "UserTree":"Генераторы/ГА01/HydroUnits.GA01.If_1G.Value [А]",
+   "OpcTag":"HydroUnits.GA01.If_1G.Value",
+   "EUnit":"А",
+   "Description":"Генератор 1Г. Ток  фаз. средн.",
+   "DataType":"float"
+   }
+  },
+  {
+   "Signal":{
+   "UserTree":"Генераторы/ГА01/HydroUnits.GA01.Pa_1G.Value [МВт]",
+   "OpcTag":"HydroUnits.GA01.Pa_1G.Value",
+   "EUnit":"МВт",
+   "Description":"Генератор 1Г. Мощность активная фазы A",
+   "DataType":"float"
+   }
+  },
+  {
+   "Signal":{
+   "UserTree":"Генераторы/ГА01/HydroUnits.GA01.Pb_1G.Value [МВт]",
+   "OpcTag":"HydroUnits.GA01.Pb_1G.Value",
+   "EUnit":"МВт",
+   "Description":"Генератор 1Г. Мощность активная фазы B",
+   "DataType":"float"
+   }
+  },
+  {
+   "Signal":{
+   "UserTree":"Генераторы/ГА01/HydroUnits.GA01.Pc_1G.Value [МВт]",
+   "OpcTag":"HydroUnits.GA01.Pc_1G.Value",
+   "EUnit":"МВт",
+   "Description":"Генератор 1Г. Мощность активная фазы C",
+   "DataType":"float"
+   }
+  },
+  {
+   "Signal":{
+   "UserTree":"Генераторы/ГА01/HydroUnits.GA01.Psum_1G.Value [МВт]",
+   "OpcTag":"HydroUnits.GA01.Psum_1G.Value",
+   "EUnit":"МВт",
+   "Description":"Генератор 1Г. Мощность активная  сумма",
+   "DataType":"float"
+   }
+  },
+  {
+   "Signal":{
+   "UserTree":"Генераторы/ГА01/HydroUnits.GA01.Qa_1G.Value [МВАр]",
+   "OpcTag":"HydroUnits.GA01.Qa_1G.Value",
+   "EUnit":"МВАр",
+   "Description":"Генератор 1Г. Мощность реактивная фазы A",
+   "DataType":"float"
+   }
+  },
+  {
+   "Signal":{
+   "UserTree":"Генераторы/ГА01/HydroUnits.GA01.Qb_1G.Value [МВАр]",
+   "OpcTag":"HydroUnits.GA01.Qb_1G.Value",
+   "EUnit":"МВАр",
+   "Description":"Генератор 1Г. Мощность реактивная фазы B",
+   "DataType":"float"
+   }
+  },
+  {
+   "Signal":{
+   "UserTree":"Генераторы/ГА01/HydroUnits.GA01.Qc_1G.Value [МВАр]",
+   "OpcTag":"HydroUnits.GA01.Qc_1G.Value",
+   "EUnit":"МВАр",
+   "Description":"Генератор 1Г. Мощность реактивная фазы C",
+   "DataType":"float"
+   }
+  },
+  {
+   "Signal":{
+   "UserTree":"Генераторы/ГА01/HydroUnits.GA01.Qsum_1G.Value [МВАр]",
+   "OpcTag":"HydroUnits.GA01.Qsum_1G.Value",
+   "EUnit":"МВАр",
+   "Description":"Генератор 1Г. Мощность реактивная  сумма",
+   "DataType":"float"
+   }
+  },
+  {
+   "Signal":{
+   "UserTree":"Генераторы/ГА01/HydroUnits.GA01.Sa_1G.Value [МВА]",
+   "OpcTag":"HydroUnits.GA01.Sa_1G.Value",
+   "EUnit":"МВА",
+   "Description":"Генератор 1Г. Мощность полная фазы A",
+   "DataType":"float"
+   }
+  },
+  {
+   "Signal":{
+   "UserTree":"Генераторы/ГА01/HydroUnits.GA01.Sb_1G.Value [МВА]",
+   "OpcTag":"HydroUnits.GA01.Sb_1G.Value",
+   "EUnit":"МВА",
+   "Description":"Генератор 1Г. Мощность полная фазы B",
+   "DataType":"float"
+   }
+  },
+  {
+   "Signal":{
+   "UserTree":"Генераторы/ГА01/HydroUnits.GA01.Sc_1G.Value [МВА]",
+   "OpcTag":"HydroUnits.GA01.Sc_1G.Value",
+   "EUnit":"МВА",
+   "Description":"Генератор 1Г. Мощность полная фазы C",
+   "DataType":"float"
+   }
+  },
+  {
+   "Signal":{
+   "UserTree":"Генераторы/ГА01/HydroUnits.GA01.Ssum_1G.Value [МВА]",
+   "OpcTag":"HydroUnits.GA01.Ssum_1G.Value",
+   "EUnit":"МВА",
+   "Description":"Генератор 1Г. Мощность полная  сумма",
+   "DataType":"float"
+   }
+  },
+  {
+   "Signal":{
+   "UserTree":"Генераторы/ГА01/HydroUnits.GA01.Ua_1G.Value [кВ]",
+   "OpcTag":"HydroUnits.GA01.Ua_1G.Value",
+   "EUnit":"кВ",
+   "Description":"Генератор 1Г. Напряжение фазы A",
+   "DataType":"float"
+   }
+  },
+  {
+   "Signal":{
+   "UserTree":"Генераторы/ГА01/HydroUnits.GA01.Uab_1G.Value [кВ]",
+   "OpcTag":"HydroUnits.GA01.Uab_1G.Value",
+   "EUnit":"кВ",
+   "Description":"Генератор 1Г. Напряжение линейное AB",
+   "DataType":"float"
+   }
+  },
+  {
+   "Signal":{
+   "UserTree":"Генераторы/ГА01/HydroUnits.GA01.Ub_1G.Value [кВ]",
+   "OpcTag":"HydroUnits.GA01.Ub_1G.Value",
+   "EUnit":"кВ",
+   "Description":"Генератор 1Г. Напряжение фазы B",
+   "DataType":"float"
+   }
+  },
+  {
+   "Signal":{
+   "UserTree":"Генераторы/ГА01/HydroUnits.GA01.Ubc_1G.Value [кВ]",
+   "OpcTag":"HydroUnits.GA01.Ubc_1G.Value",
+   "EUnit":"кВ",
+   "Description":"Генератор 1Г. Напряжение линейное BC",
+   "DataType":"float"
+   }
+  },
+  {
+   "Signal":{
+   "UserTree":"Генераторы/ГА01/HydroUnits.GA01.Uc_1G.Value [кВ]",
+   "OpcTag":"HydroUnits.GA01.Uc_1G.Value",
+   "EUnit":"кВ",
+   "Description":"Генератор 1Г. Напряжение фазы C",
+   "DataType":"float"
+   }
+  },
+  {
+   "Signal":{
+   "UserTree":"Генераторы/ГА01/HydroUnits.GA01.Uca_1G.Value [кВ]",
+   "OpcTag":"HydroUnits.GA01.Uca_1G.Value",
+   "EUnit":"кВ",
+   "Description":"Генератор 1Г. Напряжение линейное CA",
+   "DataType":"float"
+   }
+  },
+  {
+   "Signal":{
+   "UserTree":"Генераторы/ГА01/HydroUnits.GA01.Uf_1G.Value [кВ]",
+   "OpcTag":"HydroUnits.GA01.Uf_1G.Value",
+   "EUnit":"кВ",
+   "Description":"Генератор 1Г. Напряжение  фаз. средн.",
+   "DataType":"float"
+   }
+  },
+  {
+   "Signal":{
+   "UserTree":"Генераторы/ГА01/HydroUnits.GA01.Ul_1G.Value [кВ]",
+   "OpcTag":"HydroUnits.GA01.Ul_1G.Value",
+   "EUnit":"кВ",
+   "Description":"Генератор 1Г. Напряжение   лин.средн.",
+   "DataType":"float"
+   }
+  },
+  {
+   "Signal":{
+   "UserTree":"Генераторы/ГА02/HydroUnits.GA02.F_2G.Value [Гц]",
+   "OpcTag":"HydroUnits.GA02.F_2G.Value",
+   "EUnit":"Гц",
+   "Description":"Генератор 2Г. Частота  ",
+   "DataType":"float"
+   }
+  },
+  {
+   "Signal":{
+   "UserTree":"Генераторы/ГА02/HydroUnits.GA02.Ia_2G.Value [А]",
+   "OpcTag":"HydroUnits.GA02.Ia_2G.Value",
+   "EUnit":"А",
+   "Description":"Генератор 2Г. Ток фазы A",
+   "DataType":"float"
+   }
+  },
+  {
+   "Signal":{
+   "UserTree":"Генераторы/ГА02/HydroUnits.GA02.Ib_2G.Value [А]",
+   "OpcTag":"HydroUnits.GA02.Ib_2G.Value",
+   "EUnit":"А",
+   "Description":"Генератор 2Г. Ток фазы B",
+   "DataType":"float"
+   }
+  },
+  {
+   "Signal":{
+   "UserTree":"Генераторы/ГА02/HydroUnits.GA02.Ic_2G.Value [А]",
+   "OpcTag":"HydroUnits.GA02.Ic_2G.Value",
+   "EUnit":"А",
+   "Description":"Генератор 2Г. Ток фазы C",
+   "DataType":"float"
+   }
+  },
+  {
+   "Signal":{
+   "UserTree":"Генераторы/ГА02/HydroUnits.GA02.If_2G.Value [А]",
+   "OpcTag":"HydroUnits.GA02.If_2G.Value",
+   "EUnit":"А",
+   "Description":"Генератор 2Г. Ток  фаз. средн.",
+   "DataType":"float"
+   }
+  }
+ ]
+}

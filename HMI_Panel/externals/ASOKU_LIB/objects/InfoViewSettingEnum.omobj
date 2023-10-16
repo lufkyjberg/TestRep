@@ -1,0 +1,539 @@
+<type access-modifier="public" name="InfoViewSettingEnum" display-name="InfoViewSettingEnum" uuid="a6e4b777-9b56-4ee7-96fa-a326aea1dfa0" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="500" ver="5"/>
+	<designed target="Height" value="360" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xff505050" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="1920" ver="5"/>
+	<designed target="WindowHeight" value="1080" ver="5"/>
+	<designed target="WindowCaption" value="Form_1" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="1" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="0" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<object access-modifier="private" name="Border" display-name="Border" uuid="8d9689ba-925e-41ae-aed4-f7669ebf5851" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="5" ver="5"/>
+		<designed target="Y" value="5" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="490" ver="5"/>
+		<designed target="Height" value="310" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Button_Refresh" display-name="Button_Refresh" uuid="6c2c1592-49ad-43c9-9412-152e3bf3be80" base-type="Button_PropertiesDialogs" base-type-id="eb940a52-68cb-41b0-824e-d3672b520ebf" ver="5" description="" cardinal="1">
+		<designed target="X" value="252.5" ver="5"/>
+		<designed target="Y" value="320" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Text" value="Сбросить" ver="5"/>
+		<designed target="Width" value="118.75" ver="5"/>
+		<designed target="Height" value="36" ver="5"/>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="ButtonPressed">
+			<body kind="om">
+				<![CDATA[SimulationFrame.SimulationStatusCheckbox.State = ApParSimOn.Value;
+SimulationFrame.Container_SimValue.ComboBox_Value.SelectedIndex = TypeConvert.ToInt4(ApParSimValue.Value);
+SimulationFrame.Container_SimStatus.Input.Text = ApParSimStatus.ValueAsString;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Button_Acc" display-name="Button_Acc" uuid="d22aade1-4301-469d-80fa-77317f274ecf" base-type="Button_PropertiesDialogs" base-type-id="eb940a52-68cb-41b0-824e-d3672b520ebf" ver="5" description="" cardinal="1">
+		<designed target="X" value="376" ver="5"/>
+		<designed target="Y" value="320" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+			<body kind="om">
+				<![CDATA[if ( !AsokuMain.IsNotWeb() ) {
+		Open_UD_WebClient.Invoke(); //открыть окно о веб клиенте
+}
+else if( AsokuUserRights.SendingComands.Value ) { //проверка полномочий 
+	Open_UD_AppSettings.Invoke(); //открыть окно подтверждения сохранения настроек
+}
+else Open_UD_PermissionFault.Invoke();  
+]]>
+			</body>
+		</do-on>
+		<designed target="Text" value="Применить" ver="5"/>
+		<designed target="Width" value="118.75" ver="5"/>
+		<designed target="Height" value="36" ver="5"/>
+		<do-trace access-modifier="private" target="Enabled" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[AsokuUserRights.ChangeSettings.Value == true]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="SimulationFrame" display-name="SimulationFrame" uuid="18515a71-7c7c-4fe0-bafd-e037c04b6866" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="10" ver="5"/>
+		<designed target="Y" value="10" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="480" ver="5"/>
+		<designed target="Height" value="151" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="0xffffffff" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="0xffffffff" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<object access-modifier="private" name="SimulationStatusCheckbox" display-name="SimulationStatusCheckbox" uuid="bf9301ba-3567-43cb-bde1-c5c923d8c06a" base-type="Checkbox_PropertiesDialogs" base-type-id="cce67041-fe8a-49f5-a7d2-1eddf9d00c43" ver="5" description="" cardinal="1">
+			<designed target="X" value="7" ver="5"/>
+			<designed target="Y" value="8" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="167" ver="5"/>
+			<designed target="Height" value="23" ver="5"/>
+			<designed target="Text" value="Имитация" ver="5"/>
+			<do-trace access-modifier="private" target="State" ver="5">
+				<body>
+					<![CDATA[ApParSimOn.Value]]>
+				</body>
+			</do-trace>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="StateChanged">
+				<body kind="om">
+					<![CDATA[isChanged = this.State != ApParSimOn.Value;]]>
+				</body>
+			</do-on>
+			<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0" ver="5"/>
+			<object access-modifier="private" name="isChanged" display-name="isChanged" uuid="68d7c354-ec63-4b4e-814c-2377e950f39f" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
+			<do-trace access-modifier="private" target="FontColor" ver="5">
+				<conditional-expr>
+					<condition>
+						<![CDATA[isChanged]]>
+					</condition>
+					<expr>
+						<![CDATA[AsokuColor.asokuSky]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[AsokuColor.asokuWhite]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="CurrentStatus" display-name="CurrentStatus" uuid="111e5c0d-0a83-4749-8d34-4e7ab23f5a3b" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="111" ver="5"/>
+			<designed target="Y" value="7" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="356.99999999999994" ver="5"/>
+			<designed target="Height" value="25" ver="5"/>
+			<designed target="Text" value="Текст" ver="5"/>
+			<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="FontColor" value="0xffffffff" ver="5"/>
+			<designed target="TextAlignment" value="130" ver="5"/>
+			<do-trace access-modifier="private" target="Text" ver="5">
+				<body>
+					<![CDATA[ApParValue.ValueAsString + " - " + ApParValueAsString.Value]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="FontColor" ver="5">
+				<conditional-expr>
+					<condition>
+						<![CDATA[ApParStatusBytes.Value == AsokuConst.StatusBytes.Invalid]]>
+					</condition>
+					<expr>
+						<![CDATA[AsokuColor.asokuBlack]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[ApParAlarmBytes.Value == AsokuConst.AlarmBytes.WarningAndAlarm || ApParAlarmBytes.Value == AsokuConst.AlarmBytes.Alarm]]>
+					</condition>
+					<expr>
+						<![CDATA[AsokuColor.asokuRed]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[ApParAlarmBytes.Value == AsokuConst.AlarmBytes.Warning]]>
+					</condition>
+					<expr>
+						<![CDATA[AsokuColor.asokuYellow]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[AsokuColor.asokuWhite]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Container_SimValue" display-name="Container_SimValue" uuid="58ff71a4-97af-4919-b01a-4441654191ac" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="47" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="476.00000000000006" ver="5"/>
+			<designed target="Height" value="35" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="0" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+			<object access-modifier="private" name="Label" display-name="Label" uuid="532919dc-ef39-4913-8f99-9d4829d2350d" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+				<designed target="X" value="7" ver="5"/>
+				<designed target="Y" value="7.5" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="76" ver="5"/>
+				<designed target="Height" value="20" ver="5"/>
+				<designed target="Text" value="Значение" ver="5"/>
+			</object>
+			<object access-modifier="private" name="ComboBox_Value" display-name="ComboBox_Value" uuid="97b9cb30-11d8-4be5-86b8-71e5c1fb1615" base-type="ComboBox" base-type-id="3495bcd2-01f2-4709-b7f4-e9cf6f3a00bc" ver="5" description="" cardinal="1">
+				<designed target="X" value="170" ver="5"/>
+				<designed target="Y" value="0" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Flip" value="0" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="300" ver="5"/>
+				<designed target="Height" value="35" ver="5"/>
+				<designed target="Editable" value="false" ver="5"/>
+				<designed target="Text" value="" ver="5"/>
+				<designed target="SelectedIndex" value="-1" ver="5"/>
+				<designed target="Font" value="Arial,8,-1,5,75,0,0,0,0,0" ver="5"/>
+				<designed target="FontColor" value="4278190080" ver="5"/>
+				<designed target="MaxVisibleItems" value="10" ver="5"/>
+				<designed target="InsertPolicy" value="3" ver="5"/>
+				<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="SelectedChanged">
+					<body kind="javascript">
+						<![CDATA[CurrentKey = Number(ComboBox_Value.GetItem(ComboBox_Value.SelectedIndex).split("-")[0].trim());
+isChanged = CurrentKey != Number(ApParSimValue.Value);]]>
+					</body>
+				</do-on>
+				<object access-modifier="private" name="CurrentKey" display-name="CurrentKey" uuid="fb47ae35-475f-4757-80b8-4044b70040dd" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
+				<object access-modifier="private" name="isChanged" display-name="isChanged" uuid="5382fa1c-3d73-4d73-a3e4-92d1a4637566" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
+				<do-trace access-modifier="private" target="FontColor" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[isChanged]]>
+						</condition>
+						<expr>
+							<![CDATA[AsokuColor.asokuSky]]>
+						</expr>
+					</conditional-expr>
+					<default-expr>
+						<expr>
+							<![CDATA[AsokuColor.asokuBlack]]>
+						</expr>
+					</default-expr>
+				</do-trace>
+			</object>
+		</object>
+		<object access-modifier="private" name="Container_SimStatus" display-name="Container_SimStatus" uuid="0245bb58-81ee-475e-978f-84226bf60ea2" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="110" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="475" ver="5"/>
+			<designed target="Height" value="25" ver="5"/>
+			<designed target="RoundingRadius" value="0" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="0" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+			<object access-modifier="private" name="Label" display-name="Label" uuid="d4ba70b9-cff0-444c-9083-9e8d4bfad4a2" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+				<designed target="X" value="7" ver="5"/>
+				<designed target="Y" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="353" ver="5"/>
+				<designed target="Height" value="25" ver="5"/>
+				<designed target="Text" value="Качество" ver="5"/>
+				<designed target="TextAlignment" value="129" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Input" display-name="Input" uuid="88f6b94d-806f-477e-867d-405af66b7c76" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="5" description="" cardinal="1">
+				<designed target="X" value="360" ver="5"/>
+				<designed target="Y" value="0" ver="5"/>
+				<designed target="ZValue" value="0" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Scale" value="1" ver="5"/>
+				<designed target="Visible" value="true" ver="5"/>
+				<designed target="Opacity" value="1" ver="5"/>
+				<designed target="Enabled" value="true" ver="5"/>
+				<designed target="Tooltip" value="" ver="5"/>
+				<designed target="Width" value="110" ver="5"/>
+				<designed target="Height" value="25" ver="5"/>
+				<designed target="Text" value="" ver="5"/>
+				<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0" ver="5"/>
+				<designed target="FontColor" value="0xff000000" ver="5"/>
+				<designed target="TextAlignment" value="132" ver="5"/>
+				<designed target="HideInput" value="false" ver="5"/>
+				<designed target="PlaceholderText" value="" ver="5"/>
+				<designed target="ReadOnly" value="false" ver="5"/>
+				<do-trace access-modifier="private" target="Text" ver="5">
+					<body>
+						<![CDATA[ApParSimStatus.ValueAsString]]>
+					</body>
+				</do-trace>
+				<designed target="Flip" value="0" ver="5"/>
+				<object access-modifier="private" name="isChanged" display-name="isChanged" uuid="c4acbb2e-61ab-41fc-b8bb-83bb2ad67747" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
+				<do-trace access-modifier="private" target="FontColor" ver="5">
+					<conditional-expr>
+						<condition>
+							<![CDATA[isChanged]]>
+						</condition>
+						<expr>
+							<![CDATA[AsokuColor.asokuSky]]>
+						</expr>
+					</conditional-expr>
+					<default-expr>
+						<expr>
+							<![CDATA[AsokuColor.asokuBlack]]>
+						</expr>
+					</default-expr>
+				</do-trace>
+				<do-trace access-modifier="private" target="PlaceholderText" ver="5">
+					<body>
+						<![CDATA[String.ToString(ApParValue.Quality)]]>
+					</body>
+				</do-trace>
+				<do-on access-modifier="private" name="Handler_6" display-name="Handler_6" ver="5" event="TextChanged">
+					<body kind="om">
+						<![CDATA[isChanged = this.Text != ApParSimStatus.ValueAsString;]]>
+					</body>
+				</do-on>
+			</object>
+		</object>
+	</object>
+	<object access-modifier="private" name="ParDevPath" display-name="ParDevPath" uuid="aef1a5de-ba08-488a-9224-d93e8945f8cc" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ApParValueAsString" display-name="ApParValueAsString" uuid="d24c99f4-a954-41f5-b711-f9520b3ccdd7" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + ".ValueAsString"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ApParValue" display-name="ApParValue" uuid="15678d30-7b17-4cfe-a5c3-9f4a05910836" base-type="ApItemUInt4" base-type-id="322ce770-6c7b-49bc-9cd6-a367ca5b4627" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + ".Value"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ApParDisplay" display-name="ApParDisplay" uuid="ad867d8c-1b73-401d-b900-7daff83eac62" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + ".Display"]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnValueChanged">
+			<body kind="javascript">
+				<![CDATA[const displayArray = ApParDisplay.ValueAsString.split(', ');
+
+SimulationFrame.Container_SimValue.ComboBox_Value.Clear();
+
+for (let i = 0; i < displayArray.length; i++) {
+	SimulationFrame.Container_SimValue.ComboBox_Value.AddItem(displayArray[i]);
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="ApParAlarmBytes" display-name="ApParAlarmBytes" uuid="4cdb69c6-fc27-408a-8075-85c3728ad914" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + ".AlarmBytes"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ApParStatusBytes" display-name="ApParStatusBytes" uuid="8901f833-d86f-40bf-b80c-f8b37df1ebe7" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + ".StatusBytes"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ApParSimOn" display-name="ApParSimOn" uuid="d34a2fcf-cafd-4618-aefe-072372fc008c" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + ".Simulation.On"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ApParSimValue" display-name="ApParSimValue" uuid="cb64239f-c59f-45f3-8b93-e1f6f609c28f" base-type="ApItemUInt4" base-type-id="322ce770-6c7b-49bc-9cd6-a367ca5b4627" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + ".Simulation.Value"]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnValueChanged">
+			<body kind="javascript">
+				<![CDATA[FullfillComboBox.Invoke();]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="ApParSimStatus" display-name="ApParSimStatus" uuid="56a3c426-979e-46fe-a71d-83ed649ba6f3" base-type="ApItemUInt4" base-type-id="322ce770-6c7b-49bc-9cd6-a367ca5b4627" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath + ".Simulation.Status"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Open_UD_AppSettings" display-name="Open_UD_AppSettings" uuid="ef3919eb-d6eb-487e-8acc-b2dff95ed47a" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-dialog" form-by-id="false">
+			<object access-modifier="private" uuid="fd8398c1-08a2-49ab-8648-332ef389e831" base-type="UserDialog" base-type-id="3c54f3db-a950-487c-861e-56a8d2eba70d" ver="5">
+				<init target="Message" ver="5" value="Вы действительно хотите применить настройки для сигнала?"/>
+				<init target="Icon" ver="5" value="1"/>
+				<init target="Buttons" ver="5" value="2"/>
+				<init target="YesAction" ver="5" ref="here.YesAction_UD_AppSettings"/>
+				<init target="Header" ver="5" value="Окно подтверждения действий
+"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="YesAction_UD_AppSettings" display-name="YesAction_UD_AppSettings" uuid="a0fc5004-2d6c-466f-8f63-2ee26b01d48c" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked">
+			<body kind="om">
+				<![CDATA[if (ApParSimOn.Value != SimulationFrame.SimulationStatusCheckbox.State) {
+	ApParSimOn.Value = SimulationFrame.SimulationStatusCheckbox.State;
+	SimulationFrame.SimulationStatusCheckbox.isChanged = false;
+	AsokuMain.CreateUserMessage("флага имитации у сигнала " + ParDevPath);
+}
+if (ApParSimValue.Value != TypeConvert.ToInt4(SimulationFrame.Container_SimValue.ComboBox_Value.CurrentKey)) {
+	ApParSimValue.Value = TypeConvert.ToUint4(SimulationFrame.Container_SimValue.ComboBox_Value.CurrentKey);
+	SimulationFrame.Container_SimValue.ComboBox_Value.isChanged = false;
+	AsokuMain.CreateUserMessage("значение имитации у сигнала " + ParDevPath);
+}
+if (ApParSimStatus.ValueAsString != SimulationFrame.Container_SimStatus.Input.Text) {
+	ApParSimStatus.Value = String.ToUint4(SimulationFrame.Container_SimStatus.Input.Text, ApParSimStatus.Value);
+	SimulationFrame.Container_SimStatus.Input.isChanged = false;
+	AsokuMain.CreateUserMessage("качество у сигнала " + ParDevPath);
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Open_UD_PermissionFault" display-name="Open_UD_PermissionFault" uuid="4833425d-0e46-4f27-ad4a-32f434efa00a" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-dialog" form-by-id="false">
+			<object access-modifier="private" uuid="65be3135-968f-4347-bfcb-2f4a030efc7c" base-type="UserDialog" base-type-id="3c54f3db-a950-487c-861e-56a8d2eba70d" ver="5">
+				<init target="Message" ver="5" value="Для выполнения указанного действия Вам не хватает полномочий. Для получения дополнительных сведений обратитесь к Администратору"/>
+				<init target="Icon" ver="5" value="0"/>
+				<init target="Buttons" ver="5" value="0"/>
+				<init target="Header" ver="5" value="Недостаточно полномочий"/>
+			</object>
+		</do-on>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Open_UD_WebClient" display-name="Open_UD_WebClient" uuid="096cc884-16fd-41af-93e3-f114d3106861" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-dialog" form-by-id="false">
+			<object access-modifier="private" uuid="ecc0bc15-04b2-4944-a31d-08c2b141764f" base-type="UserDialog" base-type-id="3c54f3db-a950-487c-861e-56a8d2eba70d" ver="5">
+				<init target="Message" ver="5" value="Вы используете WEB-клиент для работы с проектом.\nДля использования полного функционала воспользуйтесь настольной версией приложения"/>
+				<init target="Icon" ver="5" value="0"/>
+				<init target="Buttons" ver="5" value="0"/>
+				<init target="Header" ver="5" value="Ограничение WEB-клиента"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="FullfillComboBox" display-name="FullfillComboBox" uuid="141dbdef-dbb9-4b5d-9ad2-3b8e90dd3150" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked">
+			<body kind="javascript">
+				<![CDATA[let array = ApParDisplay.Value.split(', ');
+SimulationFrame.Container_SimValue.ComboBox_Value.SelectedIndex = -1;
+for (let i = 0; i < array.length; i++) {
+	let arrayNumPlText = array[i].split("-")[0].trim();
+
+	if (ApParValue.Value == ApParSimValue.Value) {
+		if (arrayNumPlText.includes(String(ApParValue.Value))) {
+			SimulationFrame.Container_SimValue.ComboBox_Value.SelectedIndex = i;
+			break;	
+		}
+	}
+	else {
+		if (arrayNumPlText.includes(String(ApParSimValue.Value))) {
+			SimulationFrame.Container_SimValue.ComboBox_Value.SelectedIndex = i;
+			break;	
+		}
+	}
+
+}]]>
+			</body>
+		</do-on>
+	</object>
+</type>
+

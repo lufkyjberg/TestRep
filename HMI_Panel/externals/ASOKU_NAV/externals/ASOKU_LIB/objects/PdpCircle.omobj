@@ -1,0 +1,261 @@
+<type access-modifier="public" name="PdpCircle" display-name="Круг подпятника" uuid="7207ab32-b80a-4682-910e-8ffd7a7c92a3" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="450" ver="5"/>
+	<designed target="Height" value="450" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="1" ver="5"/>
+	<designed target="PenWidth" value="0" ver="5"/>
+	<designed target="BrushColor" value="0xff7f7f7f" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="PieAngle" value="360" ver="5"/>
+	<designed target="PieAngleStart" value="360" ver="5"/>
+	<designed target="HoleSize" value="0" ver="5"/>
+	<object access-modifier="private" name="Ellipse_1" display-name="Ellipse_1" uuid="dd3e58dc-009b-4092-9602-f98745bff64a" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5">
+		<designed target="X" value="111.484632332221" ver="5"/>
+		<designed target="Y" value="112.036728542868" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="226" ver="5"/>
+		<designed target="Height" value="226" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xff959595" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<designed target="Flip" value="0" ver="5"/>
+	<object access-modifier="private" name="PodpyatnikElement_1" display-name="PodpyatnikElement_1" uuid="5bfdd1cb-6ffb-4120-a964-00f4bbc215e0" base-type="PodpyatnikElement" base-type-id="ec637457-423e-4ab6-ba97-e18daea57515" ver="5" description="" cardinal="1">
+		<designed target="X" value="131.99999999999994" ver="5"/>
+		<designed target="Y" value="332.99999999999994" ver="5"/>
+		<designed target="Rotation" value="15" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<init target="ParDevPath" ver="5" value="GA_01.Thermal.T_PP1"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_1" display-name="Text_PropertiesDialogs_1" uuid="e876312e-c7a0-4612-be5a-e1c955ef30f0" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="138.57364457060501" ver="5"/>
+		<designed target="Y" value="355.31466998200699" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="88.967754645362106" ver="5"/>
+		<designed target="Height" value="54.840229244746403" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Text" value="1" ver="5"/>
+		<designed target="Font" value="Tahoma,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="PodpyatnikElement_2" display-name="PodpyatnikElement_2" uuid="a2fc7c94-ee23-4644-a2ce-80d313bf9991" base-type="PodpyatnikElement" base-type-id="ec637457-423e-4ab6-ba97-e18daea57515" ver="5" description="" cardinal="1">
+		<designed target="X" value="58" ver="5"/>
+		<designed target="Y" value="290" ver="5"/>
+		<designed target="Rotation" value="45" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<init target="ParDevPath" ver="5" value="GA_01.Thermal.T_PP2"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_2" display-name="Text_PropertiesDialogs_2" uuid="dae45fbd-db8c-46af-a431-753bb583d642" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="66.954866000808593" ver="5"/>
+		<designed target="Y" value="309.31688424419502" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="88.967754645362206" ver="5"/>
+		<designed target="Height" value="54.840229244746297" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Text" value="2" ver="5"/>
+		<designed target="Font" value="Tahoma,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="PodpyatnikElement_3" display-name="PodpyatnikElement_3" uuid="ae147405-1b94-4dfc-9504-159615e86052" base-type="PodpyatnikElement" base-type-id="ec637457-423e-4ab6-ba97-e18daea57515" ver="5" description="" cardinal="1">
+		<designed target="X" value="13.000000000000057" ver="5"/>
+		<designed target="Y" value="213" ver="5"/>
+		<designed target="Rotation" value="75" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<init target="ParDevPath" ver="5" value="GA_01.Thermal.T_PP3"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_3" display-name="Text_PropertiesDialogs_3" uuid="b465c2dc-90fb-4e8b-b1bc-9b4fc24fdc8f" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="17.755787178902001" ver="5"/>
+		<designed target="Y" value="234.53933942095301" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="88.967754645362106" ver="5"/>
+		<designed target="Height" value="54.840229244746297" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Text" value="3" ver="5"/>
+		<designed target="Font" value="Tahoma,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="PodpyatnikElement_4" display-name="PodpyatnikElement_4" uuid="3ab14240-4215-48a9-83c5-4c778744a0a5" base-type="PodpyatnikElement" base-type-id="ec637457-423e-4ab6-ba97-e18daea57515" ver="5" description="" cardinal="1">
+		<designed target="X" value="15.000000000000043" ver="5"/>
+		<designed target="Y" value="127" ver="5"/>
+		<designed target="Rotation" value="105" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<init target="ParDevPath" ver="5" value="GA_01.Thermal.T_PP4"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_4" display-name="Text_PropertiesDialogs_4" uuid="b7c13fe4-8025-42b4-aa93-117be2e5056c" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="19.551071378867498" ver="5"/>
+		<designed target="Y" value="148.76331594997799" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="88.967754645362206" ver="5"/>
+		<designed target="Height" value="54.840229244746297" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Text" value="4" ver="5"/>
+		<designed target="Font" value="Tahoma,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="PodpyatnikElement_5" display-name="PodpyatnikElement_5" uuid="623d2b10-5767-4fce-a8fc-271d173a1976" base-type="PodpyatnikElement" base-type-id="ec637457-423e-4ab6-ba97-e18daea57515" ver="5" description="" cardinal="1">
+		<designed target="X" value="58.000000000000057" ver="5"/>
+		<designed target="Y" value="56.000000000000014" ver="5"/>
+		<designed target="Rotation" value="135" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<init target="ParDevPath" ver="5" value="GA_01.Thermal.T_PP5"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_5" display-name="Text_PropertiesDialogs_5" uuid="977e625d-fe7c-4f63-9731-daf3307c712b" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="66.897506965542902" ver="5"/>
+		<designed target="Y" value="80.435828193777994" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="88.967754645362206" ver="5"/>
+		<designed target="Height" value="54.840229244746197" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Text" value="5" ver="5"/>
+		<designed target="Font" value="Tahoma,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="PodpyatnikElement_6" display-name="PodpyatnikElement_6" uuid="accc094a-d48a-4657-9ca4-53e8d7e59c84" base-type="PodpyatnikElement" base-type-id="ec637457-423e-4ab6-ba97-e18daea57515" ver="5" description="" cardinal="1">
+		<designed target="X" value="134.00000000000011" ver="5"/>
+		<designed target="Y" value="14.000000000000057" ver="5"/>
+		<designed target="Rotation" value="165" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<init target="ParDevPath" ver="5" value="GA_01.Thermal.T_PP6"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_6" display-name="Text_PropertiesDialogs_6" uuid="9bf10223-4726-461d-bcd5-d5530835b089" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="138.57364457060501" ver="5"/>
+		<designed target="Y" value="39.997873525333802" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="88.967754645362106" ver="5"/>
+		<designed target="Height" value="54.840229244746297" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Text" value="6" ver="5"/>
+		<designed target="Font" value="Tahoma,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="PodpyatnikElement_7" display-name="PodpyatnikElement_7" uuid="8abecce8-c683-4f05-87ef-7103b1fffcff" base-type="PodpyatnikElement" base-type-id="ec637457-423e-4ab6-ba97-e18daea57515" ver="5" description="" cardinal="1">
+		<designed target="X" value="221.00000000000011" ver="5"/>
+		<designed target="Y" value="15.000000000000057" ver="5"/>
+		<designed target="Rotation" value="195" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<init target="ParDevPath" ver="5" value="GA_01.Thermal.T_PP7"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_7" display-name="Text_PropertiesDialogs_7" uuid="842f7ea8-2818-49c2-9274-e48feb9447df" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="225.91444317915301" ver="5"/>
+		<designed target="Y" value="39.447930592375599" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="88.967754645362206" ver="5"/>
+		<designed target="Height" value="54.840229244746297" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Text" value="7" ver="5"/>
+		<designed target="Font" value="Tahoma,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="PodpyatnikElement_8" display-name="PodpyatnikElement_8" uuid="265cc55a-2d23-46b1-a4fa-37c67b8a7f00" base-type="PodpyatnikElement" base-type-id="ec637457-423e-4ab6-ba97-e18daea57515" ver="5" description="" cardinal="1">
+		<designed target="X" value="292.00000000000006" ver="5"/>
+		<designed target="Y" value="59.999999999999943" ver="5"/>
+		<designed target="Rotation" value="225" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<init target="ParDevPath" ver="5" value="GA_01.Thermal.T_PP8"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_8" display-name="Text_PropertiesDialogs_8" uuid="6bd2fbe2-6f29-4359-ab00-cbf8672d2d76" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="301.729570764838" ver="5"/>
+		<designed target="Y" value="81.784706310812297" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="88.967754645362206" ver="5"/>
+		<designed target="Height" value="54.840229244746297" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Text" value="8" ver="5"/>
+		<designed target="Font" value="Tahoma,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="PodpyatnikElement_9" display-name="PodpyatnikElement_9" uuid="e3e77f01-30d5-4bd7-9a8b-f7b20bf4d072" base-type="PodpyatnikElement" base-type-id="ec637457-423e-4ab6-ba97-e18daea57515" ver="5" description="" cardinal="1">
+		<designed target="X" value="334" ver="5"/>
+		<designed target="Y" value="131.99999999999994" ver="5"/>
+		<designed target="Rotation" value="255" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<init target="ParDevPath" ver="5" value="GA_01.Thermal.T_PP9"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_9" display-name="Text_PropertiesDialogs_9" uuid="f3c03cba-e534-40eb-8971-de9823b9d9ee" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="343.42252656853202" ver="5"/>
+		<designed target="Y" value="155.21078684883301" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="88.967754645362206" ver="5"/>
+		<designed target="Height" value="54.840229244746297" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Text" value="9" ver="5"/>
+		<designed target="Font" value="Tahoma,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="PodpyatnikElement_10" display-name="PodpyatnikElement_10" uuid="899a308e-5c16-4858-8347-dc5c3bea0d81" base-type="PodpyatnikElement" base-type-id="ec637457-423e-4ab6-ba97-e18daea57515" ver="5" description="" cardinal="1">
+		<designed target="X" value="335.99999999999994" ver="5"/>
+		<designed target="Y" value="217.99999999999994" ver="5"/>
+		<designed target="Rotation" value="285" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<init target="ParDevPath" ver="5" value="GA_01.Thermal.T_PP10"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_10" display-name="Text_PropertiesDialogs_10" uuid="b3db9c89-7c2e-4847-9e02-403c50aca94c" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="334.91876145033501" ver="5"/>
+		<designed target="Y" value="239.44546243916599" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="88.967754645362206" ver="5"/>
+		<designed target="Height" value="54.840229244746197" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Text" value="10" ver="5"/>
+		<designed target="Font" value="Tahoma,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="PodpyatnikElement_11" display-name="PodpyatnikElement_11" uuid="f94a0eb2-bfde-4caf-ac21-98598a0a0776" base-type="PodpyatnikElement" base-type-id="ec637457-423e-4ab6-ba97-e18daea57515" ver="5" description="" cardinal="1">
+		<designed target="X" value="295" ver="5"/>
+		<designed target="Y" value="291.99999999999989" ver="5"/>
+		<designed target="Rotation" value="315" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<init target="ParDevPath" ver="5" value="GA_01.Thermal.T_PP11"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_11" display-name="Text_PropertiesDialogs_11" uuid="4c8d5f3b-2c4f-4360-9115-aa02c177cb1a" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="297.73451483304501" ver="5"/>
+		<designed target="Y" value="314.117949060115" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="88.967754645362206" ver="5"/>
+		<designed target="Height" value="54.840229244746197" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Text" value="11" ver="5"/>
+		<designed target="Font" value="Tahoma,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+	<object access-modifier="private" name="PodpyatnikElement_12" display-name="PodpyatnikElement_12" uuid="9605aae4-476b-43f3-b424-fd1719532469" base-type="PodpyatnikElement" base-type-id="ec637457-423e-4ab6-ba97-e18daea57515" ver="5" description="" cardinal="1">
+		<designed target="X" value="217.00000000000006" ver="5"/>
+		<designed target="Y" value="336" ver="5"/>
+		<designed target="Rotation" value="345" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<init target="ParDevPath" ver="5" value="GA_01.Thermal.T_PP12"/>
+	</object>
+	<object access-modifier="private" name="Text_PropertiesDialogs_12" display-name="Text_PropertiesDialogs_12" uuid="3b7611e8-d01f-4bd8-8f3a-8a260a5a1dc8" base-type="Text_PropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="223.660735127999" ver="5"/>
+		<designed target="Y" value="357.56837803316" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="88.967754645362206" ver="5"/>
+		<designed target="Height" value="54.840229244746503" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Text" value="12" ver="5"/>
+		<designed target="Font" value="Tahoma,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+	</object>
+</type>
+

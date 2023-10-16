@@ -1,0 +1,157 @@
+<type access-modifier="public" name="PdshCircleLower" display-name="Круг нижнего подшипниа" uuid="feb53f74-f66e-4722-9065-7aa89f3b5892" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="410" ver="5"/>
+	<designed target="Height" value="410" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="1" ver="5"/>
+	<designed target="PenWidth" value="0" ver="5"/>
+	<designed target="BrushColor" value="0xff7f7f7f" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="PieAngle" value="360" ver="5"/>
+	<designed target="PieAngleStart" value="360" ver="5"/>
+	<designed target="HoleSize" value="0" ver="5"/>
+	<object access-modifier="private" name="InnerCircle" display-name="InnerCircle" uuid="7ddb0d12-2683-436d-9455-4e86e4f6984a" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5">
+		<designed target="X" value="90" ver="5"/>
+		<designed target="Y" value="90" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="230" ver="5"/>
+		<designed target="Height" value="230" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xff959595" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<designed target="Flip" value="0" ver="5"/>
+	<object access-modifier="private" name="Pdsh1" display-name="Pdsh1" uuid="5062935c-8285-427f-bb59-4522923b87c5" base-type="PdshElement" base-type-id="2144e948-eddb-4038-99cf-a7ea0e8ce1ff" ver="5" description="" cardinal="1">
+		<designed target="X" value="233.48717948717942" ver="5"/>
+		<designed target="Y" value="298.20476190476182" ver="5"/>
+		<designed target="Rotation" value="-30" ver="5"/>
+		<designed target="Width" value="102" ver="5"/>
+		<designed target="Height" value="88" ver="5"/>
+		<object access-modifier="private" name="Pdsh1_TextField" display-name="Pdsh1_TextField" uuid="91398746-ccf0-42fd-b9df-2add9f21c749" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+			<designed target="X" value="33" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+			<designed target="Rotation" value="30" ver="5"/>
+			<designed target="Width" value="36" ver="5"/>
+			<designed target="Height" value="36" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<designed target="Text" value="1" ver="5"/>
+			<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="FontColor" value="0xff000000" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Pdsh2" display-name="Pdsh2" uuid="815577fb-e06a-4075-b7f5-3198ca62f5d7" base-type="PdshElement" base-type-id="2144e948-eddb-4038-99cf-a7ea0e8ce1ff" ver="5" description="" cardinal="1">
+		<designed target="X" value="75.333333333333456" ver="5"/>
+		<designed target="Y" value="298.73809523809507" ver="5"/>
+		<designed target="Rotation" value="30" ver="5"/>
+		<designed target="Width" value="102" ver="5"/>
+		<designed target="Height" value="88" ver="5"/>
+		<object access-modifier="private" name="Pdsh2_TextField" display-name="Pdsh2_TextField" uuid="0c3e5270-39f3-4500-b7a0-ddeff4dc63ff" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+			<designed target="X" value="33" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+			<designed target="Rotation" value="-30" ver="5"/>
+			<designed target="Width" value="36" ver="5"/>
+			<designed target="Height" value="36" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<designed target="Text" value="2" ver="5"/>
+			<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="FontColor" value="0xff000000" ver="5"/>
+		</object>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.NNPSH.T_NNP2"/>
+	</object>
+	<object access-modifier="private" name="Pdsh3" display-name="Pdsh3" uuid="6971915f-6815-45cf-80bd-d63d8c63ed42" base-type="PdshElement" base-type-id="2144e948-eddb-4038-99cf-a7ea0e8ce1ff" ver="5" description="" cardinal="1">
+		<designed target="X" value="-4.4999999999998295" ver="5"/>
+		<designed target="Y" value="160.5297619047617" ver="5"/>
+		<designed target="Rotation" value="90" ver="5"/>
+		<designed target="Width" value="102" ver="5"/>
+		<designed target="Height" value="88" ver="5"/>
+		<object access-modifier="private" name="Pdsh3_TextField" display-name="Pdsh3_TextField" uuid="b3515cd2-c140-4f5b-9db8-7072fe3eb1a0" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+			<designed target="X" value="33" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+			<designed target="Rotation" value="-90" ver="5"/>
+			<designed target="Width" value="36" ver="5"/>
+			<designed target="Height" value="36" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<designed target="Text" value="3" ver="5"/>
+			<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="FontColor" value="0xff000000" ver="5"/>
+		</object>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.NNPSH.T_NNP3"/>
+	</object>
+	<object access-modifier="private" name="Pdsh4" display-name="Pdsh4" uuid="6b446d44-9241-4897-8a45-e15a37124420" base-type="PdshElement" base-type-id="2144e948-eddb-4038-99cf-a7ea0e8ce1ff" ver="5" description="" cardinal="1">
+		<designed target="X" value="75.22051282051271" ver="5"/>
+		<designed target="Y" value="23.249206349206375" ver="5"/>
+		<designed target="Rotation" value="150" ver="5"/>
+		<designed target="Width" value="102" ver="5"/>
+		<designed target="Height" value="88" ver="5"/>
+		<object access-modifier="private" name="Pdsh4_TextField" display-name="Pdsh4_TextField" uuid="e111e509-a248-4810-aca6-ee2046fcc031" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+			<designed target="X" value="33" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+			<designed target="Rotation" value="-150" ver="5"/>
+			<designed target="Width" value="36" ver="5"/>
+			<designed target="Height" value="36" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<designed target="Text" value="4" ver="5"/>
+			<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="FontColor" value="0xff000000" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Pdsh5" display-name="Pdsh5" uuid="9b9ff94a-aec7-468c-b08e-40dd4cd9b0eb" base-type="PdshElement" base-type-id="2144e948-eddb-4038-99cf-a7ea0e8ce1ff" ver="5" description="" cardinal="1">
+		<designed target="X" value="233.57575757575756" ver="5"/>
+		<designed target="Y" value="23.889610389610198" ver="5"/>
+		<designed target="Rotation" value="210" ver="5"/>
+		<designed target="Width" value="102" ver="5"/>
+		<designed target="Height" value="88" ver="5"/>
+		<object access-modifier="private" name="Pdsh5_TextField" display-name="Pdsh5_TextField" uuid="cbbe0ea1-5b34-4703-ae8b-edb64825dcbf" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+			<designed target="X" value="33" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+			<designed target="Rotation" value="-210" ver="5"/>
+			<designed target="Width" value="36" ver="5"/>
+			<designed target="Height" value="36" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<designed target="Text" value="5" ver="5"/>
+			<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="FontColor" value="0xff000000" ver="5"/>
+		</object>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.NNPSH.T_NNP5"/>
+	</object>
+	<object access-modifier="private" name="Pdsh6" display-name="Pdsh6" uuid="5f1d504c-321a-4d7b-89c8-aaddaf8c31c4" base-type="PdshElement" base-type-id="2144e948-eddb-4038-99cf-a7ea0e8ce1ff" ver="5" description="" cardinal="1">
+		<designed target="X" value="312.6111111111112" ver="5"/>
+		<designed target="Y" value="159.64087301587284" ver="5"/>
+		<designed target="Rotation" value="-90" ver="5"/>
+		<designed target="Width" value="102" ver="5"/>
+		<designed target="Height" value="88" ver="5"/>
+		<object access-modifier="private" name="Pdsh6_TextField" display-name="Pdsh6_TextField" uuid="af4ddb3e-bdf5-48fd-8da7-5956293c9f8d" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+			<designed target="X" value="33" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+			<designed target="Rotation" value="90" ver="5"/>
+			<designed target="Width" value="36" ver="5"/>
+			<designed target="Height" value="36" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<designed target="Text" value="6" ver="5"/>
+			<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="FontColor" value="0xff000000" ver="5"/>
+		</object>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Thermal.NNPSH.T_NNP6"/>
+	</object>
+</type>
+

@@ -1,0 +1,545 @@
+<type access-modifier="public" name="LabelInputObject" display-name="LabelInputObject" uuid="202b8325-4387-44f4-89d5-40afd5fca4b9" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="50" ver="5"/>
+	<designed target="Height" value="83" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0x00f0f0f0" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<object access-modifier="private" name="ParDevPath" display-name="Путь до тега плаката" uuid="138f932e-e4a4-4561-bf1f-c0654ddd7540" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Ap_Source_Par" display-name="Ap_Source_Par" uuid="6ca17727-250a-4461-8345-c6cba14b86b1" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+		<designed target="Location" value="" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="Path" value="" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath.Value]]>
+			</body>
+		</do-trace>
+		<init target="ParentSource" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="idLabel" display-name="id принимаемого плаката" uuid="fd414080-cfa3-490d-b14d-4795e2365894" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ValueChanged">
+			<body kind="om">
+				<![CDATA[// функция обработки принимаемого плаката
+if(Name!="")
+{
+  if(Frame_1.Ap_Par_Label_1_Name == "")//место 1го плаката свободно
+  {
+    Frame_1.idLabel_1 = idLabel.Value;
+    Frame_1.Set_Label_1.Invoke();
+    Frame_1.Ap_Par_Label_1_Name = Name;
+  
+    AsokuMain.CreateUserMessage("вывесил плакат '" + Name + "' на " + here.ParDevPath.Value ); 
+  }
+  else
+  {
+    if(Frame_2.Ap_Par_Label_2_Name == "")//место 2го плаката свободно
+    {
+      if(Frame_1.idLabel_1 != idLabel.Value )//проверка уникальности плаката
+      {
+       Frame_2.idLabel_2 = idLabel.Value;
+       Frame_2.Set_Label_2.Invoke();
+       Frame_2. Ap_Par_Label_2_Name.Value = Name.Value;
+       AsokuMain.CreateUserMessage("вывесил плакат '" + Name + "' на " + here.ParDevPath.Value );              
+      }
+      else
+      {
+        UD_Text = "Плакат уже вывешен!";
+        Open_UD_Fault.Invoke();
+      }
+    }
+    else
+    {
+     if (Frame_3.Ap_Par_Label_3_Name == "")//место 3го плаката свободно
+     {  
+        if(Frame_1.idLabel_1 != idLabel.Value && Frame_2.idLabel_2 != idLabel.Value ) //проверка уникальности плаката
+        { 
+          Frame_3.idLabel_3 = idLabel.Value;
+          Frame_3.Set_Label_3.Invoke();
+          Frame_3.Ap_Par_Label_3_Name.Value = Name.Value;  
+          AsokuMain.CreateUserMessage("вывесил плакат '" + Name + "' на " + here.ParDevPath.Value );        
+        }
+        else
+        {
+          UD_Text = "Плакат уже вывешен!";
+          Open_UD_Fault.Invoke();
+        }        
+     }    
+     else //нет свободного места под новый плакат
+     {
+       UD_Text = "Вывешивание более трех плакатов на один выключатель не возможно!";
+       Open_UD_Fault.Invoke();
+     } 
+    }
+  }
+}
+
+]]>
+			</body>
+		</do-on>
+	</object>
+	<designed target="RoundingRadius" value="0" ver="5"/>
+	<object access-modifier="private" name="Name" display-name="имя принимаемого плаката" uuid="fd360e04-4fe3-4ef3-a3a8-9ef9e700a2a7" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Frame_1" display-name="Frame_1" uuid="036521c6-bed2-457c-9b44-f7abcabfad3d" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="50" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="OverrideScaling" value="false" ver="5"/>
+		<designed target="ShowScrollBars" value="true" ver="5"/>
+		<designed target="MoveByMouse" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseRightClick">
+			<body kind="om">
+				<![CDATA[CurrentLabel = "Label1";
+Open_ContextMenu.ContextMenu_X = 	ScreenX(50,0);
+Open_ContextMenu.ContextMenu_Y = ScreenY(0,0)  + 	TypeConvert.ToInt4( here.MouseY);
+
+Open_ContextMenu.Invoke();
+]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Tooltip" ver="5">
+			<body>
+				<![CDATA["Имя плаката: " + this.Ap_Par_Label_1_Name + "\nКомментарий: " + this.Ap_Par_Label_1_Comment ]]>
+			</body>
+		</do-trace>
+		<object access-modifier="private" name="Ap_Par_Label_1_Name" display-name="Ap_Par_Label_1_Name" uuid="b12c7096-bd5f-4a5b-a39b-73a49c6931ad" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+			<init target="Path" ver="5" value="Label1.Name"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnValueChanged">
+				<body kind="om">
+					<![CDATA[Init_Label_1();]]>
+				</body>
+			</do-on>
+			<init target="Source" ver="5" ref="here.Ap_Source_Par"/>
+		</object>
+		<object access-modifier="private" name="Ap_Par_Label_1_Comment" display-name="Ap_Par_Label_1_Comment" uuid="a9e7da5f-2173-419d-8b42-6bd9302d7841" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="here.Ap_Source_Par"/>
+			<init target="Path" ver="5" value="Label1.Comment"/>
+		</object>
+		<object access-modifier="private" name="Set_Label_1" display-name="Set_Label_1" uuid="daa4c2d9-90e4-4f27-884e-650d70c8d59e" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" frame-link="Frame_1" form-action="open-in-frame" form-by-id="true">
+				<object access-modifier="private" uuid="e8d175e7-6009-426a-b339-fc14a92c1a3b" base-type="ObjectId" base-type-id="f02463da-66e4-4383-a2e6-c9005bc87adc" ver="5">
+					<init target="Id" ver="5" ref="idLabel_1"/>
+				</object>
+			</do-on>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="InvokeTrigger" value="false" ver="5"/>
+		</object>
+		<object access-modifier="private" name="idLabel_1" display-name="idLabel_1" uuid="5164ecf3-a331-492c-bb65-ee047c3a7a95" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description="" cardinal="1"/>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Frame_2" display-name="Frame_2" uuid="d6014b91-a9f5-4f9d-ba13-cf92897783e9" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="25" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="50" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="OverrideScaling" value="false" ver="5"/>
+		<designed target="ShowScrollBars" value="true" ver="5"/>
+		<designed target="MoveByMouse" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseRightClick">
+			<body kind="om">
+				<![CDATA[CurrentLabel = "Label2";
+Open_ContextMenu.ContextMenu_X = 	ScreenX(50,0);
+Open_ContextMenu.ContextMenu_Y = ScreenY(0,0)  + 	TypeConvert.ToInt4( here.MouseY) - 25;
+
+Open_ContextMenu.Invoke();
+]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Tooltip" ver="5">
+			<body>
+				<![CDATA["Имя плаката: " + this.Ap_Par_Label_2_Name + "\nКомментарий: " + this.Ap_Par_Label_2_Comment ]]>
+			</body>
+		</do-trace>
+		<object access-modifier="private" name="Ap_Par_Label_2_Name" display-name="Ap_Par_Label_2_Name" uuid="3edebdca-eb0d-4145-9b3c-469a412647d7" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+			<init target="Path" ver="5" value="Label2.Name"/>
+			<init target="Source" ver="5" ref="here.Ap_Source_Par"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnValueChanged">
+				<body kind="om">
+					<![CDATA[Init_Label_2();]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="Ap_Par_Label_2_Comment" display-name="Ap_Par_Label_2_Comment" uuid="e0c90cf7-3a05-40e4-9f20-4e2390856e7b" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="here.Ap_Source_Par"/>
+			<init target="Path" ver="5" value="Label2.Comment"/>
+		</object>
+		<object access-modifier="private" name="Set_Label_2" display-name="Set_Label_2" uuid="3ad3c2d8-bc25-4a9f-9480-e500e41b9dd3" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" frame-link="Frame_2" form-action="open-in-frame" form-by-id="true">
+				<object access-modifier="private" uuid="4da95423-c0be-464a-8a28-c83ecfb45e21" base-type="ObjectId" base-type-id="f02463da-66e4-4383-a2e6-c9005bc87adc" ver="5">
+					<init target="Id" ver="5" ref="idLabel_2"/>
+				</object>
+			</do-on>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="InvokeTrigger" value="false" ver="5"/>
+		</object>
+		<object access-modifier="private" name="idLabel_2" display-name="idLabel_2" uuid="4496a402-b132-4f60-9252-040183924bcc" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description="" cardinal="1"/>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Frame_3" display-name="Frame_3" uuid="cff84a46-38e1-42b9-984a-851c67b617f5" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="50" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="50" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="OverrideScaling" value="false" ver="5"/>
+		<designed target="ShowScrollBars" value="true" ver="5"/>
+		<designed target="MoveByMouse" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseRightClick">
+			<body kind="om">
+				<![CDATA[CurrentLabel = "Label3";
+Open_ContextMenu.ContextMenu_X = 	ScreenX(50,0);
+Open_ContextMenu.ContextMenu_Y = ScreenY(0,0)  + 	TypeConvert.ToInt4( here.MouseY)-50;
+
+Open_ContextMenu.Invoke();
+]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Tooltip" ver="5">
+			<body>
+				<![CDATA["Имя плаката: " + this.Ap_Par_Label_3_Name + "\nКомментарий: " + this.Ap_Par_Label_3_Comment ]]>
+			</body>
+		</do-trace>
+		<object access-modifier="private" name="Ap_Par_Label_3_Name" display-name="Ap_Par_Label_3_Name" uuid="9b6d929d-0646-4be9-bf7a-ce789bf62ace" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+			<init target="Path" ver="5" value="Label3.Name"/>
+			<init target="Source" ver="5" ref="here.Ap_Source_Par"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnValueChanged">
+				<body kind="om">
+					<![CDATA[Init_Label_3();]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="Ap_Par_Label_3_Comment" display-name="Ap_Par_Label_3_Comment" uuid="73925de9-9058-49a0-b2c6-48c166533a0a" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+			<init target="Source" ver="5" ref="here.Ap_Source_Par"/>
+			<init target="Path" ver="5" value="Label2.Comment"/>
+		</object>
+		<object access-modifier="private" name="Set_Label_3" display-name="Set_Label_3" uuid="e1617e5f-76ce-42bf-9b69-9a8867a7d6e7" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" frame-link="Frame_3" form-action="open-in-frame" form-by-id="true">
+				<object access-modifier="private" uuid="f6399733-7bf9-45bf-92d9-0953422905ba" base-type="ObjectId" base-type-id="f02463da-66e4-4383-a2e6-c9005bc87adc" ver="5">
+					<init target="Id" ver="5" ref="idLabel_3"/>
+				</object>
+			</do-on>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="InvokeTrigger" value="false" ver="5"/>
+		</object>
+		<object access-modifier="private" name="idLabel_3" display-name="idLabel_3" uuid="ff6113d7-e2a5-4da0-be08-ff45f05363b8" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description="" cardinal="1"/>
+		<designed target="Flip" value="0" ver="5"/>
+	</object>
+	<do access-modifier="private" name="GetItemLabel" display-name="GetItemLabel" ver="5" type="string" type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d">
+		<body kind="javascript">
+			<![CDATA[//функция получения элемента из списка плакатов
+var obj = FileSystem.ReadTextFile(FileSystem.ParentPath(FileSystem.ProjectFolder) +  "/externals/ASOKU_LAB/resources/data/source.json");
+
+var items = JSON.parse(obj);
+    items = items.Label;
+
+var result = items.filter(d => d.Name === value);
+
+return JSON.stringify(result[0]);
+
+
+
+
+
+
+    ]]>
+		</body>
+		<param access-modifier="private" name="value" display-name="" uuid="84e7c19f-1d60-41e5-9d68-e239a3c592d7" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5"/>
+	</do>
+	<object access-modifier="private" name="CurrentLabel" display-name="текущий выбранный плакат" uuid="34795804-c150-4486-94c4-4e0ea74156e8" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="CurrentLabelName" display-name="CurrentLabelName" uuid="62b4405a-3aff-4f00-83db-5dbf0011442b" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="FileSystem" display-name="FileSystem" uuid="bc9871fa-7468-4f66-8d29-0969a739aeeb" base-type="FileSystem" base-type-id="34d744f9-7303-4077-a3f7-9c06c0945512" ver="5" description="" cardinal="1">
+		<designed target="RootPath" value="/" ver="5"/>
+	</object>
+	<object access-modifier="private" name="DebugTool_1" display-name="DebugTool_1" uuid="4f666199-ccbf-4b4f-9db8-00b528bef1b0" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="5" description="" cardinal="1"/>
+	<do access-modifier="private" name="Init_Label_1" display-name="Init_Label_1" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="javascript">
+			<![CDATA[//Функция отображения 1го плаката
+if(Frame_1.Ap_Par_Label_1_Name.Value != "")
+{ 
+  //размещение 1го плаката во фрейме 
+  var items = JSON.parse(GetItemLabel(Frame_1.Ap_Par_Label_1_Name.Value));
+  var res = items["Panel"];
+
+  if(res != "-1")  
+  {
+    Frame_1.Visible = true;
+    Frame_1.idLabel_1 = res;     
+    Frame_1.Set_Label_1.Invoke();
+  } 
+}
+else
+{
+  //свдиг плакатов вверх, после удаления 1го плаката
+  if(Frame_3.Ap_Par_Label_3_Name.Value != "")//если было 3 плаката
+  {
+     Frame_1.Ap_Par_Label_1_Name.Value = Frame_2.Ap_Par_Label_2_Name.Value;
+     Frame_1.Ap_Par_Label_1_Comment.Value = Frame_2.Ap_Par_Label_2_Comment.Value;
+     
+     Frame_2.Ap_Par_Label_2_Name.Value = Frame_3.Ap_Par_Label_3_Name.Value;
+     Frame_2.Ap_Par_Label_2_Comment.Value = Frame_3.Ap_Par_Label_3_Comment.Value;
+     
+     Frame_3.Ap_Par_Label_3_Name.Value = "";
+     Frame_3.Ap_Par_Label_3_Comment.Value = "";
+    
+  }
+  else
+  {
+    if (Frame_2.Ap_Par_Label_2_Name.Value != "")//если было 2 плаката
+    {
+      Frame_1.Ap_Par_Label_1_Name.Value = Frame_2.Ap_Par_Label_2_Name.Value;
+      Frame_1.Ap_Par_Label_1_Comment.Value = Frame_2.Ap_Par_Label_2_Comment.Value;
+      
+      Frame_2.Ap_Par_Label_2_Name.Value = "";
+      Frame_2.Ap_Par_Label_2_Comment.Value = "";
+    }
+    else Frame_1.Visible = false; //если был 1 плакат        
+  }  
+}
+
+
+]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="Init_Label_2" display-name="Init_Label_2" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="javascript">
+			<![CDATA[//Функция отображения 2го плаката
+if(Frame_2.Ap_Par_Label_2_Name.Value != "")
+{
+  //размещение 2го плаката во фрейме   
+  var items = JSON.parse(GetItemLabel(Frame_2.Ap_Par_Label_2_Name.Value));
+  var res = items["Panel"];
+  if(res != "-1")  
+  {
+    Frame_2.Visible = true;
+    Frame_2.idLabel_2 = res;
+    Frame_2.Set_Label_2.Invoke();
+  } 
+}
+else //удаление плакатов
+{
+    if(Frame_3.Ap_Par_Label_3_Name.Value != "") //сдвиг плакатов вверх, после удаления
+    {         
+     Frame_2.Ap_Par_Label_2_Name.Value = Frame_3.Ap_Par_Label_3_Name.Value;
+     Frame_2.Ap_Par_Label_2_Comment.Value = Frame_3.Ap_Par_Label_3_Comment.Value;
+     
+     Frame_3.Ap_Par_Label_3_Name.Value = "";
+     Frame_3.Ap_Par_Label_3_Comment.Value = "";
+   }
+   else Frame_2.Visible = false;    
+       
+}
+
+]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="Init_Label_3" display-name="Init_Label_3" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="javascript">
+			<![CDATA[//Функция отображения 3го плаката
+if(Frame_3.Ap_Par_Label_3_Name.Value != "")
+{  
+  var items = JSON.parse(GetItemLabel(Frame_3.Ap_Par_Label_3_Name.Value));
+  var res = items["Panel"];
+
+  if(res != "-1")  
+  {
+    Frame_3.Visible = true;  
+    Frame_3.idLabel_3 = res;
+
+    Frame_3.Set_Label_3.Invoke();
+  } 
+}
+else Frame_3.Visible = false;  
+]]>
+		</body>
+	</do>
+	<object access-modifier="private" name="Open_ContextMenu" display-name="Open_ContextMenu" uuid="2e5710c5-4e04-4e0d-928a-350ca2a626f6" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-new" form-by-id="false">
+			<object access-modifier="private" uuid="925a032f-1421-49a5-8357-46d1d2078604" base-type="Menu" base-type-id="07bb4545-980a-4140-bbaa-4d1397447864" ver="5">
+				<init target="Items" ver="5">
+					<expr>
+						<![CDATA[GetContextMenu()]]>
+					</expr>
+				</init>
+				<designed target="WindowPosition" value="0" ver="5"/>
+				<designed target="X" value="0" ver="5"/>
+				<init target="WindowX" ver="5" ref="ContextMenu_X"/>
+				<init target="WindowY" ver="5" ref="ContextMenu_Y"/>
+				<init target="pResult" ver="5" ref="here.Open_ContextMenu.ContextMenuResult"/>
+				<init target="pAction" ver="5" ref="here.Open_ContextMenu.Action_ContextMenu"/>
+			</object>
+		</do-on>
+		<object access-modifier="private" name="ContextMenuResult" display-name="ContextMenuResult" uuid="fb10eab0-c2e3-4a68-9d89-7b6656e1414f" base-type="MenuResult" base-type-id="0fe7658c-92f4-4af7-b038-3594414ac651" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="ContextMenu_X" display-name="ContextMenu_X" uuid="9ace94aa-e800-48d3-87f2-be7a0da5e2b3" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="ContextMenu_Y" display-name="ContextMenu_Y" uuid="c63f66d9-e489-4068-b7ff-b2ac5cb63b25" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="Action_ContextMenu" display-name="Action_ContextMenu" uuid="942e39d9-b9e7-44b2-a4aa-9f97b7c21051" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="InvokeTrigger" value="false" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked">
+				<body kind="om">
+					<![CDATA[//команда обработки результатов выбора в контекстном меню
+ 
+if( Open_ContextMenu.ContextMenuResult.Id == "removeLabel")//удаление плакатов
+{
+  if (!AsokuMain.IsNotWeb()) {Open_UD_WebClient.Invoke();}
+  else if (AsokuUserRights.LocatingLabels.Value == true)//проверка прав пользователя
+  {
+    if (CurrentLabel == "Label1")
+    {
+     AsokuMain.CreateUserMessage("снял плакат '" + Frame_1.Ap_Par_Label_1_Name.Value + "' на " + here.ParDevPath.Value );
+     Frame_1.Ap_Par_Label_1_Name.Value = "";
+     Frame_1.Ap_Par_Label_1_Comment.Value = "";   
+     Frame_1.idLabel_1 = "";  
+     
+    }
+    else 
+    {
+      if (CurrentLabel == "Label2")
+      {
+       AsokuMain.CreateUserMessage("снял плакат '" + Frame_2.Ap_Par_Label_2_Name.Value + "' на " + here.ParDevPath.Value );
+       Frame_2.Ap_Par_Label_2_Name.Value = "";
+       Frame_2.Ap_Par_Label_2_Comment.Value = "";  
+       Frame_2.idLabel_2 = "";     
+      }
+      else if (CurrentLabel == "Label3")
+      {
+       AsokuMain.CreateUserMessage("снял плакат '" + Frame_3.Ap_Par_Label_3_Name.Value + "' на " + here.ParDevPath.Value );
+       Frame_3.Ap_Par_Label_3_Name.Value = "";
+       Frame_3.Ap_Par_Label_3_Comment.Value = ""; 
+       Frame_3.idLabel_3 = "";      
+      }
+    }
+   }
+   else
+   {
+     UD_Text = "Для выполнения указанного действия Вам не хватает полномочий.\nОбратитесь к Администратору";
+     Open_UD_Fault.Invoke();   
+   }
+}
+else //открытие панели задания комментария для выбранного плаката
+{
+  if (!AsokuMain.IsNotWeb()) {Open_UD_WebClient.Invoke();}
+  else if (AsokuUserRights.LocatingLabels.Value == true)//проверка прав пользователя
+  {
+    ParDevPathLabel= ParDevPath + "." + CurrentLabel;
+    if (CurrentLabel == "Label1") CurrentLabelName = Frame_1.Ap_Par_Label_1_Name.Value;
+    else
+    {
+      if (CurrentLabel == "Label2") CurrentLabelName = Frame_2.Ap_Par_Label_2_Name.Value;
+      else CurrentLabelName = Frame_3.Ap_Par_Label_3_Name.Value;
+    }
+    Open_LabelComment.Invoke();
+  }  
+  else
+  {
+     UD_Text = "Для выполнения указанного действия Вам не хватает полномочий.\nОбратитесь к Администратору";
+     Open_UD_Fault.Invoke();   
+  }
+}
+]]>
+				</body>
+			</do-on>
+		</object>
+	</object>
+	<do access-modifier="private" name="GetContextMenu" display-name="GetContextMenu" ver="5" type="string" type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d">
+		<body kind="javascript">
+			<![CDATA[//функция задания пунктов контекстного меню
+var items=[];
+items.push({'id':"removeLabel",'title':"Снять плакат",'active':true});
+items.push({'id':"setComment",'title':"Задать комментарий",'active':true});
+
+return JSON.stringify(items);]]>
+		</body>
+	</do>
+	<object access-modifier="private" name="Open_LabelComment" display-name="Open_LabelComment" uuid="e22eed3b-8dc9-4331-8b00-213cb3802030" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-new" form-by-id="false">
+			<object access-modifier="private" uuid="a58c35e6-a544-4c43-8602-0e07d240b2c5" base-type="LabelComment" base-type-id="0740913e-07e5-446b-ada4-088226561fe2" ver="5">
+				<init target="ParDevPath" ver="5" ref="here.ParDevPath"/>
+				<init target="ParDevPathLabel" ver="5" ref="here.ParDevPathLabel"/>
+				<init target="NameLabel" ver="5" ref="here.CurrentLabelName"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="ParDevPathLabel" display-name="ParDevPathLabel" uuid="d9745942-1827-4a08-b0a5-402da369bce6" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Open_UD_WebClient" display-name="Open_UD_WebClient" uuid="c38a46aa-cfbc-423e-bd6b-5b321e41a796" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-dialog" form-by-id="false">
+			<object access-modifier="private" uuid="dfa272b1-699b-473d-aad2-b1ff7c48f29e" base-type="UserDialog" base-type-id="3c54f3db-a950-487c-861e-56a8d2eba70d" ver="5">
+				<init target="Icon" ver="5" value="0"/>
+				<init target="Buttons" ver="5" value="0"/>
+				<init target="Header" ver="5" value="Использование WEB-клиента"/>
+				<init target="Message" ver="5" value="Вы используете WEB-клиент для работы с проектом.\nДля использования полного функционала воспользуйтесь настольной версией приложения"/>
+			</object>
+		</do-on>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Open_UD_Fault" display-name="Open_UD_Fault" uuid="dbce5291-6fda-4962-b367-82ed30d790c1" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-dialog" form-by-id="false">
+			<object access-modifier="private" uuid="169be872-a303-45dd-8406-ab02bd9d90ee" base-type="UserDialog" base-type-id="3c54f3db-a950-487c-861e-56a8d2eba70d" ver="5">
+				<init target="Message" ver="5" ref="here.UD_Text"/>
+				<init target="Icon" ver="5" value="0"/>
+				<init target="Buttons" ver="5" value="0"/>
+				<init target="Header" ver="5" value="Предупреждение"/>
+			</object>
+		</do-on>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+	</object>
+	<object access-modifier="private" name="UD_Text" display-name="UD_Text" uuid="f3976cf4-ddd8-4e5f-905e-230e8d68ec6c" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<designed target="Flip" value="0" ver="5"/>
+</type>
+

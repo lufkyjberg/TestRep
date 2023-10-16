@@ -1,0 +1,578 @@
+<type access-modifier="public" name="SegmentedEllipse" display-name="Сегментированный эллипс (до 18 сигналов)" uuid="18de0389-5deb-49c5-917f-4dd707e26840" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="3" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="160" ver="5"/>
+	<designed target="Height" value="160" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="1" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="4278190080" ver="5"/>
+	<designed target="BrushStyle" value="0" ver="5"/>
+	<designed target="PieAngle" value="360" ver="5"/>
+	<designed target="PieAngleStart" value="360" ver="5"/>
+	<designed target="HoleSize" value="0" ver="5"/>
+	<object access-modifier="private" name="Ellipse_InMain" display-name="Ellipse_InMain" uuid="900b278f-c7e3-457e-9136-b76118732a2a" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="18">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="false" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="160" ver="5"/>
+		<designed target="Height" value="160" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="5" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<object access-modifier="private" name="ApMaxValue" display-name="ApMaxValue" uuid="5166f06e-602b-4711-94d6-4c9265cf0024" base-type="ApItemFloat" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[ParDevPathValue + ".MaxValue"]]>
+				</body>
+			</do-trace>
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		</object>
+		<object access-modifier="private" name="ApMinValue" display-name="ApMinValue" uuid="384849a6-3767-4f64-97b4-b4ee6861011f" base-type="ApItemFloat" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[ParDevPathValue + ".MinValue"]]>
+				</body>
+			</do-trace>
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		</object>
+		<object access-modifier="private" name="ApStatusBytes" display-name="ApStatusBytes" uuid="b566970f-a123-4e66-8c2a-6448c557ec4f" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="1">
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[ParDevPathValue + ".StatusBytes"]]>
+				</body>
+			</do-trace>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnValueChanged">
+				<body kind="om">
+					<![CDATA[/*if (ApStatusBytes.Value == AsokuConst.StatusBytes.Changed) {
+	PenColor = AsokuColor.asokuCyan;	
+	ZValue = 1;	
+}
+else if (ApStatusBytes.Value == AsokuConst.StatusBytes.Invalid) {
+	Ellipse_Value.BrushColor = AsokuColor.asokuBlack;
+}
+else {
+	PenColor = AsokuColor.asokuBlack;	
+	ZValue = 0;
+	Ellipse_Value.ZValue = -1;
+}*/]]>
+				</body>
+			</do-on>
+			<init target="Path" ver="5" value=""/>
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		</object>
+		<object access-modifier="private" name="ApAlarmBytes" display-name="ApAlarmBytes" uuid="5acec68b-f80e-4690-8717-298f21023876" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="1">
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[parent.ParDevPathValue + ".AlarmBytes"]]>
+				</body>
+			</do-trace>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnValueChanged">
+				<body kind="om">
+					<![CDATA[CurrentParentAB:uint2 = ApAlarmBytes.Value; //передача переменной пути до alarmbytes
+if (CurrentParentAB == AsokuConst.AlarmBytes.WarningAndAlarm.Value || CurrentParentAB == AsokuConst.AlarmBytes.Alarm.Value ){
+	Ellipse_Value.BrushColor = AsokuColor.asokuRed;	
+}
+else if (CurrentParentAB == AsokuConst.AlarmBytes.Warning.Value){
+	Ellipse_Value.BrushColor = AsokuColor.asokuYellow;
+}
+else{
+	Ellipse_Value.BrushColor = AsokuColor.asokuGreen;	
+}]]>
+				</body>
+			</do-on>
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		</object>
+		<object access-modifier="private" name="ParDevPathValue" display-name="ParDevPathValue" uuid="c5b92081-17fa-4a25-aaeb-0959c094b78a" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseEnter">
+			<body kind="javascript">
+				<![CDATA[this.PenWidth = this.PenWidth + 1
+this.PenColor = AsokuColor.asokuGrey
+this.ZValue = 1]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="MouseLeave">
+			<body kind="javascript">
+				<![CDATA[if (this.ApStatusBytes.Value == AsokuConst.StatusBytes.Changed.Value) {this.PenColor = AsokuColor.asokuCyan}
+else {this.PenColor = AsokuColor.asokuBlack}
+this.PenWidth = this.PenWidth - 1
+this.ZValue = 0]]>
+			</body>
+		</do-on>
+		<object access-modifier="private" name="OpenTrendView" display-name="OpenTrendView" uuid="43c86885-4f6c-4b0c-9906-353bfe5a48a5" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="InvokeTrigger" value="false" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-new" form-by-id="false">
+				<object access-modifier="private" uuid="c92ad254-d1a8-4f79-906a-00472a37fb0d" base-type="TrendView" base-type-id="635eeb20-53b6-4787-8ce7-142a64cd0e89" ver="5">
+					<init target="ParDevPath" ver="5" ref="ParDevPathValue"/>
+					<designed target="MonitorNumber" value="1" ver="5"/>
+				</object>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="OpenInfoTabView" display-name="OpenInfoTabView" uuid="332fb0ab-0efc-48e2-b145-3a98d37aedcf" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="InvokeTrigger" value="false" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-action="open-new" form-by-id="false">
+				<object access-modifier="private" uuid="ae083cc3-1b60-4198-9d95-68d3a20d86f5" base-type="InfoTabView" base-type-id="146efb0d-a148-4c91-94ff-f69c196a5132" ver="5">
+					<init target="PanelType" ver="5" value="информация"/>
+					<init target="ParameterType" ver="5" value="AI"/>
+					<init target="ParDevPath" ver="5" ref="ParDevPathValue"/>
+					<designed target="MonitorNumber" value="1" ver="5"/>
+				</object>
+			</do-on>
+		</object>
+		<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="5" event="MouseClick">
+			<body kind="javascript">
+				<![CDATA[if(this.ApValue.Advised)
+{
+  if (AsokuMain.WindowGroup_TrendView.WindowCount < 1) this.OpenTrendView.Invoke(); //открыть панель тренда
+  else 
+  {
+    AsokuMain.WindowGroup_TrendView.SendToAll("sendmessage", this.ParDevPathValue.Value); //передача в TrendView тега сигнала для добавления графика
+  }
+}]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_4" display-name="Handler_4" ver="5" event="MouseRightClick">
+			<body kind="javascript">
+				<![CDATA[if(this.ApValue.Advised) this.OpenInfoTabView.Invoke()]]>
+			</body>
+		</do-on>
+		<object access-modifier="private" name="Ellipse_Value" display-name="Ellipse_Value" uuid="392e81b7-f59e-4ddc-bfa0-783cde216f72" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="0" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="false" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="160" ver="5"/>
+			<designed target="Height" value="160" ver="5"/>
+			<designed target="PenColor" value="0xff000000" ver="5"/>
+			<designed target="PenStyle" value="0" ver="5"/>
+			<designed target="PenWidth" value="0" ver="5"/>
+			<designed target="BrushColor" value="0xff89c8ff" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+			<designed target="PieAngle" value="360" ver="5"/>
+			<designed target="PieAngleStart" value="360" ver="5"/>
+			<designed target="HoleSize" value="0" ver="5"/>
+			<do-trace access-modifier="private" target="BrushColor" ver="5">
+				<conditional-expr>
+					<condition>
+						<![CDATA[ApStatusBytes.Value == AsokuConst.StatusBytes.Invalid]]>
+					</condition>
+					<expr>
+						<![CDATA[AsokuColor.asokuBlack]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[ApAlarmBytes.Value == AsokuConst.AlarmBytes.WarningAndAlarm.Value || ApAlarmBytes.Value == AsokuConst.AlarmBytes.Alarm.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[AsokuColor.asokuRed]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[ApAlarmBytes.Value == AsokuConst.AlarmBytes.Warning.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[AsokuColor.asokuYellow]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[AsokuColor.asokuGreen]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+		<do-trace access-modifier="private" target="Tooltip" ver="5">
+			<body>
+				<![CDATA["Наименование: " + this.Ap_Name.Value + "\nПояснение: " + this.Ap_Description.Value +"\nИсточник: "+ this.Ap_Comment.Value + "\nстатус: "+ String.ToString(this.ApValue.Quality) + 
+"\nвремя: "+ 
+DateTime.ToString(this.ApValue.TimeStamp)+
+"\nнеисправность: "+ String.ToString(this.ApStatusBytes) + 
+"\nпределы: "+ String.ToString(this.ApAlarmBytes)]]>
+			</body>
+		</do-trace>
+		<object access-modifier="private" name="Ap_Name" display-name="Ap_Name" uuid="dc229206-e5f4-4eea-aa86-088678b09890" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[ParDevPathValue + ".Name"]]>
+				</body>
+			</do-trace>
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		</object>
+		<object access-modifier="private" name="Ap_Comment" display-name="Ap_Comment" uuid="bc52bc00-1e77-4e58-8d39-79faf6442dfc" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[ParDevPathValue + ".Comment"]]>
+				</body>
+			</do-trace>
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		</object>
+		<object access-modifier="private" name="Ap_Description" display-name="Ap_Description" uuid="64b03d6e-0e20-430c-ba69-a62f95459759" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[ParDevPathValue + ".Description"]]>
+				</body>
+			</do-trace>
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		</object>
+		<object access-modifier="private" name="Ap_DisplayFormat" display-name="Ap_DisplayFormat" uuid="90e2c2bf-ea70-4cbd-b88d-c6b9e2adb14b" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[ParDevPathValue + ".DisplayFormat"]]>
+				</body>
+			</do-trace>
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		</object>
+		<object access-modifier="private" name="ApValue" display-name="ApValue" uuid="0c015fb1-4621-4be7-9bee-386ad539da21" base-type="ApItemFloat" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnValueChanged">
+				<body kind="om">
+					<![CDATA[if (Ellipse_Inverted.Value == false){ // при прямом ходе ползунка
+	CurrentParentV:float = ApValue.Value; // передача переменной значения до value
+	CurrentParentMaxV:float = ApMaxValue.Value; // передача переменной значения до maxvalue
+	CurrentParentMinV:float = ApMinValue.Value; // передача переменной значения до minvalue
+	Ellipse_Value.Width = Width * HoleSize + (CurrentParentV - CurrentParentMinV) / (CurrentParentMaxV - CurrentParentMinV) * Width * (1 - HoleSize); //формула для расчета ширины
+	Ellipse_Value.Height = Height * HoleSize + (CurrentParentV - CurrentParentMinV) / (CurrentParentMaxV - CurrentParentMinV) * Width * (1 - HoleSize);//формула для расчета высоты
+	Ellipse_Value.X = Width / 2 - ((Width * HoleSize + (CurrentParentV - CurrentParentMinV) / (CurrentParentMaxV - CurrentParentMinV) * Width * (1 - HoleSize)) / 2); //формула для расчета координаты по х
+	Ellipse_Value.Y = Height / 2 - ((Height * HoleSize + (CurrentParentV - CurrentParentMinV) / (CurrentParentMaxV - CurrentParentMinV) * Height * (1 - HoleSize)) / 2); //формула для расчета координаты по у
+	Ellipse_Value.HoleSize = 1 - ((CurrentParentV - CurrentParentMinV) / (CurrentParentMaxV - CurrentParentMinV) * Width * (1 - HoleSize)) / (Width * HoleSize + ((CurrentParentV - CurrentParentMinV) / (CurrentParentMaxV - CurrentParentMinV) * Width * (1 - HoleSize))); //формула для расчета размера отверстия
+}
+else { //при обратном ходе ползунка
+	CurrentParentV:float = ApValue.Value;
+	CurrentParentMaxV:float = ApMaxValue.Value;
+	CurrentParentMinV:float = ApMinValue.Value;
+	Ellipse_Value.HoleSize = (Width * HoleSize + (CurrentParentMaxV - CurrentParentV) / (CurrentParentMaxV - CurrentParentMinV) * Width * (1 - HoleSize)) / (Width);
+}]]>
+				</body>
+			</do-on>
+			<do-trace access-modifier="private" target="Path" ver="5">
+				<body>
+					<![CDATA[parent.ParDevPathValue + ".Value"]]>
+				</body>
+			</do-trace>
+			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		</object>
+		<do-trace access-modifier="private" target="ZValue" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApStatusBytes.Value == AsokuConst.StatusBytes.Changed]]>
+				</condition>
+				<expr>
+					<![CDATA[1]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="PenColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApStatusBytes.Value == AsokuConst.StatusBytes.Changed]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuCyan]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[AsokuColor.asokuBlack]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ParDevPath" display-name='Пути параметров через " | " (до 18 сигналов)' uuid="e5c656c1-df38-4391-bde4-12c5df5b04f6" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ValueChanged">
+			<body kind="javascript">
+				<![CDATA[let array = ParDevPath.Value.split(" | "); // присвоение переменной array значения
+const circle = 360; // константа 360 градусов
+for (let i = 0; i < array.length; i++) { // цикл с условием по количеству путей
+	let path = array[i];
+
+	if (i == 0) { //передача источникам пути до первого сигнала
+		ApHH_0.Path = path + ".SP_HH.LimitValue";
+		ApH_0.Path = path + ".SP_H.LimitValue";
+		ApL_0.Path = path + ".SP_L.LimitValue";
+		ApLL_0.Path = path + ".SP_LL.LimitValue";
+		ApMinV_0.Path = path + ".MinValue";
+		ApMaxV_0.Path = path + ".MaxValue";
+		ApParHH.Path = path + ".SP_HH.On";
+		ApParH.Path = path + ".Sp_H.On";
+		ApParL.Path = path + ".SP_L.On";
+		ApParLL.Path = path + ".Sp_LL.On";
+	}
+	
+	Ellipse_InMain[i].ParDevPathValue.Value = path; // передача path пути до pardevpathvalue
+	Ellipse_InMain[i].Width = here.Width; 
+	Ellipse_InMain[i].Height = here.Height;
+	Ellipse_InMain[i].Visible = true; 
+	Ellipse_InMain[i].PieAngle = circle / array.length; //формула для расчета сегмента
+	Ellipse_InMain[i].PieAngleStart = circle - circle / array.length * i; //формула для расчета расположения сегментов по кругу
+	Ellipse_InMain[i].HoleSize = here.HoleSize;
+	Ellipse_InMain[i].Ellipse_Value.Visible = true; 
+	Ellipse_InMain[i].Ellipse_Value.PieAngle = circle / array.length - 0.6;
+	Ellipse_InMain[i].Ellipse_Value.PieAngleStart = circle - circle / array.length * i;
+	
+	if (Ellipse_Inverted == true) {  //если ход ползунка обратный
+		Ellipse_InMain[i].Ellipse_Value.Width = Ellipse_InMain.Width;
+		Ellipse_InMain[i].Ellipse_Value.Height = Ellipse_InMain.Height;
+		Ellipse_InMain[i].Ellipse_Value.X = Ellipse_InMain.X;
+		Ellipse_InMain[i].Ellipse_Value.Y = Ellipse_InMain.Y;	
+		Ellipse_InMain[i].Ellipse_Value.PieAngle = circle / array.length - 0.77; //формула для расчета сегмента
+	}
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Ellipse_HH" display-name="Ellipse_HH" uuid="22649e8e-2855-4d46-8644-139f66c84694" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="16.666666666666664" ver="5"/>
+		<designed target="Y" value="26.666666666666664" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="false" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<designed target="PenColor" value="0xffff0000" ver="5"/>
+		<designed target="PenStyle" value="2" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body>
+				<![CDATA[ApParHH.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Ellipse_H" display-name="Ellipse_H" uuid="3b93ee86-1e6b-4df8-bff5-342ca3c28da0" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="43.333333333333329" ver="5"/>
+		<designed target="Y" value="43.333333333333329" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="false" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<designed target="PenColor" value="0xffffff00" ver="5"/>
+		<designed target="PenStyle" value="2" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body>
+				<![CDATA[ApParH.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Ellipse_Inverted" display-name="Инвертированное движение накопительной части" uuid="f2447c61-012a-4d2c-907e-b98a3af1b91d" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ApHH_0" display-name="ApHH_0" uuid="22ef5b8f-3543-4d99-8daa-58d10958e49f" base-type="ApItemFloat" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnValueChanged">
+			<body kind="javascript">
+				<![CDATA[let CurrentParentV = ApHH_0.Value; //создание переменных и присвоение им значений
+let CurrentParentMaxV = ApMaxV_0.Value;
+let CurrentParentMinV = ApMinV_0.Value;
+if (Ellipse_Inverted.Value == false) { //при прямом ходе ползунка
+	Ellipse_HH.Width = here.Width * here.HoleSize + (CurrentParentV - CurrentParentMinV) / (CurrentParentMaxV - CurrentParentMinV) * here.Width * (1 - here.HoleSize); // формула для расчета ширины
+	Ellipse_HH.Height = here.Height * here.HoleSize + (CurrentParentV - CurrentParentMinV) / (CurrentParentMaxV - CurrentParentMinV) * here.Width * (1 - here.HoleSize); //формула для расчета высоты
+	Ellipse_HH.X = 0 + here.Width / 2 - ((here.Width * here.HoleSize + (CurrentParentV - CurrentParentMinV) / (CurrentParentMaxV - CurrentParentMinV) * here.Width * (1 - here.HoleSize)) / 2); //формула для расчета координаты по х
+	Ellipse_HH.Y = 0 + here.Height / 2 - ((here.Height * here.HoleSize + (CurrentParentV - CurrentParentMinV) / (CurrentParentMaxV - CurrentParentMinV) * here.Height * (1 - here.HoleSize)) / 2);//формула для расчета координаты по у
+}
+else { //при обратном ходе ползунка
+	Ellipse_HH.Width = here.Width * here.HoleSize + (CurrentParentMaxV - CurrentParentV) / (CurrentParentMaxV - CurrentParentMinV) * here.Width * (1 - here.HoleSize);// формула для расчета ширины
+	Ellipse_HH.Height = here.Height * here.HoleSize + (CurrentParentMaxV - CurrentParentV) / (CurrentParentMaxV - CurrentParentMinV) * here.Width * (1 - here.HoleSize); // формула для расчета высоты
+	Ellipse_HH.X = 0 + here.Width / 2 - ((here.Width * here.HoleSize + (CurrentParentMaxV - CurrentParentV) / (CurrentParentMaxV - CurrentParentMinV) * here.Width * (1 - here.HoleSize)) / 2); //формула для расчета координаты по х
+	Ellipse_HH.Y = 0 + here.Height / 2 - ((here.Height * here.HoleSize + (CurrentParentMaxV - CurrentParentV) / (CurrentParentMaxV - CurrentParentMinV) * here.Height * (1 - here.HoleSize)) / 2); //формула для расчета координаты по у
+}
+
+]]>
+			</body>
+		</do-on>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApH_0" display-name="ApH_0" uuid="2fcf759a-aa71-4eee-ae59-b614d5cc05cd" base-type="ApItemFloat" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="OnValueChanged">
+			<body kind="javascript">
+				<![CDATA[let CurrentParentV = ApH_0.Value;
+let CurrentParentMaxV = ApMaxV_0.Value;
+let CurrentParentMinV = ApMinV_0.Value;
+if (Ellipse_Inverted.Value == false){ //при прямом ходе ползунка
+	Ellipse_H.Width = here.Width * here.HoleSize + (CurrentParentV - CurrentParentMinV) / (CurrentParentMaxV - CurrentParentMinV) * here.Width * (1 - here.HoleSize); // формулы для расчета ширины
+	Ellipse_H.Height = here.Height * here.HoleSize + (CurrentParentV - CurrentParentMinV) / (CurrentParentMaxV - CurrentParentMinV) * here.Width * (1 - here.HoleSize); //формула для расчета высоты
+	Ellipse_H.X = 0 + here.Width / 2 - ((here.Width * here.HoleSize + (CurrentParentV - CurrentParentMinV) / (CurrentParentMaxV - CurrentParentMinV) * here.Width * (1 - here.HoleSize)) / 2); //формула для расчета координаты по х
+	Ellipse_H.Y = 0 + here.Height / 2 - ((here.Height * here.HoleSize + (CurrentParentV - CurrentParentMinV) / (CurrentParentMaxV - CurrentParentMinV) * here.Height * (1 - here.HoleSize)) / 2); //формула для расчета координаты по у
+}	
+else { //при обратном
+	Ellipse_H.Width = here.Width * here.HoleSize + (CurrentParentMaxV - CurrentParentV) / (CurrentParentMaxV - CurrentParentMinV) * here.Width * (1 - here.HoleSize); //формула для расчета ширины
+	Ellipse_H.Height = here.Height * here.HoleSize + (CurrentParentMaxV - CurrentParentV) / (CurrentParentMaxV - CurrentParentMinV) * here.Width * (1 - here.HoleSize); //формула для расчета высоты
+	Ellipse_H.X = 0 + here.Width / 2 - ((here.Width * here.HoleSize + (CurrentParentMaxV - CurrentParentV) / (CurrentParentMaxV - CurrentParentMinV) * here.Width * (1 - here.HoleSize)) / 2); //формула для расчета координаты по х
+	Ellipse_H.Y = 0 + here.Height / 2 - ((here.Height * here.HoleSize + (CurrentParentMaxV - CurrentParentV) / (CurrentParentMaxV - CurrentParentMinV) * here.Height * (1 - here.HoleSize)) / 2); //формула для расчета координаты по у
+}]]>
+			</body>
+		</do-on>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApMaxV_0" display-name="ApMaxV_0" uuid="fdb679dc-6360-413a-b7e7-e36b10e36896" base-type="ApItemFloat" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApMinV_0" display-name="ApMinV_0" uuid="6cc4b6a3-177e-4782-ad39-1eb51a7870a3" base-type="ApItemFloat" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApParHH" display-name="ApParHH" uuid="f609a80f-ab71-4a72-84ea-2958192dddd7" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApParH" display-name="ApParH" uuid="44bb894c-a6f9-4d1a-a0d1-2e008035d860" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="Ellipse_L" display-name="Ellipse_L" uuid="e946b5a1-6a29-4cfa-904a-d914a0483e88" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="80" ver="5"/>
+		<designed target="Y" value="90" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="false" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<designed target="PenColor" value="0xffffff00" ver="5"/>
+		<designed target="PenStyle" value="2" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body>
+				<![CDATA[ApParL.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Ellipse_LL" display-name="Ellipse_LL" uuid="d70d90ef-2fb4-464c-beb5-e5e25055deb1" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="57" ver="5"/>
+		<designed target="Y" value="80" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="false" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="100" ver="5"/>
+		<designed target="PenColor" value="0xffff0000" ver="5"/>
+		<designed target="PenStyle" value="2" ver="5"/>
+		<designed target="PenWidth" value="2" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="Visible" ver="5">
+			<body>
+				<![CDATA[ApParLL.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ApParL" display-name="ApParL" uuid="cf19df2c-3f69-41e0-a079-b4eaa7a3171e" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApParLL" display-name="ApParLL" uuid="94b3469e-cd7e-4a9e-baf2-c846aa591387" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApL_0" display-name="ApL_0" uuid="ed5cb99d-044f-4912-806d-33118e37d535" base-type="ApItemFloat" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnValueChanged">
+			<body kind="javascript">
+				<![CDATA[let CurrentParentV = ApL_0.Value;
+let CurrentParentMaxV = ApMaxV_0.Value;
+let CurrentParentMinV = ApMinV_0.Value;
+if (Ellipse_Inverted.Value == false) {
+	Ellipse_L.Width = here.Width * here.HoleSize + (CurrentParentV - CurrentParentMinV) / (CurrentParentMaxV - CurrentParentMinV) * here.Width * (1 - here.HoleSize);
+	Ellipse_L.Height = here.Height * here.HoleSize + (CurrentParentV - CurrentParentMinV) / (CurrentParentMaxV - CurrentParentMinV) * here.Width * (1 - here.HoleSize);
+	Ellipse_L.X = 0 + here.Width / 2 - ((here.Width * here.HoleSize + (CurrentParentV - CurrentParentMinV) / (CurrentParentMaxV - CurrentParentMinV) * here.Width * (1 - here.HoleSize)) / 2);
+	Ellipse_L.Y = 0 + here.Height / 2 - ((here.Height * here.HoleSize + (CurrentParentV - CurrentParentMinV) / (CurrentParentMaxV - CurrentParentMinV) * here.Height * (1 - here.HoleSize)) / 2);
+}
+else {
+	Ellipse_L.Width = here.Width * here.HoleSize + (CurrentParentMaxV - CurrentParentV) / (CurrentParentMaxV - CurrentParentMinV) * here.Width * (1 - here.HoleSize);
+	Ellipse_L.Height = here.Height * here.HoleSize + (CurrentParentMaxV - CurrentParentV) / (CurrentParentMaxV - CurrentParentMinV) * here.Width * (1 - here.HoleSize);
+	Ellipse_L.X = 0 + here.Width / 2 - ((here.Width * here.HoleSize + (CurrentParentMaxV - CurrentParentV) / (CurrentParentMaxV - CurrentParentMinV) * here.Width * (1 - here.HoleSize)) / 2);
+	Ellipse_L.Y = 0 + here.Height / 2 - ((here.Height * here.HoleSize + (CurrentParentMaxV - CurrentParentV) / (CurrentParentMaxV - CurrentParentMinV) * here.Height * (1 - here.HoleSize)) / 2);
+}
+]]>
+			</body>
+		</do-on>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApLL_0" display-name="ApLL_0" uuid="38db0015-c3ad-4d13-9aaa-17c2b19b02af" base-type="ApItemFloat" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnValueChanged">
+			<body kind="javascript">
+				<![CDATA[let CurrentParentV = ApLL_0.Value;
+let CurrentParentMaxV = ApMaxV_0.Value;
+let CurrentParentMinV = ApMinV_0.Value;
+if (Ellipse_Inverted.Value == false) {
+	Ellipse_LL.Width = here.Width * here.HoleSize + (CurrentParentV - CurrentParentMinV) / (CurrentParentMaxV - CurrentParentMinV) * here.Width * (1 - here.HoleSize);
+	Ellipse_LL.Height = here.Height * here.HoleSize + (CurrentParentV - CurrentParentMinV) / (CurrentParentMaxV - CurrentParentMinV) * here.Width * (1 - here.HoleSize);
+	Ellipse_LL.X = 0 + here.Width / 2 - ((here.Width * here.HoleSize + (CurrentParentV - CurrentParentMinV) / (CurrentParentMaxV - CurrentParentMinV) * here.Width * (1 - here.HoleSize)) / 2);
+	Ellipse_LL.Y = 0 + here.Height / 2 - ((here.Height * here.HoleSize + (CurrentParentV - CurrentParentMinV) / (CurrentParentMaxV - CurrentParentMinV) * here.Height * (1 - here.HoleSize)) / 2);
+}
+else {
+	Ellipse_LL.Width = here.Width * here.HoleSize + (CurrentParentMaxV - CurrentParentV) / (CurrentParentMaxV - CurrentParentMinV) * here.Width * (1 - here.HoleSize);
+	Ellipse_LL.Height = here.Height * here.HoleSize + (CurrentParentMaxV - CurrentParentV) / (CurrentParentMaxV - CurrentParentMinV) * here.Width * (1 - here.HoleSize);
+	Ellipse_LL.X = 0 + here.Width / 2 - ((here.Width * here.HoleSize + (CurrentParentMaxV - CurrentParentV) / (CurrentParentMaxV - CurrentParentMinV) * here.Width * (1 - here.HoleSize)) / 2);
+	Ellipse_LL.Y = 0 + here.Height / 2 - ((here.Height * here.HoleSize + (CurrentParentMaxV - CurrentParentV) / (CurrentParentMaxV - CurrentParentMinV) * here.Height * (1 - here.HoleSize)) / 2);
+}
+]]>
+			</body>
+		</do-on>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="DebugTool_1" display-name="DebugTool_1" uuid="6d801071-7bee-45a0-8c5c-e0848a688fda" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="5" description="" cardinal="1"/>
+</type>
+

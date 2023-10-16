@@ -1,0 +1,71 @@
+<type access-modifier="public" name="NarabotkiButton" display-name="NarabotkiButton" uuid="b174819f-8955-44ad-b7e2-c8b51ab8f7b8" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="200" ver="5"/>
+	<designed target="Height" value="45" ver="5"/>
+	<designed target="PenColor" value="0xff000000" ver="5"/>
+	<designed target="PenStyle" value="1" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xfff0f0f0" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Checkable" value="false" ver="5"/>
+	<designed target="Checked" value="false" ver="5"/>
+	<designed target="Text" value="Click" ver="5"/>
+	<designed target="TextAlignment" value="132" ver="5"/>
+	<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="5"/>
+	<designed target="FontColor" value="0xffffffff" ver="5"/>
+	<designed target="OnClickFontColor" value="4278190080" ver="5"/>
+	<designed target="OnHoverFontColor" value="4278190080" ver="5"/>
+	<designed target="DisabledFontColor" value="4278190080" ver="5"/>
+	<designed target="OnClickBrushColor" value="0xffd4d0c8" ver="5"/>
+	<designed target="OnClickBrushStyle" value="0" ver="5"/>
+	<designed target="OnHoverBrushColor" value="0xffcc6666" ver="5"/>
+	<designed target="OnHoverBrushStyle" value="1" ver="5"/>
+	<designed target="DisabledBrushColor" value="0xc8d4d0c8" ver="5"/>
+	<designed target="DisabledBrushStyle" value="0" ver="5"/>
+	<designed target="OnClickPenColor" value="4278190080" ver="5"/>
+	<designed target="OnClickPenStyle" value="1" ver="5"/>
+	<designed target="OnClickPenWidth" value="1" ver="5"/>
+	<designed target="OnHoverPenColor" value="0xff000000" ver="5"/>
+	<designed target="OnHoverPenStyle" value="1" ver="5"/>
+	<designed target="OnHoverPenWidth" value="1" ver="5"/>
+	<designed target="DisabledPenColor" value="4288716960" ver="5"/>
+	<designed target="DisabledPenStyle" value="1" ver="5"/>
+	<designed target="DisabledPenWidth" value="1" ver="5"/>
+	<object access-modifier="private" name="postfixTrans" display-name="postfixTrans" uuid="c4acaf8b-fa59-47a8-af83-9f9121d78ee5" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description=""/>
+	<object access-modifier="private" name="ParDevPathTrans" display-name="ParDevPathTrans" uuid="76aa0d6d-bafc-48d4-a4ff-f11afc01b479" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description=""/>
+	<object access-modifier="private" name="postfixStStTrans" display-name="postfixStStTrans" uuid="b9d3443b-9c91-425c-bc37-0f57645d7557" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description=""/>
+	<object access-modifier="private" name="OpenedTab" display-name="OpenedTab" uuid="bc5038f3-d983-493b-9edc-1fdc7eda81e3" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<do-trace access-modifier="private" target="OnHoverBrushColor" ver="5">
+		<body>
+			<![CDATA[AsokuColor.asokuBlue]]>
+		</body>
+	</do-trace>
+	<do-trace access-modifier="private" target="BrushColor" ver="5">
+		<conditional-expr>
+			<condition>
+				<![CDATA[this.Text == OpenedTab.Value]]>
+			</condition>
+			<expr>
+				<![CDATA[AsokuColor.asokuBlue]]>
+			</expr>
+		</conditional-expr>
+		<conditional-expr>
+			<condition>
+				<![CDATA[this.Text != OpenedTab.Value]]>
+			</condition>
+			<expr>
+				<![CDATA[AsokuColor.asokuLightGrey]]>
+			</expr>
+		</conditional-expr>
+	</do-trace>
+</type>
+

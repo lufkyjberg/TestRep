@@ -1,0 +1,385 @@
+<type access-modifier="public" name="DiscreteDpMultiValue" display-name="Дискретное значение из нескольких переменных (до 5 сигналов)" uuid="eed86abb-bc23-4394-a780-d6f41ac1c8c2" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="150" ver="5"/>
+	<designed target="Height" value="40" ver="5"/>
+	<designed target="RoundingRadius" value="0" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="1" ver="5"/>
+	<designed target="PenWidth" value="2" ver="5"/>
+	<designed target="BrushColor" value="0x00000000" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<object access-modifier="private" name="Value" display-name="Value" uuid="228c56b0-5611-47d8-91eb-fb55a8796bb7" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="150" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+		<designed target="Text" value="***" ver="5"/>
+		<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xff000000" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="FontColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[CurrentTruthIndex < 0]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuBlack]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[CurrentTruthIndex > -1 && ApParStatusBytes[CurrentTruthIndex].Value == AsokuConst.StatusBytes.Invalid]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuBlack]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[CurrentTruthIndex > -1 && (ApParAlarmBytes[CurrentTruthIndex].Value == AsokuConst.AlarmBytes.WarningAndAlarm || ApParAlarmBytes[CurrentTruthIndex].Value == AsokuConst.AlarmBytes.Alarm)]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[CurrentTruthIndex > -1 && ApParAlarmBytes[CurrentTruthIndex].Value == AsokuConst.AlarmBytes.Warning]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuYellow]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[CurrentTruthIndex > -1 && ApParValue[CurrentTruthIndex].Value]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuGreen]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[AsokuColor.asokuGrey]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="Text" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[CurrentTruthIndex == -1]]>
+				</condition>
+				<expr>
+					<![CDATA["Ошибка"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[CurrentTruthIndex == -2]]>
+				</condition>
+				<expr>
+					<![CDATA["Нет сост."]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[ApParDisplayOn[CurrentTruthIndex].Value]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Initializer" display-name="Initializer" uuid="c0de8ffd-8337-4da7-bbc7-b5b8cb5d25c2" base-type="Initializer" base-type-id="6db89679-9299-4993-ad1a-0d086cd1c7d2" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="Init" display-name="Init" ver="5" event="Initialized">
+			<body kind="om">
+				<![CDATA[Value.Width = here.Width;
+Value.Height = here.Height;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="ParDevPath" display-name='Путь до параметров через разделитель " | " (до 5 штук)' uuid="9fd6ca98-149e-47b9-9889-7b2d6a39ff53" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ValueChanged">
+			<body kind="om">
+				<![CDATA[CreateAPElementPathes();]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="TransferDevPath" display-name="Путь до папки трансферов" uuid="199a7a30-8339-41ca-ad9e-c25c51573e18" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Paths" display-name="Массив сформированных путей (системное)" uuid="dcb3a07f-1eda-4ca9-991f-31dd1cb67f44" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="5">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ValueChanged">
+			<body kind="om">
+				<![CDATA[ApParValue[Index].Path = Value + ".Value";
+ApParName[Index].Path = Value + ".Name";
+ApParDescription[Index].Path = Value + ".Description";
+ApParDisplayOn[Index].Path = Value + ".DisplayOn";
+ApParStatusBytes[Index].Path = Value + ".StatusBytes";
+ApParAlarmBytes[Index].Path = Value + ".AlarmBytes";]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="CurrentTruthIndex" display-name="Текущий указываемый индекс (системное)" uuid="45a121a2-00b4-4c88-bb07-64d5fb1ee537" base-type="notifying_int8" base-type-id="c594ba4b-148e-403d-a019-22af8f44ab42" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Counter" display-name="Счетчик (системное)" uuid="4ed9694c-206a-48a6-8e7b-d1a0521a5f24" base-type="int1" base-type-id="756a0a23-7e63-4a13-8a35-e8a38909e5ed" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ApParValue" display-name="Значение параметра" uuid="3eb6af87-7964-4f0f-aea0-b4f6bbc89503" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="5">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="OnValueChanged">
+			<body kind="om">
+				<![CDATA[isOneTrue: bool = false;
+
+for (i:uint1 = 0; i < ApParValue.Length; i += 1){
+	if ( ApParValue[i].Value ) {
+		if (!isOneTrue) {
+			CurrentTruthIndex = i;
+			isOneTrue = true;
+		}
+		else {
+			CurrentTruthIndex = -1;
+			break;
+		}
+	}
+}
+
+if (!isOneTrue) CurrentTruthIndex = -2;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="ApParName" display-name="ApParName" uuid="c4d2fe05-ba57-4b9e-b91e-c8b185d128e7" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="5">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApParDescription" display-name="Описание параметра" uuid="20a832ef-c736-4b58-bd32-526371aef727" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="5">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApParDisplayOn" display-name="Формат отображения параметра включенного состояния" uuid="bd890217-14df-497f-895b-835a70b73f3a" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="5">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApParStatusBytes" display-name="Статус параметра" uuid="cf0321e2-54f3-428a-aafd-86083b0e7843" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="5">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApParAlarmBytes" display-name="Аларм параметра" uuid="b420f33c-9d0b-4568-96b1-e7732bda0ed2" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="5">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="5" event="OnValueChanged">
+			<body kind="javascript">
+				<![CDATA[//var isAlarm = false; 
+//var isWarning = false;
+//var arrIndex = -1;
+//for(var i = 0; i < ApParValue.Length; i++){
+//   if(ApParAlarmBytes[i].Value == 2){
+//      isWarning = true;
+//      arrIndex = i;
+//      break;
+//   }
+//   if(ApParAlarmBytes[i].Value == 6){
+//      isAlarm = true;
+//      arrIndex = i;
+//      break;
+//   }
+//   else{
+//      TextField.FontColor = AsokuColor.asokuGreen;
+//   }
+//}
+//if ((isAlarm || isWarning) && (arrIndex != -1)){
+//   TextField.Text = ApParDescription[arrIndex].Value;
+//   TextField.FontColor = isAlarm ? AsokuColor.asokuRed : AsokuColor.asokuYellow;
+//}]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="DebugTool" display-name="DebugTool" uuid="29092a3b-2247-47ca-9ac9-14ffe745e8aa" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="5" description="" cardinal="1"/>
+	<do-on access-modifier="private" name="OpenMSGHndlr" display-name="OpenMSGHndlr" ver="5" event="MouseClick">
+		<body kind="om">
+			<![CDATA[if (AsokuMain.WindowGroup_InfoViewMessages.WindowCount < 1) {
+	Open_AlarmView.Invoke();
+}
+FullfillAlarmView.Invoke();]]>
+		</body>
+	</do-on>
+	<designed target="Flip" value="0" ver="5"/>
+	<object access-modifier="private" name="Open_AlarmView" display-name="команда открытия AlarmView" uuid="179f7a3b-ad51-4422-80f8-076642a5f89f" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" form-by-id="false" form-action="open-new-independent">
+			<object access-modifier="private" uuid="00dd770a-640e-44ff-8421-a4f4a13f2a35" base-type="InfoViewMessages" base-type-id="2768341d-28ac-4654-8f4f-d392551ca1b7" ver="5">
+				<init target="ParDevPath" ver="5" ref="ParDevPathAlarm"/>
+			</object>
+		</do-on>
+		<object access-modifier="private" name="ParDevPathAlarm" display-name="ParDevPathAlarm" uuid="3f45f4ea-cf70-47c2-960f-cb2feb38f1d2" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="">
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ValueChanged">
+				<body kind="om">
+					<![CDATA[CreateAPElementPathes();]]>
+				</body>
+			</do-on>
+		</object>
+	</object>
+	<do-on access-modifier="private" name="OpenInfoTabViewHndlr" display-name="OpenInfoTabViewHndlr" ver="5" event="MouseRightClick">
+		<body kind="om">
+			<![CDATA[for(i:int1 = 0; i < Paths.Length; i += 1){
+	if (String.Length(Paths[i]) > 1) {
+		Counter = i;
+		OpenInfoTabView();
+	}
+   //запустить функцию которая откроет InfoTabView с путем до параметра, рассчитывающимся как Paths[Counter] (все переменные внешние и доступны функции в момент вызова у родителя)
+}]]>
+		</body>
+	</do-on>
+	<do access-modifier="private" name="OpenInfoTabView" display-name="OpenInfoTabView" ver="5" form-by-id="false" type="void" form-action="open-new">
+		<object access-modifier="private" uuid="725f6e52-b784-4b5a-877b-0d78391ff6b5" base-type="InfoTabView" base-type-id="146efb0d-a148-4c91-94ff-f69c196a5132" ver="5">
+			<init target="PanelType" ver="5" value="информация"/>
+			<init target="ParameterType" ver="5" value="DI"/>
+			<init target="ParDevPath" ver="5">
+				<expr>
+					<![CDATA[Paths[Counter]]]>
+				</expr>
+			</init>
+			<init target="TransferDevPath" ver="5" ref="here.TransferDevPath"/>
+		</object>
+	</do>
+	<do access-modifier="private" name="CreateAPElementPathes" display-name="CreateAPElementPathes" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="javascript">
+			<![CDATA[var array = ParDevPath.Value.split(" | ");
+/*for(var i = 0; i < array.length; i++){
+   ApParValue[i].Path = array[i] + ".Value";
+   ApParDescription[i].Path = array[i] + ".Description";
+   ApParDisplayOn[i].Path = array[i] + ".DisplayOn";
+   ApParDisplayOff[i].Path = array[i] + ".DisplayOff";
+   ApParStatusBytes[i].Path = array[i] + ".StatusBytes";
+   ApParAlarmBytes[i].Path = array[i] + ".AlarmBytes";
+}*/
+
+for(var i = 0; i < array.length; i++){
+	Paths[i] = array[i];
+}]]>
+		</body>
+	</do>
+	<do-trace access-modifier="private" target="PenColor" ver="5">
+		<conditional-expr>
+			<condition>
+				<![CDATA[CurrentTruthIndex < 0]]>
+			</condition>
+			<expr>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</expr>
+		</conditional-expr>
+		<conditional-expr>
+			<condition>
+				<![CDATA[ApParStatusBytes[CurrentTruthIndex].Value == AsokuConst.StatusBytes.Changed]]>
+			</condition>
+			<expr>
+				<![CDATA[AsokuColor.asokuCyan]]>
+			</expr>
+		</conditional-expr>
+		<default-expr>
+			<expr>
+				<![CDATA[AsokuColor.asokuBlack]]>
+			</expr>
+		</default-expr>
+	</do-trace>
+	<init target="CurrentTruthIndex" ver="5" value="-2"/>
+	<do-trace access-modifier="private" target="Tooltip" ver="5">
+		<conditional-expr>
+			<condition>
+				<![CDATA[CurrentTruthIndex > -1]]>
+			</condition>
+			<expr>
+				<![CDATA["Наименование: " + ApParName[CurrentTruthIndex].Value + "\nпояснение: " + ApParDescription[CurrentTruthIndex].Value + " " + Value.Text + "\nстатус: "+ String.ToString(ApParValue[CurrentTruthIndex].Quality) + 
+"\nвремя: "+ 
+DateTime.ToString(ApParValue[CurrentTruthIndex].TimeStamp)+
+"\nнеисправность: "+ String.ToString(ApParStatusBytes[CurrentTruthIndex].Value) + 
+"\nпределы: "+ String.ToString(ApParAlarmBytes[CurrentTruthIndex].Value)]]>
+			</expr>
+		</conditional-expr>
+		<default-expr>
+			<expr>
+				<![CDATA[""]]>
+			</expr>
+		</default-expr>
+	</do-trace>
+	<object access-modifier="private" name="FullfillAlarmView" display-name="FullfillAlarmView" uuid="f3589efb-e49d-4f75-b385-ef796bc60d70" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="SendPathesAndHeaderHndlr" display-name="SendPathesAndHeaderHndlr" ver="5" event="Invoked">
+			<body kind="om">
+				<![CDATA[ResultFilter: string = "";
+
+for (i:int1 = 0; i < Paths.Length; i += 1) {
+	if (Paths[i] != "") {
+		if (ResultFilter == "") ResultFilter += Paths[i];
+		else ResultFilter += ("|||" + Paths[i]);
+		
+		AsokuMain.WindowGroup_InfoViewMessages.SendToAll("sendheader", ApParName[i].ValueAsString);
+	}
+}
+
+if (ResultFilter != "") {
+	AsokuMain.WindowGroup_InfoViewMessages.SendToAll("sendmessage", ResultFilter);
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<do-on access-modifier="private" name="Handler_7" display-name="Handler_7" ver="5" event="MouseEnter">
+		<body kind="om">
+			<![CDATA[if ( ApParValue.Advised ) {
+	if(ApParStatusBytes.Value != AsokuConst.StatusBytes.Changed) PenColor = AsokuColor.asokuBlack;
+	PenWidth = 5;
+}
+]]>
+		</body>
+	</do-on>
+	<do-on access-modifier="private" name="Handler_8" display-name="Handler_8" ver="5" event="MouseLeave">
+		<body kind="om">
+			<![CDATA[if ( ApParStatusBytes.Value == AsokuConst.StatusBytes.Changed ) PenColor = AsokuColor.asokuCyan;
+else PenColor =  AsokuColor.asokuBlack;
+PenWidth = 2;]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="RerenderTimer" display-name="RerenderTimer" uuid="2aa2db99-40d2-4592-86d0-a8d04eab74bb" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="5" description="" cardinal="1">
+		<designed target="Period" value="50" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<do-on access-modifier="private" name="RerenderHndlr" display-name="RerenderHndlr" ver="5" event="OnTimer">
+			<body kind="om">
+				<![CDATA[if (CurrentTruthIndex > -1) {
+	if (ApParValue[CurrentTruthIndex].Advised && Value.Text == "Нет сост.") {
+		// here.PenColor
+		
+		if (ApParStatusBytes[CurrentTruthIndex].Value == AsokuConst.StatusBytes.Changed) here.PenColor = AsokuColor.asokuCyan;
+		else here.PenColor = AsokuColor.asokuBlack;
+		
+		// Value.Text
+		
+		if (CurrentTruthIndex > -1) Value.Text = ApParDisplayOn[CurrentTruthIndex].Value;
+		
+		// Value.FontColor
+		
+		if (CurrentTruthIndex < 0) Value.FontColor = AsokuColor.asokuBlack;
+		else {
+			if (ApParStatusBytes[CurrentTruthIndex].Value == AsokuConst.StatusBytes.Invalid) Value.FontColor = AsokuColor.asokuBlack;
+			else if (ApParAlarmBytes[CurrentTruthIndex].Value == AsokuConst.AlarmBytes.WarningAndAlarm || ApParAlarmBytes[CurrentTruthIndex].Value == AsokuConst.AlarmBytes.Alarm)					 Value.FontColor = AsokuColor.asokuRed;
+		else if (ApParAlarmBytes[CurrentTruthIndex].Value == AsokuConst.AlarmBytes.Warning) Value.FontColor = AsokuColor.asokuYellow;
+		else if (ApParValue[CurrentTruthIndex].Value) Value.FontColor = AsokuColor.asokuGreen;
+		else Value.FontColor = AsokuColor.asokuGrey;
+		}
+	}
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<init target="PenColor" ver="5">
+		<expr>
+			<![CDATA[AsokuColor.asokuBlack]]>
+		</expr>
+	</init>
+</type>
+

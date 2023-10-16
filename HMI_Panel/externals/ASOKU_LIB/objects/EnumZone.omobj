@@ -1,0 +1,92 @@
+<type access-modifier="public" name="EnumZone" display-name="Дискретный тип перечислений (Зона срабатывания вибрации)" uuid="742085b1-6fb5-442a-b465-956851527e6b" base-type="EnumValue" base-type-id="0e0655fb-7150-4be8-9e96-9c6e2db56382" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Width" value="20" ver="5"/>
+	<designed target="Height" value="20" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xff55ff00" ver="5"/>
+	<do-trace access-modifier="private" target="BrushColor" ver="5">
+		<conditional-expr>
+			<condition>
+				<![CDATA[CurrentValue == 0]]>
+			</condition>
+			<expr>
+				<![CDATA[AsokuColor.asokuGreen]]>
+			</expr>
+		</conditional-expr>
+		<conditional-expr>
+			<condition>
+				<![CDATA[CurrentValue == 1]]>
+			</condition>
+			<expr>
+				<![CDATA[AsokuColor.asokuGreen]]>
+			</expr>
+		</conditional-expr>
+		<conditional-expr>
+			<condition>
+				<![CDATA[CurrentValue == 2]]>
+			</condition>
+			<expr>
+				<![CDATA[AsokuColor.asokuGreen]]>
+			</expr>
+		</conditional-expr>
+		<conditional-expr>
+			<condition>
+				<![CDATA[CurrentValue == 3]]>
+			</condition>
+			<expr>
+				<![CDATA[AsokuColor.asokuYellow]]>
+			</expr>
+		</conditional-expr>
+		<conditional-expr>
+			<condition>
+				<![CDATA[CurrentValue == 4]]>
+			</condition>
+			<expr>
+				<![CDATA[AsokuColor.asokuYellow]]>
+			</expr>
+		</conditional-expr>
+		<conditional-expr>
+			<condition>
+				<![CDATA[CurrentValue == 5]]>
+			</condition>
+			<expr>
+				<![CDATA[AsokuColor.asokuYellow]]>
+			</expr>
+		</conditional-expr>
+		<conditional-expr>
+			<condition>
+				<![CDATA[CurrentValue == 6]]>
+			</condition>
+			<expr>
+				<![CDATA[AsokuColor.asokuRed]]>
+			</expr>
+		</conditional-expr>
+		<conditional-expr>
+			<condition>
+				<![CDATA[CurrentValue == 7]]>
+			</condition>
+			<expr>
+				<![CDATA[AsokuColor.asokuRed]]>
+			</expr>
+		</conditional-expr>
+		<default-expr>
+			<expr>
+				<![CDATA[AsokuColor.asokuTransparent]]>
+			</expr>
+		</default-expr>
+	</do-trace>
+	<do-trace access-modifier="private" target="TextColor" ver="5">
+		<body>
+			<![CDATA[AsokuColor.asokuBlack]]>
+		</body>
+	</do-trace>
+	<do-trace access-modifier="private" target="BlinkerColor" ver="5">
+		<body>
+			<![CDATA[AsokuColor.asokuBlack]]>
+		</body>
+	</do-trace>
+	<init target="StarWithNoKey" ver="5" value="true"/>
+</type>
+

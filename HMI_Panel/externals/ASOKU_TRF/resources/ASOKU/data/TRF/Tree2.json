@@ -1,0 +1,40 @@
+{
+ "UserTree": [
+ {
+   "Signal":{
+    "UserTree":"GA_01/Electro/P1/GA_01.Electro.P1.value",
+    "OpcTag":"HydroUnits.GA_01.Vibrocontrol.Params.TA_Mode_Steady.value",
+    "EUnit":"МВт",
+    "Description":"Активная мощность ИПМ 1 [МВт]",
+    "DataType":"bool" 
+   }
+  },
+  {
+   "Signal":{
+    "UserTree":"GA_01/Electro/P1/GA_01.Electro.P1.value",
+    "OpcTag":"HydroUnits.GA_01.Vibrocontrol.Params.DO_TA_Warn.value",
+    "EUnit":"МВт",
+    "Description":"Активная мощность ИПМ 1 [МВт]",
+    "DataType":"bool" 
+   }
+  },
+  {
+   "Signal":{
+    "UserTree":"GA_01/Electro/P1/GA_01.Electro.P1.value",
+    "OpcTag":"HydroUnits.GA_01.Vibrocontrol.Params.Vb_Gen_DB1.value",
+    "EUnit":"МВт",
+    "Description":"Активная мощность ИПМ 1 [МВт]",
+    "DataType":"bool" 
+   }
+  },
+  {
+   "Signal":{
+    "UserTree":"GA_01/Electro/P1/GA_01.Electro.P1.value",
+    "OpcTag":"HydroUnits.GA_01.Vibrocontrol.Params.Vb_Hr_H_Cross_DV1_SKZ_0_8x200.value",
+    "EUnit":"МВт",
+    "Description":"Активная мощность ИПМ 1 [МВт]",
+    "DataType":"bool" 
+   }
+  }
+ ]
+}

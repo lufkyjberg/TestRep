@@ -1,0 +1,227 @@
+<type access-modifier="public" name="STCircle" display-name="Круг статора" uuid="3141ba52-c19d-4112-9037-3966ad141ddf" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="370" ver="5"/>
+	<designed target="Height" value="370" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="1" ver="5"/>
+	<designed target="PenWidth" value="0" ver="5"/>
+	<designed target="BrushColor" value="0xff7f7f7f" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="PieAngle" value="360" ver="5"/>
+	<designed target="PieAngleStart" value="360" ver="5"/>
+	<designed target="HoleSize" value="0" ver="5"/>
+	<object access-modifier="private" name="TextField_XB1" display-name="TextField_XB1" uuid="7dbfb245-be04-4414-8c0e-ad1b8243756f" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="17.369074714449823" ver="5"/>
+		<designed target="Y" value="335.81588834958688" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="91.672344210499261" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Text" value="ХВ1" ver="5"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xff5555ff" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextField_XB2" display-name="TextField_XB2" uuid="c65015ed-1788-45ad-86a3-c8069c92c21d" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="-91.333333333333314" ver="5"/>
+		<designed target="Y" value="141.07147813094662" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="91.67234421049929" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Text" value="ХВ2" ver="5"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xff5555ff" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextField_XB3" display-name="TextField_XB3" uuid="e77671f2-cd47-4434-ab3c-c4d1c6aaf46d" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="17.369074714449823" ver="5"/>
+		<designed target="Y" value="-54.756151173235367" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="91.67234421049929" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Text" value="ХВ3" ver="5"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xff5555ff" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextField_XB4" display-name="TextField_XB4" uuid="529f9e09-fddc-46d2-870d-a2bfd66224a8" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="245.46593094586405" ver="5"/>
+		<designed target="Y" value="-57.851996684659753" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="91.672344210499304" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Text" value="ХВ4" ver="5"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xff5555ff" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextField_XB5" display-name="TextField_XB5" uuid="8900b7c1-187d-4272-892c-c506efe3b00a" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="360.83359863855929" ver="5"/>
+		<designed target="Y" value="141.07147813094662" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="91.67234421049929" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Text" value="ХВ5" ver="5"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xff5555ff" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextField_XB6" display-name="TextField_XB6" uuid="f1af5747-c983-4a9c-96fd-8eb22ce3f8c2" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="245.46593094586405" ver="5"/>
+		<designed target="Y" value="335.81588834958688" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="91.672344210499261" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Text" value="ХВ6" ver="5"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xff5555ff" ver="5"/>
+	</object>
+	<designed target="Flip" value="0" ver="5"/>
+	<object access-modifier="private" name="CircleSegment_1" display-name="CircleSegment_1" uuid="a58fea82-743a-4210-9730-d21c9382ac22" base-type="CircleSegment" base-type-id="bfe8df39-8e85-4edd-8ad1-db9f144a82c5" ver="5" description="" cardinal="1">
+		<designed target="X" value="185" ver="5"/>
+		<designed target="Y" value="185" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="1" ver="5"/>
+		<init target="Radius" ver="5" value="185"/>
+		<init target="ArcAngle" ver="5" value="60"/>
+	</object>
+	<object access-modifier="private" name="CircleSegment_2" display-name="CircleSegment_2" uuid="e7fcbb73-716e-4e13-acfd-3a096fe6c06a" base-type="CircleSegment" base-type-id="bfe8df39-8e85-4edd-8ad1-db9f144a82c5" ver="5" description="" cardinal="1">
+		<designed target="X" value="159.66666666666663" ver="5"/>
+		<designed target="Y" value="228.83333333333337" ver="5"/>
+		<designed target="Rotation" value="60" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="1" ver="5"/>
+		<init target="Radius" ver="5" value="185"/>
+		<init target="ArcAngle" ver="5" value="60"/>
+	</object>
+	<object access-modifier="private" name="CircleSegment_3" display-name="CircleSegment_3" uuid="87134f7d-d3ec-4d09-9616-031120b9ea3e" base-type="CircleSegment" base-type-id="bfe8df39-8e85-4edd-8ad1-db9f144a82c5" ver="5" description="" cardinal="1">
+		<designed target="X" value="109.95238095238091" ver="5"/>
+		<designed target="Y" value="228.83333333333337" ver="5"/>
+		<designed target="Rotation" value="120" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="1" ver="5"/>
+		<init target="Radius" ver="5" value="185"/>
+		<init target="ArcAngle" ver="5" value="60"/>
+	</object>
+	<object access-modifier="private" name="CircleSegment_4" display-name="CircleSegment_4" uuid="f00e2dea-ebd3-4041-8dc9-6371f0c3246f" base-type="CircleSegment" base-type-id="bfe8df39-8e85-4edd-8ad1-db9f144a82c5" ver="5" description="" cardinal="1">
+		<designed target="X" value="85.363095238095127" ver="5"/>
+		<designed target="Y" value="185.33333333333343" ver="5"/>
+		<designed target="Rotation" value="180" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="1" ver="5"/>
+		<init target="Radius" ver="5" value="185"/>
+		<init target="ArcAngle" ver="5" value="60"/>
+	</object>
+	<object access-modifier="private" name="CircleSegment_5" display-name="CircleSegment_5" uuid="54baee77-8b9f-4c2d-a371-9527be63b1eb" base-type="CircleSegment" base-type-id="bfe8df39-8e85-4edd-8ad1-db9f144a82c5" ver="5" description="" cardinal="1">
+		<designed target="X" value="110.61309523809513" ver="5"/>
+		<designed target="Y" value="142.08333333333337" ver="5"/>
+		<designed target="Rotation" value="240" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="1" ver="5"/>
+		<init target="Radius" ver="5" value="185"/>
+		<init target="ArcAngle" ver="5" value="60"/>
+	</object>
+	<object access-modifier="private" name="CircleSegment_6" display-name="CircleSegment_6" uuid="fbd7aecb-f4ac-4114-8052-0df425519413" base-type="CircleSegment" base-type-id="bfe8df39-8e85-4edd-8ad1-db9f144a82c5" ver="5" description="" cardinal="1">
+		<designed target="X" value="160.16865079365064" ver="5"/>
+		<designed target="Y" value="142.52777777777777" ver="5"/>
+		<designed target="Rotation" value="300" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="1" ver="5"/>
+		<init target="Radius" ver="5" value="185"/>
+		<init target="ArcAngle" ver="5" value="60"/>
+	</object>
+	<object access-modifier="private" name="Ellipse_1" display-name="Ellipse_1" uuid="cd86bd36-97d0-43e1-9ca9-8e8082f0f1c2" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="20" ver="5"/>
+		<designed target="Y" value="20" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="330" ver="5"/>
+		<designed target="Height" value="330" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xff7f7f7f" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="CircleSegment_7" display-name="CircleSegment_7" uuid="f54a0aae-482a-47bd-b9f4-22f78f0adb0f" base-type="CircleSegment" base-type-id="bfe8df39-8e85-4edd-8ad1-db9f144a82c5" ver="5" description="" cardinal="1">
+		<designed target="X" value="136.60000000000002" ver="5"/>
+		<designed target="Y" value="134" ver="5"/>
+		<designed target="Rotation" value="270" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="1" ver="5"/>
+		<init target="Radius" ver="5" value="165"/>
+		<init target="ArcAngle" ver="5" value="180"/>
+	</object>
+	<object access-modifier="private" name="CircleSegment_8" display-name="CircleSegment_8" uuid="af369375-22e3-489e-b031-621ec710a52e" base-type="CircleSegment" base-type-id="bfe8df39-8e85-4edd-8ad1-db9f144a82c5" ver="5" description="" cardinal="1">
+		<designed target="X" value="135.65000000000001" ver="5"/>
+		<designed target="Y" value="234" ver="5"/>
+		<designed target="Rotation" value="90" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="1" ver="5"/>
+		<init target="Radius" ver="5" value="165"/>
+		<init target="ArcAngle" ver="5" value="180"/>
+	</object>
+	<object access-modifier="private" name="Ellipse_2" display-name="Ellipse_2" uuid="edd8e860-0185-4264-ace9-1e6b808cae62" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="40" ver="5"/>
+		<designed target="Y" value="40" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="290" ver="5"/>
+		<designed target="Height" value="290" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xff7f7f7f" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextField_XB2_1" display-name="TextField_XB2_1" uuid="b5cc6555-4c0a-4a87-a64b-7e4dd6427101" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="42.666666666666686" ver="5"/>
+		<designed target="Y" value="141.07147813094662" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="91.67234421049929" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Text" value="ГВ1" ver="5"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xffff9b9d" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextField_XB2_2" display-name="TextField_XB2_2" uuid="2c69a886-9adb-42c1-b5cd-234932e40ec0" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
+		<designed target="X" value="228.66666666666669" ver="5"/>
+		<designed target="Y" value="141.07147813094662" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="100" ver="5"/>
+		<designed target="Height" value="91.67234421049929" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Text" value="ГВ2" ver="5"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xffff9b9d" ver="5"/>
+	</object>
+</type>
+

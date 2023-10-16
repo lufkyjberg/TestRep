@@ -1,0 +1,241 @@
+<type access-modifier="private" name="ECRA_Dinamic" display-name="ECRA_Dinamic" uuid="8f770465-f9c2-4458-820d-5b8d3fff8afb" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="900" ver="5"/>
+	<designed target="Height" value="900" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="4293980400" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="900" ver="5"/>
+	<designed target="WindowHeight" value="900" ver="5"/>
+	<designed target="WindowCaption" value="Form_3" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="1" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="2" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="0" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<object access-modifier="private" name="ButtonAgregation_ECRA" display-name="ButtonAgregation_ECRA" uuid="440e37a4-a992-49dd-95e3-88bc6af21e65" base-type="ButtonAgregation" base-type-id="c64488e2-5e01-4063-b30a-a919c15c776b" ver="5" description="" cardinal="6">
+		<designed target="X" value="20" ver="5"/>
+		<designed target="Y" value="10" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="120" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+		<designed target="Visible" value="false" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+			<body kind="javascript">
+				<![CDATA[if(this.EcraType == "217"){
+	Ecra217.Invoke();	
+}
+else if(this.EcraType == "213") {
+	Ecra213.Invoke();	
+}
+else if(this.EcraType == "209"){
+	Ecra209.Invoke();	
+}
+else if(this.EcraType == "247"){
+	Ecra247.Invoke();	
+}
+else if(this.EcraType == "2704"){
+	switch(Index){
+	case 0: 
+		Ecra2704.notifying_string_1 = here.notifying_string_1;
+		break;
+	case 1:
+		Ecra2704.notifying_string_1 = here.notifying_string_2;
+		break;
+	case 2: 
+		Ecra2704.notifying_string_1 = here.notifying_string_3;
+		break;
+	case 3:
+		Ecra2704.notifying_string_1 = here.notifying_string_4;
+		break
+	}
+	Ecra2704.Invoke();
+}
+]]>
+			</body>
+		</do-on>
+		<designed target="Text" value="ЭКРА" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Checkable" value="false" ver="5"/>
+		<designed target="Checked" value="false" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="OnClickFontColor" value="4278190080" ver="5"/>
+		<designed target="OnHoverFontColor" value="4278190080" ver="5"/>
+		<designed target="DisabledFontColor" value="4278190080" ver="5"/>
+		<designed target="BrushColor" value="4293980400" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="OnClickBrushColor" value="4288716960" ver="5"/>
+		<designed target="OnClickBrushStyle" value="1" ver="5"/>
+		<designed target="OnHoverBrushColor" value="4294967295" ver="5"/>
+		<designed target="OnHoverBrushStyle" value="1" ver="5"/>
+		<designed target="DisabledBrushColor" value="4288716960" ver="5"/>
+		<designed target="DisabledBrushStyle" value="1" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="OnClickPenColor" value="4278190080" ver="5"/>
+		<designed target="OnClickPenStyle" value="1" ver="5"/>
+		<designed target="OnClickPenWidth" value="1" ver="5"/>
+		<designed target="OnHoverPenColor" value="4278190080" ver="5"/>
+		<designed target="OnHoverPenStyle" value="1" ver="5"/>
+		<designed target="OnHoverPenWidth" value="1" ver="5"/>
+		<designed target="DisabledPenColor" value="4288716960" ver="5"/>
+		<designed target="DisabledPenStyle" value="1" ver="5"/>
+		<designed target="DisabledPenWidth" value="1" ver="5"/>
+		<object access-modifier="private" name="EcraType" display-name="EcraType" uuid="73a6cb77-e2ee-41ba-a26c-06a01fcb1fa7" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="LinesType" display-name="LinesType" uuid="b7dfd6cb-526b-4583-a58f-62fd9b7f5f71" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	</object>
+	<object access-modifier="private" name="Ecra" display-name="Ecra" uuid="231171bf-713e-4f58-8136-0826747036da" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ValueChanged">
+			<body kind="javascript">
+				<![CDATA[let array = this.Value.split("|");
+
+for (let i = 0; i < array.length; i++) {
+	if(array[i] != ''){
+		ButtonAgregation_ECRA[i].Visible = true;
+		ButtonAgregation_ECRA[i].EcraType = array[i].trim();
+	}
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Initializer_1" display-name="Initializer_1" uuid="b94c4ce3-0f36-4129-a18e-d6fee441f4a5" base-type="Initializer" base-type-id="6db89679-9299-4993-ad1a-0d086cd1c7d2" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="Initialized">
+			<body kind="javascript">
+				<![CDATA[for (let i = 0; i < ButtonAgregation_ECRA.Length; i++)
+{
+		ButtonAgregation_ECRA[i].X = ButtonAgregation_ECRA.X + 140 * i;
+		ButtonAgregation_ECRA[i].Y = ButtonAgregation_ECRA.Y;
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Frame_1" display-name="Frame_1" uuid="0a262a3e-ddc2-4fb7-8a57-067405c3c28e" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="60" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="900" ver="5"/>
+		<designed target="Height" value="840" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="OverrideScaling" value="false" ver="5"/>
+		<designed target="ShowScrollBars" value="true" ver="5"/>
+		<designed target="MoveByMouse" value="false" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Ecra217" display-name="Ecra217" uuid="7bb71bd9-a388-46e8-8f32-4f145d3da6a9" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" frame-link="here.Frame_1" form-action="open-in-frame" form-by-id="false">
+			<object access-modifier="private" uuid="ea68552c-e78a-447e-9667-93b8481e085a" base-type="Form_ECRA_217" base-type-id="a243a097-fb81-422f-b532-8994794ba994" ver="5"/>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Ecra213" display-name="Ecra213" uuid="41797a82-bf73-431a-9171-4475b15897f3" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" frame-link="here.Frame_1" form-action="open-in-frame" form-by-id="false">
+			<object access-modifier="private" uuid="351feefd-bfc9-46f9-a35a-3744242ec4df" base-type="Form_ECRA_213" base-type-id="7aa37466-b7f4-4db9-b271-2d21d34c988e" ver="5"/>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Ecra2704" display-name="Ecra2704" uuid="89464970-9f8f-4552-bead-dada1a31feb3" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" frame-link="here.Frame_1" form-action="open-in-frame" form-by-id="false">
+			<object access-modifier="private" uuid="bf697e1b-3833-4e6e-a0e8-1a8b4934ed43" base-type="Form_ECRA_2704" base-type-id="1b685130-519d-46d2-a297-8ff2cbdf105c" ver="5">
+				<init target="ParDevPathDisc" ver="5" ref="Ecra2704.notifying_string_1"/>
+			</object>
+		</do-on>
+		<object access-modifier="private" name="notifying_string_1" display-name="notifying_string_1" uuid="6df71c61-72a5-4900-b94a-b5ff1fce4fd4" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description="" cardinal="1"/>
+	</object>
+	<object access-modifier="private" name="Ecra247" display-name="Ecra247" uuid="0a5c2bbc-16d4-41c0-b015-b149464ef277" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" frame-link="here.Frame_1" form-action="open-in-frame" form-by-id="false">
+			<object access-modifier="private" uuid="e6c97c3c-7e8e-4941-bbdc-4f485b7e86f6" base-type="Form_ECRA_247" base-type-id="fcb3a4dd-717e-4d75-adfb-9215ef693998" ver="5"/>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Ecra209" display-name="Ecra209" uuid="30307d90-b538-455f-b0b0-c454a182a8b2" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="InvokeTrigger" value="false" ver="5"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" frame-link="here.Frame_1" form-action="open-in-frame" form-by-id="false">
+			<object access-modifier="private" uuid="5fe08982-0487-4bfa-b4f0-04b491c3554f" base-type="Form_ECRA_209" base-type-id="a9cc4fb6-84b8-42e0-a542-490eaf55dcc0" ver="5"/>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="ParDevPath2704" display-name="ParDevPath2704" uuid="7826a7a1-68be-4c1a-beb9-06f6bd2a4453" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="4">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ValueChanged">
+			<body kind="javascript">
+				<![CDATA[let arr = me.Value.split("     :     ");
+for(let i = 0; i<arr.Length; i++){
+	me[i].Value = arr[i];
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="ParDevPathDiscr247" display-name="ParDevPathDiscr247" uuid="7859efa7-369a-472d-a263-6ec1b6bb3d7a" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ParDevPathAn247" display-name="ParDevPathAn247" uuid="5f855108-1aea-42ba-9dad-5a0c2ed800e6" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ParDevPathDiscr217" display-name="ParDevPathDiscr217" uuid="2e1579f2-5af2-444f-b545-4886b2e11c76" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ParDevPathAn217" display-name="ParDevPathAn217" uuid="18a7fcdc-8090-483a-b8bf-b64056973659" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ParDevPathDiscr213" display-name="ParDevPathDiscr213" uuid="9d800854-b794-4976-886f-81ca9c4a9979" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ParDevPathAn213" display-name="ParDevPathAn213" uuid="53ca7bea-900c-4e6c-b5b2-ada40dcfc057" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ParDevPath209" display-name="ParDevPath209" uuid="99080c2c-bdc7-463b-9ada-30a057a9acad" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<init target="Ecra" ver="5" value="2704|2704|2704|2704"/>
+	<object access-modifier="private" name="Lines" display-name="Lines" uuid="7f2e9a98-562d-40bc-bbfb-5a1e714be6a7" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ValueChanged">
+			<body kind="javascript">
+				<![CDATA[let array_lines = this.Value.split("|");
+
+for (let i = 0; i < array_lines.length; i++) {
+		ButtonAgregation_ECRA[i].LinesType = array_lines[i].trim();
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<init target="Lines" ver="5" value="Л-25КСЗ-РЗА|Л-25КСЗ-ОМП|Л-25НВЧЗ|Л-25КП|Л-31КСЗ-РЗА|Л-31КСЗ-ОМП|Л-31НВЧЗ|Л-31КП|Л-8КСЗ-РЗА|Л-8КСЗ-ОМП|Л-8НВЧЗ|Л-8КП|ЛарсиКСЗ-РЗА|ЛарсиКСЗ-ОМП|ЛарсиНВЧЗ|ЛарсиКП"/>
+	<do access-modifier="private" name="Function_1" display-name="Function_1" ver="5" type="string" type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d">
+		<body kind="javascript">
+			<![CDATA[]]>
+		</body>
+	</do>
+	<object access-modifier="private" name="notifying_string_1" display-name="notifying_string_1" uuid="40b62b99-4b7f-4d23-b33a-b20baa77f0e3" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="notifying_string_2" display-name="notifying_string_2" uuid="3738ebaa-9f11-4cdd-954c-0aa59e67fa66" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="notifying_string_3" display-name="notifying_string_3" uuid="c7cf78a2-48eb-4833-a391-a9b89fb1ba6c" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="notifying_string_4" display-name="notifying_string_4" uuid="1d2b0566-13d1-44d6-aa89-25fb64804bf5" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+</type>
+

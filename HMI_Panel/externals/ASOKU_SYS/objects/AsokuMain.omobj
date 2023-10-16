@@ -1,0 +1,80 @@
+<object access-modifier="public" name="AsokuMain" display-name="AsokuMain" uuid="5225151f-b34d-462c-a34e-409162b57b2f" base-type="" base-type-id="00000000-0000-0000-0000-000000000000" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="ApMainSource" display-name="ApMainSource" uuid="17d819b7-0ce7-469a-b8f5-30dd890531a7" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+		<designed target="Location" value="192.168.21.109" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="Path" value="" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Ap_Source_Messages" display-name="Ap_Source_Messages" uuid="eaa67678-40b0-41d7-9250-6e2d8ce5ad03" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+		<designed target="Location" value="" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="Path" value="_System.Messages" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+		<object access-modifier="private" name="Ap_Source_UserChangeSignalMessage" display-name="Ap_Source_UserChangeSignalMessage" uuid="16f655e7-00eb-43e6-94f5-7259175ae207" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+			<designed target="Location" value="" ver="5"/>
+			<designed target="Port" value="4388" ver="5"/>
+			<designed target="HistoryPort" value="4950" ver="5"/>
+			<designed target="Path" value="UserChangeSignalMessage" ver="5"/>
+			<designed target="Active" value="true" ver="5"/>
+			<designed target="ReAdvise" value="0" ver="5"/>
+			<designed target="ClientDisplayName" value="HMI" ver="5"/>
+			<designed target="ClientId" value="HMI" ver="5"/>
+			<object access-modifier="private" name="Ap_Message_Make" display-name="Ap_Message_Make" uuid="e56cee60-9116-4a99-aabe-0c549af8356b" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+				<init target="Source" ver="5" ref="Ap_Source_UserChangeSignalMessage"/>
+				<init target="Path" ver="5" value="Make"/>
+			</object>
+			<object access-modifier="private" name="Ap_Message_UserName" display-name="Ap_Message_UserName" uuid="56af9874-562d-41a8-887c-b0856ead01dd" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+				<init target="Source" ver="5" ref="Ap_Source_UserChangeSignalMessage"/>
+				<init target="Path" ver="5" value="UserName"/>
+			</object>
+			<object access-modifier="private" name="Ap_Message_SignalName" display-name="Ap_Message_SignalName" uuid="a2077889-0434-44ea-b438-1c8a8fd779db" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+				<init target="Source" ver="5" ref="Ap_Source_UserChangeSignalMessage"/>
+				<init target="Path" ver="5" value="SignalName"/>
+			</object>
+			<init target="ParentSource" ver="5" ref="here.Ap_Source_Messages"/>
+		</object>
+		<init target="ParentSource" ver="5" ref="here.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="WindowGroup_TrendView" display-name="WindowGroup_TrendView" uuid="79b87316-262b-488a-9df5-aca35c51a63a" base-type="WindowGroup" base-type-id="854fabd1-f7b5-4958-a934-ffd0b5d1a7e4" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="WindowGroup_InfoViewMessages" display-name="WindowGroup_InfoViewMessages" uuid="9dfdbdf1-27d0-4eb3-ba5b-f9053d480a07" base-type="WindowGroup" base-type-id="854fabd1-f7b5-4958-a934-ffd0b5d1a7e4" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="InfoTabViewPosNumber" display-name="Массив позиций расположения окон InfoTabView" uuid="3f4bed54-0fba-4ef7-a580-acc607cf9f6c" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="5" description="" cardinal="6"/>
+	<object access-modifier="private" name="SecurityContext" display-name="SecurityContext" uuid="5c928cdc-48df-43e5-8ea2-47be94ee10ca" base-type="SecurityContext" base-type-id="d9cb0fff-b70a-4e2d-833d-3f73cf74e0dd" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="DebugTool" display-name="DebugTool" uuid="4f2e3e34-1a15-4ccf-9f7d-2c557bb6e60c" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="5" description="" cardinal="1"/>
+	<init target="InfoTabViewPosNumber" ver="5" value="false"/>
+	<do access-modifier="private" name="CreateUserMessage" display-name="CreateUserMessage" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="om">
+			<![CDATA[//формирование сообщения о действиях пользователей
+Ap_Source_Messages.Ap_Source_UserChangeSignalMessage.Ap_Message_UserName.Value = "Оператор";//SecurityContext.CurrentUserDisplayName;
+Ap_Source_Messages.Ap_Source_UserChangeSignalMessage.Ap_Message_SignalName.Value = signalName;
+Ap_Source_Messages.Ap_Source_UserChangeSignalMessage.Ap_Message_Make.Value = true;]]>
+		</body>
+		<param access-modifier="private" name="signalName" display-name="" uuid="7cc0505f-621d-4878-9128-fb3e0ec725ee" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5"/>
+	</do>
+	<object access-modifier="private" name="ApSource_1" display-name="ApSource_1" uuid="102e98c7-a525-4321-868e-c1d6df2b206d" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+		<designed target="Location" value="" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="Path" value="" ver="5"/>
+		<designed target="Active" value="false" ver="5"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+	</object>
+	<object access-modifier="private" name="InfoGenPopPosNumber" display-name="InfoGenPopPosNumber" uuid="974b1611-8653-46a4-8816-b40f50a1af4d" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="5" description="" cardinal="3"/>
+	<init target="InfoGenPopPosNumber" ver="5" value="false"/>
+	<object access-modifier="private" name="Runtime" display-name="Runtime" uuid="e6728183-76f8-43bf-b948-094574194afa" base-type="Runtime" base-type-id="9031e0ca-e75e-47d6-98eb-cf0e5779cb68" ver="5" description="" cardinal="1"/>
+	<do access-modifier="private" name="IsNotWeb" display-name="IsNotWeb" ver="5" type="bool" type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8">
+		<body kind="javascript">
+			<![CDATA[return Runtime.WorkMode != 1;]]>
+		</body>
+	</do>
+</object>
+

@@ -1,0 +1,982 @@
+<type access-modifier="public" name="Trends" display-name="Trends" uuid="cbaceb76-290a-434b-b36e-338a1c6d13b2" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="1360" ver="5"/>
+	<designed target="Height" value="690" ver="5"/>
+	<designed target="PenColor" value="0xff000000" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xfff0f0f0" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="1360" ver="5"/>
+	<designed target="WindowHeight" value="690" ver="5"/>
+	<designed target="WindowCaption" value="MainForm" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="1" ver="5"/>
+	<designed target="WindowBorderStyle" value="1" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="1" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<object access-modifier="private" name="Debug" display-name="Debug" uuid="6b3a0aa7-b6d5-4f44-ba32-a3ac51ca34f0" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="5"/>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="WindowSizeChanged">
+		<body kind="om">
+			<![CDATA[Width = WindowWidth;
+Height = WindowHeight;
+
+Trends_1.Width = Width - Tests.Width;
+Trends_1.Height = Height;
+Trends_1.private.LayoutUpdate();
+
+Tests.X = Trends_1.Width;
+Tests.Height = Height;]]>
+		</body>
+	</do-on>
+	<designed target="ZValue" value="0" ver="5"/>
+	<object access-modifier="private" name="AP_main" display-name="AP_main" uuid="57f1d2a4-fd84-4907-a204-8385bc33edfe" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5">
+		<designed target="Active" value="true" ver="5"/>
+		<init target="Port" ver="5" value="4388"/>
+		<init target="HistoryPort" ver="5" value="4950"/>
+		<init target="Timeout" ver="5" value="1000"/>
+		<init target="ConnectionEstablishTimeout" ver="5" value="1000"/>
+		<init target="MaxBufferPoolSize" ver="5" value="1000000"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="Path" value="" ver="5"/>
+		<designed target="Location" value="localhost" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+	</object>
+	<designed target="Opacity" value="1" ver="5"/>
+	<object access-modifier="private" name="Trends_1" display-name="Trends_1" uuid="245257e5-138e-4a9b-9651-90e32d796368" base-type="Trends" base-type-id="81673f92-ac48-4244-bfe3-ddbdcc98167a" ver="5">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="1920" ver="5"/>
+		<designed target="Height" value="890" ver="5"/>
+		<init target="int_AP" ver="5" ref="AP_main"/>
+		<init target="PreloadHistoryToOperativeMode" ver="5" value="true"/>
+		<init target="YAxisPrecision" ver="5" value="1"/>
+		<init target="ShowLegend" ver="5" value="true"/>
+		<init target="MaxLineLegendShow" ver="5" value="4"/>
+		<init target="ShowToolbar" ver="5" value="true"/>
+		<init target="UseRedLine" ver="5" value="true"/>
+		<init target="DeltaLineWidth" ver="5" value="1"/>
+		<init target="GraphicThickness" ver="5" value="2"/>
+		<init target="ShowDataPoints" ver="5" value="false"/>
+		<init target="InterpolationLine" ver="5" value="true"/>
+		<init target="TreeFindEnable" ver="5" value="true"/>
+		<init target="UseCustomTree" ver="5" value="true"/>
+		<init target="FileUserSignalTree" ver="5" value="resources/ASOKU/data/CustomTree/Tree.json"/>
+		<init target="OnSaveTable" ver="5" ref="actOnSaveTable"/>
+		<init target="OnDoPrintSettings" ver="5" ref="actOnPrintSettings"/>
+		<init target="OnPrint" ver="5" ref="actOnPrint"/>
+		<init target="OnExport" ver="5" ref="actOnExport"/>
+		<init target="OnSaveSignalList" ver="5" ref="actOnSaveSignalList"/>
+		<object access-modifier="private" name="actOnSaveTable" display-name="actOnSaveTable" uuid="76e7623b-fa56-4132-9399-5717b450f480" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5">
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="InvokeTrigger" value="false" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked">
+				<body kind="om">
+					<![CDATA[DebugTool_1.Log("Выполнено сохранение таблицы значений графиков в файл "+Trends_1.GetEventParam(0));]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="actOnPrintSettings" display-name="actOnPrintSettings" uuid="e641e03f-e2f3-47b2-82ee-afe614f16f0c" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5">
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="InvokeTrigger" value="false" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked">
+				<body kind="om">
+					<![CDATA[DebugTool_1.Log("Выполнен вход в настройки печати графиков");]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="actOnPrint" display-name="actOnPrint" uuid="be6b7974-1ef0-4b38-a2ee-e53481395c77" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5">
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="InvokeTrigger" value="false" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked">
+				<body kind="om">
+					<![CDATA[DebugTool_1.Log("Выполнена печать графиков");]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="actOnExport" display-name="actOnExport" uuid="1c538c16-4e5b-4507-a5da-de65dfbbfed5" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5">
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="InvokeTrigger" value="false" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked">
+				<body kind="om">
+					<![CDATA[DebugTool_1.Log("Выполнен экспорт графиков в файл "+Trends_1.GetEventParam(0));]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="actOnSaveSignalList" display-name="actOnSaveSignalList" uuid="5441187b-8942-48d8-ab62-bf56f5bf4fd8" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5">
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="InvokeTrigger" value="false" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked">
+				<body kind="om">
+					<![CDATA[DebugTool_1.Log("Выполнено сохранение списка сигналов графиков в файл "+Trends_1.GetEventParam(0));]]>
+				</body>
+			</do-on>
+		</object>
+		<do-trace access-modifier="private" target="ShowDescriptionInTree" ver="5">
+			<body>
+				<![CDATA[Tests.cbItemDescriptions.State]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="UseCustomTree" ver="5">
+			<body>
+				<![CDATA[Tests.cbCustomTree.State]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="UseServerTime" ver="5">
+			<body>
+				<![CDATA[Tests.cbUseServerTime.State]]>
+			</body>
+		</do-trace>
+		<init target="OperativeStoredInterval" ver="5" value="5"/>
+		<init target="SynchronizeColor" ver="5" value="false"/>
+		<init target="UseServerTime" ver="5" value="false"/>
+		<init target="ControlLineMultipleAdd" ver="5" value="false"/>
+		<init target="FileSystemAccess" ver="5" value="false"/>
+		<init target="EnableManualColor" ver="5" value="false"/>
+		<init target="ActiveMode" ver="5" value="0"/>
+		<init target="ShowMiniTrends" ver="5" value="true"/>
+		<init target="ShowSources" ver="5" value="true"/>
+		<init target="RedLineShift" ver="5" value="10"/>
+		<init target="AccessSettings" ver="5" value="true"/>
+		<init target="ShowFullDescription" ver="5" value="true"/>
+		<do-trace access-modifier="private" target="TreeFindEnable" ver="5">
+			<body>
+				<![CDATA[Tests.cbFindInTree.State]]>
+			</body>
+		</do-trace>
+		<init target="ConfigurationPath" ver="5" value="Test"/>
+	</object>
+	<object access-modifier="private" name="Theme_1" display-name="Theme_1" uuid="7a934f80-a658-4475-a09f-21db56641e7b" base-type="Theme" base-type-id="05d4d7df-0f8e-4ec1-ac85-b5460e30af81" ver="5">
+		<init target="BackgroundColor" ver="5" value="0xfff0f0f0"/>
+		<init target="ForegroundColor" ver="5" value="0xff000000"/>
+		<init target="BorderColor" ver="5" value="0xff5f5f5f"/>
+		<init target="EditorBrushColor" ver="5" value="0xffffffff"/>
+		<init target="EditorFontColor" ver="5" value="0xff000000"/>
+	</object>
+	<object access-modifier="private" name="Tests" display-name="Tests" uuid="1a999e62-277d-4e0e-86ce-e2dd082b6a40" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5">
+		<designed target="X" value="1688" ver="5"/>
+		<designed target="Y" value="16" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="160" ver="5"/>
+		<designed target="Height" value="650" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="0" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="cbShowToolbar" display-name="cbShowToolbar" uuid="1132b8b0-c296-459b-a8d3-48ad972cc5bb" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5">
+			<designed target="X" value="20" ver="5"/>
+			<designed target="Y" value="10" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="false" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="150" ver="5"/>
+			<designed target="Height" value="30" ver="5"/>
+			<designed target="Text" value="Панель инструментов" ver="5"/>
+			<designed target="Font" value="Tahoma,8,-1,5,50,0,0,0,0,0" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="State" value="true" ver="5"/>
+			<do-trace access-modifier="private" target="FontColor" ver="5">
+				<body>
+					<![CDATA[Theme_1.ForegroundColor]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="State" ver="5">
+				<body>
+					<![CDATA[Trends_1.ShowToolbar]]>
+				</body>
+			</do-trace>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="StateChanged">
+				<body kind="om">
+					<![CDATA[if (Trends_1.ShowToolbar != State)
+	Trends_1.ShowToolbar = State;]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="cbGlobalRanges" display-name="cbGlobalRanges" uuid="be1f8a55-17d6-4882-8ea7-9dfb34f32cfd" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5">
+			<designed target="X" value="40" ver="5"/>
+			<designed target="Y" value="35" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="false" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="130" ver="5"/>
+			<designed target="Height" value="30" ver="5"/>
+			<designed target="Text" value="Общий масштаб" ver="5"/>
+			<designed target="Font" value="Tahoma,8,-1,5,50,0,0,0,0,0" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="State" value="true" ver="5"/>
+			<do-trace access-modifier="private" target="FontColor" ver="5">
+				<body>
+					<![CDATA[Theme_1.ForegroundColor]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="State" ver="5">
+				<body>
+					<![CDATA[Trends_1.GlobalRanges]]>
+				</body>
+			</do-trace>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="StateChanged">
+				<body kind="om">
+					<![CDATA[if (Trends_1.GlobalRanges != State)
+	Trends_1.GlobalRanges = State;]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="cbAutoRange" display-name="cbAutoRange" uuid="050373b4-09bd-4d33-bb13-d0b59a2210a4" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5">
+			<designed target="X" value="40" ver="5"/>
+			<designed target="Y" value="60" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="false" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="130" ver="5"/>
+			<designed target="Height" value="30" ver="5"/>
+			<designed target="Text" value="Автоподстройка" ver="5"/>
+			<designed target="Font" value="Tahoma,8,-1,5,50,0,0,0,0,0" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="State" value="true" ver="5"/>
+			<do-trace access-modifier="private" target="FontColor" ver="5">
+				<body>
+					<![CDATA[Theme_1.ForegroundColor]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="State" ver="5">
+				<body>
+					<![CDATA[Trends_1.AutoRange]]>
+				</body>
+			</do-trace>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="StateChanged">
+				<body kind="om">
+					<![CDATA[if (Trends_1.AutoRange != State)
+	Trends_1.AutoRange = State;]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="cbShowSources" display-name="cbShowSources" uuid="9f68c4af-915e-46db-b605-7f66f85ab03d" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5">
+			<designed target="X" value="20" ver="5"/>
+			<designed target="Y" value="90" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="false" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="150" ver="5"/>
+			<designed target="Height" value="30" ver="5"/>
+			<designed target="Text" value="Дерево сигналов" ver="5"/>
+			<designed target="Font" value="Tahoma,8,-1,5,50,0,0,0,0,0" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="State" value="true" ver="5"/>
+			<do-trace access-modifier="private" target="FontColor" ver="5">
+				<body>
+					<![CDATA[Theme_1.ForegroundColor]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="State" ver="5">
+				<body>
+					<![CDATA[Trends_1.ShowSources]]>
+				</body>
+			</do-trace>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="StateChanged">
+				<body kind="om">
+					<![CDATA[//Debug.Log("ShowSources="+Str.ToString(State));
+if (Trends_1.ShowSources != State)
+	Trends_1.ShowSources = State;]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="cbItemDescriptions" display-name="cbItemDescriptions" uuid="07979a00-a2b7-486c-958a-42138bf9701b" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5">
+			<designed target="X" value="40" ver="5"/>
+			<designed target="Y" value="120" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="false" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="130" ver="5"/>
+			<designed target="Height" value="30" ver="5"/>
+			<designed target="Text" value="Описание сигналов" ver="5"/>
+			<designed target="Font" value="Tahoma,8,-1,5,50,0,0,0,0,0" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="State" value="true" ver="5"/>
+			<do-trace access-modifier="private" target="FontColor" ver="5">
+				<body>
+					<![CDATA[Theme_1.ForegroundColor]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="cbCustomTree" display-name="cbCustomTree" uuid="eb615bbc-6941-4d0a-a34c-2b1b775217e3" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5">
+			<designed target="X" value="40" ver="5"/>
+			<designed target="Y" value="145" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="false" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="130" ver="5"/>
+			<designed target="Height" value="30" ver="5"/>
+			<designed target="Text" value="Пользовательское" ver="5"/>
+			<designed target="Font" value="Tahoma,8,-1,5,50,0,0,0,0,0" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="State" value="true" ver="5"/>
+			<do-trace access-modifier="private" target="FontColor" ver="5">
+				<body>
+					<![CDATA[Theme_1.ForegroundColor]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="cbFindInTree" display-name="cbFindInTree" uuid="94bf64ba-4677-4ce5-9c6d-7aa056085f3d" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5">
+			<designed target="X" value="40" ver="5"/>
+			<designed target="Y" value="170" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="false" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="130" ver="5"/>
+			<designed target="Height" value="30" ver="5"/>
+			<designed target="Text" value="Поиск в дереве" ver="5"/>
+			<designed target="Font" value="Tahoma,8,-1,5,50,0,0,0,0,0" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="State" value="true" ver="5"/>
+			<do-trace access-modifier="private" target="FontColor" ver="5">
+				<body>
+					<![CDATA[Theme_1.ForegroundColor]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="cbShowLegend" display-name="cbShowLegend" uuid="b84dd1fa-2b19-42ff-9c2e-3347e6431ac2" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5">
+			<designed target="X" value="20" ver="5"/>
+			<designed target="Y" value="210" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="false" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="150" ver="5"/>
+			<designed target="Height" value="30" ver="5"/>
+			<designed target="Text" value="Легенда" ver="5"/>
+			<designed target="Font" value="Tahoma,8,-1,5,50,0,0,0,0,0" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="State" value="true" ver="5"/>
+			<do-trace access-modifier="private" target="FontColor" ver="5">
+				<body>
+					<![CDATA[Theme_1.ForegroundColor]]>
+				</body>
+			</do-trace>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="StateChanged">
+				<body kind="om">
+					<![CDATA[if (Trends_1.ShowLegend != State)
+	Trends_1.ShowLegend = State;]]>
+				</body>
+			</do-on>
+			<do-trace access-modifier="private" target="State" ver="5">
+				<body>
+					<![CDATA[Trends_1.ShowLegend]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="cbShowStatus" display-name="cbShowStatus" uuid="a6789f48-bc88-4ff5-80ad-9e5e8cc2230a" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5">
+			<designed target="X" value="20" ver="5"/>
+			<designed target="Y" value="240" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="false" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="150" ver="5"/>
+			<designed target="Height" value="30" ver="5"/>
+			<designed target="Text" value="Статусная строка" ver="5"/>
+			<designed target="Font" value="Tahoma,8,-1,5,50,0,0,0,0,0" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="State" value="true" ver="5"/>
+			<do-trace access-modifier="private" target="FontColor" ver="5">
+				<body>
+					<![CDATA[Theme_1.ForegroundColor]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="State" ver="5">
+				<body>
+					<![CDATA[Trends_1.ShowStatus]]>
+				</body>
+			</do-trace>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="StateChanged">
+				<body kind="om">
+					<![CDATA[if (Trends_1.ShowStatus != State)
+	Trends_1.ShowStatus = State;]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="cbUseServerTime" display-name="cbUseServerTime" uuid="3141b257-0906-4929-aed4-fae3c11c0635" base-type="Checkbox" base-type-id="ba26cad1-a080-4c5d-8847-ce576488cf3f" ver="5">
+			<designed target="X" value="20" ver="5"/>
+			<designed target="Y" value="270" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="false" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="150" ver="5"/>
+			<designed target="Height" value="30" ver="5"/>
+			<designed target="Text" value="Метка времени сервера" ver="5"/>
+			<designed target="Font" value="Tahoma,8,-1,5,50,0,0,0,0,0" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="State" value="false" ver="5"/>
+			<do-trace access-modifier="private" target="FontColor" ver="5">
+				<body>
+					<![CDATA[Theme_1.ForegroundColor]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="ThemesLabel" display-name="ThemesLabel" uuid="08c09a3b-4e1b-4d05-b95a-bbfcdc74d437" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5">
+			<designed target="X" value="20" ver="5"/>
+			<designed target="Y" value="310" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="false" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="100" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="Темы оформления" ver="5"/>
+			<designed target="Font" value="Tahoma,8,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="TextAlignment" value="33" ver="5"/>
+			<do-trace access-modifier="private" target="FontColor" ver="5">
+				<body>
+					<![CDATA[Theme_1.ForegroundColor]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="AddGrapthicsButton" display-name="AddGrapthicsButton" uuid="e80daa11-6cf1-43bd-af43-31a7d7ca3f00" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5">
+			<designed target="X" value="20" ver="5"/>
+			<designed target="Y" value="380" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="false" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="140" ver="5"/>
+			<designed target="Height" value="30" ver="5"/>
+			<designed target="Text" value="Добавить графики" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<designed target="Font" value="Tahoma,8,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="OnClickFontColor" value="4278190080" ver="5"/>
+			<designed target="OnHoverFontColor" value="4278190080" ver="5"/>
+			<designed target="BrushColor" value="4293980400" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+			<designed target="OnClickBrushColor" value="4288716960" ver="5"/>
+			<designed target="OnClickBrushStyle" value="1" ver="5"/>
+			<designed target="OnHoverBrushColor" value="0xffffffff" ver="5"/>
+			<designed target="OnHoverBrushStyle" value="1" ver="5"/>
+			<designed target="PenColor" value="0xff000000" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="OnClickPenColor" value="0xff000000" ver="5"/>
+			<designed target="OnClickPenStyle" value="1" ver="5"/>
+			<designed target="OnClickPenWidth" value="1" ver="5"/>
+			<designed target="OnHoverPenColor" value="0xff000000" ver="5"/>
+			<designed target="OnHoverPenStyle" value="1" ver="5"/>
+			<designed target="OnHoverPenWidth" value="1" ver="5"/>
+			<designed target="Checkable" value="false" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+				<body kind="om">
+					<![CDATA[Debug.Log("Добавление сигналов");
+//Trends_1.GlobalRanges =true;
+//Trends_1.AutoRange = false;
+//Trends_1.HighRange = 10;
+//Trends_1.LowRange = 0;
+
+//Trends_1.ForcedAddItem("root.signal_float 1","мм","Сигнал #2");
+//Trends_1.SetAxisColorU4("root.signal_float 1",0xff0080ff);
+//Trends_1.SetGraphicColorU4("root.signal_float 1",0xff0080ff);
+//Trends_1.ForcedAddItem("root.signal_float 2","","Сигнал #2");
+//Trends_1.SetIndividualRange("root.signal_float 1",0,10);
+//Trends_1.AddLevel("root.signal_float 3", 1);
+//Trends_1.SetGraphicAxis("root.signal_float 3", "root.signal_float 1");
+//Trends_1.AddLevel("root.signal_float 4", 1);
+//Trends_1.SetGraphicAxis("root.signal_float 4", "root.signal_float 1");
+//Trends_1.SetIndividualRange("root.signal_float 1",0,10);
+
+/*
+Trends_1.ForcedAddItem("Object.SomeObject.float_1","м3","Сигнал #3");
+Trends_1.SetGraphicColorU4("Object.SomeObject.float_1",0xff0080ff);
+Trends_1.SetIndividualRange("Object.SomeObject.float_1",80,110);
+Trends_1.SetAxisColorU4("Object.SomeObject.float_1",0xff0080ff);
+
+Trends_1.ForcedAddItem("Object.SomeObject.SomeParameter1","м","Сигнал #1");
+Trends_1.SetGraphicColorU4("Object.SomeObject.SomeParameter1",0xff008080);
+Trends_1.SetIndividualRange("Object.SomeObject.SomeParameter1",-200,200);
+Trends_1.SetAxisColorU4("Object.SomeObject.SomeParameter1",0xff008080);//*/
+
+Trends_1.ForcedAddItem("Object.SomeObject.float_1","","userОписание");
+Trends_1.ForcedAddItem("Object.SomeObject.SomeParameter1","","");
+Trends_1.ForcedAddItem("Object.SomeObject.SomeParameter.Новый сигнал 1","","");
+//Trends_1.ForcedAddItem("root.addon.signal_float 3","","");
+//Trends_1.ForcedAddItem("root.addon.signal_float 4","","");
+//Trends_1.ForcedAddItem("root.addon.signal_float 5","","");
+//Trends_1.ForcedAddItem("root.addon.signal_float 6","","");
+//Trends_1.ForcedAddItem("root.addon.signal_float 7","","");
+//Trends_1.ForcedAddItem("root.addon.signal_float 8","","");
+//Trends_1.ForcedAddItem("root.addon.signal_float 9","","");
+//Trends_1.ForcedAddItem("root.signal_float 1","","");//*/
+
+//*/
+]]>
+				</body>
+			</do-on>
+			<designed target="DisabledFontColor" value="4278190080" ver="5"/>
+			<designed target="DisabledBrushColor" value="0xffa0a0a0" ver="5"/>
+			<designed target="DisabledBrushStyle" value="1" ver="5"/>
+			<designed target="DisabledPenColor" value="0xffa0a0a0" ver="5"/>
+			<designed target="DisabledPenStyle" value="1" ver="5"/>
+			<designed target="DisabledPenWidth" value="1" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Checked" value="false" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AddLevelsButtons" display-name="AddLevelsButtons" uuid="e0fe1408-213c-4fdc-94c9-cc1d4609437b" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5">
+			<designed target="X" value="20" ver="5"/>
+			<designed target="Y" value="420" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="false" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="140" ver="5"/>
+			<designed target="Height" value="30" ver="5"/>
+			<designed target="Text" value="Добавить уровни" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<designed target="Font" value="Tahoma,8,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="OnClickFontColor" value="4278190080" ver="5"/>
+			<designed target="OnHoverFontColor" value="4278190080" ver="5"/>
+			<designed target="BrushColor" value="4293980400" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+			<designed target="OnClickBrushColor" value="4288716960" ver="5"/>
+			<designed target="OnClickBrushStyle" value="1" ver="5"/>
+			<designed target="OnHoverBrushColor" value="4294967295" ver="5"/>
+			<designed target="OnHoverBrushStyle" value="1" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="OnClickPenColor" value="4278190080" ver="5"/>
+			<designed target="OnClickPenStyle" value="1" ver="5"/>
+			<designed target="OnClickPenWidth" value="1" ver="5"/>
+			<designed target="OnHoverPenColor" value="4278190080" ver="5"/>
+			<designed target="OnHoverPenStyle" value="1" ver="5"/>
+			<designed target="OnHoverPenWidth" value="1" ver="5"/>
+			<designed target="Checkable" value="false" ver="5"/>
+			<designed target="DisabledFontColor" value="4278190080" ver="5"/>
+			<designed target="DisabledBrushColor" value="4288716960" ver="5"/>
+			<designed target="DisabledBrushStyle" value="1" ver="5"/>
+			<designed target="DisabledPenColor" value="4288716960" ver="5"/>
+			<designed target="DisabledPenStyle" value="1" ver="5"/>
+			<designed target="DisabledPenWidth" value="1" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Checked" value="false" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+				<body kind="om">
+					<![CDATA[Trends_1.AddLevel("root.signal_float 3", 1);
+Trends_1.SetGraphicAxis("root.signal_float 3", "root.signal_float 1");
+Trends_1.AddLevel("root.signal_float 4", 1);
+Trends_1.SetGraphicAxis("root.signal_float 4", "root.signal_float 1");
+]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="LightThemeButton" display-name="LightThemeButton" uuid="92c64b3a-d91d-4a0d-b09d-345b0cb7b46d" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5">
+			<designed target="X" value="20" ver="5"/>
+			<designed target="Y" value="330" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="false" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="40" ver="5"/>
+			<designed target="Height" value="30" ver="5"/>
+			<designed target="Checkable" value="false" ver="5"/>
+			<designed target="Checked" value="false" ver="5"/>
+			<designed target="Text" value="" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<designed target="Font" value="Tahoma,8,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="0xff000000" ver="5"/>
+			<designed target="OnClickFontColor" value="0xff000000" ver="5"/>
+			<designed target="OnHoverFontColor" value="0xff000000" ver="5"/>
+			<designed target="DisabledFontColor" value="0xff000000" ver="5"/>
+			<designed target="BrushColor" value="0xfff0f0f0" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+			<designed target="OnClickBrushColor" value="0xffc9e0f7" ver="5"/>
+			<designed target="OnClickBrushStyle" value="1" ver="5"/>
+			<designed target="OnHoverBrushColor" value="0xffffffff" ver="5"/>
+			<designed target="OnHoverBrushStyle" value="1" ver="5"/>
+			<designed target="DisabledBrushColor" value="4288716960" ver="5"/>
+			<designed target="DisabledBrushStyle" value="1" ver="5"/>
+			<designed target="PenColor" value="0xff5f5f5f" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="OnClickPenColor" value="4278190080" ver="5"/>
+			<designed target="OnClickPenStyle" value="1" ver="5"/>
+			<designed target="OnClickPenWidth" value="1" ver="5"/>
+			<designed target="OnHoverPenColor" value="4278190080" ver="5"/>
+			<designed target="OnHoverPenStyle" value="1" ver="5"/>
+			<designed target="OnHoverPenWidth" value="1" ver="5"/>
+			<designed target="DisabledPenColor" value="4288716960" ver="5"/>
+			<designed target="DisabledPenStyle" value="1" ver="5"/>
+			<designed target="DisabledPenWidth" value="1" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+				<body kind="om">
+					<![CDATA[Theme_1.BackgroundColor = BrushColor;
+Theme_1.ForegroundColor = FontColor;
+Theme_1.BorderColor = PenColor;
+Theme_1.DisabledBorderColor = DisabledPenColor;
+Theme_1.SelectionColor = OnClickBrushColor;
+Theme_1.EditorBrushColor = OnHoverBrushColor;
+Theme_1.EditorFontColor = OnHoverFontColor;]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="GrayThemeButton" display-name="GrayThemeButton" uuid="cab4a78e-48a3-44e7-97dc-bcca01a499bd" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5">
+			<designed target="X" value="70" ver="5"/>
+			<designed target="Y" value="330" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="false" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="40" ver="5"/>
+			<designed target="Height" value="30" ver="5"/>
+			<designed target="Checkable" value="false" ver="5"/>
+			<designed target="Checked" value="false" ver="5"/>
+			<designed target="Text" value="" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<designed target="Font" value="Tahoma,8,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="0xff000000" ver="5"/>
+			<designed target="OnClickFontColor" value="0xff000000" ver="5"/>
+			<designed target="OnHoverFontColor" value="0xff000000" ver="5"/>
+			<designed target="DisabledFontColor" value="0xff000000" ver="5"/>
+			<designed target="BrushColor" value="0xffcccccc" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+			<designed target="OnClickBrushColor" value="0xfff3f3f3" ver="5"/>
+			<designed target="OnClickBrushStyle" value="1" ver="5"/>
+			<designed target="OnHoverBrushColor" value="0xffe0e0e0" ver="5"/>
+			<designed target="OnHoverBrushStyle" value="1" ver="5"/>
+			<designed target="DisabledBrushColor" value="4288716960" ver="5"/>
+			<designed target="DisabledBrushStyle" value="1" ver="5"/>
+			<designed target="PenColor" value="0xff808080" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="OnClickPenColor" value="4278190080" ver="5"/>
+			<designed target="OnClickPenStyle" value="1" ver="5"/>
+			<designed target="OnClickPenWidth" value="1" ver="5"/>
+			<designed target="OnHoverPenColor" value="4278190080" ver="5"/>
+			<designed target="OnHoverPenStyle" value="1" ver="5"/>
+			<designed target="OnHoverPenWidth" value="1" ver="5"/>
+			<designed target="DisabledPenColor" value="4288716960" ver="5"/>
+			<designed target="DisabledPenStyle" value="1" ver="5"/>
+			<designed target="DisabledPenWidth" value="1" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+				<body kind="om">
+					<![CDATA[Theme_1.BackgroundColor = BrushColor;
+Theme_1.ForegroundColor = FontColor;
+Theme_1.BorderColor = PenColor;
+Theme_1.DisabledBorderColor = DisabledPenColor;
+Theme_1.SelectionColor = OnClickBrushColor;
+Theme_1.EditorBrushColor = OnHoverBrushColor;
+Theme_1.EditorFontColor = OnHoverFontColor;]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="DarkThemeButton" display-name="DarkThemeButton" uuid="ca8b9e78-e304-4184-9564-568646757faa" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5">
+			<designed target="X" value="120" ver="5"/>
+			<designed target="Y" value="330" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="false" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="40" ver="5"/>
+			<designed target="Height" value="30" ver="5"/>
+			<designed target="Checkable" value="false" ver="5"/>
+			<designed target="Checked" value="false" ver="5"/>
+			<designed target="Text" value="" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<designed target="Font" value="Tahoma,8,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="0xfff0f0f0" ver="5"/>
+			<designed target="OnClickFontColor" value="0xffffffff" ver="5"/>
+			<designed target="OnHoverFontColor" value="0xffffffff" ver="5"/>
+			<designed target="DisabledFontColor" value="0xfff0f0f0" ver="5"/>
+			<designed target="BrushColor" value="0xff00344a" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+			<designed target="OnClickBrushColor" value="0xff557e99" ver="5"/>
+			<designed target="OnClickBrushStyle" value="1" ver="5"/>
+			<designed target="OnHoverBrushColor" value="0xff416075" ver="5"/>
+			<designed target="OnHoverBrushStyle" value="1" ver="5"/>
+			<designed target="DisabledBrushColor" value="0xffa0a0a0" ver="5"/>
+			<designed target="DisabledBrushStyle" value="1" ver="5"/>
+			<designed target="PenColor" value="0xffb0b0b0" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="OnClickPenColor" value="4278190080" ver="5"/>
+			<designed target="OnClickPenStyle" value="1" ver="5"/>
+			<designed target="OnClickPenWidth" value="1" ver="5"/>
+			<designed target="OnHoverPenColor" value="4278190080" ver="5"/>
+			<designed target="OnHoverPenStyle" value="1" ver="5"/>
+			<designed target="OnHoverPenWidth" value="1" ver="5"/>
+			<designed target="DisabledPenColor" value="4288716960" ver="5"/>
+			<designed target="DisabledPenStyle" value="1" ver="5"/>
+			<designed target="DisabledPenWidth" value="1" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+				<body kind="om">
+					<![CDATA[Theme_1.BackgroundColor = BrushColor;
+Theme_1.ForegroundColor = FontColor;
+Theme_1.BorderColor = PenColor;
+Theme_1.DisabledBorderColor = DisabledPenColor;
+Theme_1.SelectionColor = OnClickBrushColor;
+Theme_1.EditorBrushColor = OnHoverBrushColor;
+Theme_1.EditorFontColor = OnHoverFontColor;]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="ConfigGraphicButton" display-name="ConfigGraphicButton" uuid="805d6c1c-392b-4fda-abbf-ac6f2abf5263" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5">
+			<designed target="X" value="20" ver="5"/>
+			<designed target="Y" value="460" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="false" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="140" ver="5"/>
+			<designed target="Height" value="30" ver="5"/>
+			<designed target="Text" value="Заменить конфигурацию" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<designed target="Font" value="Tahoma,8,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="OnClickFontColor" value="4278190080" ver="5"/>
+			<designed target="OnHoverFontColor" value="4278190080" ver="5"/>
+			<designed target="BrushColor" value="4293980400" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+			<designed target="OnClickBrushColor" value="4288716960" ver="5"/>
+			<designed target="OnClickBrushStyle" value="1" ver="5"/>
+			<designed target="OnHoverBrushColor" value="0xffffffff" ver="5"/>
+			<designed target="OnHoverBrushStyle" value="1" ver="5"/>
+			<designed target="PenColor" value="0xff000000" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="OnClickPenColor" value="0xff000000" ver="5"/>
+			<designed target="OnClickPenStyle" value="1" ver="5"/>
+			<designed target="OnClickPenWidth" value="1" ver="5"/>
+			<designed target="OnHoverPenColor" value="0xff000000" ver="5"/>
+			<designed target="OnHoverPenStyle" value="1" ver="5"/>
+			<designed target="OnHoverPenWidth" value="1" ver="5"/>
+			<designed target="Checkable" value="false" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+				<body kind="om">
+					<![CDATA[Trends_1.ConfigureGraphic("root.signal_float 1", GetGraphConfig());
+Trends_1.ConfigureGraphic("root.signal_float 2", GetGraphConfig());
+
+]]>
+				</body>
+			</do-on>
+			<designed target="DisabledFontColor" value="4278190080" ver="5"/>
+			<designed target="DisabledBrushColor" value="0xffa0a0a0" ver="5"/>
+			<designed target="DisabledBrushStyle" value="1" ver="5"/>
+			<designed target="DisabledPenColor" value="0xffa0a0a0" ver="5"/>
+			<designed target="DisabledPenStyle" value="1" ver="5"/>
+			<designed target="DisabledPenWidth" value="1" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Checked" value="false" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Button_1" display-name="Button_1" uuid="54d60dc0-19fc-4dcc-8e01-b1ea91faa34c" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5">
+			<designed target="X" value="20" ver="5"/>
+			<designed target="Y" value="500" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="false" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="140" ver="5"/>
+			<designed target="Height" value="30" ver="5"/>
+			<designed target="Text" value="Сохранить сигналы" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<designed target="Font" value="Tahoma,8,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="OnClickFontColor" value="4278190080" ver="5"/>
+			<designed target="OnHoverFontColor" value="4278190080" ver="5"/>
+			<designed target="BrushColor" value="4293980400" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+			<designed target="OnClickBrushColor" value="4288716960" ver="5"/>
+			<designed target="OnClickBrushStyle" value="1" ver="5"/>
+			<designed target="OnHoverBrushColor" value="0xffffffff" ver="5"/>
+			<designed target="OnHoverBrushStyle" value="1" ver="5"/>
+			<designed target="PenColor" value="0xff000000" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="OnClickPenColor" value="0xff000000" ver="5"/>
+			<designed target="OnClickPenStyle" value="1" ver="5"/>
+			<designed target="OnClickPenWidth" value="1" ver="5"/>
+			<designed target="OnHoverPenColor" value="0xff000000" ver="5"/>
+			<designed target="OnHoverPenStyle" value="1" ver="5"/>
+			<designed target="OnHoverPenWidth" value="1" ver="5"/>
+			<designed target="Checkable" value="false" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+				<body kind="om">
+					<![CDATA[Trends_1.SaveSignalsList("TagList.json");]]>
+				</body>
+			</do-on>
+			<designed target="DisabledFontColor" value="4278190080" ver="5"/>
+			<designed target="DisabledBrushColor" value="0xffa0a0a0" ver="5"/>
+			<designed target="DisabledBrushStyle" value="1" ver="5"/>
+			<designed target="DisabledPenColor" value="0xffa0a0a0" ver="5"/>
+			<designed target="DisabledPenStyle" value="1" ver="5"/>
+			<designed target="DisabledPenWidth" value="1" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Checked" value="false" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Button_2" display-name="Button_2" uuid="a4ff9316-ad37-468f-b095-714e838cc28d" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5">
+			<designed target="X" value="20" ver="5"/>
+			<designed target="Y" value="540" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Visible" value="false" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="140" ver="5"/>
+			<designed target="Height" value="30" ver="5"/>
+			<designed target="Text" value="Загрузить сигналы" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+			<designed target="Font" value="Tahoma,8,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="FontColor" value="4278190080" ver="5"/>
+			<designed target="OnClickFontColor" value="4278190080" ver="5"/>
+			<designed target="OnHoverFontColor" value="4278190080" ver="5"/>
+			<designed target="BrushColor" value="4293980400" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+			<designed target="OnClickBrushColor" value="4288716960" ver="5"/>
+			<designed target="OnClickBrushStyle" value="1" ver="5"/>
+			<designed target="OnHoverBrushColor" value="0xffffffff" ver="5"/>
+			<designed target="OnHoverBrushStyle" value="1" ver="5"/>
+			<designed target="PenColor" value="0xff000000" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="OnClickPenColor" value="0xff000000" ver="5"/>
+			<designed target="OnClickPenStyle" value="1" ver="5"/>
+			<designed target="OnClickPenWidth" value="1" ver="5"/>
+			<designed target="OnHoverPenColor" value="0xff000000" ver="5"/>
+			<designed target="OnHoverPenStyle" value="1" ver="5"/>
+			<designed target="OnHoverPenWidth" value="1" ver="5"/>
+			<designed target="Checkable" value="false" ver="5"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
+				<body kind="om">
+					<![CDATA[Trends_1.LoadSignalsList("TagList.json");
+]]>
+				</body>
+			</do-on>
+			<designed target="DisabledFontColor" value="4278190080" ver="5"/>
+			<designed target="DisabledBrushColor" value="0xffa0a0a0" ver="5"/>
+			<designed target="DisabledBrushStyle" value="1" ver="5"/>
+			<designed target="DisabledPenColor" value="0xffa0a0a0" ver="5"/>
+			<designed target="DisabledPenStyle" value="1" ver="5"/>
+			<designed target="DisabledPenWidth" value="1" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Checked" value="false" ver="5"/>
+		</object>
+	</object>
+	<do-trace access-modifier="private" target="BrushColor" ver="5">
+		<body>
+			<![CDATA[Theme_1.BackgroundColor]]>
+		</body>
+	</do-trace>
+	<do access-modifier="private" name="GetGraphConfig" display-name="GetGraphConfig" ver="5" type="string" type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d">
+		<body kind="javascript">
+			<![CDATA[var Config = {};
+
+Config.description = "Описание графика";
+Config.unit = "eu";
+Config.thicknessGood = 4;
+Config.thicknessBad = 1;
+Config.brushStyleGood = 1;
+Config.brushStyleBad = 3;
+Config.color = 0xff0055ff;
+Config.colorAxis = 0xffff55ff;
+Config.colorManual = 0xffff0000;
+Config.useColorManual = true;
+Config.synchroColorMarker = true;
+Config.markerLabelVisible = true;
+Config.tagAxis = "root.signal_float 1";
+Config.lowRange = -200;
+Config.highRange = 200;
+Config.pointSymbol = 3;
+Config.typeStringYValue = 10;
+Config.interpolation = false;
+
+var stringConfig = JSON.stringify(Config, null, 2);
+return stringConfig;
+]]>
+		</body>
+	</do>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+</type>
+

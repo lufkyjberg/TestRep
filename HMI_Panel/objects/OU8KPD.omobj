@@ -1,0 +1,415 @@
+<type access-modifier="private" name="OU8KPD" display-name="OU8KPD" uuid="7784091c-d3df-4e88-b08e-ad2373fdb28e" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="650" ver="5"/>
+	<designed target="Height" value="500" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xff505050" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="650" ver="5"/>
+	<designed target="WindowHeight" value="500" ver="5"/>
+	<designed target="WindowCaption" value="MainForm" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="1" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="0" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<object access-modifier="private" name="KPD" display-name="KPD" uuid="2b17a6a1-0584-476f-9396-3e6214891d8d" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="5" description="" cardinal="1">
+		<designed target="X" value="-1.3333333333333286" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="650" ver="5"/>
+		<designed target="Height" value="500" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="ImageFile" value="ASOKU/pictures/Эксплуатационная-4.png" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="CurrentFrameNumber" value="0" ver="5"/>
+		<designed target="Speed" value="1" ver="5"/>
+		<object access-modifier="private" name="MinOper" display-name="MinOper" uuid="e129203b-03f6-4502-a64e-5537467179c0" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
+			<designed target="X" value="59" ver="5"/>
+			<designed target="Y" value="481" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="0" ver="5"/>
+			<designed target="Height" value="480" ver="5"/>
+			<designed target="PenColor" value="0xffe1a900" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="3" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+			<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="d3490eeb-2d97-4f42-8f6b-11dd0240b158" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+				<designed target="X" value="-28" ver="5"/>
+				<designed target="Y" value="0" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="ea7770dd-03ee-4f95-9fcf-bf2babcc3a10" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+				<designed target="X" value="-28" ver="5"/>
+				<designed target="Y" value="-480" ver="5"/>
+			</object>
+			<do-trace access-modifier="private" target="X" ver="5">
+				<conditional-expr>
+					<condition>
+						<![CDATA[ApItemP_min_Oper > 8 && ApItemP_min_Oper < 24]]>
+					</condition>
+					<expr>
+						<![CDATA[59+((ApItemP_min_Oper-9)*44.5)]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[ApItemP_min_Oper <= 9]]>
+					</condition>
+					<expr>
+						<![CDATA[59]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[ApItemP_min_Oper >=23]]>
+					</condition>
+					<expr>
+						<![CDATA[677]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[59]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="MaxOper" display-name="MaxOper" uuid="56a691d4-a2ed-4754-a9b1-336451e6ea4a" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
+			<designed target="X" value="59" ver="5"/>
+			<designed target="Y" value="481" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="0" ver="5"/>
+			<designed target="Height" value="480" ver="5"/>
+			<designed target="PenColor" value="0xffe1a900" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="3" ver="5"/>
+			<designed target="BrushColor" value="4278190080" ver="5"/>
+			<designed target="BrushStyle" value="0" ver="5"/>
+			<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="6652fa08-a8ba-4cc4-bd43-90a8cd6cd1a5" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+				<designed target="X" value="-28" ver="5"/>
+				<designed target="Y" value="0" ver="5"/>
+			</object>
+			<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="0c085444-a38e-447a-b54f-1e93f3cdb0d2" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+				<designed target="X" value="-28" ver="5"/>
+				<designed target="Y" value="-480" ver="5"/>
+			</object>
+			<do-trace access-modifier="private" target="X" ver="5">
+				<conditional-expr>
+					<condition>
+						<![CDATA[ApItemP_max_Oper > 8 && ApItemP_max_Oper < 24]]>
+					</condition>
+					<expr>
+						<![CDATA[59+((ApItemP_max_Oper-9)*44.5)]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[ApItemP_max_Oper <= 9]]>
+					</condition>
+					<expr>
+						<![CDATA[59]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[ApItemP_max_Oper >=23]]>
+					</condition>
+					<expr>
+						<![CDATA[677]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[59]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Optimal" display-name="Optimal" uuid="13aa2254-dc70-479b-8b29-f7fb4d3d5cc3" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+			<designed target="X" value="26" ver="5"/>
+			<designed target="Y" value="476" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="10" ver="5"/>
+			<designed target="Height" value="10" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="BrushColor" value="0xff0000ff" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+			<designed target="PieAngle" value="360" ver="5"/>
+			<designed target="PieAngleStart" value="360" ver="5"/>
+			<designed target="HoleSize" value="0" ver="5"/>
+			<do-trace access-modifier="private" target="X" ver="5">
+				<conditional-expr>
+					<condition>
+						<![CDATA[(ApParPOpt.Value > 8) && (ApParPOpt.Value < 23)]]>
+					</condition>
+					<expr>
+						<![CDATA[26+((ApParPOpt.Value-9)*44.5)]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[ApParPOpt.Value < 9]]>
+					</condition>
+					<expr>
+						<![CDATA[26]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[ApParPOpt.Value > 23]]>
+					</condition>
+					<expr>
+						<![CDATA[642]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+			<do-trace access-modifier="private" target="Y" ver="5">
+				<conditional-expr>
+					<condition>
+						<![CDATA[(ApItemH.Value > 150) && (ApItemH.Value < 171)]]>
+					</condition>
+					<expr>
+						<![CDATA[476-((ApItemH.Value-155)*32)]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[ApItemH.Value < 155]]>
+					</condition>
+					<expr>
+						<![CDATA[476]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[ApItemH.Value > 171]]>
+					</condition>
+					<expr>
+						<![CDATA[-7]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[476]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<object access-modifier="private" name="TextPropertiesDialogs_1" display-name="TextPropertiesDialogs_1" uuid="4189e473-d050-4424-b429-8bfe8c067077" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+				<designed target="X" value="12" ver="5"/>
+				<designed target="Y" value="-8.5" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="57.999999999999986" ver="5"/>
+				<designed target="Height" value="11" ver="5"/>
+				<designed target="Font" value="Arial,7,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+				<do-trace access-modifier="private" target="Text" ver="5">
+					<body>
+						<![CDATA[String.ToString("%2.2f", ApParKPD_opt.Value)]]>
+					</body>
+				</do-trace>
+			</object>
+		</object>
+		<object access-modifier="private" name="Ellipse_1" display-name="Ellipse_1" uuid="2986251e-1e49-465d-8892-8523230e63b0" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+			<designed target="X" value="26" ver="5"/>
+			<designed target="Y" value="476" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="10" ver="5"/>
+			<designed target="Height" value="10" ver="5"/>
+			<designed target="PenColor" value="4278190080" ver="5"/>
+			<designed target="PenStyle" value="1" ver="5"/>
+			<designed target="PenWidth" value="1" ver="5"/>
+			<designed target="BrushColor" value="0xff00ffff" ver="5"/>
+			<designed target="BrushStyle" value="1" ver="5"/>
+			<designed target="PieAngle" value="360" ver="5"/>
+			<designed target="PieAngleStart" value="360" ver="5"/>
+			<designed target="HoleSize" value="0" ver="5"/>
+			<do-trace access-modifier="private" target="X" ver="5">
+				<conditional-expr>
+					<condition>
+						<![CDATA[(ApItemP.Value > 8) && (ApItemP.Value < 23)]]>
+					</condition>
+					<expr>
+						<![CDATA[26+((ApItemP.Value-9)*44.5)]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[ApItemP.Value < 9]]>
+					</condition>
+					<expr>
+						<![CDATA[26]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[ApItemP.Value > 23]]>
+					</condition>
+					<expr>
+						<![CDATA[642]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+			<do-trace access-modifier="private" target="Y" ver="5">
+				<conditional-expr>
+					<condition>
+						<![CDATA[(ApItemH.Value > 150) && (ApItemH.Value < 171)]]>
+					</condition>
+					<expr>
+						<![CDATA[476-((ApItemH.Value-155)*32)]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[ApItemH.Value < 155]]>
+					</condition>
+					<expr>
+						<![CDATA[476]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[ApItemH.Value > 171]]>
+					</condition>
+					<expr>
+						<![CDATA[-7]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[476]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<object access-modifier="private" name="TextPropertiesDialogs_1" display-name="TextPropertiesDialogs_1" uuid="fc381ecc-76b6-4501-bd8c-810b0481ae72" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+				<designed target="X" value="12" ver="5"/>
+				<designed target="Y" value="-8.5" ver="5"/>
+				<designed target="Rotation" value="0" ver="5"/>
+				<designed target="Width" value="57.999999999999986" ver="5"/>
+				<designed target="Height" value="11" ver="5"/>
+				<designed target="Font" value="Arial,7,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+				<do-trace access-modifier="private" target="Text" ver="5">
+					<body>
+						<![CDATA[String.ToString("%2.2f", ApParKPD.Value)]]>
+					</body>
+				</do-trace>
+			</object>
+		</object>
+	</object>
+	<object access-modifier="private" name="ApItemH" display-name="ApItemH" uuid="86831f5a-f24c-4fc3-ae0c-5e19b2a73e5c" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="HydroUnits.GA_01.OU8.H"/>
+		<init target="Source" ver="5" ref="ASOKU_SYS.AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApItemP" display-name="ApItemP" uuid="e2bc3e1e-3ad7-44c8-b067-154cc1881d47" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="HydroUnits.GA_01.OU8.P"/>
+		<init target="Source" ver="5" ref="ASOKU_SYS.AsokuMain.ApMainSource"/>
+	</object>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Opened">
+		<body kind="om">
+			<![CDATA[if(ApItemH.Advised == true && ApItemP.Advised == true){
+KPD.Ellipse_1.Visible = true;
+}
+else{
+KPD.Ellipse_1.Visible = false;
+}
+if(ApItemP_min_Oper.Advised == false){
+KPD.MinOper.Visible = false;
+}
+else{
+KPD.MinOper.Visible = true;
+}
+if(ApItemP_max_Oper.Advised == false){
+KPD.MaxOper.Visible = false;
+}
+else{
+KPD.MaxOper.Visible = true;
+}
+if(ApParPOpt.Advised == false){
+KPD.Optimal.Visible = false;
+}
+else{
+KPD.Optimal.Visible = true;
+}]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="ApItemP_min_Oper" display-name="ApItemP_min_Oper" uuid="9d89a036-9bcd-4d7f-bcb3-6612278798d0" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="HydroUnits.GA_01.OU8.P_min_oper"/>
+		<init target="Source" ver="5" ref="ASOKU_SYS.AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApItemP_max_Oper" display-name="ApItemP_max_Oper" uuid="b76f2f0a-533d-436f-95bc-5c07a4b211ed" base-type="ApItemFloat4" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="HydroUnits.GA_01.OU8.P_max_oper"/>
+		<init target="Source" ver="5" ref="ASOKU_SYS.AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApParPOpt" display-name="ApParPOpt" uuid="b1f520ea-214a-4574-ab0a-e4fce0cdfc18" base-type="ApItemFloat" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<init target="Path" ver="5" value="HydroUnits.GA_01.OU8.P_opt"/>
+	</object>
+	<object access-modifier="private" name="ApParKPD" display-name="ApParKPD" uuid="851ba639-4d3b-4266-b739-acca1e8de4dc" base-type="ApItemFloat" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<init target="Path" ver="5" value="HydroUnits.GA_01.OU8.KPD"/>
+	</object>
+	<object access-modifier="private" name="ApParKPD_opt" display-name="ApParKPD_opt" uuid="69783514-19dd-4e69-aa71-6eb21f2bac33" base-type="ApItemFloat" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<init target="Path" ver="5" value="HydroUnits.GA_01.OU8.KPD_opt"/>
+	</object>
+</type>
+

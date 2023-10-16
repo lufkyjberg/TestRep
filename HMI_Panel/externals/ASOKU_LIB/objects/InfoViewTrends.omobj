@@ -1,0 +1,120 @@
+<type access-modifier="public" name="InfoViewTrends" display-name="InfoViewTrends" uuid="635eeb20-53b6-4787-8ce7-142a64cd0e89" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5" description="">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="1155" ver="5"/>
+	<designed target="Height" value="700" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="4293980400" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="1155" ver="5"/>
+	<designed target="WindowHeight" value="700" ver="5"/>
+	<designed target="WindowCaption" value="Окно просмотров трендов" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="false" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="2" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="0" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<object access-modifier="private" name="Trends" display-name="Trends" uuid="2f33212b-8be9-40a1-b96d-5a66deddccf9" base-type="Trends" base-type-id="81673f92-ac48-4244-bfe3-ddbdcc98167a" ver="5" description="" cardinal="1">
+		<designed target="X" value="1.9393398282202301" ver="5"/>
+		<designed target="Y" value="1" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="1155" ver="5"/>
+		<designed target="Height" value="700" ver="5"/>
+		<init target="ShowSources" ver="5" value="false"/>
+		<init target="ShowLegend" ver="5" value="true"/>
+		<init target="UseRedLine" ver="5" value="true"/>
+		<init target="ShowMilliseconds" ver="5" value="false"/>
+		<init target="ShowDescriptionInTree" ver="5" value="false"/>
+		<init target="ShowRelativeTag" ver="5" value="true"/>
+		<init target="ShowFullDescription" ver="5" value="true"/>
+		<init target="ActiveMode" ver="5" value="0"/>
+		<init target="AutoRange" ver="5" value="false"/>
+		<init target="UseServerTime" ver="5" value="true"/>
+		<init target="ShowMiniTrends" ver="5" value="false"/>
+		<init target="OperativeDisplayedInterval" ver="5" value="60"/>
+		<init target="int_AP" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ParDevPath" display-name="Путь параметра" uuid="6da5c1e3-0435-4026-ae92-bc01e902ec44" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Ap_Source_Par" display-name="Источник параметра" uuid="efec9448-3a20-4f83-9e3e-69aba17c83ac" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+		<designed target="Location" value="" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="Path" value="" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[ParDevPath.Value]]>
+			</body>
+		</do-trace>
+		<init target="ParentSource" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_Value" display-name="Значение параметра" uuid="ca44af42-f0bc-4a83-9dbf-c5bba60f22ee" base-type="ApItemFloat" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Value"/>
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+	</object>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Opened">
+		<body kind="om">
+			<![CDATA[Trends.ForcedAddItem(Ap_Par_Value.Tag,Ap_Par_Value.Units, Ap_Par_Description.Value);
+Trends.SetIndividualRange(Ap_Par_Value.Tag, Ap_Par_MinValue.Value, Ap_Par_MaxValue.Value);
+]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="Ap_Par_MinValue" display-name="Минимальное значение параметра" uuid="464875e3-eecd-4702-a020-585bf585e50f" base-type="ApItemFloat" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="MinValue"/>
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_MaxValue" display-name="Максимальное значение параметра" uuid="421b124f-6fb2-401d-bc2a-8b10ca9ea70d" base-type="ApItemFloat" base-type-id="7acf87ec-1784-4671-926e-9a41ea8d8692" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+		<init target="Path" ver="5" value="MaxValue"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_Description" display-name="Ap_Par_Description" uuid="5fca0640-2556-4088-a8aa-22cda86f4cff" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Description"/>
+		<init target="Source" ver="5" ref="Ap_Source_Par"/>
+	</object>
+	<object access-modifier="private" name="Window_TrendView" display-name="Окно TrendView" uuid="3bcebb48-6991-4cf3-99b6-39c65b35641d" base-type="Window" base-type-id="04615219-28bb-4a9a-bba4-50ac66972eb0" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MessageReceived">
+			<body kind="om">
+				<![CDATA[if (messageType == "sendmessage")
+{
+    Ap_Source_Par.Path = messageData;     //перезаписываем новый путь до тега
+    Trends.ForcedAddItem(Ap_Par_Value.Tag,Ap_Par_Value.Units, Ap_Par_Value.Description);// добавляем новую шкалу
+    Trends.SetIndividualRange(Ap_Par_Value.Tag, Ap_Par_MinValue.Value, Ap_Par_MaxValue.Value); // выставляем диапазоны отображения параметра    
+}
+
+else if (messageType == "sendmessageSimple")
+{
+    Ap_Source_Par.Path = messageData;     //перезаписываем новый путь до тега
+    Trends.ForcedAddItem(Ap_Par_Value.Tag,Ap_Par_Value.Units, Ap_Par_Value.Description);// добавляем новую шкалу
+    Trends.SetIndividualRange(Ap_Par_Value.Tag, 0, 100); // выставляем диапазоны отображения параметра
+}
+ 
+]]>
+			</body>
+		</do-on>
+		<init target="Group" ver="5" ref="AsokuMain.WindowGroup_TrendView"/>
+	</object>
+	<designed target="Flip" value="0" ver="5"/>
+</type>
+

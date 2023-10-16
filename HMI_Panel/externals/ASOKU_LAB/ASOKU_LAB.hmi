@@ -1,0 +1,24 @@
+<unit uuid="05de5cc5-c0a7-48eb-a79d-a84e3aa44113" name="ASOKU_LAB" display-name="ASOKU_LAB" description="" ver="5" main-form-id="cb0fac76-39cc-48e5-baae-54a64814df5f">
+	<object file="Label_1.omobj" filter="Плакаты"/>
+	<object file="Label_2.omobj" filter="Плакаты"/>
+	<object file="Label_3.omobj" filter="Плакаты"/>
+	<object file="Label_4.omobj" filter="Плакаты"/>
+	<object file="Label_5.omobj" filter="Плакаты"/>
+	<object file="Label_6.omobj" filter="Плакаты"/>
+	<object file="LabelInputObject.omobj" filter=""/>
+	<object file="LabelObject.omobj" filter=""/>
+	<object file="LabelMain.omobj" filter=""/>
+	<object file="ShnDisconnectorLAB.omobj" filter="Объекты"/>
+	<unit-link name="ASOKU_MSG" type="b0491687-7585-47f3-b51f-4e24fd62aef1" type-hint="" assembly-path="ASOKU_MSG" ver="5"/>
+	<unit-link name="ASOKU_SYS" type="b0491687-7585-47f3-b51f-4e24fd62aef1" type-hint="" assembly-path="ASOKU_SYS" ver="5"/>
+	<unit-link name="ASOKU_TRD" type="b0491687-7585-47f3-b51f-4e24fd62aef1" type-hint="" assembly-path="ASOKU_TRD" ver="5"/>
+	<object file="GAModeLAB.omobj" filter="Объекты"/>
+	<object file="DisconnectorLAB.omobj" filter="Объекты"/>
+	<object file="GroundSwitchLAB.omobj" filter="Объекты"/>
+	<object file="SwitchLAB.omobj" filter="Объекты"/>
+	<object file="LabelComment.omobj" filter=""/>
+	<unit-link name="ASOKU_LIB" type="b0491687-7585-47f3-b51f-4e24fd62aef1" type-hint="" assembly-path="ASOKU_LIB" ver="5"/>
+	<object file="SwitchLAB90.omobj" filter="Объекты"/>
+	<object file="GroundSwitchLAB90.omobj" filter="Объекты"/>
+</unit>
+

@@ -1,0 +1,135 @@
+<type access-modifier="protected" name="TRF_Base" display-name="TRF_Base" uuid="013fd696-1697-40b4-89f4-7fe8236dd404" base-type="" base-type-id="00000000-0000-0000-0000-000000000000" ver="5" description="">
+	<object access-modifier="private" name="parDevPath" display-name="Путь параметра" uuid="3c4c70aa-462d-47b0-9ef7-8b7124eebe6a" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Ap_Source_Par" display-name="Ap_Source_Par" uuid="63beb58b-e1b3-4974-b483-9d21dab503c6" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+		<designed target="Location" value="" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="Path" value="" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="ReAdvise" value="0" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[parDevPath.Value]]>
+			</body>
+		</do-trace>
+		<init target="ParentSource" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_transferState" display-name="Ap_Par_transferState" uuid="dc1f51d4-49cc-4b11-94f7-9270217446aa" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="here.Ap_Source_Par"/>
+		<init target="Path" ver="5" value="transferState"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_Transfer" display-name="Ссылка на ТД трансфер-блока" uuid="f3bec1e0-773d-41bf-9ceb-5fde5dc56bae" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="transfer"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Par"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_ID" display-name="Ap_Par_ID" uuid="f3f7235e-3f61-4956-b0b6-7c74a1ac9ae6" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="ID"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Par"/>
+	</object>
+	<object access-modifier="private" name="Ap_Par_Description" display-name="Ap_Par_Description" uuid="04c57a9e-06b1-4b1f-8aa7-761cbbc1cb38" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="Description"/>
+		<init target="Source" ver="5" ref="here.Ap_Source_Par"/>
+	</object>
+	<object access-modifier="private" name="Ap_Source_Transfer" display-name="Ap_Source_Transfer" uuid="af26917b-8d21-4d53-b25f-398debbb550b" base-type="ApSource" base-type-id="966603da-f05e-4b4d-8ef0-919efbf8ab2c" ver="5" description="" cardinal="1">
+		<designed target="Location" value="" ver="5"/>
+		<designed target="Port" value="4388" ver="5"/>
+		<designed target="HistoryPort" value="4950" ver="5"/>
+		<designed target="Path" value="" ver="5"/>
+		<designed target="Active" value="true" ver="5"/>
+		<designed target="ReAdvise" value="1" ver="5"/>
+		<designed target="ClientDisplayName" value="HMI" ver="5"/>
+		<designed target="ClientId" value="HMI" ver="5"/>
+		<do-trace access-modifier="private" target="Path" ver="5">
+			<body>
+				<![CDATA[transferDevPath.Value]]>
+			</body>
+		</do-trace>
+		<init target="ParentSource" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="transferDevPath" display-name="полный путь до узла трансфера" uuid="abfaec00-4e13-4080-8775-7c8e7223b453" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="_transferDevPath" display-name="_transferDevPath" uuid="94a64df0-4a2b-4623-9e63-fcbbb4831e2c" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="DebugTool_1" display-name="DebugTool_1" uuid="80368542-1230-4cba-9813-3e77220a8eac" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ID" display-name="ID" uuid="32730506-48cd-429b-8ff1-c955fc5a2397" base-type="float" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="RW" display-name="RW" uuid="02ba58e9-fcf5-4d69-b0a0-5c15994eff2f" base-type="float" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="NumRack" display-name="NumRack" uuid="7f228b4e-830f-4cd8-a562-cc91ff6613fa" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="NumModul" display-name="NumModul" uuid="4100bb03-3dd9-4c3c-abb7-899f7b071d11" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="NumChan" display-name="NumChan" uuid="fe8b6a91-e536-4bab-a666-8ef34bc45abc" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="StaticOff" display-name="StaticOff" uuid="82bbfee1-5694-4a07-9e13-45700e542018" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="DisableCheckOOS" display-name="DisableCheckOOS" uuid="c270453b-8ec1-44a4-97a8-cd46d809951c" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="SimulationMode" display-name="SimulationMode" uuid="6613f1a4-827a-4a70-a8cf-84df432a1524" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="DelayStateOOSOn" display-name="DelayStateOOSOn" uuid="f818268e-da46-4804-9823-1c1a04d737ad" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="DelayStateOOSOff" display-name="DelayStateOOSOff" uuid="471fa750-0943-4d58-9d84-2ae45683e445" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="NoMes" display-name="NoMes" uuid="f62fdfb6-c5a8-43ee-b0b6-86dd9b8a3bc9" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="ClientID" display-name="ClientID" uuid="6fd2a83d-659c-4879-b87a-d4f09919f8e1" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="TransferStateTime" display-name="TransferStateTime" uuid="7a68ee31-0399-41f1-be09-7bacf2feaed7" base-type="uint8" base-type-id="c8ff7701-da6e-4d53-888a-81fa680ff561" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="_isReadOnlyMode" display-name="_isReadOnlyMode" uuid="dd401b04-ba14-4ed8-8bd4-5a2609ac8adc" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="5" description="" cardinal="1"/>
+	<do access-modifier="private" name="constructor" display-name="constructor" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="om">
+			<![CDATA[
+if (transferDp != "")
+{
+   _isReadOnlyMode = false;  
+}
+ else
+{
+   _isReadOnlyMode = true; 
+}
+
+]]>
+		</body>
+		<param access-modifier="private" name="transferDp" display-name="" uuid="9713e50e-aed5-48b2-ad14-be7c2ff5061d" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5"/>
+	</do>
+	<do access-modifier="private" name="isTransferActive" display-name="Функция проверки: открыт ли трансфер для данного целевого сигнала" ver="5" type="bool" type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8">
+		<body kind="om">
+			<![CDATA[
+/*
+  Функция, которая возвращает признак, открыт ли трансфер для данного целевого сигнала
+*/
+
+if(Ap_Par_Transfer.Advised  == false)
+{
+  return false;
+}
+if((Ap_Par_Transfer.Value == "0") || (Ap_Par_Transfer.Value == ""))  return false;
+else return true;
+
+
+]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="getClientId" display-name="getClientId" ver="5" type="float4" type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d">
+		<body kind="om">
+			<![CDATA[if(ClientID == 0)
+{
+      // ClientID = getLocalClientID();
+}
+return ClientID;
+
+]]>
+		</body>
+	</do>
+	<do access-modifier="private" name="takeMessage" display-name="takeMessage" ver="5" type="void" type-id="cfbbcafa-e13e-4354-a33a-6e57b818e4da">
+		<body kind="om">
+			<![CDATA[/*
+    Выдача сообщения об изменениях пользователя
+*/
+
+AsokuMain.CreateUserMessage("изменил настройки у сигнала " +  Ap_Par_Description.Value);
+
+
+]]>
+		</body>
+	</do>
+	<object access-modifier="private" name="transferNumber" display-name="transferNumber" uuid="22921d21-ca41-47da-a2cc-726736f09f7e" base-type="int4" base-type-id="74222947-f188-4195-8e0e-e33bd9827255" ver="5" description="" cardinal="1"/>
+	<do access-modifier="private" name="getParId" display-name="getParId" ver="5" type="string" type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d">
+		<body kind="om">
+			<![CDATA[// возвращает ID параметра без типа сигнала
+
+return String.SubString(Ap_Par_ID.Value,0, String.IndexOf(Ap_Par_ID.Value, ":") );
+]]>
+		</body>
+	</do>
+</type>
+

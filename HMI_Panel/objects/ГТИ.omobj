@@ -1,0 +1,905 @@
+<type access-modifier="private" name="ГТИ" display-name="ГТИ" uuid="92fa893e-9a6e-42c6-b733-b1cd26abc2d0" base-type="" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Width" value="1920" ver="5"/>
+	<designed target="Height" value="880" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="0xff646464" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="1920" ver="5"/>
+	<designed target="WindowHeight" value="880" ver="5"/>
+	<designed target="WindowCaption" value="MainForm" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="0" ver="5"/>
+	<designed target="WindowBorderStyle" value="1" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="0" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<object access-modifier="private" name="HistogramBar_4" display-name="HistogramBar_4" uuid="cd7d683a-0106-4b52-a77b-18009b83ca08" base-type="HistogramBar" base-type-id="abcbe2c6-2016-434a-b9bf-f6cbfa135e4c" ver="5" description="" cardinal="1">
+		<designed target="X" value="912.88888888888857" ver="5"/>
+		<designed target="Y" value="-911.49999999999966" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="270" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="95" ver="5"/>
+		<designed target="Height" value="1919.9999999999995" ver="5"/>
+		<designed target="MinLimit" value="0" ver="5"/>
+		<designed target="MaxLimit" value="1" ver="5"/>
+		<designed target="LowValue" value="0.25" ver="5"/>
+		<designed target="HighValue" value="0.75" ver="5"/>
+		<designed target="Value" value="0.69999999999999996" ver="5"/>
+		<designed target="Orientation" value="1" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffffffff" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="BarBrushColor" value="0xff0000ff" ver="5"/>
+		<designed target="BarBrushStyle" value="1" ver="5"/>
+		<designed target="BarLowBrushColor" value="4294967040" ver="5"/>
+		<designed target="BarLowBrushStyle" value="1" ver="5"/>
+		<designed target="BarHighBrushColor" value="4294901760" ver="5"/>
+		<designed target="BarHighBrushStyle" value="1" ver="5"/>
+	</object>
+	<object access-modifier="private" name="HistogramBar_5" display-name="HistogramBar_5" uuid="2acfb182-32b6-4aa3-abdb-2dbfb4068a73" base-type="HistogramBar" base-type-id="abcbe2c6-2016-434a-b9bf-f6cbfa135e4c" ver="5" description="" cardinal="1">
+		<designed target="X" value="906.4166666666664" ver="5"/>
+		<designed target="Y" value="-133.08333333333314" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="270" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="107" ver="5"/>
+		<designed target="Height" value="1919.4999999999995" ver="5"/>
+		<designed target="MinLimit" value="0" ver="5"/>
+		<designed target="MaxLimit" value="1" ver="5"/>
+		<designed target="LowValue" value="0.25" ver="5"/>
+		<designed target="HighValue" value="0.75" ver="5"/>
+		<designed target="Value" value="0.69999999999999996" ver="5"/>
+		<designed target="Orientation" value="1" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffffffff" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="BarBrushColor" value="0xff0000ff" ver="5"/>
+		<designed target="BarBrushStyle" value="1" ver="5"/>
+		<designed target="BarLowBrushColor" value="4294967040" ver="5"/>
+		<designed target="BarLowBrushStyle" value="1" ver="5"/>
+		<designed target="BarHighBrushColor" value="4294901760" ver="5"/>
+		<designed target="BarHighBrushStyle" value="1" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_5" display-name="Rectangle_5" uuid="81f90803-b27c-4ed5-9f63-5032de7de96b" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="783.5" ver="5"/>
+		<designed target="Y" value="288.26666666666677" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="228" ver="5"/>
+		<designed target="Height" value="91" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="TextPropertiesDialogs_2" display-name="TextPropertiesDialogs_2" uuid="fa79f897-3705-452e-8623-a92faece74d8" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="7.345454545454686" ver="5"/>
+			<designed target="Y" value="60.181818181818244" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="50" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="Режим" ver="5"/>
+		</object>
+		<object access-modifier="private" name="DiscreteDpValue_1" display-name="DiscreteDpValue_1" uuid="a897cc06-8d72-42a3-b3a1-b41d7ab0e4b7" base-type="DiscreteDpValue" base-type-id="0aa36430-7867-405c-b541-89e8cf6e92d2" ver="5" description="" cardinal="1">
+			<designed target="X" value="102.5" ver="5"/>
+			<designed target="Y" value="14.681818181818244" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="89" ver="5"/>
+			<designed target="Height" value="23" ver="5"/>
+		</object>
+		<object access-modifier="private" name="DiscreteDpValue_2" display-name="DiscreteDpValue_2" uuid="6c3748a9-da70-4812-9c2f-063a7549b8f3" base-type="DiscreteDpValue" base-type-id="0aa36430-7867-405c-b541-89e8cf6e92d2" ver="5" description="" cardinal="1">
+			<designed target="X" value="102.5" ver="5"/>
+			<designed target="Y" value="56.681818181818244" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="89" ver="5"/>
+			<designed target="Height" value="23" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextPropertiesDialogs_3" display-name="TextPropertiesDialogs_3" uuid="b1e2011d-4072-4b21-bc5c-fb99119a5269" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="-4.8545454545452458" ver="5"/>
+			<designed target="Y" value="108.64848484848483" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="106" ver="5"/>
+			<designed target="Height" value="60" ver="5"/>
+			<designed target="Text" value="Уровень 
+за СУР" ver="5"/>
+			<designed target="Font" value="Arimo,18,-1,5,75,0,0,0,0,0,Bold" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextPropertiesDialogs_4" display-name="TextPropertiesDialogs_4" uuid="829d2c4a-ff79-45f4-a760-cbc15f019416" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="-4.8545454545452458" ver="5"/>
+			<designed target="Y" value="165.0484848484848" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="106" ver="5"/>
+			<designed target="Height" value="60" ver="5"/>
+			<designed target="Text" value="Перепад 
+на СУР" ver="5"/>
+			<designed target="Font" value="Arimo,18,-1,5,75,0,0,0,0,0,Bold" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextPropertiesDialogs_7" display-name="TextPropertiesDialogs_7" uuid="f34ce9b5-8c64-450a-a97b-b6fc8a624a14" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="-1.6545454545452003" ver="5"/>
+			<designed target="Y" value="354.58181818181833" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="32.400000000000034" ver="5"/>
+			<designed target="Height" value="30.399999999999977" ver="5"/>
+			<designed target="Text" value="Q" ver="5"/>
+			<designed target="Font" value="Arimo,18,-1,5,75,0,0,0,0,0,Bold" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextPropertiesDialogs_8" display-name="TextPropertiesDialogs_8" uuid="3db5cad4-bec9-405a-8896-b327f2515ee1" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="65.533333333333417" ver="5"/>
+			<designed target="Y" value="-194.48484848484856" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="88.400000000000006" ver="5"/>
+			<designed target="Height" value="26.400000000000034" ver="5"/>
+			<designed target="Text" value="Затвор" ver="5"/>
+			<designed target="Font" value="Arimo,18,-1,5,75,0,0,0,0,0,Bold" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextPropertiesDialogs_9" display-name="TextPropertiesDialogs_9" uuid="23004ce3-c85a-465e-a9c9-f4ec1fdd6382" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="396.19999999999982" ver="5"/>
+			<designed target="Y" value="-199.15151515151524" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="340.40000000000055" ver="5"/>
+			<designed target="Height" value="35.733333333333377" ver="5"/>
+			<designed target="Text" value="Суммарный расход ГЭС" ver="5"/>
+			<designed target="Font" value="Arimo,20,-1,5,75,0,0,0,0,0,Bold" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextPropertiesDialogs_10" display-name="TextPropertiesDialogs_10" uuid="9ab908a1-b5ab-4a9f-ada0-443f326dc7b4" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="-4.8545454545452458" ver="5"/>
+			<designed target="Y" value="224.18181818181813" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="167.06666666666706" ver="5"/>
+			<designed target="Height" value="35.733333333333348" ver="5"/>
+			<designed target="Text" value="Напор" ver="5"/>
+			<designed target="Font" value="Arimo,20,-1,5,75,0,0,0,0,0,Bold" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextPropertiesDialogs_11" display-name="TextPropertiesDialogs_11" uuid="c46f2e65-128e-49e7-9361-d6235a502ef5" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="93.355555555555156" ver="5"/>
+			<designed target="Y" value="-287.26666666666665" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="167.06666666666706" ver="5"/>
+			<designed target="Height" value="28.111111111111111" ver="5"/>
+			<designed target="Font" value="Arial,20,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="Text" value="Уровень ВБ" ver="5"/>
+			<designed target="FontColor" value="0xff000000" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextPropertiesDialogs_13" display-name="TextPropertiesDialogs_13" uuid="0526e858-0ffe-47bc-bf45-52c50937ca2c" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="-391.85454545454525" ver="5"/>
+			<designed target="Y" value="224.18181818181813" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="167.06666666666706" ver="5"/>
+			<designed target="Height" value="35.733333333333348" ver="5"/>
+			<designed target="Text" value="Напор" ver="5"/>
+			<designed target="Font" value="Arimo,20,-1,5,75,0,0,0,0,0,Bold" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AnalogDpValue_48" display-name="AnalogDpValue_48" uuid="de3568bf-d070-4e5c-bf95-c0d88cad5ce2" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+			<designed target="X" value="-275.56666666666683" ver="5"/>
+			<designed target="Y" value="229.5484848484848" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="90" ver="5"/>
+			<designed target="Height" value="25" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextPropertiesDialogs_14" display-name="TextPropertiesDialogs_14" uuid="dfd215ce-9a1f-4b6e-97c4-2fac27a3a881" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="-777.52121212121199" ver="5"/>
+			<designed target="Y" value="224.18181818181813" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="167.06666666666706" ver="5"/>
+			<designed target="Height" value="35.733333333333348" ver="5"/>
+			<designed target="Text" value="Напор" ver="5"/>
+			<designed target="Font" value="Arimo,20,-1,5,75,0,0,0,0,0,Bold" ver="5"/>
+		</object>
+		<object access-modifier="private" name="AnalogDpValue_49" display-name="AnalogDpValue_49" uuid="04f7d849-8360-47db-82b9-0d3011c14507" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+			<designed target="X" value="-661.23333333333346" ver="5"/>
+			<designed target="Y" value="229.5484848484848" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="90" ver="5"/>
+			<designed target="Height" value="25" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextPropertiesDialogs_12" display-name="TextPropertiesDialogs_12" uuid="bd23e533-851f-4b40-842f-e08ff18e86fb" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="92.883333333332871" ver="5"/>
+			<designed target="Y" value="484.89999999999986" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="167.06666666666706" ver="5"/>
+			<designed target="Height" value="31.733333333333348" ver="5"/>
+			<designed target="Font" value="Arial,20,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
+			<designed target="Text" value="Уровень НБ" ver="5"/>
+			<designed target="FontColor" value="0xff000000" ver="5"/>
+			<designed target="TextAlignment" value="132" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Line_57" display-name="Line_57" uuid="f0cec23e-2101-4147-9349-0f5aba2a35e0" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
+		<designed target="X" value="290.36589641966521" ver="5"/>
+		<designed target="Y" value="513.71036240211674" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="180" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="2" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="33.147474747474689" ver="5"/>
+		<designed target="Height" value="513.51122303022066" ver="5"/>
+		<designed target="PenColor" value="0xff999999" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xff000000" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="6fbebe73-f15f-4ac2-a70a-f198b6a6f3c2" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="97.37930279599864" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="aa00beef-7a0b-4b4f-b871-a5e0e1b567f4" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="-416.13192023422204" ver="5"/>
+		</object>
+		<do-trace access-modifier="private" target="PenColor" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuLightGrey]]>
+			</body>
+		</do-trace>
+		<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="3628cb7f-fc8a-4659-b392-ff61d818e0f7" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="-33.147474747474689" ver="5"/>
+			<designed target="Y" value="-416.13192023422204" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="e5251595-a385-4c86-94e5-7240c1aa1257" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="-33.147474747474689" ver="5"/>
+			<designed target="Y" value="97.340526795976558" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LinearGradient_1" display-name="LinearGradient_1" uuid="e4b8f0c1-9a79-44f0-9e4f-d518506d21bc" base-type="LinearGradient" base-type-id="3fca3251-ff83-4d88-b94d-b3ac37a76ba0" ver="5" description="" cardinal="1">
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<object access-modifier="private" name="GradientPoint_1" display-name="GradientPoint_1" uuid="12a6c64d-032e-4330-96f3-8f43e423f8bb" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891" ver="5">
+				<designed target="Position" value="0.5" ver="5"/>
+				<designed target="Color" value="0xffffffff" ver="5"/>
+			</object>
+			<object access-modifier="private" name="GradientPoint_2" display-name="GradientPoint_2" uuid="7093c1dd-80ae-48b2-9e30-ed5ed9ab24fc" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891" ver="5">
+				<designed target="Position" value="0" ver="5"/>
+				<designed target="Color" value="0xff999999" ver="5"/>
+			</object>
+			<object access-modifier="private" name="GradientPoint_3" display-name="GradientPoint_3" uuid="96cfe133-2ffa-4385-93e0-8e0d66ed9a41" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891" ver="5">
+				<designed target="Position" value="1" ver="5"/>
+				<designed target="Color" value="0xff999999" ver="5"/>
+			</object>
+		</object>
+	</object>
+	<object access-modifier="private" name="Line_58" display-name="Line_58" uuid="62ff8b29-b245-4329-b6a7-e520a3c74fd8" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
+		<designed target="X" value="676.36589641966521" ver="5"/>
+		<designed target="Y" value="513.7913989796192" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="180" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="2" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="33.147474747474689" ver="5"/>
+		<designed target="Height" value="513.61122303022091" ver="5"/>
+		<designed target="PenColor" value="0xff999999" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xff000000" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="84a77b27-d5d2-4b03-9e07-fa37b2a23797" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="97.398266218496218" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="e7a15750-e11d-4bae-a416-9a9a85e1bb2c" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="-416.21295681172467" ver="5"/>
+		</object>
+		<do-trace access-modifier="private" target="PenColor" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuLightGrey]]>
+			</body>
+		</do-trace>
+		<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="ccb1eed9-0547-4efb-9cee-a60f2680f6f2" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="-33.147474747474689" ver="5"/>
+			<designed target="Y" value="-416.21295681172467" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="cac5b6d5-776c-48df-b13d-526f51e48ca2" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="-33.147474747474689" ver="5"/>
+			<designed target="Y" value="97.359482667324713" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LinearGradient_1" display-name="LinearGradient_1" uuid="65bd6b1a-bc0f-4957-8ca4-7283cb12b632" base-type="LinearGradient" base-type-id="3fca3251-ff83-4d88-b94d-b3ac37a76ba0" ver="5" description="" cardinal="1">
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<object access-modifier="private" name="GradientPoint_1" display-name="GradientPoint_1" uuid="244fc24a-a4f5-43e9-9db8-47640f2b0dad" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891" ver="5">
+				<designed target="Position" value="0.5" ver="5"/>
+				<designed target="Color" value="0xff1e0a83" ver="5"/>
+			</object>
+			<object access-modifier="private" name="GradientPoint_2" display-name="GradientPoint_2" uuid="c2bb567a-2820-4367-8afc-1ea7ea066694" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891" ver="5">
+				<designed target="Position" value="0" ver="5"/>
+				<designed target="Color" value="0xff0000ff" ver="5"/>
+			</object>
+			<object access-modifier="private" name="GradientPoint_3" display-name="GradientPoint_3" uuid="39bc778a-34a5-44d6-9c58-78496dacbf9d" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891" ver="5">
+				<designed target="Position" value="1" ver="5"/>
+				<designed target="Color" value="0xff0000ff" ver="5"/>
+			</object>
+		</object>
+	</object>
+	<object access-modifier="private" name="Line_59" display-name="Line_59" uuid="9dd63d52-a2a7-4d41-be98-4f0eaa2ca883" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
+		<designed target="X" value="1066.3658964196652" ver="5"/>
+		<designed target="Y" value="513.61774917068544" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="180" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="2" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="33.147474747474689" ver="5"/>
+		<designed target="Height" value="513.39693731593525" ver="5"/>
+		<designed target="PenColor" value="0xff999999" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xff000000" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="aef85fa0-5da7-4895-acc9-ff83e2528d3f" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="97.357630313144256" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="a0ee06e8-6878-446e-90b7-e2a517f7e164" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="0" ver="5"/>
+			<designed target="Y" value="-416.03930700279096" ver="5"/>
+		</object>
+		<do-trace access-modifier="private" target="PenColor" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuLightGrey]]>
+			</body>
+		</do-trace>
+		<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="20bcb216-1cef-473f-a2bb-11e1c8b23688" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="-33.147474747474689" ver="5"/>
+			<designed target="Y" value="-416.03930700279096" ver="5"/>
+		</object>
+		<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="00331245-a927-4876-a5b1-ff752eb21107" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="5">
+			<designed target="X" value="-33.147474747474689" ver="5"/>
+			<designed target="Y" value="97.318862943007346" ver="5"/>
+		</object>
+		<object access-modifier="private" name="LinearGradient_1" display-name="LinearGradient_1" uuid="f2d7c0fe-40a5-4b37-8b3a-3275960f56c1" base-type="LinearGradient" base-type-id="3fca3251-ff83-4d88-b94d-b3ac37a76ba0" ver="5" description="" cardinal="1">
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<object access-modifier="private" name="GradientPoint_1" display-name="GradientPoint_1" uuid="1243fc6f-317c-46f4-842e-76b83378f917" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891" ver="5">
+				<designed target="Position" value="0.5" ver="5"/>
+				<designed target="Color" value="0xffa21620" ver="5"/>
+			</object>
+			<object access-modifier="private" name="GradientPoint_2" display-name="GradientPoint_2" uuid="75bc6803-8570-4e2d-bb8f-2a403a7343b1" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891" ver="5">
+				<designed target="Position" value="0" ver="5"/>
+				<designed target="Color" value="0xffff0000" ver="5"/>
+			</object>
+			<object access-modifier="private" name="GradientPoint_3" display-name="GradientPoint_3" uuid="c3ec0c12-1e30-4ab7-801f-b1f679bf187a" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891" ver="5">
+				<designed target="Position" value="1" ver="5"/>
+				<designed target="Color" value="0xffff0000" ver="5"/>
+			</object>
+		</object>
+	</object>
+	<object access-modifier="private" name="GAMode_1" display-name="GAMode_1" uuid="a90669cd-0b54-4acc-b988-7bbd258962bb" base-type="GAMode" base-type-id="f923fa12-d310-46a8-aab5-e5ae4f9cd1f7" ver="5" description="" cardinal="1">
+		<designed target="X" value="211.29215904592786" ver="5"/>
+		<designed target="Y" value="610" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="125" ver="5"/>
+		<designed target="Height" value="125" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.Control.OPr_GA_mode_OP"/>
+	</object>
+	<object access-modifier="private" name="GAMode_2" display-name="GAMode_2" uuid="c4bc8b17-4910-441e-97dd-6e47f7d3599b" base-type="GAMode" base-type-id="f923fa12-d310-46a8-aab5-e5ae4f9cd1f7" ver="5" description="" cardinal="1">
+		<designed target="X" value="597.29215904592786" ver="5"/>
+		<designed target="Y" value="610" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="125" ver="5"/>
+		<designed target="Height" value="125" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_02.Control.OPr_GA_mode_OP"/>
+	</object>
+	<object access-modifier="private" name="GAMode_3" display-name="GAMode_3" uuid="e69bc7f7-0b54-4fcc-bb2e-540faae5b0aa" base-type="GAMode" base-type-id="f923fa12-d310-46a8-aab5-e5ae4f9cd1f7" ver="5" description="" cardinal="1">
+		<designed target="X" value="987.29215904592775" ver="5"/>
+		<designed target="Y" value="610" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="125" ver="5"/>
+		<designed target="Height" value="125" ver="5"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_03.Control.OPr_GA_mode_OP"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_21" display-name="AnalogDpValue_21" uuid="3c1b461f-4b29-40ba-aee7-94312ab2d137" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="55.666666666666515" ver="5"/>
+		<designed target="Y" value="646.88181818181829" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<init target="TransferType" ver="5" value="AI"/>
+		<init target="TransferDevPath" ver="5" value="HydroUnits.GA_01.Transfers"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<init target="ParameterType" ver="5" value="RAI"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.HydroMech.Q_wtr_turbine"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_24" display-name="AnalogDpValue_24" uuid="6cead40a-563f-4092-8c17-d7a081cb5375" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="1549" ver="5"/>
+		<designed target="Y" value="94.481818181818227" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_29" display-name="AnalogDpValue_29" uuid="fffbdd3c-f576-463b-87b7-3f16eb63feb2" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="122.26666666666651" ver="5"/>
+		<designed target="Y" value="416.08181818181822" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_30" display-name="AnalogDpValue_30" uuid="81ff6073-398b-4deb-a842-ffa56493da92" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="122.26666666666651" ver="5"/>
+		<designed target="Y" value="470.81515151515157" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+	</object>
+	<object access-modifier="private" name="HistogramBar_1" display-name="HistogramBar_1" uuid="7a009973-fe96-4d44-a096-a0b8930649ed" base-type="HistogramBar" base-type-id="abcbe2c6-2016-434a-b9bf-f6cbfa135e4c" ver="5" description="" cardinal="1">
+		<designed target="X" value="71.333333333333286" ver="5"/>
+		<designed target="Y" value="100.20000000000005" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="270" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="107" ver="5"/>
+		<designed target="Height" value="242" ver="5"/>
+		<designed target="MinLimit" value="0" ver="5"/>
+		<designed target="MaxLimit" value="1" ver="5"/>
+		<designed target="LowValue" value="0.25" ver="5"/>
+		<designed target="HighValue" value="0.75" ver="5"/>
+		<designed target="Value" value="0.69999999999999996" ver="5"/>
+		<designed target="Orientation" value="1" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffffffff" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="BarBrushColor" value="0xff0000ff" ver="5"/>
+		<designed target="BarBrushStyle" value="1" ver="5"/>
+		<designed target="BarLowBrushColor" value="4294967040" ver="5"/>
+		<designed target="BarLowBrushStyle" value="1" ver="5"/>
+		<designed target="BarHighBrushColor" value="4294901760" ver="5"/>
+		<designed target="BarHighBrushStyle" value="1" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="c2130dad-0bf5-43a0-9254-3482593f008f" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="10.833333333333286" ver="5"/>
+		<designed target="Y" value="289.60000000000002" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="228" ver="5"/>
+		<designed target="Height" value="91" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="TextPropertiesDialogs_1" display-name="TextPropertiesDialogs_1" uuid="c42bf6f9-04f4-4e4d-abad-8fb1d925a7eb" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="5.5454545454547315" ver="5"/>
+			<designed target="Y" value="18.181818181818244" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="99.600000000000009" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="Ключ режима" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextPropertiesDialogs_2" display-name="TextPropertiesDialogs_2" uuid="e84100a6-60ef-48dc-9143-b36968fa0038" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="5.5454545454547315" ver="5"/>
+			<designed target="Y" value="60.181818181818244" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="50" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="Режим" ver="5"/>
+		</object>
+		<object access-modifier="private" name="DiscreteDpValue_1" display-name="DiscreteDpValue_1" uuid="d51b698d-9cb3-4615-8664-36a689a2e972" base-type="DiscreteDpValue" base-type-id="0aa36430-7867-405c-b541-89e8cf6e92d2" ver="5" description="" cardinal="1">
+			<designed target="X" value="102.5" ver="5"/>
+			<designed target="Y" value="14.681818181818244" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="89" ver="5"/>
+			<designed target="Height" value="23" ver="5"/>
+		</object>
+		<object access-modifier="private" name="DiscreteDpValue_2" display-name="DiscreteDpValue_2" uuid="b94301d7-319d-4c67-b9d4-112c324c6eb4" base-type="DiscreteDpValue" base-type-id="0aa36430-7867-405c-b541-89e8cf6e92d2" ver="5" description="" cardinal="1">
+			<designed target="X" value="102.5" ver="5"/>
+			<designed target="Y" value="56.681818181818244" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="89" ver="5"/>
+			<designed target="Height" value="23" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextPropertiesDialogs_3" display-name="TextPropertiesDialogs_3" uuid="2ea32ce8-9fa6-4038-8271-1695405d4356" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="-4.8545454545452458" ver="5"/>
+			<designed target="Y" value="108.9818181818182" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="106" ver="5"/>
+			<designed target="Height" value="60" ver="5"/>
+			<designed target="Text" value="Уровень 
+за СУР" ver="5"/>
+			<designed target="Font" value="Arimo,18,-1,5,75,0,0,0,0,0,Bold" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextPropertiesDialogs_4" display-name="TextPropertiesDialogs_4" uuid="2dbc5b45-8ae7-4eca-807b-1b03ad9f2ea8" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="-4.8545454545452458" ver="5"/>
+			<designed target="Y" value="163.71515151515155" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="106" ver="5"/>
+			<designed target="Height" value="60" ver="5"/>
+			<designed target="Text" value="Перепад 
+на СУР" ver="5"/>
+			<designed target="Font" value="Arimo,18,-1,5,75,0,0,0,0,0,Bold" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextPropertiesDialogs_7" display-name="TextPropertiesDialogs_7" uuid="8e7f72f9-97d4-4ee9-b223-06b7caac593c" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="-1.6545454545452003" ver="5"/>
+			<designed target="Y" value="354.58181818181833" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="32.400000000000034" ver="5"/>
+			<designed target="Height" value="30.399999999999977" ver="5"/>
+			<designed target="Text" value="Q" ver="5"/>
+			<designed target="Font" value="Arimo,18,-1,5,75,0,0,0,0,0,Bold" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextPropertiesDialogs_8" display-name="TextPropertiesDialogs_8" uuid="12a8454d-a929-4cdb-b456-4c64a16d862a" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="65.533333333333431" ver="5"/>
+			<designed target="Y" value="-195.81818181818181" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="88.400000000000006" ver="5"/>
+			<designed target="Height" value="26.400000000000034" ver="5"/>
+			<designed target="Text" value="Затвор" ver="5"/>
+			<designed target="Font" value="Arimo,18,-1,5,75,0,0,0,0,0,Bold" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextPropertiesDialogs_9" display-name="TextPropertiesDialogs_9" uuid="a31f4b65-6279-4de5-bbdb-17fc17c5f33f" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="290.34545454545469" ver="5"/>
+			<designed target="Y" value="295.91515151515171" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="57.733333333333519" ver="5"/>
+			<designed target="Height" value="30.399999999999977" ver="5"/>
+			<designed target="Text" value="ГА 1" ver="5"/>
+			<designed target="Font" value="Arimo,18,-1,5,75,0,0,0,0,0,Bold" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextPropertiesDialogs_10" display-name="TextPropertiesDialogs_10" uuid="f08f50fd-a770-4d48-ab5c-d5a02f0655e6" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="675.67878787878794" ver="5"/>
+			<designed target="Y" value="295.91515151515171" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="67.066666666666947" ver="5"/>
+			<designed target="Height" value="30.399999999999977" ver="5"/>
+			<designed target="Text" value="ГА 2" ver="5"/>
+			<designed target="Font" value="Arimo,18,-1,5,75,0,0,0,0,0,Bold" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextPropertiesDialogs_11" display-name="TextPropertiesDialogs_11" uuid="7bc6f108-9b22-45ad-bc28-23607b82efc0" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="1065.0121212121212" ver="5"/>
+			<designed target="Y" value="295.91515151515171" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="57.733333333333519" ver="5"/>
+			<designed target="Height" value="30.399999999999977" ver="5"/>
+			<designed target="Text" value="ГА 3" ver="5"/>
+			<designed target="Font" value="Arimo,18,-1,5,75,0,0,0,0,0,Bold" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="TextPropertiesDialogs_1" display-name="TextPropertiesDialogs_1" uuid="e217adad-d6eb-4172-949f-be271c4bea1d" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="22" ver="5"/>
+		<designed target="Y" value="277.8976076555025" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="50" ver="5"/>
+		<designed target="Height" value="20" ver="5"/>
+		<designed target="Text" value="Режим" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_1" display-name="DiscreteDpValue_1" uuid="589f8ca6-33f5-4108-9499-33d1ffe92ad0" base-type="DiscreteDpValue" base-type-id="0aa36430-7867-405c-b541-89e8cf6e92d2" ver="5" description="" cardinal="1">
+		<designed target="X" value="45.56666666666672" ver="5"/>
+		<designed target="Y" value="123.39999999999998" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="150" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_35" display-name="AnalogDpValue_35" uuid="1660e942-29bb-4fd9-967c-1a0a5f1c1b91" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="915.38888888888869" ver="5"/>
+		<designed target="Y" value="55.200000000000003" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_39" display-name="AnalogDpValue_39" uuid="9732a78d-a77e-4731-9dd1-cdabafcbdf2e" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="441.33333333333314" ver="5"/>
+		<designed target="Y" value="647.21515151515155" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<init target="TransferType" ver="5" value="AI"/>
+		<init target="TransferDevPath" ver="5" value="HydroUnits.GA_01.Transfers"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<init target="ParameterType" ver="5" value="RAI"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.HydroMech.Q_wtr_turbine"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_40" display-name="AnalogDpValue_40" uuid="5e824e50-3965-452f-9efd-da33ba447012" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="507.93333333333317" ver="5"/>
+		<designed target="Y" value="416.08181818181822" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_41" display-name="AnalogDpValue_41" uuid="fc0d219c-d099-4655-a997-b1ca4c5b3b6a" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="507.93333333333317" ver="5"/>
+		<designed target="Y" value="470.81515151515157" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+	</object>
+	<object access-modifier="private" name="HistogramBar_6" display-name="HistogramBar_6" uuid="f2585242-6f30-4691-8ee9-ec3c57cc1a63" base-type="HistogramBar" base-type-id="abcbe2c6-2016-434a-b9bf-f6cbfa135e4c" ver="5" description="" cardinal="1">
+		<designed target="X" value="457" ver="5"/>
+		<designed target="Y" value="100.20000000000005" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="270" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="107" ver="5"/>
+		<designed target="Height" value="242" ver="5"/>
+		<designed target="MinLimit" value="0" ver="5"/>
+		<designed target="MaxLimit" value="1" ver="5"/>
+		<designed target="LowValue" value="0.25" ver="5"/>
+		<designed target="HighValue" value="0.75" ver="5"/>
+		<designed target="Value" value="0.69999999999999996" ver="5"/>
+		<designed target="Orientation" value="1" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffffffff" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="BarBrushColor" value="0xff0000ff" ver="5"/>
+		<designed target="BarBrushStyle" value="1" ver="5"/>
+		<designed target="BarLowBrushColor" value="4294967040" ver="5"/>
+		<designed target="BarLowBrushStyle" value="1" ver="5"/>
+		<designed target="BarHighBrushColor" value="4294901760" ver="5"/>
+		<designed target="BarHighBrushStyle" value="1" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Rectangle_4" display-name="Rectangle_4" uuid="1250e3c8-c901-4ad8-a8df-c461c44b9d40" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="396.49999999999994" ver="5"/>
+		<designed target="Y" value="289.93333333333339" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="228" ver="5"/>
+		<designed target="Height" value="91" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<object access-modifier="private" name="TextPropertiesDialogs_1" display-name="TextPropertiesDialogs_1" uuid="769bc0c7-907e-47ab-b657-463e0c48a518" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="5.5454545454547315" ver="5"/>
+			<designed target="Y" value="18.181818181818244" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="94.800000000000068" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="Ключ режима" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextPropertiesDialogs_2" display-name="TextPropertiesDialogs_2" uuid="6853714c-58d6-49d7-8597-b45cfe5e1a1f" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="5.5454545454547315" ver="5"/>
+			<designed target="Y" value="60.181818181818244" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="50" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="Режим" ver="5"/>
+		</object>
+		<object access-modifier="private" name="DiscreteDpValue_1" display-name="DiscreteDpValue_1" uuid="3f3074d0-6c11-4763-a721-9d5a9ceb06df" base-type="DiscreteDpValue" base-type-id="0aa36430-7867-405c-b541-89e8cf6e92d2" ver="5" description="" cardinal="1">
+			<designed target="X" value="102.5" ver="5"/>
+			<designed target="Y" value="14.681818181818244" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="89" ver="5"/>
+			<designed target="Height" value="23" ver="5"/>
+		</object>
+		<object access-modifier="private" name="DiscreteDpValue_2" display-name="DiscreteDpValue_2" uuid="85f473de-8fd8-4c9b-b63f-f7c114f6f8fa" base-type="DiscreteDpValue" base-type-id="0aa36430-7867-405c-b541-89e8cf6e92d2" ver="5" description="" cardinal="1">
+			<designed target="X" value="102.5" ver="5"/>
+			<designed target="Y" value="56.681818181818244" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="89" ver="5"/>
+			<designed target="Height" value="23" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextPropertiesDialogs_3" display-name="TextPropertiesDialogs_3" uuid="06f7bbb5-abdb-49e6-81ac-1e46a07459da" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="-4.8545454545452458" ver="5"/>
+			<designed target="Y" value="108.64848484848483" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="106" ver="5"/>
+			<designed target="Height" value="60" ver="5"/>
+			<designed target="Text" value="Уровень 
+за СУР" ver="5"/>
+			<designed target="Font" value="Arimo,18,-1,5,75,0,0,0,0,0,Bold" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextPropertiesDialogs_4" display-name="TextPropertiesDialogs_4" uuid="ea942f37-e3e6-4817-8f24-e9b97d6bcbb9" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="-4.8545454545452458" ver="5"/>
+			<designed target="Y" value="163.38181818181818" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="106" ver="5"/>
+			<designed target="Height" value="60" ver="5"/>
+			<designed target="Text" value="Перепад 
+на СУР" ver="5"/>
+			<designed target="Font" value="Arimo,18,-1,5,75,0,0,0,0,0,Bold" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextPropertiesDialogs_7" display-name="TextPropertiesDialogs_7" uuid="991431c4-0476-4758-958f-098a25143f88" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="-1.6545454545452003" ver="5"/>
+			<designed target="Y" value="354.58181818181833" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="32.400000000000034" ver="5"/>
+			<designed target="Height" value="30.399999999999977" ver="5"/>
+			<designed target="Text" value="Q" ver="5"/>
+			<designed target="Font" value="Arimo,18,-1,5,75,0,0,0,0,0,Bold" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextPropertiesDialogs_8" display-name="TextPropertiesDialogs_8" uuid="1bb17f66-f371-426c-80bc-b172bd57adbe" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="65.533333333333417" ver="5"/>
+			<designed target="Y" value="-196.15151515151518" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="88.400000000000006" ver="5"/>
+			<designed target="Height" value="26.400000000000034" ver="5"/>
+			<designed target="Text" value="Затвор" ver="5"/>
+			<designed target="Font" value="Arimo,18,-1,5,75,0,0,0,0,0,Bold" ver="5"/>
+		</object>
+		<object access-modifier="private" name="TextPropertiesDialogs_9" display-name="TextPropertiesDialogs_9" uuid="933e966c-81be-46e1-bea9-9f9ba392e36e" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+			<designed target="X" value="394.34545454545474" ver="5"/>
+			<designed target="Y" value="18.181818181818244" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Width" value="94.800000000000068" ver="5"/>
+			<designed target="Height" value="20" ver="5"/>
+			<designed target="Text" value="Ключ режима" ver="5"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="TextPropertiesDialogs_4" display-name="TextPropertiesDialogs_4" uuid="1b3fdb8d-edc8-456c-978a-21d62e81f265" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="408" ver="5"/>
+		<designed target="Y" value="281.82284382284399" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="50" ver="5"/>
+		<designed target="Height" value="12.846153846153868" ver="5"/>
+		<designed target="Text" value="Режим" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_4" display-name="DiscreteDpValue_4" uuid="caf1b448-4456-44e7-9881-774297f584da" base-type="DiscreteDpValue" base-type-id="0aa36430-7867-405c-b541-89e8cf6e92d2" ver="5" description="" cardinal="1">
+		<designed target="X" value="431.23333333333335" ver="5"/>
+		<designed target="Y" value="123.39999999999998" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="150" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_44" display-name="AnalogDpValue_44" uuid="936b27ba-7e2b-4445-b415-beb11fbf1690" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="828.99999999999977" ver="5"/>
+		<designed target="Y" value="646.21515151515155" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<init target="TransferType" ver="5" value="AI"/>
+		<init target="TransferDevPath" ver="5" value="HydroUnits.GA_01.Transfers"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+		<init target="ParameterType" ver="5" value="RAI"/>
+		<init target="ParDevPath" ver="5" value="HydroUnits.GA_01.HydroMech.Q_wtr_turbine"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_45" display-name="AnalogDpValue_45" uuid="04f82490-3772-45cf-aad6-aa8cddff016b" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="895.5999999999998" ver="5"/>
+		<designed target="Y" value="416.08181818181822" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_46" display-name="AnalogDpValue_46" uuid="26f65c55-7278-48d3-aa3b-15f001385f54" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="895.5999999999998" ver="5"/>
+		<designed target="Y" value="470.81515151515157" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+	</object>
+	<object access-modifier="private" name="HistogramBar_7" display-name="HistogramBar_7" uuid="ba2646fb-1874-4c1d-b482-2dd06123c346" base-type="HistogramBar" base-type-id="abcbe2c6-2016-434a-b9bf-f6cbfa135e4c" ver="5" description="" cardinal="1">
+		<designed target="X" value="844.66666666666663" ver="5"/>
+		<designed target="Y" value="100.20000000000005" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="270" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="107" ver="5"/>
+		<designed target="Height" value="242" ver="5"/>
+		<designed target="MinLimit" value="0" ver="5"/>
+		<designed target="MaxLimit" value="1" ver="5"/>
+		<designed target="LowValue" value="0.25" ver="5"/>
+		<designed target="HighValue" value="0.75" ver="5"/>
+		<designed target="Value" value="0.69999999999999996" ver="5"/>
+		<designed target="Orientation" value="1" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="0xffffffff" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="BarBrushColor" value="0xff0000ff" ver="5"/>
+		<designed target="BarBrushStyle" value="1" ver="5"/>
+		<designed target="BarLowBrushColor" value="4294967040" ver="5"/>
+		<designed target="BarLowBrushStyle" value="1" ver="5"/>
+		<designed target="BarHighBrushColor" value="4294901760" ver="5"/>
+		<designed target="BarHighBrushStyle" value="1" ver="5"/>
+	</object>
+	<object access-modifier="private" name="DiscreteDpValue_6" display-name="DiscreteDpValue_6" uuid="8586c654-774c-4b83-b7ff-1570eb0c20b6" base-type="DiscreteDpValue" base-type-id="0aa36430-7867-405c-b541-89e8cf6e92d2" ver="5" description="" cardinal="1">
+		<designed target="X" value="818.89999999999998" ver="5"/>
+		<designed target="Y" value="123.39999999999998" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="150" ver="5"/>
+		<designed target="Height" value="40" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_48" display-name="AnalogDpValue_48" uuid="0ef335df-0410-417d-8498-169ce8e1ac4d" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="895.5999999999998" ver="5"/>
+		<designed target="Y" value="517.81515151515157" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+	</object>
+	<object access-modifier="private" name="AnalogDpValue_36" display-name="AnalogDpValue_36" uuid="71f615ff-1601-4e8e-a5e5-4c1c01efbbcc" base-type="AnalogDpValue" base-type-id="28c82a3c-5301-4095-9542-070604fab719" ver="5" description="" cardinal="1">
+		<designed target="X" value="914.91666666666629" ver="5"/>
+		<designed target="Y" value="843.99999999999989" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="90" ver="5"/>
+		<designed target="Height" value="25" ver="5"/>
+	</object>
+	<object access-modifier="private" name="TextPropertiesDialogs_5" display-name="TextPropertiesDialogs_5" uuid="dcf834f0-53b4-4c20-aff9-68197307a670" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
+		<designed target="X" value="795" ver="5"/>
+		<designed target="Y" value="280.29720279720294" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Width" value="50" ver="5"/>
+		<designed target="Height" value="12.538461538461604" ver="5"/>
+		<designed target="Text" value="Режим" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+	</object>
+</type>
+

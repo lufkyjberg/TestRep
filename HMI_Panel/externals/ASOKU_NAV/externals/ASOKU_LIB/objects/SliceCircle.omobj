@@ -1,0 +1,145 @@
+<type access-modifier="public" name="SliceCircle" display-name="Круг среза" uuid="9db19cd7-2f3e-4951-9396-f8a99dade5bc" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="450" ver="5"/>
+	<designed target="Height" value="450" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="1" ver="5"/>
+	<designed target="PenWidth" value="0" ver="5"/>
+	<designed target="BrushColor" value="0xff7f7f7f" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="PieAngle" value="360" ver="5"/>
+	<designed target="PieAngleStart" value="360" ver="5"/>
+	<designed target="HoleSize" value="0" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<object access-modifier="private" name="Ellipse_1" display-name="Ellipse_1" uuid="5b603382-428d-4378-9e19-dedf45d3061e" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="5" description="" cardinal="1">
+		<designed target="X" value="69" ver="5"/>
+		<designed target="Y" value="69" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="315" ver="5"/>
+		<designed target="Height" value="315" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="PieAngle" value="360" ver="5"/>
+		<designed target="PieAngleStart" value="360" ver="5"/>
+		<designed target="HoleSize" value="0" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Dummy_17_1" display-name="Dummy_17_1" uuid="e9ee61fd-a1cd-4575-b966-5e92d99e84df" base-type="Dummy_17" base-type-id="5889d071-ee40-454f-a65f-19a45278708d" ver="5" description="" cardinal="1">
+		<designed target="X" value="232.66666666666646" ver="5"/>
+		<designed target="Y" value="96.333333333333371" ver="5"/>
+		<designed target="Rotation" value="-20" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Dummy_17_2" display-name="Dummy_17_2" uuid="1e9ed26e-32db-444e-80c9-3c4f42accc16" base-type="Dummy_17" base-type-id="5889d071-ee40-454f-a65f-19a45278708d" ver="5" description="" cardinal="1">
+		<designed target="X" value="352" ver="5"/>
+		<designed target="Y" value="81.000000000000014" ver="5"/>
+		<designed target="Rotation" value="15" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Dummy_17_3" display-name="Dummy_17_3" uuid="0f7218db-49f1-408f-9d86-c70cfe72ca90" base-type="Dummy_17" base-type-id="5889d071-ee40-454f-a65f-19a45278708d" ver="5" description="" cardinal="1">
+		<designed target="X" value="404.33333333333326" ver="5"/>
+		<designed target="Y" value="100.33333333333324" ver="5"/>
+		<designed target="Rotation" value="30" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Dummy_17_4" display-name="Dummy_17_4" uuid="db83077e-ed63-4fc3-b55a-574394c1bba6" base-type="Dummy_17" base-type-id="5889d071-ee40-454f-a65f-19a45278708d" ver="5" description="" cardinal="1">
+		<designed target="X" value="440.3333333333332" ver="5"/>
+		<designed target="Y" value="128.33333333333331" ver="5"/>
+		<designed target="Rotation" value="45" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Dummy_17_5" display-name="Dummy_17_5" uuid="47b30279-c0ff-4d5a-ab9a-42b4f40b7333" base-type="Dummy_17" base-type-id="5889d071-ee40-454f-a65f-19a45278708d" ver="5" description="" cardinal="1">
+		<designed target="X" value="468.33333333333343" ver="5"/>
+		<designed target="Y" value="164.33333333333334" ver="5"/>
+		<designed target="Rotation" value="60" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Dummy_17_6" display-name="Dummy_17_6" uuid="95fc8237-a986-463d-a67b-656ab393d4ab" base-type="Dummy_17" base-type-id="5889d071-ee40-454f-a65f-19a45278708d" ver="5" description="" cardinal="1">
+		<designed target="X" value="491.66666666666669" ver="5"/>
+		<designed target="Y" value="214.33333333333331" ver="5"/>
+		<designed target="Rotation" value="75" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Dummy_17_7" display-name="Dummy_17_7" uuid="aad06f5c-792f-4d39-8381-8041b779c9f4" base-type="Dummy_17" base-type-id="5889d071-ee40-454f-a65f-19a45278708d" ver="5" description="" cardinal="1">
+		<designed target="X" value="497.66666666666652" ver="5"/>
+		<designed target="Y" value="273.66666666666669" ver="5"/>
+		<designed target="Rotation" value="95" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Dummy_17_8" display-name="Dummy_17_8" uuid="52c810ea-5679-4cd1-8718-de91ed4e0cc6" base-type="Dummy_17" base-type-id="5889d071-ee40-454f-a65f-19a45278708d" ver="5" description="" cardinal="1">
+		<designed target="X" value="483.66666666666674" ver="5"/>
+		<designed target="Y" value="329.66666666666663" ver="5"/>
+		<designed target="Rotation" value="115" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Dummy_17_9" display-name="Dummy_17_9" uuid="3f8a6fc7-0ab1-43bb-986a-d055c3bf814d" base-type="Dummy_17" base-type-id="5889d071-ee40-454f-a65f-19a45278708d" ver="5" description="" cardinal="1">
+		<designed target="X" value="452.33333333333331" ver="5"/>
+		<designed target="Y" value="380.99999999999994" ver="5"/>
+		<designed target="Rotation" value="135" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Dummy_17_10" display-name="Dummy_17_10" uuid="e62bdf99-ec89-49ad-ada9-24e255a33773" base-type="Dummy_17" base-type-id="5889d071-ee40-454f-a65f-19a45278708d" ver="5" description="" cardinal="1">
+		<designed target="X" value="400.3333333333332" ver="5"/>
+		<designed target="Y" value="424.33333333333337" ver="5"/>
+		<designed target="Rotation" value="155" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Dummy_17_11" display-name="Dummy_17_11" uuid="760f53d9-2563-4fdb-9c08-6b20d67c76a6" base-type="Dummy_17" base-type-id="5889d071-ee40-454f-a65f-19a45278708d" ver="5" description="" cardinal="1">
+		<designed target="X" value="342.99999999999989" ver="5"/>
+		<designed target="Y" value="445.00000000000006" ver="5"/>
+		<designed target="Rotation" value="170" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Dummy_17_12" display-name="Dummy_17_12" uuid="a21ae284-4a2a-4128-a1a6-9e293476be45" base-type="Dummy_17" base-type-id="5889d071-ee40-454f-a65f-19a45278708d" ver="5" description="" cardinal="1">
+		<designed target="X" value="280.33333333333326" ver="5"/>
+		<designed target="Y" value="443.00000000000006" ver="5"/>
+		<designed target="Rotation" value="195" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Dummy_17_13" display-name="Dummy_17_13" uuid="d2586b8e-71da-4775-9b19-bf06c901ead9" base-type="Dummy_17" base-type-id="5889d071-ee40-454f-a65f-19a45278708d" ver="5" description="" cardinal="1">
+		<designed target="X" value="222.33333333333329" ver="5"/>
+		<designed target="Y" value="424.33333333333326" ver="5"/>
+		<designed target="Rotation" value="210" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Dummy_17_14" display-name="Dummy_17_14" uuid="4061b0bc-a811-4f18-9422-3951f3b75136" base-type="Dummy_17" base-type-id="5889d071-ee40-454f-a65f-19a45278708d" ver="5" description="" cardinal="1">
+		<designed target="X" value="177.6666666666666" ver="5"/>
+		<designed target="Y" value="391.66666666666669" ver="5"/>
+		<designed target="Rotation" value="225" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Dummy_17_15" display-name="Dummy_17_15" uuid="ffbeb810-3125-485a-8c30-e39233855c99" base-type="Dummy_17" base-type-id="5889d071-ee40-454f-a65f-19a45278708d" ver="5" description="" cardinal="1">
+		<designed target="X" value="143.66666666666657" ver="5"/>
+		<designed target="Y" value="346.99999999999983" ver="5"/>
+		<designed target="Rotation" value="240" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Dummy_17_16" display-name="Dummy_17_16" uuid="ba7f977e-da2b-499a-b515-e7ad6a8d53fd" base-type="Dummy_17" base-type-id="5889d071-ee40-454f-a65f-19a45278708d" ver="5" description="" cardinal="1">
+		<designed target="X" value="133.3333333333334" ver="5"/>
+		<designed target="Y" value="293.5" ver="5"/>
+		<designed target="Rotation" value="270" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Dummy_17_17" display-name="Dummy_17_17" uuid="2a469d4d-db76-4366-9d78-7871cdd4165d" base-type="Dummy_17" base-type-id="5889d071-ee40-454f-a65f-19a45278708d" ver="5" description="" cardinal="1">
+		<designed target="X" value="130.50000000000006" ver="5"/>
+		<designed target="Y" value="232.00000000000003" ver="5"/>
+		<designed target="Rotation" value="285" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Dummy_17_18" display-name="Dummy_17_18" uuid="b3302d69-9a7f-4ad8-b853-c47ebba65e6f" base-type="Dummy_17" base-type-id="5889d071-ee40-454f-a65f-19a45278708d" ver="5" description="" cardinal="1">
+		<designed target="X" value="148.3333333333334" ver="5"/>
+		<designed target="Y" value="174.33333333333331" ver="5"/>
+		<designed target="Rotation" value="300" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Dummy_17_19" display-name="Dummy_17_19" uuid="6a8d3f1f-1db9-4535-b2d7-4202d40206ef" base-type="Dummy_17" base-type-id="5889d071-ee40-454f-a65f-19a45278708d" ver="5" description="" cardinal="1">
+		<designed target="X" value="186.76184492284244" ver="5"/>
+		<designed target="Y" value="130.00000000000003" ver="5"/>
+		<designed target="Rotation" value="-35" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Dummy_17_20" display-name="Dummy_17_20" uuid="63b704da-361e-42be-bd7d-86f84bec60ac" base-type="Dummy_17" base-type-id="5889d071-ee40-454f-a65f-19a45278708d" ver="5" description="" cardinal="1">
+		<designed target="X" value="293.16666666666646" ver="5"/>
+		<designed target="Y" value="73.833333333333371" ver="5"/>
+		<designed target="Rotation" value="-10" ver="5"/>
+	</object>
+</type>
+

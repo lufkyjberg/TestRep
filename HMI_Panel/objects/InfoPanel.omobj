@@ -18,7 +18,7 @@
 	<designed target="BrushColor" value="0xff646464" ver="5"/>
 	<designed target="BrushStyle" value="0" ver="5"/>
 	<object access-modifier="private" name="TextField_Timestamp" display-name="TextField_Timestamp" uuid="827c3f9a-8969-46ef-a1b3-69cb7964945b" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
-		<designed target="X" value="424.60000000000002" ver="5"/>
+		<designed target="X" value="396.60000000000002" ver="5"/>
 		<designed target="Y" value="0.19999999999999929" ver="5"/>
 		<designed target="ZValue" value="0" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -27,10 +27,10 @@
 		<designed target="Opacity" value="1" ver="5"/>
 		<designed target="Enabled" value="true" ver="5"/>
 		<designed target="Tooltip" value="" ver="5"/>
-		<designed target="Width" value="172" ver="5"/>
+		<designed target="Width" value="200" ver="5"/>
 		<designed target="Height" value="20" ver="5"/>
 		<designed target="Text" value="" ver="5"/>
-		<designed target="Font" value="Arial,11,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="Font" value="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
 		<designed target="FontColor" value="0xffffffff" ver="5"/>
 		<designed target="TextAlignment" value="132" ver="5"/>
 		<designed target="Flip" value="0" ver="5"/>
@@ -46,7 +46,7 @@
 		</do-on>
 	</object>
 	<object access-modifier="private" name="TextField_User" display-name="TextField_User" uuid="f548f1ff-ad99-495c-ba92-12941b3a4b9f" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
-		<designed target="X" value="308.14285714285711" ver="5"/>
+		<designed target="X" value="311.14285714285711" ver="5"/>
 		<designed target="Y" value="0" ver="5"/>
 		<designed target="ZValue" value="0" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
@@ -55,7 +55,7 @@
 		<designed target="Opacity" value="1" ver="5"/>
 		<designed target="Enabled" value="true" ver="5"/>
 		<designed target="Tooltip" value="" ver="5"/>
-		<designed target="Width" value="117" ver="5"/>
+		<designed target="Width" value="86" ver="5"/>
 		<designed target="Height" value="20" ver="5"/>
 		<designed target="Text" value="Гость" ver="5"/>
 		<designed target="Font" value="Arial,12,-1,5,50,0,0,0,0,0,Обычный" ver="5"/>
@@ -166,8 +166,8 @@
 	</object>
 	<object access-modifier="private" name="Click_UserChange" display-name="Click_UserChange" uuid="78ff99e9-7e30-4964-a072-9a42e359dcff" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" base-const="true" base-ref="true" ver="5" description=""/>
 	<object access-modifier="private" name="DiscreteDpGAWorkStatus_4" display-name="DiscreteDpGAWorkStatus_4" uuid="325ec3d1-1d74-49d6-a1f7-93db00ff5def" base-type="EnumValue" base-type-id="0e0655fb-7150-4be8-9e96-9c6e2db56382" ver="5" description="" cardinal="1">
-		<designed target="X" value="116.93719971076459" ver="5"/>
-		<designed target="Y" value="-3.3888888888889355" ver="5"/>
+		<designed target="X" value="129.93719971076462" ver="5"/>
+		<designed target="Y" value="-2.3333333333333304" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="234.28571428571445" ver="5"/>
 		<designed target="Height" value="30" ver="5"/>
@@ -585,14 +585,14 @@
 	</object>
 	<object access-modifier="private" name="Close_MainPanel" display-name="Close_MainPanel" uuid="a93892bd-71d8-4e63-aa77-fc888939f2f0" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" base-const="true" base-ref="true" ver="5" description=""/>
 	<object access-modifier="private" name="TextField_Mode" display-name="TextField_Mode" uuid="f32010d0-8327-452a-a996-b1aa17a4e221" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5">
-		<designed target="X" value="0" ver="5"/>
-		<designed target="Y" value="4" ver="5"/>
+		<designed target="X" value="129" ver="5"/>
+		<designed target="Y" value="1.7763568394002505e-15" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Width" value="159" ver="5"/>
-		<designed target="Height" value="20" ver="5"/>
-		<designed target="Text" value="Режим работы ГА" ver="5"/>
-		<designed target="Font" value="Arial,11,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
-		<designed target="TextAlignment" value="36" ver="5"/>
+		<designed target="Width" value="48.666666666666686" ver="5"/>
+		<designed target="Height" value="25.333333333333336" ver="5"/>
+		<designed target="Text" value="ГА" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
 	</object>
 	<object access-modifier="private" name="CloseButton_1" display-name="CloseButton_1" uuid="42d68afd-a0fd-4b56-88bc-09985be7fc81" base-type="CloseButton" base-type-id="ecfb315b-91f8-4d99-97d9-dd614221b53a" ver="5" description="" cardinal="1">
 		<designed target="X" value="595.31428571428569" ver="5"/>

@@ -34,6 +34,26 @@
 	<designed target="WindowPosition" value="2" ver="5"/>
 	<designed target="WindowCloseMode" value="0" ver="5"/>
 	<designed target="WindowIconPath" value="" ver="5"/>
+	<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="45b81d5a-5913-47be-abd9-f7858511caaa" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="2" ver="5"/>
+		<designed target="Y" value="530" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="594.00000000000011" ver="5"/>
+		<designed target="Height" value="282" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+	</object>
 	<object access-modifier="private" name="Discrete_Signal" display-name="Discrete_Signal" uuid="4b21b26d-3299-4180-a7e4-d65513956d39" base-type="Rectangle_ECRA_1" base-type-id="4e1e99b4-667b-4064-b2a8-bb67ad61bec7" ver="5" description="" cardinal="36">
 		<designed target="X" value="10" ver="5"/>
 		<designed target="Y" value="35" ver="5"/>

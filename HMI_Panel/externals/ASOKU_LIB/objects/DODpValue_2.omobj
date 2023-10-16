@@ -74,15 +74,7 @@
 	<do-trace access-modifier="private" target="BrushColor" ver="5">
 		<conditional-expr>
 			<condition>
-				<![CDATA[!ApParValueIn.Advised || !ApParValueOut.Advised]]>
-			</condition>
-			<expr>
-				<![CDATA[AsokuColor.asokuButton]]>
-			</expr>
-		</conditional-expr>
-		<conditional-expr>
-			<condition>
-				<![CDATA[ApParValueIn.Value]]>
+				<![CDATA[ApParValueIn == true]]>
 			</condition>
 			<expr>
 				<![CDATA[ButtonColorOn]]>
@@ -260,33 +252,33 @@ ApMake = false;
 ApMake = true;]]>
 			</body>
 		</do-on>
-		<object access-modifier="private" name="ApMake" display-name="ApMake" uuid="ea18011c-0017-4f6c-ae6c-20c74ac219da" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
-			<init target="Path" ver="5" value="_System.Messages.UserChangeSignalMessage.Make"/>
-			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
-		</object>
-		<object access-modifier="private" name="ApParameterType" display-name="ApParameterType" uuid="2aa1b234-445b-4f59-b54f-db6d80e6920c" base-type="ApItemUInt1" base-type-id="ed85e2d2-e5ed-42df-91a6-9455307a85c9" ver="5" description="" cardinal="1">
-			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
-			<init target="Path" ver="5" value="_System.Messages.UserChangeSignalMessage.ParameterType"/>
-		</object>
-		<object access-modifier="private" name="ApUserName" display-name="ApUserName" uuid="499c1677-c2ac-46e6-89a7-2f6cf25b837d" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
-			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
-			<init target="Path" ver="5" value="_System.Messages.UserChangeSignalMessage.UserName"/>
-		</object>
-		<object access-modifier="private" name="ApSignalName" display-name="ApSignalName" uuid="b4e11582-982a-4658-9590-aa5b46c8e17e" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
-			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
-			<init target="Path" ver="5" value="_System.Messages.UserChangeSignalMessage.SignalName"/>
-		</object>
+	</object>
+	<object access-modifier="private" name="ApMake" display-name="ApMake" uuid="ea18011c-0017-4f6c-ae6c-20c74ac219da" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="_System.Messages.UserChangeSignalMessage.Make"/>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApParameterType" display-name="ApParameterType" uuid="2aa1b234-445b-4f59-b54f-db6d80e6920c" base-type="ApItemUInt1" base-type-id="ed85e2d2-e5ed-42df-91a6-9455307a85c9" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<init target="Path" ver="5" value="_System.Messages.UserChangeSignalMessage.ParameterType"/>
+	</object>
+	<object access-modifier="private" name="ApUserName" display-name="ApUserName" uuid="499c1677-c2ac-46e6-89a7-2f6cf25b837d" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<init target="Path" ver="5" value="_System.Messages.UserChangeSignalMessage.UserName"/>
+	</object>
+	<object access-modifier="private" name="ApSignalName" display-name="ApSignalName" uuid="b4e11582-982a-4658-9590-aa5b46c8e17e" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<init target="Path" ver="5" value="_System.Messages.UserChangeSignalMessage.SignalName"/>
 	</object>
 	<init target="ButtonTextOff" ver="5" value="Включить"/>
 	<init target="ButtonTextOn" ver="5" value="Выключить"/>
 	<do-trace access-modifier="private" target="ButtonColorOn" ver="5">
 		<body>
-			<![CDATA[AsokuColor.asokuBtnCommandOn]]>
+			<![CDATA[AsokuColor.asokuGreen]]>
 		</body>
 	</do-trace>
 	<do-trace access-modifier="private" target="ButtonColorOff" ver="5">
 		<body>
-			<![CDATA[AsokuColor.asokuBtnCommandOff]]>
+			<![CDATA[AsokuColor.asokuRed]]>
 		</body>
 	</do-trace>
 	<init target="ViewOnly" ver="5" value="false"/>
@@ -313,15 +305,15 @@ ApMake = true;]]>
 	<do-trace access-modifier="private" target="OnHoverBrushColor" ver="5">
 		<conditional-expr>
 			<condition>
-				<![CDATA[!ApParValueIn.Advised || !ApParValueOut.Advised]]>
+				<![CDATA[ApParValueIn.Advised == false]]>
 			</condition>
 			<expr>
-				<![CDATA[AsokuColor.asokuButton]]>
+				<![CDATA[AsokuColor.asokuGrey]]>
 			</expr>
 		</conditional-expr>
 		<conditional-expr>
 			<condition>
-				<![CDATA[ApParValueIn.Value]]>
+				<![CDATA[ApParValueIn == true]]>
 			</condition>
 			<expr>
 				<![CDATA[ButtonColorOn]]>
@@ -344,23 +336,5 @@ OpenInfoTabViewOut.Invoke();]]>
 			<![CDATA[AsokuColor.asokuBlack]]>
 		</body>
 	</do-trace>
-	<object access-modifier="private" name="RerenderTimer" display-name="RerenderTimer" uuid="de759c9d-6b8c-48cf-b4db-eb55e233a97c" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="5" description="" cardinal="1">
-		<designed target="Period" value="50" ver="5"/>
-		<designed target="Active" value="true" ver="5"/>
-		<do-on access-modifier="private" name="RerenderHndlr" display-name="RerenderHndlr" ver="5" event="OnTimer">
-			<body kind="om">
-				<![CDATA[if (ViewOnly) {
-	here.Text = "";
-}
-else {
-	if (ApParValueIn.Advised && ApParValueOut.Advised) {
-		if (ApParValueIn.Value) here.Text = ButtonTextOn;
-		else here.Text = ButtonTextOff;
-	}
-	else here.Text = "***";
-}]]>
-			</body>
-		</do-on>
-	</object>
 </type>
 

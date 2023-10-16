@@ -70,5 +70,11 @@ Ap_Source_Messages.Ap_Source_UserChangeSignalMessage.Ap_Message_Make.Value = tru
 	</object>
 	<object access-modifier="private" name="InfoGenPopPosNumber" display-name="InfoGenPopPosNumber" uuid="974b1611-8653-46a4-8816-b40f50a1af4d" base-type="bool" base-type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8" ver="5" description="" cardinal="3"/>
 	<init target="InfoGenPopPosNumber" ver="5" value="false"/>
+	<object access-modifier="private" name="Runtime" display-name="Runtime" uuid="e6728183-76f8-43bf-b948-094574194afa" base-type="Runtime" base-type-id="9031e0ca-e75e-47d6-98eb-cf0e5779cb68" ver="5" description="" cardinal="1"/>
+	<do access-modifier="private" name="IsNotWeb" display-name="IsNotWeb" ver="5" type="bool" type-id="7c9fe1ab-1ee2-42d8-939f-94ce3e89fca8">
+		<body kind="javascript">
+			<![CDATA[return Runtime.WorkMode != 1;]]>
+		</body>
+	</do>
 </object>
 

@@ -657,6 +657,7 @@ Global.OpenedLogin = true;]]>
 			<body kind="om">
 				<![CDATA[if (AsokuUserRights.SecurityContext_UserRights.LoginRejectReason == "") {
 	here.Close();
+	Global.OpenedLogin = false;
 }else {
 	Form.FormError.Text = AsokuUserRights.SecurityContext_UserRights.LoginRejectReason;
 }]]>

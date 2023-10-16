@@ -34,6 +34,31 @@
 	<designed target="WindowCloseMode" value="0" ver="5"/>
 	<designed target="WindowIconPath" value="" ver="5"/>
 	<designed target="Flip" value="0" ver="5"/>
+	<object access-modifier="private" name="Rectangle_2" display-name="Rectangle_2" uuid="92e42793-9f92-47c0-89c1-6102468ce244" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
+		<designed target="X" value="207.20000000000002" ver="5"/>
+		<designed target="Y" value="41" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="188.20000000000002" ver="5"/>
+		<designed target="Height" value="533" ver="5"/>
+		<designed target="RoundingRadius" value="0" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="3" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<do-trace access-modifier="private" target="PenColor" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asoku35kV]]>
+			</body>
+		</do-trace>
+	</object>
 	<object access-modifier="private" name="Line_400" display-name="Line_400" uuid="0525ceb1-2ca7-4aca-a890-a3bdf114b367" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5" description="" cardinal="1">
 		<designed target="X" value="1590.5" ver="5"/>
 		<designed target="Y" value="342" ver="5"/>
@@ -184,31 +209,6 @@
 		<designed target="Enabled" value="true" ver="5"/>
 		<designed target="Tooltip" value="" ver="5"/>
 		<designed target="Width" value="188.20000000000005" ver="5"/>
-		<designed target="Height" value="533" ver="5"/>
-		<designed target="RoundingRadius" value="0" ver="5"/>
-		<designed target="PenColor" value="4278190080" ver="5"/>
-		<designed target="PenStyle" value="1" ver="5"/>
-		<designed target="PenWidth" value="3" ver="5"/>
-		<designed target="BrushColor" value="4278190080" ver="5"/>
-		<designed target="BrushStyle" value="0" ver="5"/>
-		<do-trace access-modifier="private" target="PenColor" ver="5">
-			<body>
-				<![CDATA[AsokuColor.asoku35kV]]>
-			</body>
-		</do-trace>
-	</object>
-	<object access-modifier="private" name="Rectangle_2" display-name="Rectangle_2" uuid="92e42793-9f92-47c0-89c1-6102468ce244" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
-		<designed target="X" value="207.20000000000002" ver="5"/>
-		<designed target="Y" value="41" ver="5"/>
-		<designed target="ZValue" value="0" ver="5"/>
-		<designed target="Rotation" value="0" ver="5"/>
-		<designed target="Scale" value="1" ver="5"/>
-		<designed target="Flip" value="0" ver="5"/>
-		<designed target="Visible" value="true" ver="5"/>
-		<designed target="Opacity" value="1" ver="5"/>
-		<designed target="Enabled" value="true" ver="5"/>
-		<designed target="Tooltip" value="" ver="5"/>
-		<designed target="Width" value="188.20000000000002" ver="5"/>
 		<designed target="Height" value="533" ver="5"/>
 		<designed target="RoundingRadius" value="0" ver="5"/>
 		<designed target="PenColor" value="4278190080" ver="5"/>
@@ -4906,6 +4906,11 @@
 			<object access-modifier="private" uuid="ea7b2878-4f7b-45c1-b407-bc4b829c2440" base-type="Form_5" base-type-id="fcb3a4dd-717e-4d75-adfb-9215ef693998" ver="5">
 				<init target="ParDevPathDisc" ver="5" value="RU.ZRU-35.VL-406-35.RZA.Diodes.Pusk_vstroen_ostsillografa|RU.ZRU-35.VL-406-35.RZA.Diodes.Predupredit_signalizatsiya|RU.ZRU-35.VL-406-35.RZA.Diodes.Diagnostika|RU.ZRU-35.VL-406-35.RZA.Diodes.Avariynaya_signalizatsiya|RU.ZRU-35.VL-406-35.RZA.Diodes.Rabota|RU.ZRU-35.VL-406-35.RZA.Diodes.Vyvod|RU.ZRU-35.VL-406-35.RZA.Diodes.Sbros|RU.ZRU-35.VL-406-35.RZA.Diodes.RPO|RU.ZRU-35.VL-406-35.RZA.Diodes.RPV|RU.ZRU-35.VL-406-35.RZA.Diodes.Telezhka_vkachena|RU.ZRU-35.VL-406-35.RZA.Diodes.Neispravnost_TsU|RU.ZRU-35.VL-406-35.RZA.Diodes.MTZ_srab|RU.ZRU-35.VL-406-35.RZA.Diodes.ZOZZ_srab|RU.ZRU-35.VL-406-35.RZA.Diodes.ZMN_srab|RU.ZRU-35.VL-406-35.RZA.Diodes.ZPN_srab|RU.ZRU-35.VL-406-35.RZA.Diodes.UROV_na_sebya|RU.ZRU-35.VL-406-35.RZA.Diodes.Pusk_UROV|RU.ZRU-35.VL-406-35.RZA.Diodes.ZDZ_srab|RU.ZRU-35.VL-406-35.RZA.Diodes.AChR|RU.ZRU-35.VL-406-35.RZA.Diodes.EKU_S1|RU.ZRU-35.VL-406-35.RZA.Diodes.EKU_shift_S1|RU.ZRU-35.VL-406-35.RZA.Diodes.EKU_S2|RU.ZRU-35.VL-406-35.RZA.Diodes.EKU_shift_S2|RU.ZRU-35.VL-406-35.RZA.Diodes.EKU_S3|RU.ZRU-35.VL-406-35.RZA.Diodes.EKU_shift_S3|RU.ZRU-35.VL-406-35.RZA.Diodes.EKU_S4|RU.ZRU-35.VL-406-35.RZA.Diodes.EKU_shift_S4|RU.ZRU-35.VL-406-35.RZA.Diodes.EKU_S5|RU.ZRU-35.VL-406-35.RZA.Diodes.EKU_shift_S5|RU.ZRU-35.VL-406-35.RZA.Diodes.EKU_S6|RU.ZRU-35.VL-406-35.RZA.Diodes.EKU_shift_S6"/>
 				<init target="ParDevPathAn" ver="5" value="RU.ZRU-35.VL-406-35.RZA.Analogs.Calc.IA|RU.ZRU-35.VL-406-35.RZA.Analogs.Calc.IB|RU.ZRU-35.VL-406-35.RZA.Analogs.Calc.IC|RU.ZRU-35.VL-406-35.RZA.Analogs.Calc.Ua|RU.ZRU-35.VL-406-35.RZA.Analogs.Calc.Ub|RU.ZRU-35.VL-406-35.RZA.Analogs.Calc.Uc|RU.ZRU-35.VL-406-35.RZA.Analogs.Calc.Uab|RU.ZRU-35.VL-406-35.RZA.Analogs.Calc.Ubc|RU.ZRU-35.VL-406-35.RZA.Analogs.Calc.Uca|RU.ZRU-35.VL-406-35.RZA.Analogs.Calc.U_n-k|RU.ZRU-35.VL-406-35.RZA.Analogs.Calc.f|RU.ZRU-35.VL-406-35.RZA.Analogs.Calc.Pa|RU.ZRU-35.VL-406-35.RZA.Analogs.Calc.Pb|RU.ZRU-35.VL-406-35.RZA.Analogs.Calc.Pc|RU.ZRU-35.VL-406-35.RZA.Analogs.Calc.P|RU.ZRU-35.VL-406-35.RZA.Analogs.Calc.Qa|RU.ZRU-35.VL-406-35.RZA.Analogs.Calc.Qb|RU.ZRU-35.VL-406-35.RZA.Analogs.Calc.Qc|RU.ZRU-35.VL-406-35.RZA.Analogs.Calc.Q|RU.ZRU-35.VL-406-35.RZA.Analogs.Calc.Sa|RU.ZRU-35.VL-406-35.RZA.Analogs.Calc.Sb|RU.ZRU-35.VL-406-35.RZA.Analogs.Calc.Sc|RU.ZRU-35.VL-406-35.RZA.Analogs.Calc.S|RU.ZRU-35.VL-406-35.RZA.Analogs.Calc.cos_Phi|RU.ZRU-35.VL-406-35.RZA.Analogs.Calc.+MWh|RU.ZRU-35.VL-406-35.RZA.Analogs.Calc.-MWh|RU.ZRU-35.VL-406-35.RZA.Analogs.Calc.+Mvarh|RU.ZRU-35.VL-406-35.RZA.Analogs.Calc.-Mvarh"/>
+				<init target="WindowCaption" ver="5">
+					<expr>
+						<![CDATA[Button_Ecra.Text + " " + TextPropertiesDialogs_121.Text]]>
+					</expr>
+				</init>
 			</object>
 		</do-on>
 	</object>
@@ -4965,6 +4970,11 @@
 			<object access-modifier="private" uuid="d9fe64ff-8056-4797-86dd-42967ad53ee4" base-type="Form_5" base-type-id="fcb3a4dd-717e-4d75-adfb-9215ef693998" ver="5">
 				<init target="ParDevPathDisc" ver="5" value="RU.ZRU-35.T4.RZA.Diodes.Pusk_vstroen_ostsillografa|RU.ZRU-35.T4.RZA.Diodes.Predupredit_signalizatsiya|RU.ZRU-35.T4.RZA.Diodes.Diagnostika|RU.ZRU-35.T4.RZA.Diodes.Avariynaya_signalizatsiya|RU.ZRU-35.T4.RZA.Diodes.Rabota|RU.ZRU-35.T4.RZA.Diodes.Vyvod|RU.ZRU-35.T4.RZA.Diodes.Sbros|RU.ZRU-35.T4.RZA.Diodes.RPO|RU.ZRU-35.T4.RZA.Diodes.RPV|RU.ZRU-35.T4.RZA.Diodes.Telezhka_vkachena|RU.ZRU-35.T4.RZA.Diodes.Neispravnost_TsU|RU.ZRU-35.T4.RZA.Diodes.MTZ_srab|RU.ZRU-35.T4.RZA.Diodes.ZOZZ_srab|RU.ZRU-35.T4.RZA.Diodes.ZMN_srab|RU.ZRU-35.T4.RZA.Diodes.ZPN_srab|RU.ZRU-35.T4.RZA.Diodes.UROV_na_sebya|RU.ZRU-35.T4.RZA.Diodes.Pusk_UROV|RU.ZRU-35.T4.RZA.Diodes.ZDZ_srab|RU.ZRU-35.T4.RZA.Diodes.AChR|RU.ZRU-35.T4.RZA.Diodes.EKU_S1|RU.ZRU-35.T4.RZA.Diodes.EKU_shift_S1|RU.ZRU-35.T4.RZA.Diodes.EKU_S2|RU.ZRU-35.T4.RZA.Diodes.EKU_shift_S2|RU.ZRU-35.T4.RZA.Diodes.EKU_S3|RU.ZRU-35.T4.RZA.Diodes.EKU_shift_S3|RU.ZRU-35.T4.RZA.Diodes.EKU_S4|RU.ZRU-35.T4.RZA.Diodes.EKU_shift_S4|RU.ZRU-35.T4.RZA.Diodes.EKU_S5|RU.ZRU-35.T4.RZA.Diodes.EKU_shift_S5|RU.ZRU-35.T4.RZA.Diodes.EKU_S6|RU.ZRU-35.T4.RZA.Diodes.EKU_shift_S6"/>
 				<init target="ParDevPathAn" ver="5" value="RU.ZRU-35.T4.RZA.Analogs.Calc.IA|RU.ZRU-35.T4.RZA.Analogs.Calc.IB|RU.ZRU-35.T4.RZA.Analogs.Calc.IC|RU.ZRU-35.T4.RZA.Analogs.Calc.Ua|RU.ZRU-35.T4.RZA.Analogs.Calc.Ub|RU.ZRU-35.T4.RZA.Analogs.Calc.Uc|RU.ZRU-35.T4.RZA.Analogs.Calc.Uab|RU.ZRU-35.T4.RZA.Analogs.Calc.Ubc|RU.ZRU-35.T4.RZA.Analogs.Calc.Uca|RU.ZRU-35.T4.RZA.Analogs.Calc.U_n-k|RU.ZRU-35.T4.RZA.Analogs.Calc.f|RU.ZRU-35.T4.RZA.Analogs.Calc.Pa|RU.ZRU-35.T4.RZA.Analogs.Calc.Pb|RU.ZRU-35.T4.RZA.Analogs.Calc.Pc|RU.ZRU-35.T4.RZA.Analogs.Calc.P|RU.ZRU-35.T4.RZA.Analogs.Calc.Qa|RU.ZRU-35.T4.RZA.Analogs.Calc.Qb|RU.ZRU-35.T4.RZA.Analogs.Calc.Qc|RU.ZRU-35.T4.RZA.Analogs.Calc.Q|RU.ZRU-35.T4.RZA.Analogs.Calc.Sa|RU.ZRU-35.T4.RZA.Analogs.Calc.Sb|RU.ZRU-35.T4.RZA.Analogs.Calc.Sc|RU.ZRU-35.T4.RZA.Analogs.Calc.S|RU.ZRU-35.T4.RZA.Analogs.Calc.cos_Phi|RU.ZRU-35.T4.RZA.Analogs.Calc.+MWh|RU.ZRU-35.T4.RZA.Analogs.Calc.-MWh|RU.ZRU-35.T4.RZA.Analogs.Calc.+Mvarh|RU.ZRU-35.T4.RZA.Analogs.Calc.-Mvarh"/>
+				<init target="WindowCaption" ver="5">
+					<expr>
+						<![CDATA[Button_Ecra_1.Text + " " + TextPropertiesDialogs_122.Text]]>
+					</expr>
+				</init>
 			</object>
 		</do-on>
 	</object>
@@ -5024,6 +5034,11 @@
 			<object access-modifier="private" uuid="dd527758-d02a-4816-8ce4-8bae96e703b2" base-type="Form_5" base-type-id="fcb3a4dd-717e-4d75-adfb-9215ef693998" ver="5">
 				<init target="ParDevPathDisc" ver="5" value="RU.ZRU-35.TN1.RZA.Diodes.Pusk_vstroen_ostsillografa|RU.ZRU-35.TN1.RZA.Diodes.Predupredit_signalizatsiya|RU.ZRU-35.TN1.RZA.Diodes.Diagnostika|RU.ZRU-35.TN1.RZA.Diodes.Avariynaya_signalizatsiya|RU.ZRU-35.TN1.RZA.Diodes.Rabota|RU.ZRU-35.TN1.RZA.Diodes.Vyvod|RU.ZRU-35.TN1.RZA.Diodes.Sbros|RU.ZRU-35.TN1.RZA.Diodes.Kontrol_nalichiya_napr|RU.ZRU-35.TN1.RZA.Diodes.Kontrol_otsutstviya_napr|RU.ZRU-35.TN1.RZA.Diodes.Vozvrat_AChR|RU.ZRU-35.TN1.RZA.Diodes.Telezhka_vkachena|RU.ZRU-35.TN1.RZA.Diodes.Zemlya_v_seti|RU.ZRU-35.TN1.RZA.Diodes.ZOZZ_srab|RU.ZRU-35.TN1.RZA.Diodes.ZMN_srab|RU.ZRU-35.TN1.RZA.Diodes.ZPN_srab|RU.ZRU-35.TN1.RZA.Diodes.ChAPV_srab|RU.ZRU-35.TN1.RZA.Diodes.EKU_S1|RU.ZRU-35.TN1.RZA.Diodes.EKU_shift_S1|RU.ZRU-35.TN1.RZA.Diodes.EKU_S2|RU.ZRU-35.TN1.RZA.Diodes.EKU_shift_S2|RU.ZRU-35.TN1.RZA.Diodes.EKU_S3|RU.ZRU-35.TN1.RZA.Diodes.EKU_shift_S3|RU.ZRU-35.TN1.RZA.Diodes.Avar_deblok|RU.ZRU-35.TN1.RZA.Diodes.EKU_S5|RU.ZRU-35.TN1.RZA.Diodes.EKU_shift_S5|RU.ZRU-35.TN1.RZA.Diodes.EKU_S6|RU.ZRU-35.TN1.RZA.Diodes.EKU_shift_S6"/>
 				<init target="ParDevPathAn" ver="5" value="RU.ZRU-35.TN1.RZA.Analogs.Calc.Ua|RU.ZRU-35.TN1.RZA.Analogs.Calc.Ub|RU.ZRU-35.TN1.RZA.Analogs.Calc.Uc|RU.ZRU-35.TN1.RZA.Analogs.Calc.Uab|RU.ZRU-35.TN1.RZA.Analogs.Calc.Ubc|RU.ZRU-35.TN1.RZA.Analogs.Calc.Uca|RU.ZRU-35.TN1.RZA.Analogs.Calc.Un-k|RU.ZRU-35.TN1.RZA.Analogs.Calc.f"/>
+				<init target="WindowCaption" ver="5">
+					<expr>
+						<![CDATA[Button_Ecra_3.Text + " " + TextPropertiesDialogs_124.Text]]>
+					</expr>
+				</init>
 			</object>
 		</do-on>
 	</object>
@@ -5083,6 +5098,11 @@
 			<object access-modifier="private" uuid="8b7c8280-0dfb-4e50-a869-076eb36c7775" base-type="Form_5" base-type-id="fcb3a4dd-717e-4d75-adfb-9215ef693998" ver="5">
 				<init target="ParDevPathDisc" ver="5" value="RU.ZRU-35.SV.RZA.Diodes.Pusk_vstroen_ostsillografa|RU.ZRU-35.SV.RZA.Diodes.Predupredit_signalizatsiya|RU.ZRU-35.SV.RZA.Diodes.Diagnostika|RU.ZRU-35.SV.RZA.Diodes.Avariynaya_signalizatsiya|RU.ZRU-35.SV.RZA.Diodes.Rabota|RU.ZRU-35.SV.RZA.Diodes.Vyvod|RU.ZRU-35.SV.RZA.Diodes.Sbros|RU.ZRU-35.SV.RZA.Diodes.RPO|RU.ZRU-35.SV.RZA.Diodes.RPV|RU.ZRU-35.SV.RZA.Diodes.Telezhka_vkachena|RU.ZRU-35.SV.RZA.Diodes.Neispravnost_TsU|RU.ZRU-35.SV.RZA.Diodes.MTZ_srab|RU.ZRU-35.SV.RZA.Diodes.ZNR_srab|RU.ZRU-35.SV.RZA.Diodes.Pusk_UROV|RU.ZRU-35.SV.RZA.Diodes.ZDZ_srab|RU.ZRU-35.SV.RZA.Diodes.Uskorenie_MTZ|RU.ZRU-35.SV.RZA.Diodes.EKU_S1|RU.ZRU-35.SV.RZA.Diodes.EKU_shift_S1|RU.ZRU-35.SV.RZA.Diodes.EKU_S2|RU.ZRU-35.SV.RZA.Diodes.EKU_shift_S2|RU.ZRU-35.SV.RZA.Diodes.EKU_S3|RU.ZRU-35.SV.RZA.Diodes.EKU_shift_S3|RU.ZRU-35.SV.RZA.Diodes.EKU_S4|RU.ZRU-35.SV.RZA.Diodes.EKU_shift_S4|RU.ZRU-35.SV.RZA.Diodes.EKU_S5|RU.ZRU-35.SV.RZA.Diodes.EKU_shift_S5|RU.ZRU-35.SV.RZA.Diodes.EKU_S6|RU.ZRU-35.SV.RZA.Diodes.EKU_shift_S6"/>
 				<init target="ParDevPathAn" ver="5" value="RU.ZRU-35.SV.RZA.Analogs.Calc.IA|RU.ZRU-35.SV.RZA.Analogs.Calc.IB|RU.ZRU-35.SV.RZA.Analogs.Calc.IC"/>
+				<init target="WindowCaption" ver="5">
+					<expr>
+						<![CDATA[Button_Ecra_5.Text + " " + TextPropertiesDialogs_127.Text]]>
+					</expr>
+				</init>
 			</object>
 		</do-on>
 	</object>
@@ -5176,6 +5196,11 @@
 				<object access-modifier="private" uuid="a780646b-da7b-4039-87e6-ee922ec49ee5" base-type="Form_5" base-type-id="fcb3a4dd-717e-4d75-adfb-9215ef693998" ver="5">
 					<init target="ParDevPathDisc" ver="5" value="RU.ZRU-35.T3.RZA.Diodes.Predupredit_signalizatsiya|RU.ZRU-35.T3.RZA.Diodes.Diagnostika|RU.ZRU-35.T3.RZA.Diodes.Avariynaya_signalizatsiya|RU.ZRU-35.T3.RZA.Diodes.Rabota|RU.ZRU-35.T3.RZA.Diodes.Vyvod|RU.ZRU-35.T3.RZA.Diodes.Sbros|RU.ZRU-35.T3.RZA.Diodes.RPO|RU.ZRU-35.T3.RZA.Diodes.RPV|RU.ZRU-35.T3.RZA.Diodes.Telezhka_vkachena|RU.ZRU-35.T3.RZA.Diodes.Neispravnost_TsU|RU.ZRU-35.T3.RZA.Diodes.MTZ_srab|RU.ZRU-35.T3.RZA.Diodes.ZOZZ_srab|RU.ZRU-35.T3.RZA.Diodes.ZNR_srab|RU.ZRU-35.T3.RZA.Diodes.ZMN_srab|RU.ZRU-35.T3.RZA.Diodes.ZPN_srab|RU.ZRU-35.T3.RZA.Diodes.UROV_na_sebya|RU.ZRU-35.T3.RZA.Diodes.Pusk_UROV|RU.ZRU-35.T3.RZA.Diodes.ZDZ_srab|RU.ZRU-35.T3.RZA.Diodes.LZSh_srab|RU.ZRU-35.T3.RZA.Diodes.RT_srab|RU.ZRU-35.T3.RZA.Diodes.EKU_S1|RU.ZRU-35.T3.RZA.Diodes.EKU_shift_S1|RU.ZRU-35.T3.RZA.Diodes.EKU_S2|RU.ZRU-35.T3.RZA.Diodes.EKU_shift_S2|RU.ZRU-35.T3.RZA.Diodes.EKU_S3|RU.ZRU-35.T3.RZA.Diodes.EKU_shift_S3|RU.ZRU-35.T3.RZA.Diodes.EKU_S4|RU.ZRU-35.T3.RZA.Diodes.EKU_shift_S4|RU.ZRU-35.T3.RZA.Diodes.EKU_S5|RU.ZRU-35.T3.RZA.Diodes.EKU_shift_S5|RU.ZRU-35.T3.RZA.Diodes.EKU_S6|RU.ZRU-35.T3.RZA.Diodes.EKU_shift_S6"/>
 					<init target="ParDevPathAn" ver="5" value="RU.ZRU-35.T1.RZA.Analogs.Calc.IA|RU.ZRU-35.T1.RZA.Analogs.Calc.IB|RU.ZRU-35.T1.RZA.Analogs.Calc.IC|RU.ZRU-35.T1.RZA.Analogs.Calc.Ua|RU.ZRU-35.T1.RZA.Analogs.Calc.Ub|RU.ZRU-35.T1.RZA.Analogs.Calc.Uc|RU.ZRU-35.T1.RZA.Analogs.Calc.Uab|RU.ZRU-35.T1.RZA.Analogs.Calc.Ubc|RU.ZRU-35.T1.RZA.Analogs.Calc.Uca|RU.ZRU-35.T1.RZA.Analogs.Calc.3Uo|RU.ZRU-35.T1.RZA.Analogs.Calc.f|RU.ZRU-35.T1.RZA.Analogs.Calc.Pa|RU.ZRU-35.T1.RZA.Analogs.Calc.Pb|RU.ZRU-35.T1.RZA.Analogs.Calc.Pc|RU.ZRU-35.T1.RZA.Analogs.Calc.P|RU.ZRU-35.T1.RZA.Analogs.Calc.Qa|RU.ZRU-35.T1.RZA.Analogs.Calc.Qb|RU.ZRU-35.T1.RZA.Analogs.Calc.Qc|RU.ZRU-35.T1.RZA.Analogs.Calc.Q|RU.ZRU-35.T1.RZA.Analogs.Calc.Sa|RU.ZRU-35.T1.RZA.Analogs.Calc.Sb|RU.ZRU-35.T1.RZA.Analogs.Calc.Sc|RU.ZRU-35.T1.RZA.Analogs.Calc.S|RU.ZRU-35.T1.RZA.Analogs.Calc.cos_Phi|RU.ZRU-35.T1.RZA.Analogs.Calc.+MWh|RU.ZRU-35.T1.RZA.Analogs.Calc.-MWh|RU.ZRU-35.T1.RZA.Analogs.Calc.+Mvarh|RU.ZRU-35.T1.RZA.Analogs.Calc.-Mvarh"/>
+					<init target="WindowCaption" ver="5">
+						<expr>
+							<![CDATA[Button_Ecra_16.Text + " " + TextPropertiesDialogs_130.Text]]>
+						</expr>
+					</init>
 				</object>
 			</do-on>
 		</object>
@@ -5263,6 +5288,11 @@
 			<object access-modifier="private" uuid="324f11c7-3aa4-4870-8653-0b1ab524e408" base-type="Form_ECRA217" base-type-id="a243a097-fb81-422f-b532-8994794ba994" ver="5">
 				<init target="ParDevPathDisc" ver="5" value="RU.ZRU-35.T4.Protection.ARKT.Diodes.Pusk_vstroen_ostsillografa|RU.ZRU-35.T4.Protection.ARKT.Diodes.Predupredit_signalizatsiya|RU.ZRU-35.T4.Protection.ARKT.Diodes.Diagnostika|RU.ZRU-35.T4.Protection.ARKT.Diodes.Avariynaya_signalizatsiya|RU.ZRU-35.T4.Protection.ARKT.Diodes.Rabota|RU.ZRU-35.T4.Protection.ARKT.Diodes.Vyvod|RU.ZRU-35.T4.Protection.ARKT.Diodes.Sbros|RU.ZRU-35.T4.Protection.ARKT.Diodes.Avtomaticheskoe_regulirovanie|RU.ZRU-35.T4.Protection.ARKT.Diodes.Ruchnoe_upravlenie|RU.ZRU-35.T4.Protection.ARKT.Diodes.Pereklyuchenie|RU.ZRU-35.T4.Protection.ARKT.Diodes.Sektsiya_1|RU.ZRU-35.T4.Protection.ARKT.Diodes.Prevyshenie_3Uo_ili_U2|RU.ZRU-35.T4.Protection.ARKT.Diodes.Perenapryazhenie|RU.ZRU-35.T4.Protection.ARKT.Diodes.Nizkoe_napryazhenie|RU.ZRU-35.T4.Protection.ARKT.Diodes.Pribavit|RU.ZRU-35.T4.Protection.ARKT.Diodes.Ubavit|RU.ZRU-35.T4.Protection.ARKT.Diodes.Otklyuchenie_pitaniya_PM|RU.ZRU-35.T4.Protection.ARKT.Diodes.Privod_pobezhal|RU.ZRU-35.T4.Protection.ARKT.Diodes.Otkaz_PM|RU.ZRU-35.T4.Protection.ARKT.Diodes.Privod_ne_poshel|RU.ZRU-35.T4.Protection.ARKT.Diodes.RPN_zastryal|RU.ZRU-35.T4.Protection.ARKT.Diodes.Blokirovka_ARKT|RU.ZRU-35.T4.Protection.ARKT.Diodes.Kraynyaya_stupen|RU.ZRU-35.T4.Protection.ARKT.Diodes.EKU_S1|RU.ZRU-35.T4.Protection.ARKT.Diodes.EKU_shift_S1|RU.ZRU-35.T4.Protection.ARKT.Diodes.EKU_S2|RU.ZRU-35.T4.Protection.ARKT.Diodes.EKU_shift_S2|RU.ZRU-35.T4.Protection.ARKT.Diodes.EKU_S3|RU.ZRU-35.T4.Protection.ARKT.Diodes.EKU_shift_S3|RU.ZRU-35.T4.Protection.ARKT.Diodes.EKU_S4|RU.ZRU-35.T4.Protection.ARKT.Diodes.EKU_shift_S4|RU.ZRU-35.T4.Protection.ARKT.Diodes.EKU_S5|RU.ZRU-35.T4.Protection.ARKT.Diodes.EKU_shift_S5|RU.ZRU-35.T4.Protection.ARKT.Diodes.EKU_S6|RU.ZRU-35.T4.Protection.ARKT.Diodes.EKU_shift_S6"/>
 				<init target="ParDevPathAn" ver="5" value="RU.ZRU-35.T4.Protection.ARKT.Analogs.Calc.Ivn|RU.ZRU-35.T4.Protection.ARKT.Analogs.Calc.Ivv_1s|RU.ZRU-35.T4.Protection.ARKT.Analogs.Calc.Isv_1s|RU.ZRU-35.T4.Protection.ARKT.Analogs.Calc.Uab_1s|RU.ZRU-35.T4.Protection.ARKT.Analogs.Calc.Ubc_1s|RU.ZRU-35.T4.Protection.ARKT.Analogs.Calc.3Uo_1c"/>
+				<init target="WindowCaption" ver="5">
+					<expr>
+						<![CDATA[Button_Ecra_9.Text + " " + TextPropertiesDialogs_122.Text]]>
+					</expr>
+				</init>
 			</object>
 		</do-on>
 	</object>
@@ -5322,6 +5352,11 @@
 			<object access-modifier="private" uuid="c01c1372-0ae3-47b1-8c10-ac66f78b4701" base-type="Form_ECRA217" base-type-id="a243a097-fb81-422f-b532-8994794ba994" ver="5">
 				<init target="ParDevPathDisc" ver="5" value="RU.ZRU-35.T4.Protection.RZA1.Diodes.Pusk_vstroen_ostsillografa|RU.ZRU-35.T4.Protection.RZA1.Diodes.Predupredit_signalizatsiya|RU.ZRU-35.T4.Protection.RZA1.Diodes.Diagnostika|RU.ZRU-35.T4.Protection.RZA1.Diodes.Avariynaya_signalizatsiya|RU.ZRU-35.T4.Protection.RZA1.Diodes.Rabota|RU.ZRU-35.T4.Protection.RZA1.Diodes.Vyvod|RU.ZRU-35.T4.Protection.RZA1.Diodes.Sbros|RU.ZRU-35.T4.Protection.RZA1.Diodes.GZT_sign|RU.ZRU-35.T4.Protection.RZA1.Diodes.GZ_RPN_otkl|RU.ZRU-35.T4.Protection.RZA1.Diodes.Neispr_tsepey_okhlazhd|RU.ZRU-35.T4.Protection.RZA1.Diodes.ZDZ_srab|RU.ZRU-35.T4.Protection.RZA1.Diodes.DifZT_otkl|RU.ZRU-35.T4.Protection.RZA1.Diodes.MTZ_VN_srab|RU.ZRU-35.T4.Protection.RZA1.Diodes.MTZ_NN_srab|RU.ZRU-35.T4.Protection.RZA1.Diodes.GZT_otkl|RU.ZRU-35.T4.Protection.RZA1.Diodes.Avtomatika_okhlazhdeniya|RU.ZRU-35.T4.Protection.RZA1.Diodes.TZNP_srab|RU.ZRU-35.T4.Protection.RZA1.Diodes.ZP_otkl|RU.ZRU-35.T4.Protection.RZA1.Diodes.ZNR_VN_srab|RU.ZRU-35.T4.Protection.RZA1.Diodes.ZNR_NN_srab|RU.ZRU-35.T4.Protection.RZA1.Diodes.ZMN_srab|RU.ZRU-35.T4.Protection.RZA1.Diodes.UROV_na_sebya|RU.ZRU-35.T4.Protection.RZA1.Diodes.Pusk_UROV|RU.ZRU-35.T4.Protection.RZA1.Diodes.EKU_S1|RU.ZRU-35.T4.Protection.RZA1.Diodes.EKU_shift_S1|RU.ZRU-35.T4.Protection.RZA1.Diodes.EKU_S2|RU.ZRU-35.T4.Protection.RZA1.Diodes.EKU_shift_S2|RU.ZRU-35.T4.Protection.RZA1.Diodes.EKU_S3|RU.ZRU-35.T4.Protection.RZA1.Diodes.EKU_shift_S3|RU.ZRU-35.T4.Protection.RZA1.Diodes.EKU_S4|RU.ZRU-35.T4.Protection.RZA1.Diodes.EKU_shift_S4|RU.ZRU-35.T4.Protection.RZA1.Diodes.EKU_S5|RU.ZRU-35.T4.Protection.RZA1.Diodes.EKU_shift_S5|RU.ZRU-35.T4.Protection.RZA1.Diodes.EKU_S6|RU.ZRU-35.T4.Protection.RZA1.Diodes.EKU_shift_S6"/>
 				<init target="ParDevPathAn" ver="5" value="RU.ZRU-35.T4.Protection.RZA1.Analogs.Calc.Uln|RU.ZRU-35.T4.Protection.RZA1.Analogs.Calc.Ivn|RU.ZRU-35.T4.Protection.RZA1.Analogs.Calc.Inn|RU.ZRU-35.T4.Protection.RZA1.Analogs.Calc.3Uo|RU.ZRU-35.T4.Protection.RZA1.Analogs.Calc.Q1|RU.ZRU-35.T4.Protection.RZA1.Analogs.Calc.Q2|RU.ZRU-35.T4.Protection.RZA1.Analogs.Calc.Q|RU.ZRU-35.T4.Protection.RZA1.Analogs.Calc.f|RU.ZRU-35.T4.Protection.RZA1.Analogs.Calc.S|RU.ZRU-35.T4.Protection.RZA1.Analogs.Calc.P"/>
+				<init target="WindowCaption" ver="5">
+					<expr>
+						<![CDATA[Button_Ecra_10.Text + " " + TextPropertiesDialogs_122.Text]]>
+					</expr>
+				</init>
 			</object>
 		</do-on>
 	</object>
@@ -5381,6 +5416,11 @@
 			<object access-modifier="private" uuid="213c5a6b-9032-432c-9c33-c6a6273b3835" base-type="Form_ECRA217" base-type-id="a243a097-fb81-422f-b532-8994794ba994" ver="5">
 				<init target="ParDevPathDisc" ver="5" value="RU.ZRU-35.T4.Protection.RZA2.Diodes.Pusk_vstroen_ostsillografa|RU.ZRU-35.T4.Protection.RZA2.Diodes.Predupredit_signalizatsiya|RU.ZRU-35.T4.Protection.RZA2.Diodes.Diagnostika|RU.ZRU-35.T4.Protection.RZA2.Diodes.Avariynaya_signalizatsiya|RU.ZRU-35.T4.Protection.RZA2.Diodes.Rabota|RU.ZRU-35.T4.Protection.RZA2.Diodes.Vyvod|RU.ZRU-35.T4.Protection.RZA2.Diodes.Sbros|RU.ZRU-35.T4.Protection.RZA2.Diodes.MTZ_srab|RU.ZRU-35.T4.Protection.RZA2.Diodes.ZNF_srab|RU.ZRU-35.T4.Protection.RZA2.Diodes.ZNFR_srab|RU.ZRU-35.T4.Protection.RZA2.Diodes.TZNP_srab|RU.ZRU-35.T4.Protection.RZA2.Diodes.Pusk_UROV|RU.ZRU-35.T4.Protection.RZA2.Diodes.UROV_na_sebya|RU.ZRU-35.T4.Protection.RZA2.Diodes.Uskorenie_MTZ|RU.ZRU-35.T4.Protection.RZA2.Diodes.GZ_T_otkl|RU.ZRU-35.T4.Protection.RZA2.Diodes.GZ_RPN_otkl|RU.ZRU-35.T4.Protection.RZA2.Diodes.Rezhim_upravleniya_mestn|RU.ZRU-35.T4.Protection.RZA1.Diodes.EKU_shift_S1|RU.ZRU-35.T4.Protection.RZA1.Diodes.EKU_S2|RU.ZRU-35.T4.Protection.RZA1.Diodes.EKU_shift_S2|RU.ZRU-35.T4.Protection.RZA1.Diodes.EKU_S3|RU.ZRU-35.T4.Protection.RZA1.Diodes.EKU_shift_S3|RU.ZRU-35.T4.Protection.RZA1.Diodes.EKU_S4|RU.ZRU-35.T4.Protection.RZA1.Diodes.EKU_shift_S4|RU.ZRU-35.T4.Protection.RZA1.Diodes.EKU_S5|RU.ZRU-35.T4.Protection.RZA1.Diodes.EKU_shift_S5|RU.ZRU-35.T4.Protection.RZA1.Diodes.EKU_S6|RU.ZRU-35.T4.Protection.RZA1.Diodes.EKU_shift_S6"/>
 				<init target="ParDevPathAn" ver="5" value="RU.ZRU-35.T4.Protection.RZA2.Analogs.Calc.Uln|RU.ZRU-35.T4.Protection.RZA2.Analogs.Calc.Ivn|RU.ZRU-35.T4.Protection.RZA2.Analogs.Calc.3Uo|RU.ZRU-35.T4.Protection.RZA2.Analogs.Calc.Q1|RU.ZRU-35.T4.Protection.RZA2.Analogs.Calc.ZN|RU.ZRU-35.T4.Protection.RZA2.Analogs.Calc.f|RU.ZRU-35.T4.Protection.RZA2.Analogs.Calc.S|RU.ZRU-35.T4.Protection.RZA2.Analogs.Calc.P|RU.ZRU-35.T4.Protection.RZA2.Analogs.Calc.Q|RU.ZRU-35.T4.Protection.RZA2.Analogs.Calc.Iotkl_fA|RU.ZRU-35.T4.Protection.RZA2.Analogs.Calc.Iotkl_fV|RU.ZRU-35.T4.Protection.RZA2.Analogs.Calc.Iotkl_fS"/>
+				<init target="WindowCaption" ver="5">
+					<expr>
+						<![CDATA[Button_Ecra_11.Text + " " + TextPropertiesDialogs_122.Text]]>
+					</expr>
+				</init>
 			</object>
 		</do-on>
 	</object>
@@ -5440,6 +5480,11 @@
 			<object access-modifier="private" uuid="e5cc983f-3961-4204-8e05-b4fac854cfc1" base-type="Form_5" base-type-id="fcb3a4dd-717e-4d75-adfb-9215ef693998" ver="5">
 				<init target="ParDevPathDisc" ver="5" value="RU.ZRU-35.T5.RZA.Diodes.Pusk_vstroen_ostsillografa|RU.ZRU-35.T5.RZA.Diodes.Predupredit_signalizatsiya|RU.ZRU-35.T5.RZA.Diodes.Diagnostika|RU.ZRU-35.T5.RZA.Diodes.Avariynaya_signalizatsiya|RU.ZRU-35.T5.RZA.Diodes.Rabota|RU.ZRU-35.T5.RZA.Diodes.Vyvod|RU.ZRU-35.T5.RZA.Diodes.Sbros|RU.ZRU-35.T5.RZA.Diodes.RPO|RU.ZRU-35.T5.RZA.Diodes.RPV|RU.ZRU-35.T5.RZA.Diodes.Telezhka_vkachena|RU.ZRU-35.T5.RZA.Diodes.Neispravnost_TsU|RU.ZRU-35.T5.RZA.Diodes.MTZ_srab|RU.ZRU-35.T5.RZA.Diodes.ZOZZ_srab|RU.ZRU-35.T5.RZA.Diodes.ZMN_srab|RU.ZRU-35.T5.RZA.Diodes.ZPN_srab|RU.ZRU-35.T5.RZA.Diodes.UROV_na_sebya|RU.ZRU-35.T5.RZA.Diodes.Pusk_UROV|RU.ZRU-35.T5.RZA.Diodes.ZDZ_srab|RU.ZRU-35.T5.RZA.Diodes.AChR|RU.ZRU-35.T5.RZA.Diodes.EKU_S1|RU.ZRU-35.T5.RZA.Diodes.EKU_shift_S1|RU.ZRU-35.T5.RZA.Diodes.EKU_S2|RU.ZRU-35.T5.RZA.Diodes.EKU_shift_S2|RU.ZRU-35.T5.RZA.Diodes.EKU_S3|RU.ZRU-35.T5.RZA.Diodes.EKU_shift_S3|RU.ZRU-35.T5.RZA.Diodes.EKU_S4|RU.ZRU-35.T5.RZA.Diodes.EKU_shift_S4|RU.ZRU-35.T5.RZA.Diodes.EKU_S5|RU.ZRU-35.T5.RZA.Diodes.EKU_shift_S5|RU.ZRU-35.T5.RZA.Diodes.EKU_S6|RU.ZRU-35.T5.RZA.Diodes.EKU_shift_S6"/>
 				<init target="ParDevPathAn" ver="5" value="RU.ZRU-35.T5.RZA.Analogs.Calc.IA|RU.ZRU-35.T5.RZA.Analogs.Calc.IB|RU.ZRU-35.T5.RZA.Analogs.Calc.IC|RU.ZRU-35.T5.RZA.Analogs.Calc.Ua|RU.ZRU-35.T5.RZA.Analogs.Calc.Ub|RU.ZRU-35.T5.RZA.Analogs.Calc.Uc|RU.ZRU-35.T5.RZA.Analogs.Calc.Uab|RU.ZRU-35.T5.RZA.Analogs.Calc.Ubc|RU.ZRU-35.T5.RZA.Analogs.Calc.Uca|RU.ZRU-35.T5.RZA.Analogs.Calc.U_n-k|RU.ZRU-35.T5.RZA.Analogs.Calc.f|RU.ZRU-35.T5.RZA.Analogs.Calc.Pa|RU.ZRU-35.T5.RZA.Analogs.Calc.Pb|RU.ZRU-35.T5.RZA.Analogs.Calc.Pc|RU.ZRU-35.T5.RZA.Analogs.Calc.P|RU.ZRU-35.T5.RZA.Analogs.Calc.Qa|RU.ZRU-35.T5.RZA.Analogs.Calc.Qb|RU.ZRU-35.T5.RZA.Analogs.Calc.Qc|RU.ZRU-35.T5.RZA.Analogs.Calc.Q|RU.ZRU-35.T5.RZA.Analogs.Calc.Sa|RU.ZRU-35.T5.RZA.Analogs.Calc.Sb|RU.ZRU-35.T5.RZA.Analogs.Calc.Sc|RU.ZRU-35.T5.RZA.Analogs.Calc.S|RU.ZRU-35.T5.RZA.Analogs.Calc.cos_Phi|RU.ZRU-35.T5.RZA.Analogs.Calc.+MWh|RU.ZRU-35.T5.RZA.Analogs.Calc.-MWh|RU.ZRU-35.T5.RZA.Analogs.Calc.+Mvarh|RU.ZRU-35.T5.RZA.Analogs.Calc.-Mvarh"/>
+				<init target="WindowCaption" ver="5">
+					<expr>
+						<![CDATA[Button_Ecra_12.Text + " " + TextPropertiesDialogs_128.Text]]>
+					</expr>
+				</init>
 			</object>
 		</do-on>
 	</object>
@@ -5499,6 +5544,11 @@
 			<object access-modifier="private" uuid="9eeb9284-2a4d-46b0-bac8-ea48eb0a7a1e" base-type="Form_ECRA217" base-type-id="a243a097-fb81-422f-b532-8994794ba994" ver="5">
 				<init target="ParDevPathDisc" ver="5" value="RU.ZRU-35.T5.Protection.ARKT.Diodes.Pusk_vstroen_ostsillografa|RU.ZRU-35.T5.Protection.ARKT.Diodes.Predupredit_signalizatsiya|RU.ZRU-35.T5.Protection.ARKT.Diodes.Diagnostika|RU.ZRU-35.T5.Protection.ARKT.Diodes.Avariynaya_signalizatsiya|RU.ZRU-35.T5.Protection.ARKT.Diodes.Rabota|RU.ZRU-35.T5.Protection.ARKT.Diodes.Vyvod|RU.ZRU-35.T5.Protection.ARKT.Diodes.Sbros|RU.ZRU-35.T5.Protection.ARKT.Diodes.Avtomaticheskoe_regulirovanie|RU.ZRU-35.T5.Protection.ARKT.Diodes.Ruchnoe_upravlenie|RU.ZRU-35.T5.Protection.ARKT.Diodes.Pereklyuchenie|RU.ZRU-35.T5.Protection.ARKT.Diodes.Sektsiya_1|RU.ZRU-35.T5.Protection.ARKT.Diodes.Prevyshenie_3Uo_ili_U2|RU.ZRU-35.T5.Protection.ARKT.Diodes.Perenapryazhenie|RU.ZRU-35.T5.Protection.ARKT.Diodes.Nizkoe_napryazhenie|RU.ZRU-35.T5.Protection.ARKT.Diodes.Pribavit|RU.ZRU-35.T5.Protection.ARKT.Diodes.Ubavit|RU.ZRU-35.T5.Protection.ARKT.Diodes.Otklyuchenie_pitaniya_PM|RU.ZRU-35.T5.Protection.ARKT.Diodes.Privod_pobezhal|RU.ZRU-35.T5.Protection.ARKT.Diodes.Otkaz_PM|RU.ZRU-35.T5.Protection.ARKT.Diodes.Privod_ne_poshel|RU.ZRU-35.T5.Protection.ARKT.Diodes.RPN_zastryal|RU.ZRU-35.T5.Protection.ARKT.Diodes.Blokirovka_ARKT|RU.ZRU-35.T5.Protection.ARKT.Diodes.Kraynyaya_stupen|RU.ZRU-35.T5.Protection.ARKT.Diodes.EKU_S1|RU.ZRU-35.T5.Protection.ARKT.Diodes.EKU_shift_S1|RU.ZRU-35.T5.Protection.ARKT.Diodes.EKU_S2|RU.ZRU-35.T5.Protection.ARKT.Diodes.EKU_shift_S2|RU.ZRU-35.T5.Protection.ARKT.Diodes.EKU_S3|RU.ZRU-35.T5.Protection.ARKT.Diodes.EKU_shift_S3|RU.ZRU-35.T5.Protection.ARKT.Diodes.EKU_S4|RU.ZRU-35.T5.Protection.ARKT.Diodes.EKU_shift_S4|RU.ZRU-35.T5.Protection.ARKT.Diodes.EKU_S5|RU.ZRU-35.T5.Protection.ARKT.Diodes.EKU_shift_S5|RU.ZRU-35.T5.Protection.ARKT.Diodes.EKU_S6|RU.ZRU-35.T5.Protection.ARKT.Diodes.EKU_shift_S6"/>
 				<init target="ParDevPathAn" ver="5" value="RU.ZRU-35.T5.Protection.ARKT.Analogs.Calc.Ivn|RU.ZRU-35.T5.Protection.ARKT.Analogs.Calc.Ivv_1s|RU.ZRU-35.T5.Protection.ARKT.Analogs.Calc.Isv_1s|RU.ZRU-35.T5.Protection.ARKT.Analogs.Calc.Uab_1s|RU.ZRU-35.T5.Protection.ARKT.Analogs.Calc.Ubc_1s|RU.ZRU-35.T5.Protection.ARKT.Analogs.Calc.3Uo_1c"/>
+				<init target="WindowCaption" ver="5">
+					<expr>
+						<![CDATA[Button_Ecra_13.Text + " " + TextPropertiesDialogs_128.Text]]>
+					</expr>
+				</init>
 			</object>
 		</do-on>
 	</object>
@@ -5558,6 +5608,11 @@
 			<object access-modifier="private" uuid="6f33a6fc-9d2e-4230-b9e0-96e4cfc338c3" base-type="Form_ECRA217" base-type-id="a243a097-fb81-422f-b532-8994794ba994" ver="5">
 				<init target="ParDevPathDisc" ver="5" value="RU.ZRU-35.T5.Protection.RZA1.Diodes.Pusk_vstroen_ostsillografa|RU.ZRU-35.T5.Protection.RZA1.Diodes.Predupredit_signalizatsiya|RU.ZRU-35.T5.Protection.RZA1.Diodes.Diagnostika|RU.ZRU-35.T5.Protection.RZA1.Diodes.Avariynaya_signalizatsiya|RU.ZRU-35.T5.Protection.RZA1.Diodes.Rabota|RU.ZRU-35.T5.Protection.RZA1.Diodes.Vyvod|RU.ZRU-35.T5.Protection.RZA1.Diodes.Sbros|RU.ZRU-35.T5.Protection.RZA1.Diodes.GZT_sign|RU.ZRU-35.T5.Protection.RZA1.Diodes.GZ_RPN_otkl|RU.ZRU-35.T5.Protection.RZA1.Diodes.Neispr_tsepey_okhlazhd|RU.ZRU-35.T5.Protection.RZA1.Diodes.ZDZ_srab|RU.ZRU-35.T5.Protection.RZA1.Diodes.DifZT_otkl|RU.ZRU-35.T5.Protection.RZA1.Diodes.MTZ_VN_srab|RU.ZRU-35.T5.Protection.RZA1.Diodes.MTZ_NN_srab|RU.ZRU-35.T5.Protection.RZA1.Diodes.GZT_otkl|RU.ZRU-35.T5.Protection.RZA1.Diodes.Avtomatika_okhlazhdeniya|RU.ZRU-35.T5.Protection.RZA1.Diodes.TZNP_srab|RU.ZRU-35.T5.Protection.RZA1.Diodes.ZP_otkl|RU.ZRU-35.T5.Protection.RZA1.Diodes.ZNR_VN_srab|RU.ZRU-35.T5.Protection.RZA1.Diodes.ZNR_NN_srab|RU.ZRU-35.T5.Protection.RZA1.Diodes.ZMN_srab|RU.ZRU-35.T5.Protection.RZA1.Diodes.UROV_na_sebya|RU.ZRU-35.T5.Protection.RZA1.Diodes.Pusk_UROV|RU.ZRU-35.T5.Protection.RZA1.Diodes.EKU_S1|RU.ZRU-35.T5.Protection.RZA1.Diodes.EKU_shift_S1|RU.ZRU-35.T5.Protection.RZA1.Diodes.EKU_S2|RU.ZRU-35.T5.Protection.RZA1.Diodes.EKU_shift_S2|RU.ZRU-35.T5.Protection.RZA1.Diodes.EKU_S3|RU.ZRU-35.T5.Protection.RZA1.Diodes.EKU_shift_S3|RU.ZRU-35.T5.Protection.RZA1.Diodes.EKU_S4|RU.ZRU-35.T5.Protection.RZA1.Diodes.EKU_shift_S4|RU.ZRU-35.T5.Protection.RZA1.Diodes.EKU_S5|RU.ZRU-35.T5.Protection.RZA1.Diodes.EKU_shift_S5|RU.ZRU-35.T5.Protection.RZA1.Diodes.EKU_S6|RU.ZRU-35.T5.Protection.RZA1.Diodes.EKU_shift_S6"/>
 				<init target="ParDevPathAn" ver="5" value="RU.ZRU-35.T5.Protection.RZA1.Analogs.Calc.Uln|RU.ZRU-35.T5.Protection.RZA1.Analogs.Calc.Ivn|RU.ZRU-35.T5.Protection.RZA1.Analogs.Calc.Inn|RU.ZRU-35.T5.Protection.RZA1.Analogs.Calc.3Uo|RU.ZRU-35.T5.Protection.RZA1.Analogs.Calc.Q1|RU.ZRU-35.T5.Protection.RZA1.Analogs.Calc.Q2|RU.ZRU-35.T5.Protection.RZA1.Analogs.Calc.Q|RU.ZRU-35.T5.Protection.RZA1.Analogs.Calc.f|RU.ZRU-35.T5.Protection.RZA1.Analogs.Calc.S|RU.ZRU-35.T5.Protection.RZA1.Analogs.Calc.P"/>
+				<init target="WindowCaption" ver="5">
+					<expr>
+						<![CDATA[Button_Ecra_14.Text + " " + TextPropertiesDialogs_128.Text]]>
+					</expr>
+				</init>
 			</object>
 		</do-on>
 	</object>
@@ -5617,6 +5672,11 @@
 			<object access-modifier="private" uuid="ab7d0c9a-4124-4ca3-9ccf-357a83f156fb" base-type="Form_ECRA217" base-type-id="a243a097-fb81-422f-b532-8994794ba994" ver="5">
 				<init target="ParDevPathDisc" ver="5" value="RU.ZRU-35.T5.Protection.RZA2.Diodes.Pusk_vstroen_ostsillografa|RU.ZRU-35.T5.Protection.RZA2.Diodes.Predupredit_signalizatsiya|RU.ZRU-35.T5.Protection.RZA2.Diodes.Diagnostika|RU.ZRU-35.T5.Protection.RZA2.Diodes.Avariynaya_signalizatsiya|RU.ZRU-35.T5.Protection.RZA2.Diodes.Rabota|RU.ZRU-35.T5.Protection.RZA2.Diodes.Vyvod|RU.ZRU-35.T5.Protection.RZA2.Diodes.Sbros|RU.ZRU-35.T5.Protection.RZA2.Diodes.MTZ_srab|RU.ZRU-35.T5.Protection.RZA2.Diodes.ZNF_srab|RU.ZRU-35.T5.Protection.RZA2.Diodes.ZNFR_srab|RU.ZRU-35.T5.Protection.RZA2.Diodes.TZNP_srab|RU.ZRU-35.T5.Protection.RZA2.Diodes.Pusk_UROV|RU.ZRU-35.T5.Protection.RZA2.Diodes.UROV_na_sebya|RU.ZRU-35.T5.Protection.RZA2.Diodes.Uskorenie_MTZ|RU.ZRU-35.T5.Protection.RZA2.Diodes.GZ_T_otkl|RU.ZRU-35.T5.Protection.RZA2.Diodes.GZ_RPN_otkl|RU.ZRU-35.T5.Protection.RZA2.Diodes.Rezhim_upravleniya_mestn|RU.ZRU-35.T5.Protection.RZA1.Diodes.EKU_shift_S1|RU.ZRU-35.T5.Protection.RZA1.Diodes.EKU_S2|RU.ZRU-35.T5.Protection.RZA1.Diodes.EKU_shift_S2|RU.ZRU-35.T5.Protection.RZA1.Diodes.EKU_S3|RU.ZRU-35.T5.Protection.RZA1.Diodes.EKU_shift_S3|RU.ZRU-35.T5.Protection.RZA1.Diodes.EKU_S4|RU.ZRU-35.T5.Protection.RZA1.Diodes.EKU_shift_S4|RU.ZRU-35.T5.Protection.RZA1.Diodes.EKU_S5|RU.ZRU-35.T5.Protection.RZA1.Diodes.EKU_shift_S5|RU.ZRU-35.T5.Protection.RZA1.Diodes.EKU_S6|RU.ZRU-35.T5.Protection.RZA1.Diodes.EKU_shift_S6"/>
 				<init target="ParDevPathAn" ver="5" value="RU.ZRU-35.T5.Protection.RZA2.Analogs.Calc.Uln|RU.ZRU-35.T5.Protection.RZA2.Analogs.Calc.Ivn|RU.ZRU-35.T5.Protection.RZA2.Analogs.Calc.3Uo|RU.ZRU-35.T5.Protection.RZA2.Analogs.Calc.Q1|RU.ZRU-35.T5.Protection.RZA2.Analogs.Calc.ZN|RU.ZRU-35.T5.Protection.RZA2.Analogs.Calc.f|RU.ZRU-35.T5.Protection.RZA2.Analogs.Calc.S|RU.ZRU-35.T5.Protection.RZA2.Analogs.Calc.P|RU.ZRU-35.T5.Protection.RZA2.Analogs.Calc.Q|RU.ZRU-35.T5.Protection.RZA2.Analogs.Calc.Iotkl_fA|RU.ZRU-35.T5.Protection.RZA2.Analogs.Calc.Iotkl_fV|RU.ZRU-35.T5.Protection.RZA2.Analogs.Calc.Iotkl_fS"/>
+				<init target="WindowCaption" ver="5">
+					<expr>
+						<![CDATA[Button_Ecra_15.Text + " " + TextPropertiesDialogs_128.Text]]>
+					</expr>
+				</init>
 			</object>
 		</do-on>
 	</object>
@@ -5676,6 +5736,11 @@
 			<object access-modifier="private" uuid="58b13cd4-7ec9-455b-a95b-b231addc23cc" base-type="Form_5" base-type-id="fcb3a4dd-717e-4d75-adfb-9215ef693998" ver="5">
 				<init target="ParDevPathDisc" ver="5" value="RU.ZRU-35.T1.RZA.Diodes.Predupredit_signalizatsiya|RU.ZRU-35.T1.RZA.Diodes.Diagnostika|RU.ZRU-35.T1.RZA.Diodes.Avariynaya_signalizatsiya|RU.ZRU-35.T1.RZA.Diodes.Rabota|RU.ZRU-35.T1.RZA.Diodes.Vyvod|RU.ZRU-35.T1.RZA.Diodes.Sbros|RU.ZRU-35.T1.RZA.Diodes.RPO|RU.ZRU-35.T1.RZA.Diodes.RPV|RU.ZRU-35.T1.RZA.Diodes.Telezhka_vkachena|RU.ZRU-35.T1.RZA.Diodes.Neispravnost_TsU|RU.ZRU-35.T1.RZA.Diodes.MTZ_srab|RU.ZRU-35.T1.RZA.Diodes.ZOZZ_srab|RU.ZRU-35.T1.RZA.Diodes.ZNR_srab|RU.ZRU-35.T1.RZA.Diodes.ZMN_srab|RU.ZRU-35.T1.RZA.Diodes.ZPN_srab|RU.ZRU-35.T1.RZA.Diodes.UROV_na_sebya|RU.ZRU-35.T1.RZA.Diodes.Pusk_UROV|RU.ZRU-35.T1.RZA.Diodes.ZDZ_srab|RU.ZRU-35.T1.RZA.Diodes.LZSh_srab|RU.ZRU-35.T1.RZA.Diodes.RT_srab|RU.ZRU-35.T1.RZA.Diodes.EKU_S1|RU.ZRU-35.T1.RZA.Diodes.EKU_shift_S1|RU.ZRU-35.T1.RZA.Diodes.EKU_S2|RU.ZRU-35.T1.RZA.Diodes.EKU_shift_S2|RU.ZRU-35.T1.RZA.Diodes.EKU_S3|RU.ZRU-35.T1.RZA.Diodes.EKU_shift_S3|RU.ZRU-35.T1.RZA.Diodes.EKU_S4|RU.ZRU-35.T1.RZA.Diodes.EKU_shift_S4|RU.ZRU-35.T1.RZA.Diodes.EKU_S5|RU.ZRU-35.T1.RZA.Diodes.EKU_shift_S5|RU.ZRU-35.T1.RZA.Diodes.EKU_S6|RU.ZRU-35.T1.RZA.Diodes.EKU_shift_S6"/>
 				<init target="ParDevPathAn" ver="5" value="RU.ZRU-35.T1.RZA.Analogs.Calc.IA|RU.ZRU-35.T1.RZA.Analogs.Calc.IB|RU.ZRU-35.T1.RZA.Analogs.Calc.IC|RU.ZRU-35.T1.RZA.Analogs.Calc.Ua|RU.ZRU-35.T1.RZA.Analogs.Calc.Ub|RU.ZRU-35.T1.RZA.Analogs.Calc.Uc|RU.ZRU-35.T1.RZA.Analogs.Calc.Uab|RU.ZRU-35.T1.RZA.Analogs.Calc.Ubc|RU.ZRU-35.T1.RZA.Analogs.Calc.Uca|RU.ZRU-35.T1.RZA.Analogs.Calc.3Uo|RU.ZRU-35.T1.RZA.Analogs.Calc.f|RU.ZRU-35.T1.RZA.Analogs.Calc.Pa|RU.ZRU-35.T1.RZA.Analogs.Calc.Pb|RU.ZRU-35.T1.RZA.Analogs.Calc.Pc|RU.ZRU-35.T1.RZA.Analogs.Calc.P|RU.ZRU-35.T1.RZA.Analogs.Calc.Qa|RU.ZRU-35.T1.RZA.Analogs.Calc.Qb|RU.ZRU-35.T1.RZA.Analogs.Calc.Qc|RU.ZRU-35.T1.RZA.Analogs.Calc.Q|RU.ZRU-35.T1.RZA.Analogs.Calc.Sa|RU.ZRU-35.T1.RZA.Analogs.Calc.Sb|RU.ZRU-35.T1.RZA.Analogs.Calc.Sc|RU.ZRU-35.T1.RZA.Analogs.Calc.S|RU.ZRU-35.T1.RZA.Analogs.Calc.cos_Phi|RU.ZRU-35.T1.RZA.Analogs.Calc.+MWh|RU.ZRU-35.T1.RZA.Analogs.Calc.-MWh|RU.ZRU-35.T1.RZA.Analogs.Calc.+Mvarh|RU.ZRU-35.T1.RZA.Analogs.Calc.-Mvarh"/>
+				<init target="WindowCaption" ver="5">
+					<expr>
+						<![CDATA[Button_Ecra_16.Text + " " + TextPropertiesDialogs_123.Text]]>
+					</expr>
+				</init>
 			</object>
 		</do-on>
 	</object>
@@ -5735,6 +5800,11 @@
 			<object access-modifier="private" uuid="17593dbc-281c-4523-9662-36387887d952" base-type="Form_5" base-type-id="fcb3a4dd-717e-4d75-adfb-9215ef693998" ver="5">
 				<init target="ParDevPathDisc" ver="5" value="RU.ZRU-35.T2.RZA.Diodes.Predupredit_signalizatsiya|RU.ZRU-35.T2.RZA.Diodes.Diagnostika|RU.ZRU-35.T2.RZA.Diodes.Avariynaya_signalizatsiya|RU.ZRU-35.T2.RZA.Diodes.Rabota|RU.ZRU-35.T2.RZA.Diodes.Vyvod|RU.ZRU-35.T2.RZA.Diodes.Sbros|RU.ZRU-35.T2.RZA.Diodes.RPO|RU.ZRU-35.T2.RZA.Diodes.RPV|RU.ZRU-35.T2.RZA.Diodes.Telezhka_vkachena|RU.ZRU-35.T2.RZA.Diodes.Neispravnost_TsU|RU.ZRU-35.T2.RZA.Diodes.MTZ_srab|RU.ZRU-35.T2.RZA.Diodes.ZOZZ_srab|RU.ZRU-35.T2.RZA.Diodes.ZNR_srab|RU.ZRU-35.T2.RZA.Diodes.ZMN_srab|RU.ZRU-35.T2.RZA.Diodes.ZPN_srab|RU.ZRU-35.T2.RZA.Diodes.UROV_na_sebya|RU.ZRU-35.T2.RZA.Diodes.Pusk_UROV|RU.ZRU-35.T2.RZA.Diodes.ZDZ_srab|RU.ZRU-35.T2.RZA.Diodes.LZSh_srab|RU.ZRU-35.T2.RZA.Diodes.RT_srab|RU.ZRU-35.T2.RZA.Diodes.EKU_S1|RU.ZRU-35.T2.RZA.Diodes.EKU_shift_S1|RU.ZRU-35.T2.RZA.Diodes.EKU_S2|RU.ZRU-35.T2.RZA.Diodes.EKU_shift_S2|RU.ZRU-35.T2.RZA.Diodes.EKU_S3|RU.ZRU-35.T2.RZA.Diodes.EKU_shift_S3|RU.ZRU-35.T2.RZA.Diodes.EKU_S4|RU.ZRU-35.T2.RZA.Diodes.EKU_shift_S4|RU.ZRU-35.T2.RZA.Diodes.EKU_S5|RU.ZRU-35.T2.RZA.Diodes.EKU_shift_S5|RU.ZRU-35.T2.RZA.Diodes.EKU_S6|RU.ZRU-35.T2.RZA.Diodes.EKU_shift_S6"/>
 				<init target="ParDevPathAn" ver="5" value="RU.ZRU-35.T2.RZA.Analogs.Calc.IA|RU.ZRU-35.T2.RZA.Analogs.Calc.IB|RU.ZRU-35.T2.RZA.Analogs.Calc.IC|RU.ZRU-35.T2.RZA.Analogs.Calc.Ua|RU.ZRU-35.T2.RZA.Analogs.Calc.Ub|RU.ZRU-35.T2.RZA.Analogs.Calc.Uc|RU.ZRU-35.T2.RZA.Analogs.Calc.Uab|RU.ZRU-35.T2.RZA.Analogs.Calc.Ubc|RU.ZRU-35.T2.RZA.Analogs.Calc.Uca|RU.ZRU-35.T2.RZA.Analogs.Calc.3Uo|RU.ZRU-35.T2.RZA.Analogs.Calc.f|RU.ZRU-35.T2.RZA.Analogs.Calc.Pa|RU.ZRU-35.T2.RZA.Analogs.Calc.Pb|RU.ZRU-35.T2.RZA.Analogs.Calc.Pc|RU.ZRU-35.T2.RZA.Analogs.Calc.P|RU.ZRU-35.T2.RZA.Analogs.Calc.Qa|RU.ZRU-35.T2.RZA.Analogs.Calc.Qb|RU.ZRU-35.T2.RZA.Analogs.Calc.Qc|RU.ZRU-35.T2.RZA.Analogs.Calc.Q|RU.ZRU-35.T2.RZA.Analogs.Calc.Sa|RU.ZRU-35.T2.RZA.Analogs.Calc.Sb|RU.ZRU-35.T2.RZA.Analogs.Calc.Sc|RU.ZRU-35.T2.RZA.Analogs.Calc.S|RU.ZRU-35.T2.RZA.Analogs.Calc.cos_Phi|RU.ZRU-35.T2.RZA.Analogs.Calc.+MWh|RU.ZRU-35.T2.RZA.Analogs.Calc.-MWh|RU.ZRU-35.T2.RZA.Analogs.Calc.+Mvarh|RU.ZRU-35.T2.RZA.Analogs.Calc.-Mvarh"/>
+				<init target="WindowCaption" ver="5">
+					<expr>
+						<![CDATA[Button_Ecra_17.Text + " " + TextPropertiesDialogs_125.Text]]>
+					</expr>
+				</init>
 			</object>
 		</do-on>
 	</object>
@@ -5794,6 +5864,11 @@
 			<object access-modifier="private" uuid="8e4f7c95-4a46-46bc-b45f-8fac1c48eafe" base-type="Form_5" base-type-id="fcb3a4dd-717e-4d75-adfb-9215ef693998" ver="5">
 				<init target="ParDevPathDisc" ver="5" value="RU.ZRU-35.TN2.RZA.Diodes.Pusk_vstroen_ostsillografa|RU.ZRU-35.TN2.RZA.Diodes.Predupredit_signalizatsiya|RU.ZRU-35.TN2.RZA.Diodes.Diagnostika|RU.ZRU-35.TN2.RZA.Diodes.Avariynaya_signalizatsiya|RU.ZRU-35.TN2.RZA.Diodes.Rabota|RU.ZRU-35.TN2.RZA.Diodes.Vyvod|RU.ZRU-35.TN2.RZA.Diodes.Sbros|RU.ZRU-35.TN2.RZA.Diodes.Kontrol_nalichiya_napr|RU.ZRU-35.TN2.RZA.Diodes.Kontrol_otsutstviya_napr|RU.ZRU-35.TN2.RZA.Diodes.Vozvrat_AChR|RU.ZRU-35.TN2.RZA.Diodes.Telezhka_vkachena|RU.ZRU-35.TN2.RZA.Diodes.Zemlya_v_seti|RU.ZRU-35.TN2.RZA.Diodes.ZOZZ_srab|RU.ZRU-35.TN2.RZA.Diodes.ZMN_srab|RU.ZRU-35.TN2.RZA.Diodes.ZPN_srab|RU.ZRU-35.TN2.RZA.Diodes.ChAPV_srab|RU.ZRU-35.TN2.RZA.Diodes.EKU_S1|RU.ZRU-35.TN2.RZA.Diodes.EKU_shift_S1|RU.ZRU-35.TN2.RZA.Diodes.EKU_S2|RU.ZRU-35.TN2.RZA.Diodes.EKU_shift_S2|RU.ZRU-35.TN2.RZA.Diodes.EKU_S3|RU.ZRU-35.TN2.RZA.Diodes.EKU_shift_S3|RU.ZRU-35.TN2.RZA.Diodes.Avar_deblok|RU.ZRU-35.TN2.RZA.Diodes.EKU_S5|RU.ZRU-35.TN2.RZA.Diodes.EKU_shift_S5|RU.ZRU-35.TN2.RZA.Diodes.EKU_S6|RU.ZRU-35.TN2.RZA.Diodes.EKU_shift_S6"/>
 				<init target="ParDevPathAn" ver="5" value="RU.ZRU-35.TN2.RZA.Analogs.Calc.Ua|RU.ZRU-35.TN2.RZA.Analogs.Calc.Ub|RU.ZRU-35.TN2.RZA.Analogs.Calc.Uc|RU.ZRU-35.TN2.RZA.Analogs.Calc.Uab|RU.ZRU-35.TN2.RZA.Analogs.Calc.Ubc|RU.ZRU-35.TN2.RZA.Analogs.Calc.Uca|RU.ZRU-35.TN2.RZA.Analogs.Calc.Un-k|RU.ZRU-35.TN2.RZA.Analogs.Calc.f"/>
+				<init target="WindowCaption" ver="5">
+					<expr>
+						<![CDATA[Button_Ecra_18.Text + " " + TextPropertiesDialogs_129.Text]]>
+					</expr>
+				</init>
 			</object>
 		</do-on>
 	</object>

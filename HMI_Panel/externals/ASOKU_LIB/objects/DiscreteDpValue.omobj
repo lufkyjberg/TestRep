@@ -28,7 +28,7 @@
 		<designed target="Tooltip" value="" ver="5"/>
 		<designed target="Width" value="150" ver="5"/>
 		<designed target="Height" value="40" ver="5"/>
-		<designed target="Text" value="***" ver="5"/>
+		<designed target="Text" value="*****" ver="5"/>
 		<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
 		<designed target="FontColor" value="0xff000000" ver="5"/>
 		<designed target="TextAlignment" value="132" ver="5"/>
@@ -38,7 +38,7 @@
 					<![CDATA[ApParValue.Advised == false]]>
 				</condition>
 				<expr>
-					<![CDATA["***"]]>
+					<![CDATA["*****"]]>
 				</expr>
 			</conditional-expr>
 			<conditional-expr>
@@ -177,6 +177,29 @@ DateTime.ToString(ApParValue.TimeStamp)+
 ]]>
 		</body>
 	</do-trace>
+	<do-trace access-modifier="private" target="BrushColor" ver="5">
+		<conditional-expr>
+			<condition>
+				<![CDATA[ApParAlarmBytes.Value == AsokuConst.AlarmBytes.Alarm.Value ||ApParAlarmBytes.Value == AsokuConst.AlarmBytes.WarningAndAlarm.Value]]>
+			</condition>
+			<expr>
+				<![CDATA[AsokuColor.asokuRed]]>
+			</expr>
+		</conditional-expr>
+		<conditional-expr>
+			<condition>
+				<![CDATA[ApParAlarmBytes.Value == AsokuConst.AlarmBytes.Warning.Value]]>
+			</condition>
+			<expr>
+				<![CDATA[AsokuColor.asokuYellow]]>
+			</expr>
+		</conditional-expr>
+		<default-expr>
+			<expr>
+				<![CDATA[AsokuColor.asokuTransparent]]>
+			</expr>
+		</default-expr>
+	</do-trace>
 	<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="5" event="MouseEnter">
 		<body kind="om">
 			<![CDATA[if ( ApParValue.Advised ) {
@@ -267,51 +290,5 @@ PenWidth = 2;]]>
 			</body>
 		</do-trace>
 	</object>
-	<object access-modifier="private" name="RerenderTimer" display-name="RerenderTimer" uuid="d73767f5-dbc4-486a-848e-0b7472a86d5a" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="5" description="" cardinal="1">
-		<designed target="Period" value="50" ver="5"/>
-		<designed target="Active" value="true" ver="5"/>
-		<do-on access-modifier="private" name="RerenderHndlr" display-name="RerenderHndlr" ver="5" event="OnTimer">
-			<body kind="om">
-				<![CDATA[if (ApParValue.Advised && Value.Text == "***") {
-	// here.PenColor
-	
-	if (ApParStatusBytes.Value == AsokuConst.StatusBytes.Changed) here.PenColor = AsokuColor.asokuCyan;
-	else here.PenColor = AsokuColor.asokuBlack;
-	
-	// here.BrushColor УБРАЛИ
-	
-	//if (ApParAlarmBytes.Value == AsokuConst.AlarmBytes.Alarm || ApParAlarmBytes.Value == AsokuConst.AlarmBytes.WarningAndAlarm) here.BrushColor = AsokuColor.asokuRed;
-	//else if (ApParAlarmBytes.Value == AsokuConst.AlarmBytes.Warning) here.BrushColor = AsokuColor.asokuYellow;
-	//else here.BrushColor = AsokuColor.asokuTransparent;
-	
-	// Value.Text
-	
-	if (ApParValue.Advised) {
-		if (ApParValue.Value) Value.Text = ApParDisplayOn.Value;
-		else Value.Text = ApParDisplayOff.Value;
-	}
-	
-	// Value.FontColor
-	
-	if (!ApParValue.Advised || ApParStatusBytes.Value == AsokuConst.StatusBytes.Invalid) Value.FontColor = AsokuColor.asokuBlack;
-	else if (ApParValue.Value) {
-		if (TextColorOn != 0) Value.FontColor = TextColorOn.Value;
-		else if (ApParAlarmBytes.Value == AsokuConst.AlarmBytes.Alarm || ApParAlarmBytes.Value == AsokuConst.AlarmBytes.WarningAndAlarm) Value.FontColor = AsokuColor.asokuRed;
-		else if (ApParAlarmBytes.Value == AsokuConst.AlarmBytes.Warning) Value.FontColor = AsokuColor.asokuYellow;
-		else Value.FontColor = AsokuColor.asokuGreen;
-	}
-	else {
-		if (TextColorOff != 0) Value.FontColor = TextColorOff.Value;
-		else Value.FontColor = AsokuColor.asokuGrey;
-	}
-}]]>
-			</body>
-		</do-on>
-	</object>
-	<init target="PenColor" ver="5">
-		<expr>
-			<![CDATA[AsokuColor.asokuBlack]]>
-		</expr>
-	</init>
 </type>
 

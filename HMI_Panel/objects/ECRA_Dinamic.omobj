@@ -45,31 +45,123 @@
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed">
 			<body kind="javascript">
 				<![CDATA[if(this.EcraType == "217"){
+	switch(Index){
+	case 0: 
+		Ecra217.Disc217 = here.Path1;
+		Ecra217.An217 = here.Path2;
+		break;
+	case 1:
+		Ecra217.Disc217 = here.Path3;
+		Ecra217.An217 = here. Path4;
+		break;
+	case 2:
+		Ecra217.Disc217 = here.Path5;
+		Ecra217.An217 = here. Path6;
+		break;
+	case 3:
+		Ecra217.Disc217 = here.Path7;
+		Ecra217.An217 = here.Path8;
+		break;
+	case 4:
+		Ecra217.Disc217 = here.Path9;
+		Ecra217.An217 = here.Path10;
+		break;
+	}
 	Ecra217.Invoke();	
 }
 else if(this.EcraType == "213") {
+	switch(Index){
+	case 0: 
+		Ecra213.Disc213 = here.Path1;
+		Ecra213.An213 = here.Path2;
+		break;
+	case 1:
+		Ecra213.Disc213 = here.Path3;
+		Ecra213.An213 = here. Path4;
+		break;
+	case 2:
+		Ecra213.Disc213 = here.Path5;
+		Ecra213.An213 = here. Path6;
+		break;
+	case 3:
+		Ecra213.Disc213 = here.Path7;
+		Ecra213.An213 = here.Path8;
+		break;
+	case 4:
+		Ecra213.Disc213 = here.Path9;
+		Ecra213.An213 = here.Path10;
+		break;
+	}
 	Ecra213.Invoke();	
 }
 else if(this.EcraType == "209"){
+	switch(Index){
+	case 0: 
+		Ecra209.Disc209 = here.Path1;
+		break;
+	case 1:
+		Ecra209.Disc209 = here.Path2;
+		break;
+	case 2:
+		Ecra209.Disc209 = here.Path3;
+		break;
+	case 3:
+		Ecra209.Disc209 = here.Path4;
+		break;
+	case 4:
+		Ecra209.Disc209 = here.Path11;
+		break;
+	case 5:
+		Ecra209.Disc209 = here. Path12;
+		break;
+	}
 	Ecra209.Invoke();	
 }
 else if(this.EcraType == "247"){
+	switch(Index){
+	case 0: 
+		Ecra247.Disc247 = here.Path1;
+		Ecra247.An247 = here.Path2;
+		break;
+	case 1:
+		Ecra247.Disc247 = here.Path3;
+		Ecra247.An247 = here. Path4;
+		break;
+	case 2:
+		Ecra247.Disc247 = here.Path5;
+		Ecra247.An247 = here. Path6;
+		break;
+	case 3:
+		Ecra247.Disc247 = here.Path7;
+		Ecra247.An247 = here.Path8;
+		break;
+	case 4:
+		Ecra247.Disc247 = here.Path9;
+		Ecra247.An247 = here.Path10;
+		break;
+	}
 	Ecra247.Invoke();	
 }
 else if(this.EcraType == "2704"){
 	switch(Index){
 	case 0: 
-		Ecra2704.notifying_string_1 = here.notifying_string_1;
+		Ecra2704.Disc2704 = here.Path1;
 		break;
 	case 1:
-		Ecra2704.notifying_string_1 = here.notifying_string_2;
+		Ecra2704.Disc2704 = here.Path2;
 		break;
-	case 2: 
-		Ecra2704.notifying_string_1 = here.notifying_string_3;
+	case 2:
+		Ecra2704.Disc2704 = here.Path3;
 		break;
 	case 3:
-		Ecra2704.notifying_string_1 = here.notifying_string_4;
-		break
+		Ecra2704.Disc2704 = here.Path4;
+		break;
+	case 4:
+		Ecra2704.Disc2704 = here.Path11;
+		break;
+	case 5:
+		Ecra2704.Disc2704 = here. Path12;
+		break;
 	}
 	Ecra2704.Invoke();
 }
@@ -164,57 +256,58 @@ for (let i = 0; i < array.length; i++) {
 		<designed target="Enabled" value="true" ver="5"/>
 		<designed target="InvokeTrigger" value="false" ver="5"/>
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" frame-link="here.Frame_1" form-action="open-in-frame" form-by-id="false">
-			<object access-modifier="private" uuid="ea68552c-e78a-447e-9667-93b8481e085a" base-type="Form_ECRA_217" base-type-id="a243a097-fb81-422f-b532-8994794ba994" ver="5"/>
+			<object access-modifier="private" uuid="ea68552c-e78a-447e-9667-93b8481e085a" base-type="Form_ECRA_217" base-type-id="a243a097-fb81-422f-b532-8994794ba994" ver="5">
+				<init target="ParDevPathDisc" ver="5" ref="Disc217"/>
+				<init target="ParDevPathAn" ver="5" ref="An217"/>
+			</object>
 		</do-on>
+		<object access-modifier="private" name="Disc217" display-name="Disc217" uuid="355f8668-9b89-4401-888f-10f33fea5315" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="An217" display-name="An217" uuid="9adadf2f-5e59-46c6-8508-aa06a401593f" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description="" cardinal="1"/>
 	</object>
 	<object access-modifier="private" name="Ecra213" display-name="Ecra213" uuid="41797a82-bf73-431a-9171-4475b15897f3" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
 		<designed target="Enabled" value="true" ver="5"/>
 		<designed target="InvokeTrigger" value="false" ver="5"/>
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" frame-link="here.Frame_1" form-action="open-in-frame" form-by-id="false">
-			<object access-modifier="private" uuid="351feefd-bfc9-46f9-a35a-3744242ec4df" base-type="Form_ECRA_213" base-type-id="7aa37466-b7f4-4db9-b271-2d21d34c988e" ver="5"/>
+			<object access-modifier="private" uuid="351feefd-bfc9-46f9-a35a-3744242ec4df" base-type="Form_ECRA_213" base-type-id="7aa37466-b7f4-4db9-b271-2d21d34c988e" ver="5">
+				<init target="ParDevPathDisc" ver="5" ref="Disc213"/>
+				<init target="ParDevPathAn" ver="5" ref="An213"/>
+			</object>
 		</do-on>
+		<object access-modifier="private" name="Disc213" display-name="Disc213" uuid="cf35bcd4-b15c-4da4-a4a1-2960626f0542" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="An213" display-name="An213" uuid="d11674af-e853-4b1d-a32b-abc69c1d3efa" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description="" cardinal="1"/>
 	</object>
 	<object access-modifier="private" name="Ecra2704" display-name="Ecra2704" uuid="89464970-9f8f-4552-bead-dada1a31feb3" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
 		<designed target="Enabled" value="true" ver="5"/>
 		<designed target="InvokeTrigger" value="false" ver="5"/>
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" frame-link="here.Frame_1" form-action="open-in-frame" form-by-id="false">
 			<object access-modifier="private" uuid="bf697e1b-3833-4e6e-a0e8-1a8b4934ed43" base-type="Form_ECRA_2704" base-type-id="1b685130-519d-46d2-a297-8ff2cbdf105c" ver="5">
-				<init target="ParDevPathDisc" ver="5" ref="Ecra2704.notifying_string_1"/>
+				<init target="ParDevPathDisc" ver="5" ref="Ecra2704.Disc2704"/>
 			</object>
 		</do-on>
-		<object access-modifier="private" name="notifying_string_1" display-name="notifying_string_1" uuid="6df71c61-72a5-4900-b94a-b5ff1fce4fd4" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="Disc2704" display-name="Disc2704" uuid="6df71c61-72a5-4900-b94a-b5ff1fce4fd4" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description="" cardinal="1"/>
 	</object>
 	<object access-modifier="private" name="Ecra247" display-name="Ecra247" uuid="0a5c2bbc-16d4-41c0-b015-b149464ef277" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
 		<designed target="Enabled" value="true" ver="5"/>
 		<designed target="InvokeTrigger" value="false" ver="5"/>
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" frame-link="here.Frame_1" form-action="open-in-frame" form-by-id="false">
-			<object access-modifier="private" uuid="e6c97c3c-7e8e-4941-bbdc-4f485b7e86f6" base-type="Form_ECRA_247" base-type-id="fcb3a4dd-717e-4d75-adfb-9215ef693998" ver="5"/>
+			<object access-modifier="private" uuid="e6c97c3c-7e8e-4941-bbdc-4f485b7e86f6" base-type="Form_ECRA_247" base-type-id="fcb3a4dd-717e-4d75-adfb-9215ef693998" ver="5">
+				<init target="ParDevPathDisc" ver="5" ref="Disc247"/>
+				<init target="ParDevPathAn" ver="5" ref="An247"/>
+			</object>
 		</do-on>
+		<object access-modifier="private" name="Disc247" display-name="Disc247" uuid="75bc4a88-9a0f-4aea-9639-1b1963909d0f" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="An247" display-name="An247" uuid="af61ad8a-ea8f-488e-b76e-1087b2c016f6" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description="" cardinal="1"/>
 	</object>
 	<object access-modifier="private" name="Ecra209" display-name="Ecra209" uuid="30307d90-b538-455f-b0b0-c454a182a8b2" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
 		<designed target="Enabled" value="true" ver="5"/>
 		<designed target="InvokeTrigger" value="false" ver="5"/>
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked" frame-link="here.Frame_1" form-action="open-in-frame" form-by-id="false">
-			<object access-modifier="private" uuid="5fe08982-0487-4bfa-b4f0-04b491c3554f" base-type="Form_ECRA_209" base-type-id="a9cc4fb6-84b8-42e0-a542-490eaf55dcc0" ver="5"/>
+			<object access-modifier="private" uuid="5fe08982-0487-4bfa-b4f0-04b491c3554f" base-type="Form_ECRA_209" base-type-id="a9cc4fb6-84b8-42e0-a542-490eaf55dcc0" ver="5">
+				<init target="ParDevPathDisc" ver="5" ref="Disc209"/>
+			</object>
 		</do-on>
+		<object access-modifier="private" name="Disc209" display-name="Disc209" uuid="3cda13cc-f539-4496-a84d-e2c4b57043fa" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description="" cardinal="1"/>
 	</object>
-	<object access-modifier="private" name="ParDevPath2704" display-name="ParDevPath2704" uuid="7826a7a1-68be-4c1a-beb9-06f6bd2a4453" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="4">
-		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ValueChanged">
-			<body kind="javascript">
-				<![CDATA[let arr = me.Value.split("     :     ");
-for(let i = 0; i<arr.Length; i++){
-	me[i].Value = arr[i];
-}]]>
-			</body>
-		</do-on>
-	</object>
-	<object access-modifier="private" name="ParDevPathDiscr247" display-name="ParDevPathDiscr247" uuid="7859efa7-369a-472d-a263-6ec1b6bb3d7a" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
-	<object access-modifier="private" name="ParDevPathAn247" display-name="ParDevPathAn247" uuid="5f855108-1aea-42ba-9dad-5a0c2ed800e6" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
-	<object access-modifier="private" name="ParDevPathDiscr217" display-name="ParDevPathDiscr217" uuid="2e1579f2-5af2-444f-b545-4886b2e11c76" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
-	<object access-modifier="private" name="ParDevPathAn217" display-name="ParDevPathAn217" uuid="18a7fcdc-8090-483a-b8bf-b64056973659" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
-	<object access-modifier="private" name="ParDevPathDiscr213" display-name="ParDevPathDiscr213" uuid="9d800854-b794-4976-886f-81ca9c4a9979" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
-	<object access-modifier="private" name="ParDevPathAn213" display-name="ParDevPathAn213" uuid="53ca7bea-900c-4e6c-b5b2-ada40dcfc057" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
-	<object access-modifier="private" name="ParDevPath209" display-name="ParDevPath209" uuid="99080c2c-bdc7-463b-9ada-30a057a9acad" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
 	<init target="Ecra" ver="5" value="2704|2704|2704|2704"/>
 	<object access-modifier="private" name="Lines" display-name="Lines" uuid="7f2e9a98-562d-40bc-bbfb-5a1e714be6a7" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1">
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ValueChanged">
@@ -233,9 +326,17 @@ for (let i = 0; i < array_lines.length; i++) {
 			<![CDATA[]]>
 		</body>
 	</do>
-	<object access-modifier="private" name="notifying_string_1" display-name="notifying_string_1" uuid="40b62b99-4b7f-4d23-b33a-b20baa77f0e3" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
-	<object access-modifier="private" name="notifying_string_2" display-name="notifying_string_2" uuid="3738ebaa-9f11-4cdd-954c-0aa59e67fa66" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
-	<object access-modifier="private" name="notifying_string_3" display-name="notifying_string_3" uuid="c7cf78a2-48eb-4833-a391-a9b89fb1ba6c" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
-	<object access-modifier="private" name="notifying_string_4" display-name="notifying_string_4" uuid="1d2b0566-13d1-44d6-aa89-25fb64804bf5" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Path1" display-name="Path1" uuid="40b62b99-4b7f-4d23-b33a-b20baa77f0e3" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Path2" display-name="Path2" uuid="3738ebaa-9f11-4cdd-954c-0aa59e67fa66" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Path3" display-name="Path3" uuid="c7cf78a2-48eb-4833-a391-a9b89fb1ba6c" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Path4" display-name="Path4" uuid="1d2b0566-13d1-44d6-aa89-25fb64804bf5" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Path5" display-name="Path5" uuid="56cacd5b-7212-4084-b9a3-a9b2bc8413c7" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Path6" display-name="Path6" uuid="c39dc7bf-f955-4397-9f22-18e296ab1b15" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Path7" display-name="Path7" uuid="e6e65e4a-38f0-4a3b-93ae-5818fb2ee621" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Path8" display-name="Path8" uuid="a625def7-fcd9-4bfb-a641-4776eeac10de" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Path9" display-name="Path9" uuid="30f8df00-ec75-43b6-8d58-9a8321e11cfd" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Path10" display-name="Path10" uuid="f9127a5a-7018-48d6-a1c8-4e39c377cd9d" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Path11" display-name="Path11" uuid="4f780ba4-f092-4216-aedd-f7ea32500490" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="Path12" display-name="Path12" uuid="77d9ffae-41af-44d1-8c03-94679bf6951e" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
 </type>
 

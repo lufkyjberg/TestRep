@@ -259,29 +259,17 @@ else Open_UD_PermissionFault.Invoke();
 				<designed target="FontColor" value="4278190080" ver="5"/>
 				<designed target="MaxVisibleItems" value="10" ver="5"/>
 				<designed target="InsertPolicy" value="3" ver="5"/>
+				<do-trace access-modifier="private" target="SelectedIndex" ver="5">
+					<body>
+						<![CDATA[TypeConvert.ToInt4(ApParSimValue.Value)]]>
+					</body>
+				</do-trace>
 				<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="SelectedChanged">
-					<body kind="javascript">
-						<![CDATA[CurrentKey = Number(ComboBox_Value.GetItem(ComboBox_Value.SelectedIndex).split("-")[0].trim());
-isChanged = CurrentKey != Number(ApParSimValue.Value);]]>
+					<body kind="om">
+						<![CDATA[isChanged = this.SelectedIndex != TypeConvert.ToInt4(ApParSimValue.Value);]]>
 					</body>
 				</do-on>
-				<object access-modifier="private" name="CurrentKey" display-name="CurrentKey" uuid="fb47ae35-475f-4757-80b8-4044b70040dd" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="5" description="" cardinal="1"/>
 				<object access-modifier="private" name="isChanged" display-name="isChanged" uuid="5382fa1c-3d73-4d73-a3e4-92d1a4637566" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
-				<do-trace access-modifier="private" target="FontColor" ver="5">
-					<conditional-expr>
-						<condition>
-							<![CDATA[isChanged]]>
-						</condition>
-						<expr>
-							<![CDATA[AsokuColor.asokuSky]]>
-						</expr>
-					</conditional-expr>
-					<default-expr>
-						<expr>
-							<![CDATA[AsokuColor.asokuBlack]]>
-						</expr>
-					</default-expr>
-				</do-trace>
 			</object>
 		</object>
 		<object access-modifier="private" name="Container_SimStatus" display-name="Container_SimStatus" uuid="0245bb58-81ee-475e-978f-84226bf60ea2" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
@@ -363,6 +351,7 @@ isChanged = CurrentKey != Number(ApParSimValue.Value);]]>
 						<![CDATA[isChanged = this.Text != ApParSimStatus.ValueAsString;]]>
 					</body>
 				</do-on>
+				<object access-modifier="private" name="isChanged" display-name="isChanged" uuid="a3eb3d84-35d4-4ec1-b6fa-ebda6449b649" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
 			</object>
 		</object>
 	</object>
@@ -433,11 +422,6 @@ for (let i = 0; i < displayArray.length; i++) {
 				<![CDATA[ParDevPath + ".Simulation.Value"]]>
 			</body>
 		</do-trace>
-		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="OnValueChanged">
-			<body kind="javascript">
-				<![CDATA[FullfillComboBox.Invoke();]]>
-			</body>
-		</do-on>
 	</object>
 	<object access-modifier="private" name="ApParSimStatus" display-name="ApParSimStatus" uuid="56a3c426-979e-46fe-a71d-83ed649ba6f3" base-type="ApItemUInt4" base-type-id="322ce770-6c7b-49bc-9cd6-a367ca5b4627" ver="5" description="" cardinal="1">
 		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
@@ -471,8 +455,8 @@ for (let i = 0; i < displayArray.length; i++) {
 	SimulationFrame.SimulationStatusCheckbox.isChanged = false;
 	AsokuMain.CreateUserMessage("флага имитации у сигнала " + ParDevPath);
 }
-if (ApParSimValue.Value != TypeConvert.ToInt4(SimulationFrame.Container_SimValue.ComboBox_Value.CurrentKey)) {
-	ApParSimValue.Value = TypeConvert.ToUint4(SimulationFrame.Container_SimValue.ComboBox_Value.CurrentKey);
+if (ApParSimValue.Value != TypeConvert.ToInt4(SimulationFrame.Container_SimValue.ComboBox_Value.SelectedIndex)) {
+	ApParSimValue.Value = TypeConvert.ToUint4(SimulationFrame.Container_SimValue.ComboBox_Value.SelectedIndex);
 	SimulationFrame.Container_SimValue.ComboBox_Value.isChanged = false;
 	AsokuMain.CreateUserMessage("значение имитации у сигнала " + ParDevPath);
 }
@@ -506,33 +490,6 @@ if (ApParSimStatus.ValueAsString != SimulationFrame.Container_SimStatus.Input.Te
 				<init target="Buttons" ver="5" value="0"/>
 				<init target="Header" ver="5" value="Ограничение WEB-клиента"/>
 			</object>
-		</do-on>
-	</object>
-	<object access-modifier="private" name="FullfillComboBox" display-name="FullfillComboBox" uuid="141dbdef-dbb9-4b5d-9ad2-3b8e90dd3150" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
-		<designed target="Enabled" value="true" ver="5"/>
-		<designed target="InvokeTrigger" value="false" ver="5"/>
-		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Invoked">
-			<body kind="javascript">
-				<![CDATA[let array = ApParDisplay.Value.split(', ');
-SimulationFrame.Container_SimValue.ComboBox_Value.SelectedIndex = -1;
-for (let i = 0; i < array.length; i++) {
-	let arrayNumPlText = array[i].split("-")[0].trim();
-
-	if (ApParValue.Value == ApParSimValue.Value) {
-		if (arrayNumPlText.includes(String(ApParValue.Value))) {
-			SimulationFrame.Container_SimValue.ComboBox_Value.SelectedIndex = i;
-			break;	
-		}
-	}
-	else {
-		if (arrayNumPlText.includes(String(ApParSimValue.Value))) {
-			SimulationFrame.Container_SimValue.ComboBox_Value.SelectedIndex = i;
-			break;	
-		}
-	}
-
-}]]>
-			</body>
 		</do-on>
 	</object>
 </type>

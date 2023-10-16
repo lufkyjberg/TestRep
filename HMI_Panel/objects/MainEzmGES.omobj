@@ -269,6 +269,7 @@
 			<designed target="Scale" value="1" ver="5"/>
 			<designed target="Width" value="80" ver="5"/>
 			<designed target="Height" value="25" ver="5"/>
+			<init target="ParameterType" ver="5" value="AI"/>
 		</object>
 	</object>
 	<object access-modifier="private" name="Rectangle_4" display-name="Rectangle_4" uuid="78b8b580-1a30-42e4-9dcb-3798abb57b24" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="5" description="" cardinal="1">
@@ -1635,6 +1636,7 @@ if(notyfyingForm == 3 && FrameUslovie.Visible == false){
 		<init target="InDevPath" ver="5" value="HydroUnits.GA_01.Setpoints.In.SC_P_task_val"/>
 		<designed target="Width" value="80" ver="5"/>
 		<designed target="Height" value="27" ver="5"/>
+		<init target="TransferDevPath" ver="5" value="HydroUnits.GA_01.Transfers"/>
 	</object>
 	<object access-modifier="private" name="DiscreteDpOnOffKey_1" display-name="DiscreteDpOnOffKey_1" uuid="8667c4db-7bf7-4a3a-8b66-81a111aa4a30" base-type="DiscreteDpOnOffKey" base-type-id="eed86abb-bc23-4394-a780-d6f41ac1c8c2" ver="5" description="" cardinal="1">
 		<designed target="X" value="1218" ver="5"/>
@@ -1932,6 +1934,7 @@ if(notyfyingForm == 3 && FrameUslovie.Visible == false){
 				<![CDATA[AsokuColor.asokuGrey]]>
 			</body>
 		</do-trace>
+		<init target="TransferDevPath" ver="5" value="HydroUnits.GA_01.Transfers"/>
 	</object>
 	<object access-modifier="private" name="DiscreteDpValue_205" display-name="DiscreteDpValue_205" uuid="05847e35-fd13-4347-98c0-01b828e630e5" base-type="DiscreteDpValue" base-type-id="0aa36430-7867-405c-b541-89e8cf6e92d2" ver="5" description="" cardinal="1">
 		<designed target="X" value="395.80909090909086" ver="5"/>

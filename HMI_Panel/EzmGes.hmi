@@ -2,7 +2,6 @@
 	<object file="AnalogSignals.omobj" filter="Мнемосхемы/Диагностика"/>
 	<object file="Autosync.omobj" filter="Мнемосхемы/Электросхема"/>
 	<object file="ConditionsSTOP.omobj" filter="Мнемосхемы/Главная"/>
-	<object file="Diagnostik.omobj" filter="Мнемосхемы/Диагностика"/>
 	<object file="DiscreteSignals.omobj" filter="Мнемосхемы/Диагностика"/>
 	<object file="ExcitationSystem.omobj" filter="Мнемосхемы/Электросхема"/>
 	<object file="FingerCut.omobj" filter="Мнемосхемы/Главная"/>
@@ -15,13 +14,11 @@
 	<object file="Protection.omobj" filter="Мнемосхемы/Защиты"/>
 	<object file="RCHV.omobj" filter="Мнемосхемы/РЧВ"/>
 	<object file="RCHVSPR.omobj" filter="Мнемосхемы/РЧВ"/>
-	<object file="RegulWarning.omobj" filter="Мнемосхемы/Диагностика"/>
 	<object file="TehnicalParameters.omobj" filter="Мнемосхемы/Диагностика"/>
 	<object file="SKPicture.omobj" filter="Мнемосхемы/ТВС"/>
 	<object file="SPR.omobj" filter="Мнемосхемы/Диагностика"/>
 	<object file="SPX.omobj" filter="Мнемосхемы/Диагностика"/>
 	<object file="AirControl.omobj" filter="Мнемосхемы/Термоконтроль"/>
-	<object file="ShkAll.omobj" filter="Мнемосхемы/Диагностика"/>
 	<object file="Start.omobj" filter="Мнемосхемы/Главная"/>
 	<object file="Stator.omobj" filter="Мнемосхемы/Термоконтроль"/>
 	<object file="TVS.omobj" filter="Мнемосхемы/ТВС"/>
@@ -86,5 +83,7 @@
 	<object file="Diagnostic_Logic.omobj" filter="Мнемосхемы/Диагностика"/>
 	<object file="InfoPanel.omobj" filter=""/>
 	<object file="ECRA_Dinamic.omobj" filter=""/>
+	<object file="TreeJSON.omobj" filter=""/>
+	<object file="Diagnostic_FullHardware.omobj" filter="Мнемосхемы/Диагностика"/>
 </unit>
 

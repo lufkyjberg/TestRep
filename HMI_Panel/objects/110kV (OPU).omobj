@@ -1859,7 +1859,7 @@
 	</object>
 	<object access-modifier="private" name="TextPropertiesDialogs_7" display-name="TextPropertiesDialogs_7" uuid="83420c85-ba7d-4a57-91e3-4c9d8aa625a4" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
 		<designed target="X" value="665" ver="5"/>
-		<designed target="Y" value="14" ver="5"/>
+		<designed target="Y" value="24" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="170" ver="5"/>
 		<designed target="Height" value="40" ver="5"/>
@@ -1870,7 +1870,7 @@
 	</object>
 	<object access-modifier="private" name="TextPropertiesDialogs_8" display-name="TextPropertiesDialogs_8" uuid="11ab9545-5d3b-4984-a6cc-b6e9f6b98ff6" base-type="TextPropertiesDialogs" base-type-id="76315393-62ed-4abc-9553-5f5824eb5033" ver="5" description="" cardinal="1">
 		<designed target="X" value="400" ver="5"/>
-		<designed target="Y" value="14" ver="5"/>
+		<designed target="Y" value="24" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Width" value="180" ver="5"/>
 		<designed target="Height" value="40" ver="5"/>
@@ -4569,6 +4569,11 @@
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed" form-by-id="false" form-action="open-dialog">
 			<object access-modifier="private" uuid="16ff1139-8a11-4da9-b743-7bd02e13aec1" base-type="Form_ECRA_2704" base-type-id="1b685130-519d-46d2-a297-8ff2cbdf105c" ver="5">
 				<init target="ParDevPathDisc" ver="5" value="RU.OPU.VL-31.KSZ.RZA.Diodes.Otkl|RU.OPU.VL-31.KSZ.RZA.Diodes.Srab_I_st_DZ(Z)|RU.OPU.VL-31.KSZ.RZA.Diodes.Srab_I_st_DZ(MF)|RU.OPU.VL-31.KSZ.RZA.Diodes.Srab_II_st_DZ(MF)|RU.OPU.VL-31.KSZ.RZA.Diodes.Srab_III_st_DZ(MF)|RU.OPU.VL-31.KSZ.RZA.Diodes.Srab_IV_st_DZ(MF)|RU.OPU.VL-31.KSZ.RZA.Diodes.Srab_V_st_DZ(MF)|RU.OPU.VL-31.KSZ.RZA.Diodes.Srab_I_st_TNZNP|RU.OPU.VL-31.KSZ.RZA.Diodes.Srab_II_st_TNZNP|RU.OPU.VL-31.KSZ.RZA.Diodes.Srab_III_st_TNZNP|RU.OPU.VL-31.KSZ.RZA.Diodes.Srab_IV_st_TNZNP|RU.OPU.VL-31.KSZ.RZA.Diodes.Srab_V_st_TNZNP|RU.OPU.VL-31.KSZ.RZA.Diodes.Srab_VI_st_TNZNP|RU.OPU.VL-31.KSZ.RZA.Diodes.Srab_OU_DZ|RU.OPU.VL-31.KSZ.RZA.Diodes.Srab_OU_TNZNP|RU.OPU.VL-31.KSZ.RZA.Diodes.Rezhim_testa|RU.OPU.VL-31.KSZ.RZA.Diodes.Srab_MFTO|RU.OPU.VL-31.KSZ.RZA.Diodes.Otkl_ot_AU|RU.OPU.VL-31.KSZ.RZA.Diodes.Uskor_pri_prieme_TK_UROV|RU.OPU.VL-31.KSZ.RZA.Diodes.Uskor_pri_prieme_TK_DZ|RU.OPU.VL-31.KSZ.RZA.Diodes.Uskor_pri_prieme_TK_TNZNP|RU.OPU.VL-31.KSZ.RZA.Diodes.Pusk_TK_UROV|RU.OPU.VL-31.KSZ.RZA.Diodes.Pusk_TK_DZ|RU.OPU.VL-31.KSZ.RZA.Diodes.Pusk_TK_TNZNP|RU.OPU.VL-31.KSZ.RZA.Diodes.Srab_UROV|RU.OPU.VL-31.KSZ.RZA.Diodes.NTsN"/>
+				<init target="WindowCaption" ver="5">
+					<expr>
+						<![CDATA[Button_Ecra_18.Text + " " + TextPropertiesDialogs_7.Text]]>
+					</expr>
+				</init>
 			</object>
 		</do-on>
 	</object>
@@ -4627,6 +4632,11 @@
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed" form-by-id="false" form-action="open-dialog">
 			<object access-modifier="private" uuid="8f6b79eb-c9dd-4040-8d96-f8d324a20dd1" base-type="Form_ECRA_2704" base-type-id="1b685130-519d-46d2-a297-8ff2cbdf105c" ver="5">
 				<init target="ParDevPathDisc" ver="5" value="RU.OPU.VL-31.KSZ.OMP.Diodes.Pusk_OMP_po_I|RU.OPU.VL-31.KSZ.OMP.Diodes.Pusk_OMP_po_D3I0|RU.OPU.VL-31.KSZ.OMP.Diodes.Pusk_OMP_po_DI1|RU.OPU.VL-31.KSZ.OMP.Diodes.Pusk_OMP_po_DI2|RU.OPU.VL-31.KSZ.OMP.Diodes.Sign_PO_3I0|RU.OPU.VL-31.KSZ.OMP.Diodes.Sign_PO_I1|RU.OPU.VL-31.KSZ.OMP.Diodes.Sign_PO_I2|RU.OPU.VL-31.KSZ.OMP.Diodes.Sign_PO_3U0|RU.OPU.VL-31.KSZ.OMP.Diodes.Sign_PO_U1_min|RU.OPU.VL-31.KSZ.OMP.Diodes.Sign_PO_U2|RU.OPU.VL-31.KSZ.OMP.Diodes.Sign_PO_3I0/I1|RU.OPU.VL-31.KSZ.OMP.Diodes.Sign_PO_I2/I1|RU.OPU.VL-31.KSZ.OMP.Diodes.Sign_Start_OMP|RU.OPU.VL-31.KSZ.OMP.Diodes.Svetodiod_14|RU.OPU.VL-31.KSZ.OMP.Diodes.BI_vyvedeny|RU.OPU.VL-31.KSZ.OMP.Diodes.Rezhim_testa"/>
+				<init target="WindowCaption" ver="5">
+					<expr>
+						<![CDATA[Button_Ecra_19.Text + " " + TextPropertiesDialogs_7.Text]]>
+					</expr>
+				</init>
 			</object>
 		</do-on>
 	</object>
@@ -4685,6 +4695,11 @@
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed" form-by-id="false" form-action="open-dialog">
 			<object access-modifier="private" uuid="8064619b-4cb0-4e37-b155-fed75396d8f1" base-type="Form_ECRA_2704" base-type-id="1b685130-519d-46d2-a297-8ff2cbdf105c" ver="5">
 				<init target="ParDevPathDisc" ver="5" value="RU.OPU.VL-31.NVCHZ.Diodes.Otkl|RU.OPU.VL-31.NVCHZ.Diodes.Srab_VChZ|RU.OPU.VL-31.NVCHZ.Diodes.Perevod_VChZ_na_signal|RU.OPU.VL-31.NVCHZ.Diodes.NTsN|RU.OPU.VL-31.NVCHZ.Diodes.Vyvod_VChZ_pri_neispravnosti_PP|RU.OPU.VL-31.NVCHZ.Diodes.Sign_neispravnosti_PP|RU.OPU.VL-31.NVCHZ.Diodes.Zapret_puska_VCh_(signal)|RU.OPU.VL-31.NVCHZ.Diodes.Vyzov|RU.OPU.VL-31.NVCHZ.Diodes.Dlitelnyy_VCh_signal|RU.OPU.VL-31.NVCHZ.Diodes.Srab_UROV|RU.OPU.VL-31.NVCHZ.Diodes.Otkl_ot_AU|RU.OPU.VL-31.NVCHZ.Diodes.Svetodiod_12|RU.OPU.VL-31.NVCHZ.Diodes.Svetodiod_13|RU.OPU.VL-31.NVCHZ.Diodes.Svetodiod_14|RU.OPU.VL-31.NVCHZ.Diodes.Svetodiod_15|RU.OPU.VL-31.NVCHZ.Diodes.Rezhim_testa|RU.OPU.VL-31.NVCHZ.Diodes.Srab_I_st_DZ(Z)|RU.OPU.VL-31.NVCHZ.Diodes.Srab_I_st_DZ(MF)|RU.OPU.VL-31.NVCHZ.Diodes.Srab_II_st_DZ(MF)|RU.OPU.VL-31.NVCHZ.Diodes.Srab_III-V_st_DZ(MF)|RU.OPU.VL-31.NVCHZ.Diodes.Srab_I_st_TNZNP|RU.OPU.VL-31.NVCHZ.Diodes.Srab_II_st_TNZNP|RU.OPU.VL-31.NVCHZ.Diodes.Srab_III-VI_st_TNZNP|RU.OPU.VL-31.NVCHZ.Diodes.Srab_MFTO|RU.OPU.VL-31.NVCHZ.Diodes.Srab_OU_DZ|RU.OPU.VL-31.NVCHZ.Diodes.Srab_OU_TNZNP|RU.OPU.VL-31.NVCHZ.Diodes.Uskor_pri_prieme_TK_UROV|RU.OPU.VL-31.NVCHZ.Diodes.Uskor_pri_prieme_TK_DZ|RU.OPU.VL-31.NVCHZ.Diodes.Uskor_pri_prieme_TK_TNZNP|RU.OPU.VL-31.NVCHZ.Diodes.Pusk_TK_UROV|RU.OPU.VL-31.NVCHZ.Diodes.Pusk_TK_DZ|RU.OPU.VL-31.NVCHZ.Diodes.Pusk_TK_TNZNP"/>
+				<init target="WindowCaption" ver="5">
+					<expr>
+						<![CDATA[Button_Ecra_20.Text + " " + TextPropertiesDialogs_7.Text]]>
+					</expr>
+				</init>
 			</object>
 		</do-on>
 	</object>
@@ -4743,6 +4758,12 @@
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed" form-by-id="false" form-action="open-dialog">
 			<object access-modifier="private" uuid="f4a2f21d-021b-4909-ba07-a42156248164" base-type="Form_ECRA_2704" base-type-id="1b685130-519d-46d2-a297-8ff2cbdf105c" ver="5">
 				<init target="ParDevPathDisc" ver="5" value="RU.OPU.VL-25.KSZ.RZA.Diodes.Otkl|RU.OPU.VL-25.KSZ.RZA.Diodes.Srab_I_st_DZ(Z)|RU.OPU.VL-25.KSZ.RZA.Diodes.Srab_I_st_DZ(MF)|RU.OPU.VL-25.KSZ.RZA.Diodes.Srab_II_st_DZ(MF)|RU.OPU.VL-25.KSZ.RZA.Diodes.Srab_III_st_DZ(MF)|RU.OPU.VL-25.KSZ.RZA.Diodes.Srab_IV_st_DZ(MF)|RU.OPU.VL-25.KSZ.RZA.Diodes.Srab_V_st_DZ(MF)|RU.OPU.VL-25.KSZ.RZA.Diodes.Srab_I_st_TNZNP|RU.OPU.VL-25.KSZ.RZA.Diodes.Srab_II_st_TNZNP|RU.OPU.VL-25.KSZ.RZA.Diodes.Srab_III_st_TNZNP|RU.OPU.VL-25.KSZ.RZA.Diodes.Srab_IV_st_TNZNP|RU.OPU.VL-25.KSZ.RZA.Diodes.Srab_V_st_TNZNP|RU.OPU.VL-25.KSZ.RZA.Diodes.Srab_VI_st_TNZNP|RU.OPU.VL-25.KSZ.RZA.Diodes.Srab_OU_DZ|RU.OPU.VL-25.KSZ.RZA.Diodes.Srab_OU_TNZNP|RU.OPU.VL-25.KSZ.RZA.Diodes.Rezhim_testa|RU.OPU.VL-25.KSZ.RZA.Diodes.Srab_MFTO|RU.OPU.VL-25.KSZ.RZA.Diodes.Otkl_ot_AU|RU.OPU.VL-25.KSZ.RZA.Diodes.Uskor_pri_prieme_TK_UROV|RU.OPU.VL-25.KSZ.RZA.Diodes.Uskor_pri_prieme_TK_DZ|RU.OPU.VL-25.KSZ.RZA.Diodes.Uskor_pri_prieme_TK_TNZNP|RU.OPU.VL-25.KSZ.RZA.Diodes.Pusk_TK_UROV|RU.OPU.VL-25.KSZ.RZA.Diodes.Pusk_TK_DZ|RU.OPU.VL-25.KSZ.RZA.Diodes.Pusk_TK_TNZNP|RU.OPU.VL-25.KSZ.RZA.Diodes.Srab_UROV|RU.OPU.VL-31.KSZ.RZA.Diodes.NTsN"/>
+				<designed target="WindowCaption" value="ECRA 2704" ver="5"/>
+				<init target="WindowCaption" ver="5">
+					<expr>
+						<![CDATA[Button_Ecra_22.Text + " " + TextPropertiesDialogs_8.Text]]>
+					</expr>
+				</init>
 			</object>
 		</do-on>
 	</object>
@@ -4801,6 +4822,11 @@
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed" form-by-id="false" form-action="open-dialog">
 			<object access-modifier="private" uuid="9af66aca-8ec7-4632-8587-eb482113d1f4" base-type="Form_ECRA_2704" base-type-id="1b685130-519d-46d2-a297-8ff2cbdf105c" ver="5">
 				<init target="ParDevPathDisc" ver="5" value="RU.OPU.VL-25.KSZ.OMP.Diodes.Pusk_OMP_po_I|RU.OPU.VL-25.KSZ.OMP.Diodes.Pusk_OMP_po_D3I0|RU.OPU.VL-25.KSZ.OMP.Diodes.Pusk_OMP_po_DI1|RU.OPU.VL-25.KSZ.OMP.Diodes.Pusk_OMP_po_DI2|RU.OPU.VL-25.KSZ.OMP.Diodes.Sign_PO_3I0|RU.OPU.VL-25.KSZ.OMP.Diodes.Sign_PO_I1|RU.OPU.VL-25.KSZ.OMP.Diodes.Sign_PO_I2|RU.OPU.VL-25.KSZ.OMP.Diodes.Sign_PO_3U0|RU.OPU.VL-25.KSZ.OMP.Diodes.Sign_PO_U1_min|RU.OPU.VL-25.KSZ.OMP.Diodes.Sign_PO_U2|RU.OPU.VL-25.KSZ.OMP.Diodes.Sign_PO_3I0/I1|RU.OPU.VL-25.KSZ.OMP.Diodes.Sign_PO_I2/I1|RU.OPU.VL-25.KSZ.OMP.Diodes.Sign_Start_OMP|RU.OPU.VL-25.KSZ.OMP.Diodes.Svetodiod_14|RU.OPU.VL-25.KSZ.OMP.Diodes.BI_vyvedeny|RU.OPU.VL-25.KSZ.OMP.Diodes.Rezhim_testa"/>
+				<init target="WindowCaption" ver="5">
+					<expr>
+						<![CDATA[Button_Ecra_23.Text + " " + TextPropertiesDialogs_8.Text]]>
+					</expr>
+				</init>
 			</object>
 		</do-on>
 	</object>
@@ -4859,6 +4885,11 @@
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed" form-by-id="false" form-action="open-dialog">
 			<object access-modifier="private" uuid="fdfc1668-b052-4856-b4f5-1359123da8d9" base-type="Form_ECRA_2704" base-type-id="1b685130-519d-46d2-a297-8ff2cbdf105c" ver="5">
 				<init target="ParDevPathDisc" ver="5" value="RU.OPU.VL-25.NVCHZ.Diodes.Otkl|RU.OPU.VL-25.NVCHZ.Diodes.Srab_VChZ|RU.OPU.VL-25.NVCHZ.Diodes.Perevod_VChZ_na_signal|RU.OPU.VL-25.NVCHZ.Diodes.NTsN|RU.OPU.VL-25.NVCHZ.Diodes.Vyvod_VChZ_pri_neispravnosti_PP|RU.OPU.VL-25.NVCHZ.Diodes.Sign_neispravnosti_PP|RU.OPU.VL-25.NVCHZ.Diodes.Zapret_puska_VCh_(signal)|RU.OPU.VL-25.NVCHZ.Diodes.Vyzov|RU.OPU.VL-25.NVCHZ.Diodes.Dlitelnyy_VCh_signal|RU.OPU.VL-25.NVCHZ.Diodes.Srab_UROV|RU.OPU.VL-25.NVCHZ.Diodes.Otkl_ot_AU|RU.OPU.VL-25.NVCHZ.Diodes.Svetodiod_12|RU.OPU.VL-25.NVCHZ.Diodes.Svetodiod_13|RU.OPU.VL-25.NVCHZ.Diodes.Svetodiod_14|RU.OPU.VL-25.NVCHZ.Diodes.Svetodiod_15|RU.OPU.VL-25.NVCHZ.Diodes.Rezhim_testa|RU.OPU.VL-25.NVCHZ.Diodes.Srab_I_st_DZ(Z)|RU.OPU.VL-25.NVCHZ.Diodes.Srab_I_st_DZ(MF)|RU.OPU.VL-25.NVCHZ.Diodes.Srab_II_st_DZ(MF)|RU.OPU.VL-25.NVCHZ.Diodes.Srab_III-V_st_DZ(MF)|RU.OPU.VL-25.NVCHZ.Diodes.Srab_I_st_TNZNP|RU.OPU.VL-25.NVCHZ.Diodes.Srab_II_st_TNZNP|RU.OPU.VL-25.NVCHZ.Diodes.Srab_III-VI_st_TNZNP|RU.OPU.VL-25.NVCHZ.Diodes.Srab_MFTO|RU.OPU.VL-25.NVCHZ.Diodes.Srab_OU_DZ|RU.OPU.VL-25.NVCHZ.Diodes.Srab_OU_TNZNP|RU.OPU.VL-25.NVCHZ.Diodes.Uskor_pri_prieme_TK_UROV|RU.OPU.VL-25.NVCHZ.Diodes.Uskor_pri_prieme_TK_DZ|RU.OPU.VL-25.NVCHZ.Diodes.Uskor_pri_prieme_TK_TNZNP|RU.OPU.VL-25.NVCHZ.Diodes.Pusk_TK_UROV|RU.OPU.VL-25.NVCHZ.Diodes.Pusk_TK_DZ|RU.OPU.VL-25.NVCHZ.Diodes.Pusk_TK_TNZNP"/>
+				<init target="WindowCaption" ver="5">
+					<expr>
+						<![CDATA[Button_Ecra_24.Text + " " + TextPropertiesDialogs_8.Text]]>
+					</expr>
+				</init>
 			</object>
 		</do-on>
 	</object>
@@ -4917,6 +4948,11 @@
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed" form-by-id="false" form-action="open-dialog">
 			<object access-modifier="private" uuid="f3a25d77-4c08-4a09-9c81-cd11a56be33c" base-type="Form_ECRA_2704" base-type-id="1b685130-519d-46d2-a297-8ff2cbdf105c" ver="5">
 				<init target="ParDevPathDisc" ver="5" value="RU.OPU.VL-8.KSZ.RZA.Diodes.Otkl|RU.OPU.VL-8.KSZ.RZA.Diodes.Srab_I_st_DZ(Z)|RU.OPU.VL-8.KSZ.RZA.Diodes.Srab_I_st_DZ(MF)|RU.OPU.VL-8.KSZ.RZA.Diodes.Srab_II_st_DZ(MF)|RU.OPU.VL-8.KSZ.RZA.Diodes.Srab_III_st_DZ(MF)|RU.OPU.VL-8.KSZ.RZA.Diodes.Srab_IV_st_DZ(MF)|RU.OPU.VL-8.KSZ.RZA.Diodes.Srab_V_st_DZ(MF)|RU.OPU.VL-8.KSZ.RZA.Diodes.Srab_I_st_TNZNP|RU.OPU.VL-8.KSZ.RZA.Diodes.Srab_II_st_TNZNP|RU.OPU.VL-8.KSZ.RZA.Diodes.Srab_III_st_TNZNP|RU.OPU.VL-8.KSZ.RZA.Diodes.Srab_IV_st_TNZNP|RU.OPU.VL-8.KSZ.RZA.Diodes.Srab_V_st_TNZNP|RU.OPU.VL-8.KSZ.RZA.Diodes.Srab_VI_st_TNZNP|RU.OPU.VL-8.KSZ.RZA.Diodes.Srab_OU_DZ|RU.OPU.VL-8.KSZ.RZA.Diodes.Srab_OU_TNZNP|RU.OPU.VL-8.KSZ.RZA.Diodes.Rezhim_testa|RU.OPU.VL-8.KSZ.RZA.Diodes.Srab_MFTO|RU.OPU.VL-8.KSZ.RZA.Diodes.Otkl_ot_AU|RU.OPU.VL-8.KSZ.RZA.Diodes.Uskor_pri_prieme_TK_UROV|RU.OPU.VL-8.KSZ.RZA.Diodes.Uskor_pri_prieme_TK_DZ|RU.OPU.VL-8.KSZ.RZA.Diodes.Uskor_pri_prieme_TK_TNZNP|RU.OPU.VL-8.KSZ.RZA.Diodes.Pusk_TK_UROV|RU.OPU.VL-8.KSZ.RZA.Diodes.Pusk_TK_DZ|RU.OPU.VL-8.KSZ.RZA.Diodes.Pusk_TK_TNZNP|RU.OPU.VL-8.KSZ.RZA.Diodes.Srab_UROV|RU.OPU.VL-8.KSZ.RZA.Diodes.NTsN"/>
+				<init target="WindowCaption" ver="5">
+					<expr>
+						<![CDATA[Button_Ecra_25.Text + " " + TextPropertiesDialogs_6.Text]]>
+					</expr>
+				</init>
 			</object>
 		</do-on>
 	</object>
@@ -4975,6 +5011,11 @@
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed" form-by-id="false" form-action="open-dialog">
 			<object access-modifier="private" uuid="3ec80a03-1a87-4234-aff2-a1786ff5bd20" base-type="Form_ECRA_2704" base-type-id="1b685130-519d-46d2-a297-8ff2cbdf105c" ver="5">
 				<init target="ParDevPathDisc" ver="5" value="RU.OPU.VL-8.KSZ.OMP.Diodes.Pusk_OMP_po_I|RU.OPU.VL-8.KSZ.OMP.Diodes.Pusk_OMP_po_D3I0|RU.OPU.VL-8.KSZ.OMP.Diodes.Pusk_OMP_po_DI1|RU.OPU.VL-8.KSZ.OMP.Diodes.Pusk_OMP_po_DI2|RU.OPU.VL-8.KSZ.OMP.Diodes.Sign_PO_3I0|RU.OPU.VL-8.KSZ.OMP.Diodes.Sign_PO_I1|RU.OPU.VL-8.KSZ.OMP.Diodes.Sign_PO_I2|RU.OPU.VL-8.KSZ.OMP.Diodes.Sign_PO_3U0|RU.OPU.VL-8.KSZ.OMP.Diodes.Sign_PO_U1_min|RU.OPU.VL-8.KSZ.OMP.Diodes.Sign_PO_U2|RU.OPU.VL-8.KSZ.OMP.Diodes.Sign_PO_3I0/I1|RU.OPU.VL-8.KSZ.OMP.Diodes.Sign_PO_I2/I1|RU.OPU.VL-8.KSZ.OMP.Diodes.Sign_Start_OMP|RU.OPU.VL-8.KSZ.OMP.Diodes.Svetodiod_14|RU.OPU.VL-8.KSZ.OMP.Diodes.BI_vyvedeny|RU.OPU.VL-8.KSZ.OMP.Diodes.Rezhim_testa"/>
+				<init target="WindowCaption" ver="5">
+					<expr>
+						<![CDATA[Button_Ecra_26.Text + " " + TextPropertiesDialogs_6.Text]]>
+					</expr>
+				</init>
 			</object>
 		</do-on>
 	</object>
@@ -5034,6 +5075,11 @@
 			<object access-modifier="private" uuid="d2e88567-5dc8-432b-be25-25af87088ea2" base-type="Form_ECRA_2704" base-type-id="1b685130-519d-46d2-a297-8ff2cbdf105c" ver="5">
 				<init target="ParDevPathDisc" ver="5" value="RU.OPU.VL-25.KP.Diodes.Rabota_1_tsikla_APV|RU.OPU.VL-25.KP.Diodes.Rabota_2_tsikla_APV|RU.OPU.VL-25.KP.Diodes.Deystvie_UROV|RU.OPU.VL-25.KP.Diodes.Neispravnost_tsepey_upravleniya|RU.OPU.VL-25.KP.Diodes.Neispravnost_obogreva_vyklyuchatelya|RU.OPU.VL-25.KP.Diodes.Neispravnost_tsepey_opertoka|RU.OPU.VL-25.KP.Diodes.Nizkoe_davlenie_elegaza|RU.OPU.VL-25.KP.Diodes.Pruzhina_ne_zavedena|RU.OPU.VL-25.KP.Diodes.Zavodka_pruzhin_otklyuchena|RU.OPU.VL-25.KP.Diodes.Blokirovka_vklyucheniya_i_otklyucheniya|RU.OPU.VL-25.KP.Diodes.Avariynoe_snizhenie_davleniya_elegaza_v_TT|RU.OPU.VL-25.KP.Diodes.Neispravnost_KA2|RU.OPU.VL-25.KP.Diodes.Mestnoe_upravlenie_KA2|RU.OPU.VL-25.KP.Diodes.Neispravnost_KA3|RU.OPU.VL-25.KP.Diodes.Mestnoe_upravlenie_KA3|RU.OPU.VL-25.KP.Diodes.Neispravnost_KA4|RU.OPU.VL-25.KP.Diodes.Mestnoe_upravlenie_KA4|RU.OPU.VL-25.KP.Diodes.Neispravnost_KA5|RU.OPU.VL-25.KP.Diodes.Mestnoe_upravlenie_KA5|RU.OPU.VL-25.KP.Diodes.Neispravnost_KA6|RU.OPU.VL-25.KP.Diodes.Mestnoe_upravlenie_KA6|RU.OPU.VL-25.KP.Diodes.Neispravnost_KA7|RU.OPU.VL-25.KP.Diodes.Mestnoe_upravlenie_KA7|RU.OPU.VL-25.KP.Diodes.Neispravnost_KA8|RU.OPU.VL-25.KP.Diodes.Mestnoe_upravlenie_KA8|RU.OPU.VL-25.KP.Diodes.Neispravnost_KA9|RU.OPU.VL-25.KP.Diodes.Mestnoe_upravlenie_KA9|RU.OPU.VL-25.KP.Diodes.Neispravnost_KA10|RU.OPU.VL-25.KP.Diodes.Mestnoe_upravlenie_KA10|RU.OPU.VL-25.KP.Diodes.RPV_(vykhod)|RU.OPU.VL-25.KP.Diodes.RFP"/>
 				<designed target="WindowScalingMode" value="2" ver="5"/>
+				<init target="WindowCaption" ver="5">
+					<expr>
+						<![CDATA[Button_Ecra_27.Text + " " + TextPropertiesDialogs_8.Text]]>
+					</expr>
+				</init>
 			</object>
 		</do-on>
 	</object>
@@ -5093,6 +5139,11 @@
 			<object access-modifier="private" uuid="e8337d3c-a158-4022-9bd5-5829bfd51981" base-type="Form_ECRA_2704" base-type-id="1b685130-519d-46d2-a297-8ff2cbdf105c" ver="5">
 				<init target="ParDevPathDisc" ver="5" value="RU.OPU.VL-31.KP.Diodes.Rabota_1_tsikla_APV|RU.OPU.VL-31.KP.Diodes.Rabota_2_tsikla_APV|RU.OPU.VL-31.KP.Diodes.Deystvie_UROV|RU.OPU.VL-31.KP.Diodes.Neispravnost_tsepey_upravleniya|RU.OPU.VL-31.KP.Diodes.Neispravnost_obogreva_vyklyuchatelya|RU.OPU.VL-31.KP.Diodes.Neispravnost_tsepey_opertoka|RU.OPU.VL-31.KP.Diodes.Nizkoe_davlenie_elegaza|RU.OPU.VL-31.KP.Diodes.Pruzhina_ne_zavedena|RU.OPU.VL-31.KP.Diodes.Zavodka_pruzhin_otklyuchena|RU.OPU.VL-31.KP.Diodes.Blokirovka_vklyucheniya_i_otklyucheniya|RU.OPU.VL-31.KP.Diodes.Avariynoe_snizhenie_davleniya_elegaza_v_TT|RU.OPU.VL-31.KP.Diodes.Neispravnost_KA2|RU.OPU.VL-31.KP.Diodes.Mestnoe_upravlenie_KA2|RU.OPU.VL-31.KP.Diodes.Neispravnost_KA3|RU.OPU.VL-31.KP.Diodes.Mestnoe_upravlenie_KA3|RU.OPU.VL-31.KP.Diodes.Neispravnost_KA4|RU.OPU.VL-31.KP.Diodes.Mestnoe_upravlenie_KA4|RU.OPU.VL-31.KP.Diodes.Neispravnost_KA5|RU.OPU.VL-31.KP.Diodes.Mestnoe_upravlenie_KA5|RU.OPU.VL-31.KP.Diodes.Neispravnost_KA6|RU.OPU.VL-31.KP.Diodes.Mestnoe_upravlenie_KA6|RU.OPU.VL-31.KP.Diodes.Neispravnost_KA7|RU.OPU.VL-31.KP.Diodes.Mestnoe_upravlenie_KA7|RU.OPU.VL-31.KP.Diodes.Neispravnost_KA8|RU.OPU.VL-31.KP.Diodes.Mestnoe_upravlenie_KA8|RU.OPU.VL-31.KP.Diodes.Neispravnost_KA9|RU.OPU.VL-31.KP.Diodes.Mestnoe_upravlenie_KA9|RU.OPU.VL-31.KP.Diodes.Neispravnost_KA10|RU.OPU.VL-31.KP.Diodes.Mestnoe_upravlenie_KA10|RU.OPU.VL-31.KP.Diodes.RPV_(vykhod)|RU.OPU.VL-31.KP.Diodes.RFP"/>
 				<designed target="WindowScalingMode" value="2" ver="5"/>
+				<init target="WindowCaption" ver="5">
+					<expr>
+						<![CDATA[Button_Ecra_28.Text + " " + TextPropertiesDialogs_7.Text]]>
+					</expr>
+				</init>
 			</object>
 		</do-on>
 	</object>
@@ -5152,6 +5203,11 @@
 			<object access-modifier="private" uuid="cffe28e2-034a-4e23-affc-0337b08189e7" base-type="Form_ECRA_2704" base-type-id="1b685130-519d-46d2-a297-8ff2cbdf105c" ver="5">
 				<init target="ParDevPathDisc" ver="5" value="RU.OPU.VL-8.KP.Diodes.Rabota_1_tsikla_APV|RU.OPU.VL-8.KP.Diodes.Rabota_2_tsikla_APV|RU.OPU.VL-8.KP.Diodes.Deystvie_UROV|RU.OPU.VL-8.KP.Diodes.Neispravnost_tsepey_upravleniya|RU.OPU.VL-8.KP.Diodes.Neispravnost_obogreva_vyklyuchatelya|RU.OPU.VL-8.KP.Diodes.Neispravnost_tsepey_opertoka|RU.OPU.VL-8.KP.Diodes.Nizkoe_davlenie_elegaza|RU.OPU.VL-8.KP.Diodes.Pruzhina_ne_zavedena|RU.OPU.VL-8.KP.Diodes.Zavodka_pruzhin_otklyuchena|RU.OPU.VL-8.KP.Diodes.Blokirovka_vklyucheniya_i_otklyucheniya|RU.OPU.VL-8.KP.Diodes.Avariynoe_snizhenie_davleniya_elegaza_v_TT|RU.OPU.VL-8.KP.Diodes.Neispravnost_KA2|RU.OPU.VL-8.KP.Diodes.Mestnoe_upravlenie_KA2|RU.OPU.VL-8.KP.Diodes.Neispravnost_KA3|RU.OPU.VL-8.KP.Diodes.Mestnoe_upravlenie_KA3|RU.OPU.VL-8.KP.Diodes.Neispravnost_KA4|RU.OPU.VL-8.KP.Diodes.Mestnoe_upravlenie_KA4|RU.OPU.VL-8.KP.Diodes.Neispravnost_KA5|RU.OPU.VL-8.KP.Diodes.Mestnoe_upravlenie_KA5|RU.OPU.VL-8.KP.Diodes.Neispravnost_KA6|RU.OPU.VL-8.KP.Diodes.Mestnoe_upravlenie_KA6|RU.OPU.VL-8.KP.Diodes.Neispravnost_KA7|RU.OPU.VL-8.KP.Diodes.Mestnoe_upravlenie_KA7|RU.OPU.VL-8.KP.Diodes.Neispravnost_KA8|RU.OPU.VL-8.KP.Diodes.Mestnoe_upravlenie_KA8|RU.OPU.VL-8.KP.Diodes.Neispravnost_KA9|RU.OPU.VL-8.KP.Diodes.Mestnoe_upravlenie_KA9|RU.OPU.VL-8.KP.Diodes.Neispravnost_KA10|RU.OPU.VL-8.KP.Diodes.Mestnoe_upravlenie_KA10|RU.OPU.VL-8.KP.Diodes.RPV_(vykhod)|RU.OPU.VL-8.KP.Diodes.RFP"/>
 				<designed target="WindowScalingMode" value="2" ver="5"/>
+				<init target="WindowCaption" ver="5">
+					<expr>
+						<![CDATA[Button_Ecra_29.Text + " " + TextPropertiesDialogs_6.Text]]>
+					</expr>
+				</init>
 			</object>
 		</do-on>
 	</object>
@@ -5210,6 +5266,11 @@
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed" form-by-id="false" form-action="open-dialog">
 			<object access-modifier="private" uuid="8b7714b0-35a0-4d81-9991-598b7fd026e6" base-type="Form_ECRA_2704" base-type-id="1b685130-519d-46d2-a297-8ff2cbdf105c" ver="5">
 				<init target="ParDevPathDisc" ver="5" value="RU.OPU.VL-8.NVCHZ.Diodes.Otkl|RU.OPU.VL-8.NVCHZ.Diodes.Srab_VChZ|RU.OPU.VL-8.NVCHZ.Diodes.Perevod_VChZ_na_signal|RU.OPU.VL-8.NVCHZ.Diodes.NTsN|RU.OPU.VL-8.NVCHZ.Diodes.Vyvod_VChZ_pri_neispravnosti_PP|RU.OPU.VL-8.NVCHZ.Diodes.Sign_neispravnosti_PP|RU.OPU.VL-8.NVCHZ.Diodes.Zapret_puska_VCh_(signal)|RU.OPU.VL-8.NVCHZ.Diodes.Vyzov|RU.OPU.VL-8.NVCHZ.Diodes.Dlitelnyy_VCh_signal|RU.OPU.VL-8.NVCHZ.Diodes.Srab_UROV|RU.OPU.VL-8.NVCHZ.Diodes.Otkl_ot_AU|RU.OPU.VL-8.NVCHZ.Diodes.Svetodiod_12|RU.OPU.VL-8.NVCHZ.Diodes.Svetodiod_13|RU.OPU.VL-8.NVCHZ.Diodes.Svetodiod_14|RU.OPU.VL-8.NVCHZ.Diodes.Svetodiod_15|RU.OPU.VL-8.NVCHZ.Diodes.Rezhim_testa|RU.OPU.VL-8.NVCHZ.Diodes.Srab_I_st_DZ(Z)|RU.OPU.VL-8.NVCHZ.Diodes.Srab_I_st_DZ(MF)|RU.OPU.VL-8.NVCHZ.Diodes.Srab_II_st_DZ(MF)|RU.OPU.VL-8.NVCHZ.Diodes.Srab_III-V_st_DZ(MF)|RU.OPU.VL-8.NVCHZ.Diodes.Srab_I_st_TNZNP|RU.OPU.VL-8.NVCHZ.Diodes.Srab_II_st_TNZNP|RU.OPU.VL-8.NVCHZ.Diodes.Srab_III-VI_st_TNZNP|RU.OPU.VL-8.NVCHZ.Diodes.Srab_MFTO|RU.OPU.VL-8.NVCHZ.Diodes.Srab_OU_DZ|RU.OPU.VL-8.NVCHZ.Diodes.Srab_OU_TNZNP|RU.OPU.VL-8.NVCHZ.Diodes.Uskor_pri_prieme_TK_UROV|RU.OPU.VL-8.NVCHZ.Diodes.Uskor_pri_prieme_TK_DZ|RU.OPU.VL-8.NVCHZ.Diodes.Uskor_pri_prieme_TK_TNZNP|RU.OPU.VL-8.NVCHZ.Diodes.Pusk_TK_UROV|RU.OPU.VL-8.NVCHZ.Diodes.Pusk_TK_DZ|RU.OPU.VL-8.NVCHZ.Diodes.Pusk_TK_TNZNP"/>
+				<init target="WindowCaption" ver="5">
+					<expr>
+						<![CDATA[Button_Ecra_30.Text + " " + TextPropertiesDialogs_6.Text]]>
+					</expr>
+				</init>
 			</object>
 		</do-on>
 	</object>
@@ -5268,6 +5329,11 @@
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed" form-by-id="false" form-action="open-dialog">
 			<object access-modifier="private" uuid="b143cc1a-5c21-49f5-88ee-04b65da69da1" base-type="Form_ECRA_2704" base-type-id="1b685130-519d-46d2-a297-8ff2cbdf105c" ver="5">
 				<init target="ParDevPathDisc" ver="5" value="RU.OPU.VL-Larsi.KSZ.RZA.Diodes.Otkl|RU.OPU.VL-Larsi.KSZ.RZA.Diodes.Srab_I_st_DZ(Z)|RU.OPU.VL-Larsi.KSZ.RZA.Diodes.Srab_I_st_DZ(MF)|RU.OPU.VL-Larsi.KSZ.RZA.Diodes.Srab_II_st_DZ(MF)|RU.OPU.VL-Larsi.KSZ.RZA.Diodes.Srab_III_st_DZ(MF)|RU.OPU.VL-Larsi.KSZ.RZA.Diodes.Srab_IV_st_DZ(MF)|RU.OPU.VL-Larsi.KSZ.RZA.Diodes.Srab_V_st_DZ(MF)|RU.OPU.VL-Larsi.KSZ.RZA.Diodes.Srab_I_st_TNZNP|RU.OPU.VL-Larsi.KSZ.RZA.Diodes.Srab_II_st_TNZNP|RU.OPU.VL-Larsi.KSZ.RZA.Diodes.Srab_III_st_TNZNP|RU.OPU.VL-Larsi.KSZ.RZA.Diodes.Srab_IV_st_TNZNP|RU.OPU.VL-Larsi.KSZ.RZA.Diodes.Srab_V_st_TNZNP|RU.OPU.VL-Larsi.KSZ.RZA.Diodes.Srab_VI_st_TNZNP|RU.OPU.VL-Larsi.KSZ.RZA.Diodes.Srab_OU_DZ|RU.OPU.VL-Larsi.KSZ.RZA.Diodes.Srab_OU_TNZNP|RU.OPU.VL-Larsi.KSZ.RZA.Diodes.Rezhim_testa|RU.OPU.VL-Larsi.KSZ.RZA.Diodes.Srab_MFTO|RU.OPU.VL-Larsi.KSZ.RZA.Diodes.Otkl_ot_AU|RU.OPU.VL-Larsi.KSZ.RZA.Diodes.Uskor_pri_prieme_TK_UROV|RU.OPU.VL-Larsi.KSZ.RZA.Diodes.Uskor_pri_prieme_TK_DZ|RU.OPU.VL-Larsi.KSZ.RZA.Diodes.Uskor_pri_prieme_TK_TNZNP|RU.OPU.VL-Larsi.KSZ.RZA.Diodes.Pusk_TK_UROV|RU.OPU.VL-Larsi.KSZ.RZA.Diodes.Pusk_TK_DZ|RU.OPU.VL-Larsi.KSZ.RZA.Diodes.Pusk_TK_TNZNP|RU.OPU.VL-Larsi.KSZ.RZA.Diodes.Srab_UROV|RU.OPU.VL-Larsi.KSZ.RZA.Diodes.NTsN"/>
+				<init target="WindowCaption" ver="5">
+					<expr>
+						<![CDATA[Button_Ecra_31.Text + " " + TextPropertiesDialogs_5.Text]]>
+					</expr>
+				</init>
 			</object>
 		</do-on>
 	</object>
@@ -5326,6 +5392,11 @@
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed" form-by-id="false" form-action="open-dialog">
 			<object access-modifier="private" uuid="96e2053b-c6cd-4f75-b5a1-3dc062da74fe" base-type="Form_ECRA_2704" base-type-id="1b685130-519d-46d2-a297-8ff2cbdf105c" ver="5">
 				<init target="ParDevPathDisc" ver="5" value="RU.OPU.VL-Larsi.KSZ.OMP.Diodes.Pusk_OMP_po_I|RU.OPU.VL-Larsi.KSZ.OMP.Diodes.Pusk_OMP_po_D3I0|RU.OPU.VL-Larsi.KSZ.OMP.Diodes.Pusk_OMP_po_DI1|RU.OPU.VL-Larsi.KSZ.OMP.Diodes.Pusk_OMP_po_DI2|RU.OPU.VL-Larsi.KSZ.OMP.Diodes.Sign_PO_3I0|RU.OPU.VL-Larsi.KSZ.OMP.Diodes.Sign_PO_I1|RU.OPU.VL-Larsi.KSZ.OMP.Diodes.Sign_PO_I2|RU.OPU.VL-Larsi.KSZ.OMP.Diodes.Sign_PO_3U0|RU.OPU.VL-Larsi.KSZ.OMP.Diodes.Sign_PO_U1_min|RU.OPU.VL-Larsi.KSZ.OMP.Diodes.Sign_PO_U2|RU.OPU.VL-Larsi.KSZ.OMP.Diodes.Sign_PO_3I0/I1|RU.OPU.VL-Larsi.KSZ.OMP.Diodes.Sign_PO_I2/I1|RU.OPU.VL-Larsi.KSZ.OMP.Diodes.Sign_Start_OMP|RU.OPU.VL-Larsi.KSZ.OMP.Diodes.Svetodiod_14|RU.OPU.VL-Larsi.KSZ.OMP.Diodes.BI_vyvedeny|RU.OPU.VL-Larsi.KSZ.OMP.Diodes.Rezhim_testa"/>
+				<init target="WindowCaption" ver="5">
+					<expr>
+						<![CDATA[Button_Ecra_32.Text + " " + TextPropertiesDialogs_5.Text]]>
+					</expr>
+				</init>
 			</object>
 		</do-on>
 	</object>
@@ -5385,6 +5456,11 @@
 			<object access-modifier="private" uuid="8908ac72-4b59-4c41-ad90-638f213f3333" base-type="Form_ECRA_2704" base-type-id="1b685130-519d-46d2-a297-8ff2cbdf105c" ver="5">
 				<init target="ParDevPathDisc" ver="5" value="RU.OPU.VL-Larsi.KP.Diodes.Neispravnost_KA2_|RU.OPU.VL-Larsi.KP.Diodes.Mestnoe_upravlenie_KA2_|RU.OPU.VL-Larsi.KP.Diodes.Neispravnost_KA3_|RU.OPU.VL-Larsi.KP.Diodes.Mestnoe_upravlenie_KA3_|RU.OPU.VL-Larsi.KP.Diodes.Neispravnost_KA4_|RU.OPU.VL-Larsi.KP.Diodes.Mestnoe_upravlenie_KA4_|RU.OPU.VL-Larsi.KP.Diodes.Neispravnost_KA5_|RU.OPU.VL-Larsi.KP.Diodes.Mestnoe_upravlenie_KA5_|RU.OPU.VL-Larsi.KP.Diodes.Neispravnost_KA6_|RU.OPU.VL-Larsi.KP.Diodes.Mestnoe_upravlenie_KA6_|RU.OPU.VL-Larsi.KP.Diodes.Neispravnost_KA7_|RU.OPU.VL-Larsi.KP.Diodes.Mestnoe_upravlenie_KA7_|RU.OPU.VL-Larsi.KP.Diodes.Neispravnost_KA8_|RU.OPU.VL-Larsi.KP.Diodes.Mestnoe_upravlenie_KA8_|RU.OPU.VL-Larsi.KP.Diodes.Neispravnost_KA9_|RU.OPU.VL-Larsi.KP.Diodes.Mestnoe_upravlenie_KA9_|RU.OPU.VL-Larsi.KP.Diodes.Neispravnost_KA10_|RU.OPU.VL-Larsi.KP.Diodes.Mestnoe_upravlenie_KA10_|RU.OPU.VL-Larsi.KP.Diodes.Neispravnost_KA11_|RU.OPU.VL-Larsi.KP.Diodes.Mestnoe_upravlenie_KA11_|RU.OPU.VL-Larsi.KP.Diodes.Neispravnost_KA12_|RU.OPU.VL-Larsi.KP.Diodes.Mestnoe_upravlenie_KA12_|RU.OPU.VL-Larsi.KP.Diodes.Neispravnost_KA13_|RU.OPU.VL-Larsi.KP.Diodes.Mestnoe_upravlenie_KA13_|RU.OPU.VL-Larsi.KP.Diodes.Svetodiod_15_|RU.OPU.VL-Larsi.KP.Diodes.Svetodiod_27_|RU.OPU.VL-Larsi.KP.Diodes.Svetodiod_28_|RU.OPU.VL-Larsi.KP.Diodes.Svetodiod_29_|RU.OPU.VL-Larsi.KP.Diodes.Svetodiod_30_|RU.OPU.VL-Larsi.KP.Diodes.Rezhim_testa_|RU.OPU.VL-Larsi.KP.Diodes.RPV_KA1_|RU.OPU.VL-Larsi.KP.Diodes.RFP_"/>
 				<designed target="WindowScalingMode" value="2" ver="5"/>
+				<init target="WindowCaption" ver="5">
+					<expr>
+						<![CDATA[Button_Ecra_33.Text + " " + TextPropertiesDialogs_5.Text]]>
+					</expr>
+				</init>
 			</object>
 		</do-on>
 	</object>
@@ -5443,6 +5519,11 @@
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed" form-by-id="false" form-action="open-dialog">
 			<object access-modifier="private" uuid="293ccb51-e08c-402b-961b-22719cea4f1c" base-type="Form_ECRA_2704" base-type-id="1b685130-519d-46d2-a297-8ff2cbdf105c" ver="5">
 				<init target="ParDevPathDisc" ver="5" value="RU.OPU.VL-Larsi.NVCHZ.Diodes.Otkl|RU.OPU.VL-Larsi.NVCHZ.Diodes.Srab_VChZ|RU.OPU.VL-Larsi.NVCHZ.Diodes.Perevod_VChZ_na_signal|RU.OPU.VL-Larsi.NVCHZ.Diodes.NTsN|RU.OPU.VL-Larsi.NVCHZ.Diodes.Vyvod_VChZ_pri_neispravnosti_PP|RU.OPU.VL-Larsi.NVCHZ.Diodes.Sign_neispravnosti_PP|RU.OPU.VL-Larsi.NVCHZ.Diodes.Zapret_puska_VCh_(signal)|RU.OPU.VL-Larsi.NVCHZ.Diodes.Vyzov|RU.OPU.VL-Larsi.NVCHZ.Diodes.Dlitelnyy_VCh_signal|RU.OPU.VL-Larsi.NVCHZ.Diodes.Srab_UROV|RU.OPU.VL-Larsi.NVCHZ.Diodes.Otkl_ot_AU|RU.OPU.VL-Larsi.NVCHZ.Diodes.Svetodiod_12|RU.OPU.VL-Larsi.NVCHZ.Diodes.Svetodiod_13|RU.OPU.VL-Larsi.NVCHZ.Diodes.Svetodiod_14|RU.OPU.VL-Larsi.NVCHZ.Diodes.Svetodiod_15|RU.OPU.VL-Larsi.NVCHZ.Diodes.Rezhim_testa|RU.OPU.VL-Larsi.NVCHZ.Diodes.Srab_I_st_DZ(Z)|RU.OPU.VL-Larsi.NVCHZ.Diodes.Srab_I_st_DZ(MF)|RU.OPU.VL-Larsi.NVCHZ.Diodes.Srab_II_st_DZ(MF)|RU.OPU.VL-Larsi.NVCHZ.Diodes.Srab_III-V_st_DZ(MF)|RU.OPU.VL-Larsi.NVCHZ.Diodes.Srab_I_st_TNZNP|RU.OPU.VL-Larsi.NVCHZ.Diodes.Srab_II_st_TNZNP|RU.OPU.VL-Larsi.NVCHZ.Diodes.Srab_III-VI_st_TNZNP|RU.OPU.VL-Larsi.NVCHZ.Diodes.Srab_MFTO|RU.OPU.VL-Larsi.NVCHZ.Diodes.Srab_OU_DZ|RU.OPU.VL-Larsi.NVCHZ.Diodes.Srab_OU_TNZNP|RU.OPU.VL-Larsi.NVCHZ.Diodes.Uskor_pri_prieme_TK_UROV|RU.OPU.VL-Larsi.NVCHZ.Diodes.Uskor_pri_prieme_TK_DZ|RU.OPU.VL-Larsi.NVCHZ.Diodes.Uskor_pri_prieme_TK_TNZNP|RU.OPU.VL-Larsi.NVCHZ.Diodes.Pusk_TK_UROV|RU.OPU.VL-Larsi.NVCHZ.Diodes.Pusk_TK_DZ|RU.OPU.VL-Larsi.NVCHZ.Diodes.Pusk_TK_TNZNP"/>
+				<init target="WindowCaption" ver="5">
+					<expr>
+						<![CDATA[Button_Ecra_34.Text + " " + TextPropertiesDialogs_5.Text]]>
+					</expr>
+				</init>
 			</object>
 		</do-on>
 	</object>
@@ -5501,6 +5582,11 @@
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed" form-by-id="false" form-action="open-dialog">
 			<object access-modifier="private" uuid="4f9b3439-4f8c-4a0a-a862-6b8b9f48dd5e" base-type="Form_ECRA_2704" base-type-id="1b685130-519d-46d2-a297-8ff2cbdf105c" ver="5">
 				<init target="ParDevPathDisc" ver="5" value="RU.OPU.SV.KSZ.Diodes.Srab_I_st_MTZ|RU.OPU.SV.KSZ.Diodes.Srab_II_st_MTZ|RU.OPU.SV.KSZ.Diodes.Srab_AU_MTZ|RU.OPU.SV.KSZ.Diodes.Srab_I_st_TZNP|RU.OPU.SV.KSZ.Diodes.Srab_II_st_TZNP|RU.OPU.SV.KSZ.Diodes.Srab_III_st_TZNP|RU.OPU.SV.KSZ.Diodes.Srab_AU_TZNP|RU.OPU.SV.KSZ.Diodes.Deystvie_UROV|RU.OPU.SV.KSZ.Diodes.Rabota_1_tsikla_APV|RU.OPU.SV.KSZ.Diodes.Rabota_2_tsikla_APV|RU.OPU.SV.KSZ.Diodes.ZNF|RU.OPU.SV.KSZ.Diodes.ZNFR|RU.OPU.SV.KSZ.Diodes.Svetodiod_13|RU.OPU.SV.KSZ.Diodes.Svetodiod_14|RU.OPU.SV.KSZ.Diodes.Svetodiod_15|RU.OPU.SV.KSZ.Diodes.Rezhim_testa|RU.OPU.SV.KSZ.Diodes.Neisprtsepey_napryazheniya|RU.OPU.SV.KSZ.Diodes.Neispr_tsepey_opertoka|RU.OPU.SV.KSZ.Diodes.Nizkoe_davlenie_elegaza|RU.OPU.SV.KSZ.Diodes.Pruzhina_ne_zavedena|RU.OPU.SV.KSZ.Diodes.Zavodka_pruzhin_otklyuchena|RU.OPU.SV.KSZ.Diodes.Blok_vklyucheniya_i_otklyucheniya|RU.OPU.SV.KSZ.Diodes.Neispr_tsepey_upravleniya|RU.OPU.SV.KSZ.Diodes.Neispr_obogreva_V|RU.OPU.SV.KSZ.Diodes.Avariynoe_snizhenie_davleniya_elegaza_v_TT|RU.OPU.SV.KSZ.Diodes.Svetodiod_26|RU.OPU.SV.KSZ.Diodes.Svetodiod_27|RU.OPU.SV.KSZ.Diodes.Svetodiod_28|RU.OPU.SV.KSZ.Diodes.Svetodiod_29|RU.OPU.SV.KSZ.Diodes.Svetodiod_30|RU.OPU.SV.KSZ.Diodes.RPV_(vykhod)|RU.OPU.SV.KSZ.Diodes.RFP"/>
+				<init target="WindowCaption" ver="5">
+					<expr>
+						<![CDATA[Button_Ecra_35.Text]]>
+					</expr>
+				</init>
 			</object>
 		</do-on>
 	</object>
@@ -5560,6 +5646,11 @@
 			<object access-modifier="private" uuid="bebbb5e0-8735-4d21-ae82-9b390dfa7998" base-type="Form_ECRA_2704" base-type-id="1b685130-519d-46d2-a297-8ff2cbdf105c" ver="5">
 				<init target="ParDevPathDisc" ver="5" value="RU.OPU.SV.KP.Diodes.Rabota_1_tsikla_APV|RU.OPU.SV.KP.Diodes.Rabota_2_tsikla_APV|RU.OPU.SV.KP.Diodes.Deystvie_UROV|RU.OPU.SV.KP.Diodes.Neispravnost_tsepey_upravleniya|RU.OPU.SV.KP.Diodes.Neispravnost_obogreva_vyklyuchatelya|RU.OPU.SV.KP.Diodes.Neispravnost_tsepey_opertoka|RU.OPU.SV.KP.Diodes.Nizkoe_davlenie_elegaza|RU.OPU.SV.KP.Diodes.Pruzhina_ne_zavedena|RU.OPU.SV.KP.Diodes.Zavodka_pruzhin_otklyuchena|RU.OPU.SV.KP.Diodes.Blokirovka_vklyucheniya_i_otklyucheniya|RU.OPU.SV.KP.Diodes.Avariynoe_snizhenie_davleniya_elegaza_v_TT|RU.OPU.SV.KP.Diodes.Neispravnost_KA2|RU.OPU.SV.KP.Diodes.Mestnoe_upravlenie_KA2|RU.OPU.SV.KP.Diodes.Neispravnost_KA3|RU.OPU.SV.KP.Diodes.Mestnoe_upravlenie_KA3|RU.OPU.SV.KP.Diodes.Neispravnost_KA4|RU.OPU.SV.KP.Diodes.Mestnoe_upravlenie_KA4|RU.OPU.SV.KP.Diodes.Neispravnost_KA5|RU.OPU.SV.KP.Diodes.Mestnoe_upravlenie_KA5|RU.OPU.SV.KP.Diodes.Neispravnost_KA6|RU.OPU.SV.KP.Diodes.Mestnoe_upravlenie_KA6|RU.OPU.SV.KP.Diodes.Neispravnost_KA7|RU.OPU.SV.KP.Diodes.Mestnoe_upravlenie_KA7|RU.OPU.SV.KP.Diodes.Neispravnost_KA8|RU.OPU.SV.KP.Diodes.Mestnoe_upravlenie_KA8|RU.OPU.SV.KP.Diodes.Neispravnost_KA9|RU.OPU.SV.KP.Diodes.Mestnoe_upravlenie_KA9|RU.OPU.SV.KP.Diodes.Neispravnost_KA10|RU.OPU.SV.KP.Diodes.Mestnoe_upravlenie_KA10|RU.OPU.SV.KP.Diodes.RPV_(vykhod)|RU.OPU.SV.KP.Diodes.RFP"/>
 				<designed target="WindowScalingMode" value="2" ver="5"/>
+				<init target="WindowCaption" ver="5">
+					<expr>
+						<![CDATA[Button_Ecra_37.Text]]>
+					</expr>
+				</init>
 			</object>
 		</do-on>
 	</object>
@@ -5618,6 +5709,11 @@
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed" form-by-id="false" form-action="open-dialog">
 			<object access-modifier="private" uuid="962c239c-e337-4154-9c65-f4388dcfb3cc" base-type="Form_ECRA_209" base-type-id="a9cc4fb6-84b8-42e0-a542-490eaf55dcc0" ver="5">
 				<init target="ParDevPathDisc" ver="5" value="RU.OPU.CS.RZA1.Diodes.Svetodiod_RIS_ASh1|RU.OPU.CS.RZA1.Diodes.Svetodiod_RIS_ASh2|RU.OPU.CS.RZA1.Diodes.Svetodiod_RIS_ASh3|RU.OPU.CS.RZA1.Diodes.Svetodiod_RIS_ASh4|RU.OPU.CS.RZA1.Diodes.Svetodiod_VSh1|RU.OPU.CS.RZA1.Diodes.Svetodiod_VSh2|RU.OPU.CS.RZA1.Diodes.Rezhim_testa"/>
+				<init target="WindowCaption" ver="5">
+					<expr>
+						<![CDATA[Button_Ecra_38.Text]]>
+					</expr>
+				</init>
 			</object>
 		</do-on>
 	</object>
@@ -5677,6 +5773,11 @@
 			<object access-modifier="private" uuid="35265cb4-1b43-4e3a-8ca4-0fa0ae7b513b" base-type="Form_ECRA_2704" base-type-id="1b685130-519d-46d2-a297-8ff2cbdf105c" ver="5">
 				<init target="ParDevPathDisc" ver="5" value="RU.OPU.DSHZ.Sect1.Diodes.Srabatyvanie_DZSh-A_1_ssh|RU.OPU.DSHZ.Sect1.Diodes.Srabatyvanie_DZSh-B_1_ssh|RU.OPU.DSHZ.Sect1.Diodes.Srabatyvanie_DZSh-C_1_ssh|RU.OPU.DSHZ.Sect1.Diodes.Srabatyvanie_DZSh_1_ssh_pri_oprobovanii|RU.OPU.DSHZ.Sect1.Diodes.Srabatyvanie_UROV_1_ssh|RU.OPU.DSHZ.Sect1.Diodes.Neuspeshnoe_APV_1_ssh|RU.OPU.DSHZ.Sect1.Diodes.Zapret_APV_1_ssh|RU.OPU.DSHZ.Sect1.Diodes.Nebalans_1_ssh_fazy_A|RU.OPU.DSHZ.Sect1.Diodes.Nebalans_1_ssh_fazy_S|RU.OPU.DSHZ.Sect1.Diodes.Nebalans_1_ssh_fazy_V|RU.OPU.DSHZ.Sect1.Diodes.Neispravnost_tsepey_napryazheniya_1_ssh|RU.OPU.DSHZ.Sect1.Diodes.Ochuvstvlenie_DZSh_1_ssh|RU.OPU.DSHZ.Sect1.Diodes.Svetodiod_13|RU.OPU.DSHZ.Sect1.Diodes.Srab_RT_Q01|RU.OPU.DSHZ.Sect1.Diodes.Srab_RT_Q02|RU.OPU.DSHZ.Sect1.Diodes.Rezhim_proverki"/>
 				<designed target="WindowScalingMode" value="2" ver="5"/>
+				<init target="WindowCaption" ver="5">
+					<expr>
+						<![CDATA[Button_Ecra_39.Text]]>
+					</expr>
+				</init>
 			</object>
 		</do-on>
 	</object>
@@ -5736,6 +5837,11 @@
 			<object access-modifier="private" uuid="e0c4dd21-a54a-4ca1-9bd6-eefb43173d6b" base-type="Form_ECRA_2704" base-type-id="1b685130-519d-46d2-a297-8ff2cbdf105c" ver="5">
 				<init target="ParDevPathDisc" ver="5" value="RU.OPU.DSHZ.Sect2.Diodes.Srabatyvanie_DZSh-A_1_ssh|RU.OPU.DSHZ.Sect2.Diodes.Srabatyvanie_DZSh-B_1_ssh|RU.OPU.DSHZ.Sect2.Diodes.Srabatyvanie_DZSh-C_1_ssh|RU.OPU.DSHZ.Sect2.Diodes.Srabatyvanie_DZSh_1_ssh_pri_oprobovanii|RU.OPU.DSHZ.Sect2.Diodes.Srabatyvanie_UROV_1_ssh|RU.OPU.DSHZ.Sect2.Diodes.Neuspeshnoe_APV_1_ssh|RU.OPU.DSHZ.Sect2.Diodes.Zapret_APV_1_ssh|RU.OPU.DSHZ.Sect2.Diodes.Nebalans_1_ssh_fazy_A|RU.OPU.DSHZ.Sect2.Diodes.Nebalans_1_ssh_fazy_S|RU.OPU.DSHZ.Sect2.Diodes.Nebalans_1_ssh_fazy_V|RU.OPU.DSHZ.Sect2.Diodes.Neispravnost_tsepey_napryazheniya_1_ssh|RU.OPU.DSHZ.Sect2.Diodes.Ochuvstvlenie_DZSh_1_ssh|RU.OPU.DSHZ.Sect2.Diodes.Svetodiod_13|RU.OPU.DSHZ.Sect2.Diodes.Srab_RT_Q01|RU.OPU.DSHZ.Sect2.Diodes.Srab_RT_Q02|RU.OPU.DSHZ.Sect2.Diodes.Rezhim_proverki"/>
 				<designed target="WindowScalingMode" value="2" ver="5"/>
+				<init target="WindowCaption" ver="5">
+					<expr>
+						<![CDATA[Button_Ecra_41.Text]]>
+					</expr>
+				</init>
 			</object>
 		</do-on>
 	</object>
@@ -5794,6 +5900,11 @@
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed" form-by-id="false" form-action="open-dialog">
 			<object access-modifier="private" uuid="b5383387-1113-4acd-946a-4038264572df" base-type="Form_ECRA_209" base-type-id="a9cc4fb6-84b8-42e0-a542-490eaf55dcc0" ver="5">
 				<init target="ParDevPathDisc" ver="5" value="RU.OPU.CS.RZA2.Diodes.Svetodiod_RIS_ASh1|RU.OPU.CS.RZA2.Diodes.Svetodiod_RIS_ASh2|RU.OPU.CS.RZA2.Diodes.Svetodiod_RIS_ASh3|RU.OPU.CS.RZA2.Diodes.Svetodiod_RIS_ASh4|RU.OPU.CS.RZA2.Diodes.Svetodiod_VSh1|RU.OPU.CS.RZA2.Diodes.Svetodiod_VSh2|RU.OPU.CS.RZA2.Diodes.Rezhim_testa"/>
+				<init target="WindowCaption" ver="5">
+					<expr>
+						<![CDATA[Button_Ecra_42.Text]]>
+					</expr>
+				</init>
 			</object>
 		</do-on>
 	</object>
@@ -5841,7 +5952,7 @@
 		<designed target="Height" value="30" ver="5"/>
 		<designed target="Checkable" value="false" ver="5"/>
 		<designed target="Checked" value="false" ver="5"/>
-		<designed target="Text" value="ЭКРА КСЗ-РЗА" ver="5"/>
+		<designed target="Text" value="ЭКРА" ver="5"/>
 		<designed target="TextAlignment" value="132" ver="5"/>
 		<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
 		<designed target="FontColor" value="0xff000000" ver="5"/>
@@ -5882,16 +5993,10 @@
 			<object access-modifier="private" uuid="ea9b3134-25e7-4f6a-bd5a-da748eb2d831" base-type="ECRA_Dinamic" base-type-id="8f770465-f9c2-4458-820d-5b8d3fff8afb" ver="5">
 				<init target="Lines" ver="5" value="Л-25КСЗ-РЗА|Л-25КСЗ-ОМП|Л-25НВЧЗ|Л-25КП|Л-31КСЗ-РЗА|Л-31КСЗ-ОМП|Л-31НВЧЗ|Л-31КП|Л-8КСЗ-РЗА|Л-8КСЗ-ОМП|Л-8НВЧЗ|Л-8КП|ЛарсиКСЗ-РЗА|ЛарсиКСЗ-ОМП|ЛарсиНВЧЗ|ЛарсиКП"/>
 				<init target="Ecra" ver="5" value="2704|2704|2704|2704"/>
-				<do-trace access-modifier="private" target="ParDevPath2704" ver="5">
-					<body>
-						<![CDATA[notifying_string_1]]>
-					</body>
-				</do-trace>
-				<init target="ParDevPath2704" ver="5" value=""/>
-				<init target="notifying_string_1" ver="5" ref="Pole1"/>
-				<init target="notifying_string_2" ver="5" ref="Pole2"/>
-				<init target="notifying_string_3" ver="5" ref="Pole3"/>
-				<init target="notifying_string_4" ver="5" ref="Pole4"/>
+				<init target="Path1" ver="5" ref="Pole1"/>
+				<init target="Path2" ver="5" ref="Pole2"/>
+				<init target="Path3" ver="5" ref="Pole3"/>
+				<init target="Path4" ver="5" ref="Pole4"/>
 			</object>
 		</do-on>
 		<object access-modifier="private" name="Pole1" display-name="Pole1" uuid="e21d0865-1b06-4213-9355-55d62eaf8e36" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
@@ -5902,6 +6007,77 @@
 		<init target="Pole2" ver="5" value="RU.OPU.VL-25.KSZ.OMP.Diodes.Pusk_OMP_po_I|RU.OPU.VL-25.KSZ.OMP.Diodes.Pusk_OMP_po_D3I0|RU.OPU.VL-25.KSZ.OMP.Diodes.Pusk_OMP_po_DI1|RU.OPU.VL-25.KSZ.OMP.Diodes.Pusk_OMP_po_DI2|RU.OPU.VL-25.KSZ.OMP.Diodes.Sign_PO_3I0|RU.OPU.VL-25.KSZ.OMP.Diodes.Sign_PO_I1|RU.OPU.VL-25.KSZ.OMP.Diodes.Sign_PO_I2|RU.OPU.VL-25.KSZ.OMP.Diodes.Sign_PO_3U0|RU.OPU.VL-25.KSZ.OMP.Diodes.Sign_PO_U1_min|RU.OPU.VL-25.KSZ.OMP.Diodes.Sign_PO_U2|RU.OPU.VL-25.KSZ.OMP.Diodes.Sign_PO_3I0/I1|RU.OPU.VL-25.KSZ.OMP.Diodes.Sign_PO_I2/I1|RU.OPU.VL-25.KSZ.OMP.Diodes.Sign_Start_OMP|RU.OPU.VL-25.KSZ.OMP.Diodes.Svetodiod_14|RU.OPU.VL-25.KSZ.OMP.Diodes.BI_vyvedeny|RU.OPU.VL-25.KSZ.OMP.Diodes.Rezhim_testa"/>
 		<init target="Pole3" ver="5" value="RU.OPU.VL-25.NVCHZ.Diodes.Otkl|RU.OPU.VL-25.NVCHZ.Diodes.Srab_VChZ|RU.OPU.VL-25.NVCHZ.Diodes.Perevod_VChZ_na_signal|RU.OPU.VL-25.NVCHZ.Diodes.NTsN|RU.OPU.VL-25.NVCHZ.Diodes.Vyvod_VChZ_pri_neispravnosti_PP|RU.OPU.VL-25.NVCHZ.Diodes.Sign_neispravnosti_PP|RU.OPU.VL-25.NVCHZ.Diodes.Zapret_puska_VCh_(signal)|RU.OPU.VL-25.NVCHZ.Diodes.Vyzov|RU.OPU.VL-25.NVCHZ.Diodes.Dlitelnyy_VCh_signal|RU.OPU.VL-25.NVCHZ.Diodes.Srab_UROV|RU.OPU.VL-25.NVCHZ.Diodes.Otkl_ot_AU|RU.OPU.VL-25.NVCHZ.Diodes.Svetodiod_12|RU.OPU.VL-25.NVCHZ.Diodes.Svetodiod_13|RU.OPU.VL-25.NVCHZ.Diodes.Svetodiod_14|RU.OPU.VL-25.NVCHZ.Diodes.Svetodiod_15|RU.OPU.VL-25.NVCHZ.Diodes.Rezhim_testa|RU.OPU.VL-25.NVCHZ.Diodes.Srab_I_st_DZ(Z)|RU.OPU.VL-25.NVCHZ.Diodes.Srab_I_st_DZ(MF)|RU.OPU.VL-25.NVCHZ.Diodes.Srab_II_st_DZ(MF)|RU.OPU.VL-25.NVCHZ.Diodes.Srab_III-V_st_DZ(MF)|RU.OPU.VL-25.NVCHZ.Diodes.Srab_I_st_TNZNP|RU.OPU.VL-25.NVCHZ.Diodes.Srab_II_st_TNZNP|RU.OPU.VL-25.NVCHZ.Diodes.Srab_III-VI_st_TNZNP|RU.OPU.VL-25.NVCHZ.Diodes.Srab_MFTO|RU.OPU.VL-25.NVCHZ.Diodes.Srab_OU_DZ|RU.OPU.VL-25.NVCHZ.Diodes.Srab_OU_TNZNP|RU.OPU.VL-25.NVCHZ.Diodes.Uskor_pri_prieme_TK_UROV|RU.OPU.VL-25.NVCHZ.Diodes.Uskor_pri_prieme_TK_DZ|RU.OPU.VL-25.NVCHZ.Diodes.Uskor_pri_prieme_TK_TNZNP|RU.OPU.VL-25.NVCHZ.Diodes.Pusk_TK_UROV|RU.OPU.VL-25.NVCHZ.Diodes.Pusk_TK_DZ|RU.OPU.VL-25.NVCHZ.Diodes.Pusk_TK_TNZNP"/>
 		<init target="Pole4" ver="5" value="RU.OPU.VL-25.KP.Diodes.Rabota_1_tsikla_APV|RU.OPU.VL-25.KP.Diodes.Rabota_2_tsikla_APV|RU.OPU.VL-25.KP.Diodes.Deystvie_UROV|RU.OPU.VL-25.KP.Diodes.Neispravnost_tsepey_upravleniya|RU.OPU.VL-25.KP.Diodes.Neispravnost_obogreva_vyklyuchatelya|RU.OPU.VL-25.KP.Diodes.Neispravnost_tsepey_opertoka|RU.OPU.VL-25.KP.Diodes.Nizkoe_davlenie_elegaza|RU.OPU.VL-25.KP.Diodes.Pruzhina_ne_zavedena|RU.OPU.VL-25.KP.Diodes.Zavodka_pruzhin_otklyuchena|RU.OPU.VL-25.KP.Diodes.Blokirovka_vklyucheniya_i_otklyucheniya|RU.OPU.VL-25.KP.Diodes.Avariynoe_snizhenie_davleniya_elegaza_v_TT|RU.OPU.VL-25.KP.Diodes.Neispravnost_KA2|RU.OPU.VL-25.KP.Diodes.Mestnoe_upravlenie_KA2|RU.OPU.VL-25.KP.Diodes.Neispravnost_KA3|RU.OPU.VL-25.KP.Diodes.Mestnoe_upravlenie_KA3|RU.OPU.VL-25.KP.Diodes.Neispravnost_KA4|RU.OPU.VL-25.KP.Diodes.Mestnoe_upravlenie_KA4|RU.OPU.VL-25.KP.Diodes.Neispravnost_KA5|RU.OPU.VL-25.KP.Diodes.Mestnoe_upravlenie_KA5|RU.OPU.VL-25.KP.Diodes.Neispravnost_KA6|RU.OPU.VL-25.KP.Diodes.Mestnoe_upravlenie_KA6|RU.OPU.VL-25.KP.Diodes.Neispravnost_KA7|RU.OPU.VL-25.KP.Diodes.Mestnoe_upravlenie_KA7|RU.OPU.VL-25.KP.Diodes.Neispravnost_KA8|RU.OPU.VL-25.KP.Diodes.Mestnoe_upravlenie_KA8|RU.OPU.VL-25.KP.Diodes.Neispravnost_KA9|RU.OPU.VL-25.KP.Diodes.Mestnoe_upravlenie_KA9|RU.OPU.VL-25.KP.Diodes.Neispravnost_KA10|RU.OPU.VL-25.KP.Diodes.Mestnoe_upravlenie_KA10|RU.OPU.VL-25.KP.Diodes.RPV_(vykhod)|RU.OPU.VL-25.KP.Diodes.RFP"/>
+	</object>
+	<object access-modifier="private" name="Button_Ecra_44" display-name="Button_Ecra_44" uuid="8de63daf-a43c-40cb-88c4-6ebb2cd72c6d" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5" description="" cardinal="1">
+		<designed target="X" value="844.66666666666674" ver="5"/>
+		<designed target="Y" value="137.66666666666669" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="0.80000000000000004" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="110" ver="5"/>
+		<designed target="Height" value="30" ver="5"/>
+		<designed target="Checkable" value="false" ver="5"/>
+		<designed target="Checked" value="false" ver="5"/>
+		<designed target="Text" value="ЭКРА" ver="5"/>
+		<designed target="TextAlignment" value="132" ver="5"/>
+		<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+		<designed target="FontColor" value="0xff000000" ver="5"/>
+		<designed target="OnClickFontColor" value="0xffffffff" ver="5"/>
+		<designed target="OnHoverFontColor" value="0xff000000" ver="5"/>
+		<designed target="DisabledFontColor" value="0xc85a5a5a" ver="5"/>
+		<designed target="BrushColor" value="4293980400" ver="5"/>
+		<designed target="BrushStyle" value="1" ver="5"/>
+		<designed target="OnClickBrushColor" value="4288716960" ver="5"/>
+		<designed target="OnClickBrushStyle" value="1" ver="5"/>
+		<designed target="OnHoverBrushColor" value="4294967295" ver="5"/>
+		<designed target="OnHoverBrushStyle" value="1" ver="5"/>
+		<designed target="DisabledBrushColor" value="0xffa0a0a0" ver="5"/>
+		<designed target="DisabledBrushStyle" value="1" ver="5"/>
+		<designed target="PenColor" value="0xff000000" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="OnClickPenColor" value="4278190080" ver="5"/>
+		<designed target="OnClickPenStyle" value="1" ver="5"/>
+		<designed target="OnClickPenWidth" value="1" ver="5"/>
+		<designed target="OnHoverPenColor" value="0xff000000" ver="5"/>
+		<designed target="OnHoverPenStyle" value="1" ver="5"/>
+		<designed target="OnHoverPenWidth" value="1" ver="5"/>
+		<designed target="DisabledPenColor" value="0xffa0a0a0" ver="5"/>
+		<designed target="DisabledPenStyle" value="1" ver="5"/>
+		<designed target="DisabledPenWidth" value="1" ver="5"/>
+		<do-trace access-modifier="private" target="OnClickBrushColor" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlue]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="OnHoverBrushColor" ver="5">
+			<body>
+				<![CDATA[AsokuColor.asokuBlue]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ButtonPressed" form-by-id="false" form-action="open-dialog">
+			<object access-modifier="private" uuid="eff8c844-9546-4bf1-b5a7-6c12ada5014f" base-type="ECRA_Dinamic" base-type-id="8f770465-f9c2-4458-820d-5b8d3fff8afb" ver="5">
+				<init target="Lines" ver="5" value="Л-25КСЗ-РЗА|Л-25КСЗ-ОМП|Л-25НВЧЗ|Л-25КП|Л-31КСЗ-РЗА|Л-31КСЗ-ОМП|Л-31НВЧЗ|Л-31КП|Л-8КСЗ-РЗА|Л-8КСЗ-ОМП|Л-8НВЧЗ|Л-8КП|ЛарсиКСЗ-РЗА|ЛарсиКСЗ-ОМП|ЛарсиНВЧЗ|ЛарсиКП"/>
+				<init target="Ecra" ver="5" value="2704|2704|2704|2704"/>
+				<init target="Path1" ver="5" ref="Pole1"/>
+				<init target="Path2" ver="5" ref="Pole2"/>
+				<init target="Path3" ver="5" ref="Pole3"/>
+				<init target="Path4" ver="5" ref="Pole4"/>
+			</object>
+		</do-on>
+		<object access-modifier="private" name="Pole1" display-name="Pole1" uuid="2da77245-09e1-4373-b53b-63d1e51bcce4" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="Pole2" display-name="Pole2" uuid="ee7a93f6-7ef4-40d4-a83d-666ebeec716a" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="Pole3" display-name="Pole3" uuid="9bc44b6d-d0d9-40f7-8bb1-9af0bbb0b282" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+		<object access-modifier="private" name="Pole4" display-name="Pole4" uuid="b95d5e4e-9ae2-4944-bd21-c001bd3ad52a" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
+		<init target="Pole1" ver="5" value="RU.OPU.VL-31.KSZ.RZA.Diodes.Otkl|RU.OPU.VL-31.KSZ.RZA.Diodes.Srab_I_st_DZ(Z)|RU.OPU.VL-31.KSZ.RZA.Diodes.Srab_I_st_DZ(MF)|RU.OPU.VL-31.KSZ.RZA.Diodes.Srab_II_st_DZ(MF)|RU.OPU.VL-31.KSZ.RZA.Diodes.Srab_III_st_DZ(MF)|RU.OPU.VL-31.KSZ.RZA.Diodes.Srab_IV_st_DZ(MF)|RU.OPU.VL-31.KSZ.RZA.Diodes.Srab_V_st_DZ(MF)|RU.OPU.VL-31.KSZ.RZA.Diodes.Srab_I_st_TNZNP|RU.OPU.VL-31.KSZ.RZA.Diodes.Srab_II_st_TNZNP|RU.OPU.VL-31.KSZ.RZA.Diodes.Srab_III_st_TNZNP|RU.OPU.VL-31.KSZ.RZA.Diodes.Srab_IV_st_TNZNP|RU.OPU.VL-31.KSZ.RZA.Diodes.Srab_V_st_TNZNP|RU.OPU.VL-31.KSZ.RZA.Diodes.Srab_VI_st_TNZNP|RU.OPU.VL-31.KSZ.RZA.Diodes.Srab_OU_DZ|RU.OPU.VL-31.KSZ.RZA.Diodes.Srab_OU_TNZNP|RU.OPU.VL-31.KSZ.RZA.Diodes.Rezhim_testa|RU.OPU.VL-31.KSZ.RZA.Diodes.Srab_MFTO|RU.OPU.VL-31.KSZ.RZA.Diodes.Otkl_ot_AU|RU.OPU.VL-31.KSZ.RZA.Diodes.Uskor_pri_prieme_TK_UROV|RU.OPU.VL-31.KSZ.RZA.Diodes.Uskor_pri_prieme_TK_DZ|RU.OPU.VL-31.KSZ.RZA.Diodes.Uskor_pri_prieme_TK_TNZNP|RU.OPU.VL-31.KSZ.RZA.Diodes.Pusk_TK_UROV|RU.OPU.VL-31.KSZ.RZA.Diodes.Pusk_TK_DZ|RU.OPU.VL-31.KSZ.RZA.Diodes.Pusk_TK_TNZNP|RU.OPU.VL-31.KSZ.RZA.Diodes.Srab_UROV|RU.OPU.VL-31.KSZ.RZA.Diodes.NTsN"/>
+		<init target="Pole2" ver="5" value="RU.OPU.VL-31.KSZ.OMP.Diodes.Pusk_OMP_po_I|RU.OPU.VL-31.KSZ.OMP.Diodes.Pusk_OMP_po_D3I0|RU.OPU.VL-31.KSZ.OMP.Diodes.Pusk_OMP_po_DI1|RU.OPU.VL-31.KSZ.OMP.Diodes.Pusk_OMP_po_DI2|RU.OPU.VL-31.KSZ.OMP.Diodes.Sign_PO_3I0|RU.OPU.VL-31.KSZ.OMP.Diodes.Sign_PO_I1|RU.OPU.VL-31.KSZ.OMP.Diodes.Sign_PO_I2|RU.OPU.VL-31.KSZ.OMP.Diodes.Sign_PO_3U0|RU.OPU.VL-31.KSZ.OMP.Diodes.Sign_PO_U1_min|RU.OPU.VL-31.KSZ.OMP.Diodes.Sign_PO_U2|RU.OPU.VL-31.KSZ.OMP.Diodes.Sign_PO_3I0/I1|RU.OPU.VL-31.KSZ.OMP.Diodes.Sign_PO_I2/I1|RU.OPU.VL-31.KSZ.OMP.Diodes.Sign_Start_OMP|RU.OPU.VL-31.KSZ.OMP.Diodes.Svetodiod_14|RU.OPU.VL-31.KSZ.OMP.Diodes.BI_vyvedeny|RU.OPU.VL-31.KSZ.OMP.Diodes.Rezhim_testa"/>
+		<init target="Pole3" ver="5" value="RU.OPU.VL-31.NVCHZ.Diodes.Otkl|RU.OPU.VL-31.NVCHZ.Diodes.Srab_VChZ|RU.OPU.VL-31.NVCHZ.Diodes.Perevod_VChZ_na_signal|RU.OPU.VL-31.NVCHZ.Diodes.NTsN|RU.OPU.VL-31.NVCHZ.Diodes.Vyvod_VChZ_pri_neispravnosti_PP|RU.OPU.VL-31.NVCHZ.Diodes.Sign_neispravnosti_PP|RU.OPU.VL-31.NVCHZ.Diodes.Zapret_puska_VCh_(signal)|RU.OPU.VL-31.NVCHZ.Diodes.Vyzov|RU.OPU.VL-31.NVCHZ.Diodes.Dlitelnyy_VCh_signal|RU.OPU.VL-31.NVCHZ.Diodes.Srab_UROV|RU.OPU.VL-31.NVCHZ.Diodes.Otkl_ot_AU|RU.OPU.VL-31.NVCHZ.Diodes.Svetodiod_12|RU.OPU.VL-31.NVCHZ.Diodes.Svetodiod_13|RU.OPU.VL-31.NVCHZ.Diodes.Svetodiod_14|RU.OPU.VL-31.NVCHZ.Diodes.Svetodiod_15|RU.OPU.VL-31.NVCHZ.Diodes.Rezhim_testa|RU.OPU.VL-31.NVCHZ.Diodes.Srab_I_st_DZ(Z)|RU.OPU.VL-31.NVCHZ.Diodes.Srab_I_st_DZ(MF)|RU.OPU.VL-31.NVCHZ.Diodes.Srab_II_st_DZ(MF)|RU.OPU.VL-31.NVCHZ.Diodes.Srab_III-V_st_DZ(MF)|RU.OPU.VL-31.NVCHZ.Diodes.Srab_I_st_TNZNP|RU.OPU.VL-31.NVCHZ.Diodes.Srab_II_st_TNZNP|RU.OPU.VL-31.NVCHZ.Diodes.Srab_III-VI_st_TNZNP|RU.OPU.VL-31.NVCHZ.Diodes.Srab_MFTO|RU.OPU.VL-31.NVCHZ.Diodes.Srab_OU_DZ|RU.OPU.VL-31.NVCHZ.Diodes.Srab_OU_TNZNP|RU.OPU.VL-31.NVCHZ.Diodes.Uskor_pri_prieme_TK_UROV|RU.OPU.VL-31.NVCHZ.Diodes.Uskor_pri_prieme_TK_DZ|RU.OPU.VL-31.NVCHZ.Diodes.Uskor_pri_prieme_TK_TNZNP|RU.OPU.VL-31.NVCHZ.Diodes.Pusk_TK_UROV|RU.OPU.VL-31.NVCHZ.Diodes.Pusk_TK_DZ|RU.OPU.VL-31.NVCHZ.Diodes.Pusk_TK_TNZNP"/>
+		<init target="Pole4" ver="5" value="RU.OPU.VL-31.KP.Diodes.Rabota_1_tsikla_APV|RU.OPU.VL-31.KP.Diodes.Rabota_2_tsikla_APV|RU.OPU.VL-31.KP.Diodes.Deystvie_UROV|RU.OPU.VL-31.KP.Diodes.Neispravnost_tsepey_upravleniya|RU.OPU.VL-31.KP.Diodes.Neispravnost_obogreva_vyklyuchatelya|RU.OPU.VL-31.KP.Diodes.Neispravnost_tsepey_opertoka|RU.OPU.VL-31.KP.Diodes.Nizkoe_davlenie_elegaza|RU.OPU.VL-31.KP.Diodes.Pruzhina_ne_zavedena|RU.OPU.VL-31.KP.Diodes.Zavodka_pruzhin_otklyuchena|RU.OPU.VL-31.KP.Diodes.Blokirovka_vklyucheniya_i_otklyucheniya|RU.OPU.VL-31.KP.Diodes.Avariynoe_snizhenie_davleniya_elegaza_v_TT|RU.OPU.VL-31.KP.Diodes.Neispravnost_KA2|RU.OPU.VL-31.KP.Diodes.Mestnoe_upravlenie_KA2|RU.OPU.VL-31.KP.Diodes.Neispravnost_KA3|RU.OPU.VL-31.KP.Diodes.Mestnoe_upravlenie_KA3|RU.OPU.VL-31.KP.Diodes.Neispravnost_KA4|RU.OPU.VL-31.KP.Diodes.Mestnoe_upravlenie_KA4|RU.OPU.VL-31.KP.Diodes.Neispravnost_KA5|RU.OPU.VL-31.KP.Diodes.Mestnoe_upravlenie_KA5|RU.OPU.VL-31.KP.Diodes.Neispravnost_KA6|RU.OPU.VL-31.KP.Diodes.Mestnoe_upravlenie_KA6|RU.OPU.VL-31.KP.Diodes.Neispravnost_KA7|RU.OPU.VL-31.KP.Diodes.Mestnoe_upravlenie_KA7|RU.OPU.VL-31.KP.Diodes.Neispravnost_KA8|RU.OPU.VL-31.KP.Diodes.Mestnoe_upravlenie_KA8|RU.OPU.VL-31.KP.Diodes.Neispravnost_KA9|RU.OPU.VL-31.KP.Diodes.Mestnoe_upravlenie_KA9|RU.OPU.VL-31.KP.Diodes.Neispravnost_KA10|RU.OPU.VL-31.KP.Diodes.Mestnoe_upravlenie_KA10|RU.OPU.VL-31.KP.Diodes.RPV_(vykhod)|RU.OPU.VL-31.KP.Diodes.RFP"/>
 	</object>
 </type>
 

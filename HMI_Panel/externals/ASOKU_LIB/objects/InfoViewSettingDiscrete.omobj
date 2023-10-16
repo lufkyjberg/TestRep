@@ -628,7 +628,7 @@
 			</body>
 		</do-on>
 	</object>
-	<object access-modifier="private" name="ApParSimStatus" display-name="ApParSimStatus" uuid="224ae157-4bf0-4e03-b045-b344977c7518" base-type="ApItemUInt4" base-type-id="322ce770-6c7b-49bc-9cd6-a367ca5b4627" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="ApParSimStatus" display-name="ApParSimStatus" uuid="224ae157-4bf0-4e03-b045-b344977c7518" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="1">
 		<init target="Path" ver="5" value="Simulation.Status"/>
 		<init target="Source" ver="5" ref="Ap_Source_Par"/>
 		<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="5" event="OnAdviseStateChanged">
@@ -760,16 +760,14 @@ else Open_UD_PermissionFault.Invoke();
 	SimulationFrame.SimulationStatusCheckbox.isChanged = false;
 	AsokuMain.CreateUserMessage("флага имитации у сигнала " + ParDevPath);
 }
-if (ApParSimValue.Value != SimulationFrame.Container_SimValue.Checkbox_SimValue.State) {
+if (ApParSimValue.ValueAsString != SimulationFrame.Container_SimValue.Checkbox_SimValue.Text) {
 	ApParSimValue.Value = SimulationFrame.Container_SimValue.Checkbox_SimValue.State;
 	SimulationFrame.Container_SimValue.Checkbox_SimValue.isChanged = false;
 	AsokuMain.CreateUserMessage("значение имитации у сигнала " + ParDevPath);
 }
 if (ApParSimStatus.ValueAsString != SimulationFrame.Container_SimStatus.Input.Text) {
-	ApParSimStatus.Value = String.ToUint4(SimulationFrame.Container_SimStatus.Input.Text, ApParSimStatus.Value);
+	ApParSimStatus.Value = String.ToUint2(SimulationFrame.Container_SimStatus.Input.Text, ApParSimStatus.Value);
 	SimulationFrame.Container_SimStatus.Input.isChanged = false;
-	Debug.DebugTool.Log(ApParSimStatus.Value);
-	Debug.DebugTool.Log(SimulationFrame.Container_SimStatus.Input.Text);
 	AsokuMain.CreateUserMessage("качество у сигнала " + ParDevPath);
 }
 if (ApParDelayLimits.ValueAsString != SetpointsFrame.Container_Delay.Input.Text) {

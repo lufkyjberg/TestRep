@@ -976,6 +976,7 @@
 			<init target="InDevPath" ver="5" value="HydroUnits.GA_01.Commands.In.CMC_Prot_T_VNP_en"/>
 			<init target="OutDevPath" ver="5" value="HydroUnits.GA_01.Commands.Out.CMD_Prot_T_VNP_en"/>
 			<init target="ButtonTextOff" ver="5" value="Ввести"/>
+			<init target="TransferDevPath" ver="5" value="HydroUnits.GA_01.Transfers"/>
 		</object>
 		<object access-modifier="private" name="DODpValue_16" display-name="DODpValue_16" uuid="849b60dc-2223-41d9-9ed4-29b3e4117cfc" base-type="DODpValue_1" base-type-id="f1b1a670-0855-4353-a623-a7e49a2a16a6" ver="5" description="" cardinal="1">
 			<designed target="X" value="2" ver="5"/>

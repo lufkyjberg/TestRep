@@ -5,36 +5,43 @@
 	<object access-modifier="private" name="ConfiguringReports1" display-name="Право на конфигурирование отчётов" uuid="d4068bff-5573-420f-a2a5-1e13a7426cce" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
 	<object access-modifier="private" name="WatchingReports1" display-name="Право на просмотр отчётов" uuid="b4f5e67e-0943-4533-adca-60a3ea672c65" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
 	<object access-modifier="private" name="ChangeTransferValue1" display-name="ChangeTransferValue1" uuid="2ab00f2d-efe5-4560-8c2b-fa207ba89352" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
-	<object access-modifier="private" name="SecurityContext_UserRights" display-name="SecurityContext_UserRights" uuid="6de360d0-507e-4b37-a6be-f62ad05fcc9c" base-type="SecurityContext" base-type-id="d9cb0fff-b70a-4e2d-833d-3f73cf74e0dd" ver="5" description="" cardinal="1"/>
-	<object access-modifier="private" name="ConfiguringReports" display-name="ConfiguringReports" uuid="72b9bdf6-4d89-4206-8ab2-73186152acd9" base-type="BoolTokenProxy" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="5" description="" cardinal="1">
-		<init target="Application" ver="5" value="Ezminskaya"/>
-		<init target="Right" ver="5" value="ConfiguringReports"/>
-		<init target="SecurityContext" ver="5" ref="SecurityContext_UserRights"/>
-	</object>
-	<object access-modifier="private" name="LocatingLabels" display-name="LocatingLabels" uuid="8ee073f4-f85e-435d-b56f-12fd88d80c80" base-type="BoolTokenProxy" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="5" description="" cardinal="1">
-		<init target="Application" ver="5" value="Ezminskaya"/>
-		<init target="Right" ver="5" value="LocatingLabels"/>
-		<init target="SecurityContext" ver="5" ref="SecurityContext_UserRights"/>
-	</object>
-	<object access-modifier="private" name="SendingComands" display-name="SendingComands" uuid="8722d75c-f529-4c44-88af-951a336017d1" base-type="BoolTokenProxy" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="5" description="" cardinal="1">
-		<init target="Application" ver="5" value="Ezminskaya"/>
-		<init target="Right" ver="5" value="SendingComands"/>
-		<init target="SecurityContext" ver="5" ref="SecurityContext_UserRights"/>
-	</object>
-	<object access-modifier="private" name="ChangeSettings" display-name="ChangeSettings" uuid="c021af03-8b29-45a6-a6f5-2b1bff42b9cb" base-type="BoolTokenProxy" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="5" description="" cardinal="1">
-		<init target="Application" ver="5" value="Ezminskaya"/>
-		<init target="Right" ver="5" value="SettingSettings"/>
-		<init target="SecurityContext" ver="5" ref="SecurityContext_UserRights"/>
+	<object access-modifier="private" name="SecurityContext_UserRights" display-name="SecurityContext_UserRights" uuid="6de360d0-507e-4b37-a6be-f62ad05fcc9c" base-type="SecurityContext" base-type-id="d9cb0fff-b70a-4e2d-833d-3f73cf74e0dd" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="CurrentUserChanged">
+			<body kind="om">
+				<![CDATA[isAdmin = Group(TypeConvert.ToUint8(0)) == "Администратор";]]>
+			</body>
+		</do-on>
 	</object>
 	<object access-modifier="private" name="WatchingReports" display-name="WatchingReports" uuid="3ac6aac0-0278-4dc1-971a-46d977e56108" base-type="BoolTokenProxy" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="5" description="" cardinal="1">
-		<init target="Application" ver="5" value="Ezminskaya"/>
+		<init target="Application" ver="5" value="EzminskayaGES_PANEL"/>
 		<init target="Right" ver="5" value="WatchingReports"/>
 		<init target="SecurityContext" ver="5" ref="SecurityContext_UserRights"/>
 	</object>
-	<object access-modifier="private" name="ChangeTransferValue" display-name="ChangeTransferValue" uuid="86872410-967a-4b94-8855-41c2a1363a5c" base-type="BoolTokenProxy" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="5" description="" cardinal="1">
-		<init target="Application" ver="5" value="Ezminskaya"/>
-		<init target="Right" ver="5" value="ChangingTransferValue"/>
+	<object access-modifier="private" name="ConfiguringReports" display-name="ConfiguringReports" uuid="72b9bdf6-4d89-4206-8ab2-73186152acd9" base-type="BoolTokenProxy" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="5" description="" cardinal="1">
+		<init target="Application" ver="5" value="EzminskayaGES_PANEL"/>
+		<init target="Right" ver="5" value="ConfiguringReports"/>
 		<init target="SecurityContext" ver="5" ref="SecurityContext_UserRights"/>
 	</object>
+	<object access-modifier="private" name="SendingComands" display-name="SendingComands" uuid="8722d75c-f529-4c44-88af-951a336017d1" base-type="BoolTokenProxy" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="5" description="" cardinal="1">
+		<init target="Application" ver="5" value="EzminskayaGES_PANEL"/>
+		<init target="Right" ver="5" value="SendingCommands"/>
+		<init target="SecurityContext" ver="5" ref="SecurityContext_UserRights"/>
+	</object>
+	<object access-modifier="private" name="LocatingLabels" display-name="LocatingLabels" uuid="8ee073f4-f85e-435d-b56f-12fd88d80c80" base-type="BoolTokenProxy" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="5" description="" cardinal="1">
+		<init target="Application" ver="5" value="EzminskayaGES_PANEL"/>
+		<init target="Right" ver="5" value="LocatingLabels"/>
+		<init target="SecurityContext" ver="5" ref="SecurityContext_UserRights"/>
+	</object>
+	<object access-modifier="private" name="ChangeSettings" display-name="ChangeSettings" uuid="c021af03-8b29-45a6-a6f5-2b1bff42b9cb" base-type="BoolTokenProxy" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="5" description="" cardinal="1">
+		<init target="Application" ver="5" value="EzminskayaGES_PANEL"/>
+		<init target="Right" ver="5" value="ChangingSetpoints"/>
+		<init target="SecurityContext" ver="5" ref="SecurityContext_UserRights"/>
+	</object>
+	<object access-modifier="private" name="ChangeTransferValue" display-name="ChangeTransferValue" uuid="86872410-967a-4b94-8855-41c2a1363a5c" base-type="BoolTokenProxy" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="5" description="" cardinal="1">
+		<init target="Application" ver="5" value="EzminskayaGES_PANEL"/>
+		<init target="Right" ver="5" value="ChangeTransferValues"/>
+		<init target="SecurityContext" ver="5" ref="SecurityContext_UserRights"/>
+	</object>
+	<object access-modifier="private" name="isAdmin" display-name="isAdmin" uuid="172454b8-4bcd-4a9d-8a26-0bd50320ce40" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
 </object>
 

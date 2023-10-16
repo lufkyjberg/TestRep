@@ -267,15 +267,7 @@ for(var i = 0; i < array.length; i++){
 	<do-trace access-modifier="private" target="PenColor" ver="5">
 		<conditional-expr>
 			<condition>
-				<![CDATA[CurrentTruthIndex < 0]]>
-			</condition>
-			<expr>
-				<![CDATA[AsokuColor.asokuBlack]]>
-			</expr>
-		</conditional-expr>
-		<conditional-expr>
-			<condition>
-				<![CDATA[ApParStatusBytes[CurrentTruthIndex].Value == AsokuConst.StatusBytes.Changed]]>
+				<![CDATA[ApParStatusBytes.Value == AsokuConst.StatusBytes.Changed]]>
 			</condition>
 			<expr>
 				<![CDATA[AsokuColor.asokuCyan]]>
@@ -345,41 +337,5 @@ else PenColor =  AsokuColor.asokuBlack;
 PenWidth = 2;]]>
 		</body>
 	</do-on>
-	<object access-modifier="private" name="RerenderTimer" display-name="RerenderTimer" uuid="2aa2db99-40d2-4592-86d0-a8d04eab74bb" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="5" description="" cardinal="1">
-		<designed target="Period" value="50" ver="5"/>
-		<designed target="Active" value="true" ver="5"/>
-		<do-on access-modifier="private" name="RerenderHndlr" display-name="RerenderHndlr" ver="5" event="OnTimer">
-			<body kind="om">
-				<![CDATA[if (CurrentTruthIndex > -1) {
-	if (ApParValue[CurrentTruthIndex].Advised && Value.Text == "Нет сост.") {
-		// here.PenColor
-		
-		if (ApParStatusBytes[CurrentTruthIndex].Value == AsokuConst.StatusBytes.Changed) here.PenColor = AsokuColor.asokuCyan;
-		else here.PenColor = AsokuColor.asokuBlack;
-		
-		// Value.Text
-		
-		if (CurrentTruthIndex > -1) Value.Text = ApParDisplayOn[CurrentTruthIndex].Value;
-		
-		// Value.FontColor
-		
-		if (CurrentTruthIndex < 0) Value.FontColor = AsokuColor.asokuBlack;
-		else {
-			if (ApParStatusBytes[CurrentTruthIndex].Value == AsokuConst.StatusBytes.Invalid) Value.FontColor = AsokuColor.asokuBlack;
-			else if (ApParAlarmBytes[CurrentTruthIndex].Value == AsokuConst.AlarmBytes.WarningAndAlarm || ApParAlarmBytes[CurrentTruthIndex].Value == AsokuConst.AlarmBytes.Alarm)					 Value.FontColor = AsokuColor.asokuRed;
-		else if (ApParAlarmBytes[CurrentTruthIndex].Value == AsokuConst.AlarmBytes.Warning) Value.FontColor = AsokuColor.asokuYellow;
-		else if (ApParValue[CurrentTruthIndex].Value) Value.FontColor = AsokuColor.asokuGreen;
-		else Value.FontColor = AsokuColor.asokuGrey;
-		}
-	}
-}]]>
-			</body>
-		</do-on>
-	</object>
-	<init target="PenColor" ver="5">
-		<expr>
-			<![CDATA[AsokuColor.asokuBlack]]>
-		</expr>
-	</init>
 </type>
 

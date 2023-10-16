@@ -462,54 +462,22 @@ ApMake = false;
 ApParameterType = 0; // обнулить для обратной совместимости логики, которая не использовала это поле]]>
 			</body>
 		</do-on>
-		<object access-modifier="private" name="ApMake" display-name="ApMake" uuid="eeee3b34-60fc-41dd-8b41-1ecaa05b2617" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
-			<init target="Path" ver="5" value="_System.Messages.UserChangeSignalMessage.Make"/>
-			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
-		</object>
-		<object access-modifier="private" name="ApParameterType" display-name="ApParameterType" uuid="7f5e9903-2a41-4da8-bce3-64d08f8a864e" base-type="ApItemUInt1" base-type-id="ed85e2d2-e5ed-42df-91a6-9455307a85c9" ver="5" description="" cardinal="1">
-			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
-			<init target="Path" ver="5" value="_System.Messages.UserChangeSignalMessage.ParameterType"/>
-		</object>
-		<object access-modifier="private" name="ApUserName" display-name="ApUserName" uuid="88ba5de6-228d-4522-9545-bf5ebf3e63f3" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
-			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
-			<init target="Path" ver="5" value="_System.Messages.UserChangeSignalMessage.UserName"/>
-		</object>
-		<object access-modifier="private" name="ApSignalName" display-name="ApSignalName" uuid="028d5d5d-a69d-4d4e-a0a6-0a8d4cfad00e" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
-			<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
-			<init target="Path" ver="5" value="_System.Messages.UserChangeSignalMessage.SignalName"/>
-		</object>
 	</object>
-	<object access-modifier="private" name="RerenderTimer" display-name="RerenderTimer" uuid="f3a88dec-3a9c-4f1b-97f0-4c941054ffee" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="5" description="" cardinal="1">
-		<designed target="Period" value="50" ver="5"/>
-		<designed target="Active" value="true" ver="5"/>
-		<do-on access-modifier="private" name="RerenderHndlr" display-name="RerenderHndlr" ver="5" event="OnTimer">
-			<body kind="om">
-				<![CDATA[if (ApParValueIn.Advised && ApParValueOut.Advised && Value.Text == "***") {
-	// here.PenColor
-	
-	here.PenColor = AsokuColor.asokuTransparent;
-	
-	// Value.Text
-	
-	if (ApParValueIn.Advised) Value.Text = String.ToString(ApParDisplayFormat.Value, ApParValueIn.Value);
-	
-	// Value.FontColor
-	
-	if (!ApParValueIn.Advised || !ApParValueOut.Advised) Value.FontColor = AsokuColor.asokuBlack;
-	else Value.FontColor = AsokuColor.asokuGreen;
-	
-	// Units.Visible
-	
-	Units.Visible = !HideUnits;
-	
-	// Units.FontColor
-	
-	Units.FontColor = AsokuColor.asokuWhite;
-	
-	//this.Active = false;
-}]]>
-			</body>
-		</do-on>
+	<object access-modifier="private" name="ApMake" display-name="ApMake" uuid="eeee3b34-60fc-41dd-8b41-1ecaa05b2617" base-type="ApItemBool" base-type-id="e3f11724-0f76-4497-8d01-38fbb82fb844" ver="5" description="" cardinal="1">
+		<init target="Path" ver="5" value="_System.Messages.UserChangeSignalMessage.Make"/>
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+	</object>
+	<object access-modifier="private" name="ApParameterType" display-name="ApParameterType" uuid="7f5e9903-2a41-4da8-bce3-64d08f8a864e" base-type="ApItemUInt1" base-type-id="ed85e2d2-e5ed-42df-91a6-9455307a85c9" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<init target="Path" ver="5" value="_System.Messages.UserChangeSignalMessage.ParameterType"/>
+	</object>
+	<object access-modifier="private" name="ApUserName" display-name="ApUserName" uuid="88ba5de6-228d-4522-9545-bf5ebf3e63f3" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<init target="Path" ver="5" value="_System.Messages.UserChangeSignalMessage.UserName"/>
+	</object>
+	<object access-modifier="private" name="ApSignalName" display-name="ApSignalName" uuid="028d5d5d-a69d-4d4e-a0a6-0a8d4cfad00e" base-type="ApItemString" base-type-id="11bc436c-015a-4db9-b901-0cc5c75e1239" ver="5" description="" cardinal="1">
+		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
+		<init target="Path" ver="5" value="_System.Messages.UserChangeSignalMessage.SignalName"/>
 	</object>
 </type>
 

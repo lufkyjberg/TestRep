@@ -203,6 +203,14 @@ here.PenWidth = 3;]]>
 		<do-trace access-modifier="private" target="Visible" ver="5">
 			<conditional-expr>
 				<condition>
+					<![CDATA[ApParStatusBytes.Value == AsokuConst.StatusBytes.Invalid.Value]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
 					<![CDATA[Ap_Par_Value.Value == false	]]>
 				</condition>
 				<expr>
@@ -212,14 +220,6 @@ here.PenWidth = 3;]]>
 			<conditional-expr>
 				<condition>
 					<![CDATA[Ap_Par_Value.Advised == false]]>
-				</condition>
-				<expr>
-					<![CDATA[true]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[ApParStatusBytes.Value == AsokuConst.StatusBytes.Invalid.Value]]>
 				</condition>
 				<expr>
 					<![CDATA[true]]>
@@ -238,6 +238,24 @@ here.PenWidth = 3;]]>
 					<![CDATA[true]]>
 				</expr>
 			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="PenColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Ap_Par_Value.Value == true]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParStatusBytes.Value == AsokuConst.StatusBytes.Invalid]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuBlack]]>
+				</expr>
+			</conditional-expr>
 		</do-trace>
 	</object>
 	<object access-modifier="private" name="Line_2" display-name="Line_2" uuid="10e48a92-4d6d-4914-b4b3-2618ef62db09" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="5">
@@ -269,6 +287,14 @@ here.PenWidth = 3;]]>
 		<do-trace access-modifier="private" target="Visible" ver="5">
 			<conditional-expr>
 				<condition>
+					<![CDATA[ApParStatusBytes.Value == AsokuConst.StatusBytes.Invalid.Value]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
 					<![CDATA[Ap_Par_Value.Value == false	]]>
 				</condition>
 				<expr>
@@ -278,14 +304,6 @@ here.PenWidth = 3;]]>
 			<conditional-expr>
 				<condition>
 					<![CDATA[Ap_Par_Value.Advised == false]]>
-				</condition>
-				<expr>
-					<![CDATA[true]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[ApParStatusBytes.Value == AsokuConst.StatusBytes.Invalid.Value]]>
 				</condition>
 				<expr>
 					<![CDATA[true]]>
@@ -305,10 +323,28 @@ here.PenWidth = 3;]]>
 				</expr>
 			</default-expr>
 		</do-trace>
+		<do-trace access-modifier="private" target="PenColor" ver="5">
+			<conditional-expr>
+				<condition>
+					<![CDATA[Ap_Par_Value.Value == true]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuRed]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[ApParStatusBytes.Value == AsokuConst.StatusBytes.Invalid]]>
+				</condition>
+				<expr>
+					<![CDATA[AsokuColor.asokuBlack]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
 	</object>
 	<do-trace access-modifier="private" target="Tooltip" ver="5">
 		<body>
-			<![CDATA["Путь: " + ParDevPath + "." + "\nПояснение: " + ApParDescription.Value + " " +"\nИсточник: "+ ApParComment.Value + "\nСтатус: " + String.ToString(ApParValue.Quality)]]>
+			<![CDATA["Путь: " + ParDevPath + "." + "\nПояснение: " + ApParDescription.Value + " " +"\nИсточник: "+ ApParComment.Value + "\nСтатус: " + String.ToString(Ap_Par_Value.Quality)]]>
 		</body>
 	</do-trace>
 </type>

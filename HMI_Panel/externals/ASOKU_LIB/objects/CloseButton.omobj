@@ -71,6 +71,7 @@
 			<designed target="Y" value="12" ver="5"/>
 		</object>
 	</object>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="MouseClick" form-action="close"/>
 	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="MouseLeave">
 		<body kind="om">
 			<![CDATA[me.PenColor = AsokuColor.asokuTransparent;]]>
@@ -105,20 +106,5 @@
 	<designed target="DisabledPenColor" value="4288716960" ver="5"/>
 	<designed target="DisabledPenStyle" value="1" ver="5"/>
 	<designed target="DisabledPenWidth" value="1" ver="5"/>
-	<object access-modifier="private" name="CloseWindowAction" display-name="CloseWindowAction" uuid="911b84a8-7777-4904-b97a-7387c8b3aad8" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
-		<designed target="Enabled" value="true" ver="5"/>
-		<designed target="InvokeTrigger" value="false" ver="5"/>
-		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="Invoked" form-action="close"/>
-	</object>
-	<do-on access-modifier="private" name="Handler_4" display-name="Handler_4" ver="5" event="MouseClick">
-		<body kind="om">
-			<![CDATA[if (AsokuUserRights.isAdmin) CloseWindowAction.Invoke();]]>
-		</body>
-	</do-on>
-	<do-trace access-modifier="private" target="Visible" ver="5">
-		<body>
-			<![CDATA[AsokuUserRights.isAdmin]]>
-		</body>
-	</do-trace>
 </type>
 

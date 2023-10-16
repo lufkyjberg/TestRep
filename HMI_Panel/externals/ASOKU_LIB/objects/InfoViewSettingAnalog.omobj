@@ -822,7 +822,7 @@
 			</body>
 		</do-on>
 	</object>
-	<object access-modifier="private" name="ApParSimStatus" display-name="ApParSimStatus" uuid="3aee6172-eb18-4a7c-92f7-bef0609c4c64" base-type="ApItemUInt4" base-type-id="322ce770-6c7b-49bc-9cd6-a367ca5b4627" ver="5" description="" cardinal="1">
+	<object access-modifier="private" name="ApParSimStatus" display-name="ApParSimStatus" uuid="3aee6172-eb18-4a7c-92f7-bef0609c4c64" base-type="ApItemUInt2" base-type-id="d6557328-aca6-4831-a14e-08aed3c64a82" ver="5" description="" cardinal="1">
 		<init target="Source" ver="5" ref="AsokuMain.ApMainSource"/>
 		<do-trace access-modifier="private" target="Path" ver="5">
 			<body>
@@ -1042,7 +1042,7 @@ if (ApParSimValue.ValueAsString != SimulationFrame.Container_SimValue.Input.Text
 	AsokuMain.CreateUserMessage("значение имитации у сигнала " + ParDevPath);
 }
 if (ApParSimStatus.ValueAsString != SimulationFrame.Container_SimStatus.Input.Text) {
-	ApParSimStatus.Value = String.ToUint4(SimulationFrame.Container_SimStatus.Input.Text, ApParSimStatus.Value);
+	ApParSimStatus.Value = String.ToUint2(SimulationFrame.Container_SimStatus.Input.Text, ApParSimStatus.Value);
 	SimulationFrame.Container_SimStatus.Input.isChanged = false;
 	AsokuMain.CreateUserMessage("качество у сигнала " + ParDevPath);
 }

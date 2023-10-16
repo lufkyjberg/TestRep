@@ -42,7 +42,10 @@ Change_OpenedForm.Invoke();]]>
 			</body>
 		</do-on>
 		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="Initialized" frame-link="Frame_Main" form-action="open-in-frame" form-by-id="false">
-			<object access-modifier="private" uuid="5ef72172-4ce5-426b-ae0f-29001f7e6688" base-type="MainEzmGES" base-type-id="db294669-52b7-4d9e-9bc9-f744ad15e5d9" ver="5"/>
+			<object access-modifier="private" uuid="2810bb44-daea-408d-8255-7c4996966b24" base-type="MainEzmGES" base-type-id="db294669-52b7-4d9e-9bc9-f744ad15e5d9" ver="5"/>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="5" event="Initialized" frame-link="FrameTree" form-action="open-in-frame" form-by-id="false">
+			<object access-modifier="private" uuid="53770f0d-7124-4f90-8761-240406880071" base-type="TreeJSON" base-type-id="b07f9768-9f03-4468-8a01-2aa0a0d7194b" ver="5"/>
 		</do-on>
 	</object>
 	<object access-modifier="private" name="Open_UD_WebClient" display-name="Open_UD_WebClient" uuid="315be7ce-ae73-4cbd-ac79-8bd103150191" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="5" description="" cardinal="1">
@@ -128,6 +131,46 @@ Change_OpenedForm.Invoke();]]>
 		<designed target="Width" value="616" ver="5"/>
 		<designed target="Height" value="70" ver="5"/>
 		<init target="Click_UserChange" ver="5" ref="Change_User"/>
+		<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="eb0e762c-901e-44ae-93b4-213a9665acf9" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="5" description="" cardinal="1">
+			<designed target="X" value="23.666666666666742" ver="5"/>
+			<designed target="Y" value="8.1666666666666661" ver="5"/>
+			<designed target="ZValue" value="0" ver="5"/>
+			<designed target="Rotation" value="0" ver="5"/>
+			<designed target="Scale" value="1" ver="5"/>
+			<designed target="Flip" value="0" ver="5"/>
+			<designed target="Visible" value="true" ver="5"/>
+			<designed target="Opacity" value="1" ver="5"/>
+			<designed target="Enabled" value="true" ver="5"/>
+			<designed target="Tooltip" value="" ver="5"/>
+			<designed target="Width" value="115.06666666666661" ver="5"/>
+			<designed target="Height" value="13.261904761904724" ver="5"/>
+			<designed target="Text" value="Текст" ver="5"/>
+			<designed target="Font" value="Arial,12,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
+			<designed target="FontColor" value="0xffffffff" ver="5"/>
+			<designed target="TextAlignment" value="129" ver="5"/>
+			<do-trace access-modifier="private" target="Text" ver="5">
+				<body>
+					<![CDATA[MenuButtonResult.MenuPath]]>
+				</body>
+			</do-trace>
+			<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="5" event="MouseEnter">
+				<body kind="javascript">
+					<![CDATA[me.FontColor = AsokuColor.asokuBlue;
+me.Scale = 1.15;]]>
+				</body>
+			</do-on>
+			<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="5" event="MouseLeave">
+				<body kind="javascript">
+					<![CDATA[me.FontColor = AsokuColor.asokuWhite;
+me.Scale = 1;]]>
+				</body>
+			</do-on>
+			<do-on access-modifier="private" name="Handler_4" display-name="Handler_4" ver="5" event="MouseClick">
+				<body kind="javascript">
+					<![CDATA[FrameTree.Visible = !FrameTree.Visible;]]>
+				</body>
+			</do-on>
+		</object>
 	</object>
 	<object access-modifier="private" name="TextUserDialogs_1" display-name="TextUserDialogs_1" uuid="ee6c3df6-59d1-4bdd-a704-d49d5ee6cf6e" base-type="TextUserDialogs" base-type-id="d59a4f47-69b1-45aa-8a4f-88d2cf705cbc" ver="5" description="" cardinal="1">
 		<designed target="X" value="-6" ver="5"/>
@@ -207,7 +250,9 @@ filter = MenuButtonResult.MsgFilter;
 		<designed target="Enabled" value="true" ver="5"/>
 		<designed target="InvokeTrigger" value="false" ver="5"/>
 	</object>
-	<object access-modifier="private" name="MenuButtonResult" display-name="MenuButtonResult" uuid="9d12b0f1-882d-4b2a-a9f7-7af205999a81" base-type="MenuButtonResult" base-type-id="8bd86758-ab59-4b9f-b15b-38e1d493c839" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="MenuButtonResult" display-name="MenuButtonResult" uuid="9d12b0f1-882d-4b2a-a9f7-7af205999a81" base-type="MenuButtonResult" base-type-id="8bd86758-ab59-4b9f-b15b-38e1d493c839" ver="5" description="" cardinal="1">
+		<init target="MenuPath" ver="5" value="Главная"/>
+	</object>
 	<do access-modifier="private" name="GetItems" display-name="GetItems" ver="5" type="string" type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d">
 		<body kind="om">
 			<![CDATA[menuFile: string =  FileSystem.ReadTextFile(FileSystem.ParentPath(FileSystem.ProjectFolder) + "/resources/ASOKU/data/NAV/sourceJSON.json");
@@ -268,7 +313,7 @@ return menuFile;
 	</object>
 	<object access-modifier="private" name="Button_Messages" display-name="Button_Messages" uuid="285ebb47-1539-43d5-a5c4-282fdb823a91" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5" description="" cardinal="1">
 		<designed target="X" value="661" ver="5"/>
-		<designed target="Y" value="27.5" ver="5"/>
+		<designed target="Y" value="33.428571428571431" ver="5"/>
 		<designed target="ZValue" value="0" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Scale" value="1" ver="5"/>
@@ -347,7 +392,7 @@ filter = "";
 	</object>
 	<object access-modifier="private" name="Button_Trends" display-name="Button_Trends" uuid="760d825a-1125-4b68-bbf4-9c98c515a94c" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="5" description="" cardinal="1">
 		<designed target="X" value="710" ver="5"/>
-		<designed target="Y" value="27.5" ver="5"/>
+		<designed target="Y" value="33.428571428571431" ver="5"/>
 		<designed target="ZValue" value="0" ver="5"/>
 		<designed target="Rotation" value="0" ver="5"/>
 		<designed target="Scale" value="1" ver="5"/>
@@ -585,5 +630,27 @@ Open_LabelMainMove.Invoke();]]>
 			<![CDATA[AsokuColor.asokuBackColor]]>
 		</body>
 	</do-trace>
+	<object access-modifier="private" name="FrameTree" display-name="FrameTree" uuid="ce824c64-cef6-4af0-abd8-2ab64b9c1a50" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="83" ver="5"/>
+		<designed target="ZValue" value="1" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="false" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="250" ver="5"/>
+		<designed target="Height" value="685" ver="5"/>
+		<designed target="PenColor" value="4278190080" ver="5"/>
+		<designed target="PenStyle" value="1" ver="5"/>
+		<designed target="PenWidth" value="1" ver="5"/>
+		<designed target="BrushColor" value="4278190080" ver="5"/>
+		<designed target="BrushStyle" value="0" ver="5"/>
+		<designed target="OverrideScaling" value="false" ver="5"/>
+		<designed target="ShowScrollBars" value="true" ver="5"/>
+		<designed target="MoveByMouse" value="false" ver="5"/>
+	</object>
 </type>
 

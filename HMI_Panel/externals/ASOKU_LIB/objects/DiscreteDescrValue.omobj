@@ -28,7 +28,7 @@
 		<designed target="Tooltip" value="" ver="5"/>
 		<designed target="Width" value="96" ver="5"/>
 		<designed target="Height" value="36" ver="5"/>
-		<designed target="Text" value="***" ver="5"/>
+		<designed target="Text" value="*****" ver="5"/>
 		<designed target="Font" value="Arial,14,-1,5,75,0,0,0,0,0,Полужирный" ver="5"/>
 		<designed target="FontColor" value="0xff000000" ver="5"/>
 		<designed target="TextAlignment" value="129" ver="5"/>
@@ -38,7 +38,7 @@
 					<![CDATA[ApParValue.Advised == false]]>
 				</condition>
 				<expr>
-					<![CDATA["***"]]>
+					<![CDATA["****"]]>
 				</expr>
 			</conditional-expr>
 			<default-expr>
@@ -285,48 +285,5 @@ else PenColor =  AsokuColor.asokuBlack;
 PenWidth = 2;]]>
 		</body>
 	</do-on>
-	<object access-modifier="private" name="RerenderTimer" display-name="RerenderTimer" uuid="8705d832-bbd8-4e5e-b3b2-4b35644416c2" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="5" description="" cardinal="1">
-		<designed target="Period" value="50" ver="5"/>
-		<designed target="Active" value="true" ver="5"/>
-		<do-on access-modifier="private" name="RerenderHndlr" display-name="RerenderHndlr" ver="5" event="OnTimer">
-			<body kind="om">
-				<![CDATA[if (ApParValue.Advised && Value.Text == "***") {
-	// here.PenColor
-	
-	if (ApParStatusBytes.Value == AsokuConst.StatusBytes.Changed) here.PenColor = AsokuColor.asokuCyan;
-	else here.PenColor = AsokuColor.asokuBlack;
-	
-	// here.BrushColor
-	
-	if (IsFilled && ApParValue.Value) {
-		if (ApParAlarmBytes.Value == AsokuConst.AlarmBytes.Alarm || ApParAlarmBytes.Value == AsokuConst.AlarmBytes.WarningAndAlarm) here.BrushColor = AsokuColor.asokuRed;
-		else if (ApParAlarmBytes.Value == AsokuConst.AlarmBytes.Warning) here.BrushColor = AsokuColor.asokuYellow;
-		else here.BrushColor = AsokuColor.asokuGreen;
-	}
-	else here.BrushColor = AsokuColor.asokuTransparent;
-	
-	// Value.Text
-	
-	if (ApParValue.Advised) Value.Text = ApParDescription.Value;
-	
-	// Value.FontColor
-	
-	if (!ApParValue.Advised || ApParStatusBytes.Value == AsokuConst.StatusBytes.Invalid) Value.FontColor = AsokuColor.asokuBlack;
-	else if (IsFilled && ApParValue.Value) Value.FontColor = AsokuColor.asokuBlack;
-	else if (!IsFilled && ApParValue.Value) {
-		if (ApParAlarmBytes.Value == AsokuConst.AlarmBytes.Alarm || ApParAlarmBytes.Value == AsokuConst.AlarmBytes.WarningAndAlarm) Value.FontColor = AsokuColor.asokuRed;
-		else if (ApParAlarmBytes.Value == AsokuConst.AlarmBytes.Warning) Value.FontColor = AsokuColor.asokuYellow;
-		else Value.FontColor = AsokuColor.asokuGreen;
-	}
-	else Value.FontColor = AsokuColor.asokuGrey;
-}]]>
-			</body>
-		</do-on>
-	</object>
-	<init target="PenColor" ver="5">
-		<expr>
-			<![CDATA[AsokuColor.asokuBlack]]>
-		</expr>
-	</init>
 </type>
 

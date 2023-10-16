@@ -1,0 +1,119 @@
+<type access-modifier="private" name="TreeJSON" display-name="TreeJSON" uuid="b07f9768-9f03-4468-8a01-2aa0a0d7194b" base-type="" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="5">
+	<designed target="X" value="0" ver="5"/>
+	<designed target="Y" value="0" ver="5"/>
+	<designed target="ZValue" value="0" ver="5"/>
+	<designed target="Rotation" value="0" ver="5"/>
+	<designed target="Scale" value="1" ver="5"/>
+	<designed target="Flip" value="0" ver="5"/>
+	<designed target="Visible" value="true" ver="5"/>
+	<designed target="Opacity" value="1" ver="5"/>
+	<designed target="Enabled" value="true" ver="5"/>
+	<designed target="Tooltip" value="" ver="5"/>
+	<designed target="Width" value="250" ver="5"/>
+	<designed target="Height" value="685" ver="5"/>
+	<designed target="PenColor" value="4278190080" ver="5"/>
+	<designed target="PenStyle" value="0" ver="5"/>
+	<designed target="PenWidth" value="1" ver="5"/>
+	<designed target="BrushColor" value="4293980400" ver="5"/>
+	<designed target="BrushStyle" value="1" ver="5"/>
+	<designed target="WindowX" value="0" ver="5"/>
+	<designed target="WindowY" value="0" ver="5"/>
+	<designed target="WindowWidth" value="1920" ver="5"/>
+	<designed target="WindowHeight" value="1080" ver="5"/>
+	<designed target="WindowCaption" value="MainForm" ver="5"/>
+	<designed target="ShowWindowCaption" value="true" ver="5"/>
+	<designed target="ShowWindowMinimize" value="true" ver="5"/>
+	<designed target="ShowWindowMaximize" value="true" ver="5"/>
+	<designed target="ShowWindowClose" value="true" ver="5"/>
+	<designed target="AlwaysOnTop" value="false" ver="5"/>
+	<designed target="WindowSizeMode" value="1" ver="5"/>
+	<designed target="WindowBorderStyle" value="1" ver="5"/>
+	<designed target="WindowState" value="0" ver="5"/>
+	<designed target="WindowScalingMode" value="0" ver="5"/>
+	<designed target="MonitorNumber" value="0" ver="5"/>
+	<designed target="WindowPosition" value="1" ver="5"/>
+	<designed target="WindowCloseMode" value="0" ver="5"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
+	<object access-modifier="private" name="Files" display-name="Files" uuid="db27a583-cf3c-4c60-9fa2-003b5fef6f9d" base-type="FileSystem" base-type-id="34d744f9-7303-4077-a3f7-9c06c0945512" ver="5" description="" cardinal="1">
+		<designed target="RootPath" value="/" ver="5"/>
+	</object>
+	<object access-modifier="private" name="Tree_1" display-name="Tree_1" uuid="bef8e224-6b73-4865-b830-dae78f971d8b" base-type="Tree" base-type-id="bebad81f-83c4-4dc1-8ac4-e7fe7b6ee966" ver="5" description="" cardinal="1">
+		<designed target="X" value="0" ver="5"/>
+		<designed target="Y" value="0" ver="5"/>
+		<designed target="ZValue" value="0" ver="5"/>
+		<designed target="Rotation" value="0" ver="5"/>
+		<designed target="Scale" value="1" ver="5"/>
+		<designed target="Flip" value="0" ver="5"/>
+		<designed target="Visible" value="true" ver="5"/>
+		<designed target="Opacity" value="1" ver="5"/>
+		<designed target="Enabled" value="true" ver="5"/>
+		<designed target="Tooltip" value="" ver="5"/>
+		<designed target="Width" value="250" ver="5"/>
+		<designed target="Height" value="685" ver="5"/>
+		<designed target="Font" value="Arial,18,-1,5,75,0,0,0,0,0" ver="5"/>
+		<designed target="FontColor" value="4278190080" ver="5"/>
+		<designed target="BackgroundColor" value="4294967295" ver="5"/>
+		<designed target="FrameVisible" value="true" ver="5"/>
+		<designed target="ColumnCount" value="1" ver="5"/>
+		<designed target="HeaderVisible" value="false" ver="5"/>
+		<designed target="CurrentItem" value="" ver="5"/>
+		<object access-modifier="private" name="DebugTool_1" display-name="DebugTool_1" uuid="91eb323b-8ff7-418a-bd3a-88263e9ea175" base-type="DebugTool" base-type-id="43946044-139a-43f4-a7b8-19a6074ffc56" ver="5" description="" cardinal="1"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="ItemDoubleClicked">
+			<body kind="javascript">
+				<![CDATA[Global.Section = GetItemData(itemId, 0).split(" ")[0];
+Global.Section_1 = GetItemData(itemId, 0).split(" ")[1];
+Global.Section_2 = GetItemData(itemId, 0).split(" ")[2];
+Global.Section_3 = GetItemData(itemId, 0).split(" ")[3];
+Global.ActionMenu = 1;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="str" display-name="str" uuid="87edf696-3afc-42b3-bcdf-bdc57f52323f" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="text" display-name="text" uuid="e6a709fb-a6fc-4eb0-b02f-252fd80a6458" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="5" description="" cardinal="1"/>
+	<object access-modifier="private" name="TextParse" display-name="TextParse" uuid="cd0c82e4-41eb-4c27-9e1d-666c4260369a" base-type="Initializer" base-type-id="6db89679-9299-4993-ad1a-0d086cd1c7d2" ver="5" description="" cardinal="1">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="5" event="Initialized">
+			<body kind="javascript">
+				<![CDATA[var sPath = Files.ParentPath(Files.ProjectFolder) + "/resources/ASOKU/data/МенюДляДерева.txt";
+if (System.Family == "windows") sPath = sPath.replace("/", "\\");
+else sPath = "/" + sPath;
+text = Files.ReadTextFile(sPath);]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="System" display-name="System" uuid="11461f5d-6a32-4cc8-8f02-ffc0591aa00d" base-type="System" base-type-id="702b5ddf-fab9-4646-995b-8999e6f09879" ver="5" description="" cardinal="1"/>
+	<do-on access-modifier="private" name="Handler_4" display-name="Handler_4" ver="5" event="Opened">
+		<body kind="javascript">
+			<![CDATA[let level1Id;
+let level2Id;
+let level3Id;
+let level4Id;
+
+for (let i = 0; i<text.split("\n").length; i++){
+	str = text.split("\n")[i];
+	switch(str.split(".")[0]){
+		case '1':
+			Tree_1.AddItem("", str.split(".")[1]);
+			level1Id = Tree_1.GetItemId("", str.split(".")[2].split(" ")[0]);
+			Tree_1.SetItemData(level1Id, str.split(".")[2], 0);
+			break;
+		case '2':
+			Tree_1.AddItem(level1Id, str.split(".")[1]);
+			level2Id = Tree_1.GetItemId(level1Id, str.split(".")[2].split(" ")[1]);
+			Tree_1.SetItemData(level2Id, str.split(".")[2], 0);
+			break;
+		case '3':
+			Tree_1.AddItem(level2Id, str.split(".")[1]);
+			level3Id = Tree_1.GetItemId(level2Id, str.split(".")[2].split(" ")[2]);
+			Tree_1.SetItemData(level3Id, str.split(".")[2], 0);
+			break;
+		case '4':
+			Tree_1.AddItem(level3Id, str.split(".")[1]);
+			level4Id = Tree_1.GetItemId(level3Id, str.split(".")[2].split(" ")[3]);
+			Tree_1.SetItemData(level4Id, str.split(".")[2], 0);
+			break;
+	}
+}]]>
+		</body>
+	</do-on>
+</type>
+

@@ -278,40 +278,5 @@ here.PenWidth = 3;]]>
 	</object>
 	<object access-modifier="private" name="ParameterType" display-name="Тип параметра" uuid="1feb6ce6-6cec-4775-b311-5e91f2e07652" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="5" description="" cardinal="1"/>
 	<object access-modifier="private" name="HideUnits" display-name="Скрывать размерности" uuid="3d82a57b-a858-45b3-8513-ea3bf5efdf49" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="5" description="" cardinal="1"/>
-	<object access-modifier="private" name="RerenderTimer" display-name="RerenderTimer" uuid="0ac1dd7a-1a08-4631-8f69-835efe65a14a" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="5" description="" cardinal="1">
-		<designed target="Period" value="50" ver="5"/>
-		<designed target="Active" value="true" ver="5"/>
-		<do-on access-modifier="private" name="RerenderHndlr" display-name="RerenderHndlr" ver="5" event="OnTimer">
-			<body kind="om">
-				<![CDATA[if (ApParValue.Advised && Value.Text == "***") {
-	// here.PenColor
-	
-	if (ApParStatusBytes.Value == AsokuConst.StatusBytes.Changed) here.PenColor = AsokuColor.asokuCyan;
-	else here.PenColor = AsokuColor.asokuTransparent;
-	
-	// Value.Text
-	
-	if (ApParValue.Advised) Value.Text = String.ToString(ApParDisplayFormat.Value, ApParValue.Value);
-	
-	// Value.FontColor
-	
-	if (!ApParValue.Advised || ApParStatusBytes.Value == AsokuConst.StatusBytes.Invalid) Value.FontColor = AsokuColor.asokuBlack;
-	else if (ApParAlarmBytes.Value == AsokuConst.AlarmBytes.Alarm || ApParAlarmBytes.Value == AsokuConst.AlarmBytes.WarningAndAlarm)	 Value.FontColor = AsokuColor.asokuRed;
-	else if (ApParAlarmBytes.Value == AsokuConst.AlarmBytes.Warning) Value.FontColor = AsokuColor.asokuYellow;
-	else Value.FontColor = AsokuColor.asokuGreen;
-	
-	// Units.Visible
-	
-	Units.Visible = !HideUnits;
-	
-	// Units.FontColor
-	
-	Units.FontColor = AsokuColor.asokuWhite;
-	
-	//this.Active = false;
-}]]>
-			</body>
-		</do-on>
-	</object>
 </type>
 

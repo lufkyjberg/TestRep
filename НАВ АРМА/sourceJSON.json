@@ -1,0 +1,157 @@
+[
+		{
+			"MenuItemName": "Главная",
+			"SchemeFormName": "Main_EzmGES",
+			"SchemeFormId": "db294669-52b7-4d9e-9bc9-f744ad15e5d9",
+			"MsgFilter": "HydroUnits.GA_01.Control | HydroUnits.GA_01.Electro | HydroUnits.GA_01.HydroMech | HydroUnits.GA_01.TVS.BypassDZ_opened",
+			"MenuPath": "САУ ГА.ГА-1.Главная",
+			"Items": []
+		},
+		{
+			"MenuItemName": "Защиты",
+			"SchemeFormName": "Def_GA",
+			"SchemeFormId": "8a815dca-f6e9-4d33-8689-9fada7df800c",
+			"MsgFilter": "HydroUnits.GA_01.Protection",
+			"MenuPath": "САУ ГА.ГА-1.Защиты",
+			"Items": []
+		},
+		{
+			"MenuItemName": "Эл. схема",
+			"SchemeFormName": "ELShema",
+			"SchemeFormId": "8f6083d5-abef-4bf3-8e89-524dfb9a8642",
+			"MsgFilter": "HydroUnits.GA_01.Electro | HydroUnits.GA_01.Protection",
+			"MenuPath": "САУ ГА.ГА-1.Эл. схема",
+			"Items": []
+		},
+		{
+			"MenuItemName": "ТК ПП",
+			"SchemeFormName": "Podptk",
+			"SchemeFormId": "4ab53304-187f-4266-8773-34e8fac96e51",
+			"MsgFilter": "HydroUnits.GA_01.Thermal.PP",
+			"MenuPath": "САУ ГА.ГА-1.ТК ПП",
+			"Items": []
+		},
+		{
+			"MenuItemName": "ТК ОВ",
+			"SchemeFormName": "OV",
+			"SchemeFormId": "e7086433-2115-46c0-8852-f63d6465a640",
+			"MsgFilter": "HydroUnits.GA_01.Thermal.Air",
+			"MenuPath": "САУ ГА.ГА-1.ТК ОВ",
+			"Items": []
+		},
+		{
+			"MenuItemName": "ТК ТП",
+			"SchemeFormName": "TP",
+			"SchemeFormId": "99193ea4-3fe7-46b4-b960-765100816cca",
+			"MsgFilter": "HydroUnits.GA_01.Thermal.PSH",
+			"MenuPath": "САУ ГА.ГА-1.ТК ТП",
+			"Items": []
+		},
+		{
+			"MenuItemName": "ТК Статор",
+			"SchemeFormName": "Stator",
+			"SchemeFormId": "b500df94-35e4-4352-9091-62bed6803a52",
+			"MsgFilter": "HydroUnits.GA_01.Thermal.Stator",
+			"MenuPath": "САУ ГА.ГА-1.ТК Статор",
+			"Items": []
+		},
+		{
+			"MenuItemName": "ТК ВНП",
+			"SchemeFormName": "PodspkV",
+			"SchemeFormId": "901e3d80-b624-4a70-97ca-0c041ca31e47",
+			"MsgFilter": "HydroUnits.GA_01.Thermal.VNPSH",
+			"MenuPath": "САУ ГА.ГА-1.ТК ВНП",
+			"Items": []
+		},
+		{
+			"MenuItemName": "ТК ННП",
+			"SchemeFormName": "PodspkN",
+			"SchemeFormId": "25c44ed9-3b72-4688-9359-bf8b7dd05b81",
+			"MsgFilter": "HydroUnits.GA_01.Thermal.NNPSH",
+			"MenuPath": "САУ ГА.ГА-1.ТК ННП",
+			"Items": []
+		},
+		{
+			"MenuItemName": "ВК",
+			"SchemeFormName": "Vibro",
+			"SchemeFormId": "390c152f-79a8-4c3c-a6f1-5086a4fc4256",
+			"MsgFilter": "HydroUnits.GA_01.Control | HydroUnits.GA_01.Protection | HydroUnits.GA_01.Vibrocontrol",
+			"MenuPath": "САУ ГА.ГА-1.ВК",
+			"Items": []
+		},
+		{
+			"MenuItemName": "ТВС",
+			"SchemeFormName": "TVS",
+			"SchemeFormId": "fbd121f1-3ab7-4507-a4a1-354479aa533f",
+			"MsgFilter": "HydroUnits.GA_01.TVS | HydroUnits.GA_01.Protection",
+			"MenuPath": "САУ ГА.ГА-1.ТВС",
+			"Items": []
+		},
+
+		{
+			"MenuItemName": "РЧВ",
+			"SchemeFormName": "Podptk",
+			"SchemeFormId": "e8aa5ac7-2b2e-4096-a179-d4c1ace75548",
+			"MsgFilter": "HydroUnits.GA_01.HydroMech | HydroUnits.GA_01.Regulator | HydroUnits.GA_01.Electro.P1 | HydroUnits.GA_01.Control | HydroUnits.GA_01.Electro.F_net",
+			"MenuPath": "САУ ГА.ГА-1.РЧВ",
+			"Items": []
+		},
+		{
+			"MenuItemName": "АСУ",
+			"SchemeFormName": "Diagnostik",
+			"SchemeFormId": "d54dabcc-8c39-4563-8439-c917ca6c5901",
+			"MsgFilter": "HydroUnits.GA_01",
+			"MenuPath": "САУ ГА.ГА-1.АСУ.Модули",
+			"Items": [
+			{
+				"MenuItemName": "Модули",
+				"SchemeFormName": "Podptk",
+				"SchemeFormId": "d54dabcc-8c39-4563-8439-c917ca6c5901",
+				"MsgFilter": "HydroUnits.GA_01.Diagnostik",
+				"MenuPath": "САУ ГА.ГА-1.АСУ.Модули",
+				"Items": []
+			},
+			{
+				"MenuItemName": "Связи",
+				"SchemeFormName": "Podptk",
+				"SchemeFormId": "c4ab1982-84e0-412c-9881-3c2c88850796",
+				"MsgFilter": "HydroUnits.GA_01.Diagnostik",
+				"MenuPath": "САУ ГА.ГА-1.АСУ.Связи",
+				"Items": []
+			},			
+			{
+				"MenuItemName": "AI",
+				"SchemeFormName": "GG",
+				"SchemeFormId": "919a0402-1c3b-4542-9588-eb7a211fd786",
+				"MsgFilter": "HydroUnits.GA_01.Electro | HydroUnits.GA_01.HydroMech | HydroUnits.GA_01.TVS | HydroUnits.GA_01.Thermal",
+				"MenuPath": "САУ ГА.ГА-1.АСУ.AI",
+				"Items": []
+			},
+			{
+				"MenuItemName": "DI",
+				"SchemeFormName": "GG",
+				"SchemeFormId": "c0107b3f-6a83-403c-88c7-ee8c5c0f6d98",
+				"MsgFilter": "HydroUnits.GA_01.Diagnostik",
+				"MenuPath": "САУ ГА.ГА-1.АСУ.DI",
+				"Items": []
+			},
+			{
+				"MenuItemName": "SPR",
+				"SchemeFormName": "GG",
+				"SchemeFormId": "c8b0ca8c-0096-43da-a06b-39144ee0bdb6",
+				"MsgFilter": "HydroUnits.GA_01.Diagnostik",
+				"MenuPath": "САУ ГА.ГА-1.АСУ.SPR",
+				"Items": []
+			},
+			{
+				"MenuItemName": "SPX",
+				"SchemeFormName": "GG",
+				"SchemeFormId": "1d1f024a-9e92-414b-a1be-3858a16ef5f5",
+				"MsgFilter": "HydroUnits.GA_01.Diagnostik",
+				"MenuPath": "САУ ГА.ГА-1.АСУ.SPX",
+				"Items": []
+			}]
+		}
+]
+
+	

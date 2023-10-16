@@ -1,0 +1,564 @@
+[
+{
+	"MenuItemName": "КАСУ ТП",
+	"SchemeFormName": "",
+	"SchemeFormId": "",
+	"MsgFilter": "",
+	"MenuPath": "КАСУ ТП.Главная схема",
+	"Items": [
+	{
+		"MenuItemName": "Главная схема",
+		"SchemeFormName": "",
+		"SchemeFormId": "",
+		"MsgFilter": "",
+		"MenuPath": "КАСУ ТП.Главная схема",
+		"Items": []
+	},
+	{
+		"MenuItemName": "Нагрузка ГЭС",
+		"SchemeFormName": "Нагрузка ГЭС",
+		"SchemeFormId": "e1468a26-8a00-421e-ba2f-68eb02e4102e",
+		"MsgFilter": "",
+		"MenuPath": "КАСУ ТП.Нагрузка ГЭС",
+		"Items": []
+	},
+	{
+		"MenuItemName": "Выработка ЭЭ",
+		"SchemeFormName": "Выработка ЭЭ",
+		"SchemeFormId": "b80f51c5-a744-496f-b8ba-087893650986",
+		"MsgFilter": "",
+		"MenuPath": "КАСУ ТП.Выроботка ЭЭ",
+		"Items": []
+	}
+	]
+},
+{
+	"MenuItemName": "САУ ГА",
+	"SchemeFormName": "",
+	"SchemeFormId": "b2ae3a25-e291-4278-b929-c83962a2c155",
+	"MsgFilter": "HydroUnits.GA_01",
+	"MenuPath": "САУ ГА.Обзор ГА",
+	"Items": [
+	{
+		"MenuItemName": "Обзор ГА",
+		"SchemeFormName": "View GA",
+		"SchemeFormId": "b2ae3a25-e291-4278-b929-c83962a2c155",
+		"MsgFilter": "HydroUnits",
+		"MenuPath": "САУ ГА.Обзор ГА",
+		"Items": []
+	},
+	{
+		"MenuItemName": "ГА-1",
+		"SchemeFormName": "Main_EzmGES",
+		"SchemeFormId": "db294669-52b7-4d9e-9bc9-f744ad15e5d9",
+		"MsgFilter": "HydroUnits.GA_01",
+		"MenuPath": "САУ ГА.ГА-1.Главная",
+		"Items": [
+		{
+			"MenuItemName": "Главная",
+			"SchemeFormName": "Main_EzmGES",
+			"SchemeFormId": "db294669-52b7-4d9e-9bc9-f744ad15e5d9",
+			"MsgFilter": "HydroUnits.GA_01.Control | HydroUnits.GA_01.Electro | HydroUnits.GA_01.HydroMech | HydroUnits.GA_01.TVS.BypassDZ_opened",
+			"MenuPath": "САУ ГА.ГА-1.Главная",
+			"Items": []
+		},
+		{
+			"MenuItemName": "Защиты",
+			"SchemeFormName": "Def_GA",
+			"SchemeFormId": "8a815dca-f6e9-4d33-8689-9fada7df800c",
+			"MsgFilter": "HydroUnits.GA_01.Protection",
+			"MenuPath": "САУ ГА.ГА-1.Защиты",
+			"Items": []
+		},
+		{
+			"MenuItemName": "Эл. схема",
+			"SchemeFormName": "ELShema",
+			"SchemeFormId": "8f6083d5-abef-4bf3-8e89-524dfb9a8642",
+			"MsgFilter": "HydroUnits.GA_01.Electro | HydroUnits.GA_01.Protection",
+			"MenuPath": "САУ ГА.ГА-1.Эл. схема",
+			"Items": []
+		},
+		{
+			"MenuItemName": "ТК ПП",
+			"SchemeFormName": "Podptk",
+			"SchemeFormId": "4ab53304-187f-4266-8773-34e8fac96e51",
+			"MsgFilter": "HydroUnits.GA_01.Thermal.PP",
+			"MenuPath": "САУ ГА.ГА-1.ТК ПП",
+			"Items": []
+		},
+		{
+			"MenuItemName": "ТК ОВ",
+			"SchemeFormName": "OV",
+			"SchemeFormId": "e7086433-2115-46c0-8852-f63d6465a640",
+			"MsgFilter": "HydroUnits.GA_01.Thermal.Air",
+			"MenuPath": "САУ ГА.ГА-1.ТК ОВ",
+			"Items": []
+		},
+		{
+			"MenuItemName": "ТК ТП",
+			"SchemeFormName": "TP",
+			"SchemeFormId": "99193ea4-3fe7-46b4-b960-765100816cca",
+			"MsgFilter": "HydroUnits.GA_01.Thermal.PSH",
+			"MenuPath": "САУ ГА.ГА-1.ТК ТП",
+			"Items": []
+		},
+		{
+			"MenuItemName": "ТК Статор",
+			"SchemeFormName": "Stator",
+			"SchemeFormId": "b500df94-35e4-4352-9091-62bed6803a52",
+			"MsgFilter": "HydroUnits.GA_01.Thermal.Stator",
+			"MenuPath": "САУ ГА.ГА-1.ТК Статор",
+			"Items": []
+		},
+		{
+			"MenuItemName": "ТК ВНП",
+			"SchemeFormName": "PodspkV",
+			"SchemeFormId": "901e3d80-b624-4a70-97ca-0c041ca31e47",
+			"MsgFilter": "HydroUnits.GA_01.Thermal.VNPSH",
+			"MenuPath": "САУ ГА.ГА-1.ТК ВНП",
+			"Items": []
+		},
+		{
+			"MenuItemName": "ТК ННП",
+			"SchemeFormName": "PodspkN",
+			"SchemeFormId": "25c44ed9-3b72-4688-9359-bf8b7dd05b81",
+			"MsgFilter": "HydroUnits.GA_01.Thermal.NNPSH",
+			"MenuPath": "САУ ГА.ГА-1.ТК ННП",
+			"Items": []
+		},
+		{
+			"MenuItemName": "ВК",
+			"SchemeFormName": "Vibro",
+			"SchemeFormId": "390c152f-79a8-4c3c-a6f1-5086a4fc4256",
+			"MsgFilter": "HydroUnits.GA_01.Control | HydroUnits.GA_01.Protection | HydroUnits.GA_01.Vibrocontrol",
+			"MenuPath": "САУ ГА.ГА-1.ВК",
+			"Items": []
+		},
+		{
+			"MenuItemName": "ТВС",
+			"SchemeFormName": "TVS",
+			"SchemeFormId": "fbd121f1-3ab7-4507-a4a1-354479aa533f",
+			"MsgFilter": "HydroUnits.GA_01.TVS | HydroUnits.GA_01.Protection",
+			"MenuPath": "САУ ГА.ГА-1.ТВС",
+			"Items": []
+		},
+
+		{
+			"MenuItemName": "РЧВ",
+			"SchemeFormName": "Podptk",
+			"SchemeFormId": "e8aa5ac7-2b2e-4096-a179-d4c1ace75548",
+			"MsgFilter": "HydroUnits.GA_01.HydroMech | HydroUnits.GA_01.Regulator | HydroUnits.GA_01.Electro.P1 | HydroUnits.GA_01.Control | HydroUnits.GA_01.Electro.F_net",
+			"MenuPath": "САУ ГА.ГА-1.РЧВ",
+			"Items": []
+		},
+		{
+			"MenuItemName": "АСУ",
+			"SchemeFormName": "Diagnostik",
+			"SchemeFormId": "d54dabcc-8c39-4563-8439-c917ca6c5901",
+			"MsgFilter": "HydroUnits.GA_01",
+			"MenuPath": "САУ ГА.ГА-1.АСУ.Модули",
+			"Items": [
+			{
+				"MenuItemName": "Модули",
+				"SchemeFormName": "Podptk",
+				"SchemeFormId": "d54dabcc-8c39-4563-8439-c917ca6c5901",
+				"MsgFilter": "HydroUnits.GA_01.Diagnostik",
+				"MenuPath": "САУ ГА.ГА-1.АСУ.Модули",
+				"Items": []
+			},
+			{
+				"MenuItemName": "Связи",
+				"SchemeFormName": "Podptk",
+				"SchemeFormId": "c4ab1982-84e0-412c-9881-3c2c88850796",
+				"MsgFilter": "HydroUnits.GA_01.Diagnostik",
+				"MenuPath": "САУ ГА.ГА-1.АСУ.Связи",
+				"Items": []
+			},			
+			{
+				"MenuItemName": "AI",
+				"SchemeFormName": "GG",
+				"SchemeFormId": "919a0402-1c3b-4542-9588-eb7a211fd786",
+				"MsgFilter": "HydroUnits.GA_01.Electro | HydroUnits.GA_01.HydroMech | HydroUnits.GA_01.TVS | HydroUnits.GA_01.Thermal",
+				"MenuPath": "САУ ГА.ГА-1.АСУ.AI",
+				"Items": []
+			},
+			{
+				"MenuItemName": "DI",
+				"SchemeFormName": "GG",
+				"SchemeFormId": "c0107b3f-6a83-403c-88c7-ee8c5c0f6d98",
+				"MsgFilter": "HydroUnits.GA_01.Diagnostik",
+				"MenuPath": "САУ ГА.ГА-1.АСУ.DI",
+				"Items": []
+			},
+			{
+				"MenuItemName": "SPR",
+				"SchemeFormName": "GG",
+				"SchemeFormId": "c8b0ca8c-0096-43da-a06b-39144ee0bdb6",
+				"MsgFilter": "HydroUnits.GA_01.Diagnostik",
+				"MenuPath": "САУ ГА.ГА-1.АСУ.SPR",
+				"Items": []
+			},
+			{
+				"MenuItemName": "SPX",
+				"SchemeFormName": "GG",
+				"SchemeFormId": "1d1f024a-9e92-414b-a1be-3858a16ef5f5",
+				"MsgFilter": "HydroUnits.GA_01.Diagnostik",
+				"MenuPath": "САУ ГА.ГА-1.АСУ.SPX",
+				"Items": []
+			}]
+		}
+		]
+	},
+	{
+		"MenuItemName": "ГА-2",
+		"SchemeFormName": "",
+		"SchemeFormId": "",
+		"MsgFilter": "",
+		"MenuPath": "САУ ГА.ГА-2",
+		"Items": []
+	},
+	{
+		"MenuItemName": "ГА-3",
+		"SchemeFormName": "",
+		"SchemeFormId": "",
+		"MsgFilter": "",
+		"MenuPath": "САУ ГА.ГА-3",
+		"Items": []
+	}
+	]
+},
+{
+	"MenuItemName": "СОТИ АССО",
+	"SchemeFormName": "",
+	"SchemeFormId": "",
+	"MsgFilter": "",
+	"MenuPath": "СОТИ АССО.Мнемосхемы",
+	"Items": [
+	{
+		"MenuItemName": "Мнемосхемы",
+		"SchemeFormName": "",
+		"SchemeFormId": "",
+		"MsgFilter": "",
+		"MenuPath": "СОТИ АССО.Мнемосхемы",
+		"Items": []
+	},
+	{
+		"MenuItemName": "Таблицы",
+		"SchemeFormName": "",
+		"SchemeFormId": "",
+		"MsgFilter": "",
+		"MenuPath": "СОТИ АССО.Таблицы",
+		"Items": []
+	}
+	]
+},
+{
+	"MenuItemName": "РУ",
+	"SchemeFormName": "",
+	"SchemeFormId": "0548242a-2b5e-47bb-93cf-5d9f81215fb1",
+	"MsgFilter": "",
+	"MenuPath": "РУ.ОПУ",
+	"Items": [
+	{
+		"MenuItemName": "ОПУ",
+		"SchemeFormName": "",
+		"SchemeFormId": "0548242a-2b5e-47bb-93cf-5d9f81215fb1",
+		"MsgFilter": "",
+		"MenuPath": "РУ.ОПУ",
+		"Items": []
+	},
+	{
+		"MenuItemName": "ОПУ 2",
+		"SchemeFormName": "",
+		"SchemeFormId": "23cc6870-1b89-476e-a979-70fb9edf3a5a",
+		"MsgFilter": "",
+		"MenuPath": "РУ.ОПУ 2",
+		"Items": []
+	},
+	{
+		"MenuItemName": "ЗРУ",
+		"SchemeFormName": "",
+		"SchemeFormId": "a6a8eafa-2dcd-4dce-9cf9-729492033728",
+		"MsgFilter": "",
+		"MenuPath": "РУ.ЗРУ",
+		"Items": []
+	},
+	{
+		"MenuItemName": "КРУ",
+		"SchemeFormName": "",
+		"SchemeFormId": "edd377dc-c011-48b0-8896-7e535940342e",
+		"MsgFilter": "",
+		"MenuPath": "РУ.КРУ",
+		"Items": []
+	},
+	{
+		"MenuItemName": "ГРУ",
+		"SchemeFormName": "",
+		"SchemeFormId": "b13508db-0e2e-4093-a64c-d082c3f531c5",
+		"MsgFilter": "",
+		"MenuPath": "РУ.ГРУ",
+		"Items": []
+	}
+	]
+},
+{
+	"MenuItemName": "СН",
+	"SchemeFormName": "",
+	"SchemeFormId": "05b77d11-1969-4478-9786-083ee9ebf23c",
+	"MsgFilter": "",
+	"MenuPath": "СН.ШРОТ 1",
+	"Items": [
+		{
+		"MenuItemName": "ШРОТ 1",
+		"SchemeFormName": "",
+		"SchemeFormId": "05b77d11-1969-4478-9786-083ee9ebf23c",
+		"MsgFilter": "",
+		"MenuPath": "СН.ШРОТ 1",
+		"Items": []
+	},
+	{
+		"MenuItemName": "ШРОТ 2",
+		"SchemeFormName": "",
+		"SchemeFormId": "6ffd54e1-b4f5-486a-a129-f6c05e0eb9e0",
+		"MsgFilter": "",
+		"MenuPath": "СН.ШРОТ 2",
+		"Items": []
+	},
+	{
+		"MenuItemName": "ШРОТ 3",
+		"SchemeFormName": "",
+		"SchemeFormId": "cdaf77f5-a1eb-4682-ac79-42be9f61477f",
+		"MsgFilter": "",
+		"MenuPath": "СН.ШРОТ 3",
+		"Items": []
+	},
+	{
+		"MenuItemName": "ШРОТ 5",
+		"SchemeFormName": "",
+		"SchemeFormId": "2964c47d-054a-48ad-8c83-45dfb26e5005",
+		"MsgFilter": "",
+		"MenuPath": "СН.ШРОТ 5",
+		"Items": []
+	},
+			{
+		"MenuItemName": "ШРОТ 6",
+		"SchemeFormName": "",
+		"SchemeFormId": "d5d5697e-0620-477c-838a-810f8f788e7c",
+		"MsgFilter": "",
+		"MenuPath": "СН.ШРОТ 6",
+		"Items": []
+	},
+	{
+		"MenuItemName": "СОПТ ХПС",
+		"SchemeFormName": "",
+		"SchemeFormId": "995f84c8-d38f-47d5-8dbd-34ef1ae1cc56",
+		"MsgFilter": "",
+		"MenuPath": "СН.СОПТ ХПС",
+		"Items": []
+	},
+	{
+		"MenuItemName": "ОПУ 1",
+		"SchemeFormName": "",
+		"SchemeFormId": "ba98f632-b1cd-483e-ae9f-e851edf87e66",
+		"MsgFilter": "",
+		"MenuPath": "СН.ОПУ 1",
+		"Items": []
+	},
+	{
+		"MenuItemName": "ОПУ 2.1-2.2",
+		"SchemeFormName": "",
+		"SchemeFormId": "b4d49f37-af6a-4f7e-b3ba-afa010a58432",
+		"MsgFilter": "",
+		"MenuPath": "СН.ОПУ 2.1-2.2",
+		"Items": []
+	},
+			{
+		"MenuItemName": "ОПУ 2-3",
+		"SchemeFormName": "",
+		"SchemeFormId": "fc66f422-aa7a-4d64-9aa5-0dc009de0a79",
+		"MsgFilter": "",
+		"MenuPath": "СН.ОПУ 2-3",
+		"Items": []
+	},
+	{
+		"MenuItemName": "ШГП ОПУ",
+		"SchemeFormName": "",
+		"SchemeFormId": "e6e78257-7ce0-4c23-98f0-000a294dcb9d",
+		"MsgFilter": "",
+		"MenuPath": "СН.ЩГП ОПУ",
+		"Items": []
+	},
+	{
+		"MenuItemName": "ШГП ХПС",
+		"SchemeFormName": "",
+		"SchemeFormId": "b1433c16-4bad-411c-964d-1b868afbe185",
+		"MsgFilter": "",
+		"MenuPath": "СН.ЩГП ХПС",
+		"Items": []
+	},
+	{
+		"MenuItemName": "0.4кВ ХПС",
+		"SchemeFormName": "",
+		"SchemeFormId": "c69a99a2-f579-491e-817d-83c0deb79e5c",
+		"MsgFilter": "",
+		"MenuPath": "СН.0.4кВ ХПС",
+		"Items": []
+	}
+	]
+},
+{
+	"MenuItemName": "ГТИ",
+	"SchemeFormName": "ГТИ",
+	"SchemeFormId": "92fa893e-9a6e-42c6-b733-b1cd26abc2d0",
+	"MsgFilter": "",
+	"MenuPath": "ГТИ",
+	"Items": []
+},
+{
+	"MenuItemName": "ВО",
+	"SchemeFormName": "AUPT",
+	"SchemeFormId": "a999a2c8-2624-43c9-bc7a-effbae7de6da",
+	"MsgFilter": "",
+	"MenuPath": "ВО.АУТП",
+	"Items": [
+	{
+		"MenuItemName": "АУТП",
+		"SchemeFormName": "AUTP",
+		"SchemeFormId": "a999a2c8-2624-43c9-bc7a-effbae7de6da",
+		"MsgFilter": "HydroUnits.GA_01.Diagnostik",
+		"MenuPath": "ВО.АУТП",
+		"Items": []
+	},
+	{
+		"MenuItemName": "Вентиляция",
+		"SchemeFormName": "",
+		"SchemeFormId": "",
+		"MsgFilter": "",
+		"MenuPath": "ВО.Вентиляция",
+		"Items": []
+	},
+	{
+		"MenuItemName": "КНД",
+		"SchemeFormName": "",
+		"SchemeFormId": "",
+		"MsgFilter": "",
+		"MenuPath": "ВО.КНД",
+		"Items": []
+	},
+	{
+		"MenuItemName": "Канализация",
+		"SchemeFormName": "",
+		"SchemeFormId": "",
+		"MsgFilter": "",
+		"MenuPath": "ВО.Канализация",
+		"Items": []
+	},
+	{
+		"MenuItemName": "ШУДН",
+		"SchemeFormName": "",
+		"SchemeFormId": "",
+		"MsgFilter": "",
+		"MenuPath": "ВО.ШУДН",
+		"Items": []
+	},
+	{
+		"MenuItemName": "ШУОП",
+		"SchemeFormName": "",
+		"SchemeFormId": "",
+		"MsgFilter": "",
+		"MenuPath": "ВО.ШУОП",
+		"Items": []
+	},
+	{
+		"MenuItemName": "Охл. ТН",
+		"SchemeFormName": "",
+		"SchemeFormId": "",
+		"MsgFilter": "",
+		"MenuPath": "ВО.Охл. ТН",
+		"Items": []
+	}
+	]
+},
+{
+	"MenuItemName": "СГП",
+	"SchemeFormName": "",
+	"SchemeFormId": "",
+	"MsgFilter": "",
+	"MenuPath": "СГП.Здание ГЭС",
+	"Items": [
+	{
+		"MenuItemName": "Здание ГЭС",
+		"SchemeFormName": "",
+		"SchemeFormId": "",
+		"MsgFilter": "",
+		"MenuPath": "СГП.Здание ГЭС",
+		"Items": []
+	},
+	{
+		"MenuItemName": "ОПУ",
+		"SchemeFormName": "",
+		"SchemeFormId": "",
+		"MsgFilter": "",
+		"MenuPath": "СГП.ОПУ",
+		"Items": []
+	}
+	]
+},
+{
+	"MenuItemName": "Диагн.",
+	"SchemeFormName": "",
+	"SchemeFormId": "",
+	"MsgFilter": "",
+	"MenuPath": "Диагн. Шкафов",
+	"Items": [
+	{
+		"MenuItemName": "Шкафов",
+		"SchemeFormName": "",
+		"SchemeFormId": "",
+		"MsgFilter": "",
+		"MenuPath": "Диагн. Шкафов",
+		"Items": []
+	},
+	{
+		"MenuItemName": "Оборудования ВУ",
+		"SchemeFormName": "",
+		"SchemeFormId": "",
+		"MsgFilter": "",
+		"MenuPath": "Диагн. Оборудования ВУ",
+		"Items": []
+	},
+	{
+		"MenuItemName": "связей ВУ",
+		"SchemeFormName": "",
+		"SchemeFormId": "",
+		"MsgFilter": "",
+		"MenuPath": "Диагн. связей ВУ",
+		"Items": []
+	}
+	]
+},
+{
+	"MenuItemName": "Водоводы",
+	"SchemeFormName": "",
+	"SchemeFormId": "",
+	"MsgFilter": "",
+	"MenuPath": "Водоводы",
+	"Items": []
+},
+{
+	"MenuItemName": "ГУ",
+	"SchemeFormName": "",
+	"SchemeFormId": "",
+	"MsgFilter": "",
+	"MenuPath": "ГУ",
+	"Items": []
+},
+{
+	"MenuItemName": "НУ",
+	"SchemeFormName": "",
+	"SchemeFormId": "",
+	"MsgFilter": "",
+	"MenuPath": "НУ",
+	"Items": []
+}
+]
